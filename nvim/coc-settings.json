@@ -1,0 +1,19 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "python",
+    "javascript",
+    "html",
+    "css",
+    "scss",
+    "rust",
+    "json",
+    "typescript"
+  ],
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "~/anaconda3/envs/misc/bin/black",
+  "python.formatting.blackArgs": ["-l 100"],
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Path": "~/anaconda3/envs/misc/bin/flake8",
+  "python.linting.flake8Args": ["--max-line-length", "100"],
+  "python.linting.pylintEnabled": false
+}
