@@ -1,0 +1,8 @@
+.config/i3
+.config/nvim
+.config/alacritty
+.config/fish
+.config/lf
+.bashrc
+.profile
+Projects/scripts

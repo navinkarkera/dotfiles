@@ -1,0 +1,15 @@
+#!/bin/sh
+
+DOTFILES="$(awk '{ sub ("\n", ""); printf "%s", " " $1 }' ~/Projects/scripts/dotfiles/required_items.txt)"
+GIT_REPO="$HOME/workspace/dotfiles/"
+
+cd $HOME; rsync --progress -r $DOTFILES $GIT_REPO
+
+cd $GIT_REPO
+[ -d .git ] || (git init && hub create)
+
+git add .
+git diff --quiet && git diff --staged --quiet \
+    || (git commit -m "UPDATING DOTFILES" && notify-send "Changes commited to dotfiles" \
+    && (git push origin master && notify-send "Updated remote dotfiles") \
+    || notify-send "Failed to update remote dotfiles")
