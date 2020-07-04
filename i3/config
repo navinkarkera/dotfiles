@@ -55,8 +55,8 @@ floating_modifier Mod1
 # start a terminal
 bindsym Mod1+Return exec --no-startup-id alacritty
 
-# start firefox
-bindsym Mod1+b exec --no-startup-id firefox
+# start brave
+bindsym Mod1+b exec --no-startup-id brave-browser
 
 # kill focused window
 bindsym Mod1+Shift+q kill

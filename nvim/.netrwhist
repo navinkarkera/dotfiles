@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/navin/Projects/scripts/dotfiles'
+let g:netrw_dirhist_9='/home/navin/.config/fish/conf.d'
 let g:netrw_dirhist_8='/home/navin/workspace/javascript/my-react-app'
 let g:netrw_dirhist_7='/home/navin/Projects/kuma/app/backend/services/kuma'
 let g:netrw_dirhist_6='/home/navin/Projects/kuma/app/backend/pandaui'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_4='/home/navin/Projects/git-jump'
 let g:netrw_dirhist_3='/home/navin/workspace/javascript/my-react-app'
 let g:netrw_dirhist_2='/home/navin/Projects/note/target'
 let g:netrw_dirhist_1='/home/navin/Projects/note/src'
-let g:netrw_dirhist_0='/home/navin/Projects/note/target'
-let g:netrw_dirhist_9='/home/navin/workspace/vtuts/fastapi-todo-tutorial'
