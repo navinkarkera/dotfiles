@@ -195,7 +195,7 @@ let g:vimwiki_global_ext = 0
 let g:vimwiki_markdown_link_ext = 1
 
 autocmd FileType html,css,javascript,jsx EmmetInstall
-autocmd FileType html,css,javascript,jsx setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd FileType html,css,javascript,jsx,typescriptreact setlocal tabstop=2 shiftwidth=2 expandtab
 
 fun! TrimWhitespace()
     let l:save = winsaveview()
