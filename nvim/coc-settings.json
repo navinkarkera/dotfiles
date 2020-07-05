@@ -6,7 +6,9 @@
     "scss",
     "rust",
     "json",
-    "typescript"
+    "typescript",
+    "typescriptreact",
+    "javascriptreact"
   ],
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "~/anaconda3/envs/misc/bin/black",
