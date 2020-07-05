@@ -10,6 +10,7 @@
     "typescriptreact",
     "javascriptreact"
   ],
+  "eslint.enable": true,
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "~/anaconda3/envs/misc/bin/black",
   "python.formatting.blackArgs": ["-l 100"],
