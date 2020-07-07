@@ -21,6 +21,7 @@ set termguicolors
 set scrolloff=8
 " neovim only
 set inccommand=nosplit
+set clipboard=unnamedplus
 
 " Give more space for displaying messages.
 set cmdheight=2
