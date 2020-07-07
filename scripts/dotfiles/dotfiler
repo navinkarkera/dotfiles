@@ -1,5 +1,6 @@
 #!/bin/sh
 
+export DISPLAY=:0
 DOTFILES="$(awk '{ sub ("\n", ""); printf "%s", " " $1 }' ~/Projects/scripts/dotfiles/required_items.txt)"
 GIT_REPO="$HOME/workspace/dotfiles/"
 
