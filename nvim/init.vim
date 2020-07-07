@@ -49,6 +49,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim', { 'for': ['javascript', 'jsx', 'html', 'css'] }
 Plug 'honza/vim-snippets'
 Plug 'vimwiki/vimwiki'
+Plug 'tpope/vim-commentary'
 
 Plug 'gruvbox-community/gruvbox'
 Plug 'sainnhe/gruvbox-material'
@@ -58,21 +59,12 @@ Plug 'flazz/vim-colorschemes'
 
 call plug#end()
 
-" --- vim go (polyglot) settings.
-let g:go_highlight_build_constraints = 1
-let g:go_highlight_extra_types = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_structs = 1
-let g:go_highlight_types = 1
-let g:go_highlight_function_parameters = 1
-let g:go_highlight_function_calls = 1
-let g:go_highlight_generate_tags = 1
-let g:go_highlight_format_strings = 1
-let g:go_highlight_variable_declarations = 1
-let g:go_auto_sameids = 1
+let g:gruvbox_contrast_dark = 'hard'
+if exists('+termguicolors')
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+endif
+let g:gruvbox_invert_selection='0'
 
 colorscheme gruvbox
 set background=dark
@@ -91,6 +83,9 @@ let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 let g:netrw_winsize = 20
 
+nnoremap <leader>prw :CocSearch <C-R>=expand("<cword>")<CR><CR>
+nnoremap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
+nnoremap <leader>phw :h <C-R>=expand("<cword>")<CR><CR>
 nnoremap <C-h> :bnext<CR>
 nnoremap <C-l> :bprevious<CR>
 nnoremap <leader>h :wincmd h<CR>
@@ -111,10 +106,6 @@ nnoremap <Leader>ee oif err != nil {<CR>log.Fatalf("%+v\n", err)<CR>}<CR><esc>kk
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
-" Vim with me
-nnoremap <leader>vwm :colorscheme gruvbox<bar>:set background=dark<CR>
-nmap <leader>vtm :highlight Pmenu ctermbg=gray guibg=gray
-
 vnoremap X "_d
 inoremap <C-c> <esc>
 
@@ -122,6 +113,9 @@ function! s:check_back_space() abort
     let col = col('.') - 1
     return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
+
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+inoremap <silent><expr> <C-space> coc#refresh()
 
 inoremap <silent><expr> <TAB>
             \ pumvisible() ? "\<C-n>" :
