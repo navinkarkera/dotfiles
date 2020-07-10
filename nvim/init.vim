@@ -19,7 +19,7 @@ set undofile
 set incsearch
 set termguicolors
 set scrolloff=8
-set path+=**/node_modules/**
+set path+=**
 set wildmenu
 " neovim only
 set inccommand=nosplit
