@@ -102,7 +102,6 @@ nnoremap <C-p> :GFiles<CR>
 nnoremap <C-f> :BLines<CR>
 nnoremap <Leader>pf :Files<CR>
 nnoremap <Leader><CR> :so ~/.config/nvim/init.vim<CR>
-nnoremap <Leader>i :e ~/.config/nvim/init.vim<CR>
 nnoremap <Leader>+ :vertical resize +15<CR>
 nnoremap <Leader>- :vertical resize -10<CR>
 nnoremap <Leader>ee oif err != nil {<CR>log.Fatalf("%+v\n", err)<CR>}<CR><esc>kkI<esc>
