@@ -1,0 +1,28 @@
+#!/bin/sh
+
+if [ $# -eq 0 ]; then
+    echo "Usage: ${0##*/} PICTURES"
+    exit
+fi
+
+[ "$1" = '--' ] && shift
+
+abspath () {
+    case "$1" in
+        /*) printf "%s\n" "$1";;
+        *)  printf "%s\n" "$PWD/$1";;
+    esac
+}
+
+listfiles () {
+    cd $(dirname $target) && fd -tf -a -d 1 -e jpeg -e bmp -e png -e gif -e jpg --print0 | sort -z
+}
+
+target="$(abspath "$1")"
+count="$(listfiles | grep -m 1 -ZznF "$target" | cut -d: -f1)"
+
+if [ -n "$count" ]; then
+    listfiles | xargs -0 sxiv -n "$count" --
+else
+    sxiv -- "$@" # fallback
+fi
