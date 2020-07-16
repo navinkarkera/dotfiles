@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/navin/.config/fish/functions'
 let g:netrw_dirhist_2='/home/navin/Projects/urja-site/content/get-involved'
 let g:netrw_dirhist_1='/home/navin/Projects/urja-site/content'
 let g:netrw_dirhist_0='/home/navin/Projects/urja-site'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_7='/home/navin/Projects/urja-site/themes/welfare/layouts'
 let g:netrw_dirhist_6='/home/navin/Projects/urja-site/themes/welfare/layouts/get-involved'
 let g:netrw_dirhist_5='/home/navin/Projects/urja-site/content/get-involved'
 let g:netrw_dirhist_4='/home/navin/Projects/urja-site'
-let g:netrw_dirhist_3='/home/navin/Projects/urja-site/content/get-involved'

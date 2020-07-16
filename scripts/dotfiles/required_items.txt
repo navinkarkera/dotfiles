@@ -4,6 +4,7 @@
 .config/alacritty
 .config/fish
 .config/lf
+.config/sxiv
 .bashrc
 .profile
 Projects/scripts
