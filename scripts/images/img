@@ -15,7 +15,7 @@ abspath () {
 }
 
 listfiles () {
-    cd $(dirname $target) && fd -tf -a -d 1 -e jpeg -e bmp -e png -e gif -e jpg --print0 | sort -z
+    cd $(dirname $target) && fd -tf -a -d 1 -e gif -e jpeg -e bmp -e png -e gif -e jpg --print0 | sort -z
 }
 
 target="$(abspath "$1")"
