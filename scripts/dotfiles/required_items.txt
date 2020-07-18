@@ -5,6 +5,7 @@
 .config/fish
 .config/lf
 .config/sxiv
+justfile
 .bashrc
 .profile
 Projects/scripts
