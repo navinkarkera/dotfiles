@@ -22,9 +22,6 @@ edit FILE:
 ec:
     {{editor}} {{commit_file}}
 
-jc:
-    {{editor}} ~/justfile
-
 status:
     cd {{d}} && git status
 
@@ -61,8 +58,8 @@ pull-request: push_force
 run:
     #!/usr/bin/env sh
     cd {{d}}
-    if [ -f run.sh ]; then
-        ./run.sh
+    if [ -f run ]; then
+        ./run
     else
         echo "No run script found!"
     fi

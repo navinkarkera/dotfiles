@@ -23,7 +23,7 @@ set path+=**
 set wildmenu
 " neovim only
 set inccommand=nosplit
-set clipboard=unnamedplus
+set clipboard+=unnamedplus
 
 " Give more space for displaying messages.
 set cmdheight=2
@@ -53,6 +53,7 @@ Plug 'mattn/emmet-vim', { 'for': ['javascript', 'jsx', 'html', 'css'] }
 Plug 'honza/vim-snippets'
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-dispatch'
 
 Plug 'gruvbox-community/gruvbox'
 Plug 'sainnhe/gruvbox-material'
@@ -86,9 +87,11 @@ let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 let g:netrw_winsize = 20
 
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
+
 nnoremap <leader>prw :CocSearch <C-R>=expand("<cword>")<CR><CR>
 nnoremap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
-nnoremap <leader>phw :h <C-R>=expand("<cword>")<CR><CR>
+nnoremap <leader>ghw :h <C-R>=expand("<cword>")<CR><CR>
 nnoremap <C-h> :bnext<CR>
 nnoremap <C-l> :bprevious<CR>
 nnoremap <leader>h :wincmd h<CR>
@@ -100,6 +103,7 @@ nnoremap <leader>pv :Vexplore<CR>
 nnoremap <Leader>ps :Rg<SPACE>
 nnoremap <C-p> :GFiles<CR>
 nnoremap <C-f> :BLines<CR>
+nnoremap <C-n> :Buffers<CR>
 nnoremap <Leader>pf :Files<CR>
 nnoremap <Leader><CR> :so ~/.config/nvim/init.vim<CR>
 nnoremap <Leader>+ :vertical resize +15<CR>

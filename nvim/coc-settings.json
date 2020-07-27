@@ -1,33 +1,38 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": [
-    "python",
-    "javascript",
-    "css",
-    "scss",
-    "rust",
-    "json",
-    "typescript",
-    "typescriptreact",
-    "javascriptreact"
-  ],
-  "eslint.enable": true,
-  "eslint.run": "onType",
-  "eslint.autoFixOnSave": true,
-  "eslint.filetypes": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-  "python.formatting.provider": "black",
-  "python.formatting.blackPath": "~/anaconda3/envs/misc/bin/black",
-  "python.formatting.blackArgs": ["-l 100"],
-  "python.linting.flake8Enabled": true,
-  "python.linting.flake8Path": "~/anaconda3/envs/misc/bin/flake8",
-  "python.linting.flake8Args": ["--max-line-length", "100"],
-  "python.linting.pylintEnabled": false,
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "typescript": "typescriptreact"
-  }
+    "coc.preferences.formatOnSaveFiletypes": [
+        "python",
+        "javascript",
+        "css",
+        "scss",
+        "rust",
+        "json",
+        "typescript",
+        "typescriptreact",
+        "javascriptreact"
+    ],
+    "eslint.enable": true,
+    "eslint.run": "onType",
+    "eslint.autoFixOnSave": true,
+    "eslint.filetypes": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "/home/navin/.local/bin/black",
+    "python.formatting.blackArgs": [
+        "-l 100"
+    ],
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "/home/navin/.local/bin/flake8",
+    "python.linting.flake8Args": [
+        "--max-line-length",
+        "100"
+    ],
+    "python.linting.pylintEnabled": false,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "typescript": "typescriptreact"
+    }
 }

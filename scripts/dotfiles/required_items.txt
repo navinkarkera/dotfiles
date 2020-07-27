@@ -3,9 +3,11 @@
 .config/nvim
 .config/alacritty
 .config/fish
+.config/zsh
 .config/lf
 .config/sxiv
 justfile
 .bashrc
 .profile
 Projects/scripts
+.config/.xmodmaprc
