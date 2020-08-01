@@ -11,3 +11,8 @@ justfile
 .profile
 Projects/scripts
 .config/.xmodmaprc
+.config/bspwm
+.config/sxhkd
+.config/polybar
+.config/picom
+.config/zsh

@@ -112,6 +112,8 @@ nnoremap <Leader>ee oif err != nil {<CR>log.Fatalf("%+v\n", err)<CR>}<CR><esc>kk
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 nnoremap <F28> :bd<CR>
+nnoremap <C-m> ]m
+nnoremap <C-s> :w<CR>
 
 vnoremap X "_d
 inoremap <C-c> <esc>
@@ -191,7 +193,7 @@ let g:user_emmet_settings = {
 \}
 
 " VimWiki
-let g:vimwiki_list = [{'path': '~/ownCloud/navinkarkera@disroot/books/notes/src/',
+let g:vimwiki_list = [{'path': '~/owncloud/navinkarkera/books/notes/src/',
                       \ 'syntax': 'markdown', 'ext': '.md', 'index': 'SUMMARY'}]
 let g:vimwiki_global_ext = 0
 let g:vimwiki_markdown_link_ext = 1
