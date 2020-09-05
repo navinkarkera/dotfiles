@@ -109,11 +109,15 @@ alias tree="exa --tree --level=3"
 alias j=just
 
 v() {
-    nvim $(fzf --preview="bat --style=numbers --color=always --line-range :100 {}")
+    fzf --preview="bat --style=numbers --color=always --line-range :100 {}" | xargs -r $EDITOR
 }
 
 se() {
-	nvim $(fd -t f -H . ~/.config ~/Projects/scripts | fzf --preview="bat --style=numbers --color=always --line-range :100 {}")
+	fd -t f -H . ~/.config ~/Projects/scripts | fzf --preview="bat --style=numbers --color=always --line-range :100 {}" | xargs -r $EDITOR
+}
+
+pac() {
+    pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S
 }
 
 [ -f ~/.config/fzf/.fzf.zsh ] && source ~/.config/fzf/.fzf.zsh

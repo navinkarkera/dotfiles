@@ -1,6 +1,6 @@
 d:=invocation_directory()
 commit_file:="~/Projects/commit.md"
-editor:="vim"
+editor:="nvim"
 
 alias e:=edit
 alias st:=status

@@ -68,8 +68,8 @@ super + ctrl + c
 # ______________
 
 # Autopresel (split window in its largest dimension)
-ctrl + space
-	auto-presel
+# ctrl + space
+#	auto-presel
 
 # Focus on window in direction
 alt + {h,j,k,l}
@@ -267,8 +267,9 @@ super + shift + z
 super + e
 	$TERMINAL -e nvim
 
+# Print screen region
 Print
-	scrot
+    maim -s -u ~/Pictures/screenshots/$(date +%s).png
 
 
 #
@@ -276,10 +277,10 @@ Print
 #
 
 XF86AudioRaiseVolume
-    pactl set-sink-volume @DEFAULT_SINK@ +10%; notify-send 'volume up'
+    pactl set-sink-volume @DEFAULT_SINK@ +10%;
 
 XF86AudioLowerVolume
-    pactl set-sink-volume @DEFAULT_SINK@ -10%; notify-send 'volume down'
+    pactl set-sink-volume @DEFAULT_SINK@ -10%;
 
 XF86AudioMute
     pactl set-sink-mute @DEFAULT_SINK@ toggle; notify-send 'mute toggle'
@@ -288,10 +289,10 @@ XF86AudioMicMute
     pactl set-source-mute @DEFAULT_SOURCE@ toggle; notify-send 'mic toggle'
 
 XF86MonBrightnessDown
-    xbacklight -dec 10; notify-send 'brightness down'
+    xbacklight -dec 10; notify-send
 
 XF86MonBrightnessUp
-    xbacklight -inc 10; notify-send 'brightness up'
+    xbacklight -inc 10; notify-send
 
 
 XF86Sleep

@@ -18,3 +18,5 @@ export PATH="$XDG_DATA_HOME/.poetry/bin:$PATH"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export PASSWORD_STORE="$XDG_DATA_HOME/pd_store"
 export PASSWORD_STORE_BACKUP="$HOME/owncloud/navinrkarkera/Database/"
+
+export DOOMDIR="$XDG_CONFIG_HOME/.doom.d"
