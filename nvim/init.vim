@@ -12,6 +12,7 @@ source ~/.config/nvim/plug-config/tagbar-config.vim
 source ~/.config/nvim/plug-config/test.vim
 source ~/.config/nvim/plug-config/vimwiki-config.vim
 source ~/.config/nvim/plug-config/black-config.vim
+source ~/.config/nvim/plug-config/vsnip-config.vim
 
 luafile ~/.config/nvim/lua/lsp-config.lua
 luafile ~/.config/nvim/lua/lsp-wrapper.lua

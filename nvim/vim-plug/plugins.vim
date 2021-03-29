@@ -24,7 +24,6 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'psf/black', { 'branch': 'stable' }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-markdown'
-Plug 'tweekmonster/gofmt.vim'
 Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-surround'
@@ -38,9 +37,13 @@ Plug 'GustavoKatel/telescope-asynctasks.nvim'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'vim-test/vim-test'
-Plug 'michaeljsmith/vim-indent-object'
 Plug 'dbeniamine/cheat.sh-vim'
 Plug 'kyazdani42/nvim-tree.lua'
+
+" snippets
+Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/vim-vsnip-integ'
+Plug 'rafamadriz/friendly-snippets'
 
 Plug 'gruvbox-community/gruvbox'
 Plug 'sainnhe/gruvbox-material'
