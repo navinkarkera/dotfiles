@@ -43,7 +43,9 @@ set updatetime=50
 set shortmess+=c
 
 set colorcolumn=100
+set signcolumn=yes
 highlight ColorColumn ctermbg=0 guibg=lightgrey
+filetype plugin indent on
 
 
 let g:vrfr_rg = 'true'
