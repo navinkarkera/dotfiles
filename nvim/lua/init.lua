@@ -1,0 +1,8 @@
+require("lsp-config.lua")
+require("lsp-wrapper.lua")
+require("compe-config.lua")
+require("telescope-config.lua")
+require("treesitter-config.lua")
+require("lualine-config.lua")
+require("bufferline-config.lua")
+require("lua-ls.lua")
