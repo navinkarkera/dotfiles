@@ -103,6 +103,8 @@ Plug 'mhartington/oceanic-next'
 
 call plug#end()
 
+lua require("navin")
+
 let g:vrfr_rg = 'true'
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
