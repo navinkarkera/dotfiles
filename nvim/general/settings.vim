@@ -6,7 +6,6 @@ syntax enable
 set encoding=utf-8
 set ruler
 set mouse=a
-set t_Co=256
 set relativenumber
 set nohlsearch
 set hidden
@@ -27,6 +26,7 @@ set termguicolors
 set scrolloff=8
 set path+=**
 set wildmenu
+set wildmode=longest:full,full
 set noshowmode
 " neovim only
 set inccommand=nosplit
@@ -43,8 +43,8 @@ set updatetime=50
 set shortmess+=c
 
 set colorcolumn=100
-set signcolumn=yes
-highlight ColorColumn ctermbg=0 guibg=lightgrey
+set signcolumn=number
+highlight ColorColumn ctermbg=0 guibg=grey
 filetype plugin indent on
 
 

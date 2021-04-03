@@ -1,4 +1,4 @@
-require('lualine').status{
+require('lualine').setup{
   options = {
     theme = 'gruvbox_material',
     section_separators = {'', ''},
