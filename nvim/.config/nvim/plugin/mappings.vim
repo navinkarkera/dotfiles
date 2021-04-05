@@ -1,9 +1,3 @@
-" Basic Key Mappings
-
-imap <C-h> <C-w>h
-imap <C-j> <C-w>j
-imap <C-k> <C-w>k
-imap <C-l> <C-w>l
 " g Leader key
 let mapleader=" "
 
@@ -11,13 +5,10 @@ let mapleader=" "
 vnoremap < <gv
 vnoremap > >gv
 
-" greatest remap ever
-vnoremap <leader>p "_dP
 nnoremap <leader>cn :cn<CR>
 nnoremap <leader>cp :cp<CR>
 
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
-nnoremap <leader>ghw :h <C-R>=expand("<cword>")<CR><CR>
 nnoremap <C-l> :bnext<CR>
 nnoremap <C-h> :bprevious<CR>
 nnoremap <leader>h :wincmd h<CR>

@@ -100,17 +100,11 @@ Plug 'hoob3rt/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/nvim-bufferline.lua'
 Plug 'mhartington/oceanic-next'
+Plug 'ayu-theme/ayu-vim'
 
 call plug#end()
 
 lua require("navin")
-
-let g:vrfr_rg = 'true'
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_browse_split = 4
-let g:netrw_altv = 1
-let g:netrw_winsize = 20
 
 " Python provider path
 let g:python3_host_prog = '/usr/bin/python'
@@ -137,3 +131,4 @@ augroup NORA
     autocmd BufEnter,BufWinEnter,TabEnter *.rs :lua require'lsp_extensions'.inlay_hints{}
     autocmd BufWritePre *.py execute ':Black'
 augroup END
+nnoremap <leader>gs :G<CR>

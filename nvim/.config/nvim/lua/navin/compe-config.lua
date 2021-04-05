@@ -1,7 +1,6 @@
 -- TODO we need snippet support and to maybe get better docs idk
 
 
-vim.cmd [[set shortmess+=c]]
 vim.o.completeopt = "menuone,noselect"
 
 require'compe'.setup {
@@ -46,6 +45,9 @@ local check_back_space = function()
     end
 end
 
+-- Use (s-)tab to:
+--- move to prev/next item in completion menuone
+--- jump to prev/next snippet's placeholder
 _G.tab_complete = function()
   if vim.fn.pumvisible() == 1 then
     return t "<C-n>"
