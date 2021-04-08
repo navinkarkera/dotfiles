@@ -1,6 +1,3 @@
-" g Leader key
-let mapleader=" "
-
 " Better indenting
 vnoremap < <gv
 vnoremap > >gv

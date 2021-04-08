@@ -104,6 +104,9 @@ Plug 'ayu-theme/ayu-vim'
 
 call plug#end()
 
+" g Leader key
+let mapleader=" "
+
 lua require("navin")
 
 " Python provider path
@@ -131,4 +134,3 @@ augroup NORA
     autocmd BufEnter,BufWinEnter,TabEnter *.rs :lua require'lsp_extensions'.inlay_hints{}
     autocmd BufWritePre *.py execute ':Black'
 augroup END
-nnoremap <leader>gs :G<CR>

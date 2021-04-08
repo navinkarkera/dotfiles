@@ -55,4 +55,6 @@ require('telescope').setup{
 vim.api.nvim_set_keymap("n", "<C-p>", [[<Cmd>lua require('telescope.builtin').find_files()<CR>]], {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>pf", [[<Cmd>lua require('telescope.builtin').git_files()<CR>]], {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>ps", [[<Cmd>lua require('telescope.builtin').live_grep()<CR>]], {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>pw", [[<Cmd>lua require('telescope.builtin').grep_string()<CR>]], {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<C-n>", [[<Cmd>lua require('telescope.builtin').buffers()<CR>]], {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>gr", [[<Cmd>lua require('telescope.builtin').lsp_references()<CR>]], {noremap = true, silent = true})
