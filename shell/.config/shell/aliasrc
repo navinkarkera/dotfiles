@@ -1,0 +1,36 @@
+alias img=~/Projects/scripts/images/img
+alias tree="exa --tree --level=3"
+alias j=just
+
+alias g="git"
+alias tt="nvim ~/.config/tmux/.tmux.conf"
+alias t="tmux -2"
+alias tn="t -u -f ~/.config/tmux/.tmux.conf new"
+alias ta="t -u -f ~/.config/tmux/.tmux.conf attach"
+
+v() {
+    fzf --preview="bat --style=numbers --color=always --line-range :100 {}" | xargs -r $EDITOR
+}
+
+se() {
+	fd -t f -H . ~/.config ~/Projects/scripts | fzf --preview="bat --style=numbers --color=always --line-range :100 {}" | xargs -r $EDITOR
+}
+
+pac() {
+    pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S
+}
+
+function paste() {
+	local file=${1:-/dev/stdin}
+	curl --data-binary @${file} https://paste.rs
+}
+
+[ -f ~/.config/fzf/.fzf.zsh ] && source ~/.config/fzf/.fzf.zsh
+
+export FZF_DEFAULT_COMMAND="fd --type file --follow --color=always"
+export FZF_DEFAULT_OPTS="--ansi"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND . $HOME"
+export FZF_CTRL_T_OPTS="--preview 'bat --style=numbers --color=always --line-range :100 {}'"
+export FZF_ALT_C_COMMAND="fd --type d --color=always . $HOME"
+export FZF_ALT_C_OPTS="--preview 'exa --tree --level=3 {}'"
+export FZF_TMUX_HEIGHT=80%
