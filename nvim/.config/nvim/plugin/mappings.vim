@@ -14,7 +14,7 @@ nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap gQ :<C-U>call my_utils#FormatFile()<CR>
-nnoremap <Leader>pv :NvimTreeToggle<CR>
+nnoremap <Leader>pv :Explore<CR>
 nnoremap <Leader><CR> :so ~/.config/nvim/init.vim<CR>
 nnoremap <Leader>+ :vertical resize +15<CR>
 nnoremap <Leader>- :vertical resize -10<CR>

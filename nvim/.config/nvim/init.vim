@@ -45,6 +45,8 @@ set shortmess+=c
 set colorcolumn=100
 set signcolumn=number
 highlight ColorColumn ctermbg=0 guibg=grey
+
+set nocp
 filetype plugin indent on
 
 " auto-install vim-plug
@@ -87,7 +89,6 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'vim-test/vim-test'
 Plug 'dbeniamine/cheat.sh-vim'
-Plug 'kyazdani42/nvim-tree.lua'
 
 " snippets
 Plug 'hrsh7th/vim-vsnip'
@@ -133,4 +134,9 @@ augroup NORA
     autocmd BufWritePre * :call TrimWhitespace()
     autocmd BufEnter,BufWinEnter,TabEnter *.rs :lua require'lsp_extensions'.inlay_hints{}
     autocmd BufWritePre *.py execute ':Black'
+augroup END
+
+augroup ProjectDrawer
+    autocmd!
+    autocmd VimEnter * if argc() == 0 | Explore! | endif
 augroup END
