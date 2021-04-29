@@ -105,6 +105,13 @@ Plug 'ayu-theme/ayu-vim'
 
 call plug#end()
 
+if executable('rg')
+    set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case
+    set grepformat^=%f:%l:%c:%m
+else
+    set grepprg=grep\ -RI\ -n\ --exclude-dir\ .git\ --exclude-dir\ .venv\ --exclude-dir\ */node_modules/*
+endif
+
 " g Leader key
 let mapleader=" "
 
