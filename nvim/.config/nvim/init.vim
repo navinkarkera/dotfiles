@@ -119,6 +119,7 @@ lua require("navin")
 
 " Python provider path
 let g:python3_host_prog = '/usr/bin/python'
+let g:netrw_liststyle= 3
 
 fun! TrimWhitespace()
     let l:save = winsaveview()
