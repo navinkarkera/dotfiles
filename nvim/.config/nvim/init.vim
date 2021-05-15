@@ -61,7 +61,7 @@ call plug#begin('~/.vim/plugged')
 
 " Neovim lsp Plugins
 Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/nvim-compe'
+Plug 'lifepillar/vim-mucomplete'
 Plug 'tjdevries/nlua.nvim'
 Plug 'tjdevries/lsp_extensions.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -75,18 +75,21 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'psf/black', { 'branch': 'stable' }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-markdown'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+
 Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'
-Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim', { 'for': ['javascript', 'jsx', 'html', 'css'] }
 Plug 'vimwiki/vimwiki'
-Plug 'tpope/vim-commentary'
 Plug 'skywind3000/asynctasks.vim'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'GustavoKatel/telescope-asynctasks.nvim'
+
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
+
 Plug 'vim-test/vim-test'
 Plug 'dbeniamine/cheat.sh-vim'
 
@@ -141,6 +144,8 @@ augroup NORA
     autocmd BufWritePre * :call TrimWhitespace()
     autocmd BufEnter,BufWinEnter,TabEnter *.rs :lua require'lsp_extensions'.inlay_hints{}
     autocmd BufWritePre *.py execute ':Black'
+    autocmd FileType TelescopePrompt :call mucomplete#auto#disable()
+    autocmd BufEnter,BufWinEnter,TabEnter * :call mucomplete#auto#enable()
 augroup END
 
 augroup ProjectDrawer
