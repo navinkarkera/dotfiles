@@ -57,11 +57,14 @@ if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
+
+
 call plug#begin('~/.vim/plugged')
 
 " Neovim lsp Plugins
 Plug 'neovim/nvim-lspconfig'
 Plug 'lifepillar/vim-mucomplete'
+Plug 'ray-x/lsp_signature.nvim'
 Plug 'tjdevries/nlua.nvim'
 Plug 'tjdevries/lsp_extensions.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -73,7 +76,7 @@ Plug 'nvim-telescope/telescope.nvim'
 
 
 Plug 'psf/black', { 'branch': 'stable' }
-Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive', { 'on': ['G', 'GStatus'] }
 Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
@@ -83,14 +86,14 @@ Plug 'mbbill/undotree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim', { 'for': ['javascript', 'jsx', 'html', 'css'] }
 Plug 'vimwiki/vimwiki'
-Plug 'skywind3000/asynctasks.vim'
-Plug 'skywind3000/asyncrun.vim'
-Plug 'GustavoKatel/telescope-asynctasks.nvim'
+Plug 'skywind3000/asynctasks.vim', { 'on': ['AsyncRun', 'AsyncStop', 'AsyncTask', 'AsyncTaskList'] }
+Plug 'skywind3000/asyncrun.vim', { 'on': ['AsyncRun', 'AsyncStop', 'AsyncTask', 'AsyncTaskList'] }
+Plug 'GustavoKatel/telescope-asynctasks.nvim', { 'on': ['AsyncRun', 'AsyncStop', 'AsyncTask', 'AsyncTaskList'] }
 
-Plug 'junegunn/goyo.vim'
-Plug 'junegunn/limelight.vim'
+Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
+Plug 'junegunn/limelight.vim', { 'on': ['Goyo', 'LimeLight'] }
 
-Plug 'vim-test/vim-test'
+Plug 'vim-test/vim-test', { 'for': ['python', 'python3'] }
 Plug 'dbeniamine/cheat.sh-vim'
 
 " snippets
@@ -107,6 +110,7 @@ Plug 'mhartington/oceanic-next'
 Plug 'ayu-theme/ayu-vim'
 
 call plug#end()
+
 
 if executable('rg')
     set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case
@@ -137,8 +141,8 @@ augroup END
 augroup NORA
     autocmd!
     " Autocommands
-    autocmd FileType html,scss,css,javascript,jsx EmmetInstall
-    autocmd FileType html,scss,css,javascript,jsx,typescriptreact setlocal tabstop=2 shiftwidth=2 expandtab
+    autocmd FileType html,htmldjango,scss,css,javascript,jsx EmmetInstall
+    autocmd FileType html,htmldjango,scss,css,javascript,jsx,typescriptreact setlocal tabstop=2 shiftwidth=2 expandtab
     autocmd FileType markdown setlocal spell wrap
 
     autocmd BufWritePre * :call TrimWhitespace()

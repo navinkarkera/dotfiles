@@ -24,6 +24,21 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
   buf_set_keymap('n', '<space>do', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
 
+
+  require'lsp_signature'.on_attach({
+    bind = true, -- This is mandatory, otherwise border config won't get registered.
+                 -- If you want to hook lspsaga or other signature handler, pls set to false
+    doc_lines = 10, -- only show one line of comment set to 0 if you do not want API comments be shown
+
+    hint_enable = true, -- virtual hint enable
+    hint_prefix = "🐼 ",  -- Panda for parameter
+    hint_scheme = "String",
+
+    handler_opts = {
+      border = "single"   -- double, single, shadow, none
+    },
+    decorator = {"`", "`"}  -- or decorator = {"***", "***"}  decorator = {"**", "**"} see markdown help
+  })
   -- Set some keybinds conditional on server capabilities
   if client.resolved_capabilities.document_formatting then
     buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)

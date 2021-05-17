@@ -11,12 +11,12 @@ let g:gruvbox_invert_selection = '0'
 let g:gruvbox_italic = '1'
 let g:gruvbox_italicize_strings ='1'
 
-" ayu
-let ayucolor="dark"   " for dark version of theme
-colorscheme ayu
+" " ayu
+" let ayucolor="dark"   " for dark version of theme
+" colorscheme ayu
 
 " gruvbox
-" colorscheme gruvbox
+colorscheme gruvbox
 
 " set background=dark
 highlight Normal ctermbg=NONE
