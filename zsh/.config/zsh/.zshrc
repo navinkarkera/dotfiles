@@ -1,7 +1,7 @@
 
 # Enable colors and change prompt:
 autoload -U colors && colors	# Load colors
-PS1="%B%{$fg[green]%}(%{$fg[blue]%}->%{$fg[green]%} %{$fg[magenta]%}%1d%{$fg[green]%})%{$reset_color%}$%b "
+PS1="%(?.%F{green}√.%F{red}?%?)%f %B%F{75}%1~%f%b %# "
 setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
 setopt interactive_comments
@@ -13,7 +13,8 @@ precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
 RPROMPT=\$vcs_info_msg_0_
 # PROMPT=\$vcs_info_msg_0_'%# '
-zstyle ':vcs_info:git:*' formats '%b'
+zstyle ':vcs_info:git:*' formats '%F{208}(%b)%f'
+zstyle ':vcs_info:*' enable git
 
 # up down arrow history search
 autoload -U up-line-or-beginning-search
