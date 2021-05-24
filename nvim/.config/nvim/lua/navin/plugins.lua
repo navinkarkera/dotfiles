@@ -1,0 +1,55 @@
+local execute = vim.api.nvim_command
+local fn = vim.fn
+
+local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+
+if fn.empty(fn.glob(install_path)) > 0 then
+  fn.system({'git', 'clone', 'https://github.com/wbthomason/packer.nvim', install_path})
+  execute 'packadd packer.nvim'
+end
+-- This file can be loaded by calling `lua require('plugins')` from your init.vim
+
+-- Add your packages
+return require('packer').startup(function()
+    -- Packer can manage itself
+    use 'wbthomason/packer.nvim'
+    use 'neovim/nvim-lspconfig'
+    -- Plugins can have dependencies on other plugins
+    use {
+        'nvim-lua/completion-nvim',
+        requires = {
+            {'hrsh7th/vim-vsnip', opt = true},
+            {'hrsh7th/vim-vsnip-integ', opt = true},
+            {'rafamadriz/friendly-snippets', opt = true}
+        }
+    }
+    use {
+        'nvim-telescope/telescope.nvim',
+        requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
+    }
+    use 'nvim-lua/lsp_extensions.nvim'
+
+    use{'nvim-treesitter/nvim-treesitter', run=':TSUpdate'}
+
+
+    use {'psf/black', branch='stable', ft={'python'}}
+    use {'tpope/vim-fugitive', opt=true, cmd={'Git', 'G'}}
+    use {'tpope/vim-markdown', ft={"markdown"}}
+    use {'tpope/vim-commentary'}
+    use {'tpope/vim-surround'}
+
+    use {'mbbill/undotree'}
+    use {'jiangmiao/auto-pairs'}
+    use {'vimwiki/vimwiki'}
+
+    use {'junegunn/goyo.vim', opt=true}
+    use {'junegunn/limelight.vim', opt=true}
+
+    use {'vim-test/vim-test', opt=true}
+
+
+    use {'arcticicestudio/nord-vim'}
+
+    use { 'hoob3rt/lualine.nvim' }
+    use {'akinsho/nvim-bufferline.lua', requires= {'kyazdani42/nvim-web-devicons'}}
+end)

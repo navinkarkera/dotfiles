@@ -49,70 +49,6 @@ highlight ColorColumn ctermbg=0 guibg=grey
 set nocp
 filetype plugin indent on
 
-" auto-install vim-plug
-if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
-  silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  "autocmd VimEnter * PlugInstall
-  autocmd VimEnter * PlugInstall | source $MYVIMRC
-endif
-
-
-
-call plug#begin('~/.vim/plugged')
-
-" Neovim lsp Plugins
-Plug 'neovim/nvim-lspconfig'
-Plug 'lifepillar/vim-mucomplete'
-Plug 'ray-x/lsp_signature.nvim'
-Plug 'tjdevries/nlua.nvim'
-Plug 'tjdevries/lsp_extensions.nvim'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-
-" Telescope
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-
-
-Plug 'psf/black', { 'branch': 'stable' }
-Plug 'tpope/vim-fugitive', { 'on': ['G', 'GStatus'] }
-Plug 'tpope/vim-markdown'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-surround'
-
-Plug 'vim-utils/vim-man'
-Plug 'mbbill/undotree'
-Plug 'jiangmiao/auto-pairs'
-Plug 'mattn/emmet-vim', { 'for': ['javascript', 'jsx', 'html', 'css'] }
-Plug 'vimwiki/vimwiki'
-Plug 'skywind3000/asynctasks.vim', { 'on': ['AsyncRun', 'AsyncStop', 'AsyncTask', 'AsyncTaskList'] }
-Plug 'skywind3000/asyncrun.vim', { 'on': ['AsyncRun', 'AsyncStop', 'AsyncTask', 'AsyncTaskList'] }
-Plug 'GustavoKatel/telescope-asynctasks.nvim', { 'on': ['AsyncRun', 'AsyncStop', 'AsyncTask', 'AsyncTaskList'] }
-
-Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
-Plug 'junegunn/limelight.vim', { 'on': ['Goyo', 'LimeLight'] }
-
-Plug 'vim-test/vim-test', { 'for': ['python', 'python3'] }
-Plug 'dbeniamine/cheat.sh-vim'
-
-" snippets
-Plug 'hrsh7th/vim-vsnip'
-Plug 'hrsh7th/vim-vsnip-integ'
-Plug 'rafamadriz/friendly-snippets'
-
-Plug 'gruvbox-community/gruvbox'
-Plug 'sainnhe/gruvbox-material'
-Plug 'hoob3rt/lualine.nvim'
-Plug 'kyazdani42/nvim-web-devicons'
-Plug 'akinsho/nvim-bufferline.lua'
-Plug 'mhartington/oceanic-next'
-Plug 'ayu-theme/ayu-vim'
-Plug 'arcticicestudio/nord-vim'
-
-call plug#end()
-
-
 if executable('rg')
     set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case
     set grepformat^=%f:%l:%c:%m
@@ -146,11 +82,11 @@ augroup NORA
     autocmd FileType html,htmldjango,scss,css,javascript,jsx,typescriptreact,vue setlocal tabstop=2 shiftwidth=2 expandtab
     autocmd FileType markdown setlocal spell wrap
 
+    autocmd BufWritePost plugins.lua PackerCompile
+    autocmd BufEnter * lua require'completion'.on_attach()
     autocmd BufWritePre * :call TrimWhitespace()
     autocmd BufEnter,BufWinEnter,TabEnter *.rs :lua require'lsp_extensions'.inlay_hints{}
     autocmd BufWritePre *.py execute ':Black'
-    autocmd FileType TelescopePrompt :call mucomplete#auto#disable()
-    autocmd BufEnter,BufWinEnter,TabEnter * :call mucomplete#auto#enable()
 augroup END
 
 augroup ProjectDrawer
