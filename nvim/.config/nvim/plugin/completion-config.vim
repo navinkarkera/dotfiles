@@ -15,11 +15,13 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 let g:completion_chain_complete_list = {
     \ 'vim': [
     \    {'mode': 'cmd'},
+    \    {'mode': 'file'},
     \    {'mode': '<c-p>'},
     \    {'mode': '<c-n>'}
     \],
     \ 'default': [
     \    {'complete_items': ['snippet', 'lsp']},
+    \    {'mode': 'file'},
     \    {'mode': '<c-p>'},
     \    {'mode': '<c-n>'},
     \    {'mode': 'incl'},
