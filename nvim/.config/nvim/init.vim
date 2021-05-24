@@ -78,7 +78,6 @@ augroup END
 augroup NORA
     autocmd!
     " Autocommands
-    autocmd FileType html,scss,css,javascript,jsx EmmetInstall
     autocmd FileType html,htmldjango,scss,css,javascript,jsx,typescriptreact,vue setlocal tabstop=2 shiftwidth=2 expandtab
     autocmd FileType markdown setlocal spell wrap
 
