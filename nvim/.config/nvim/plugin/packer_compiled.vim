@@ -85,9 +85,8 @@ _G.packer_plugins = {
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/completion-nvim"
   },
   ["friendly-snippets"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/friendly-snippets"
+    loaded = true,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/start/friendly-snippets"
   },
   ["goyo.vim"] = {
     loaded = false,
@@ -172,15 +171,12 @@ _G.packer_plugins = {
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/vim-test"
   },
   ["vim-vsnip"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/vim-vsnip"
+    loaded = true,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/start/vim-vsnip"
   },
   ["vim-vsnip-integ"] = {
-    after_files = { "/home/navin/.local/share/nvim/site/pack/packer/opt/vim-vsnip-integ/after/plugin/vsnip_integ.vim" },
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/vim-vsnip-integ"
+    loaded = true,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ"
   },
   vimwiki = {
     loaded = true,

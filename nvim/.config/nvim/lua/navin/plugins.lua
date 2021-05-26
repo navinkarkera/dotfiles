@@ -18,9 +18,9 @@ return require('packer').startup(function()
     use {
         'nvim-lua/completion-nvim',
         requires = {
-            {'hrsh7th/vim-vsnip', opt = true},
-            {'hrsh7th/vim-vsnip-integ', opt = true},
-            {'rafamadriz/friendly-snippets', opt = true}
+            {'hrsh7th/vim-vsnip'},
+            {'hrsh7th/vim-vsnip-integ'},
+            {'rafamadriz/friendly-snippets'}
         }
     }
     use {
