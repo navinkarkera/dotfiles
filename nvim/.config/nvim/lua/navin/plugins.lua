@@ -13,7 +13,10 @@ end
 return require('packer').startup(function()
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
-    use 'neovim/nvim-lspconfig'
+    use {
+        'neovim/nvim-lspconfig',
+        requires = {'glepnir/lspsaga.nvim'}
+    }
     -- Plugins can have dependencies on other plugins
     use {
         'nvim-lua/completion-nvim',
