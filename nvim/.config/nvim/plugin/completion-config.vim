@@ -23,7 +23,7 @@ let g:completion_chain_complete_list = {
     \    {'complete_items': ['snippet']},
     \    {'mode': 'cmd'},
     \    {'mode': '<c-p>'},
-    \    {'mode': '<c-n>'}
+    \    {'mode': '<c-n>'},
     \    {'mode': 'file'},
     \],
     \ 'default': [
