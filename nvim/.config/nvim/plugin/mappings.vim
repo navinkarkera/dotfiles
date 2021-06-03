@@ -12,7 +12,7 @@ nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
-nnoremap <leader>u :UndotreeShow<CR>
+nnoremap <leader>u :UndotreeToggle<CR>
 nnoremap gQ :<C-U>call my_utils#FormatFile()<CR>
 nnoremap <Leader>pv :Explore<CR>
 nnoremap <Leader><CR> :so ~/.config/nvim/init.vim<CR>

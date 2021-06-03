@@ -41,18 +41,16 @@ return require('packer').startup(function()
     use {'tpope/vim-commentary'}
     use {'tpope/vim-surround'}
 
-    use {'mbbill/undotree'}
+    use {'mbbill/undotree', opt=true, cmd={'UndotreeToggle'}}
     use {'jiangmiao/auto-pairs'}
-    use {'vimwiki/vimwiki'}
 
-    use {'junegunn/goyo.vim', opt=true}
-    use {'junegunn/limelight.vim', opt=true}
+    use {'junegunn/goyo.vim', opt=true, cmd={'GoyoEnter'}}
+    use {'junegunn/limelight.vim', opt=true, cmd={'Limelight'}}
 
-    use {'vim-test/vim-test', opt=true}
+    use {'vim-test/vim-test', opt=true, cmd={'TestNearest', 'TestFile', 'TestSuite', 'TestLast'}}
 
 
     use {'arcticicestudio/nord-vim'}
 
     use { 'hoob3rt/lualine.nvim' }
-    use {'akinsho/nvim-bufferline.lua', requires= {'kyazdani42/nvim-web-devicons'}}
 end)

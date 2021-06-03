@@ -89,11 +89,13 @@ _G.packer_plugins = {
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/friendly-snippets"
   },
   ["goyo.vim"] = {
+    commands = { "GoyoEnter" },
     loaded = false,
     needs_bufread = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/goyo.vim"
   },
   ["limelight.vim"] = {
+    commands = { "Limelight" },
     loaded = false,
     needs_bufread = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/limelight.vim"
@@ -114,10 +116,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/nord-vim"
   },
-  ["nvim-bufferline.lua"] = {
-    loaded = true,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/start/nvim-bufferline.lua"
-  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
@@ -125,10 +123,6 @@ _G.packer_plugins = {
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
-  },
-  ["nvim-web-devicons"] = {
-    loaded = true,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -147,8 +141,10 @@ _G.packer_plugins = {
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
   undotree = {
-    loaded = true,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/start/undotree"
+    commands = { "UndotreeToggle" },
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/undotree"
   },
   ["vim-commentary"] = {
     loaded = true,
@@ -170,6 +166,7 @@ _G.packer_plugins = {
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/vim-surround"
   },
   ["vim-test"] = {
+    commands = { "TestNearest", "TestFile", "TestSuite", "TestLast" },
     loaded = false,
     needs_bufread = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/vim-test"
@@ -181,10 +178,6 @@ _G.packer_plugins = {
   ["vim-vsnip-integ"] = {
     loaded = true,
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ"
-  },
-  vimwiki = {
-    loaded = true,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/start/vimwiki"
   }
 }
 
@@ -192,8 +185,15 @@ time("Defining packer_plugins", false)
 
 -- Command lazy-loads
 time("Defining lazy-load commands", true)
+vim.cmd [[command! -nargs=* -range -bang -complete=file Limelight lua require("packer.load")({'limelight.vim'}, { cmd = "Limelight", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+vim.cmd [[command! -nargs=* -range -bang -complete=file TestNearest lua require("packer.load")({'vim-test'}, { cmd = "TestNearest", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+vim.cmd [[command! -nargs=* -range -bang -complete=file TestFile lua require("packer.load")({'vim-test'}, { cmd = "TestFile", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+vim.cmd [[command! -nargs=* -range -bang -complete=file TestSuite lua require("packer.load")({'vim-test'}, { cmd = "TestSuite", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
 vim.cmd [[command! -nargs=* -range -bang -complete=file G lua require("packer.load")({'vim-fugitive'}, { cmd = "G", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+vim.cmd [[command! -nargs=* -range -bang -complete=file UndotreeToggle lua require("packer.load")({'undotree'}, { cmd = "UndotreeToggle", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+vim.cmd [[command! -nargs=* -range -bang -complete=file TestLast lua require("packer.load")({'vim-test'}, { cmd = "TestLast", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
 vim.cmd [[command! -nargs=* -range -bang -complete=file Git lua require("packer.load")({'vim-fugitive'}, { cmd = "Git", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+vim.cmd [[command! -nargs=* -range -bang -complete=file GoyoEnter lua require("packer.load")({'goyo.vim'}, { cmd = "GoyoEnter", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
 time("Defining lazy-load commands", false)
 
 vim.cmd [[augroup packer_load_aucmds]]

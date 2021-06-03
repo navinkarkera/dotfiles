@@ -20,6 +20,5 @@ require('lualine').setup{
     lualine_x = { 'location' },
     lualine_y = {  },
     lualine_z = {   }
-  },
-  extensions = { 'fzf' }
+  }
 }
