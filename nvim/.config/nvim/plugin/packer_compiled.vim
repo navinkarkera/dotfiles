@@ -62,8 +62,9 @@ time("try_loadstring definition", true)
 local function try_loadstring(s, component, name)
   local success, result = pcall(loadstring(s))
   if not success then
-    print('Error running ' .. component .. ' for ' .. name)
-    error(result)
+    vim.schedule(function()
+      vim.api.nvim_notify('packer.nvim: Error running ' .. component .. ' for ' .. name .. ': ' .. result, vim.log.levels.ERROR, {})
+    end)
   end
   return result
 end
@@ -112,6 +113,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/lualine.nvim"
   },
+  ["material.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/material.nvim"
+  },
   ["nord-vim"] = {
     loaded = true,
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/nord-vim"
@@ -136,9 +142,19 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/popup.nvim"
   },
+  ["solarized.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/solarized.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/tokyonight.nvim"
   },
   undotree = {
     commands = { "UndotreeToggle" },
@@ -185,15 +201,15 @@ time("Defining packer_plugins", false)
 
 -- Command lazy-loads
 time("Defining lazy-load commands", true)
+vim.cmd [[command! -nargs=* -range -bang -complete=file UndotreeToggle lua require("packer.load")({'undotree'}, { cmd = "UndotreeToggle", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+vim.cmd [[command! -nargs=* -range -bang -complete=file GoyoEnter lua require("packer.load")({'goyo.vim'}, { cmd = "GoyoEnter", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
 vim.cmd [[command! -nargs=* -range -bang -complete=file Limelight lua require("packer.load")({'limelight.vim'}, { cmd = "Limelight", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+vim.cmd [[command! -nargs=* -range -bang -complete=file Git lua require("packer.load")({'vim-fugitive'}, { cmd = "Git", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
 vim.cmd [[command! -nargs=* -range -bang -complete=file TestNearest lua require("packer.load")({'vim-test'}, { cmd = "TestNearest", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
 vim.cmd [[command! -nargs=* -range -bang -complete=file TestFile lua require("packer.load")({'vim-test'}, { cmd = "TestFile", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
-vim.cmd [[command! -nargs=* -range -bang -complete=file TestSuite lua require("packer.load")({'vim-test'}, { cmd = "TestSuite", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
-vim.cmd [[command! -nargs=* -range -bang -complete=file G lua require("packer.load")({'vim-fugitive'}, { cmd = "G", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
-vim.cmd [[command! -nargs=* -range -bang -complete=file UndotreeToggle lua require("packer.load")({'undotree'}, { cmd = "UndotreeToggle", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
 vim.cmd [[command! -nargs=* -range -bang -complete=file TestLast lua require("packer.load")({'vim-test'}, { cmd = "TestLast", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
-vim.cmd [[command! -nargs=* -range -bang -complete=file Git lua require("packer.load")({'vim-fugitive'}, { cmd = "Git", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
-vim.cmd [[command! -nargs=* -range -bang -complete=file GoyoEnter lua require("packer.load")({'goyo.vim'}, { cmd = "GoyoEnter", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+vim.cmd [[command! -nargs=* -range -bang -complete=file G lua require("packer.load")({'vim-fugitive'}, { cmd = "G", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+vim.cmd [[command! -nargs=* -range -bang -complete=file TestSuite lua require("packer.load")({'vim-test'}, { cmd = "TestSuite", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
 time("Defining lazy-load commands", false)
 
 vim.cmd [[augroup packer_load_aucmds]]

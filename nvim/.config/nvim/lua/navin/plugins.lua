@@ -51,6 +51,9 @@ return require('packer').startup(function()
 
 
     use {'arcticicestudio/nord-vim'}
+    use {'shaunsingh/solarized.nvim', opt=true}
+    use {'folke/tokyonight.nvim', opt=true}
+    use {'marko-cerovac/material.nvim', opt=true}
 
     use { 'hoob3rt/lualine.nvim' }
 end)
