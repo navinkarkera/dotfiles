@@ -1,7 +1,7 @@
 " Set completeopt to have a better completion experience
 set completeopt-=preview
 set completeopt=menuone,noinsert,noselect
-let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
+let g:completion_matching_strategy_list = ['exact', 'fuzzy']
 let g:completion_matching_smart_case = 1
 let g:completion_sorting = 'none'
 let g:completion_enable_auto_paren = 1
@@ -27,9 +27,9 @@ let g:completion_chain_complete_list = {
     \    {'mode': 'file'},
     \],
     \ 'default': [
-    \    {'complete_items': ['lsp', 'snippet']},
+    \    {'complete_items': ['lsp']},
     \    {'mode': '<c-n>'},
-    \    {'mode': '<c-p>'},
+    \    {'complete_items': ['snippet']},
     \    {'mode': 'file'},
     \],
     \ 'TelescopePrompt': []
