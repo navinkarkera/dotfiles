@@ -98,7 +98,7 @@ local themes = {
     "vertex"           -- 10
 }
 
-local chosen_theme = themes[7]
+local chosen_theme = themes[2]
 local modkey       = "Mod4"
 local altkey       = "Mod1"
 local terminal     = os.getenv("TERMINAL")
@@ -209,6 +209,8 @@ local mymainmenu = freedesktop.menu.build {
 -- {{{ Screen
 
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
+
+beautiful.wallpaper = os.getenv("HOME") .. "/.config/awesome" .. "/wall.jpg"
 screen.connect_signal("property::geometry", function(s)
     -- Wallpaper
     if beautiful.wallpaper then
@@ -357,7 +359,7 @@ globalkeys = mytable.join(
         {description = "toggle wibox", group = "awesome"}),
 
     -- On-the-fly useless gaps change
-    awful.key({ altkey, "Control" }, "+", function () lain.util.useless_gaps_resize(1) end,
+    awful.key({ altkey, "Control" }, "=", function () lain.util.useless_gaps_resize(1) end,
               {description = "increment useless gaps", group = "tag"}),
     awful.key({ altkey, "Control" }, "-", function () lain.util.useless_gaps_resize(-1) end,
               {description = "decrement useless gaps", group = "tag"}),
