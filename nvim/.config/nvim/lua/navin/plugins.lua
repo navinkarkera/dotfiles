@@ -51,7 +51,6 @@ return require('packer').startup(function()
 
 
     use 'shaunsingh/nord.nvim'
-    use {'shaunsingh/solarized.nvim', opt=true}
     use {'folke/tokyonight.nvim', opt=true}
     use {'marko-cerovac/material.nvim', opt=true}
 

@@ -46,7 +46,7 @@ local function save_profiles(threshold)
   _G._packer.profile_output = results
 end
 
-time("Luarocks path setup", true)
+time([[Luarocks path setup]], true)
 local package_path_str = "/home/navin/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/navin/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/navin/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/navin/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
 local install_cpath_pattern = "/home/navin/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
@@ -57,8 +57,8 @@ if not string.find(package.cpath, install_cpath_pattern, 1, true) then
   package.cpath = package.cpath .. ';' .. install_cpath_pattern
 end
 
-time("Luarocks path setup", false)
-time("try_loadstring definition", true)
+time([[Luarocks path setup]], false)
+time([[try_loadstring definition]], true)
 local function try_loadstring(s, component, name)
   local success, result = pcall(loadstring(s))
   if not success then
@@ -69,8 +69,8 @@ local function try_loadstring(s, component, name)
   return result
 end
 
-time("try_loadstring definition", false)
-time("Defining packer_plugins", true)
+time([[try_loadstring definition]], false)
+time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["auto-pairs"] = {
     loaded = true,
@@ -142,11 +142,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/popup.nvim"
   },
-  ["solarized.nvim"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/solarized.nvim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/telescope.nvim"
@@ -197,33 +192,33 @@ _G.packer_plugins = {
   }
 }
 
-time("Defining packer_plugins", false)
+time([[Defining packer_plugins]], false)
 
 -- Command lazy-loads
-time("Defining lazy-load commands", true)
-vim.cmd [[command! -nargs=* -range -bang -complete=file Git lua require("packer.load")({'vim-fugitive'}, { cmd = "Git", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
-vim.cmd [[command! -nargs=* -range -bang -complete=file G lua require("packer.load")({'vim-fugitive'}, { cmd = "G", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+time([[Defining lazy-load commands]], true)
 vim.cmd [[command! -nargs=* -range -bang -complete=file GoyoEnter lua require("packer.load")({'goyo.vim'}, { cmd = "GoyoEnter", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
 vim.cmd [[command! -nargs=* -range -bang -complete=file Limelight lua require("packer.load")({'limelight.vim'}, { cmd = "Limelight", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
 vim.cmd [[command! -nargs=* -range -bang -complete=file TestNearest lua require("packer.load")({'vim-test'}, { cmd = "TestNearest", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
 vim.cmd [[command! -nargs=* -range -bang -complete=file TestFile lua require("packer.load")({'vim-test'}, { cmd = "TestFile", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
 vim.cmd [[command! -nargs=* -range -bang -complete=file TestSuite lua require("packer.load")({'vim-test'}, { cmd = "TestSuite", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
-vim.cmd [[command! -nargs=* -range -bang -complete=file TestLast lua require("packer.load")({'vim-test'}, { cmd = "TestLast", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+vim.cmd [[command! -nargs=* -range -bang -complete=file G lua require("packer.load")({'vim-fugitive'}, { cmd = "G", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+vim.cmd [[command! -nargs=* -range -bang -complete=file Git lua require("packer.load")({'vim-fugitive'}, { cmd = "Git", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
 vim.cmd [[command! -nargs=* -range -bang -complete=file UndotreeToggle lua require("packer.load")({'undotree'}, { cmd = "UndotreeToggle", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
-time("Defining lazy-load commands", false)
+vim.cmd [[command! -nargs=* -range -bang -complete=file TestLast lua require("packer.load")({'vim-test'}, { cmd = "TestLast", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+time([[Defining lazy-load commands]], false)
 
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads
-time("Defining lazy-load filetype autocommands", true)
-vim.cmd [[au FileType python ++once lua require("packer.load")({'black'}, { ft = "python" }, _G.packer_plugins)]]
+time([[Defining lazy-load filetype autocommands]], true)
 vim.cmd [[au FileType markdown ++once lua require("packer.load")({'vim-markdown'}, { ft = "markdown" }, _G.packer_plugins)]]
-time("Defining lazy-load filetype autocommands", false)
+vim.cmd [[au FileType python ++once lua require("packer.load")({'black'}, { ft = "python" }, _G.packer_plugins)]]
+time([[Defining lazy-load filetype autocommands]], false)
 vim.cmd("augroup END")
 vim.cmd [[augroup filetypedetect]]
-time("Sourcing ftdetect script at: /home/navin/.local/share/nvim/site/pack/packer/opt/vim-markdown/ftdetect/markdown.vim", true)
+time([[Sourcing ftdetect script at: /home/navin/.local/share/nvim/site/pack/packer/opt/vim-markdown/ftdetect/markdown.vim]], true)
 vim.cmd [[source /home/navin/.local/share/nvim/site/pack/packer/opt/vim-markdown/ftdetect/markdown.vim]]
-time("Sourcing ftdetect script at: /home/navin/.local/share/nvim/site/pack/packer/opt/vim-markdown/ftdetect/markdown.vim", false)
+time([[Sourcing ftdetect script at: /home/navin/.local/share/nvim/site/pack/packer/opt/vim-markdown/ftdetect/markdown.vim]], false)
 vim.cmd("augroup END")
 if should_profile then save_profiles() end
 

@@ -19,7 +19,7 @@ set nowrap
 set smartcase
 set noswapfile
 set nobackup
-set undodir=~/.vim/undodir
+set undodir=~/.local/share/vim/undodir
 set undofile
 set incsearch
 set termguicolors
@@ -89,6 +89,15 @@ augroup NORA
     autocmd BufWritePre * :call TrimWhitespace()
     autocmd BufEnter,BufWinEnter,TabEnter *.rs :lua require'lsp_extensions'.inlay_hints{}
     autocmd BufWritePre *.py execute ':Black'
+" Save file as sudo on files that require root permission
+	cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+" When shortcut files are updated, renew bash and ranger configs with new material:
+	autocmd BufWritePost bm-files,bm-dirs !shortcuts
+" Run xrdb whenever Xdefaults or Xresources are updated.
+	autocmd BufRead,BufNewFile Xresources,Xdefaults,xresources,xdefaults set filetype=xdefaults
+	autocmd BufWritePost Xresources,Xdefaults,xresources,xdefaults !xrdb %
+" Recompile dwmblocks on config edit.
+	autocmd BufWritePost ~/.local/src/dwmblocks/config.h !cd ~/.local/src/dwmblocks/; sudo make install && { killall -q dwmblocks;setsid -f dwmblocks }
 augroup END
 
 augroup ProjectDrawer

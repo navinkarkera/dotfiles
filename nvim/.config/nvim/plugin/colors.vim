@@ -23,7 +23,15 @@
 " highlight Conceal ctermbg=NONE
 
 
+let g:nord_contrast = 1
+let g:nord_borders = 0
+let g:nord_disable_background = 0
 colorscheme nord
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
+highlight Normal guibg=none
+highlight NonText guibg=none
+
 
 " Example config in Vim-Script
 " let g:solarized_italic_comments = v:true
