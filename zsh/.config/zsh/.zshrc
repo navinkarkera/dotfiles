@@ -1,7 +1,6 @@
-
 # Enable colors and change prompt:
 autoload -U colors && colors	# Load colors
-PS1="%(?.%F{green}√.%F{red}?%?)%f %B%F{75}%1~%f%b %# "
+PS1="%B%F{75}%1~%f%b%f %(?.%F{green}$.%F{red}$)%f "
 setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
 setopt interactive_comments
@@ -68,27 +67,25 @@ zle -N zle-line-init
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
-bindkey -s '^a' 'bc -lq\n'
+# Use lf to switch directories and bind it to ctrl-o
+lfcd () {
+    tmp="$(mktemp)"
+    lf -last-dir-path="$tmp" "$@"
+    if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp" >/dev/null
+        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+    fi
+}
+bindkey -s '^o' 'lfcd\n'
 
 bindkey -s '^f' 'cd "$(dirname "$(fzf)")"\n'
 
 bindkey '^[[P' delete-char
 
-# Yank to the system clipboard
-function vi-yank-xclip {
-   zle vi-yank
-   echo "$CUTBUFFER" | xclip -i
-}
-
-zle -N vi-yank-xclip
-bindkey -M vicmd 'y' vi-yank-xclip
-
 # Edit line in vim with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
-eval "$(zoxide init zsh)"
 
 # Load syntax highlighting; should be last.
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
-
+source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null

@@ -55,4 +55,6 @@ return require('packer').startup(function()
     use {'marko-cerovac/material.nvim', opt=true}
 
     use { 'hoob3rt/lualine.nvim' }
+
+    use 'norcalli/nvim-colorizer.lua'
 end)
