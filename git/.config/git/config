@@ -16,3 +16,4 @@
 	psf = push -f origin HEAD
 	lg = !git --no-pager log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
 	cc = commit
+    save-update = "!f() { git stash && git fetch $1 && git reset --hard $1/master && git stash pop; }; f"
