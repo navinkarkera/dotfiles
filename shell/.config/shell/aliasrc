@@ -1,47 +1,63 @@
-alias img=~/Projects/scripts/images/img
-alias tree="exa --tree --level=3"
-alias j=just
+#!/bin/sh
 
-alias g="git"
+# Use neovim for vim if present.
+[ -x "$(command -v nvim)" ] && alias vimdiff="nvim -d"
 
-alias tt="$EDITOR ~/.config/tmux/.tmux.conf"
-alias t="tmux -2"
-alias tn="t -u -f ~/.config/tmux/.tmux.conf new"
-alias ta="t -u -f ~/.config/tmux/.tmux.conf attach"
+# Use $XINITRC variable if file exists.
+[ -f "$XINITRC" ] && alias startx="startx $XINITRC"
 
-alias e=$EDITOR
-alias vi="nvim"
-alias cat="bat"
-ls='ls --color=tty'
-grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
+# sudo not required for some system commands
+for command in mount umount sv pacman updatedb su ; do
+	alias $command="sudo $command"
+done; unset command
 
-alias vrc="$EDITOR ~/.config/nvim/init.vim"
-alias arc="$EDITOR ~/.config/shell/aliasrc"
-alias zrc="$EDITOR ~/.config/zsh/.zshrc"
+# Verbosity and settings that you pretty much just always are going to want.
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	bc="bc -ql" \
+	mkd="mkdir -pv" \
+	yt="youtube-dl --add-metadata -i" \
+	yta="yt -x -f bestaudio/best" \
+	ffmpeg="ffmpeg -hide_banner"
 
-v() {
-    fzf --preview="bat --style=numbers --color=always --line-range :100 {}" | xargs -r $EDITOR
-}
+# Colorize commands when possible.
+alias \
+	ls="ls -hN --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi"
 
-se() {
-	fd -t f -H . ~/.config ~/Projects/scripts | fzf --preview="bat --style=numbers --color=always --line-range :100 {}" | xargs -r $EDITOR
-}
+# These common commands are just too long! Abbreviate them.
+alias \
+	ka="killall" \
+	g="git" \
+	trem="transmission-remote" \
+	YT="youtube-viewer" \
+	sdn="sudo shutdown -h now" \
+	e="$EDITOR" \
+	v="$EDITOR" \
+	p="sudo pacman" \
+	xi="sudo xbps-install" \
+	xr="sudo xbps-remove -R" \
+	xq="xbps-query" \
+	z="zathura"
 
-pac() {
-    pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S
-}
+alias \
+	magit="nvim -c MagitOnly" \
+	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" \
+	weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \
 
-function paste() {
-	local file=${1:-/dev/stdin}
-	curl --data-binary @${file} https://paste.rs
-}
+alias \
+	t="tmux -2" \
+	tn="t -u -f ~/.config/tmux/.tmux.conf new" \
+	ta="t -u -f ~/.config/tmux/.tmux.conf attach"
 
-[ -f ~/.config/fzf/.fzf.zsh ] && source ~/.config/fzf/.fzf.zsh
+alias v="project-files" \
+    pcmd="project-cmd"
 
-export FZF_DEFAULT_COMMAND="fd --type file --follow --color=always"
-export FZF_DEFAULT_OPTS="--ansi"
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND . $HOME"
-export FZF_CTRL_T_OPTS="--preview 'bat --style=numbers --color=always --line-range :100 {}'"
-export FZF_ALT_C_COMMAND="fd --type d --color=always . $HOME"
-export FZF_ALT_C_OPTS="--preview 'exa --tree --level=3 {}'"
-export FZF_TMUX_HEIGHT=80%
+# task spooler aliases
+alias tsp-python="TS_SOCKET=/tmp/python-ts tsp" \
+    tsp-node="TS_SOCKET=/tmp/node-ts tsp"
+

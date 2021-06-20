@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+[[ -f .commands ]] && commands=.commands || commands=~/.local/share/commands
+
+cmd=$(cat $commands | fzf-tmux -p)
+$cmd

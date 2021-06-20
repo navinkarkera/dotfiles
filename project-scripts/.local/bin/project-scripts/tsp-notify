@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+msg="Job: $4 completed with code $2"
+notify-send "$msg"
+# tmux display -d 4000 "$msg"

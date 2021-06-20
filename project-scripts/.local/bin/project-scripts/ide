@@ -1,0 +1,9 @@
+#!/bin/bash
+
+[[ -d .venv ]] && tmux send-keys "source .venv/bin/activate" C-m
+tmux send-keys "v" C-m
+tmux split-window -h -p 40
+[[ -d .venv ]] && tmux send-keys "source .venv/bin/activate" C-m
+
+tmux select-pane -t 0
+
