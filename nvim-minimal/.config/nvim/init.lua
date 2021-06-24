@@ -32,7 +32,7 @@ o.termguicolors = true
 o.path = o.path .. ',**'
 o.wildmenu = true
 o.wildmode = "longest:full,full"
-o.wildignore = '*.o,*.a,__pycache__,node_modules'
+o.wildignore = '*.o,*.a,*.pyc,__pycache__,node_modules'
 o.showmode = false
 o.inccommand = "nosplit"
 o.clipboard = "unnamed,unnamedplus"
@@ -81,7 +81,7 @@ if vim.fn.executable('rg') == 1 then
     o.grepprg = 'rg --vimgrep --no-heading --smart-case'
     o.grepformat = "%f:%l:%c:%m"
 else
-    o.grepprg = "grep -R -n --exclude-dir=.git,.cache,node_modules"
+    o.grepprg = "grep -R -n --exclude-dir=.git --exclude-dir=.cache --exclude-dir=node_modules --exclude-dir=.venv"
 end
 
 -- autocmds
@@ -106,7 +106,7 @@ M.create_augroup({
 
     { 'TextYankPost', '*', 'silent!', "lua require'vim.highlight'.on_yank({timeout = 40})" },
     { 'BufEnter,BufWinEnter,TabEnter', '*.rs', ":lua require'lsp_extensions'.inlay_hints{}" },
-    { 'BufWritePre', '*.py', 'execute', ':Black' },
+    { 'BufWritePre', '*.py', 'execute', "':Black'" },
 -- Run xrdb whenever Xdefaults or Xresources are updated.
     { 'BufWritePost', 'bm-files,bm-dirs', '!shortcuts' },
     { 'BufRead,BufNewFile', 'Xresources,Xdefaults,xresources,xdefaults', 'set', 'filetype=xdefaults' },
@@ -122,7 +122,10 @@ map('v', '<', '<gv', options)
 map('v', '>', '>gv', options)
 
 map('n', '<C-p>', ':find ', options)
-map('n', '<leader>ps', ':grep ""<Left>', options)
+map('n', '<C-b>', ':b ', options)
+map('n', '<leader>ps', ':silent grep ""<Left>', options)
+map('n', '<leader>pw', ':silent grep <C-R>=expand("<cword>")<CR><CR>', options)
+map('n', '<leader>phw', ':h <C-R>=expand("<cword>")<CR><CR>', options)
 map('n', '<C-j>', ':cn<cr>', options)
 map('n', '<C-k>', ':cp<cr>', options)
 map('n', '<leader>co', ':copen<cr>', options)
@@ -164,3 +167,4 @@ require("completion-conf")
 cmd("colorscheme tender")
 require("statusline")
 require 'colorizer'.setup()
+require('lsp-config')
