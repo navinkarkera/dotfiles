@@ -89,8 +89,6 @@ augroup NORA
     autocmd BufWritePre * :call TrimWhitespace()
     autocmd BufEnter,BufWinEnter,TabEnter *.rs :lua require'lsp_extensions'.inlay_hints{}
     autocmd BufWritePre *.py execute ':Black'
-" Save file as sudo on files that require root permission
-	cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 " When shortcut files are updated, renew bash and ranger configs with new material:
 	autocmd BufWritePost bm-files,bm-dirs !shortcuts
 " Run xrdb whenever Xdefaults or Xresources are updated.
