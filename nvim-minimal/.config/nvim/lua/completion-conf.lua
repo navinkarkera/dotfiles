@@ -3,7 +3,7 @@ local g = vim.g
 local map = vim.api.nvim_set_keymap
 vim.cmd([[ autocmd BufEnter * lua require'completion'.on_attach() ]])
 
-g.completion_matching_strategy_list = { 'exact', 'fuzzy' }
+g.completion_matching_strategy_list = { 'exact', 'substring', 'fuzzy' }
 g.completion_matching_smart_case = 1
 g.completion_sorting = 'none'
 g.completion_enable_auto_paren = 1
@@ -31,9 +31,9 @@ g.completion_chain_complete_list = {
         {mode = 'file'},
     },
     default = {
-        {complete_items = {'lsp'}},
+        {complete_items = {'lsp', 'snippet'}},
+        {mode = '<c-n>'},
         {mode = '<c-p>'},
-        {complete_items = {'snippet'}},
-        {mode = 'file'},
+        {mode = 'file', triggered_only = {'/'}},
     },
 }

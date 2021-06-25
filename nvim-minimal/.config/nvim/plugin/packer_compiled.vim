@@ -77,10 +77,6 @@ _G.packer_plugins = {
     needs_bufread = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/black"
   },
-  ["completion-nvim"] = {
-    loaded = true,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/start/completion-nvim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/friendly-snippets"
@@ -97,6 +93,10 @@ _G.packer_plugins = {
   ["nvim-colorizer.lua"] = {
     loaded = true,
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua"
+  },
+  ["nvim-compe"] = {
+    loaded = true,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/start/nvim-compe"
   },
   ["nvim-lspconfig"] = {
     loaded = true,

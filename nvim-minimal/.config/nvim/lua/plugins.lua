@@ -13,7 +13,7 @@ return require('packer').startup(function()
     use 'wbthomason/packer.nvim'
     use 'neovim/nvim-lspconfig'
     use {
-        'nvim-lua/completion-nvim',
+        'hrsh7th/nvim-compe',
         requires = {
             {'hrsh7th/vim-vsnip'},
             {'hrsh7th/vim-vsnip-integ'},

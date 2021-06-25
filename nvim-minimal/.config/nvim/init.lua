@@ -29,7 +29,7 @@ o.mouse = 'a'
 o.hidden = true
 o.errorbells = false
 o.termguicolors = true
-o.path = o.path .. ',**'
+o.path = '.,**'
 o.wildmenu = true
 o.wildmode = "longest:full,full"
 o.wildignore = '*.o,*.a,*.pyc,__pycache__,node_modules'
@@ -162,7 +162,8 @@ map('t', '<F1>', '<C-\\><C-n>', options)
 -- plugins setup
 require("plugins")
 require("treesitter-config")
-require("completion-conf")
+-- require("completion-conf")
+require('compe-conf')
 
 cmd("colorscheme tender")
 require("statusline")
