@@ -27,7 +27,7 @@ session-windows ()
     tmux send-keys -t $base "nvim" Enter
     tmux neww -c $selected -t $base -n "shell"
     [[ -d .venv ]] && tmux send-keys -t $base "source .venv/bin/activate"
-    tmux select-window -t 1
+    tmux select-window -l
 }
 
 tmux has-session -t $base || session-windows
