@@ -44,7 +44,7 @@ export MBSYNCRC="${XDG_CONFIG_HOME:-$HOME/.config}/mbsync/config"
 export ELECTRUMDIR="${XDG_DATA_HOME:-$HOME/.local/share}/electrum"
 
 # Other program settings:
-export TS_ONFINISH="$HOME/.local/bin/tsp-notify"
+export TS_ONFINISH="$HOME/.local/bin/project-scripts/tsp-notify"
 export DICS="/usr/share/stardict/dic/"
 export SUDO_ASKPASS="$HOME/.local/bin/dmenupass"
 export FZF_DEFAULT_OPTS="--ansi --layout=reverse"
