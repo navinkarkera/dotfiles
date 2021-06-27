@@ -6,6 +6,24 @@ local g = vim.g
 M = {}
 local map = vim.api.nvim_set_keymap
 
+-- disable unused inbuild plugins
+g.loaded_matchparen        = true
+g.loaded_matchit           = true
+g.loaded_logiPat           = true
+g.loaded_rrhelper          = true
+g.loaded_tarPlugin         = true
+g.loaded_gzip              = true
+g.loaded_zipPlugin         = true
+g.loaded_2html_plugin      = true
+g.loaded_shada_plugin      = true
+g.loaded_spellfile_plugin  = true
+g.loaded_netrw             = true
+g.loaded_netrwPlugin       = true
+g.loaded_tutor_mode_plugin = true
+g.loaded_remote_plugins    = true
+-- g.loaded_man               = true
+
+
 cmd([[
 filetype plugin indent on
 syntax enable
@@ -112,7 +130,7 @@ M.create_augroup({
     { 'BufRead,BufNewFile', 'Xresources,Xdefaults,xresources,xdefaults', 'set', 'filetype=xdefaults' },
     { 'BufWritePost', 'Xresources,Xdefaults,xresources,xdefaults', '!xrdb %' },
     { 'BufWritePost', '~/.local/src/dwmblocks/config.h', '!cd ~/.local/src/dwmblocks/; sudo make install && { killall -q dwmblocks;setsid -f dwmblocks }' },
-    { 'VimEnter', '*', 'if argc() == 0 | Explore! | endif' }
+    -- { 'VimEnter', '*', 'if argc() == 0 | Explore! | endif' }
 }, 'NORA')
 
 
@@ -162,11 +180,6 @@ map('t', '<F1>', '<C-\\><C-n>', options)
 
 -- plugins setup
 require("plugins")
-require("treesitter-config")
--- require("completion-conf")
-require('compe-conf')
 
 cmd("colorscheme tender")
 require("statusline")
-require 'colorizer'.setup()
-require('lsp-config')

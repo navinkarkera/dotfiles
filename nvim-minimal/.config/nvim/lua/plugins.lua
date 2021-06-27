@@ -11,22 +11,37 @@ end
 return require('packer').startup(function()
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
-    use 'neovim/nvim-lspconfig'
+    use {
+        'neovim/nvim-lspconfig',
+        config = function() require('lsp-config') end,
+    }
     use {
         'hrsh7th/nvim-compe',
         requires = {
             {'hrsh7th/vim-vsnip'},
             {'hrsh7th/vim-vsnip-integ'},
             {'rafamadriz/friendly-snippets'}
-        }
+        },
+        config = function() require'compe-conf' end
     }
-    use{'nvim-treesitter/nvim-treesitter', run=':TSUpdate'}
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run=':TSUpdate',
+        config = function() require "treesitter-config" end,
+    }
 
-    use {'psf/black', ft={'python'}}
+    use {'psf/black', opt=true, ft={'python'}}
     use {'tpope/vim-fugitive', opt=true, cmd={'Git', 'G'}}
     use 'b3nj5m1n/kommentary'
     use 'tpope/vim-surround'
-    use {'windwp/nvim-autopairs', config={require('nvim-autopairs').setup()}}
-    use 'norcalli/nvim-colorizer.lua'
+    use {
+        'windwp/nvim-autopairs',
+        config = function() require 'nvim-autopairs'.setup() end,
+    }
+    use {
+        'norcalli/nvim-colorizer.lua',
+        config = function() require 'colorizer'.setup() end,
+    }
     use 'jacoborus/tender.vim'
+    use {'andymass/vim-matchup', event = 'VimEnter'}
 end)

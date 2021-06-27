@@ -1,3 +1,6 @@
+if !executable('fzy')
+    finish
+endif
 function! FzyCommand(choice_command, vim_command) abort
     let l:callback = {
                 \ 'window_id': win_getid(),
