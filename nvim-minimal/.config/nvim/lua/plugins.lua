@@ -44,4 +44,8 @@ return require('packer').startup(function()
     }
     use 'jacoborus/tender.vim'
     use {'andymass/vim-matchup', event = 'VimEnter'}
+    use {
+        'kyazdani42/nvim-tree.lua',
+        config = function() require 'tree' end,
+    }
 end)

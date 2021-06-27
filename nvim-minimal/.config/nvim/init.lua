@@ -21,6 +21,8 @@ g.loaded_netrw             = true
 g.loaded_netrwPlugin       = true
 g.loaded_tutor_mode_plugin = true
 g.loaded_remote_plugins    = true
+g.loaded_fzf               = true
+g.loaded_lf               = true
 -- g.loaded_man               = true
 
 
@@ -159,7 +161,6 @@ map('n', '<leader>k', ':wincmd k<cr>', options)
 map('n', '<leader>l', ':wincmd l<cr>', options)
 map('n', '<leader>u', ':UndotreeToggle<cr>', options)
 map('n', 'gQ', ':<C-U>call my_utils#FormatFile()<CR>', options)
-map('n', '<leader>pv', ':Explore<cr>', options)
 map('n', '<leader><cr>', ':so ~/.config/nvim/init.lua<CR>', options)
 map('n', '<leader>+', ':vertical resize +15<CR>', options)
 map('n', '<leader>-', ':vertical resize -10<CR>', options)
@@ -176,7 +177,6 @@ map('n', '<leader>gl', ':diffget //3<CR>', options)
 map('n', '<leader>ga', ':diffget //2<CR>', options)
 
 map('t', '<F1>', '<C-\\><C-n>', options)
-
 
 -- plugins setup
 require("plugins")
