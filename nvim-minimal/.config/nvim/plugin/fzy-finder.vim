@@ -28,4 +28,4 @@ function! FzyCommand(choice_command, vim_command) abort
     startinsert
 endfunction
 
-nnoremap <silent> <c-\> :call FzyCommand('fd -H -E ".git" .', ':e ')<cr>
+nnoremap <silent> <c-\> :call FzyCommand('fd -t f -H -E ".git" .', ':e ')<cr>
