@@ -29,3 +29,25 @@ matches:
         type: shell
         params:
           cmd: "echo Hello from your shell"
+
+  - trigger: ":uuid"
+    replace: "{{myuuid}}"
+    vars:
+      - name: myuuid
+        type: shell
+        params:
+          cmd: "uuidgen -r"
+
+  - trigger: ":now"
+    replace: "It's {{mytime}}"
+    vars:
+      - name: mytime
+        type: date
+        params:
+          format: "%H:%M"
+
+  - trigger: ":gpl"
+    replace: "git pull --rebase upstream$|$ master"
+
+  - trigger: ":gps"
+    replace: "git push -f origin HEAD$|$"
