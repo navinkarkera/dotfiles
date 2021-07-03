@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
+FUZZYFINDER=${FUZZYFINDER:-"fzy"}
+
 [[ -f .commands ]] && commands=.commands || commands=~/.local/share/commands
 
-cmd=$(cat $commands | fzf-tmux -p)
+cmd=$(cat $commands | $FUZZYFINDER)
 $cmd

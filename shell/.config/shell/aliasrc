@@ -50,7 +50,7 @@ alias \
 	weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \
 
 alias \
-	t="tmux -2" \
+	t="tmux" \
 	tn="t -u -f ~/.config/tmux/.tmux.conf new" \
 	ta="t -u -f ~/.config/tmux/.tmux.conf attach"
 
