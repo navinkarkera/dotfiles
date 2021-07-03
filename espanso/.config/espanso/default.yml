@@ -51,3 +51,9 @@ matches:
 
   - trigger: ":gps"
     replace: "git push -f origin HEAD$|$"
+
+  - trigger: ":a"
+    replace: "<a href='{{clipboard}}'>$|$</a>"
+    vars:
+      - name: "clipboard"
+        type: "clipboard"
