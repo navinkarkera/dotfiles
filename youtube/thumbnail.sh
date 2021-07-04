@@ -14,6 +14,7 @@
 #     -gravity NorthEast -geometry +35+100 -composite \
 #     /home/navin/Videos/extract_table_website/out.jpg
 convert background.png -resize 1280x720 background_resized.jpg
+convert ~/Downloads/icons/gitlab-icon-rgb.png -resize 150x150 gitlab.png
 
 convert background_resized.jpg \
     -size 1000x280 -background 'srgb(90,50,216,255)' -fill yellow -undercolor transparent \
@@ -24,16 +25,19 @@ convert background_resized.jpg \
     -size 1000x100 -background yellow -fill black -undercolor transparent \
     -font /home/navin/Downloads/fonts/BungeeInline-Regular.ttf \
     -gravity center -pointsize 50 \
-    caption:"Tera template engine " \
+    caption:"Deploying to gitlab pages" \
     -gravity SouthWest -geometry +5+170 -composite \
     -size 200x50 -background 'srgb(240,4,127,255)' -fill black -undercolor transparent \
     -font /home/navin/Downloads/fonts/BungeeInline-Regular.ttf \
     -gravity center -pointsize 40 \
-    caption:"Part-6" \
+    caption:"Part-7" \
     -gravity NorthWest -geometry +5+120 -composite \
     \( -size 300x100 -rotate 90 -background transparent -fill white -undercolor transparent \
      jamstack_resized.png \
     -gravity NorthEast -geometry +5+25 \) -composite \
+    \( -size 150x150 -background transparent -fill white -undercolor transparent \
+     gitlab.png \
+    -gravity SouthEast -geometry +253+150 \) -composite \
     out.jpg
 
     # -gravity center -pointsize 40 caption:"Pandas" \
