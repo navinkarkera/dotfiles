@@ -125,7 +125,6 @@ M.create_augroup({
     { 'FileType', 'markdown', 'setlocal', 'spell wrap' },
 
     { 'TextYankPost', '*', 'silent!', "lua require'vim.highlight'.on_yank({timeout = 40})" },
-    { 'BufEnter,BufWinEnter,TabEnter', '*.rs', ":lua require'lsp_extensions'.inlay_hints{}" },
     { 'BufWritePre', '*.py', 'execute', "':Black'" },
 -- Run xrdb whenever Xdefaults or Xresources are updated.
     { 'BufWritePost', 'bm-files,bm-dirs', '!shortcuts' },
