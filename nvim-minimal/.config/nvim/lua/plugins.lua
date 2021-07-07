@@ -48,4 +48,10 @@ return require('packer').startup(function()
         'kyazdani42/nvim-tree.lua',
         config = function() require 'tree' end,
     }
+    use {
+        'michaelb/sniprun',
+        run='bash ./install.sh',
+        opt=true,
+        cmd={'SnipRun'}
+    }
 end)
