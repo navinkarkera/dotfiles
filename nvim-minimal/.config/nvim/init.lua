@@ -22,9 +22,14 @@ g.loaded_netrwPlugin       = true
 g.loaded_tutor_mode_plugin = true
 g.loaded_remote_plugins    = true
 g.loaded_fzf               = true
-g.loaded_lf               = true
+g.loaded_lf                = true
 -- g.loaded_man               = true
 
+cmd([[
+filetype plugin indent on
+syntax enable
+highlight ColorColumn ctermbg=0 guibg=grey
+]])
 
 -- global options
 o.swapfile = false
@@ -63,6 +68,9 @@ o.completeopt = "menuone,noinsert,noselect"
 o.complete = ".,w,b,u,i"
 o.virtualedit = "block"
 o.backspace = "indent,eol,start"
+o.lazyredraw = true
+o.synmaxcol = 200
+o.switchbuf = "usetab"
 
 -- window-local options
 wo.number = true
@@ -77,6 +85,7 @@ o.tabstop = 4
 o.softtabstop = 4
 o.shiftwidth = 4
 o.smartindent = true
+o.autoindent = true
 o.matchpairs = o.matchpairs .. ',<:>'
 o.cursorline = true
 

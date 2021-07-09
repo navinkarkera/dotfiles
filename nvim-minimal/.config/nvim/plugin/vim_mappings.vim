@@ -1,7 +1,3 @@
-filetype plugin indent on
-syntax enable
-highlight ColorColumn ctermbg=0 guibg=grey
-
 fun! TrimWhitespace()
     let l:save = winsaveview()
     keeppatterns %s/\s\+$//e
