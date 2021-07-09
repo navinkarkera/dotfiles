@@ -26,12 +26,6 @@ g.loaded_lf               = true
 -- g.loaded_man               = true
 
 
-cmd([[
-filetype plugin indent on
-syntax enable
-highlight ColorColumn ctermbg=0 guibg=grey
-]])
-
 -- global options
 o.swapfile = false
 o.backup = false
@@ -104,36 +98,6 @@ else
     o.grepprg = "grep -R -n --exclude-dir=.git --exclude-dir=.cache --exclude-dir=node_modules --exclude-dir=.venv"
 end
 
--- autocmds
-
-function M.create_augroup(autocmds, name)
-    cmd('augroup ' .. name)
-    cmd('autocmd!')
-    for _, autocmd in ipairs(autocmds) do
-        cmd('autocmd ' .. table.concat(autocmd, ' '))
-    end
-    cmd('augroup END')
-end
-
-M.create_augroup({
-    { 'BufRead,BufNewFile', '/tmp/nail-*', 'setlocal', 'ft=mail' },
-    { 'BufRead,BufNewFile', '*s-nail-*', 'setlocal', 'ft=mail' },
-}, 'ftmail')
-
-M.create_augroup({
-    { 'FileType', 'html,htmldjango,scss,css,javascript,jsx,typescriptreact,vue', 'setlocal', 'tabstop=2 shiftwidth=2 expandtab' },
-    { 'FileType', 'markdown', 'setlocal', 'spell wrap' },
-
-    { 'TextYankPost', '*', 'silent!', "lua require'vim.highlight'.on_yank({timeout = 40})" },
-    { 'BufWritePre', '*.py', 'execute', "':Black'" },
--- Run xrdb whenever Xdefaults or Xresources are updated.
-    { 'BufWritePost', 'bm-files,bm-dirs', '!shortcuts' },
-    { 'BufRead,BufNewFile', 'Xresources,Xdefaults,xresources,xdefaults', 'set', 'filetype=xdefaults' },
-    { 'BufWritePost', 'Xresources,Xdefaults,xresources,xdefaults', '!xrdb %' },
-    { 'BufWritePost', '~/.local/src/dwmblocks/config.h', '!cd ~/.local/src/dwmblocks/; sudo make install && { killall -q dwmblocks;setsid -f dwmblocks }' },
-    -- { 'VimEnter', '*', 'if argc() == 0 | Explore! | endif' }
-}, 'NORA')
-
 
 local options = { noremap = true }
 
@@ -179,6 +143,6 @@ map('t', '<F1>', '<C-\\><C-n>', options)
 
 -- plugins setup
 require("plugins")
-
 cmd("colorscheme tender")
+
 require("statusline")

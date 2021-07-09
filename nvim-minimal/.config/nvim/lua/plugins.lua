@@ -29,6 +29,7 @@ return require('packer').startup(function()
         run=':TSUpdate',
         config = function() require "treesitter-config" end,
     }
+    use {'nvim-treesitter/nvim-treesitter-textobjects'}
 
     use {'psf/black', opt=true, ft={'python'}}
     use {'tpope/vim-fugitive', opt=true, cmd={'Git', 'G'}}
