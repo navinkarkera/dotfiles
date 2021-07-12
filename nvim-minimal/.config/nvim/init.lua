@@ -25,12 +25,6 @@ g.loaded_fzf               = true
 g.loaded_lf                = true
 -- g.loaded_man               = true
 
-cmd([[
-filetype plugin indent on
-syntax enable
-highlight ColorColumn ctermbg=0 guibg=grey
-]])
-
 -- global options
 o.swapfile = false
 o.backup = false
@@ -87,7 +81,7 @@ o.shiftwidth = 4
 o.smartindent = true
 o.autoindent = true
 o.matchpairs = o.matchpairs .. ',<:>'
-o.cursorline = true
+o.cursorline = false
 
 g.netrw_banner = 0
 g.netrw_liststyle = 0
@@ -147,11 +141,11 @@ map('n', '<leader>gpl', ':G pl<CR>', options)
 map('n', '<leader>gfu', ':G fu<CR>', options)
 map('n', '<leader>gl', ':diffget //3<CR>', options)
 map('n', '<leader>ga', ':diffget //2<CR>', options)
+map('n', '<leader>pv' , ':NvimTreeToggle<CR>', { noremap = true })
 
 map('t', '<F1>', '<C-\\><C-n>', options)
 
+
 -- plugins setup
 require("plugins")
-cmd("colorscheme tender")
-
-require("statusline")
+-- require("statusline")

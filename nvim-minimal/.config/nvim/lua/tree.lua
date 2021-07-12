@@ -78,7 +78,5 @@ g.nvim_tree_icons = {
     }
 }
 
-map('n', '<leader>pv' , ':NvimTreeToggle<CR>', { noremap = true })
-
 -- a list of groups can be found at `:help nvim_tree_highlight`
 vim.cmd('highlight NvimTreeFolderIcon guibg=blue')

@@ -11,48 +11,97 @@ end
 return require('packer').startup(function()
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
+
+    -- lsp plugings
     use {
         'neovim/nvim-lspconfig',
+        opt = true,
+        event = 'VimEnter',
         config = function() require('lsp-config') end,
     }
     use {
         'hrsh7th/nvim-compe',
-        requires = {
-            {'hrsh7th/vim-vsnip'},
-            {'hrsh7th/vim-vsnip-integ'},
-            {'rafamadriz/friendly-snippets'}
-        },
-        config = function() require'compe-conf' end
+        config = function() require'compe-conf' end,
+        opt = true,
+        after = 'nvim-lspconfig',
     }
+    use {
+        'hrsh7th/vim-vsnip',
+        opt = true,
+        after = 'nvim-compe',
+    }
+    use {
+        'hrsh7th/vim-vsnip-integ',
+        opt = true,
+        after = 'vim-vsnip',
+    }
+    use {
+        'rafamadriz/friendly-snippets',
+        opt = true,
+        after = 'vim-vsnip',
+    }
+    use {'psf/black', opt=true, cmd={'Black'}}
+
     use {
         'nvim-treesitter/nvim-treesitter',
         run=':TSUpdate',
         config = function() require "treesitter-config" end,
     }
-    use {'nvim-treesitter/nvim-treesitter-textobjects'}
+    use {
+        'nvim-treesitter/nvim-treesitter-textobjects',
+        after = 'nvim-treesitter'
+    }
 
-    use {'psf/black', opt=true, ft={'python'}}
     use {'tpope/vim-fugitive', opt=true, cmd={'Git', 'G'}}
-    use 'b3nj5m1n/kommentary'
-    use 'tpope/vim-surround'
+    use {'b3nj5m1n/kommentary', event = 'BufEnter'}
+    use {'tpope/vim-surround', event = 'BufEnter'}
     use {
         'windwp/nvim-autopairs',
         config = function() require 'nvim-autopairs'.setup() end,
+        event = 'InsertEnter',
     }
     use {
         'norcalli/nvim-colorizer.lua',
         config = function() require 'colorizer'.setup() end,
+        event = 'VimEnter',
     }
-    use 'jacoborus/tender.vim'
-    use {'andymass/vim-matchup', event = 'VimEnter'}
+    use {
+        'projekt0n/github-nvim-theme',
+        event = 'VimEnter',
+        config = function()
+            require('github-theme').setup({
+                transparent = true,
+                hideInactiveStatusline = true,
+                darkSidebar = true,
+            })
+        end,
+    }
+    use {'andymass/vim-matchup', event = 'BufEnter'}
     use {
         'kyazdani42/nvim-tree.lua',
         config = function() require 'tree' end,
+        cmd = {
+			'NvimTreeClipboard',
+			'NvimTreeClose',
+			'NvimTreeFindFile',
+			'NvimTreeOpen',
+			'NvimTreeRefresh',
+			'NvimTreeToggle',
+		},
     }
     use {
-        'michaelb/sniprun',
-        run='bash ./install.sh',
-        opt=true,
-        cmd={'SnipRun'}
+        'hoob3rt/lualine.nvim',
+        event = 'VimEnter',
+        config = function()
+            require('lualine').setup({
+                options = {
+                    icons_enabled = false,
+                    theme = 'github',
+                    component_separators = {'', ''},
+                    section_separators = {'', ''},
+                    disabled_filetypes = {}
+                },
+            })
+        end,
     }
 end)
