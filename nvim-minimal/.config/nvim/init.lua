@@ -108,7 +108,7 @@ map('v', '<', '<gv', options)
 map('v', '>', '>gv', options)
 
 map('n', '<C-p>', ':find ', options)
-map('n', '<C-b>', ':b ', options)
+map('n', '<C-b>', ':ls t<cr>:b ', options)
 map('n', '<leader>ps', ':silent grep ""<Left>', options)
 map('v', '<C-f>', '"hy:silent grep "<C-r>h"<CR>', options)
 map('n', '<leader>pw', ':silent grep <C-R>=expand("<cword>")<CR><CR>', options)
@@ -141,7 +141,12 @@ map('n', '<leader>gpl', ':G pl<CR>', options)
 map('n', '<leader>gfu', ':G fu<CR>', options)
 map('n', '<leader>gl', ':diffget //3<CR>', options)
 map('n', '<leader>ga', ':diffget //2<CR>', options)
-map('n', '<leader>pv' , ':NvimTreeToggle<CR>', { noremap = true })
+map('n', '<leader>pv' , ':NvimTreeToggle<CR>', options)
+
+-- special remaps
+map('n', 'n', 'nzz', options)
+map('n', 'N', 'Nzz', options)
+map('n', '<leader>e', ':e <C-R>=expand("%:p:h")<CR>/', options)
 
 map('t', '<F1>', '<C-\\><C-n>', options)
 
