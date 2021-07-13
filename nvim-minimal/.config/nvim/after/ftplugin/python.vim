@@ -8,6 +8,7 @@ if executable("flake8")
 endif
 
 nnoremap <leader>pd Obreakpoint()<Esc>
+nnoremap <F3> :sp<bar>terminal python<CR>
 nnoremap <F5> :sp<bar>lua require("my-functions").executePythonModule('<C-R>=expand("%")<CR>')<CR>
 nnoremap <F6> :sp<bar>terminal python -m pytest -vvs<CR>
 nnoremap <F7> :sp<bar>terminal python -m pytest -vvs %<CR>
