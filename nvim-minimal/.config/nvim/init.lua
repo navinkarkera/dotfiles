@@ -149,7 +149,6 @@ map('n', 'N', 'Nzz', options)
 map('n', '<leader>e', ':e <C-R>=expand("%:p:h")<CR>/', options)
 
 map('t', '<F1>', '<C-\\><C-n>', options)
-map('n', '<leader>tt', ':vsp<bar>terminal<CR>', options)
 
 
 -- plugins setup

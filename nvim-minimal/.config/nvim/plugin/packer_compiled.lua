@@ -84,7 +84,7 @@ _G.packer_plugins = {
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/friendly-snippets"
   },
   ["github-nvim-theme"] = {
-    config = { "\27LJ\2\ns\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\3\27hideInactiveStatusline\2\16transparent\2\16darkSidebar\2\nsetup\17github-theme\frequire\0" },
+    config = { "\27LJ\2\ns\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\3\16darkSidebar\2\27hideInactiveStatusline\2\16transparent\2\nsetup\17github-theme\frequire\0" },
     loaded = false,
     needs_bufread = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/github-nvim-theme"
@@ -95,7 +95,7 @@ _G.packer_plugins = {
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/kommentary"
   },
   ["lualine.nvim"] = {
-    config = { "\27LJ\2\n�\1\0\0\5\0\v\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\t\0005\3\3\0005\4\4\0=\4\5\0035\4\6\0=\4\a\0034\4\0\0=\4\b\3=\3\n\2B\0\2\1K\0\1\0\foptions\1\0\0\23disabled_filetypes\23section_separators\1\3\0\0\b\b\25component_separators\1\3\0\0\b\b\1\0\2\18icons_enabled\1\ntheme\vgithub\nsetup\flualine\frequire\0" },
+    config = { "\27LJ\2\n�\1\0\0\5\0\v\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\t\0005\3\3\0005\4\4\0=\4\5\0035\4\6\0=\4\a\0034\4\0\0=\4\b\3=\3\n\2B\0\2\1K\0\1\0\foptions\1\0\0\23disabled_filetypes\23section_separators\1\3\0\0\b\b\25component_separators\1\3\0\0\b\b\1\0\2\ntheme\vgithub\18icons_enabled\1\nsetup\flualine\frequire\0" },
     loaded = false,
     needs_bufread = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/lualine.nvim"
@@ -129,6 +129,12 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/nvim-lspconfig"
+  },
+  ["nvim-toggleterm.lua"] = {
+    config = { "\27LJ\2\n-\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\18terminal-conf\frequire\0" },
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/nvim-toggleterm.lua"
   },
   ["nvim-tree.lua"] = {
     commands = { "NvimTreeClipboard", "NvimTreeClose", "NvimTreeFindFile", "NvimTreeOpen", "NvimTreeRefresh", "NvimTreeToggle" },
@@ -216,9 +222,9 @@ vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads
 time([[Defining lazy-load event autocommands]], true)
-vim.cmd [[au VimEnter * ++once lua require("packer.load")({'github-nvim-theme', 'nvim-lspconfig', 'lualine.nvim', 'nvim-colorizer.lua'}, { event = "VimEnter *" }, _G.packer_plugins)]]
-vim.cmd [[au BufEnter * ++once lua require("packer.load")({'vim-matchup', 'vim-surround', 'kommentary'}, { event = "BufEnter *" }, _G.packer_plugins)]]
 vim.cmd [[au InsertEnter * ++once lua require("packer.load")({'nvim-autopairs'}, { event = "InsertEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au BufEnter * ++once lua require("packer.load")({'vim-matchup', 'vim-surround', 'kommentary'}, { event = "BufEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au VimEnter * ++once lua require("packer.load")({'lualine.nvim', 'nvim-colorizer.lua', 'nvim-toggleterm.lua', 'nvim-lspconfig', 'github-nvim-theme'}, { event = "VimEnter *" }, _G.packer_plugins)]]
 time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")
 if should_profile then save_profiles() end

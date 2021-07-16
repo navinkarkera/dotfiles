@@ -29,6 +29,7 @@ function! FzyCommand(choice_command, vim_command) abort
 endfunction
 
 nnoremap <silent> <c-p> :call FzyCommand('fd -L -t f -H -E ".git" .', ':e ')<cr>
+nnoremap <silent> <m-p> :call FzyCommand('fd -L -t f -H -E ".git" . <C-R>=expand("%:.:h")<CR>/', ':e ')<cr>
 nnoremap <silent> <c-\> :call FzyCommand('fd -L -t f -H -E ".git" .', ':vsp ')<cr>
 nnoremap <silent> <m-\> :call FzyCommand('fd -L -t f -H -E ".git" .', ':sp ')<cr>
 nnoremap <silent> <leader>fc :call FzyCommand('fd -L -t f -H -E ".git" . ~/.config/', ':e ')<cr>

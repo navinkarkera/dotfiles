@@ -104,4 +104,11 @@ return require('packer').startup(function()
             })
         end,
     }
+    use {
+        "akinsho/nvim-toggleterm.lua",
+        event = 'VimEnter',
+        config = function()
+            require("terminal-conf")
+        end
+    }
 end)
