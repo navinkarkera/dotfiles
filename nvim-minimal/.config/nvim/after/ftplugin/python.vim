@@ -14,3 +14,4 @@ nnoremap <buffer> <F6> :sp<bar>terminal python -m pytest -vvs<CR>
 nnoremap <buffer> <F7> :sp<bar>terminal python -m pytest -vvs %:.<CR>
 nnoremap <buffer> <F8> :sp<bar>terminal python -m pytest -vvsk <C-R>=expand("<cword>")<CR><CR>
 nnoremap <buffer> <leader><CR> :lua require("my-functions").send_to_python_repl()<CR>
+vnoremap <buffer> <leader><CR> "hy:lua require("my-functions").send_selected_to_python_repl()<CR>

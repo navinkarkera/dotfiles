@@ -9,14 +9,13 @@ end
 
 function M.executePythonModule(filePath)
     local modulePath = M.getPythonModulePath(filePath)
-    vim.cmd("terminal python -m " .. modulePath)
+    vim.fn.termopen("python -m " .. modulePath)
 end
 
 local pythonRepl = Terminal:new({
     cmd = "python",
     hidden = true,
     on_open = function(term)
-        vim.cmd("startinsert!")
         vim.api.nvim_buf_set_keymap(term.bufnr, "t", "<F3>", "<cmd>close<CR>", {noremap = true, silent = true})
     end,
 })
@@ -26,9 +25,19 @@ function M.python_repl_toggle()
 end
 
 function M.send_to_python_repl()
-    local cur_line = vim.api.nvim_get_current_line()
-    pythonRepl:open()
-    pythonRepl:send(cur_line, false)
+    code = vim.api.nvim_get_current_line()
+    if pythonRepl:is_open() == false then
+        pythonRepl:toggle()
+    end
+    pythonRepl:send(code, true)
+end
+
+function M.send_selected_to_python_repl()
+    code = vim.fn.getreg('h')
+    if pythonRepl:is_open() == false then
+        pythonRepl:toggle()
+    end
+    pythonRepl:send(code, true)
 end
 
 return M
