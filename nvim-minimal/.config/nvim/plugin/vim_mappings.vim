@@ -4,6 +4,16 @@ fun! TrimWhitespace()
     call winrestview(l:save)
 endfun
 
+function! ToggleQuickFix()
+    if empty(filter(getwininfo(), 'v:val.quickfix'))
+        copen
+    else
+        cclose
+    endif
+endfunction
+
+nnoremap <silent> <leader>c :call ToggleQuickFix()<cr>
+
 augroup WhiteSpace
     autocmd!
     autocmd BufWritePre * :call TrimWhitespace()
