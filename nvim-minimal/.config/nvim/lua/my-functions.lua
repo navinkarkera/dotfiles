@@ -9,7 +9,7 @@ end
 
 function M.executePythonModule(filePath)
     local modulePath = M.getPythonModulePath(filePath)
-    vim.fn.termopen("python -m " .. modulePath)
+    vim.cmd("terminal python -m " .. modulePath)
 end
 
 local pythonRepl = Terminal:new({
