@@ -143,9 +143,13 @@ map('n', '<leader>pv' , ':NvimTreeToggle<CR>', options)
 -- special remaps
 map('n', 'n', 'nzz', options)
 map('n', 'N', 'Nzz', options)
-map('n', '<leader>e', ':e <C-R>=expand("%:p:h")<CR>/', options)
+map('n', '<m-p>', ':e <C-R>=expand("%:.:h")<CR>/', options)
+map('n', 's', 'ciw', options)
+map('i', 'kj', '<C-[>', options)
+map('n', 'Y', 'y$', options)
+map('v', 'p', '"0p', options)
 
-map('t', '<F1>', '<C-\\><C-n>', options)
+map('t', 'kj', '<C-\\><C-n>', options)
 
 
 -- plugins setup
