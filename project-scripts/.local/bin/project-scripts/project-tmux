@@ -18,15 +18,16 @@ tmux switch-client -t $base && exit 0
 
 tn="tmux -2 -u -f $HOME/.config/tmux/.tmux.conf new"
 ta="tmux -2 -u -f $HOME/.config/tmux/.tmux.conf attach"
+cd $selected
 
 session-windows ()
 {
     $tn -c $selected -d -s $base
     tmux rename-window -t $base "edit"
-    [[ -d .venv ]] && tmux send-keys -t $base "source .venv/bin/activate"
+    [[ -d .venv ]] && tmux send-keys -t $base "source .venv/bin/activate" Enter
     tmux send-keys -t $base "nvim" Enter
     tmux neww -c $selected -t $base -n "shell"
-    [[ -d .venv ]] && tmux send-keys -t $base "source .venv/bin/activate"
+    [[ -d .venv ]] && tmux send-keys -t $base "source .venv/bin/activate" Enter
     tmux select-window -l
 }
 

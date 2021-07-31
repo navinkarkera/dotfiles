@@ -57,7 +57,15 @@ return require('packer').startup(function()
     use {'tpope/vim-surround', event = 'BufEnter'}
     use {
         'windwp/nvim-autopairs',
-        config = function() require 'nvim-autopairs'.setup() end,
+        config = function()
+            require('nvim-autopairs').setup({
+                disable_filetype = { "TelescopePrompt" , "vim" },
+            })
+            require 'nvim-autopairs.completion.compe'.setup({
+                map_cr = true, --  map <CR> on insert mode
+                map_complete = true -- it will auto insert `(` after select function or method item
+            })
+        end,
         event = 'InsertEnter',
     }
     use {

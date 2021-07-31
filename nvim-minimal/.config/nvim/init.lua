@@ -113,8 +113,8 @@ map('n', '<leader>ps', ':silent grep ""<Left>', options)
 map('v', '<C-f>', '"hy:silent grep "<C-r>h"<CR>', options)
 map('n', '<leader>pw', ':silent grep <C-R>=expand("<cword>")<CR><CR>', options)
 map('n', '<leader>phw', ':h <C-R>=expand("<cword>")<CR><CR>', options)
-map('n', '<C-j>', ':cn<cr>', options)
-map('n', '<C-k>', ':cp<cr>', options)
+map('n', '<C-j>', ':cn<cr>zz', options)
+map('n', '<C-k>', ':cp<cr>zz', options)
 
 map('v', '<C-r>', '"hy:%s/<C-r>h//gc<left><left><left>', options)
 map('n', '<C-l>', ':bnext<cr>', options)
@@ -143,11 +143,30 @@ map('n', '<leader>pv' , ':NvimTreeToggle<CR>', options)
 -- special remaps
 map('n', 'n', 'nzz', options)
 map('n', 'N', 'Nzz', options)
+map('n', 'J', 'mzJ`z', options)
+
+map('n', 'Y', 'y$', options)
+
+-- undo breakpoints
+map('i', ',', ',<c-g>u', options)
+map('i', '.', '.<c-g>u', options)
+map('i', '!', '!<c-g>u', options)
+map('i', '?', '?<c-g>u', options)
+map('i', '[', '[<c-g>u', options)
+map('i', '(', '(<c-g>u', options)
+
+-- relative jumplist
+map('n', 'k', [[(v:count > 5 ? "m'". v:count : "") . "k"]], { expr = true, noremap = true, silent = true })
+map('n', 'j', [[(v:count > 5 ? "m'". v:count : "") . "j"]], { expr = true, noremap = true, silent = true })
+
 map('n', '<m-p>', ':e <C-R>=expand("%:.:h")<CR>/', options)
 map('n', 's', 'ciw', options)
 map('i', 'kj', '<C-[>', options)
-map('n', 'Y', 'y$', options)
 map('v', 'p', '"0p', options)
+map('i', '<C-l>', '<Right>', options)
+map('i', '<C-h>', '<Left>', options)
+map('i', '<C-k>', '<Up>', options)
+map('i', '<C-j>', '<Down>', options)
 
 map('t', 'kj', '<C-\\><C-n>', options)
 
