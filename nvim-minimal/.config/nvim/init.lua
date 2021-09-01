@@ -146,6 +146,7 @@ map('n', 'N', 'Nzz', options)
 map('n', 'J', 'mzJ`z', options)
 
 map('n', 'Y', 'y$', options)
+map('x', 'Y', 'y$', options)
 
 -- undo breakpoints
 map('i', ',', ',<c-g>u', options)
@@ -162,7 +163,6 @@ map('n', 'j', [[(v:count > 5 ? "m'". v:count : "") . "j"]], { expr = true, norem
 map('n', '<m-p>', ':e <C-R>=expand("%:.:h")<CR>/', options)
 map('n', 's', 'ciw', options)
 map('i', 'kj', '<C-[>', options)
-map('v', 'p', '"0p', options)
 map('i', '<C-l>', '<Right>', options)
 map('i', '<C-h>', '<Left>', options)
 map('i', '<C-k>', '<Up>', options)

@@ -12,6 +12,6 @@ nnoremap <silent> <buffer> <F3> :lua require("my-functions").python_repl_toggle(
 nnoremap <silent> <buffer> <F5> :sp<bar>lua require("my-functions").executePythonModule('<C-R>=expand("%:.")<CR>')<CR>
 nnoremap <silent> <buffer> <F6> :sp<bar>terminal python -m pytest -vvs<CR>
 nnoremap <silent> <buffer> <F7> :sp<bar>terminal python -m pytest -vvs %:.<CR>
-nnoremap <silent> <buffer> <F8> :sp<bar>terminal python -m pytest -vvsk <C-R>=expand("<cword>")<CR><CR>
+nnoremap <silent> <buffer> <F8> :norm w[mw<CR> :sp<bar>terminal python -m pytest -vvsk <C-R>=expand("<cword>")<CR><CR>
 nnoremap <silent> <buffer> <leader><CR> :lua require("my-functions").send_to_python_repl()<CR>
 vnoremap <silent> <buffer> <leader><CR> "hy:lua require("my-functions").send_selected_to_python_repl()<CR>

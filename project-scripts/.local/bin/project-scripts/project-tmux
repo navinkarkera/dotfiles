@@ -13,7 +13,7 @@ else
 fi
 
 base="$(basename $selected)"
-
+base=$(echo $base | tr . _)
 tmux switch-client -t $base && exit 0
 
 tn="tmux -2 -u -f $HOME/.config/tmux/.tmux.conf new"
