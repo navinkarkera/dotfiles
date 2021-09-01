@@ -11,6 +11,7 @@ end
 return require('packer').startup(function()
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
+    use { 'hrsh7th/cmp-nvim-lsp' }
 
     -- lsp plugings
     use {
@@ -20,26 +21,39 @@ return require('packer').startup(function()
         config = function() require('lsp-config') end,
     }
     use {
-        'hrsh7th/nvim-compe',
-        config = function() require'compe-conf' end,
+        'L3MON4D3/LuaSnip',
         opt = true,
         after = 'nvim-lspconfig',
     }
     use {
-        'hrsh7th/vim-vsnip',
+        'hrsh7th/nvim-cmp',
+        config = function() require'cmp-conf' end,
         opt = true,
-        after = 'nvim-compe',
+        after = 'LuaSnip',
+    }
+
+    -- cmp sources
+    use {
+        'saadparwaiz1/cmp_luasnip',
+        opt = true,
+        after = 'nvim-cmp',
     }
     use {
-        'hrsh7th/vim-vsnip-integ',
+        'hrsh7th/cmp-buffer',
         opt = true,
-        after = 'vim-vsnip',
+        after = 'nvim-cmp',
     }
     use {
-        'rafamadriz/friendly-snippets',
+        'hrsh7th/cmp-path',
         opt = true,
-        after = 'vim-vsnip',
+        after = 'nvim-cmp',
     }
+    use {
+        'hrsh7th/cmp-nvim-lua',
+        opt = true,
+        ft = {"lua", "vim"},
+    }
+
     use {'psf/black', opt=true, cmd={'Black'}}
 
     use {
@@ -60,10 +74,6 @@ return require('packer').startup(function()
         config = function()
             require('nvim-autopairs').setup({
                 disable_filetype = { "TelescopePrompt" , "vim" },
-            })
-            require 'nvim-autopairs.completion.compe'.setup({
-                map_cr = true, --  map <CR> on insert mode
-                map_complete = true -- it will auto insert `(` after select function or method item
             })
         end,
         event = 'InsertEnter',
