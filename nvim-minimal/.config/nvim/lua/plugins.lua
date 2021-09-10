@@ -11,7 +11,6 @@ end
 return require('packer').startup(function()
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
-    use { 'hrsh7th/cmp-nvim-lsp' }
 
     -- lsp plugings
     use {
@@ -21,39 +20,22 @@ return require('packer').startup(function()
         config = function() require('lsp-config') end,
     }
     use {
-        'L3MON4D3/LuaSnip',
-        opt = true,
-        after = 'nvim-lspconfig',
-    }
+        'ms-jpq/coq_nvim',
+        branch = 'coq',
+        config = function()
+            vim.g.coq_settings = {
+                auto_start="shut-up",
+                display = {
+                    icons = {mode='none'},
+                    pum = {fast_close=false},
+                },
+            }
+        end
+    } -- main one
     use {
-        'hrsh7th/nvim-cmp',
-        config = function() require'cmp-conf' end,
-        opt = true,
-        after = 'LuaSnip',
-    }
-
-    -- cmp sources
-    use {
-        'saadparwaiz1/cmp_luasnip',
-        opt = true,
-        after = 'nvim-cmp',
-    }
-    use {
-        'hrsh7th/cmp-buffer',
-        opt = true,
-        after = 'nvim-cmp',
-    }
-    use {
-        'hrsh7th/cmp-path',
-        opt = true,
-        after = 'nvim-cmp',
-    }
-    use {
-        'hrsh7th/cmp-nvim-lua',
-        opt = true,
-        ft = {"lua", "vim"},
-    }
-
+        'ms-jpq/coq.artifacts',
+        branch= 'artifacts'
+    } -- 9000+ Snippets
     use {'psf/black', opt=true, cmd={'Black'}}
 
     use {
@@ -69,15 +51,6 @@ return require('packer').startup(function()
     use {'tpope/vim-fugitive', opt=true, cmd={'Git', 'G'}}
     use {'b3nj5m1n/kommentary', event = 'BufEnter'}
     use {'tpope/vim-surround', event = 'BufEnter'}
-    use {
-        'windwp/nvim-autopairs',
-        config = function()
-            require('nvim-autopairs').setup({
-                disable_filetype = { "TelescopePrompt" , "vim" },
-            })
-        end,
-        event = 'InsertEnter',
-    }
     use {
         'norcalli/nvim-colorizer.lua',
         config = function() require 'colorizer'.setup() end,

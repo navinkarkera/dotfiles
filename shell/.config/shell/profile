@@ -14,6 +14,7 @@ unsetopt PROMPT_SP
 export EDITOR="nvim"
 export TERMINAL="alacritty"
 export BROWSER="brave"
+export GPG_TTY=$(tty)
 
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"

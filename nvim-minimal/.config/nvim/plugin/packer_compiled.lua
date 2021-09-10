@@ -69,57 +69,20 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  LuaSnip = {
-    after = { "nvim-cmp" },
-    load_after = {
-      ["nvim-lspconfig"] = true
-    },
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/LuaSnip"
-  },
   black = {
     commands = { "Black" },
     loaded = false,
     needs_bufread = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/black"
   },
-  ["cmp-buffer"] = {
-    after_files = { "/home/navin/.local/share/nvim/site/pack/packer/opt/cmp-buffer/after/plugin/cmp_buffer.lua" },
-    load_after = {
-      ["nvim-cmp"] = true
-    },
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/cmp-buffer"
-  },
-  ["cmp-nvim-lsp"] = {
+  ["coq.artifacts"] = {
     loaded = true,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp"
+    path = "/home/navin/.local/share/nvim/site/pack/packer/start/coq.artifacts"
   },
-  ["cmp-nvim-lua"] = {
-    after_files = { "/home/navin/.local/share/nvim/site/pack/packer/opt/cmp-nvim-lua/after/plugin/cmp_nvim_lua.lua" },
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/cmp-nvim-lua"
-  },
-  ["cmp-path"] = {
-    after_files = { "/home/navin/.local/share/nvim/site/pack/packer/opt/cmp-path/after/plugin/cmp_path.lua" },
-    load_after = {
-      ["nvim-cmp"] = true
-    },
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/cmp-path"
-  },
-  cmp_luasnip = {
-    after_files = { "/home/navin/.local/share/nvim/site/pack/packer/opt/cmp_luasnip/after/plugin/cmp_luasnip.lua" },
-    load_after = {
-      ["nvim-cmp"] = true
-    },
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/cmp_luasnip"
+  coq_nvim = {
+    config = { "\27LJ\1\2\1\0\0\4\0\n\0\v4\0\0\0007\0\1\0003\1\3\0003\2\5\0003\3\4\0:\3\6\0023\3\a\0:\3\b\2:\2\t\1:\1\2\0G\0\1\0\fdisplay\bpum\1\0\1\15fast_close\1\nicons\1\0\0\1\0\1\tmode\tnone\1\0\1\15auto_start\fshut-up\17coq_settings\6g\bvim\0" },
+    loaded = true,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/start/coq_nvim"
   },
   ["github-nvim-theme"] = {
     config = { "\27LJ\1\2s\0\0\2\0\4\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\3\0>\0\2\1G\0\1\0\1\0\3\16transparent\2\16darkSidebar\2\27hideInactiveStatusline\2\nsetup\17github-theme\frequire\0" },
@@ -138,22 +101,6 @@ _G.packer_plugins = {
     needs_bufread = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/lualine.nvim"
   },
-  ["nvim-autopairs"] = {
-    config = { "\27LJ\1\2t\0\0\3\0\6\0\t4\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\4\0003\2\3\0:\2\5\1>\0\2\1G\0\1\0\21disable_filetype\1\0\0\1\3\0\0\20TelescopePrompt\bvim\nsetup\19nvim-autopairs\frequire\0" },
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/nvim-autopairs"
-  },
-  ["nvim-cmp"] = {
-    after = { "cmp-buffer", "cmp_luasnip", "cmp-path" },
-    config = { "\27LJ\1\2(\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\rcmp-conf\frequire\0" },
-    load_after = {
-      LuaSnip = true
-    },
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/nvim-cmp"
-  },
   ["nvim-colorizer.lua"] = {
     config = { "\27LJ\1\0027\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\1G\0\1\0\nsetup\14colorizer\frequire\0" },
     loaded = false,
@@ -161,7 +108,6 @@ _G.packer_plugins = {
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/nvim-colorizer.lua"
   },
   ["nvim-lspconfig"] = {
-    after = { "LuaSnip" },
     config = { "\27LJ\1\2*\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\15lsp-config\frequire\0" },
     loaded = false,
     needs_bufread = false,
@@ -215,6 +161,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: coq_nvim
+time([[Config for coq_nvim]], true)
+try_loadstring("\27LJ\1\2\1\0\0\4\0\n\0\v4\0\0\0007\0\1\0003\1\3\0003\2\5\0003\3\4\0:\3\6\0023\3\a\0:\3\b\2:\2\t\1:\1\2\0G\0\1\0\fdisplay\bpum\1\0\1\15fast_close\1\nicons\1\0\0\1\0\1\tmode\tnone\1\0\1\15auto_start\fshut-up\17coq_settings\6g\bvim\0", "config", "coq_nvim")
+time([[Config for coq_nvim]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
 try_loadstring("\27LJ\1\0021\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\22treesitter-config\frequire\0", "config", "nvim-treesitter")
@@ -239,16 +189,10 @@ time([[Defining lazy-load commands]], false)
 
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
-  -- Filetype lazy-loads
-time([[Defining lazy-load filetype autocommands]], true)
-vim.cmd [[au FileType lua ++once lua require("packer.load")({'cmp-nvim-lua'}, { ft = "lua" }, _G.packer_plugins)]]
-vim.cmd [[au FileType vim ++once lua require("packer.load")({'cmp-nvim-lua'}, { ft = "vim" }, _G.packer_plugins)]]
-time([[Defining lazy-load filetype autocommands]], false)
   -- Event lazy-loads
 time([[Defining lazy-load event autocommands]], true)
-vim.cmd [[au InsertEnter * ++once lua require("packer.load")({'nvim-autopairs'}, { event = "InsertEnter *" }, _G.packer_plugins)]]
-vim.cmd [[au VimEnter * ++once lua require("packer.load")({'nvim-lspconfig', 'lualine.nvim', 'nvim-colorizer.lua', 'github-nvim-theme', 'nvim-toggleterm.lua'}, { event = "VimEnter *" }, _G.packer_plugins)]]
-vim.cmd [[au BufEnter * ++once lua require("packer.load")({'vim-surround', 'vim-matchup', 'kommentary'}, { event = "BufEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au VimEnter * ++once lua require("packer.load")({'nvim-toggleterm.lua', 'nvim-lspconfig', 'nvim-colorizer.lua', 'github-nvim-theme', 'lualine.nvim'}, { event = "VimEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au BufEnter * ++once lua require("packer.load")({'vim-surround', 'kommentary', 'vim-matchup'}, { event = "BufEnter *" }, _G.packer_plugins)]]
 time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")
 if should_profile then save_profiles() end

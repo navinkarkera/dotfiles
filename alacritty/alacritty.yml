@@ -72,7 +72,7 @@ window:
   #
   # Values for `startup_mode` (macOS only):
   #   - SimpleFullscreen
-  #startup_mode: Windowed
+  startup_mode: Maximized
 
   # Window title
   #title: Alacritty
@@ -469,7 +469,7 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 1.0
+background_opacity: 0.98
 
 #selection:
   # This string contains all characters that are used as separators for
@@ -540,7 +540,7 @@ live_config_reload: true
 #
 # Directory the shell is started in. If this is unset, or `None`, the working
 # directory of the parent process will be used.
-#working_directory: None
+working_directory: /home/navin
 
 # Send ESC (\x1b) before characters when alt is pressed.
 #alt_send_esc: true

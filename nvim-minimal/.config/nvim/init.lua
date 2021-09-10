@@ -163,10 +163,6 @@ map('n', 'j', [[(v:count > 5 ? "m'". v:count : "") . "j"]], { expr = true, norem
 map('n', '<m-p>', ':e <C-R>=expand("%:.:h")<CR>/', options)
 map('n', 's', 'ciw', options)
 map('i', 'kj', '<C-[>', options)
-map('i', '<C-l>', '<Right>', options)
-map('i', '<C-h>', '<Left>', options)
-map('i', '<C-k>', '<Up>', options)
-map('i', '<C-j>', '<Down>', options)
 
 map('t', 'kj', '<C-\\><C-n>', options)
 
