@@ -125,7 +125,7 @@ font:
     #family: monospace
 
     # The `style` can be specified to pick a specific face.
-    style: Bold
+    style: Regular
 
   # Italic font face
   italic:
@@ -139,7 +139,7 @@ font:
     style: Italic
 
   # Bold italic font face
-  #bold_italic:
+  bold_italic:
     # Font family
     #
     # If the bold italic family is not specified, it will fall back to the
@@ -362,67 +362,67 @@ font:
 #     cyan: '#6d96a5'
 #     white: '#aeb3bb'
 
-# # Colors (Tender)
-# colors:
-#   # Default colors
-#   primary:
-#     background: '0x282828'
-#     foreground: '0xeeeeee'
-
-#   # Normal colors
-#   normal:
-#     black:   '0x282828'
-#     red:     '0xf43753'
-#     green:   '0xc9d05c'
-#     yellow:  '0xffc24b'
-#     blue:    '0xb3deef'
-#     magenta: '0xd3b987'
-#     cyan:    '0x73cef4'
-#     white:   '0xeeeeee'
-
-#   # Bright colors
-#   bright:
-#     black:   '0x4c4c4c'
-#     red:     '0xf43753'
-#     green:   '0xc9d05c'
-#     yellow:  '0xffc24b'
-#     blue:    '0xb3deef'
-#     magenta: '0xd3b987'
-#     cyan:    '0x73cef4'
-#     white:   '0xfeffff'
-
-# github Alacritty Colors
+# Colors (Tender)
 colors:
   # Default colors
   primary:
-    background: '0x24292e'
-    foreground: '0xd1d5da'
+    background: '0x282828'
+    foreground: '0xeeeeee'
 
   # Normal colors
   normal:
-    black:   '0x1D2125'
-    red:     '0xf14c4c'
-    green:   '0x23d18b'
-    yellow:  '0xe2e210'
-    blue:    '0x3b8eea'
-    magenta: '0xbc3fbc'
-    cyan:    '0x29b7da'
-    white:   '0xd1d5da'
+    black:   '0x282828'
+    red:     '0xf43753'
+    green:   '0xc9d05c'
+    yellow:  '0xffc24b'
+    blue:    '0xb3deef'
+    magenta: '0xd3b987'
+    cyan:    '0x73cef4'
+    white:   '0xeeeeee'
 
   # Bright colors
   bright:
-    black:   '0x666666'
-    red:     '0xf14c4c'
-    green:   '0x23d18b'
-    yellow:  '0xf5f543'
-    blue:    '0x3b8eea'
-    magenta: '0xd670d6'
-    cyan:    '0x29b7da'
-    white:   '0xd1d5da'
+    black:   '0x4c4c4c'
+    red:     '0xf43753'
+    green:   '0xc9d05c'
+    yellow:  '0xffc24b'
+    blue:    '0xb3deef'
+    magenta: '0xd3b987'
+    cyan:    '0x73cef4'
+    white:   '0xfeffff'
 
-  indexed_colors:
-    - { index: 16, color: '0xd18616' }
-    - { index: 17, color: '0xf14c4c' }
+# # github Alacritty Colors
+# colors:
+#   # Default colors
+#   primary:
+#     background: '0x24292e'
+#     foreground: '0xd1d5da'
+
+#   # Normal colors
+#   normal:
+#     black:   '0x1D2125'
+#     red:     '0xf14c4c'
+#     green:   '0x23d18b'
+#     yellow:  '0xe2e210'
+#     blue:    '0x3b8eea'
+#     magenta: '0xbc3fbc'
+#     cyan:    '0x29b7da'
+#     white:   '0xd1d5da'
+
+#   # Bright colors
+#   bright:
+#     black:   '0x666666'
+#     red:     '0xf14c4c'
+#     green:   '0x23d18b'
+#     yellow:  '0xf5f543'
+#     blue:    '0x3b8eea'
+#     magenta: '0xd670d6'
+#     cyan:    '0x29b7da'
+#     white:   '0xd1d5da'
+
+#   indexed_colors:
+#     - { index: 16, color: '0xd18616' }
+#     - { index: 17, color: '0xf14c4c' }
 
 # Bell
 #
@@ -469,7 +469,7 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.98
+background_opacity: 1.0
 
 #selection:
   # This string contains all characters that are used as separators for

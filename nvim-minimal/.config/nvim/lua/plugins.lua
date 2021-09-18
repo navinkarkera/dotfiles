@@ -19,23 +19,6 @@ return require('packer').startup(function()
         event = 'VimEnter',
         config = function() require('lsp-config') end,
     }
-    use {
-        'ms-jpq/coq_nvim',
-        branch = 'coq',
-        config = function()
-            vim.g.coq_settings = {
-                auto_start="shut-up",
-                display = {
-                    icons = {mode='none'},
-                    pum = {fast_close=false},
-                },
-            }
-        end
-    } -- main one
-    use {
-        'ms-jpq/coq.artifacts',
-        branch= 'artifacts'
-    } -- 9000+ Snippets
     use {'psf/black', opt=true, cmd={'Black'}}
 
     use {
@@ -51,23 +34,17 @@ return require('packer').startup(function()
     use {'tpope/vim-fugitive', opt=true, cmd={'Git', 'G'}}
     use {'b3nj5m1n/kommentary', event = 'BufEnter'}
     use {'tpope/vim-surround', event = 'BufEnter'}
-    use {
-        'norcalli/nvim-colorizer.lua',
-        config = function() require 'colorizer'.setup() end,
-        event = 'VimEnter',
-    }
-    use {
-        'projekt0n/github-nvim-theme',
-        event = 'VimEnter',
-        config = function()
-            require('github-theme').setup({
-                transparent = true,
-                hideInactiveStatusline = true,
-                darkSidebar = true,
-            })
-        end,
-    }
     use {'andymass/vim-matchup', event = 'BufEnter'}
+    use {'mattn/emmet-vim', ft={
+        "html",
+        "javascript",
+        "vue",
+        "javascriptreact",
+        "jsx",
+        "xml",
+        "htmldjango"
+    }}
+    use {'AndrewRadev/switch.vim', event = 'BufEnter'}
     use {
         'kyazdani42/nvim-tree.lua',
         config = function() require 'tree' end,
@@ -87,7 +64,7 @@ return require('packer').startup(function()
             require('lualine').setup({
                 options = {
                     icons_enabled = false,
-                    theme = 'github',
+                    theme = 'gruvbox',
                     component_separators = {'', ''},
                     section_separators = {'', ''},
                     disabled_filetypes = {}

@@ -11,6 +11,7 @@ require'nvim-treesitter.configs'.setup {
         "toml",
         "vue",
         "css",
+        "go",
     }, -- one of "all", "language", or a list of languages
     highlight = {
         enable = true,              -- false will disable the whole extension

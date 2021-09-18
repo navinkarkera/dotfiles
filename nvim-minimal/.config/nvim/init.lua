@@ -58,7 +58,7 @@ o.splitbelow = true
 o.belloff = "all"
 o.showmode = false
 o.concealcursor = "nc"
-o.completeopt = "menuone,noinsert,noselect"
+o.completeopt = "menu"
 o.complete = ".,w,b,u,i"
 o.virtualedit = "block"
 o.backspace = "indent,eol,start"
@@ -81,7 +81,7 @@ o.shiftwidth = 4
 o.smartindent = true
 o.autoindent = true
 o.matchpairs = o.matchpairs .. ',<:>'
-o.cursorline = false
+o.cursorline = true
 
 g.netrw_banner = 0
 g.netrw_liststyle = 0
@@ -129,7 +129,7 @@ map('n', '<leader>+', ':vertical resize +15<CR>', options)
 map('n', '<leader>-', ':vertical resize -10<CR>', options)
 map('v', 'J', ":m '>+1<CR>gv=gv", options)
 map('v', 'K', ":m '<-2<CR>gv=gv", options)
-map('n', '<F28>', ":bd<CR>", options)
+map('n', '<F4>', ":bd<CR>", options)
 map('n', '<C-s>', ":w<CR>", options)
 
 map('n', '<leader>gs' , ':G<CR>', options)
@@ -169,4 +169,3 @@ map('t', 'kj', '<C-\\><C-n>', options)
 
 -- plugins setup
 require("plugins")
--- require("statusline")
