@@ -26,62 +26,61 @@ g.loaded_lf                = true
 -- g.loaded_man               = true
 
 -- global options
-o.swapfile = false
+o.autoindent = true
+o.autoread = true
+o.backspace = "indent,eol,start"
 o.backup = false
-o.undodir = vim.env["HOME"] .. '/.local/share/vim/undodir'
-o.undofile = true
-o.dir = '/tmp'
-o.smartcase = true
-o.laststatus = 2
-o.hlsearch = false
-o.incsearch = true
-o.ignorecase = true
-o.smartcase = true
-o.scrolloff = 4
-o.mouse = 'a'
-o.hidden = true
-o.errorbells = false
-o.termguicolors = true
-o.path = '.,**'
-o.wildmenu = true
-o.wildmode = "longest:full,full"
-o.wildignore = '*.o,*.a,*.pyc,__pycache__,node_modules'
-o.showmode = false
-o.inccommand = "nosplit"
+o.belloff = "all"
 o.clipboard = "unnamed,unnamedplus"
 o.cmdheight = 2
-o.updatetime = 50
-o.shortmess = o.shortmess .. 'c'
-o.autoread = true
-o.splitright = true
-o.splitbelow = true
-o.belloff = "all"
-o.showmode = false
-o.concealcursor = "nc"
-o.completeopt = "menu"
 o.complete = ".,w,b,u,i"
-o.virtualedit = "block"
-o.backspace = "indent,eol,start"
+o.completeopt = "menu"
+o.concealcursor = "nc"
+o.cursorline = true
+o.dir = '/tmp'
+o.errorbells = false
+o.expandtab = true
+o.hidden = true
+o.hlsearch = false
+o.ignorecase = true
+o.inccommand = "nosplit"
+o.incsearch = true
+o.laststatus = 2
 o.lazyredraw = true
-o.synmaxcol = 200
+o.matchpairs = o.matchpairs .. ',<:>'
+o.mouse = 'a'
+o.path = '.,**'
+o.pumheight = 20
+o.scrolloff = 4
+o.shiftwidth = 4
+o.shortmess = o.shortmess .. 'c'
+o.showmode = false
+o.showmode = false
+o.smartcase = true
+o.smartcase = true
+o.smartindent = true
+o.softtabstop = 4
+o.splitbelow = true
+o.splitright = true
+o.swapfile = false
 o.switchbuf = "usetab"
+o.synmaxcol = 200
+o.tabstop = 4
+o.termguicolors = true
+o.undodir = vim.env["HOME"] .. '/.local/share/vim/undodir'
+o.undofile = true
+o.updatetime = 50
+o.virtualedit = "block"
+o.wildignore = '*.o,*.a,*.pyc,__pycache__,node_modules'
+o.wildmenu = true
+o.wildmode = "longest:full,full"
 
 -- window-local options
+wo.colorcolumn = '100'
 wo.number = true
 wo.relativenumber = true
-wo.wrap = false
-wo.colorcolumn = '100'
 wo.signcolumn = "number"
-
--- buffer-local options
-o.expandtab = true
-o.tabstop = 4
-o.softtabstop = 4
-o.shiftwidth = 4
-o.smartindent = true
-o.autoindent = true
-o.matchpairs = o.matchpairs .. ',<:>'
-o.cursorline = true
+wo.wrap = false
 
 g.netrw_banner = 0
 g.netrw_liststyle = 0
@@ -123,7 +122,6 @@ map('n', '<leader>h', ':wincmd h<cr>', options)
 map('n', '<leader>j', ':wincmd j<cr>', options)
 map('n', '<leader>k', ':wincmd k<cr>', options)
 map('n', '<leader>l', ':wincmd l<cr>', options)
-map('n', '<leader>u', ':UndotreeToggle<cr>', options)
 map('n', '<leader><cr>', ':so ~/.config/nvim/init.lua<CR>', options)
 map('n', '<leader>+', ':vertical resize +15<CR>', options)
 map('n', '<leader>-', ':vertical resize -10<CR>', options)

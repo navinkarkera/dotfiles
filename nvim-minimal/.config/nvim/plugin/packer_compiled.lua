@@ -125,6 +125,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/packer.nvim"
   },
+  ["splitjoin.vim"] = {
+    loaded = false,
+    needs_bufread = true,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/splitjoin.vim"
+  },
   ["switch.vim"] = {
     loaded = false,
     needs_bufread = true,
@@ -187,7 +192,7 @@ time([[Defining lazy-load filetype autocommands]], false)
   -- Event lazy-loads
 time([[Defining lazy-load event autocommands]], true)
 vim.cmd [[au VimEnter * ++once lua require("packer.load")({'nvim-toggleterm.lua', 'nvim-lspconfig', 'lualine.nvim'}, { event = "VimEnter *" }, _G.packer_plugins)]]
-vim.cmd [[au BufEnter * ++once lua require("packer.load")({'kommentary', 'vim-surround', 'switch.vim', 'vim-matchup'}, { event = "BufEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au BufEnter * ++once lua require("packer.load")({'kommentary', 'vim-surround', 'switch.vim', 'vim-matchup', 'splitjoin.vim'}, { event = "BufEnter *" }, _G.packer_plugins)]]
 time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")
 if should_profile then save_profiles() end

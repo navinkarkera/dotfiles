@@ -6,8 +6,14 @@ function newTerm(cmd)
         cmd = cmd,
         hidden = true,
         on_open = function(term)
-            vim.api.nvim_buf_set_keymap(term.bufnr, "t", "<M-t>", "<cmd>close<CR>", {noremap = true, silent = true})
-            vim.api.nvim_buf_set_keymap(term.bufnr, "n", "<M-t>", "<cmd>close<CR>", {noremap = true, silent = true})
+            vim.api.nvim_buf_set_keymap(term.bufnr, "t", "<M-t>", "<cmd>close<CR>", {
+                noremap = true,
+                silent = true,
+            })
+            vim.api.nvim_buf_set_keymap(term.bufnr, "n", "<M-t>", "<cmd>close<CR>", {
+                noremap = true,
+                silent = true,
+            })
         end,
     })
     return term
@@ -25,6 +31,7 @@ function M.executePythonModule(filePath)
     local modulePath = M.getPythonModulePath(filePath)
     vim.cmd("terminal python -m " .. modulePath)
 end
+
 function M.python_repl_toggle()
     pythonRepl:toggle()
 end

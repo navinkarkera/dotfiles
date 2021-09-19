@@ -22,6 +22,17 @@ augroup END
 augroup NORA
     autocmd FileType html,htmldjango,scss,css,javascript,jsx,typescriptreact,vue setlocal tabstop=2 shiftwidth=2 expandtab
     autocmd FileType markdown setlocal spell wrap
+    autocmd FileType markdown let b:switch_custom_definitions =
+                \ [
+                    \   { '\v^(\s*[*+-] )?\[ \]': '\1[x]',
+                    \     '\v^(\s*[*+-] )?\[x\]': '\1[-]',
+                    \     '\v^(\s*[*+-] )?\[-\]': '\1[ ]',
+                    \   },
+                    \   { '\v^(\s*\d+\. )?\[ \]': '\1[x]',
+                    \     '\v^(\s*\d+\. )?\[x\]': '\1[-]',
+                    \     '\v^(\s*\d+\. )?\[-\]': '\1[ ]',
+                    \   },
+                    \ ]
 
     autocmd TextYankPost * silent! lua require 'vim.highlight'.on_yank({timeout = 40})
     autocmd BufWritePre *.py :Black
@@ -42,14 +53,14 @@ highlight ColorColumn guibg=grey20
 highlight MatchWord guibg=grey30
 highlight FloatBorder guibg=Black
 
-function! CleverTab()
-  if pumvisible()
-    return "\<C-N>"
-  endif
+function! CleverTab(direction)
   if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
     return "\<Tab>"
   else
-    return "\<C-N>"
+    if a:direction > 0
+        return "\<C-N>"
+    else
+        return "\<C-P>"
   endif
 endfunction
 inoremap <expr> <silent> <tab> CleverTab()
@@ -64,5 +75,6 @@ function! OmniCom()
     return "\<C-N>"
   endif
 endfunction
-inoremap <expr> <silent> <tab> CleverTab()
+inoremap <expr> <silent> <tab> CleverTab(1)
+inoremap <expr> <silent> <s-tab> CleverTab(-1)
 inoremap <expr> <silent> <c-space> OmniCom()

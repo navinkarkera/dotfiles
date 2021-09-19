@@ -45,6 +45,7 @@ return require('packer').startup(function()
         "htmldjango"
     }}
     use {'AndrewRadev/switch.vim', event = 'BufEnter'}
+    use {'AndrewRadev/splitjoin.vim', event = 'BufEnter'}
     use {
         'kyazdani42/nvim-tree.lua',
         config = function() require 'tree' end,
