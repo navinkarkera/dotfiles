@@ -52,6 +52,8 @@ highlight CursorLine guibg=grey20
 highlight ColorColumn guibg=grey20
 highlight MatchWord guibg=grey30
 highlight FloatBorder guibg=Black
+highlight diffAdded guifg=green
+highlight diffRemoved guifg=red
 
 function! CleverTab(direction)
   if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
