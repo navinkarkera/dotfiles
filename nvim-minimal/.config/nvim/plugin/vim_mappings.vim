@@ -65,7 +65,6 @@ function! CleverTab(direction)
         return "\<C-P>"
   endif
 endfunction
-inoremap <expr> <silent> <tab> CleverTab()
 
 function! OmniCom()
   if pumvisible()
@@ -77,6 +76,6 @@ function! OmniCom()
     return "\<C-N>"
   endif
 endfunction
-inoremap <expr> <silent> <tab> CleverTab(1)
-inoremap <expr> <silent> <s-tab> CleverTab(-1)
+inoremap <expr> <silent> <tab> CleverTab(-1)
+inoremap <expr> <silent> <s-tab> CleverTab(1)
 inoremap <expr> <silent> <c-space> OmniCom()
