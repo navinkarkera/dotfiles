@@ -50,13 +50,20 @@ highlight LineNr guibg=grey15 guifg=grey50
 highlight CursorLineNr guibg=grey20 guifg=grey40
 highlight CursorLine guibg=grey15
 highlight ColorColumn guibg=grey5
-highlight MatchWord guibg=grey30
+highlight MatchWord guibg=grey15
 highlight FloatBorder guibg=Black
 highlight diffAdded guifg=green
 highlight diffRemoved guifg=red
 highlight Normal guibg=black
 highlight NonText guibg=black
 highlight Visual guibg=grey30
+highlight Statement gui=italic
+highlight Comment gui=italic
+highlight Constant gui=bold
+highlight! link Title Directory
+highlight! link MoreMsg Comment
+highlight! link Question Comment
+highlight! link vimFunction Identifier
 
 function! CleverTab(direction)
   if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
