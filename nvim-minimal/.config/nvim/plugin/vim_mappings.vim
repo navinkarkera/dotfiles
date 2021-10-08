@@ -43,17 +43,20 @@ augroup NORA
 augroup END
 
 colorscheme slate
-highlight Pmenu ctermbg=black ctermfg=lightgrey guibg=black guifg=lightgrey
+highlight Pmenu ctermbg=black ctermfg=lightgrey guibg=grey30 guifg=lightgrey
 highlight PmenuSel ctermbg=lightgrey ctermfg=black guibg=lightgrey guifg=black
 
-highlight LineNr guibg=grey20 guifg=grey50
+highlight LineNr guibg=grey15 guifg=grey50
 highlight CursorLineNr guibg=grey20 guifg=grey40
-highlight CursorLine guibg=grey20
-highlight ColorColumn guibg=grey20
+highlight CursorLine guibg=grey15
+highlight ColorColumn guibg=grey5
 highlight MatchWord guibg=grey30
 highlight FloatBorder guibg=Black
 highlight diffAdded guifg=green
 highlight diffRemoved guifg=red
+highlight Normal guibg=black
+highlight NonText guibg=black
+highlight Visual guibg=grey30
 
 function! CleverTab(direction)
   if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
