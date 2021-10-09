@@ -46,11 +46,14 @@ colorscheme slate
 highlight Pmenu ctermbg=black ctermfg=lightgrey guibg=grey30 guifg=lightgrey
 highlight PmenuSel ctermbg=lightgrey ctermfg=black guibg=lightgrey guifg=black
 
-highlight LineNr guibg=grey15 guifg=grey50
-highlight CursorLineNr guibg=grey20 guifg=grey40
-highlight CursorLine guibg=grey15
+highlight LineNr guibg=grey10 guifg=grey30
+highlight SignColumn guibg=grey5 guifg=40
+highlight StatusLine guibg=grey10 guifg=grey40
+highlight StatusLineNC guibg=grey5 guifg=grey20
+highlight CursorLineNr guibg=grey10 guifg=grey40
+highlight CursorLine guibg=grey10
 highlight ColorColumn guibg=grey5
-highlight MatchWord guibg=grey15
+highlight MatchWord guibg=grey10
 highlight FloatBorder guibg=Black
 highlight diffAdded guifg=green
 highlight diffRemoved guifg=red

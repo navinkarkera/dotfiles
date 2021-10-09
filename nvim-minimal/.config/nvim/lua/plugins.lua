@@ -59,21 +59,6 @@ return require('packer').startup(function()
 		},
     }
     use {
-        'hoob3rt/lualine.nvim',
-        event = 'VimEnter',
-        config = function()
-            require('lualine').setup({
-                options = {
-                    icons_enabled = false,
-                    theme = 'gruvbox',
-                    component_separators = {'', ''},
-                    section_separators = {'', ''},
-                    disabled_filetypes = {}
-                },
-            })
-        end,
-    }
-    use {
         "akinsho/nvim-toggleterm.lua",
         event = 'VimEnter',
         config = function()

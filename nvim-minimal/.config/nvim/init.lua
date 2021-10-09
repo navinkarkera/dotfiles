@@ -74,6 +74,7 @@ o.virtualedit = "block"
 o.wildignore = '*.o,*.a,*.pyc,__pycache__,node_modules'
 o.wildmenu = true
 o.wildmode = "longest:full,full"
+o.statusline='%f  %y%m%r%h%w%=[%l,%v]      [%L,%p%%] %n'
 
 -- window-local options
 wo.colorcolumn = '100'
