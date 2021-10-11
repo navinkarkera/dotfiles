@@ -43,6 +43,7 @@ augroup NORA
 augroup END
 
 colorscheme slate
+
 highlight Pmenu ctermbg=black ctermfg=lightgrey guibg=grey30 guifg=lightgrey
 highlight PmenuSel ctermbg=lightgrey ctermfg=black guibg=lightgrey guifg=black
 
