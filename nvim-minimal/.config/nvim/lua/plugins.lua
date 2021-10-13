@@ -59,10 +59,10 @@ return require('packer').startup(function()
 		},
     }
     use {
-        "akinsho/nvim-toggleterm.lua",
+        "preservim/vimux",
         event = 'VimEnter',
         config = function()
-            require("terminal-conf")
+            require("vimux-conf")
         end
     }
 end)

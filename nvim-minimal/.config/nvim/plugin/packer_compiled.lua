@@ -91,12 +91,6 @@ _G.packer_plugins = {
     needs_bufread = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/nvim-lspconfig"
   },
-  ["nvim-toggleterm.lua"] = {
-    config = { "\27LJ\1\2-\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\18terminal-conf\frequire\0" },
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/nvim-toggleterm.lua"
-  },
   ["nvim-tree.lua"] = {
     commands = { "NvimTreeClipboard", "NvimTreeClose", "NvimTreeFindFile", "NvimTreeOpen", "NvimTreeRefresh", "NvimTreeToggle" },
     config = { "\27LJ\1\2$\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\ttree\frequire\0" },
@@ -145,6 +139,12 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/vim-surround"
+  },
+  vimux = {
+    config = { "\27LJ\1\2*\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\15vimux-conf\frequire\0" },
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/vimux"
   }
 }
 
@@ -185,8 +185,8 @@ vim.cmd [[au FileType html ++once lua require("packer.load")({'emmet-vim'}, { ft
 time([[Defining lazy-load filetype autocommands]], false)
   -- Event lazy-loads
 time([[Defining lazy-load event autocommands]], true)
-vim.cmd [[au VimEnter * ++once lua require("packer.load")({'nvim-toggleterm.lua', 'nvim-lspconfig'}, { event = "VimEnter *" }, _G.packer_plugins)]]
-vim.cmd [[au BufEnter * ++once lua require("packer.load")({'kommentary', 'vim-surround', 'switch.vim', 'vim-matchup', 'splitjoin.vim'}, { event = "BufEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au VimEnter * ++once lua require("packer.load")({'nvim-lspconfig', 'vimux'}, { event = "VimEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au BufEnter * ++once lua require("packer.load")({'kommentary', 'splitjoin.vim', 'vim-surround', 'switch.vim', 'vim-matchup'}, { event = "BufEnter *" }, _G.packer_plugins)]]
 time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")
 if should_profile then save_profiles() end
