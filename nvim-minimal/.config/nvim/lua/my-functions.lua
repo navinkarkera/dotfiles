@@ -8,7 +8,7 @@ end
 
 function M.executePythonModule(filePath)
     local modulePath = M.getPythonModulePath(filePath)
-    vim.cmd("terminal python -m " .. modulePath)
+    vim.call("VimuxRunCommand", 'activate; python -m ' .. modulePath)
 end
 
 function M.VimuxSlime()

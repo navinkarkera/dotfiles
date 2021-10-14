@@ -256,3 +256,8 @@ alias bls="betterlockscreen -u /usr/share/backgrounds/arcolinux/"
 
 #give the list of all installed desktops - xsessions desktops
 alias xd="ls /usr/share/xsessions"
+
+# activate virtual env if not active
+activate() {
+    [[ -d .venv && "$VIRTUAL_ENV" == "" ]] && source .venv/bin/activate
+}
