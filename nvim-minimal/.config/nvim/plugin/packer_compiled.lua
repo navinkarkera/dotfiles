@@ -85,6 +85,10 @@ _G.packer_plugins = {
     needs_bufread = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/kommentary"
   },
+  ["lush.nvim"] = {
+    loaded = true,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/start/lush.nvim"
+  },
   ["nvim-lspconfig"] = {
     config = { "\27LJ\1\2*\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\15lsp-config\frequire\0" },
     loaded = false,
@@ -145,6 +149,10 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/vimux"
+  },
+  ["zenbones.nvim"] = {
+    loaded = true,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/start/zenbones.nvim"
   }
 }
 

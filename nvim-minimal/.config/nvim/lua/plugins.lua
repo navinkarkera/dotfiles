@@ -65,4 +65,8 @@ return require('packer').startup(function()
             require("vimux-conf")
         end
     }
+    use {
+        "mcchrish/zenbones.nvim",
+        requires = "rktjmp/lush.nvim"
+    }
 end)

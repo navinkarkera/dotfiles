@@ -89,6 +89,7 @@ g.netrw_list_hide= '.git'
 g.black_virtualenv = vim.env["HOME"] .. '/.local/pipx/venvs/black'
 g.python3_host_prog = "/usr/bin/python"
 g.VimuxExpandCommand = 1
+g.zenflesh_darkness = 'stark'
 
 -- map the leader key
 map('n', '<Space>', '', {})

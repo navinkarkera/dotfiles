@@ -42,7 +42,7 @@ augroup NORA
     autocmd BufWritePost ~/.local/src/dwmblocks/config.h !c ~/.local/src/dwmblocks/; sudo make install && { killall -q dwmblocks;setsid -f dwmblocks }
 augroup END
 
-colorscheme slate
+colorscheme forestbones
 
 highlight Pmenu ctermbg=black ctermfg=lightgrey guibg=grey30 guifg=lightgrey
 highlight PmenuSel ctermbg=lightgrey ctermfg=black guibg=lightgrey guifg=black
@@ -54,20 +54,19 @@ highlight StatusLineNC guibg=grey5 guifg=grey20
 highlight CursorLineNr guibg=grey10 guifg=grey40
 highlight CursorLine guibg=grey10
 highlight ColorColumn guibg=grey5
-highlight MatchWord guibg=grey10
-highlight FloatBorder guibg=Black
-highlight diffAdded guifg=green
-highlight diffRemoved guifg=red
+" highlight MatchWord guibg=grey10
+" highlight FloatBorder guibg=Black
+" highlight diffAdded guifg=green
+" highlight diffRemoved guifg=red
 highlight Normal guibg=black
 highlight NonText guibg=black
-highlight Visual guibg=grey30
-highlight Statement gui=italic
+" highlight Visual guibg=grey30
 highlight Comment gui=italic
-highlight Constant gui=bold
-highlight! link Title Directory
-highlight! link MoreMsg Comment
-highlight! link Question Comment
-highlight! link vimFunction Identifier
+" highlight Constant gui=bold
+" highlight! link Title Directory
+" highlight! link MoreMsg Comment
+" highlight! link Question Comment
+" highlight! link vimFunction Identifier
 
 function! CleverTab(direction)
   if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
