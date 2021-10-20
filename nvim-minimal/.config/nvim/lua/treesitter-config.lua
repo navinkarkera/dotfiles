@@ -1,7 +1,6 @@
 require'nvim-treesitter.configs'.setup {
     ensure_installed = {
         "python",
-        "html",
         "javascript",
         "typescript",
         "rust",
@@ -16,7 +15,7 @@ require'nvim-treesitter.configs'.setup {
     highlight = {
         enable = true,              -- false will disable the whole extension
         indent = {
-            enable = false
+            enable = true
         },
         autotag = {
             enable = true

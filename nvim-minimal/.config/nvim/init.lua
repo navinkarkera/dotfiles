@@ -75,6 +75,7 @@ o.wildignore = '*.o,*.a,*.pyc,__pycache__,node_modules'
 o.wildmenu = true
 o.wildmode = "longest:full,full"
 o.statusline='%f  %y%m%r%h%w%=[%l,%v]      [%L,%p%%] %n'
+o.background = "light"
 
 -- window-local options
 wo.colorcolumn = '100'
@@ -89,7 +90,6 @@ g.netrw_list_hide= '.git'
 g.black_virtualenv = vim.env["HOME"] .. '/.local/pipx/venvs/black'
 g.python3_host_prog = "/usr/bin/python"
 g.VimuxExpandCommand = 1
-g.zenflesh_darkness = 'stark'
 
 -- map the leader key
 map('n', '<Space>', '', {})
@@ -171,3 +171,4 @@ map('t', 'kj', '<C-\\><C-n>', options)
 
 -- plugins setup
 require("plugins")
+cmd("colorscheme neobones")

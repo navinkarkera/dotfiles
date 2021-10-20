@@ -42,26 +42,25 @@ augroup NORA
     autocmd BufWritePost ~/.local/src/dwmblocks/config.h !c ~/.local/src/dwmblocks/; sudo make install && { killall -q dwmblocks;setsid -f dwmblocks }
 augroup END
 
-colorscheme forestbones
+" highlight Pmenu ctermbg=black ctermfg=lightgrey guibg=grey30 guifg=lightgrey
+" highlight PmenuSel ctermbg=lightgrey ctermfg=black guibg=lightgrey guifg=black
 
-highlight Pmenu ctermbg=black ctermfg=lightgrey guibg=grey30 guifg=lightgrey
-highlight PmenuSel ctermbg=lightgrey ctermfg=black guibg=lightgrey guifg=black
-
-highlight LineNr guibg=grey10 guifg=grey30
-highlight SignColumn guibg=grey5 guifg=40
-highlight StatusLine guibg=grey10 guifg=grey40
-highlight StatusLineNC guibg=grey5 guifg=grey20
-highlight CursorLineNr guibg=grey10 guifg=grey40
-highlight CursorLine guibg=grey10
-highlight ColorColumn guibg=grey5
+" highlight LineNr guibg=grey10 guifg=grey30
+" highlight SignColumn guibg=grey5 guifg=40
+" highlight StatusLine guibg=grey10 guifg=grey40
+" highlight StatusLineNC guibg=grey5 guifg=grey20
+" highlight CursorLineNr guibg=grey10 guifg=grey40
+" highlight CursorLine guibg=grey10
+" highlight ColorColumn guibg=grey5
 " highlight MatchWord guibg=grey10
-" highlight FloatBorder guibg=Black
 " highlight diffAdded guifg=green
 " highlight diffRemoved guifg=red
-highlight Normal guibg=black
-highlight NonText guibg=black
+" highlight Normal guibg=black
+" highlight NormalFloat guibg=black
+" highlight NonText guibg=black
+" highlight FloatBorder guibg=Black
 " highlight Visual guibg=grey30
-highlight Comment gui=italic
+" highlight Comment gui=italic
 " highlight Constant gui=bold
 " highlight! link Title Directory
 " highlight! link MoreMsg Comment
