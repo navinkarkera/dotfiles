@@ -47,26 +47,10 @@ return require('packer').startup(function()
     use {'AndrewRadev/switch.vim', event = 'BufEnter'}
     use {'AndrewRadev/splitjoin.vim', event = 'BufEnter'}
     use {
-        'kyazdani42/nvim-tree.lua',
-        config = function() require 'tree' end,
-        cmd = {
-			'NvimTreeClipboard',
-			'NvimTreeClose',
-			'NvimTreeFindFile',
-			'NvimTreeOpen',
-			'NvimTreeRefresh',
-			'NvimTreeToggle',
-		},
-    }
-    use {
         "preservim/vimux",
         event = 'VimEnter',
         config = function()
             require("vimux-conf")
         end
-    }
-    use {
-        "mcchrish/zenbones.nvim",
-        requires = "rktjmp/lush.nvim"
     }
 end)

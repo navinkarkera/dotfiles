@@ -90,5 +90,6 @@ bindkey '^e' edit-command-line
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux -u -f ~/.config/tmux/.tmux.conf new-session -A -s main
 fi
+eval "$(navi widget zsh)"
 # Load syntax highlighting; should be last.
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null

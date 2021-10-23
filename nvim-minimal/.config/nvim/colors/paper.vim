@@ -126,20 +126,21 @@ endif
 " simply use its name (e.g. "black").
 
 " Generic highlight groups
-Hi ColorColumn NONE lbackground NONE
+Hi ColorColumn NONE lgrey1 NONE
+Hi Visual NONE lyellow NONE
 Hi Comment grey NONE NONE
 Hi Conceal NONE NONE NONE
 Hi Constant black NONE NONE
 Hi Cursor NONE lgrey1 NONE
-Hi CursorLine NONE lbackground NONE
-Hi CursorLineNR black NONE bold
+Hi CursorLine NONE lgreen NONE
+Hi CursorLineNR green lgreen bold
 Hi Directory purple NONE NONE
 Hi ErrorMsg red NONE bold
 Hi FoldColumn black background NONE
 Hi Identifier black NONE NONE
 Hi Include black NONE bold
 Hi Keyword black NONE bold
-Hi LineNr black NONE NONE
+Hi LineNr cyan lgreen NONE
 Hi Macro orange NONE NONE
 Hi MatchParen NONE NONE bold
 Hi MoreMsg black NONE NONE
@@ -161,8 +162,8 @@ Hi SpellBad red NONE bold,undercurl
 Hi SpellCap purple NONE undercurl
 Hi SpellLocal green NONE undercurl
 Hi SpellRare purple NONE undercurl
-Hi StatusLine black lgrey1 NONE
-Hi StatusLineNC black lgrey1 NONE
+Hi StatusLine black lgrey2 NONE
+Hi StatusLineNC black lgrey2 NONE
 Hi String green NONE NONE
 Hi TabLine dgrey lgrey2 NONE
 Hi TabLineFill black lgrey2 NONE
@@ -185,7 +186,6 @@ hi! link SpecialKey Number
 hi! link Statement Keyword
 hi! link StorageClass Keyword
 hi! link Type Keyword
-hi! link Visual Cursor
 hi! link WildMenu PmenuSel
 
 " These highlight groups can be used for statuslines, for example when

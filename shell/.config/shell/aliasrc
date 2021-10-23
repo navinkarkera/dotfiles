@@ -63,7 +63,7 @@ alias tsp-python="TS_SOCKET=/tmp/python-ts tsp" \
 
 alias la='ls -a'
 alias ll='ls -la'
-alias l='ls'
+alias l='nnn -de'
 alias l.="ls -A | egrep '^\.'"
 
 #fix obvious typo's
@@ -108,7 +108,6 @@ alias merge="xrdb -merge ~/.Xresources"
 
 # Aliases for software managment
 # pacman or pm
-alias pacman='sudo pacman --color auto'
 alias update='sudo pacman -Syyu'
 
 # paru as aur helper - updates everything

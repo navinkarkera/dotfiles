@@ -73,34 +73,27 @@ _G.packer_plugins = {
     commands = { "Black" },
     loaded = false,
     needs_bufread = false,
+    only_cond = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/black"
   },
   ["emmet-vim"] = {
     loaded = false,
     needs_bufread = false,
+    only_cond = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/emmet-vim"
   },
   kommentary = {
     loaded = false,
     needs_bufread = false,
+    only_cond = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/kommentary"
-  },
-  ["lush.nvim"] = {
-    loaded = true,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/start/lush.nvim"
   },
   ["nvim-lspconfig"] = {
     config = { "\27LJ\1\2*\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\15lsp-config\frequire\0" },
     loaded = false,
     needs_bufread = false,
+    only_cond = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/nvim-lspconfig"
-  },
-  ["nvim-tree.lua"] = {
-    commands = { "NvimTreeClipboard", "NvimTreeClose", "NvimTreeFindFile", "NvimTreeOpen", "NvimTreeRefresh", "NvimTreeToggle" },
-    config = { "\27LJ\1\2$\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\ttree\frequire\0" },
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     after = { "nvim-treesitter-textobjects" },
@@ -120,39 +113,41 @@ _G.packer_plugins = {
   ["splitjoin.vim"] = {
     loaded = false,
     needs_bufread = true,
+    only_cond = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/splitjoin.vim"
   },
   ["switch.vim"] = {
     loaded = false,
     needs_bufread = true,
+    only_cond = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/switch.vim"
   },
   ["vim-fugitive"] = {
     commands = { "Git", "G" },
     loaded = false,
     needs_bufread = true,
+    only_cond = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/vim-fugitive"
   },
   ["vim-matchup"] = {
     after_files = { "/home/navin/.local/share/nvim/site/pack/packer/opt/vim-matchup/after/plugin/matchit.vim" },
     loaded = false,
     needs_bufread = true,
+    only_cond = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/vim-matchup"
   },
   ["vim-surround"] = {
     loaded = false,
     needs_bufread = false,
+    only_cond = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/vim-surround"
   },
   vimux = {
     config = { "\27LJ\1\2*\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\15vimux-conf\frequire\0" },
     loaded = false,
     needs_bufread = false,
+    only_cond = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/vimux"
-  },
-  ["zenbones.nvim"] = {
-    loaded = true,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/start/zenbones.nvim"
   }
 }
 
@@ -168,14 +163,8 @@ time([[Sequenced loading]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
-pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file NvimTreeFindFile lua require("packer.load")({'nvim-tree.lua'}, { cmd = "NvimTreeFindFile", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
-pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file NvimTreeRefresh lua require("packer.load")({'nvim-tree.lua'}, { cmd = "NvimTreeRefresh", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
-pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file NvimTreeToggle lua require("packer.load")({'nvim-tree.lua'}, { cmd = "NvimTreeToggle", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
-pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file NvimTreeOpen lua require("packer.load")({'nvim-tree.lua'}, { cmd = "NvimTreeOpen", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
-pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file NvimTreeClose lua require("packer.load")({'nvim-tree.lua'}, { cmd = "NvimTreeClose", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
-pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Black lua require("packer.load")({'black'}, { cmd = "Black", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Git lua require("packer.load")({'vim-fugitive'}, { cmd = "Git", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
-pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file NvimTreeClipboard lua require("packer.load")({'nvim-tree.lua'}, { cmd = "NvimTreeClipboard", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
+pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Black lua require("packer.load")({'black'}, { cmd = "Black", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file G lua require("packer.load")({'vim-fugitive'}, { cmd = "G", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 time([[Defining lazy-load commands]], false)
 
@@ -193,8 +182,8 @@ vim.cmd [[au FileType html ++once lua require("packer.load")({'emmet-vim'}, { ft
 time([[Defining lazy-load filetype autocommands]], false)
   -- Event lazy-loads
 time([[Defining lazy-load event autocommands]], true)
-vim.cmd [[au VimEnter * ++once lua require("packer.load")({'nvim-lspconfig', 'vimux'}, { event = "VimEnter *" }, _G.packer_plugins)]]
-vim.cmd [[au BufEnter * ++once lua require("packer.load")({'kommentary', 'splitjoin.vim', 'vim-surround', 'switch.vim', 'vim-matchup'}, { event = "BufEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au VimEnter * ++once lua require("packer.load")({'vimux', 'nvim-lspconfig'}, { event = "VimEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au BufEnter * ++once lua require("packer.load")({'splitjoin.vim', 'kommentary', 'vim-surround', 'switch.vim', 'vim-matchup'}, { event = "BufEnter *" }, _G.packer_plugins)]]
 time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")
 if should_profile then save_profiles() end

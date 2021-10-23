@@ -132,6 +132,7 @@ map('v', 'J', ":m '>+1<CR>gv=gv", options)
 map('v', 'K', ":m '<-2<CR>gv=gv", options)
 map('n', '<F4>', ":bd<CR>", options)
 map('n', '<C-s>', ":w<CR>", options)
+map('n', '<leader>n', ":e <C-r>=expand('%:h')<CR>/", options)
 
 map('n', '<leader>gs' , ':G<CR>', options)
 map('n', '<leader>gps', ':G ps<CR>', options)
@@ -139,7 +140,6 @@ map('n', '<leader>gpl', ':G pl<CR>', options)
 map('n', '<leader>gfu', ':G fu<CR>', options)
 map('n', '<leader>gl', ':diffget //3<CR>', options)
 map('n', '<leader>ga', ':diffget //2<CR>', options)
-map('n', '<leader>pv' , ':NvimTreeToggle<CR>', options)
 
 -- special remaps
 map('n', 'n', 'nzz', options)
@@ -171,4 +171,4 @@ map('t', 'kj', '<C-\\><C-n>', options)
 
 -- plugins setup
 require("plugins")
-cmd("colorscheme neobones")
+cmd("colorscheme paper")
