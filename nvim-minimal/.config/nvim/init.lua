@@ -19,6 +19,8 @@ g.loaded_shada_plugin      = true
 g.loaded_spellfile_plugin  = true
 g.loaded_netrw             = true
 g.loaded_netrwPlugin       = true
+g.loaded_netrwSettings     = true
+g.loaded_netrwFileHandlers = true
 g.loaded_tutor_mode_plugin = true
 g.loaded_remote_plugins    = true
 g.loaded_fzf               = true
@@ -121,10 +123,6 @@ map('n', '<C-k>', ':cp<cr>zz', options)
 map('v', '<C-r>', '"hy:%s/<C-r>h//gc<left><left><left>', options)
 map('n', '<C-l>', ':bnext<cr>', options)
 map('n', '<C-h>', ':bprevious<cr>', options)
-map('n', '<leader>h', ':wincmd h<cr>', options)
-map('n', '<leader>j', ':wincmd j<cr>', options)
-map('n', '<leader>k', ':wincmd k<cr>', options)
-map('n', '<leader>l', ':wincmd l<cr>', options)
 map('n', '<leader><cr>', ':so ~/.config/nvim/init.lua<CR>', options)
 map('n', '<leader>+', ':vertical resize +15<CR>', options)
 map('n', '<leader>-', ':vertical resize -10<CR>', options)

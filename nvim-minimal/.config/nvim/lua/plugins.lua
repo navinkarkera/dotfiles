@@ -53,4 +53,17 @@ return require('packer').startup(function()
             require("vimux-conf")
         end
     }
+    use {
+        "numToStr/Navigator.nvim",
+        event = 'VimEnter',
+        config = function()
+            require("nav-conf")
+        end,
+    }
+    use {
+        "lambdalisue/fern-hijack.vim",
+        requires = {
+            {"lambdalisue/fern.vim"},
+        }
+    }
 end)

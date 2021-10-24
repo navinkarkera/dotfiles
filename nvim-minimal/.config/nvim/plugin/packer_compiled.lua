@@ -69,6 +69,13 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Navigator.nvim"] = {
+    config = { "\27LJ\1\2(\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\rnav-conf\frequire\0" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/Navigator.nvim"
+  },
   black = {
     commands = { "Black" },
     loaded = false,
@@ -81,6 +88,14 @@ _G.packer_plugins = {
     needs_bufread = false,
     only_cond = false,
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/emmet-vim"
+  },
+  ["fern-hijack.vim"] = {
+    loaded = true,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/start/fern-hijack.vim"
+  },
+  ["fern.vim"] = {
+    loaded = true,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/start/fern.vim"
   },
   kommentary = {
     loaded = false,
@@ -182,8 +197,8 @@ vim.cmd [[au FileType html ++once lua require("packer.load")({'emmet-vim'}, { ft
 time([[Defining lazy-load filetype autocommands]], false)
   -- Event lazy-loads
 time([[Defining lazy-load event autocommands]], true)
-vim.cmd [[au VimEnter * ++once lua require("packer.load")({'vimux', 'nvim-lspconfig'}, { event = "VimEnter *" }, _G.packer_plugins)]]
-vim.cmd [[au BufEnter * ++once lua require("packer.load")({'splitjoin.vim', 'kommentary', 'vim-surround', 'switch.vim', 'vim-matchup'}, { event = "BufEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au VimEnter * ++once lua require("packer.load")({'nvim-lspconfig', 'vimux', 'Navigator.nvim'}, { event = "VimEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au BufEnter * ++once lua require("packer.load")({'kommentary', 'splitjoin.vim', 'vim-matchup', 'vim-surround', 'switch.vim'}, { event = "BufEnter *" }, _G.packer_plugins)]]
 time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")
 if should_profile then save_profiles() end
