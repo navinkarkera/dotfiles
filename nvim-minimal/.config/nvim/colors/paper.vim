@@ -128,7 +128,7 @@ endif
 " Generic highlight groups
 Hi ColorColumn NONE lgrey1 NONE
 Hi Visual NONE lyellow NONE
-Hi Comment grey NONE NONE
+Hi Comment grey NONE italic
 Hi Conceal NONE NONE NONE
 Hi Constant black NONE NONE
 Hi Cursor NONE lgrey1 NONE
@@ -173,6 +173,11 @@ Hi Todo grey NONE bold
 Hi VertSplit lgrey2 NONE NONE
 Hi WarningMsg orange NONE bold
 Hi Underlined NONE NONE underline
+
+" Treesitter highlights
+Hi TSFunction purple NONE NONE
+Hi TSMethod purple NONE NONE
+Hi TSField blue NONE NONE
 
 hi! link Boolean Keyword
 hi! link Character String
