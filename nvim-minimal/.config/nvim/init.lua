@@ -167,6 +167,16 @@ map('i', '<C-l>', '<C-x><C-l>', options)
 
 map('t', 'kj', '<C-\\><C-n>', options)
 
+-- mark maps
+map('n', '<leader>1', '`Q', options)
+map('n', '<leader>2', '`W', options)
+map('n', '<leader>3', '`E', options)
+map('n', '<leader>4', '`R', options)
+map('n', ',1', 'mQ', options)
+map('n', ',2', 'mW', options)
+map('n', ',3', 'mE', options)
+map('n', ',4', 'mR', options)
+
 
 -- plugins setup
 require("plugins")

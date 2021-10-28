@@ -70,7 +70,8 @@ let s:colors = {
 \  'orange': '#a55000',
 \  'purple': '#5c21a5',
 \  'white': '#ffffff',
-\  'cyan': '#158c86'
+\  'cyan': '#158c86',
+\  'slateBlue': '#557788'
 \ }
 
 " We require/expect true colour support, and make no attempt at supporting UIs
@@ -162,7 +163,7 @@ Hi SpellBad red NONE bold,undercurl
 Hi SpellCap purple NONE undercurl
 Hi SpellLocal green NONE undercurl
 Hi SpellRare purple NONE undercurl
-Hi StatusLine black lgrey2 NONE
+Hi StatusLine white slateBlue NONE
 Hi StatusLineNC black lgrey2 NONE
 Hi String green NONE NONE
 Hi TabLine dgrey lgrey2 NONE
@@ -178,6 +179,7 @@ Hi Underlined NONE NONE underline
 Hi TSFunction purple NONE NONE
 Hi TSMethod purple NONE NONE
 Hi TSField blue NONE NONE
+Hi TSKeywordReturn slateBlue NONE bold
 
 hi! link Boolean Keyword
 hi! link Character String
