@@ -180,6 +180,7 @@ Hi TSFunction purple NONE NONE
 Hi TSMethod purple NONE NONE
 Hi TSField blue NONE NONE
 Hi TSKeywordReturn slateBlue NONE bold
+Hi TSFuncBuiltin slateBlue NONE NONE
 
 hi! link Boolean Keyword
 hi! link Character String
