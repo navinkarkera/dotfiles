@@ -92,7 +92,6 @@ hi! link Number Constant
 hi! link String Constant
 hi! link Conditional Statement
 hi! link Exception Statement
-hi! link Keyword Statement
 hi! link Label Statement
 hi! link Operator Statement
 hi! link Repeat Statement
@@ -148,6 +147,8 @@ hi! link zshStringDelimiter StringDelimiter
 hi! link zshSubst Identifier
 hi! link zshSubstDelim Delimiter
 hi! link zshVariableDef Identifier
+
+hi Keyword gui=bold
 finish
 
 " Background:      light

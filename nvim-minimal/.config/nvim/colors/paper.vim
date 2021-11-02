@@ -165,7 +165,7 @@ Hi SpellLocal green NONE undercurl
 Hi SpellRare purple NONE undercurl
 Hi StatusLine white slateBlue NONE
 Hi StatusLineNC black lgrey2 NONE
-Hi String green NONE NONE
+Hi String green NONE italic
 Hi TabLine dgrey lgrey2 NONE
 Hi TabLineFill black lgrey2 NONE
 Hi TabLineSel black background bold
@@ -181,8 +181,8 @@ Hi TSMethod purple NONE NONE
 Hi TSField blue NONE NONE
 Hi TSKeywordReturn slateBlue NONE bold
 Hi TSFuncBuiltin slateBlue NONE NONE
+Hi Boolean blue NONE NONE
 
-hi! link Boolean Keyword
 hi! link Character String
 hi! link Error ErrorMsg
 hi! link Folded Comment
