@@ -14,10 +14,21 @@ return require('packer').startup(function()
 
     -- lsp plugings
     use {
+        'L3MON4D3/LuaSnip',
+    }
+    use {
+        "hrsh7th/nvim-cmp",
+        config = function() require('cmp-conf') end,
+        requires = {
+            {"saadparwaiz1/cmp_luasnip"},
+        }
+    }
+    use {
         'neovim/nvim-lspconfig',
-        opt = true,
-        event = 'VimEnter',
         config = function() require('lsp-config') end,
+        requires = {
+            {"hrsh7th/cmp-nvim-lsp"},
+        }
     }
     use {'psf/black', opt=true, cmd={'Black'}}
 

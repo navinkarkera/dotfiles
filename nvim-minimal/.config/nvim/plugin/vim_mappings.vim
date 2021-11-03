@@ -63,7 +63,7 @@ function! OmniCom()
     return "\<C-N>"
   endif
 endfunction
-inoremap <expr> <silent> <tab> CleverTab(-1)
-inoremap <expr> <silent> <s-tab> CleverTab(1)
-inoremap <expr> <silent> <c-space> OmniCom()
+" inoremap <expr> <silent> <tab> CleverTab(-1)
+" inoremap <expr> <silent> <s-tab> CleverTab(1)
+" inoremap <expr> <silent> <c-space> OmniCom()
 nnoremap <silent> <leader>pv :Fern . -reveal=% -drawer -toggle -width=35<CR>

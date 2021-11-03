@@ -69,46 +69,72 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  LuaSnip = {
+    loaded = true,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    url = "https://github.com/L3MON4D3/LuaSnip"
+  },
   ["Navigator.nvim"] = {
     config = { "\27LJ\1\2(\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\rnav-conf\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/Navigator.nvim"
+    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/Navigator.nvim",
+    url = "https://github.com/numToStr/Navigator.nvim"
   },
   black = {
     commands = { "Black" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/black"
+    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/black",
+    url = "https://github.com/psf/black"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["emmet-vim"] = {
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/emmet-vim"
+    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/emmet-vim",
+    url = "https://github.com/mattn/emmet-vim"
   },
   ["fern-hijack.vim"] = {
     loaded = true,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/start/fern-hijack.vim"
+    path = "/home/navin/.local/share/nvim/site/pack/packer/start/fern-hijack.vim",
+    url = "https://github.com/lambdalisue/fern-hijack.vim"
   },
   ["fern.vim"] = {
     loaded = true,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/start/fern.vim"
+    path = "/home/navin/.local/share/nvim/site/pack/packer/start/fern.vim",
+    url = "https://github.com/lambdalisue/fern.vim"
   },
   kommentary = {
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/kommentary"
+    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/kommentary",
+    url = "https://github.com/b3nj5m1n/kommentary"
+  },
+  ["nvim-cmp"] = {
+    config = { "\27LJ\1\2(\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\rcmp-conf\frequire\0" },
+    loaded = true,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     config = { "\27LJ\1\2*\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\15lsp-config\frequire\0" },
-    loaded = false,
-    needs_bufread = false,
-    only_cond = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/nvim-lspconfig"
+    loaded = true,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     after = { "nvim-treesitter-textobjects" },
@@ -119,50 +145,58 @@ _G.packer_plugins = {
     load_after = {},
     loaded = true,
     needs_bufread = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/nvim-treesitter-textobjects"
+    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/nvim-treesitter-textobjects",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/start/packer.nvim"
+    path = "/home/navin/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    url = "https://github.com/wbthomason/packer.nvim"
   },
   ["splitjoin.vim"] = {
     loaded = false,
     needs_bufread = true,
     only_cond = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/splitjoin.vim"
+    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/splitjoin.vim",
+    url = "https://github.com/AndrewRadev/splitjoin.vim"
   },
   ["switch.vim"] = {
     loaded = false,
     needs_bufread = true,
     only_cond = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/switch.vim"
+    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/switch.vim",
+    url = "https://github.com/AndrewRadev/switch.vim"
   },
   ["vim-fugitive"] = {
     commands = { "Git", "G" },
     loaded = false,
     needs_bufread = true,
     only_cond = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/vim-fugitive"
+    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   },
   ["vim-matchup"] = {
     after_files = { "/home/navin/.local/share/nvim/site/pack/packer/opt/vim-matchup/after/plugin/matchit.vim" },
     loaded = false,
     needs_bufread = true,
     only_cond = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/vim-matchup"
+    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/vim-matchup",
+    url = "https://github.com/andymass/vim-matchup"
   },
   ["vim-surround"] = {
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/vim-surround"
+    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   },
   vimux = {
     config = { "\27LJ\1\2*\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\15vimux-conf\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/vimux"
+    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/vimux",
+    url = "https://github.com/preservim/vimux"
   }
 }
 
@@ -171,6 +205,14 @@ time([[Defining packer_plugins]], false)
 time([[Config for nvim-treesitter]], true)
 try_loadstring("\27LJ\1\0021\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\22treesitter-config\frequire\0", "config", "nvim-treesitter")
 time([[Config for nvim-treesitter]], false)
+-- Config for: nvim-cmp
+time([[Config for nvim-cmp]], true)
+try_loadstring("\27LJ\1\2(\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\rcmp-conf\frequire\0", "config", "nvim-cmp")
+time([[Config for nvim-cmp]], false)
+-- Config for: nvim-lspconfig
+time([[Config for nvim-lspconfig]], true)
+try_loadstring("\27LJ\1\2*\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\15lsp-config\frequire\0", "config", "nvim-lspconfig")
+time([[Config for nvim-lspconfig]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-treesitter-textobjects ]]
@@ -179,8 +221,8 @@ time([[Sequenced loading]], false)
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Git lua require("packer.load")({'vim-fugitive'}, { cmd = "Git", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
-pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Black lua require("packer.load")({'black'}, { cmd = "Black", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file G lua require("packer.load")({'vim-fugitive'}, { cmd = "G", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
+pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Black lua require("packer.load")({'black'}, { cmd = "Black", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 time([[Defining lazy-load commands]], false)
 
 vim.cmd [[augroup packer_load_aucmds]]
@@ -197,8 +239,8 @@ vim.cmd [[au FileType html ++once lua require("packer.load")({'emmet-vim'}, { ft
 time([[Defining lazy-load filetype autocommands]], false)
   -- Event lazy-loads
 time([[Defining lazy-load event autocommands]], true)
-vim.cmd [[au VimEnter * ++once lua require("packer.load")({'nvim-lspconfig', 'vimux', 'Navigator.nvim'}, { event = "VimEnter *" }, _G.packer_plugins)]]
-vim.cmd [[au BufEnter * ++once lua require("packer.load")({'kommentary', 'splitjoin.vim', 'vim-matchup', 'vim-surround', 'switch.vim'}, { event = "BufEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au VimEnter * ++once lua require("packer.load")({'Navigator.nvim', 'vimux'}, { event = "VimEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au BufEnter * ++once lua require("packer.load")({'vim-surround', 'kommentary', 'splitjoin.vim', 'vim-matchup', 'switch.vim'}, { event = "BufEnter *" }, _G.packer_plugins)]]
 time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")
 if should_profile then save_profiles() end
