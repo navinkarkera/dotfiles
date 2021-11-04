@@ -288,6 +288,7 @@ hi! link luaFunction Keyword
 " LSP
 Hi LspDiagnosticsUnderlineError NONE NONE undercurl red
 Hi LspDiagnosticsUnderlineWarning NONE NONE undercurl yellow
+Hi LspDiagnosticsDefaultHint grey NONE NONE
 
 " Make
 hi! link makeTarget Function

@@ -77,4 +77,11 @@ return require('packer').startup(function()
             {"lambdalisue/fern.vim"},
         }
     }
+    use {
+        'mfussenegger/nvim-fzy',
+        event = 'VimEnter',
+        config = function()
+            require("fzy-conf")
+        end,
+    }
 end)
