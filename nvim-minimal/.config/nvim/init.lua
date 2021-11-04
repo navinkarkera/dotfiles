@@ -100,7 +100,7 @@ vim.g.mapleader = ' '  -- 'vim.g' sets global variables
 
 
 if vim.fn.executable('rg') == 1 then
-    o.grepprg = 'rg --vimgrep --no-heading --smart-case'
+    o.grepprg = [[rg --vimgrep --no-heading --smart-case --hidden -g '!.git/']]
     o.grepformat = "%f:%l:%c:%m"
 else
     o.grepprg = "grep -R -n --exclude-dir=.git --exclude-dir=.cache --exclude-dir=node_modules --exclude-dir=.venv"
