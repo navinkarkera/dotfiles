@@ -124,6 +124,14 @@ _G.packer_plugins = {
     path = "/home/navin/.local/share/nvim/site/pack/packer/opt/kommentary",
     url = "https://github.com/b3nj5m1n/kommentary"
   },
+  ["nvim-bqf"] = {
+    config = { "\27LJ\1\2(\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\rbqf-conf\frequire\0" },
+    loaded = false,
+    needs_bufread = true,
+    only_cond = false,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/opt/nvim-bqf",
+    url = "https://github.com/kevinhwang91/nvim-bqf"
+  },
   ["nvim-cmp"] = {
     config = { "\27LJ\1\2(\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\rcmp-conf\frequire\0" },
     loaded = true,
@@ -240,6 +248,7 @@ time([[Defining lazy-load filetype autocommands]], true)
 vim.cmd [[au FileType htmldjango ++once lua require("packer.load")({'emmet-vim'}, { ft = "htmldjango" }, _G.packer_plugins)]]
 vim.cmd [[au FileType javascript ++once lua require("packer.load")({'emmet-vim'}, { ft = "javascript" }, _G.packer_plugins)]]
 vim.cmd [[au FileType vue ++once lua require("packer.load")({'emmet-vim'}, { ft = "vue" }, _G.packer_plugins)]]
+vim.cmd [[au FileType qf ++once lua require("packer.load")({'nvim-bqf'}, { ft = "qf" }, _G.packer_plugins)]]
 vim.cmd [[au FileType xml ++once lua require("packer.load")({'emmet-vim'}, { ft = "xml" }, _G.packer_plugins)]]
 vim.cmd [[au FileType jsx ++once lua require("packer.load")({'emmet-vim'}, { ft = "jsx" }, _G.packer_plugins)]]
 vim.cmd [[au FileType javascriptreact ++once lua require("packer.load")({'emmet-vim'}, { ft = "javascriptreact" }, _G.packer_plugins)]]
@@ -247,8 +256,8 @@ vim.cmd [[au FileType html ++once lua require("packer.load")({'emmet-vim'}, { ft
 time([[Defining lazy-load filetype autocommands]], false)
   -- Event lazy-loads
 time([[Defining lazy-load event autocommands]], true)
-vim.cmd [[au VimEnter * ++once lua require("packer.load")({'vimux', 'nvim-fzy', 'Navigator.nvim'}, { event = "VimEnter *" }, _G.packer_plugins)]]
-vim.cmd [[au BufEnter * ++once lua require("packer.load")({'splitjoin.vim', 'vim-surround', 'vim-matchup', 'switch.vim', 'kommentary'}, { event = "BufEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au VimEnter * ++once lua require("packer.load")({'nvim-fzy', 'vimux', 'Navigator.nvim'}, { event = "VimEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au BufEnter * ++once lua require("packer.load")({'kommentary', 'vim-matchup', 'vim-surround', 'switch.vim', 'splitjoin.vim'}, { event = "BufEnter *" }, _G.packer_plugins)]]
 time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")
 if should_profile then save_profiles() end

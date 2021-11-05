@@ -84,4 +84,11 @@ return require('packer').startup(function()
             require("fzy-conf")
         end,
     }
+    use {
+        'kevinhwang91/nvim-bqf',
+        ft = 'qf',
+        config = function()
+            require("bqf-conf")
+        end,
+    }
 end)
