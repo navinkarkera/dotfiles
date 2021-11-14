@@ -35,7 +35,6 @@ augroup NORA
                     \ ]
 
     autocmd TextYankPost * silent! lua require 'vim.highlight'.on_yank({timeout = 40})
-    autocmd BufWritePre *.py :Black
     autocmd BufWritePost bm-files,bm-dirs !shortcut
     autocmd BufRead,BufNewFile Xresources,Xdefaults,xresources,xdefaults set filetype=xdefaults
     autocmd BufWritePost Xresources,Xdefaults,xresources,xdefaults !xrd %

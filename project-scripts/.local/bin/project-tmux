@@ -5,31 +5,30 @@ FUZZYFINDER=${FUZZYFINDER:-"fzf-tmux -p"}
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    items=`find ~/Workspace -maxdepth 1 -mindepth 1 -type d \( ! -iname "vm" \)`
+    items=$(find ~/Workspace -maxdepth 1 -mindepth 1 -type d \( ! -iname "vm" \))
     # items+=("$HOME/personal")
     # items+=("$HOME/work")
-    selected=`echo "$items" | $FUZZYFINDER`
+    selected=$(echo "$items" | $FUZZYFINDER)
     [[ -z $selected ]] && exit 0
 fi
 
-base="$(basename $selected)"
-base=$(echo $base | tr . _)
-tmux switch-client -t $base && exit 0
+base="$(basename "$selected")"
+base=$(echo "$base" | tr . _)
+tmux switch-client -t "$base" && exit 0
 
 tn="tmux -2 -u -f $HOME/.config/tmux/.tmux.conf new"
-ta="tmux -2 -u -f $HOME/.config/tmux/.tmux.conf attach"
-cd $selected
+cd "$selected" || exit
 
 session-windows ()
 {
-    $tn -c $selected -d -s $base
-    tmux rename-window -t $base "edit"
-    [[ -d .venv ]] && tmux send-keys -t $base "source .venv/bin/activate" Enter
-    tmux send-keys -t $base "nvim" Enter
-    tmux neww -c $selected -t $base -n "shell"
-    [[ -d .venv ]] && tmux send-keys -t $base "source .venv/bin/activate" Enter
+    $tn -c "$selected" -d -s "$base"
+    tmux rename-window -t "$base" "edit"
+    [[ -d .venv ]] && tmux send-keys -t "$base" "source .venv/bin/activate" Enter
+    tmux send-keys -t "$base" "nvim" Enter
+    tmux neww -c "$selected" -t "$base" -n "shell"
+    [[ -d .venv ]] && tmux send-keys -t "$base" "source .venv/bin/activate" Enter
     tmux select-window -l
 }
 
-tmux has-session -t $base || session-windows
-tmux switch-client -t $base
+tmux has-session -t "$base" || session-windows
+tmux switch-client -t "$base"
