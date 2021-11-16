@@ -146,6 +146,8 @@ map("n", "J", "mzJ`z", options)
 map("n", "Y", "y$", options)
 map("x", "Y", "y$", options)
 
+map("x", ".", ":normal . <CR>", { noremap = true, silent = true })
+
 -- undo breakpoints
 map("i", ",", ",<c-g>u", options)
 map("i", ".", ".<c-g>u", options)

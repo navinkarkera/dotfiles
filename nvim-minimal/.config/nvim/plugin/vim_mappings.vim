@@ -14,6 +14,13 @@ endfunction
 
 nnoremap <silent> <leader>c :call ToggleQuickFix()<cr>
 
+function! ExecuteMacroOverVisualRange()
+    echo "@".getcmdline()
+    execute ":'<,'>normal @" . nr2char(getchar())
+endfunction
+
+xnoremap @ :<C-u>call ExecuteMacroOverVisualRange()<CR>
+
 augroup WhiteSpace
     autocmd!
     autocmd BufWritePre * :call TrimWhitespace()
