@@ -23,10 +23,10 @@ session-windows ()
 {
     $tn -c "$selected" -d -s "$base"
     tmux rename-window -t "$base" "edit"
-    [[ -d .venv ]] && tmux send-keys -t "$base" "source .venv/bin/activate" Enter
+    [[ -d .venv ]] && tmux send-keys -t "$base" "activate" Enter
     tmux send-keys -t "$base" "nvim" Enter
     tmux neww -c "$selected" -t "$base" -n "shell"
-    [[ -d .venv ]] && tmux send-keys -t "$base" "source .venv/bin/activate" Enter
+    [[ -d .venv ]] && tmux send-keys -t "$base" "activate" Enter
     tmux select-window -l
 }
 

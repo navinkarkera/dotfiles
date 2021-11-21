@@ -74,11 +74,11 @@ local on_attach = function(client, bufnr)
 	buf_set_keymap("n", "<space>q", "<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>", opts)
 	buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
 
-	if client.resolved_capabilities.document_formatting then
+	if client.resolved_capabilities.document_formatting and vim.bo.filetype ~= 'html' then
 		vim.cmd([[
         augroup Format
         autocmd! * <buffer>
-        autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()
+        autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync(nil, 5000)
         augroup END
         ]])
 	end
