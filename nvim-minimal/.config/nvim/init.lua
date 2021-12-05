@@ -45,7 +45,6 @@ o.expandtab = true
 o.hidden = true
 o.hlsearch = false
 o.ignorecase = true
-o.inccommand = "nosplit"
 o.incsearch = true
 o.laststatus = 2
 o.lazyredraw = true
@@ -143,9 +142,6 @@ map("n", "n", "nzz", options)
 map("n", "N", "Nzz", options)
 map("n", "J", "mzJ`z", options)
 
-map("n", "Y", "y$", options)
-map("x", "Y", "y$", options)
-
 map("x", ".", ":normal . <CR>", { noremap = true, silent = true })
 
 -- undo breakpoints
@@ -166,16 +162,6 @@ map("i", "kj", "<C-[>", options)
 map("i", "<C-l>", "<C-x><C-l>", options)
 
 map("t", "kj", "<C-\\><C-n>", options)
-
--- mark maps
-map("n", "<leader>1", "`Q", options)
-map("n", "<leader>2", "`W", options)
-map("n", "<leader>3", "`E", options)
-map("n", "<leader>4", "`R", options)
-map("n", ",1", "mQ", options)
-map("n", ",2", "mW", options)
-map("n", ",3", "mE", options)
-map("n", ",4", "mR", options)
 
 -- plugins setup
 require("plugins")

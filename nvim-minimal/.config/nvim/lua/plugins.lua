@@ -106,4 +106,10 @@ return require("packer").startup(function()
 			require("bqf-conf")
 		end,
 	})
+	use({
+		"ThePrimeagen/harpoon",
+		config = function()
+			require("harpoon-conf")
+		end,
+	})
 end)

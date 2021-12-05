@@ -1,8 +1,8 @@
 fzy = require("fzy")
 
+fzy.setup()
 local map = vim.api.nvim_set_keymap
 local options = { noremap = true, silent = true }
-local api = vim.api
 
 map("n", "<C-b>", ":lua fzy.actions.buffers()<CR>", options)
 map("n", "<leader>ft", ":lua fzy.try(fzy.actions.lsp_tags, fzy.actions.buf_tags)<CR>", options)
