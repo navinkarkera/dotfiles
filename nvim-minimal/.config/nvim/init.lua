@@ -50,7 +50,11 @@ o.laststatus = 2
 o.lazyredraw = true
 o.matchpairs = o.matchpairs .. ",<:>"
 o.mouse = "a"
-o.path = ".,**"
+if vim.fn.executable("fd") == 1 then
+	o.path = table.concat(vim.fn.systemlist("fd -t d -a"), ",")
+else
+	o.path = ".,**"
+end
 o.pumheight = 20
 o.scrolloff = 4
 o.shiftwidth = 4

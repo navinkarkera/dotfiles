@@ -1,34 +1,5 @@
 local null_ls = require("null-ls")
 
-null_ls.config({
-	sources = {
-		null_ls.builtins.formatting.stylua,
-		null_ls.builtins.formatting.prettier.with({
-			filetypes = { "html", "json", "yaml", "markdown" },
-		}),
-		null_ls.builtins.diagnostics.shellcheck.with({
-			diagnostics_format = "[#{c}] #{m} (#{s})",
-		}),
-		null_ls.builtins.formatting.black.with({ extra_args = { "--fast" } }),
-		null_ls.builtins.diagnostics.eslint_d.with({
-			condition = function(utils)
-				return utils.root_has_file(".eslintrc.json")
-			end,
-		}),
-		null_ls.builtins.formatting.isort,
-		null_ls.builtins.diagnostics.shellcheck,
-		null_ls.builtins.formatting.eslint_d.with({
-			condition = function(utils)
-				return utils.root_has_file(".eslintrc.json")
-			end,
-		}),
-		null_ls.builtins.formatting.rustfmt,
-		null_ls.builtins.diagnostics.proselint.with({
-			filetypes = { "tex", "markdown", "rst", "plain" },
-		}),
-	},
-})
-
 local on_attach = function(client, bufnr)
 	local function buf_set_keymap(...)
 		vim.api.nvim_buf_set_keymap(bufnr, ...)
@@ -74,7 +45,7 @@ local on_attach = function(client, bufnr)
 	buf_set_keymap("n", "<space>q", "<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>", opts)
 	buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
 
-	if client.resolved_capabilities.document_formatting and vim.bo.filetype ~= 'html' then
+	if client.resolved_capabilities.document_formatting and vim.bo.filetype ~= "html" then
 		vim.cmd([[
         augroup Format
         autocmd! * <buffer>
@@ -84,6 +55,32 @@ local on_attach = function(client, bufnr)
 	end
 end
 
-require("lspconfig")["null-ls"].setup({
+null_ls.setup({
 	on_attach = on_attach,
+	sources = {
+		null_ls.builtins.formatting.stylua,
+		null_ls.builtins.formatting.prettier.with({
+			filetypes = { "html", "json", "yaml", "markdown" },
+		}),
+		null_ls.builtins.diagnostics.shellcheck.with({
+			diagnostics_format = "[#{c}] #{m} (#{s})",
+		}),
+		null_ls.builtins.formatting.black.with({ extra_args = { "--fast" } }),
+		null_ls.builtins.diagnostics.eslint_d.with({
+			condition = function(utils)
+				return utils.root_has_file(".eslintrc.json")
+			end,
+		}),
+		null_ls.builtins.formatting.isort,
+		null_ls.builtins.diagnostics.shellcheck,
+		null_ls.builtins.formatting.eslint_d.with({
+			condition = function(utils)
+				return utils.root_has_file(".eslintrc.json")
+			end,
+		}),
+		-- null_ls.builtins.formatting.rustfmt,
+		null_ls.builtins.diagnostics.proselint.with({
+			filetypes = { "tex", "markdown", "rst", "plain" },
+		}),
+	},
 })
