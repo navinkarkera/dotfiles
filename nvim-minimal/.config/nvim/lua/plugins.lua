@@ -112,4 +112,5 @@ return require("packer").startup(function()
 			require("harpoon-conf")
 		end,
 	})
+	use("tversteeg/registers.nvim")
 end)

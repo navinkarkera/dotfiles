@@ -79,8 +79,5 @@ null_ls.setup({
 			end,
 		}),
 		-- null_ls.builtins.formatting.rustfmt,
-		null_ls.builtins.diagnostics.proselint.with({
-			filetypes = { "tex", "markdown", "rst", "plain" },
-		}),
 	},
 })
