@@ -219,7 +219,7 @@ hi! link cssProp Identifier
 hi! link cssTagName Keyword
 
 " Diffs
-Hi DiffAdd NONE lgreen NONE
+Hi DiffAdd green lgreen NONE
 Hi DiffChange NONE NONE NONE
 Hi DiffDelete red NONE NONE
 Hi DiffText NONE lgreen NONE

@@ -73,3 +73,9 @@ endfunction
 " inoremap <expr> <silent> <s-tab> CleverTab(1)
 " inoremap <expr> <silent> <c-space> OmniCom()
 nnoremap <silent> <leader>pv :Fern . -reveal=% -drawer -toggle -width=35<CR>
+
+inoremap <silent> <C-l> <cmd>lua require('my-functions').expand_or_jump()<Cr>
+inoremap <silent> <C-h> <cmd>lua require'my-functions'.jump_prev()<Cr>
+
+snoremap <silent> <C-l> <cmd>lua require('my-functions').expand_or_jump()<Cr>
+snoremap <silent> <C-h> <cmd>lua require('my-functions').jump_prev()<Cr>

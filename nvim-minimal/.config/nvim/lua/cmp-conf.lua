@@ -3,6 +3,9 @@
 vim.opt.shortmess:append("c")
 local luasnip = require("luasnip")
 
+require("luasnip.loaders.from_vscode").load()
+luasnip.filetype_extend("python", { "django" })
+
 local has_words_before = function()
 	local line, col = unpack(vim.api.nvim_win_get_cursor(0))
 	return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
@@ -22,7 +25,6 @@ cmp.setup({
 	experimental = {
 		native_menu = false,
 
-		-- Let's play with this for a day or two
 		ghost_text = true,
 	},
 	mapping = {
@@ -47,8 +49,6 @@ cmp.setup({
 				vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-p>", true, true, true), "n", true)
 			elseif cmp.visible() then
 				cmp.select_next_item()
-			elseif luasnip.expand_or_jumpable() then
-				luasnip.expand_or_jump()
 			elseif has_words_before() then
 				vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-p>", true, true, true), "n", true)
 			else
@@ -60,8 +60,6 @@ cmp.setup({
 				vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-n>", true, true, true), "n", true)
 			elseif cmp.visible() then
 				cmp.select_prev_item()
-			elseif luasnip.jumpable(-1) then
-				luasnip.jump(-1)
 			else
 				fallback()
 			end

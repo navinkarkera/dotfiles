@@ -15,6 +15,7 @@ return require("packer").startup(function()
 	-- lsp plugings
 	use({
 		"L3MON4D3/LuaSnip",
+		requires = { "rafamadriz/friendly-snippets" },
 	})
 	use({
 		"hrsh7th/nvim-cmp",
@@ -53,9 +54,20 @@ return require("packer").startup(function()
 		"nvim-treesitter/nvim-treesitter-textobjects",
 		after = "nvim-treesitter",
 	})
-
+	use({
+		"danymat/neogen",
+		config = function()
+			require("neogen-conf")
+		end,
+		requires = "nvim-treesitter/nvim-treesitter",
+	})
 	use({ "tpope/vim-fugitive", opt = true, cmd = { "Git", "G" } })
-	use({ "b3nj5m1n/kommentary", event = "BufEnter" })
+	use({
+		"numToStr/Comment.nvim",
+		config = function()
+			require("Comment").setup()
+		end,
+	})
 	use({ "tpope/vim-surround", event = "BufEnter" })
 	use({ "andymass/vim-matchup", event = "BufEnter" })
 	use({

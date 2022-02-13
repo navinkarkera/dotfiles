@@ -123,8 +123,6 @@ map("n", "<C-j>", ":cn<cr>zz", options)
 map("n", "<C-k>", ":cp<cr>zz", options)
 
 map("v", "<C-r>", '"hy:%s/<C-r>h//gc<left><left><left>', options)
-map("n", "<C-l>", ":bnext<cr>", options)
-map("n", "<C-h>", ":bprevious<cr>", options)
 map("n", "<leader><cr>", ":so ~/.config/nvim/init.lua<CR>", options)
 map("n", "<leader>+", ":vertical resize +15<CR>", options)
 map("n", "<leader>-", ":vertical resize -10<CR>", options)

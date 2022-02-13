@@ -9,6 +9,7 @@ map("n", "<leader>ft", ":lua fzy.try(fzy.actions.lsp_tags, fzy.actions.buf_tags)
 map("n", "<leader>fg", ":lua fzy.execute('git ls-files', fzy.sinks.edit_file)<CR>", options)
 map("n", "<leader>fq", ":lua fzy.actions.quickfix()<CR>", options)
 map("n", "<leader>f/", ":lua fzy.actions.buf_lines()<CR>", options)
+map("n", "<leader>pS", ":lua fzy.execute('rg --no-heading --trim -nH .', fzy.sinks.edit_live_grep)<CR>", options)
 
 map("n", "<c-p>", [[:lua fzy.execute('fd -L -t f -H -E ".git" .', fzy.sinks.edit_file)<cr>]], options)
 map(

@@ -12,14 +12,14 @@ require("nvim-treesitter.configs").setup({
 		"css",
 		"go",
 	}, -- one of "all", "language", or a list of languages
+	indent = {
+		enable = true,
+	},
 	highlight = {
 		enable = true, -- false will disable the whole extension
-		indent = {
-			enable = true,
-		},
-		autotag = {
-			enable = true,
-		},
+	},
+	autotag = {
+		enable = true,
 	},
 	textobjects = {
 		select = {
