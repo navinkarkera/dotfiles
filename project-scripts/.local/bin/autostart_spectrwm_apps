@@ -1,0 +1,8 @@
+#!/bin/sh
+
+#3-monitors.sh &         # set my 3 monitors the way I prefer
+nitrogen --restore      # set wallpaper using xwallpaper (you can replace this with xwal to get a random wallpaper)
+#fehbg &                # set wallpaper using feh (you can replace this with wal to get a random wallpaper)
+picom &                 # launch picom (formerly compton) to get transparency working
+/usr/lib/polkit-kde-authentication-agent-1 &              # provides extended privileges to applications.
+setxkbmap -option ctrl:nocaps
