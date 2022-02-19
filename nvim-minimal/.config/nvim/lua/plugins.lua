@@ -44,6 +44,14 @@ return require("packer").startup(function()
 	})
 
 	use({
+		"nvim-telescope/telescope.nvim",
+		requires = { { "nvim-lua/plenary.nvim" }, { "nvim-telescope/telescope-fzf-native.nvim", run = "make" } },
+		config = function()
+			require("fuzzy")
+		end,
+	})
+
+	use({
 		"nvim-treesitter/nvim-treesitter",
 		run = ":TSUpdate",
 		config = function()
@@ -103,13 +111,6 @@ return require("packer").startup(function()
 		requires = {
 			{ "lambdalisue/fern.vim" },
 		},
-	})
-	use({
-		"mfussenegger/nvim-fzy",
-		event = "VimEnter",
-		config = function()
-			require("fzy-conf")
-		end,
 	})
 	use({
 		"kevinhwang91/nvim-bqf",

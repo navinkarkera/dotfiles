@@ -5,4 +5,6 @@ nitrogen --restore      # set wallpaper using xwallpaper (you can replace this w
 #fehbg &                # set wallpaper using feh (you can replace this with wal to get a random wallpaper)
 picom &                 # launch picom (formerly compton) to get transparency working
 /usr/lib/polkit-kde-authentication-agent-1 &              # provides extended privileges to applications.
+dunst &
+playerctld daemon
 setxkbmap -option ctrl:nocaps

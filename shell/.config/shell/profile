@@ -46,6 +46,7 @@ export MBSYNCRC="${XDG_CONFIG_HOME:-$HOME/.config}/mbsync/config"
 export ELECTRUMDIR="${XDG_DATA_HOME:-$HOME/.local/share}/electrum"
 
 # Other program settings:
+export BAT_THEME="Solarized (light)"
 export TS_ONFINISH="$HOME/.local/bin/project-scripts/tsp-notify"
 export DICS="/usr/share/stardict/dic/"
 export SUDO_ASKPASS="$HOME/.local/bin/dmenupass"
