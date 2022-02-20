@@ -47,7 +47,8 @@ export ELECTRUMDIR="${XDG_DATA_HOME:-$HOME/.local/share}/electrum"
 
 # Other program settings:
 export BAT_THEME="Solarized (light)"
-export TS_ONFINISH="$HOME/.local/bin/project-scripts/tsp-notify"
+export ZK_NOTEBOOK_DIR="/home/navin/Documents/my-notes"
+export TS_ONFINISH="/home/navin/.local/bin/tsp-notify"
 export DICS="/usr/share/stardict/dic/"
 export SUDO_ASKPASS="$HOME/.local/bin/dmenupass"
 export FZF_DEFAULT_OPTS="--ansi --layout=reverse"

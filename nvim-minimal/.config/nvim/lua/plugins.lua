@@ -107,10 +107,10 @@ return require("packer").startup(function()
 		end,
 	})
 	use({
-		"lambdalisue/fern-hijack.vim",
-		requires = {
-			{ "lambdalisue/fern.vim" },
-		},
+		"mickael-menu/zk-nvim",
+		config = function()
+			require("notes-conf")
+		end,
 	})
 	use({
 		"kevinhwang91/nvim-bqf",
@@ -126,4 +126,11 @@ return require("packer").startup(function()
 		end,
 	})
 	use("tversteeg/registers.nvim")
+	use({
+		"tamago324/lir.nvim",
+		requires = { "nvim-lua/plenary.nvim" },
+		config = function()
+			require("file-manager-conf")
+		end,
+	})
 end)
