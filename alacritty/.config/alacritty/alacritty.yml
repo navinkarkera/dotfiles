@@ -151,7 +151,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 11.5
+  size: 11.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -175,7 +175,6 @@ font:
 
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
-
 # # Colors (ArcoLinux)
 # colors:
 #   # Default colors
@@ -322,31 +321,31 @@ draw_bold_text_with_bright_colors: true
 #     white:   '#4F5E68'
 
 # neobones_light alacritty colors
-colors:
-  # Default colors
-  primary:
-    background: "#f2eede"
-    foreground: "#202E18"
-  # Normal colors
-  normal:
-    black: "#202E18"
-    red: "#A8334C"
-    green: "#567A30"
-    yellow: "#944927"
-    blue: "#286486"
-    magenta: "#88507D"
-    cyan: "#3B8992"
-    white: "#202E18"
-  # Bright colors
-  bright:
-    black: "#B3C6B6"
-    red: "#94253E"
-    green: "#3F5A22"
-    yellow: "#803D1C"
-    blue: "#1D5573"
-    magenta: "#7B3B70"
-    cyan: "#2B747C"
-    white: "#415934"
+# colors:
+#   # Default colors
+#   primary:
+#     background: "#f2eede"
+#     foreground: "#202E18"
+#   # Normal colors
+#   normal:
+#     black: "#202E18"
+#     red: "#A8334C"
+#     green: "#567A30"
+#     yellow: "#944927"
+#     blue: "#286486"
+#     magenta: "#88507D"
+#     cyan: "#3B8992"
+#     white: "#202E18"
+#   # Bright colors
+#   bright:
+#     black: "#B3C6B6"
+#     red: "#94253E"
+#     green: "#3F5A22"
+#     yellow: "#803D1C"
+#     blue: "#1D5573"
+#     magenta: "#7B3B70"
+#     cyan: "#2B747C"
+#     white: "#415934"
 # # zenbones colors
 # colors:
 #   # Default colors
@@ -401,6 +400,80 @@ colors:
 #     cyan:    '#2B747C'
 #     white:   '#5C5C5C'
 
+# # Rose pine dawn
+# colors:
+#   primary:
+#     background: "0xfffaf3"
+#     foreground: "0x575279"
+#   cursor:
+#     text: "0xfaf4ed"
+#     cursor: "0xECC5BF"
+#   vi_mode_cursor:
+#     text: "0xfaf4ed"
+#     cursor: "0xECC5BF"
+#   line_indicator:
+#     foreground: None
+#     background: None
+#   selection:
+#     text: CellForeground
+#     background: "0xF5E2DF"
+#   normal:
+#     black: "0x6e6a86"
+#     red: "0xb4637a"
+#     green: "0x56949f"
+#     yellow: "0xea9d34"
+#     blue: "0x286983"
+#     magenta: "0x907aa9"
+#     cyan: "0xd7827e"
+#     white: "0x575279"
+#   bright:
+#     black: "0x6e6a86"
+#     red: "0xeb6f92"
+#     green: "0x9ccfd8"
+#     yellow: "0xf6c177"
+#     blue: "0x31748f"
+#     magenta: "0xc4a7e7"
+#     cyan: "0xebbcba"
+#     white: "0xe0def4"
+#   hints:
+#     start:
+#       foreground: "#6e6a86"
+#       background: "#f2e9de"
+#     end:
+#       foreground: "#9893a5"
+#       background: "#f2e9de"
+
+# Colors (Gruvbox light)
+colors:
+  # Default colors
+  primary:
+    # hard contrast:
+    # background = '#f9f5d7'
+    background: "#f9f5d7"
+    # soft contrast: background = '#f2e5bc'
+    foreground: "#3c3836"
+
+  # Normal colors
+  normal:
+    black: "#fbf1c7"
+    red: "#cc241d"
+    green: "#98971a"
+    yellow: "#d79921"
+    blue: "#458588"
+    magenta: "#b16286"
+    cyan: "#689d6a"
+    white: "#7c6f64"
+
+  # Bright colors
+  bright:
+    black: "#928374"
+    red: "#9d0006"
+    green: "#79740e"
+    yellow: "#b57614"
+    blue: "#076678"
+    magenta: "#8f3f71"
+    cyan: "#427b58"
+    white: "#3c3836"
 # Bell
 #
 # The bell is rung every time the BEL control character is received.

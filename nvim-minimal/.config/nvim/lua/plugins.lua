@@ -133,4 +133,10 @@ return require("packer").startup(function()
 			require("file-manager-conf")
 		end,
 	})
+	use({
+		"ellisonleao/gruvbox.nvim",
+		config = function()
+			vim.cmd([[colorscheme gruvbox]])
+		end,
+	})
 end)

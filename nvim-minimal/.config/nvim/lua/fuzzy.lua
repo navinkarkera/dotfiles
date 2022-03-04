@@ -43,7 +43,7 @@ telescope.setup({
 	},
 	pickers = {
 		find_files = {
-			find_command = { "fd", "--type", "f", "--strip-cwd-prefix", "-H", "-L" },
+			find_command = { "fd", "-L", "--type", "f", "--strip-cwd-prefix", "-H", "-L", "-E", ".git" },
 		},
 	},
 })

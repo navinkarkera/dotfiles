@@ -260,3 +260,14 @@ alias xd="ls /usr/share/xsessions"
 activate() {
     [[ -d .venv && "$VIRTUAL_ENV" == "" ]] && source .venv/bin/activate
 }
+
+# taskwarrior
+alias td="task"
+alias tda="task add"
+alias tdall="task all"
+alias ttui="taskwarrior-tui"
+
+# timewarrior
+alias tw="timew"
+alias tws="timew summary"
+alias twday="timew day"

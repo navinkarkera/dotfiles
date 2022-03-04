@@ -38,7 +38,7 @@ o.cmdheight = 1
 o.complete = ".,w,b,u,i"
 o.completeopt = "menu"
 o.concealcursor = "nc"
-o.cursorline = true
+o.cursorline = false
 o.dir = "/tmp"
 o.errorbells = false
 o.expandtab = true
@@ -167,4 +167,3 @@ map("t", "kj", "<C-\\><C-n>", options)
 
 -- plugins setup
 require("plugins")
-cmd("colorscheme paper")
