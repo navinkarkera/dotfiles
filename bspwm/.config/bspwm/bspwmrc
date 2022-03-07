@@ -1,27 +1,17 @@
 #! /bin/sh
 
 
-# autostart
 killall sxhkd
 sxhkd &
 
 # run the xrandr command if an external monitor is connected to the
 # laptop.  This must be executed before the polybar command, so that
 # polybar can set the two separate bars properly.
-if [ -x $HOME/Projects/scripts/monitor/dual_monitor ];then
-    $HOME/Projects/scripts/monitor/dual_monitor
-fi
-
-$HOME/.config/polybar/launch.sh
-xmodmap $HOME/.config/.xmodmaprc
-killall nitrogen
-nitrogen --restore &
-killall picom
-picom &
+dual_monitor
 
 # monitor workspace
-bspc monitor eDP1 -d 1 2 3 4 5
-bspc monitor HDMI1 -d 6 7 8 9 0
+bspc monitor HDMI1 -d 1 2 3 4 5
+bspc monitor eDP1 -d 6 7 8 9 0
 
 ###---Global Settings---###
 bspc config automatic_scheme alternate
@@ -33,13 +23,14 @@ bspc config pointer_action3 resize_corner
 bspc config click_to_focus none
 
 ###---Monitor And Desktop Settings----###
-bspc config top_padding 22
+bspc config top_padding 0
 bspc config left_padding 0
 bspc config right_padding 0
-bspc config border_width 2
-bspc config window_gap 5
+bspc config bottom_padding 23
+bspc config border_width 1
+bspc config window_gap 1
 
-bspc config focus_follows_pointer true
+bspc config focus_follows_pointer false
 bspc config remove_disabled_monitors true
 bspc config remove_unplugged_monitors true
 bspc config merge_overlapping_monitors true
@@ -55,6 +46,14 @@ bspc config split_ratio          0.55
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a firefox desktop='^2'
-bspc rule -a mplayer2 state=floating
+bspc rule -a 'Brave-browser' desktop='^2'
 bspc rule -a Screenkey manage=off
+bspc rule -a '*:*:Desktop — Plasma' state=floating border=off
+bspc rule -a Plasma state=floating border=off
+bspc rule -a plasma-desktop state=floating border=off
+bspc rule -a win7 state=floating border=off
+bspc rule -a krunner state=floating border=off
+bspc rule -a Kmix state=floating border=off
+bspc rule -a Klipper state=floating border=off
+bspc rule -a Plasmoidviewer state=floating border=off
+bspc rule -a plasmashell state=floating border=off focus=off manage=off center=off

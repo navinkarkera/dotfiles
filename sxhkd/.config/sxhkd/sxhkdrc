@@ -1,22 +1,22 @@
 ﻿# bspwm hotkeys
 #
 # Cleanly quit bspwm
-super + shift + q
-	bspc quit 1 && pkill polybar
+# super + shift + q
+# 	bspc quit 1 && pkill polybar
 
 # Show keybindings
-super + F1
-	$TERMINAL -e keybindings.sh
+# super + F1
+# 	$TERMINAL -e keybindings.sh
 
 # Restart bspwm
-alt + shift + c
+super + shift + x
     bspc wm -r
 #
 # Window manipulation
 # ______________
 
 # Close window
-alt + shift + q
+super + q
 	bspc  node -c
 
 # Kill window
@@ -37,7 +37,7 @@ super + ctrl + shift + t
 	bspcp float
 
 # Toggle fullscreen
-alt + shift + f
+super + shift + f
 	bspc node -t {fullscreen,tiled}
 
 # Try to keep size and position of the selected window
@@ -53,15 +53,15 @@ super + Escape
 	bspc node -g locked
 
 # Map or unmap windows (functional equivalent of "minimize")
-super + c
-    whid dmenu
+# super + c
+#     whid dmenu
 
 # hide/unhide window
-super + shift + c
-    whid hide
+# super + shift + c
+#     whid hide
 
-super + ctrl + c
-    whid last
+# super + ctrl + c
+#     whid last
 
 #
 # Window moving and splitting
@@ -72,11 +72,11 @@ super + ctrl + c
 #	auto-presel
 
 # Focus on window in direction
-alt + {h,j,k,l}
+super + {h,j,k,l}
 	bspc node -f {west,south,north,east}
 
 # Presel the desktop for splitting in certain direction
-alt + ctrl + {h,j,k,l}
+super + ctrl + {h,j,k,l}
 	bspc node -p \~{west,south,north,east}
 
 # Presel the desktop for splitting in certain direction
@@ -94,15 +94,15 @@ alt + ctrl + {1-9}
 	bspc node -o 0.{1-9}
 
 # Move current window to largest space or preselected area if there is one.
-super + Return
-    windowpromoter
+# super + Return
+#     windowpromoter
 
 # Create a new "master area", splitting the whole desktop instead of just windows.
 alt + shift + Return
 	bspc node -n @/
 
 # go (Shift=move) to desktop (and focus the monitor that the desktop is located on. Bspwm style)
-alt + {_,shift + }{1-9,0}
+super + {_,shift + }{1-9,0}
     bspc {desktop -f,node -d} ^{1-9,10}
 
 ## Alternative: i3 style behavior (focus nth, desktop of the focused monitor)
@@ -131,11 +131,11 @@ alt + Tab
     bspc desktop last -f
 
 # Focus window in direction
-alt +  {h,j,k,l}
-    focusmover {west,south,north,east}
+# alt +  {h,j,k,l}
+#     focusmover {west,south,north,east}
 
-super +  {Left,Down,Up,Right}
-    focusmover {west,south,north,east}
+# super +  {Left,Down,Up,Right}
+#     focusmover {west,south,north,east}
 
 # Move tiled windows. Moving a tiled window to
 # preselected one moves into preselection instead.
@@ -149,10 +149,10 @@ super + shift + {Left,Down,Up,Right}
 	euclid_mover {west,south,north,east}
 
 #resize windows
-super + ctrl + {h,j,k,l}
+alt + ctrl + {h,j,k,l}
 	bspwm_resize.sh {west,south,north,east}
 
-super + ctrl + {Left,Down,Up,Right}
+alt + ctrl + {Left,Down,Up,Right}
 	bspwm_resize.sh {west,south,north,east}
 
 #
@@ -160,7 +160,7 @@ super + ctrl + {Left,Down,Up,Right}
 # ______________
 
 # Toggle monocle mode
-alt + f
+super + f
 	bspc desktop -l next
 
 # Balance tree
@@ -248,7 +248,7 @@ super + d
 	dmenu_recent -fn 'xos4 Terminus:size=15' -i -l 14 -w 600
 
 # Triggered by jus tapping super
-alt + d
+super + d
 	rofi -show run
 
 # Open projects
@@ -256,7 +256,7 @@ super + p
     $TERMINAL --working-directory ~/Projects/$(ls ~/Projects | rofi -dmenu)
 
 # Open terminal/browser
-alt + {Return,b}
+super + {Return,w}
     {$TERMINAL,$BROWSER}
 
 # Open terminal here
@@ -268,35 +268,35 @@ super + e
 	$TERMINAL -e nvim
 
 # Print screen region
-Print
-    maim -s -u ~/Pictures/screenshots/$(date +%s).png
+# Print
+#     maim -s -u ~/Pictures/screenshots/$(date +%s).png
 
 
 #
 # Media keys
 #
 
-XF86AudioRaiseVolume
-    pactl set-sink-volume @DEFAULT_SINK@ +10%;
-
-XF86AudioLowerVolume
-    pactl set-sink-volume @DEFAULT_SINK@ -10%;
-
-XF86AudioMute
-    pactl set-sink-mute @DEFAULT_SINK@ toggle; notify-send 'mute toggle'
-
-XF86AudioMicMute
-    pactl set-source-mute @DEFAULT_SOURCE@ toggle; notify-send 'mic toggle'
-
-XF86MonBrightnessDown
-    xbacklight -dec 10; notify-send
-
-XF86MonBrightnessUp
-    xbacklight -inc 10; notify-send
-
-
-XF86Sleep
-	systemctl suspend
+# XF86AudioRaiseVolume
+#     pactl set-sink-volume @DEFAULT_SINK@ +10%;
+#
+# XF86AudioLowerVolume
+#     pactl set-sink-volume @DEFAULT_SINK@ -10%;
+#
+# XF86AudioMute
+#     pactl set-sink-mute @DEFAULT_SINK@ toggle; notify-send 'mute toggle'
+#
+# XF86AudioMicMute
+#     pactl set-source-mute @DEFAULT_SOURCE@ toggle; notify-send 'mic toggle'
+#
+# XF86MonBrightnessDown
+#     xbacklight -dec 10; notify-send
+#
+# XF86MonBrightnessUp
+#     xbacklight -inc 10; notify-send
+#
+#
+# XF86Sleep
+# 	systemctl suspend
 
 # make sxhkd reload its configuration files:
 super + shift + Escape

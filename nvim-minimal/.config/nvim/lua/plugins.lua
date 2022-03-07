@@ -134,9 +134,12 @@ return require("packer").startup(function()
 		end,
 	})
 	use({
-		"ellisonleao/gruvbox.nvim",
+		"mcchrish/zenbones.nvim",
+		requires = "rktjmp/lush.nvim",
 		config = function()
-			vim.cmd([[colorscheme gruvbox]])
+			vim.g.vimbones_solid_float_border = true
+			vim.cmd([[colorscheme vimbones]])
 		end,
 	})
+	-- use("mcchrish/zenbones.nvim")
 end)
