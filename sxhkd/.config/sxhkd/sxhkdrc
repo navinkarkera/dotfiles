@@ -248,12 +248,12 @@ super + d
 	dmenu_recent -fn 'xos4 Terminus:size=15' -i -l 14 -w 600
 
 # Triggered by jus tapping super
-super + d
-	rofi -show run
+# super + d
+# 	rofi -show run
 
 # Open projects
-super + p
-    $TERMINAL --working-directory ~/Projects/$(ls ~/Projects | rofi -dmenu)
+# super + p
+#     $TERMINAL --working-directory ~/Projects/$(ls ~/Projects | rofi -dmenu)
 
 # Open terminal/browser
 super + {Return,w}
@@ -316,11 +316,11 @@ super + BackSpace
 
 # Kill picom
 super + shift + p
-    killall picom || picom &; notify-send 'toggle picom'
+    passmenu
 
 # Open wifi menu
-super + w
-    /home/navin/Projects/scripts/rofi/rofi-wifi-menu
+# super + w
+#     /home/navin/Projects/scripts/rofi/rofi-wifi-menu
 
 # Emoji
 super + shift + e
