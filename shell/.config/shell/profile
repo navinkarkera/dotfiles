@@ -12,7 +12,11 @@ export PATH="$PATH:/home/navin/.local/share/cargo/bin"
 unsetopt PROMPT_SP
 
 # Default programs:
-export EDITOR="nvim"
+if [[ "$(command -v nvim)" ]]; then
+    export EDITOR='nvim'
+    export MANPAGER='nvim +Man!'
+    export MANWIDTH=999
+fi
 export TERMINAL="alacritty"
 export BROWSER="brave"
 export GPG_TTY=$(tty)
@@ -44,6 +48,7 @@ export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/history"
 export WEECHAT_HOME="${XDG_CONFIG_HOME:-$HOME/.config}/weechat"
 export MBSYNCRC="${XDG_CONFIG_HOME:-$HOME/.config}/mbsync/config"
 export ELECTRUMDIR="${XDG_DATA_HOME:-$HOME/.local/share}/electrum"
+export TASKRC="${XDG_CONFIG_HOME:-$HOME/.config}/task/taskrc"
 
 # Other program settings:
 export BAT_THEME="gruvbox-light"
@@ -52,7 +57,7 @@ export TS_ONFINISH="/home/navin/.local/bin/tsp-notify"
 export DICS="/usr/share/stardict/dic/"
 export SUDO_ASKPASS="$HOME/.local/bin/dmenupass"
 export FZF_DEFAULT_OPTS="--ansi --layout=reverse"
-export FZF_DEFAULT_COMMAND="fd --type file --follow --color=always"
+export FZF_DEFAULT_COMMAND="fd --type file --follow -H --color=always"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND . $HOME"
 export FZF_CTRL_T_OPTS="--preview 'bat --style=numbers --color=always --line-range :100 {}'"
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS"

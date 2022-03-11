@@ -51,14 +51,14 @@ telescope.setup({
 local map = vim.api.nvim_set_keymap
 local options = { noremap = true, silent = true }
 
-map("n", "<C-b>", ":lua require('telescope.builtin').buffers()<CR>", options)
+map("n", "<leader>fb", ":lua require('telescope.builtin').buffers()<CR>", options)
 map("n", "<leader>ft", ":lua require('telescope.builtin').lsp_document_symbols()<CR>", options)
 map("n", "<leader>fg", ":lua require('telescope.builtin').git_files()<CR>", options)
 map("n", "<leader>fq", ":lua require('telescope.builtin').quickfix()<CR>", options)
 map("n", "<leader>f/", ":lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>", options)
 map("n", "<leader>pS", ":lua require('telescope.builtin').live_grep()<CR>", options)
 
-map("n", "<c-p>", [[:lua require('telescope.builtin').find_files()<cr>]], options)
+map("n", "<leader>ff", [[:lua require('telescope.builtin').find_files()<cr>]], options)
 map(
 	"n",
 	"<leader>fc",

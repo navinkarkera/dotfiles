@@ -1,7 +1,5 @@
 local o = vim.o
 local wo = vim.wo
-local bo = vim.bo
-local cmd = vim.cmd
 local g = vim.g
 M = {}
 local map = vim.api.nvim_set_keymap
@@ -51,7 +49,9 @@ o.lazyredraw = true
 o.matchpairs = o.matchpairs .. ",<:>"
 o.mouse = "a"
 if vim.fn.executable("fd") == 1 then
-	o.path = table.concat(vim.fn.systemlist("fd -t d -a"), ",")
+	local fd_table = vim.fn.systemlist("fd -t d -L -H --strip-cwd-prefix -E .git")
+	table.insert(fd_table, 1, vim.fn.expand("%:p:h"))
+	o.path = table.concat(fd_table, ",")
 else
 	o.path = ".,**"
 end

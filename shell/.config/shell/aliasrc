@@ -37,7 +37,6 @@ alias \
 	YT="youtube-viewer" \
 	sdn="sudo shutdown -h now" \
 	e="$EDITOR" \
-	v="$EDITOR" \
 	p="sudo pacman" \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove -R" \
@@ -50,9 +49,9 @@ alias \
 	weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \
 
 alias \
-	t="tmux" \
-	tn="t -u -f ~/.config/tmux/.tmux.conf new" \
-	ta="t -u -f ~/.config/tmux/.tmux.conf attach"
+	t="tmux -u -f ~/.config/tmux/.tmux.conf" \
+	tn="t new-session -A -s main" \
+	ta="t attach"
 
 alias v="project-files" \
     pcmd="project-cmd"
@@ -219,8 +218,8 @@ alias nfstab="sudo $EDITOR /etc/fstab"
 alias nnsswitch="sudo $EDITOR /etc/nsswitch.conf"
 alias nsamba="sudo $EDITOR /etc/samba/smb.conf"
 alias ngnupgconf="sudo nano /etc/pacman.d/gnupg/gpg.conf"
-alias nb="$EDITOR ~/.bashrc"
-alias nz="$EDITOR ~/.zshrc"
+alias nb="$EDITOR ~/..bashrc"
+alias nz="$EDITOR ~/.config/zsh/.zshrc"
 
 #gpg
 #verify signature for isos
@@ -271,3 +270,5 @@ alias ttui="taskwarrior-tui"
 alias tw="timew"
 alias tws="timew summary"
 alias twday="timew day"
+alias twmonthtotal="timew report totals :month"
+alias twtotal="timew report totals "

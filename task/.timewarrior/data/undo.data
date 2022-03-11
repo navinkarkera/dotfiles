@@ -1,0 +1,41 @@
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220310T063147Z","tags":["setup","setup taskwarrior and timewarrior"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220310T063147Z","tags":["setup","setup taskwarrior and timewarrior"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220310T063147Z","end":"20220310T063616Z","tags":["setup","setup taskwarrior and timewarrior"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220310T033000Z","end":"20220310T053000Z","tags":["billing","encryption setup","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220307T034500Z","end":"20220307T050600Z","tags":["billing","on-boarding course","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220311T045012Z","tags":["billing","on-boarding course","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220311T045012Z","tags":["billing","on-boarding course","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220311T045012Z","end":"20220311T045904Z","tags":["billing","on-boarding course","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220311T050812Z","tags":["billing","on-boarding course","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220311T050812Z","tags":["billing","on-boarding course","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220311T050812Z","end":"20220311T051535Z","tags":["billing","on-boarding course","opencraft"]}
