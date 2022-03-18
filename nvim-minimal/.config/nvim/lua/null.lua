@@ -56,13 +56,13 @@ null_ls.setup({
 			diagnostics_format = "[#{c}] #{m} (#{s})",
 		}),
 		null_ls.builtins.formatting.black.with({ extra_args = { "--fast" } }),
+		null_ls.builtins.diagnostics.pylint,
 		null_ls.builtins.diagnostics.eslint_d.with({
 			condition = function(utils)
 				return utils.root_has_file(".eslintrc.json")
 			end,
 		}),
 		null_ls.builtins.formatting.isort,
-		null_ls.builtins.diagnostics.shellcheck,
 		null_ls.builtins.formatting.eslint_d.with({
 			condition = function(utils)
 				return utils.root_has_file(".eslintrc.json")

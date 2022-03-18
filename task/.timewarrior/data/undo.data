@@ -39,3 +39,961 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20220311T050812Z","end":"20220311T051535Z","tags":["billing","on-boarding course","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220314T033635Z","tags":["billing","checking emails and accounts setup","onboarding","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220314T033635Z","tags":["billing","checking emails and accounts setup","onboarding","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220314T033635Z","end":"20220314T035458Z","tags":["billing","checking emails and accounts setup","onboarding","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220314T035916Z","tags":["billing","on-boarding course","onboarding","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220314T035916Z","tags":["billing","on-boarding course","onboarding","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220314T035916Z","end":"20220314T052439Z","tags":["billing","on-boarding course","onboarding","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220314T053315Z","tags":["billing","on-boarding course","onboarding","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220314T053315Z","tags":["billing","on-boarding course","onboarding","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220314T053315Z","end":"20220314T064057Z","tags":["billing","on-boarding course","onboarding","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220314T065839Z","tags":["billing","create intro video","onboarding","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220314T065839Z","tags":["billing","create intro video","onboarding","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220314T065839Z","end":"20220314T070623Z","tags":["billing","create intro video","onboarding","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220314T070839Z","tags":["billing","create intro video","onboarding","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220314T070839Z","tags":["billing","create intro video","onboarding","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220314T070839Z","end":"20220314T072135Z","tags":["billing","create intro video","onboarding","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220314T070839Z","end":"20220314T072135Z","tags":["billing","create intro video","onboarding","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220314T070839Z","end":"20220314T072135Z","tags":["create intro video","onboarding","opencraft"]}
+  type: interval
+  before: {"id":2,"start":"20220314T065839Z","end":"20220314T070623Z","tags":["billing","create intro video","onboarding","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":2,"start":"20220314T065839Z","end":"20220314T070623Z","tags":["create intro video","onboarding","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220314T070839Z","end":"20220314T072135Z","tags":["create intro video","onboarding","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220314T070839Z","end":"20220314T072135Z","tags":["create intro video","logged","onboarding","opencraft"]}
+  type: interval
+  before: {"id":2,"start":"20220314T065839Z","end":"20220314T070623Z","tags":["create intro video","onboarding","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":2,"start":"20220314T065839Z","end":"20220314T070623Z","tags":["create intro video","logged","onboarding","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220314T085503Z","tags":["billing","opencraft","setup devstack"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220314T085503Z","tags":["billing","opencraft","setup devstack"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220314T085503Z","end":"20220314T101029Z","tags":["billing","opencraft","setup devstack"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220314T102939Z","tags":["billing","mentor meeting","onboarding","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220314T102939Z","tags":["billing","mentor meeting","onboarding","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220314T102939Z","end":"20220314T111835Z","tags":["billing","mentor meeting","onboarding","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220314T114617Z","tags":["billing","opencraft","setup devstack"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220314T114617Z","tags":["billing","opencraft","setup devstack"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220314T114617Z","end":"20220314T114628Z","tags":["billing","opencraft","setup devstack"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220314T114859Z","tags":["billing","opencraft","setup devstack"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220314T114859Z","tags":["billing","opencraft","setup devstack"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220314T114859Z","end":"20220314T125640Z","tags":["billing","opencraft","setup devstack"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220314T125719Z","tags":["billing","get new task","onboarding","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220314T125719Z","tags":["billing","get new task","onboarding","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220314T125719Z","end":"20220314T130426Z","tags":["billing","get new task","onboarding","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220314T130702Z","tags":["log tasks to jira","meta","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220314T130702Z","tags":["log tasks to jira","meta","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220314T130702Z","end":"20220314T131108Z","tags":["log tasks to jira","meta","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220315T033858Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T033858Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T033858Z","tags":["checking and replying to emails and jira","default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T033858Z","tags":["checking and replying to emails and jira","default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T033858Z","end":"20220315T034544Z","tags":["checking and replying to emails and jira","default","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220315T034544Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T034544Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T034544Z","tags":["default","opencraft","provide sprint update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T034544Z","tags":["default","opencraft","provide sprint update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T034544Z","end":"20220315T035507Z","tags":["default","opencraft","provide sprint update"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220315T035507Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T035507Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T035507Z","tags":["default","ocim setup","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T035507Z","tags":["default","ocim setup","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T035507Z","end":"20220315T043322Z","tags":["default","ocim setup","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220315T043322Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T043322Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T043322Z","tags":["bb-4224 investigated and tested migrations","default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T043322Z","tags":["bb-4224 investigated and tested migrations","default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T043322Z","end":"20220315T044917Z","tags":["bb-4224 investigated and tested migrations","default","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220315T044917Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T044917Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T044917Z","tags":["default","opencraft","searching for tasks on jira"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T044917Z","tags":["default","opencraft","searching for tasks on jira"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T044917Z","end":"20220315T053342Z","tags":["default","opencraft","searching for tasks on jira"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220315T053342Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T053342Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T053342Z","tags":["default","opencraft","reading handbook about sprint planning"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T053342Z","tags":["default","opencraft","reading handbook about sprint planning"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T053342Z","end":"20220315T053917Z","tags":["default","opencraft","reading handbook about sprint planning"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220315T053917Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T053917Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T053917Z","tags":["break","default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T053917Z","tags":["break","default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T053917Z","end":"20220315T055730Z","tags":["break","default","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220315T055730Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T055730Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T055730Z","tags":["default","opencraft","reading handbook about task worflows, sprint planning"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T055730Z","tags":["default","opencraft","reading handbook about task worflows, sprint planning"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T055730Z","end":"20220315T061941Z","tags":["default","opencraft","reading handbook about task worflows, sprint planning"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220315T061941Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T061941Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T061941Z","tags":["default","opencraft","skim through edx dev guide and coding standards"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T061941Z","tags":["default","opencraft","skim through edx dev guide and coding standards"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T061941Z","end":"20220315T062626Z","tags":["default","opencraft","skim through edx dev guide and coding standards"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220315T062626Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T062626Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T062626Z","tags":["default","opencraft","skim through pull requests and sandboxing process section in handbook"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T062626Z","tags":["default","opencraft","skim through pull requests and sandboxing process section in handbook"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T062626Z","end":"20220315T063632Z","tags":["default","opencraft","skim through pull requests and sandboxing process section in handbook"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220315T063632Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T063632Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T063632Z","tags":["completed four parts of assessment","default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T063632Z","tags":["completed four parts of assessment","default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T063632Z","end":"20220315T064610Z","tags":["completed four parts of assessment","default","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220315T064610Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T064610Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T064610Z","tags":["default","opencraft","read task descriptions to search task"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T064610Z","tags":["default","opencraft","read task descriptions to search task"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T064610Z","end":"20220315T065059Z","tags":["default","opencraft","read task descriptions to search task"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220315T065059Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T065059Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T065059Z","end":"20220315T065112Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220315T083255Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T083255Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T083255Z","tags":["default","opencraft","responding to jira comments and finding tasks"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T083255Z","tags":["default","opencraft","responding to jira comments and finding tasks"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T083255Z","end":"20220315T084251Z","tags":["default","opencraft","responding to jira comments and finding tasks"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220315T084251Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T084251Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T084251Z","tags":["default","opencraft","schedule meeting with braden"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T084251Z","tags":["default","opencraft","schedule meeting with braden"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T084251Z","end":"20220315T084548Z","tags":["default","opencraft","schedule meeting with braden"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220315T084548Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T084548Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T084548Z","tags":["default","opencraft","reading backlog issues for tasks to take"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T084548Z","tags":["default","opencraft","reading backlog issues for tasks to take"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T084548Z","end":"20220315T084927Z","tags":["default","opencraft","reading backlog issues for tasks to take"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220315T084927Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T084927Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T084927Z","end":"20220315T084931Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220315T110752Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T110752Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T110752Z","tags":["default","opencraft","reading and reproducing error in staging for bb-5668"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T110752Z","tags":["default","opencraft","reading and reproducing error in staging for bb-5668"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T110752Z","end":"20220315T112053Z","tags":["default","opencraft","reading and reproducing error in staging for bb-5668"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220315T112053Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T112053Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T112053Z","tags":["default","opencraft","setting up lilac devstack"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T112053Z","tags":["default","opencraft","setting up lilac devstack"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T112053Z","end":"20220315T124827Z","tags":["default","opencraft","setting up lilac devstack"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220315T124827Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220315T124827Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220315T124827Z","end":"20220315T124829Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220316T034156Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T034156Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T034156Z","tags":["checking emails","default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T034156Z","tags":["checking emails","default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T034156Z","end":"20220316T034425Z","tags":["checking emails","default","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220316T034425Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T034425Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T034425Z","tags":["creating ocim instance for user registration","default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T034425Z","tags":["creating ocim instance for user registration","default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T034425Z","end":"20220316T034856Z","tags":["creating ocim instance for user registration","default","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220316T034856Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T034856Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T034856Z","tags":["default","investigating lilac.esme dates error","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T034856Z","tags":["default","investigating lilac.esme dates error","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T034856Z","end":"20220316T043920Z","tags":["default","investigating lilac.esme dates error","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220316T043920Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T043920Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T043920Z","tags":["default","opencraft","reading devstack documentation"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T043920Z","tags":["default","opencraft","reading devstack documentation"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T043920Z","end":"20220316T050910Z","tags":["default","opencraft","reading devstack documentation"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220316T050910Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T050910Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T050910Z","tags":["default","opencraft","replicating esme-staging env in local"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T050910Z","tags":["default","opencraft","replicating esme-staging env in local"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T050910Z","end":"20220316T062530Z","tags":["default","opencraft","replicating esme-staging env in local"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220316T062530Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T062530Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T062530Z","tags":["break","default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T062530Z","tags":["break","default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T062530Z","end":"20220316T064212Z","tags":["break","default","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220316T064212Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T064212Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T064212Z","tags":["default","investigating and asking mentor and reviewer about config replication from ocim to local","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T064212Z","tags":["default","investigating and asking mentor and reviewer about config replication from ocim to local","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T064212Z","end":"20220316T071700Z","tags":["default","investigating and asking mentor and reviewer about config replication from ocim to local","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220316T083322Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T083322Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T083322Z","tags":["default","investigate ssh access to ocim provisioned server","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T083322Z","tags":["default","investigate ssh access to ocim provisioned server","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T083322Z","end":"20220316T092047Z","tags":["default","investigate ssh access to ocim provisioned server","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220316T092047Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T092047Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T092047Z","tags":["default","opencraft","searching for task"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T092047Z","tags":["default","opencraft","searching for task"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T092047Z","end":"20220316T092806Z","tags":["default","opencraft","searching for task"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220316T094635Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T094635Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T094635Z","tags":["default","opencraft","working on fixing dates view issue in esme instance"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T094635Z","tags":["default","opencraft","working on fixing dates view issue in esme instance"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T094635Z","end":"20220316T104829Z","tags":["default","opencraft","working on fixing dates view issue in esme instance"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220316T104829Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T104829Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T104829Z","tags":["default","made code change for dates issue","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T104829Z","tags":["default","made code change for dates issue","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T104829Z","end":"20220316T113619Z","tags":["default","made code change for dates issue","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220316T113619Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T113619Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T113619Z","tags":["default","opencraft","reply to jira ticket comment bb-4224"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T113619Z","tags":["default","opencraft","reply to jira ticket comment bb-4224"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T113619Z","end":"20220316T114326Z","tags":["default","opencraft","reply to jira ticket comment bb-4224"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220316T120016Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T120016Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T120016Z","tags":["default","investigate dates tab toggle option and open pr in gitlab for dates issue, also provision new appserver in ocim for testing","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220316T120016Z","tags":["default","investigate dates tab toggle option and open pr in gitlab for dates issue, also provision new appserver in ocim for testing","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220316T120016Z","end":"20220316T131002Z","tags":["default","investigate dates tab toggle option and open pr in gitlab for dates issue, also provision new appserver in ocim for testing","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220317T034710Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220317T034710Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220317T034710Z","tags":["default","opencraft","testing staging instance with updated changes"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220317T034710Z","tags":["default","opencraft","testing staging instance with updated changes"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220317T034710Z","end":"20220317T040039Z","tags":["default","opencraft","testing staging instance with updated changes"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220317T040039Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220317T040039Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220317T040039Z","tags":["default","opencraft","reading jira tickets and asking for tasks"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220317T040039Z","tags":["default","opencraft","reading jira tickets and asking for tasks"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220317T040039Z","end":"20220317T042220Z","tags":["default","opencraft","reading jira tickets and asking for tasks"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220317T042342Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220317T042342Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220317T042342Z","tags":["default","opencraft","reaching out to FF for BB-4224 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220317T042342Z","tags":["default","opencraft","reaching out to FF for BB-4224 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220317T042342Z","end":"20220317T042823Z","tags":["default","opencraft","reaching out to FF for BB-4224 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220317T051412Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220317T051412Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220317T051412Z","tags":["asking for tasks","default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220317T051412Z","tags":["asking for tasks","default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220317T051412Z","end":"20220317T052236Z","tags":["asking for tasks","default","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220317T070048Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220317T070048Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220317T070048Z","tags":["default","opencraft","reading jira tickets in search of tasks"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220317T070048Z","tags":["default","opencraft","reading jira tickets in search of tasks"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220317T070048Z","end":"20220317T072626Z","tags":["default","opencraft","reading jira tickets in search of tasks"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220317T085024Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220317T085024Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220317T085024Z","tags":["default","opencraft","request feedback for task"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220317T085024Z","tags":["default","opencraft","request feedback for task"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220317T085024Z","end":"20220317T085525Z","tags":["default","opencraft","request feedback for task"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220317T085525Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220317T085525Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220317T085525Z","tags":["default","opencraft","reading jira and asking for mentor feedback on logging practice, also review my epic"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220317T085525Z","tags":["default","opencraft","reading jira and asking for mentor feedback on logging practice, also review my epic"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220317T085525Z","end":"20220317T091123Z","tags":["default","opencraft","reading jira and asking for mentor feedback on logging practice, also review my epic"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220317T093448Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220317T093448Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220317T093448Z","tags":["asking for tasks on jira + 5 mins","default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220317T093448Z","tags":["asking for tasks on jira + 5 mins","default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220317T093448Z","end":"20220317T095408Z","tags":["asking for tasks on jira + 5 mins","default","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220317T102514Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220317T102514Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220317T102514Z","tags":["default","opencraft","ran tests and migration for ocim"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220317T102514Z","tags":["default","opencraft","ran tests and migration for ocim"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220317T102514Z","end":"20220317T110623Z","tags":["default","opencraft","ran tests and migration for ocim"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220317T112023Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220317T112023Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220317T112023Z","tags":["default","learning about waffle flags and edx-platform codebase","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220317T112023Z","tags":["default","learning about waffle flags and edx-platform codebase","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220317T112023Z","end":"20220317T124507Z","tags":["default","learning about waffle flags and edx-platform codebase","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220317T124631Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220317T124631Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220317T124631Z","tags":["default","opencraft","reading codebase to see if dates tab can be toggled"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220317T124631Z","tags":["default","opencraft","reading codebase to see if dates tab can be toggled"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220317T124631Z","end":"20220317T131351Z","tags":["default","opencraft","reading codebase to see if dates tab can be toggled"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220318T034219Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T034219Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T034219Z","tags":["checking emails","default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T034219Z","tags":["checking emails","default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T034219Z","end":"20220318T034641Z","tags":["checking emails","default","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220318T034641Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T034641Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T034641Z","tags":["default","opencraft","trying to understand monday.com usage"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T034641Z","tags":["default","opencraft","trying to understand monday.com usage"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T034641Z","end":"20220318T035756Z","tags":["default","opencraft","trying to understand monday.com usage"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220318T035756Z","tags":["default","opencraft"]}

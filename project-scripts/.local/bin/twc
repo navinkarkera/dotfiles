@@ -1,0 +1,4 @@
+#!/bin/bash
+
+[[ $(timew get dom.active) = "1" ]] && timew tag "$@" && timew stop
+timew start

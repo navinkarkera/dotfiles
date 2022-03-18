@@ -272,3 +272,21 @@ alias tws="timew summary"
 alias twday="timew day"
 alias twmonthtotal="timew report totals :month"
 alias twtotal="timew report totals "
+
+
+# opencraft aliases
+ssh_appserver() {
+    ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o CheckHostIP=no navinkarkera@vm1.$1
+}
+# Example: ssh_appserver maw-online.opencraft.hosting
+
+set_superuser() {
+    ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o CheckHostIP=no -lnavinkarkera "vm1.$1" <<EOF
+    sudo -E -u edxapp env "PATH=$PATH" /edx/app/edxapp/venvs/edxapp/bin/python \
+        /edx/app/edxapp/edx-platform/manage.py lms --settings openstack set_staff "$2"
+    sudo -E -u edxapp env "PATH=$PATH" /edx/app/edxapp/venvs/edxapp/bin/python \
+        /edx/app/edxapp/edx-platform/manage.py lms --settings openstack set_superuser "$2"
+EOF
+}
+# Example: set_superuser pr16297.sandbox.opencraft.hosting staff
+

@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global
 local execute = vim.api.nvim_command
 local fn = vim.fn
 
@@ -141,5 +142,4 @@ return require("packer").startup(function()
 			vim.cmd([[colorscheme vimbones]])
 		end,
 	})
-	-- use("mcchrish/zenbones.nvim")
 end)

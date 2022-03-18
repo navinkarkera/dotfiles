@@ -3,3 +3,61 @@ inc 20220310T033000Z - 20220310T053000Z # billing "encryption setup" opencraft
 inc 20220310T063147Z - 20220310T063616Z # setup "setup taskwarrior and timewarrior"
 inc 20220311T045012Z - 20220311T045904Z # billing "on-boarding course" opencraft
 inc 20220311T050812Z - 20220311T051535Z # billing "on-boarding course" opencraft
+inc 20220314T033635Z - 20220314T035458Z # billing "checking emails and accounts setup" onboarding opencraft
+inc 20220314T035916Z - 20220314T052439Z # billing "on-boarding course" onboarding opencraft
+inc 20220314T053315Z - 20220314T064057Z # billing "on-boarding course" onboarding opencraft
+inc 20220314T065839Z - 20220314T070623Z # "create intro video" logged onboarding opencraft
+inc 20220314T070839Z - 20220314T072135Z # "create intro video" logged onboarding opencraft
+inc 20220314T085503Z - 20220314T101029Z # billing opencraft "setup devstack"
+inc 20220314T102939Z - 20220314T111835Z # billing "mentor meeting" onboarding opencraft
+inc 20220314T114617Z - 20220314T114628Z # billing opencraft "setup devstack"
+inc 20220314T114859Z - 20220314T125640Z # billing opencraft "setup devstack"
+inc 20220314T125719Z - 20220314T130426Z # billing "get new task" onboarding opencraft
+inc 20220314T130702Z - 20220314T131108Z # "log tasks to jira" meta opencraft
+inc 20220315T033858Z - 20220315T034544Z # "checking and replying to emails and jira" default opencraft
+inc 20220315T034544Z - 20220315T035507Z # default opencraft "provide sprint update"
+inc 20220315T035507Z - 20220315T043322Z # default "ocim setup" opencraft
+inc 20220315T043322Z - 20220315T044917Z # "bb-4224 investigated and tested migrations" default opencraft
+inc 20220315T044917Z - 20220315T053342Z # default opencraft "searching for tasks on jira"
+inc 20220315T053342Z - 20220315T053917Z # default opencraft "reading handbook about sprint planning"
+inc 20220315T053917Z - 20220315T055730Z # break default opencraft
+inc 20220315T055730Z - 20220315T061941Z # default opencraft "reading handbook about task worflows, sprint planning"
+inc 20220315T061941Z - 20220315T062626Z # default opencraft "skim through edx dev guide and coding standards"
+inc 20220315T062626Z - 20220315T063632Z # default opencraft "skim through pull requests and sandboxing process section in handbook"
+inc 20220315T063632Z - 20220315T064610Z # "completed four parts of assessment" default opencraft
+inc 20220315T064610Z - 20220315T065059Z # default opencraft "read task descriptions to search task"
+inc 20220315T065059Z - 20220315T065112Z # default opencraft
+inc 20220315T083255Z - 20220315T084251Z # default opencraft "responding to jira comments and finding tasks"
+inc 20220315T084251Z - 20220315T084548Z # default opencraft "schedule meeting with braden"
+inc 20220315T084548Z - 20220315T084927Z # default opencraft "reading backlog issues for tasks to take"
+inc 20220315T084927Z - 20220315T084931Z # default opencraft
+inc 20220315T110752Z - 20220315T112053Z # default opencraft "reading and reproducing error in staging for bb-5668"
+inc 20220315T112053Z - 20220315T124827Z # default opencraft "setting up lilac devstack"
+inc 20220315T124827Z - 20220315T124829Z # default opencraft
+inc 20220316T034156Z - 20220316T034425Z # "checking emails" default opencraft
+inc 20220316T034425Z - 20220316T034856Z # "creating ocim instance for user registration" default opencraft
+inc 20220316T034856Z - 20220316T043920Z # default "investigating lilac.esme dates error" opencraft
+inc 20220316T043920Z - 20220316T050910Z # default opencraft "reading devstack documentation"
+inc 20220316T050910Z - 20220316T062530Z # default opencraft "replicating esme-staging env in local"
+inc 20220316T062530Z - 20220316T064212Z # break default opencraft
+inc 20220316T064212Z - 20220316T071700Z # default "investigating and asking mentor and reviewer about config replication from ocim to local" opencraft
+inc 20220316T083322Z - 20220316T092047Z # default "investigate ssh access to ocim provisioned server" opencraft
+inc 20220316T092047Z - 20220316T092806Z # default opencraft "searching for task"
+inc 20220316T094635Z - 20220316T104829Z # default opencraft "working on fixing dates view issue in esme instance"
+inc 20220316T104829Z - 20220316T113619Z # default "made code change for dates issue" opencraft
+inc 20220316T113619Z - 20220316T114326Z # default opencraft "reply to jira ticket comment bb-4224"
+inc 20220316T120016Z - 20220316T131002Z # default "investigate dates tab toggle option and open pr in gitlab for dates issue, also provision new appserver in ocim for testing" opencraft
+inc 20220317T034710Z - 20220317T040039Z # default opencraft "testing staging instance with updated changes"
+inc 20220317T040039Z - 20220317T042220Z # default opencraft "reading jira tickets and asking for tasks"
+inc 20220317T042342Z - 20220317T042823Z # default opencraft "reaching out to FF for BB-4224 review"
+inc 20220317T051412Z - 20220317T052236Z # "asking for tasks" default opencraft
+inc 20220317T070048Z - 20220317T072626Z # default opencraft "reading jira tickets in search of tasks"
+inc 20220317T085024Z - 20220317T085525Z # default opencraft "request feedback for task"
+inc 20220317T085525Z - 20220317T091123Z # default opencraft "reading jira and asking for mentor feedback on logging practice, also review my epic"
+inc 20220317T093448Z - 20220317T095408Z # "asking for tasks on jira + 5 mins" default opencraft
+inc 20220317T102514Z - 20220317T110623Z # default opencraft "ran tests and migration for ocim"
+inc 20220317T112023Z - 20220317T124507Z # default "learning about waffle flags and edx-platform codebase" opencraft
+inc 20220317T124631Z - 20220317T131351Z # default opencraft "reading codebase to see if dates tab can be toggled"
+inc 20220318T034219Z - 20220318T034641Z # "checking emails" default opencraft
+inc 20220318T034641Z - 20220318T035756Z # default opencraft "trying to understand monday.com usage"
+inc 20220318T035756Z # default opencraft
