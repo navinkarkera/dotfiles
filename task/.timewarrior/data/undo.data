@@ -997,3 +997,1775 @@ txn:
   type: interval
   before: 
   after: {"id":0,"start":"20220318T035756Z","tags":["default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T035756Z","tags":["default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T035756Z","tags":["checking jira for tasks","default","opencraft"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T035756Z","tags":["checking jira for tasks","default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T035756Z","end":"20220318T041144Z","tags":["checking jira for tasks","default","opencraft"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220318T042740Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T042740Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T042740Z","end":"20220318T042830Z"}
+txn:
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T044755Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T044755Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T044755Z","tags":["understanding micro frontend architecture"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T044755Z","tags":["understanding micro frontend architecture"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T044755Z","end":"20220318T052559Z","tags":["understanding micro frontend architecture"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220318T052559Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T052559Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T052559Z","tags":["reading about redux-saga"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T052559Z","tags":["reading about redux-saga"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T052559Z","end":"20220318T054953Z","tags":["reading about redux-saga"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220318T060518Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T060518Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T060518Z","tags":["reading about redux-saga"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T060518Z","tags":["reading about redux-saga"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T060518Z","end":"20220318T061505Z","tags":["reading about redux-saga"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220318T061505Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T061505Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T061505Z","tags":["reading about redux"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T061505Z","tags":["reading about redux"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T061505Z","end":"20220318T062846Z","tags":["reading about redux"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220318T071700Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T071700Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T071700Z","tags":["discussing with mentor about tasks\/sprint"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T071700Z","tags":["discussing with mentor about tasks\/sprint"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T071700Z","end":"20220318T072709Z","tags":["discussing with mentor about tasks\/sprint"]}
+txn:
+  type: interval
+  before: {"id":7,"start":"20220318T035756Z","end":"20220318T041144Z","tags":["checking jira for tasks","default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":7,"start":"20220318T035756Z","end":"20220318T041144Z","tags":["checking jira for tasks"]}
+  type: interval
+  before: {"id":8,"start":"20220318T034641Z","end":"20220318T035756Z","tags":["default","opencraft","trying to understand monday.com usage"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":8,"start":"20220318T034641Z","end":"20220318T035756Z","tags":["trying to understand monday.com usage"]}
+  type: interval
+  before: {"id":9,"start":"20220318T034219Z","end":"20220318T034641Z","tags":["checking emails","default","opencraft"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":9,"start":"20220318T034219Z","end":"20220318T034641Z","tags":["checking emails"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220318T091128Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T091128Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T091128Z","tags":["asking for tasks and checking emails - 3mins"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T091128Z","tags":["asking for tasks and checking emails - 3mins"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T091128Z","end":"20220318T092103Z","tags":["asking for tasks and checking emails - 3mins"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220318T092103Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T092103Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T092103Z","tags":["read about testing in javascript using jest"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T092103Z","tags":["read about testing in javascript using jest"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T092103Z","end":"20220318T093702Z","tags":["read about testing in javascript using jest"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220318T143635Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T143635Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T143635Z","tags":["searching for mistakes and fixing translation from course to programme"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T143635Z","tags":["searching for mistakes and fixing translation from course to programme"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T143635Z","end":"20220318T155436Z","tags":["searching for mistakes and fixing translation from course to programme"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220318T155436Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T155436Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T155436Z","tags":["reading emails and sending bank details"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220318T155436Z","tags":["reading emails and sending bank details"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220318T155436Z","end":"20220318T160956Z","tags":["reading emails and sending bank details"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220321T034618Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220321T034618Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220321T034618Z","tags":["checking and replying to emails"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220321T034618Z","tags":["checking and replying to emails"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220321T034618Z","end":"20220321T040120Z","tags":["checking and replying to emails"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220321T040120Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220321T040120Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220321T040120Z","tags":["reading about mooc floss issues and creating a follow up issue"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220321T040120Z","tags":["reading about mooc floss issues and creating a follow up issue"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220321T040120Z","end":"20220321T042229Z","tags":["reading about mooc floss issues and creating a follow up issue"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220321T042229Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220321T042229Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220321T042229Z","tags":["mooc floss course name ping"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220321T042229Z","tags":["mooc floss course name ping"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220321T042229Z","end":"20220321T044129Z","tags":["mooc floss course name ping"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220321T044129Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220321T044129Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220321T044129Z","tags":["searching for tasks"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220321T044129Z","tags":["searching for tasks"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220321T044129Z","end":"20220321T045142Z","tags":["searching for tasks"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220321T045142Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220321T045142Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220321T045142Z","tags":["read about react class components"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220321T045142Z","tags":["read about react class components"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220321T045142Z","end":"20220321T051307Z","tags":["read about react class components"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220321T101448Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220321T101448Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220321T101448Z","tags":["reading emails and asking for tasks"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220321T101448Z","tags":["reading emails and asking for tasks"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220321T101448Z","end":"20220321T102504Z","tags":["reading emails and asking for tasks"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220321T122727Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220321T122727Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220321T122727Z","tags":["reading jira tickets in search of tasks"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220321T122727Z","tags":["reading jira tickets in search of tasks"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220321T122727Z","end":"20220321T131051Z","tags":["reading jira tickets in search of tasks"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220321T133518Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220321T133518Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220321T133518Z","tags":["asking for reviewers and checking emails"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220321T133518Z","tags":["asking for reviewers and checking emails"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220321T133518Z","end":"20220321T134625Z","tags":["asking for reviewers and checking emails"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220321T141901Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220321T141901Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220321T141901Z","tags":["responding to comments on jira BB-5978, BB-5976"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220321T141901Z","tags":["responding to comments on jira BB-5978, BB-5976"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220321T141901Z","end":"20220321T143650Z","tags":["responding to comments on jira BB-5978, BB-5976"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220321T143650Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220321T143650Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220321T143650Z","tags":["logging time"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220321T143650Z","tags":["logging time"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220321T143650Z","end":"20220321T144834Z","tags":["logging time"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220322T040153Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220322T040153Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220322T040153Z","tags":["checking emails"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220322T040153Z","tags":["checking emails"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220322T040153Z","end":"20220322T040750Z","tags":["checking emails"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220322T040750Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220322T040750Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220322T040750Z","tags":["investigating BB-5978"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220322T040750Z","tags":["investigating BB-5978"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220322T040750Z","end":"20220322T042431Z","tags":["investigating BB-5978"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220322T043946Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220322T043946Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220322T043946Z","tags":["fix BB-5978"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220322T043946Z","tags":["fix BB-5978"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220322T043946Z","end":"20220322T051036Z","tags":["fix BB-5978"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220322T073557Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220322T073557Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220322T073557Z","tags":["reading jira tickets in search of tasks"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220322T073557Z","tags":["reading jira tickets in search of tasks"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220322T073557Z","end":"20220322T075308Z","tags":["reading jira tickets in search of tasks"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220322T112736Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220322T112736Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220322T112736Z","tags":["completed self assessment step-1"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220322T112736Z","tags":["completed self assessment step-1"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220322T112736Z","end":"20220322T115434Z","tags":["completed self assessment step-1"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220322T115434Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220322T115434Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220322T115434Z","tags":["responding to pings"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220322T115434Z","tags":["responding to pings"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220322T115434Z","end":"20220322T115831Z","tags":["responding to pings"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220322T120742Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220322T120742Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220322T120742Z","tags":["invstigate and make initial changes to code"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220322T120742Z","tags":["invstigate and make initial changes to code"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220322T120742Z","end":"20220322T134657Z","tags":["invstigate and make initial changes to code"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220323T043115Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220323T043115Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220323T043115Z","tags":["fixing regex for bb-6000"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220323T043115Z","tags":["fixing regex for bb-6000"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220323T043115Z","end":"20220323T044243Z","tags":["fixing regex for bb-6000"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220323T044243Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220323T044243Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220323T044243Z","tags":["checking emails"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220323T044243Z","tags":["checking emails"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220323T044243Z","end":"20220323T044446Z","tags":["checking emails"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220323T044446Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220323T044446Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220323T044446Z","tags":["exploring ocim codebase"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220323T044446Z","tags":["exploring ocim codebase"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220323T044446Z","end":"20220323T052051Z","tags":["exploring ocim codebase"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220323T052051Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220323T052051Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220323T052051Z","tags":["on boarding course"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220323T052051Z","tags":["on boarding course"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220323T052051Z","end":"20220323T053835Z","tags":["on boarding course"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220323T063320Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220323T063320Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220323T063320Z","tags":["testing bb-6000 locally and understanding ocim setup"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220323T063320Z","tags":["testing bb-6000 locally and understanding ocim setup"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220323T063320Z","end":"20220323T072422Z","tags":["testing bb-6000 locally and understanding ocim setup"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220323T094114Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220323T094114Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220323T094114Z","tags":["managing jira tasks and searching for task"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220323T094114Z","tags":["managing jira tasks and searching for task"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220323T094114Z","end":"20220323T101417Z","tags":["managing jira tasks and searching for task"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220323T110030Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220323T110030Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220323T110030Z","tags":["121 with Kaustav"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220323T110030Z","tags":["121 with Kaustav"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220323T110030Z","end":"20220323T113909Z","tags":["121 with Kaustav"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220323T124401Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220323T124401Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220323T124401Z","tags":["instance testing for bb-5893"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220323T124401Z","tags":["instance testing for bb-5893"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220323T124401Z","end":"20220323T125916Z","tags":["instance testing for bb-5893"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220323T125916Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220323T125916Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220323T125916Z","tags":["reading jira tickets"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220323T125916Z","tags":["reading jira tickets"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220323T125916Z","end":"20220323T133310Z","tags":["reading jira tickets"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220324T040235Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220324T040235Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220324T040235Z","tags":["reading description bb-5610"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220324T040235Z","tags":["reading description bb-5610"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220324T040235Z","end":"20220324T041000Z","tags":["reading description bb-5610"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220324T041000Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220324T041000Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220324T041000Z","tags":["exploring sprintcraft codebase"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220324T041000Z","tags":["exploring sprintcraft codebase"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220324T041000Z","end":"20220324T045609Z","tags":["exploring sprintcraft codebase"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220324T051133Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220324T051133Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220324T051133Z","tags":["investigate google api"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220324T051133Z","tags":["investigate google api"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220324T051133Z","end":"20220324T065032Z","tags":["investigate google api"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220324T075212Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220324T075212Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220324T075212Z","tags":["instance testing bb-5893"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220324T075212Z","tags":["instance testing bb-5893"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220324T075212Z","end":"20220324T082530Z","tags":["instance testing bb-5893"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220324T092934Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220324T092934Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220324T092934Z","tags":["zoom api class"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220324T092934Z","tags":["zoom api class"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220324T092934Z","end":"20220324T103915Z","tags":["zoom api class"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220324T114825Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220324T114825Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220324T114825Z","tags":["zoom api class"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220324T114825Z","tags":["zoom api class"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220324T114825Z","end":"20220324T124329Z","tags":["zoom api class"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220324T131607Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220324T131607Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220324T131607Z","tags":["zoom api test code"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220324T131607Z","tags":["zoom api test code"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220324T131607Z","end":"20220324T133701Z","tags":["zoom api test code"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220325T043150Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220325T043150Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220325T043150Z","tags":["exploring crafty-bot for bb-5610"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220325T043150Z","tags":["exploring crafty-bot for bb-5610"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220325T043150Z","end":"20220325T050213Z","tags":["exploring crafty-bot for bb-5610"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220325T050213Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220325T050213Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220325T050213Z","tags":["review bb-5656"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220325T050213Z","tags":["review bb-5656"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220325T050213Z","end":"20220325T051125Z","tags":["review bb-5656"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220325T051125Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220325T051125Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220325T051125Z","tags":["chasing marc on matrix - bb-5978"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220325T051125Z","tags":["chasing marc on matrix - bb-5978"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220325T051125Z","end":"20220325T052044Z","tags":["chasing marc on matrix - bb-5978"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220325T085942Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220325T085942Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220325T085942Z","tags":["zoom meeting and api setup"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220325T085942Z","tags":["zoom meeting and api setup"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220325T085942Z","end":"20220325T091930Z","tags":["zoom meeting and api setup"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220325T104717Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220325T104717Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220325T104717Z","tags":["review bb-5869"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220325T104717Z","tags":["review bb-5869"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220325T104717Z","end":"20220325T105409Z","tags":["review bb-5869"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220325T110006Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220325T110006Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220325T110006Z","tags":["social chat"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220325T110006Z","tags":["social chat"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220325T110006Z","end":"20220325T113712Z","tags":["social chat"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220325T122758Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220325T122758Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220325T122758Z","tags":["zoom api test code"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220325T122758Z","tags":["zoom api test code"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220325T122758Z","end":"20220325T123137Z","tags":["zoom api test code"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220325T124015Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220325T124015Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220325T124015Z","tags":["zoom api and drive api"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220325T124015Z","tags":["zoom api and drive api"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220325T124015Z","end":"20220325T143541Z","tags":["zoom api and drive api"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220325T145651Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220325T145651Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220325T145651Z","tags":["retrospective meeting discussion and meeting setup"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220325T145651Z","tags":["retrospective meeting discussion and meeting setup"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220325T145651Z","end":"20220325T152607Z","tags":["retrospective meeting discussion and meeting setup"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220328T043845Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220328T043845Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220328T043845Z","tags":["working on zoom-google integration code"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220328T043845Z","tags":["working on zoom-google integration code"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220328T043845Z","end":"20220328T055032Z","tags":["working on zoom-google integration code"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220328T055032Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220328T055032Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220328T055032Z","tags":["schedule retrospective meetings"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220328T055032Z","tags":["schedule retrospective meetings"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220328T055032Z","end":"20220328T064537Z","tags":["schedule retrospective meetings"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220328T083207Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220328T083207Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220328T083207Z","tags":["testing zoom api live"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220328T083207Z","tags":["testing zoom api live"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220328T083207Z","end":"20220328T085840Z","tags":["testing zoom api live"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220328T085840Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220328T085840Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220328T085840Z","tags":["testing google upload"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220328T085840Z","tags":["testing google upload"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220328T085840Z","end":"20220328T100908Z","tags":["testing google upload"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220328T114724Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220328T114724Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220328T114724Z","tags":["schedule task"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220328T114724Z","tags":["schedule task"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220328T114724Z","end":"20220328T120331Z","tags":["schedule task"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220328T120356Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220328T120356Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220328T120356Z","tags":["posted mid-sprint update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220328T120356Z","tags":["posted mid-sprint update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220328T120356Z","end":"20220328T121529Z","tags":["posted mid-sprint update"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220328T135101Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220328T135101Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220328T135101Z","tags":["review BB-5885 code"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220328T135101Z","tags":["review BB-5885 code"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220328T135101Z","end":"20220328T140301Z","tags":["review BB-5885 code"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220328T141422Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220328T141422Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220328T141422Z","tags":["sandbox testing bb-5885"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220328T141422Z","tags":["sandbox testing bb-5885"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220328T141422Z","end":"20220328T143220Z","tags":["sandbox testing bb-5885"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220328T145322Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220328T145322Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220328T145322Z","tags":["review BB-5885 code"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220328T145322Z","tags":["review BB-5885 code"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220328T145322Z","end":"20220328T145702Z","tags":["review BB-5885 code"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220329T044117Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220329T044117Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220329T044117Z","tags":["complete on-boarding course second and third week"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220329T044117Z","tags":["complete on-boarding course second and third week"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220329T044117Z","end":"20220329T045819Z","tags":["complete on-boarding course second and third week"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220329T045819Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220329T045819Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220329T045819Z","tags":["reading opencraft private docs"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220329T045819Z","tags":["reading opencraft private docs"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220329T045819Z","end":"20220329T051514Z","tags":["reading opencraft private docs"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220329T051514Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220329T051514Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220329T051514Z","tags":["searching tasks"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220329T051514Z","tags":["searching tasks"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220329T051514Z","end":"20220329T052615Z","tags":["searching tasks"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220329T085810Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220329T085810Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220329T085810Z","tags":["understanding custom-student-verification usage"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220329T085810Z","tags":["understanding custom-student-verification usage"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220329T085810Z","end":"20220329T090526Z","tags":["understanding custom-student-verification usage"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220329T114336Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220329T114336Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220329T114336Z","tags":["reading about tutor"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220329T114336Z","tags":["reading about tutor"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220329T114336Z","end":"20220329T115452Z","tags":["reading about tutor"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220329T150006Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220329T150006Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220329T150006Z","tags":["meeting with Braden"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220329T150006Z","tags":["meeting with Braden"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220329T150006Z","end":"20220329T151113Z","tags":["meeting with Braden"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220330T034805Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220330T034805Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220330T034805Z","tags":["reading emails"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220330T034805Z","tags":["reading emails"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220330T034805Z","end":"20220330T040019Z","tags":["reading emails"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220330T040915Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220330T040915Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220330T040915Z","tags":["run vagrant docker dev setup"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220330T040915Z","tags":["run vagrant docker dev setup"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220330T040915Z","end":"20220330T061556Z","tags":["run vagrant docker dev setup"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220330T063812Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220330T063812Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220330T063812Z","tags":["running tests in docker dev setup ocim"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220330T063812Z","tags":["running tests in docker dev setup ocim"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220330T063812Z","end":"20220330T070230Z","tags":["running tests in docker dev setup ocim"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220330T070307Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220330T070307Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220330T070307Z","tags":["review BB-6055"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220330T070307Z","tags":["review BB-6055"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220330T070307Z","end":"20220330T071743Z","tags":["review BB-6055"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220330T071743Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220330T071743Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220330T071743Z","tags":["instance testing maple upgrade"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220330T071743Z","tags":["instance testing maple upgrade"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220330T071743Z","end":"20220330T081037Z","tags":["instance testing maple upgrade"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220330T092817Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220330T092817Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220330T092817Z","tags":["fixing tests for mysql and mongo"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220330T092817Z","tags":["fixing tests for mysql and mongo"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220330T092817Z","end":"20220330T111016Z","tags":["fixing tests for mysql and mongo"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220330T111526Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220330T111526Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220330T111526Z","tags":["fixing tests for mysql and mongo"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220330T111526Z","tags":["fixing tests for mysql and mongo"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220330T111526Z","end":"20220330T113401Z","tags":["fixing tests for mysql and mongo"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220330T130321Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220330T130321Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220330T130321Z","tags":["instance testing maple upgrade"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220330T130321Z","tags":["instance testing maple upgrade"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220330T130321Z","end":"20220330T132138Z","tags":["instance testing maple upgrade"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220330T141604Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220330T141604Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220330T141604Z","tags":["instance testing maple upgrade"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220330T141604Z","tags":["instance testing maple upgrade"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220330T141604Z","end":"20220330T143859Z","tags":["instance testing maple upgrade"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220331T043025Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220331T043025Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220331T043025Z","tags":["testing out zoomus"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220331T043025Z","tags":["testing out zoomus"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220331T043025Z","end":"20220331T052424Z","tags":["testing out zoomus"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220331T053506Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220331T053506Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220331T053506Z","tags":["working on zoom"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220331T053506Z","tags":["working on zoom"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220331T053506Z","end":"20220331T062744Z","tags":["working on zoom"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220331T063511Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220331T063511Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220331T063511Z","tags":["fixing zoom automation code as per review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220331T063511Z","tags":["fixing zoom automation code as per review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220331T063511Z","end":"20220331T080325Z","tags":["fixing zoom automation code as per review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220331T085230Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220331T085230Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220331T085230Z","tags":["review BB-6055"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220331T085230Z","tags":["review BB-6055"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220331T085230Z","end":"20220331T090153Z","tags":["review BB-6055"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220331T090153Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220331T090153Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220331T090153Z","tags":["reading and responding to emails"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220331T090153Z","tags":["reading and responding to emails"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220331T090153Z","end":"20220331T091809Z","tags":["reading and responding to emails"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220331T104632Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220331T104632Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220331T104632Z","tags":["review BB-6055"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220331T104632Z","tags":["review BB-6055"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220331T104632Z","end":"20220331T105811Z","tags":["review BB-6055"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220331T105811Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220331T105811Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220331T105811Z","tags":["update jira ocim docker dev"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220331T105811Z","tags":["update jira ocim docker dev"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220331T105811Z","end":"20220331T110653Z","tags":["update jira ocim docker dev"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220331T125127Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220331T125127Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220331T125127Z","tags":["estimation session"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220331T125127Z","tags":["estimation session"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220331T125127Z","end":"20220331T130039Z","tags":["estimation session"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220331T130039Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220331T130039Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220331T130039Z","tags":["reading bb-5663 description"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220331T130039Z","tags":["reading bb-5663 description"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220331T130039Z","end":"20220331T131452Z","tags":["reading bb-5663 description"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220331T141318Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220331T141318Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220331T141318Z","tags":["drive folder and search code"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220331T141318Z","tags":["drive folder and search code"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220331T141318Z","end":"20220331T154616Z","tags":["drive folder and search code"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220331T181307Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220331T181307Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220331T181307Z","tags":["respond to review comments for bb-5610"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220331T181307Z","tags":["respond to review comments for bb-5610"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220331T181307Z","end":"20220331T184027Z","tags":["respond to review comments for bb-5610"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220401T044430Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220401T044430Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220401T044430Z","tags":["use zoomus and get all recordings"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220401T044430Z","tags":["use zoomus and get all recordings"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220401T044430Z","end":"20220401T062457Z","tags":["use zoomus and get all recordings"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220401T063130Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220401T063130Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220401T063130Z","tags":["estimation"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220401T063130Z","tags":["estimation"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220401T063130Z","end":"20220401T064738Z","tags":["estimation"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220401T064757Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220401T064757Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220401T064757Z","tags":["create google groups and update meetings and template"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220401T064757Z","tags":["create google groups and update meetings and template"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220401T064757Z","end":"20220401T071038Z","tags":["create google groups and update meetings and template"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220401T072621Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220401T072621Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220401T072621Z","tags":["Testing zoom code"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220401T072621Z","tags":["Testing zoom code"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220401T072621Z","end":"20220401T080322Z","tags":["Testing zoom code"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220401T090710Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220401T090710Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220401T090710Z","tags":["Testing zoom code"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220401T090710Z","tags":["Testing zoom code"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220401T090710Z","end":"20220401T093903Z","tags":["Testing zoom code"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220401T100721Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220401T100721Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220401T100721Z","tags":["Testing zoom code"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220401T100721Z","tags":["Testing zoom code"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220401T100721Z","end":"20220401T104330Z","tags":["Testing zoom code"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220401T114951Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220401T114951Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220401T114951Z","tags":["reading emails and jira tickets"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220401T114951Z","tags":["reading emails and jira tickets"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220401T114951Z","end":"20220401T120423Z","tags":["reading emails and jira tickets"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220401T122410Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220401T122410Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220401T122410Z","tags":["testing jira connection zoom"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220401T122410Z","tags":["testing jira connection zoom"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220401T122410Z","end":"20220401T123332Z","tags":["testing jira connection zoom"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220403T124334Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220403T124334Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220403T124334Z","tags":["working on zoom review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220403T124334Z","tags":["working on zoom review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220403T124334Z","end":"20220403T134932Z","tags":["working on zoom review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220403T165501Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220403T165501Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220403T165501Z","tags":["working on zoom review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220403T165501Z","tags":["working on zoom review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220403T165501Z","end":"20220403T174616Z","tags":["working on zoom review"]}

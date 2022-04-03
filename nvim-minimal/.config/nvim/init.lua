@@ -1,168 +1,250 @@
-local o = vim.o
-local wo = vim.wo
-local g = vim.g
-M = {}
-local map = vim.api.nvim_set_keymap
+require("impatient")
+-----------------------------------------------------------
+-- General Neovim settings and configuration
+-----------------------------------------------------------
 
--- disable unused inbuild plugins
-g.loaded_matchparen = true
-g.loaded_matchit = true
-g.loaded_logiPat = true
-g.loaded_rrhelper = true
-g.loaded_tarPlugin = true
-g.loaded_gzip = true
-g.loaded_zipPlugin = true
-g.loaded_2html_plugin = true
-g.loaded_shada_plugin = true
-g.loaded_spellfile_plugin = true
-g.loaded_netrw = true
-g.loaded_netrwPlugin = true
-g.loaded_netrwSettings = true
-g.loaded_netrwFileHandlers = true
-g.loaded_tutor_mode_plugin = true
-g.loaded_remote_plugins = true
-g.loaded_fzf = true
-g.loaded_lf = true
--- g.loaded_man               = true
+-- Default options are not included
+--- See: https://neovim.io/doc/user/vim_diff.html
+--- [2] Defaults - *nvim-defaults*
 
--- global options
-o.autoindent = true
-o.autoread = true
-o.backspace = "indent,eol,start"
-o.backup = false
-o.belloff = "all"
-o.cmdheight = 1
-o.complete = ".,w,b,u"
-o.completeopt = "menu"
-o.concealcursor = "nc"
-o.cursorline = false
-o.dir = "/tmp"
-o.errorbells = false
-o.expandtab = true
-o.hidden = true
-o.hlsearch = false
-o.ignorecase = true
-o.incsearch = true
-o.laststatus = 2
-o.lazyredraw = true
-o.matchpairs = o.matchpairs .. ",<:>"
-o.mouse = "a"
+-----------------------------------------------------------
+-- Neovim API aliases
+-----------------------------------------------------------
+local cmd = vim.cmd -- Execute Vim commands
+local g = vim.g -- Global variables
+local opt = vim.opt -- Set options (global/buffer/windows-scoped)
+--local fn = vim.fn       				    -- Call Vim functions
+local api = vim.api
+
+-----------------------------------------------------------
+-- General
+-----------------------------------------------------------
+opt.mouse = "a" -- Enable mouse support
+opt.clipboard = "unnamed" -- Copy/paste to system clipboard
+opt.swapfile = false -- Don't use swapfile
+opt.completeopt = "menu" -- Autocomplete options
+opt.complete = ".,w,b,u"
+opt.backspace = "indent,eol,start"
+opt.backup = false
+opt.belloff = "all"
+
+-----------------------------------------------------------
+-- Neovim UI
+-----------------------------------------------------------
+opt.number = true -- Show line number
+opt.relativenumber = true -- show relativenumber
+opt.showmatch = true -- Highlight matching parenthesis
+opt.foldmethod = "marker" -- Enable folding (default 'foldmarker')
+opt.colorcolumn = "80" -- Line lenght marker at 80 columns
+opt.splitright = true -- Vertical split to the right
+opt.splitbelow = true -- Orizontal split to the bottom
+opt.ignorecase = true -- Ignore case letters when search
+opt.smartcase = true -- Ignore lowercase for the whole pattern
+opt.linebreak = true -- Wrap on word boundary
+opt.termguicolors = true -- Enable 24-bit RGB colors
+opt.cmdheight = 1
+opt.signcolumn = "yes"
+opt.statusline = "%f  %y%m%r%h%w%=[%l,%v]      [%L,%p%%] %n"
+opt.laststatus = 3
+
+-----------------------------------------------------------
+-- Tabs, indent
+-----------------------------------------------------------
+opt.expandtab = true -- Use spaces instead of tabs
+opt.shiftwidth = 4 -- Shift 4 spaces when tab
+opt.tabstop = 4 -- 1 tab == 4 spaces
+opt.smartindent = true -- Autoindent new lines
+opt.autoindent = true
+opt.autoread = true
+
+-----------------------------------------------------------
+-- Undo options
+-----------------------------------------------------------
+opt.undodir = vim.env["HOME"] .. "/.local/share/vim/undodir"
+opt.undofile = true
+
+-----------------------------------------------------------
+-- Memory, CPU
+-----------------------------------------------------------
+opt.hidden = true -- Enable background buffers
+opt.history = 100 -- Remember N lines in history
+opt.lazyredraw = true -- Faster scrolling
+opt.synmaxcol = 240 -- Max column for syntax highlight
+opt.updatetime = 50 -- ms to wait for trigger 'document_highlight'
+
+-----------------------------------------------------------
+-- Startup
+-----------------------------------------------------------
+
 if vim.fn.executable("fd") == 1 then
-	local fd_table = vim.fn.systemlist("fd -t d -L -H --strip-cwd-prefix -E .git")
-	table.insert(fd_table, 1, vim.fn.expand("%:p:h"))
-	o.path = table.concat(fd_table, ",")
+	local fd_table = vim.fn.systemlist("fd -t d")
+	opt.path = ".," .. table.concat(fd_table, ",")
 else
-	o.path = ".,**"
+	opt.path = ".,**"
 end
-o.pumheight = 20
-o.scrolloff = 4
-o.shiftwidth = 4
-o.shortmess = o.shortmess .. "c"
-o.showmode = false
-o.showmode = false
-o.smartcase = true
-o.smartcase = true
-o.smartindent = true
-o.softtabstop = 4
-o.splitbelow = true
-o.splitright = true
-o.swapfile = false
-o.switchbuf = "usetab"
-o.synmaxcol = 200
-o.tabstop = 4
-o.termguicolors = true
-o.undodir = vim.env["HOME"] .. "/.local/share/vim/undodir"
-o.undofile = true
-o.updatetime = 50
-o.virtualedit = "block"
-o.wildignore = "*.o,*.a,*.pyc,__pycache__,node_modules"
-o.wildmenu = true
-o.wildmode = "longest:full,full"
-o.statusline = "%f  %y%m%r%h%w%=[%l,%v]      [%L,%p%%] %n"
-o.background = "light"
-
--- window-local options
-wo.colorcolumn = "100"
-wo.number = true
-wo.relativenumber = true
-wo.signcolumn = "number"
-wo.wrap = false
-
-g.netrw_banner = 0
-g.netrw_liststyle = 0
-g.netrw_list_hide = ".git"
-g.black_virtualenv = vim.env["HOME"] .. "/.local/pipx/venvs/black"
-g.python3_host_prog = "/usr/bin/python"
-g.VimuxExpandCommand = 1
-g.VimuxHeight = 40
-
--- map the leader key
-map("n", "<Space>", "", {})
-vim.g.mapleader = " " -- 'vim.g' sets global variables
 
 if vim.fn.executable("rg") == 1 then
-	o.grepprg = [[rg --vimgrep --no-heading --smart-case --hidden -g '!.git/']]
-	o.grepformat = "%f:%l:%c:%m"
+	opt.grepprg = [[rg --vimgrep --no-heading --smart-case --hidden -g '!.git/']]
+	opt.grepformat = "%f:%l:%c:%m"
 else
-	o.grepprg = "grep -R -n --exclude-dir=.git --exclude-dir=.cache --exclude-dir=node_modules --exclude-dir=.venv"
+	opt.grepprg = "grep -R -n --exclude-dir=.git --exclude-dir=.cache --exclude-dir=node_modules --exclude-dir=.venv"
 end
 
-local options = { noremap = true }
+-- Disable nvim intro
+opt.shortmess:append("sI")
 
-map("v", "<", "<gv", options)
-map("v", ">", ">gv", options)
+-- Disable builtins plugins
+local disabled_built_ins = {
+	"netrw",
+	"netrwPlugin",
+	"netrwSettings",
+	"netrwFileHandlers",
+	"gzip",
+	"zip",
+	"zipPlugin",
+	"tar",
+	"tarPlugin",
+	"getscript",
+	"getscriptPlugin",
+	"vimball",
+	"vimballPlugin",
+	"2html_plugin",
+	"logipat",
+	"rrhelper",
+	"spellfile_plugin",
+	"matchit",
+}
 
-map("n", "<C-p>", ":find ", options)
-map("n", "<C-b>", ":ls t<cr>:b ", options)
-map("n", "<leader>ps", ':silent grep ""<Left>', options)
-map("v", "<C-f>", '"hy:silent grep "<C-r>h"<CR>', options)
-map("n", "<leader>pw", ':silent grep <C-R>=expand("<cword>")<CR><CR>', options)
-map("n", "<leader>phw", ':h <C-R>=expand("<cword>")<CR><CR>', options)
-map("n", "<C-j>", ":cn<cr>zz", options)
-map("n", "<C-k>", ":cp<cr>zz", options)
+for _, plugin in pairs(disabled_built_ins) do
+	g["loaded_" .. plugin] = 1
+end
 
-map("v", "<C-r>", '"hy:%s/<C-r>h//gc<left><left><left>', options)
-map("n", "<leader><cr>", ":so ~/.config/nvim/init.lua<CR>", options)
-map("n", "<leader>+", ":vertical resize +15<CR>", options)
-map("n", "<leader>-", ":vertical resize -10<CR>", options)
-map("v", "J", ":m '>+1<CR>gv=gv", options)
-map("v", "K", ":m '<-2<CR>gv=gv", options)
-map("n", "<F4>", ":bd<CR>", options)
-map("n", "<C-s>", ":w<CR>", options)
-map("n", "<leader>n", ":e <C-r>=expand('%:h')<CR>/", options)
+-----------------------------------------------------------
+-- Autocommands
+-----------------------------------------------------------
+local yankGrp = api.nvim_create_augroup("YankHighlight", { clear = true })
+local myGroup = api.nvim_create_augroup("MyGroup", { clear = true })
+api.nvim_create_autocmd("TextYankPost", {
+	command = "silent! lua vim.highlight.on_yank()",
+	group = yankGrp,
+})
+api.nvim_create_autocmd("FileType", {
+	pattern = { "help", "startuptime", "qf", "lspinfo" },
+	command = [[nnoremap <buffer><silent> q :close<CR>]],
+	group = myGroup,
+})
+api.nvim_create_autocmd("BufWritePre", {
+	command = [[:call TrimWhitespace()]],
+	group = myGroup,
+})
+api.nvim_create_autocmd("BufEnter", {
+	command = [[set fo-=c fo-=r fo-=o]],
+	group = myGroup,
+})
+api.nvim_create_autocmd("FileType", {
+	pattern = { "xml", "html", "xhtml", "css", "scss", "javascript", "yaml" },
+	command = [[setlocal shiftwidth=2 tabstop=2]],
+	group = myGroup,
+})
+api.nvim_create_autocmd("FileType", {
+	pattern = { "xml", "html", "xhtml", "css", "scss", "javascript", "yaml" },
+	command = [[setlocal shiftwidth=2 tabstop=2]],
+	group = myGroup,
+})
+-- Remove whitespace on save
+cmd([[
+fun! TrimWhitespace()
+    let l:save = winsaveview()
+    keeppatterns %s/\s\+$//e
+    call winrestview(l:save)
+endfun
 
-map("n", "<leader>gs", ":G<CR>", options)
-map("n", "<leader>gps", ":G ps<CR>", options)
-map("n", "<leader>gpl", ":G pl<CR>", options)
-map("n", "<leader>gfu", ":G fu<CR>", options)
-map("n", "<leader>gl", ":diffget //3<CR>", options)
-map("n", "<leader>ga", ":diffget //2<CR>", options)
+function! ToggleQuickFix()
+    if empty(filter(getwininfo(), 'v:val.quickfix'))
+        copen
+    else
+        cclose
+    endif
+endfunction
+
+inoremap <silent> <C-l> <cmd>lua require('my-functions').expand_or_jump()<Cr>
+inoremap <silent> <C-h> <cmd>lua require('my-functions').jump_prev()<Cr>
+
+snoremap <silent> <C-l> <cmd>lua require('my-functions').expand_or_jump()<Cr>
+snoremap <silent> <C-h> <cmd>lua require('my-functions').jump_prev()<Cr>
+]])
+
+-----------------------------------------------------------
+-- Define keymaps of Neovim and installed plugins.
+-----------------------------------------------------------
+
+local function map(mode, lhs, rhs, opts)
+	local options = { noremap = true }
+	if opts then
+		options = vim.tbl_extend("force", options, opts)
+	end
+	vim.api.nvim_set_keymap(mode, lhs, rhs, options)
+end
+
+-- Change leader to a comma
+vim.g.mapleader = " "
+
+map("n", "<leader>c", ":call ToggleQuickFix()<CR>")
+map("v", "<", "<gv")
+map("v", ">", ">gv")
+
+map("n", "<C-p>", ":find ")
+map("n", "<C-b>", ":ls t<cr>:b ")
+map("n", "<leader>ps", ':silent grep ""<Left>')
+map("v", "<C-f>", '"hy:silent grep "<C-r>h"<CR>')
+map("n", "<leader>pw", ':silent grep <C-R>=expand("<cword>")<CR><CR>')
+map("n", "<leader>phw", ':h <C-R>=expand("<cword>")<CR><CR>')
+map("n", "<C-j>", ":cn<cr>zz")
+map("n", "<C-k>", ":cp<cr>zz")
+
+map("v", "<C-r>", '"hy:%s/<C-r>h//gc<left><left><left>')
+map("n", "<leader><cr>", ":so ~/.config/nvim/init.lua<CR>")
+map("n", "<leader>+", ":vertical resize +15<CR>")
+map("n", "<leader>-", ":vertical resize -10<CR>")
+map("v", "J", ":m '>+1<CR>gv=gv")
+map("v", "K", ":m '<-2<CR>gv=gv")
+map("n", "<F4>", ":bd<CR>")
+map("n", "<C-s>", ":w<CR>")
+map("i", "<C-s>", "<C-c>:w<CR>")
+map("n", "<leader>n", ":e <C-r>=expand('%:h')<CR>/")
+
+map("n", "<leader>gs", ":G<CR>")
+map("n", "<leader>gps", ":G ps<CR>")
+map("n", "<leader>gpl", ":G pl<CR>")
+map("n", "<leader>gfu", ":G fu<CR>")
+map("n", "<leader>gl", ":diffget //3<CR>")
+map("n", "<leader>ga", ":diffget //2<CR>")
 
 -- special remaps
-map("n", "n", "nzz", options)
-map("n", "N", "Nzz", options)
-map("n", "J", "mzJ`z", options)
+map("n", "n", "nzz")
+map("n", "N", "Nzz")
+map("n", "J", "mzJ`z")
 
 map("x", ".", ":normal . <CR>", { noremap = true, silent = true })
 
 -- undo breakpoints
-map("i", ",", ",<c-g>u", options)
-map("i", ".", ".<c-g>u", options)
-map("i", "!", "!<c-g>u", options)
-map("i", "?", "?<c-g>u", options)
-map("i", "[", "[<c-g>u", options)
-map("i", "(", "(<c-g>u", options)
+map("i", ",", ",<c-g>u")
+map("i", ".", ".<c-g>u")
+map("i", "!", "!<c-g>u")
+map("i", "?", "?<c-g>u")
+map("i", "[", "[<c-g>u")
+map("i", "(", "(<c-g>u")
 
 -- relative jumplist
 map("n", "k", [[(v:count > 5 ? "m'". v:count : "") . "k"]], { expr = true, noremap = true, silent = true })
 map("n", "j", [[(v:count > 5 ? "m'". v:count : "") . "j"]], { expr = true, noremap = true, silent = true })
 
-map("n", "<m-p>", ':e <C-R>=expand("%:.:h")<CR>/', options)
-map("n", "s", "ciw", options)
-map("i", "kj", "<C-[>", options)
-map("i", "<C-l>", "<C-x><C-l>", options)
+map("n", "<m-p>", ':e <C-R>=expand("%:.:h")<CR>/')
+map("n", "s", "ciw")
+map("i", "kj", "<C-[>")
+map("i", "<C-l>", "<C-x><C-l>")
 
-map("t", "kj", "<C-\\><C-n>", options)
+map("t", "kj", "<C-\\><C-n>")
 
 -- plugins setup
 require("plugins")

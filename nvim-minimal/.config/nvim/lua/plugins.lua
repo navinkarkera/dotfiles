@@ -12,6 +12,9 @@ end
 return require("packer").startup(function()
 	-- Packer can manage itself
 	use("wbthomason/packer.nvim")
+	use({
+		"lewis6991/impatient.nvim",
+	})
 
 	-- lsp plugings
 	use({
@@ -65,6 +68,7 @@ return require("packer").startup(function()
 	})
 	use({
 		"danymat/neogen",
+		after = "nvim-lspconfig",
 		config = function()
 			require("neogen-conf")
 		end,
@@ -79,20 +83,18 @@ return require("packer").startup(function()
 	})
 	use({ "tpope/vim-surround", event = "BufEnter" })
 	use({ "andymass/vim-matchup", event = "BufEnter" })
-	use({
-		"mattn/emmet-vim",
-		ft = {
-			"html",
-			"javascript",
-			"vue",
-			"javascriptreact",
-			"jsx",
-			"xml",
-			"htmldjango",
-		},
-	})
-	use({ "AndrewRadev/switch.vim", event = "BufEnter" })
-	use({ "AndrewRadev/splitjoin.vim", event = "BufEnter" })
+	-- use({
+	-- 	"mattn/emmet-vim",
+	-- 	ft = {
+	-- 		"html",
+	-- 		"javascript",
+	-- 		"vue",
+	-- 		"javascriptreact",
+	-- 		"jsx",
+	-- 		"xml",
+	-- 		"htmldjango",
+	-- 	},
+	-- })
 	use({
 		"preservim/vimux",
 		event = "VimEnter",
@@ -126,7 +128,6 @@ return require("packer").startup(function()
 			require("harpoon-conf")
 		end,
 	})
-	use("tversteeg/registers.nvim")
 	use({
 		"tamago324/lir.nvim",
 		requires = { "nvim-lua/plenary.nvim" },

@@ -13,7 +13,7 @@ require("nvim-treesitter.configs").setup({
 		"go",
 	}, -- one of "all", "language", or a list of languages
 	indent = {
-		enable = true,
+		enable = false,
 	},
 	highlight = {
 		enable = true, -- false will disable the whole extension

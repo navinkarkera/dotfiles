@@ -25,6 +25,9 @@ telescope.setup({
 	defaults = {
 		buffer_previewer_maker = new_maker,
 		layout_strategy = "horizontal",
+		path_display = {
+			shorten = 2,
+		},
 		layout_config = {
 			width = 0.95,
 			preview_width = 0.65,
@@ -62,18 +65,20 @@ map("n", "<leader>ff", [[:lua require('telescope.builtin').find_files()<cr>]], o
 map(
 	"n",
 	"<leader>fc",
-	[[:lua require('telescope.builtin').find_files({ prompt_prefix="Config> ", cwd="~/.config" })<cr>]],
-	options
-)
-map(
-	"n",
-	"<leader>fs",
-	[[:lua require('telescope.builtin').find_files({ prompt_prefix="Scripts> ", cwd="~/.local/bin" })<cr>]],
+	[[:lua require('telescope.builtin').find_files({ prompt_prefix="Config> ", cwd="~/dotfiles" })<cr>]],
 	options
 )
 
 -- files by type
--- map("n", "<leader>fp", ":lua fzy.execute('fd -H -e py', fzy.sinks.edit_file)<CR>", options)
--- map("n", "<leader>fj", ":lua fzy.execute('fd -H -e js', fzy.sinks.edit_file)<CR>", options)
--- map("n", "<leader>fr", ":lua fzy.execute('fd -H -e rs', fzy.sinks.edit_file)<CR>", options)
--- map("n", "<leader>fv", ":lua fzy.execute('fd -H -e vue', fzy.sinks.edit_file)<CR>", options)
+map(
+	"n",
+	"<leader>fp",
+	":lua require('telescope.builtin').find_files({find_command={'fd', '-H', '-e', 'py'}})<CR>",
+	options
+)
+map(
+	"n",
+	"<leader>fj",
+	":lua require('telescope.builtin').find_files({find_command={'fd', '-H', '-e', 'js'}})<CR>",
+	options
+)

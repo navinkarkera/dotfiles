@@ -7,6 +7,7 @@ require("lir").setup({
 	devicons_enable = false,
 	mappings = {
 		["l"] = actions.edit,
+		["<CR>"] = actions.edit,
 		["<C-s>"] = actions.split,
 		["<C-v>"] = actions.vsplit,
 		["<C-t>"] = actions.tabedit,
@@ -14,6 +15,7 @@ require("lir").setup({
 
 		["h"] = actions.up,
 		["q"] = actions.quit,
+		["<Esc>"] = actions.quit,
 
 		["K"] = actions.mkdir,
 		["N"] = actions.newfile,

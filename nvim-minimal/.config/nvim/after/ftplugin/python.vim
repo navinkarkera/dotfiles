@@ -1,7 +1,3 @@
-if executable("flake8")
-    setlocal makeprg=flake8
-endif
-
 nnoremap <leader>pd Obreakpoint()<Esc>
 nnoremap <silent> <buffer> <F3> :VimuxRunCommand("activate; python")<CR>
 nnoremap <silent> <buffer> <F5> :lua require("my-functions").executePythonModule('<C-R>=expand("%:.")<CR>')<CR>

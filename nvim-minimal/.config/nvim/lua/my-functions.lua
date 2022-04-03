@@ -19,7 +19,7 @@ function M.executePythonModuleInteractive(filePath)
 end
 
 function M.VimuxSlime()
-	code = vim.fn.getreg("v")
+	local code = vim.fn.getreg("v")
 	vim.call("VimuxRunCommand", code, 0)
 end
 

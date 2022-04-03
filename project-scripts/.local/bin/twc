@@ -1,4 +1,4 @@
 #!/bin/bash
 
-[[ $(timew get dom.active) = "1" ]] && timew tag "$@" && timew stop
-timew start
+[[ $(timew get dom.active) = "1" ]] && timew tag "$1" && timew stop
+[[ "$2" != "stop" ]] && timew start
