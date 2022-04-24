@@ -2769,3 +2769,2631 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20220403T165501Z","end":"20220403T174616Z","tags":["working on zoom review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220404T043311Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220404T043311Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220404T043311Z","tags":["reading emails and searching for reviewers"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220404T043311Z","tags":["reading emails and searching for reviewers"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220404T043311Z","end":"20220404T045433Z","tags":["reading emails and searching for reviewers"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220404T050731Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220404T050731Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220404T050731Z","tags":["fixing ci bb-6078"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220404T050731Z","tags":["fixing ci bb-6078"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220404T050731Z","end":"20220404T060928Z","tags":["fixing ci bb-6078"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220404T062613Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220404T062613Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220404T062613Z","tags":["fixing ci bb-6078"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220404T062613Z","tags":["fixing ci bb-6078"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220404T062613Z","end":"20220404T071119Z","tags":["fixing ci bb-6078"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220404T073512Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220404T073512Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220404T073512Z","tags":["fixing ci bb-6078"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220404T073512Z","tags":["fixing ci bb-6078"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220404T073512Z","end":"20220404T074043Z","tags":["fixing ci bb-6078"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220404T101228Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220404T101228Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220404T101228Z","tags":["fixing ci bb-6078"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220404T101228Z","tags":["fixing ci bb-6078"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220404T101228Z","end":"20220404T102650Z","tags":["fixing ci bb-6078"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220404T103051Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220404T103051Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220404T103051Z","tags":["reading bb-5593 description"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220404T103051Z","tags":["reading bb-5593 description"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220404T103051Z","end":"20220404T103653Z","tags":["reading bb-5593 description"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220404T103653Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220404T103653Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220404T103653Z","tags":["reading bb-5593 description"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220404T103653Z","tags":["reading bb-5593 description"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220404T103653Z","end":"20220404T104217Z","tags":["reading bb-5593 description"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220404T111854Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220404T111854Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220404T111854Z","tags":["reading bb-6077"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220404T111854Z","tags":["reading bb-6077"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220404T111854Z","end":"20220404T113302Z","tags":["reading bb-6077"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220404T120005Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220404T120005Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220404T120005Z","tags":["reading bb-6077"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220404T120005Z","tags":["reading bb-6077"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220404T120005Z","end":"20220404T120429Z","tags":["reading bb-6077"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220404T142042Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220404T142042Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220404T142042Z","tags":["preparing for end of sprint review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220404T142042Z","tags":["preparing for end of sprint review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220404T142042Z","end":"20220404T142548Z","tags":["preparing for end of sprint review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220404T143157Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220404T143157Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220404T143157Z","tags":["sprint update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220404T143157Z","tags":["sprint update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220404T143157Z","end":"20220404T150903Z","tags":["sprint update"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220405T035748Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220405T035748Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220405T035748Z","tags":["catching up on sprint updates"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220405T035748Z","tags":["catching up on sprint updates"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220405T035748Z","end":"20220405T040812Z","tags":["catching up on sprint updates"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220405T040812Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220405T040812Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220405T040812Z","tags":["fix docker dev bb-6078"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220405T040812Z","tags":["fix docker dev bb-6078"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220405T040812Z","end":"20220405T041940Z","tags":["fix docker dev bb-6078"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220405T041940Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220405T041940Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220405T041940Z","tags":["frontend scaffolding bb-5663"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220405T041940Z","tags":["frontend scaffolding bb-5663"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220405T041940Z","end":"20220405T045832Z","tags":["frontend scaffolding bb-5663"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220405T045926Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220405T045926Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220405T045926Z","tags":["frontend scaffolding bb-5663"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220405T045926Z","tags":["frontend scaffolding bb-5663"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220405T045926Z","end":"20220405T050723Z","tags":["frontend scaffolding bb-5663"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220405T053702Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220405T053702Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220405T053702Z","tags":["frontend scaffolding bb-5663"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220405T053702Z","tags":["frontend scaffolding bb-5663"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220405T053702Z","end":"20220405T063359Z","tags":["frontend scaffolding bb-5663"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220405T065023Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220405T065023Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220405T065023Z","tags":["frontend scaffolding bb-5663"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220405T065023Z","tags":["frontend scaffolding bb-5663"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220405T065023Z","end":"20220405T073013Z","tags":["frontend scaffolding bb-5663"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220405T090012Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220405T090012Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220405T090012Z","tags":["sprint retrospective"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220405T090012Z","tags":["sprint retrospective"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220405T090012Z","end":"20220405T094932Z","tags":["sprint retrospective"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220405T095415Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220405T095415Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220405T095415Z","tags":["frontend scaffolding bb-5663"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220405T095415Z","tags":["frontend scaffolding bb-5663"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220405T095415Z","end":"20220405T104655Z","tags":["frontend scaffolding bb-5663"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220405T112835Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220405T112835Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220405T112835Z","tags":["frontend scaffolding bb-5663"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220405T112835Z","tags":["frontend scaffolding bb-5663"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220405T112835Z","end":"20220405T125155Z","tags":["frontend scaffolding bb-5663"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220405T132851Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220405T132851Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220405T132851Z","tags":["frontend scaffolding bb-5663"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220405T132851Z","tags":["frontend scaffolding bb-5663"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220405T132851Z","end":"20220405T144553Z","tags":["frontend scaffolding bb-5663"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220405T144618Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220405T144618Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220405T144618Z","tags":["reading emails"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220405T144618Z","tags":["reading emails"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220405T144618Z","end":"20220405T144752Z","tags":["reading emails"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220406T045004Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220406T045004Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220406T045004Z","tags":["frontend scaffolding bb-5663"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220406T045004Z","tags":["frontend scaffolding bb-5663"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220406T045004Z","end":"20220406T055745Z","tags":["frontend scaffolding bb-5663"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220406T055745Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220406T055745Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220406T055745Z","tags":["frontend scaffolding bb-5663"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220406T055745Z","tags":["frontend scaffolding bb-5663"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220406T055745Z","end":"20220406T061520Z","tags":["frontend scaffolding bb-5663"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220406T061520Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220406T061520Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220406T061520Z","tags":["fix docker dev bb-6078"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220406T061520Z","tags":["fix docker dev bb-6078"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220406T061520Z","end":"20220406T070215Z","tags":["fix docker dev bb-6078"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220406T070215Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220406T070215Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220406T070215Z","tags":["review BB-6058"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220406T070215Z","tags":["review BB-6058"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220406T070215Z","end":"20220406T071746Z","tags":["review BB-6058"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220406T071746Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220406T071746Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220406T071746Z","tags":["reading emails"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220406T071746Z","tags":["reading emails"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220406T071746Z","end":"20220406T072123Z","tags":["reading emails"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220406T083410Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220406T083410Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220406T083410Z","tags":["discourse integration and edx dev theme setup bb-6090"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220406T083410Z","tags":["discourse integration and edx dev theme setup bb-6090"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220406T083410Z","end":"20220406T102734Z","tags":["discourse integration and edx dev theme setup bb-6090"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220406T103740Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220406T103740Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220406T103740Z","tags":["edx hms theme"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220406T103740Z","tags":["edx hms theme"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220406T103740Z","end":"20220406T104643Z","tags":["edx hms theme"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220406T112155Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220406T112155Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220406T112155Z","tags":["split between onboarding, heartbeat and hms theme issue"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220406T112155Z","tags":["split between onboarding, heartbeat and hms theme issue"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220406T112155Z","end":"20220406T122854Z","tags":["split between onboarding, heartbeat and hms theme issue"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220406T133056Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220406T133056Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220406T133056Z","tags":["edx hms theme setup"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220406T133056Z","tags":["edx hms theme setup"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220406T133056Z","end":"20220406T134521Z","tags":["edx hms theme setup"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220406T140941Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220406T140941Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220406T140941Z","tags":["edx hms theme investigate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220406T140941Z","tags":["edx hms theme investigate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220406T140941Z","end":"20220406T154424Z","tags":["edx hms theme investigate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220407T043854Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T043854Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T043854Z","tags":["reading emails"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T043854Z","tags":["reading emails"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T043854Z","end":"20220407T044325Z","tags":["reading emails"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220407T044325Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T044325Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T044325Z","tags":["reading emails"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T044325Z","tags":["reading emails"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T044325Z","end":"20220407T045844Z","tags":["reading emails"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220407T045844Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T045844Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T045844Z","tags":["bb-5593 fix links"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T045844Z","tags":["bb-5593 fix links"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T045844Z","end":"20220407T052030Z","tags":["bb-5593 fix links"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220407T052030Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T052030Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T052030Z","tags":["investigate heartbeats"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T052030Z","tags":["investigate heartbeats"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T052030Z","end":"20220407T052646Z","tags":["investigate heartbeats"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220407T053101Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T053101Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T053101Z","tags":["investigate heartbeats"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T053101Z","tags":["investigate heartbeats"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T053101Z","end":"20220407T053732Z","tags":["investigate heartbeats"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220407T053732Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T053732Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T053732Z","tags":["investigate hms space"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T053732Z","tags":["investigate hms space"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T053732Z","end":"20220407T060459Z","tags":["investigate hms space"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220407T062257Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T062257Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T062257Z","tags":["frontend scaffolding review comments"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T062257Z","tags":["frontend scaffolding review comments"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T062257Z","end":"20220407T062924Z","tags":["frontend scaffolding review comments"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220407T063829Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T063829Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T063829Z","tags":["investigate hms space"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T063829Z","tags":["investigate hms space"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T063829Z","end":"20220407T065943Z","tags":["investigate hms space"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220407T070046Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T070046Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T070046Z","tags":["investigate hms space"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T070046Z","tags":["investigate hms space"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T070046Z","end":"20220407T070916Z","tags":["investigate hms space"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220407T070918Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T070918Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T070918Z","tags":["frontend scaffolding review comments"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T070918Z","tags":["frontend scaffolding review comments"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T070918Z","end":"20220407T071619Z","tags":["frontend scaffolding review comments"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220407T071619Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T071619Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T071619Z","tags":["investigate hms space"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T071619Z","tags":["investigate hms space"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T071619Z","end":"20220407T074857Z","tags":["investigate hms space"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220407T074857Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T074857Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T074857Z","tags":["frontend scaffolding review comments"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T074857Z","tags":["frontend scaffolding review comments"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T074857Z","end":"20220407T075434Z","tags":["frontend scaffolding review comments"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220407T084644Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T084644Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T084644Z","tags":["ytp staging access"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T084644Z","tags":["ytp staging access"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T084644Z","end":"20220407T085408Z","tags":["ytp staging access"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220407T092438Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T092438Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T092438Z","tags":["provision app server"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T092438Z","tags":["provision app server"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T092438Z","end":"20220407T093845Z","tags":["provision app server"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220407T093845Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T093845Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T093845Z","tags":["discourse access check"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T093845Z","tags":["discourse access check"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T093845Z","end":"20220407T094843Z","tags":["discourse access check"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220407T094843Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T094843Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T094843Z","tags":["discourse integration testing"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T094843Z","tags":["discourse integration testing"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T094843Z","end":"20220407T110929Z","tags":["discourse integration testing"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220407T115537Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T115537Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T115537Z","tags":["edx hms theme investigate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T115537Z","tags":["edx hms theme investigate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T115537Z","end":"20220407T120853Z","tags":["edx hms theme investigate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220407T130712Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T130712Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T130712Z","tags":["investigate heartbeats"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220407T130712Z","tags":["investigate heartbeats"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220407T130712Z","end":"20220407T143920Z","tags":["investigate heartbeats"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220408T045926Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220408T045926Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220408T045926Z","tags":["reading emails"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220408T045926Z","tags":["reading emails"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220408T045926Z","end":"20220408T050536Z","tags":["reading emails"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220408T050536Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220408T050536Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220408T050536Z","tags":["investigate hms space"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220408T050536Z","tags":["investigate hms space"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220408T050536Z","end":"20220408T052506Z","tags":["investigate hms space"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220408T053751Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220408T053751Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220408T053751Z","tags":["investigate hms space"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220408T053751Z","tags":["investigate hms space"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220408T053751Z","end":"20220408T064609Z","tags":["investigate hms space"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220408T065840Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220408T065840Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220408T065840Z","tags":["investigate heartbeats"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220408T065840Z","tags":["investigate heartbeats"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220408T065840Z","end":"20220408T074247Z","tags":["investigate heartbeats"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220408T091240Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220408T091240Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220408T091240Z","tags":["investigate heartbeats"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220408T091240Z","tags":["investigate heartbeats"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220408T091240Z","end":"20220408T092521Z","tags":["investigate heartbeats"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220408T093159Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220408T093159Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220408T093159Z","tags":["investigate heartbeats"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220408T093159Z","tags":["investigate heartbeats"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220408T093159Z","end":"20220408T105647Z","tags":["investigate heartbeats"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220408T105651Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220408T105651Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220408T105651Z","tags":["investigate heartbeats"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220408T105651Z","tags":["investigate heartbeats"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220408T105651Z","end":"20220408T110723Z","tags":["investigate heartbeats"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220408T111416Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220408T111416Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220408T111416Z","tags":["investigate heartbeats"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220408T111416Z","tags":["investigate heartbeats"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220408T111416Z","end":"20220408T112433Z","tags":["investigate heartbeats"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220408T131106Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220408T131106Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220408T131106Z","tags":["investigate heartbeats"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220408T131106Z","tags":["investigate heartbeats"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220408T131106Z","end":"20220408T135432Z","tags":["investigate heartbeats"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220408T135528Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220408T135528Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220408T135528Z","tags":["fix marketing site"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220408T135528Z","tags":["fix marketing site"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220408T135528Z","end":"20220408T153404Z","tags":["fix marketing site"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220411T031425Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T031425Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T031425Z","tags":["discourse"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T031425Z","tags":["discourse"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T031425Z","end":"20220411T033803Z","tags":["discourse"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220411T040037Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T040037Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T040037Z","tags":["discourse"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T040037Z","tags":["discourse"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T040037Z","end":"20220411T042248Z","tags":["discourse"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220411T043920Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T043920Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T043920Z","tags":["mooc pages fix"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T043920Z","tags":["mooc pages fix"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T043920Z","end":"20220411T053815Z","tags":["mooc pages fix"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220411T053815Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T053815Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T053815Z","tags":["investigate hearbeat"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T053815Z","tags":["investigate hearbeat"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T053815Z","end":"20220411T063546Z","tags":["investigate hearbeat"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220411T090103Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T090103Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T090103Z","tags":["investigate hearbeat"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T090103Z","tags":["investigate hearbeat"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T090103Z","end":"20220411T093440Z","tags":["investigate hearbeat"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220411T093515Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T093515Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T093515Z","tags":["space"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T093515Z","tags":["space"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T093515Z","end":"20220411T101842Z","tags":["space"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220411T104903Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T104903Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T104903Z","tags":["space"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T104903Z","tags":["space"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T104903Z","end":"20220411T105243Z","tags":["space"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220411T105312Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T105312Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T105312Z","tags":["investigate heartbeat"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T105312Z","tags":["investigate heartbeat"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T105312Z","end":"20220411T113455Z","tags":["investigate heartbeat"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220411T113455Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T113455Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T113455Z","tags":["fix docker"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T113455Z","tags":["fix docker"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T113455Z","end":"20220411T113548Z","tags":["fix docker"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220411T120551Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T120551Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T120551Z","tags":["fix docker"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T120551Z","tags":["fix docker"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T120551Z","end":"20220411T123237Z","tags":["fix docker"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220411T132110Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T132110Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T132110Z","tags":["investigate hearbeat"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T132110Z","tags":["investigate hearbeat"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T132110Z","end":"20220411T142121Z","tags":["investigate hearbeat"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220411T143727Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T143727Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T143727Z","tags":["sprint update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220411T143727Z","tags":["sprint update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220411T143727Z","end":"20220411T145000Z","tags":["sprint update"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220412T043006Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220412T043006Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220412T043006Z","tags":["reading emails"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220412T043006Z","tags":["reading emails"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220412T043006Z","end":"20220412T043249Z","tags":["reading emails"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220412T043249Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220412T043249Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220412T043249Z","tags":["mooc pages fix"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220412T043249Z","tags":["mooc pages fix"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220412T043249Z","end":"20220412T051113Z","tags":["mooc pages fix"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220412T051113Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220412T051113Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220412T051113Z","tags":["fix docker"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220412T051113Z","tags":["fix docker"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220412T051113Z","end":"20220412T051247Z","tags":["fix docker"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220412T052406Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220412T052406Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220412T052406Z","tags":["setup ytp theme devstack"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220412T052406Z","tags":["setup ytp theme devstack"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220412T052406Z","end":"20220412T060208Z","tags":["setup ytp theme devstack"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220412T062353Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220412T062353Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220412T062353Z","tags":["setup ytp theme devstack"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220412T062353Z","tags":["setup ytp theme devstack"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220412T062353Z","end":"20220412T065314Z","tags":["setup ytp theme devstack"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220412T084913Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220412T084913Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220412T084913Z","tags":["investigate ytp translation"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220412T084913Z","tags":["investigate ytp translation"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220412T084913Z","end":"20220412T111528Z","tags":["investigate ytp translation"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220412T115808Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220412T115808Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220412T115808Z","tags":["investigate ytp translation"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220412T115808Z","tags":["investigate ytp translation"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220412T115808Z","end":"20220412T122227Z","tags":["investigate ytp translation"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220412T133728Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220412T133728Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220412T133728Z","tags":["investigate heartbeat"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220412T133728Z","tags":["investigate heartbeat"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220412T133728Z","end":"20220412T140208Z","tags":["investigate heartbeat"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220412T140325Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220412T140325Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220412T140325Z","tags":["investigate ytp translation"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220412T140325Z","tags":["investigate ytp translation"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220412T140325Z","end":"20220412T142518Z","tags":["investigate ytp translation"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220413T041247Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220413T041247Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220413T041247Z","tags":["reading emails and mooc name mailing list"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220413T041247Z","tags":["reading emails and mooc name mailing list"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220413T041247Z","end":"20220413T042031Z","tags":["reading emails and mooc name mailing list"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220413T042031Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220413T042031Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220413T042031Z","tags":["investigate ytp translation"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220413T042031Z","tags":["investigate ytp translation"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220413T042031Z","end":"20220413T043029Z","tags":["investigate ytp translation"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220413T043938Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220413T043938Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220413T043938Z","tags":["investigate ytp translation"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220413T043938Z","tags":["investigate ytp translation"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220413T043938Z","end":"20220413T044219Z","tags":["investigate ytp translation"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220413T045036Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220413T045036Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220413T045036Z","tags":["investigate ytp translation"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220413T045036Z","tags":["investigate ytp translation"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220413T045036Z","end":"20220413T045331Z","tags":["investigate ytp translation"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220413T050023Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220413T050023Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220413T050023Z","tags":["investigate ytp translation"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220413T050023Z","tags":["investigate ytp translation"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220413T050023Z","end":"20220413T054300Z","tags":["investigate ytp translation"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220413T054303Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220413T054303Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220413T054303Z","tags":["investigate heartbeat"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220413T054303Z","tags":["investigate heartbeat"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220413T054303Z","end":"20220413T062951Z","tags":["investigate heartbeat"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220413T062952Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220413T062952Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220413T062952Z","tags":["investigate ytp translation"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220413T062952Z","tags":["investigate ytp translation"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220413T062952Z","end":"20220413T071655Z","tags":["investigate ytp translation"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220413T083203Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220413T083203Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220413T083203Z","tags":["investigate ytp translation"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220413T083203Z","tags":["investigate ytp translation"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220413T083203Z","end":"20220413T092026Z","tags":["investigate ytp translation"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220413T092033Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220413T092033Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220413T092033Z","tags":["investigate heartbeat"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220413T092033Z","tags":["investigate heartbeat"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220413T092033Z","end":"20220413T092222Z","tags":["investigate heartbeat"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220414T050256Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220414T050256Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220414T050256Z","tags":["reading emails"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220414T050256Z","tags":["reading emails"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220414T050256Z","end":"20220414T050931Z","tags":["reading emails"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220414T050931Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220414T050931Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220414T050931Z","tags":["space"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220414T050931Z","tags":["space"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220414T050931Z","end":"20220414T052110Z","tags":["space"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220414T052253Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220414T052253Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220414T052253Z","tags":["investigate heartbeat"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220414T052253Z","tags":["investigate heartbeat"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220414T052253Z","end":"20220414T070109Z","tags":["investigate heartbeat"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220414T090740Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220414T090740Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220414T090740Z","tags":["investigate heartbeat"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220414T090740Z","tags":["investigate heartbeat"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220414T090740Z","end":"20220414T093245Z","tags":["investigate heartbeat"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220414T132226Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220414T132226Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220414T132226Z","tags":["space"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220414T132226Z","tags":["space"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220414T132226Z","end":"20220414T133814Z","tags":["space"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220414T145925Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220414T145925Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220414T145925Z","tags":["fix marketing site"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220414T145925Z","tags":["fix marketing site"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220414T145925Z","end":"20220414T150802Z","tags":["fix marketing site"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220415T045749Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220415T045749Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220415T045749Z","tags":["reading emails"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220415T045749Z","tags":["reading emails"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220415T045749Z","end":"20220415T050804Z","tags":["reading emails"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220415T050804Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220415T050804Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220415T050804Z","tags":["ytp"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220415T050804Z","tags":["ytp"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220415T050804Z","end":"20220415T052727Z","tags":["ytp"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220415T063013Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220415T063013Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220415T063013Z","tags":["investigate heartbeat"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220415T063013Z","tags":["investigate heartbeat"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220415T063013Z","end":"20220415T063559Z","tags":["investigate heartbeat"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220415T063559Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220415T063559Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220415T063559Z","tags":["ytp"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220415T063559Z","tags":["ytp"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220415T063559Z","end":"20220415T074357Z","tags":["ytp"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220415T112033Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220415T112033Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220415T112033Z","tags":["estimation session"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220415T112033Z","tags":["estimation session"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220415T112033Z","end":"20220415T114213Z","tags":["estimation session"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220417T053127Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220417T053127Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220417T053127Z","tags":["space"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220417T053127Z","tags":["space"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220417T053127Z","end":"20220417T060244Z","tags":["space"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220418T040925Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220418T040925Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220418T040925Z","tags":["reading emails and updating jira tickets"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220418T040925Z","tags":["reading emails and updating jira tickets"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220418T040925Z","end":"20220418T041924Z","tags":["reading emails and updating jira tickets"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220418T041924Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220418T041924Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220418T041924Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220418T041924Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220418T041924Z","end":"20220418T053756Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220418T055615Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220418T055615Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220418T055615Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220418T055615Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220418T055615Z","end":"20220418T062856Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220418T065434Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220418T065434Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220418T065434Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220418T065434Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220418T065434Z","end":"20220418T071751Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220418T090320Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220418T090320Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220418T090320Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220418T090320Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220418T090320Z","end":"20220418T095355Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220418T104817Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220418T104817Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220418T104817Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220418T104817Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220418T104817Z","end":"20220418T105550Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220418T111249Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220418T111249Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220418T111249Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220418T111249Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220418T111249Z","end":"20220418T114003Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220418T131406Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220418T131406Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220418T131406Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220418T131406Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220418T131406Z","end":"20220418T131912Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220418T132624Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220418T132624Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220418T132624Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220418T132624Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220418T132624Z","end":"20220418T144122Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220419T041808Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220419T041808Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220419T041808Z","tags":["reading emails and jira tickets"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220419T041808Z","tags":["reading emails and jira tickets"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220419T041808Z","end":"20220419T043309Z","tags":["reading emails and jira tickets"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220419T043309Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220419T043309Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220419T043309Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220419T043309Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220419T043309Z","end":"20220419T055557Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220419T063951Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220419T063951Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220419T063951Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220419T063951Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220419T063951Z","end":"20220419T073352Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220419T073821Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220419T073821Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220419T073821Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220419T073821Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220419T073821Z","end":"20220419T081648Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220419T091724Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220419T091724Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220419T091724Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220419T091724Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220419T091724Z","end":"20220419T103558Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220419T115916Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220419T115916Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220419T115916Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220419T115916Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220419T115916Z","end":"20220419T124051Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220419T133355Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220419T133355Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220419T133355Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220419T133355Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220419T133355Z","end":"20220419T143241Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220419T150031Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220419T150031Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220419T150031Z","tags":["retrospective"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220419T150031Z","tags":["retrospective"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220419T150031Z","end":"20220419T152948Z","tags":["retrospective"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220420T053630Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220420T053630Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220420T053630Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220420T053630Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220420T053630Z","end":"20220420T071036Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220420T072734Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220420T072734Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220420T072734Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220420T072734Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220420T072734Z","end":"20220420T073159Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220420T091829Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220420T091829Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220420T091829Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220420T091829Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220420T091829Z","end":"20220420T111909Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220420T112503Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220420T112503Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220420T112503Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220420T112503Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220420T112503Z","end":"20220420T112927Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220420T113014Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220420T113014Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220420T113014Z","tags":["zoomus"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220420T113014Z","tags":["zoomus"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220420T113014Z","end":"20220420T115031Z","tags":["zoomus"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220420T122712Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220420T122712Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220420T122712Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220420T122712Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220420T122712Z","end":"20220420T143604Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220420T150326Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220420T150326Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220420T150326Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220420T150326Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220420T150326Z","end":"20220420T153539Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220421T040805Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220421T040805Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220421T040805Z","tags":["estimation reminder"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220421T040805Z","tags":["estimation reminder"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220421T040805Z","end":"20220421T055143Z","tags":["estimation reminder"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220421T061132Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220421T061132Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220421T061132Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220421T061132Z","tags":["handbook summary"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220421T061132Z","end":"20220421T074924Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220421T090112Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220421T090112Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220421T090112Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220421T090112Z","tags":["handbook summary"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220421T090112Z","end":"20220421T092627Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220421T092627Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220421T092627Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220421T092627Z","tags":["estimation reminder"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220421T092627Z","tags":["estimation reminder"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220421T092627Z","end":"20220421T094543Z","tags":["estimation reminder"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220421T100005Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220421T100005Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220421T100005Z","tags":["mentor meeting"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220421T100005Z","tags":["mentor meeting"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220421T100005Z","end":"20220421T101400Z","tags":["mentor meeting"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220421T101400Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220421T101400Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220421T101400Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220421T101400Z","tags":["handbook summary"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220421T101400Z","end":"20220421T110026Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220421T110026Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220421T110026Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220421T110026Z","tags":["social chat"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220421T110026Z","tags":["social chat"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220421T110026Z","end":"20220421T113601Z","tags":["social chat"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220421T122428Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220421T122428Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220421T122428Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220421T122428Z","tags":["handbook summary"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220421T122428Z","end":"20220421T123803Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220421T133321Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220421T133321Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220421T133321Z","tags":["zoomus"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220421T133321Z","tags":["zoomus"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220421T133321Z","end":"20220421T140314Z","tags":["zoomus"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220421T143112Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220421T143112Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220421T143112Z","tags":["listaflow checklist meeting"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220421T143112Z","tags":["listaflow checklist meeting"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220421T143112Z","end":"20220421T145715Z","tags":["listaflow checklist meeting"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220422T044150Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220422T044150Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220422T044150Z","tags":["reading ytp certificate issue"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220422T044150Z","tags":["reading ytp certificate issue"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220422T044150Z","end":"20220422T051310Z","tags":["reading ytp certificate issue"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220422T051310Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220422T051310Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220422T051310Z","tags":["investigate esme issue"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220422T051310Z","tags":["investigate esme issue"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220422T051310Z","end":"20220422T053757Z","tags":["investigate esme issue"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220422T053757Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220422T053757Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220422T053757Z","tags":["investigate esme issue"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220422T053757Z","tags":["investigate esme issue"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220422T053757Z","end":"20220422T060951Z","tags":["investigate esme issue"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220422T061427Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220422T061427Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220422T061427Z","tags":["setup koa devstack"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220422T061427Z","tags":["setup koa devstack"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220422T061427Z","end":"20220422T063840Z","tags":["setup koa devstack"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220422T064402Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220422T064402Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220422T064402Z","tags":["setup koa devstack"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220422T064402Z","tags":["setup koa devstack"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220422T064402Z","end":"20220422T065210Z","tags":["setup koa devstack"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220422T093013Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220422T093013Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220422T093013Z","tags":["investigate auto certificate ytp"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220422T093013Z","tags":["investigate auto certificate ytp"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220422T093013Z","end":"20220422T101742Z","tags":["investigate auto certificate ytp"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220422T102433Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220422T102433Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220422T102433Z","tags":["investigate auto certificate ytp"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220422T102433Z","tags":["investigate auto certificate ytp"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220422T102433Z","end":"20220422T104407Z","tags":["investigate auto certificate ytp"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220422T104407Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220422T104407Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220422T104407Z","tags":["investigate esme issue"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220422T104407Z","tags":["investigate esme issue"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220422T104407Z","end":"20220422T105215Z","tags":["investigate esme issue"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220422T114757Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220422T114757Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220422T114757Z","tags":["investigate esme issue"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220422T114757Z","tags":["investigate esme issue"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220422T114757Z","end":"20220422T123442Z","tags":["investigate esme issue"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220422T133012Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220422T133012Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220422T133012Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220422T133012Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220422T133012Z","end":"20220422T143315Z","tags":["listaflow checklist"]}

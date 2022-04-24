@@ -53,9 +53,6 @@ local on_attach = function(client, bufnr)
     if client.resolved_capabilities.signature_help then
         vim.cmd('autocmd CursorHoldI <buffer> lua vim.lsp.buf.signature_help()')
     end
-
-	client.resolved_capabilities.document_formatting = false
-	client.resolved_capabilities.document_range_formatting = false
 end
 -- nvim-cmp supports additional completion capabilities
 local capabilities = vim.lsp.protocol.make_client_capabilities()

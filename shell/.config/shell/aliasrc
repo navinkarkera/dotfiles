@@ -258,7 +258,9 @@ alias xd="ls /usr/share/xsessions"
 
 # activate virtual env if not active
 activate() {
-    [[ -d .venv && "$VIRTUAL_ENV" == "" ]] && source .venv/bin/activate
+    v_path=${PYTHON_ENV_PATH:-.venv}
+    echo "activating $v_path"
+    [[ -d "$v_path" && "$VIRTUAL_ENV" == "" ]] && source "$v_path/bin/activate"
 }
 
 # taskwarrior

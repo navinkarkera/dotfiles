@@ -142,12 +142,7 @@ api.nvim_create_autocmd("BufEnter", {
 	group = myGroup,
 })
 api.nvim_create_autocmd("FileType", {
-	pattern = { "xml", "html", "xhtml", "css", "scss", "javascript", "yaml" },
-	command = [[setlocal shiftwidth=2 tabstop=2]],
-	group = myGroup,
-})
-api.nvim_create_autocmd("FileType", {
-	pattern = { "xml", "html", "xhtml", "css", "scss", "javascript", "yaml" },
+	pattern = { "xml", "html", "xhtml", "css", "scss", "javascript", "yaml", "typescriptreact", "typescript" },
 	command = [[setlocal shiftwidth=2 tabstop=2]],
 	group = myGroup,
 })
@@ -245,6 +240,12 @@ map("i", "kj", "<C-[>")
 map("i", "<C-l>", "<C-x><C-l>")
 
 map("t", "kj", "<C-\\><C-n>")
+
+
+-- special commands
+vim.api.nvim_create_user_command('LoadCommands', function()
+    require("my-functions").load_commands()
+end, {})
 
 -- plugins setup
 require("plugins")

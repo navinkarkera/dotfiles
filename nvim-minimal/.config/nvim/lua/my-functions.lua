@@ -39,4 +39,13 @@ function M.jump_prev()
 	end
 end
 
+function M.load_commands()
+    local pwd = vim.env.PWD
+	local filename = string.gsub(pwd, "/", "_")
+    vim.cmd(":e /tmp/" .. filename)
+    vim.cmd([[
+    :set filetype=bash
+    ]])
+end
+
 return M

@@ -14,12 +14,12 @@ unsetopt PROMPT_SP
 # Default programs:
 if [[ "$(command -v nvim)" ]]; then
     export EDITOR='nvim'
-    export MANPAGER='nvim +Man!'
-    export MANWIDTH=999
 fi
 export TERMINAL="alacritty"
 export BROWSER="brave"
 export GPG_TTY=$(tty)
+export MANPAGER='bat'
+export MANWIDTH=999
 
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"

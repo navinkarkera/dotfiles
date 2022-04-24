@@ -11,9 +11,10 @@ require("nvim-treesitter.configs").setup({
 		"vue",
 		"css",
 		"go",
+        "tsx",
 	}, -- one of "all", "language", or a list of languages
 	indent = {
-		enable = false,
+		enable = true,
 	},
 	highlight = {
 		enable = true, -- false will disable the whole extension

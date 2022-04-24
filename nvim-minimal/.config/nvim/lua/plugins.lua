@@ -83,18 +83,20 @@ return require("packer").startup(function()
 	})
 	use({ "tpope/vim-surround", event = "BufEnter" })
 	use({ "andymass/vim-matchup", event = "BufEnter" })
-	-- use({
-	-- 	"mattn/emmet-vim",
-	-- 	ft = {
-	-- 		"html",
-	-- 		"javascript",
-	-- 		"vue",
-	-- 		"javascriptreact",
-	-- 		"jsx",
-	-- 		"xml",
-	-- 		"htmldjango",
-	-- 	},
-	-- })
+	use({
+		"mattn/emmet-vim",
+		ft = {
+			"html",
+			"javascript",
+			"vue",
+			"javascriptreact",
+			"typescriptreact",
+			"jsx",
+			"tsx",
+			"xml",
+			"htmldjango",
+		},
+	})
 	use({
 		"preservim/vimux",
 		event = "VimEnter",
@@ -141,6 +143,54 @@ return require("packer").startup(function()
 		config = function()
 			vim.g.vimbones_solid_float_border = true
 			vim.cmd([[colorscheme vimbones]])
+		end,
+	})
+	use({
+		"ThePrimeagen/refactoring.nvim",
+		requires = {
+			{ "nvim-lua/plenary.nvim" },
+			{ "nvim-treesitter/nvim-treesitter" },
+		},
+		config = function()
+			require("refactoring").setup({
+				-- overriding printf statement for python
+				print_var_statements = {
+					python = {
+						'print(f"""%s {%s}""")',
+					},
+				},
+			})
+			-- prompt for a refactor to apply when the remap is triggered
+			vim.api.nvim_set_keymap(
+				"v",
+				"<leader>rr",
+				":lua require('refactoring').select_refactor()<CR>",
+				{ noremap = true, silent = true, expr = false }
+			)
+			-- You can also use below = true here to to change the position of the printf
+			-- statement (or set two remaps for either one). This remap must be made in normal mode.
+			vim.api.nvim_set_keymap(
+				"n",
+				"<leader>rp",
+				":lua require('refactoring').debug.printf({below = false})<CR>",
+				{ noremap = true }
+			)
+
+			-- Print var: this remap should be made in visual mode
+			vim.api.nvim_set_keymap(
+				"v",
+				"<leader>rv",
+				":lua require('refactoring').debug.print_var({})<CR>",
+				{ noremap = true }
+			)
+
+			-- Cleanup function: this remap should be made in normal mode
+			vim.api.nvim_set_keymap(
+				"n",
+				"<leader>rc",
+				":lua require('refactoring').debug.cleanup({})<CR>",
+				{ noremap = true }
+			)
 		end,
 	})
 end)
