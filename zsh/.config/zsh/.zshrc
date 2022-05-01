@@ -83,3 +83,4 @@ bindkey '^e' edit-command-line
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
 
 source /home/navin/.config/broot/launcher/bash/br
+source /usr/share/nvm/init-nvm.sh

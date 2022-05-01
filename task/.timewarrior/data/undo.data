@@ -5397,3 +5397,1029 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20220422T133012Z","end":"20220422T143315Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220425T031743Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220425T031743Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220425T031743Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220425T031743Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220425T031743Z","end":"20220425T060231Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220425T061324Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220425T061324Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220425T061324Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220425T061324Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220425T061324Z","end":"20220425T071413Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220425T111613Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220425T111613Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220425T111613Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220425T111613Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220425T111613Z","end":"20220425T112131Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220425T112509Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220425T112509Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220425T112509Z","tags":["post mid sprint update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220425T112509Z","tags":["post mid sprint update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220425T112509Z","end":"20220425T113958Z","tags":["post mid sprint update"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220425T143323Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220425T143323Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220425T143323Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220425T143323Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220425T143323Z","end":"20220425T151245Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220426T040528Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220426T040528Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220426T040528Z","tags":["catching up on mid sprint updates"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220426T040528Z","tags":["catching up on mid sprint updates"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220426T040528Z","end":"20220426T040833Z","tags":["catching up on mid sprint updates"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220426T040833Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220426T040833Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220426T040833Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220426T040833Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220426T040833Z","end":"20220426T061444Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220426T061534Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220426T061534Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220426T061534Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220426T061534Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220426T061534Z","end":"20220426T063334Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220426T082919Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220426T082919Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220426T082919Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220426T082919Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220426T082919Z","end":"20220426T084811Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220426T090148Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220426T090148Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220426T090148Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220426T090148Z","tags":["handbook summary"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220426T090148Z","end":"20220426T092732Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220426T094520Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220426T094520Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220426T094520Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220426T094520Z","tags":["handbook summary"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220426T094520Z","end":"20220426T101152Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220427T035325Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T035325Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T035325Z","tags":["reading emails"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T035325Z","tags":["reading emails"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T035325Z","end":"20220427T040029Z","tags":["reading emails"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220427T040029Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T040029Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T040029Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T040029Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T040029Z","end":"20220427T053532Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220427T054124Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T054124Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T054124Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T054124Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T054124Z","end":"20220427T055229Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220427T055344Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T055344Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T055344Z","tags":["mooc domain name"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T055344Z","tags":["mooc domain name"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T055344Z","end":"20220427T055953Z","tags":["mooc domain name"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220427T064644Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T064644Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T064644Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T064644Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T064644Z","end":"20220427T071908Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220427T073054Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T073054Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T073054Z","tags":["Reading kubernetes discovery doc"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T073054Z","tags":["Reading kubernetes discovery doc"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T073054Z","end":"20220427T074126Z","tags":["Reading kubernetes discovery doc"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220427T091640Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T091640Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T091640Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T091640Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T091640Z","end":"20220427T095802Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220427T100558Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T100558Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T100558Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T100558Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T100558Z","end":"20220427T100943Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220427T103315Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T103315Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T103315Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T103315Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T103315Z","end":"20220427T103611Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220427T104802Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T104802Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T104802Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T104802Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T104802Z","end":"20220427T105222Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220427T110242Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T110242Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T110242Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T110242Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T110242Z","end":"20220427T110857Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220427T112623Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T112623Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T112623Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T112623Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T112623Z","end":"20220427T113016Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220427T113343Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T113343Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T113343Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T113343Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T113343Z","end":"20220427T124633Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220427T124717Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T124717Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T124717Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T124717Z","tags":["handbook summary"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T124717Z","end":"20220427T125541Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220427T135801Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T135801Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T135801Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220427T135801Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220427T135801Z","end":"20220427T141744Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220428T042010Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T042010Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T042010Z","tags":["bb-6140 completion_aggregator_url"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T042010Z","tags":["bb-6140 completion_aggregator_url"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T042010Z","end":"20220428T042708Z","tags":["bb-6140 completion_aggregator_url"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220428T042914Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T042914Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T042914Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T042914Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T042914Z","end":"20220428T044637Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220428T044753Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T044753Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T044753Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T044753Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T044753Z","end":"20220428T054621Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220428T060248Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T060248Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T060248Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T060248Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T060248Z","end":"20220428T060604Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220428T061123Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T061123Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T061123Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T061123Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T061123Z","end":"20220428T061732Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220428T063835Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T063835Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T063835Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T063835Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T063835Z","end":"20220428T070028Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220428T070939Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T070939Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T070939Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T070939Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T070939Z","end":"20220428T071740Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220428T085819Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T085819Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T085819Z","tags":["bb-6140 completion_aggregator_url"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T085819Z","tags":["bb-6140 completion_aggregator_url"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T085819Z","end":"20220428T090115Z","tags":["bb-6140 completion_aggregator_url"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220428T090117Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T090117Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T090117Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T090117Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T090117Z","end":"20220428T090402Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220428T090450Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T090450Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T090450Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T090450Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T090450Z","end":"20220428T092654Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220428T093028Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T093028Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T093028Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T093028Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T093028Z","end":"20220428T102014Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220428T102112Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T102112Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T102112Z","tags":["listaflow and understanding django, providence"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T102112Z","tags":["listaflow and understanding django, providence"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T102112Z","end":"20220428T115423Z","tags":["listaflow and understanding django, providence"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220428T115423Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T115423Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T115423Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T115423Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T115423Z","end":"20220428T120923Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220428T123607Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T123607Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T123607Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T123607Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T123607Z","end":"20220428T123915Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220428T123916Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T123916Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T123916Z","tags":["bb-6140 completion_aggregator_url"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T123916Z","tags":["bb-6140 completion_aggregator_url"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T123916Z","end":"20220428T125827Z","tags":["bb-6140 completion_aggregator_url"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220428T125827Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T125827Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T125827Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220428T125827Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220428T125827Z","end":"20220428T135730Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220429T042226Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T042226Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T042226Z","tags":["estimation reminder"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T042226Z","tags":["estimation reminder"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T042226Z","end":"20220429T044943Z","tags":["estimation reminder"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220429T044943Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T044943Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T044943Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T044943Z","tags":["handbook summary"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T044943Z","end":"20220429T052728Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220429T053006Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T053006Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T053006Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T053006Z","tags":["handbook summary"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T053006Z","end":"20220429T063753Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220429T064008Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T064008Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T064008Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T064008Z","tags":["handbook summary"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T064008Z","end":"20220429T064542Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220429T064717Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T064717Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T064717Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T064717Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T064717Z","end":"20220429T073446Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220429T084719Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T084719Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T084719Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T084719Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T084719Z","end":"20220429T091434Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220429T091435Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T091435Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T091435Z","tags":["bb-6140 completion_aggregator_url"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T091435Z","tags":["bb-6140 completion_aggregator_url"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T091435Z","end":"20220429T091927Z","tags":["bb-6140 completion_aggregator_url"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220429T091927Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T091927Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T091927Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T091927Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T091927Z","end":"20220429T095222Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220429T095222Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T095222Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T095222Z","tags":["reviewing tickets"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T095222Z","tags":["reviewing tickets"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T095222Z","end":"20220429T100525Z","tags":["reviewing tickets"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220429T100525Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T100525Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T100525Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T100525Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T100525Z","end":"20220429T110243Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220429T110629Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T110629Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T110629Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T110629Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T110629Z","end":"20220429T111630Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220429T124103Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T124103Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T124103Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T124103Z","tags":["handbook summary"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T124103Z","end":"20220429T131700Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220429T132407Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T132407Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T132407Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T132407Z","tags":["handbook summary"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T132407Z","end":"20220429T133343Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220429T134158Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T134158Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T134158Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T134158Z","tags":["handbook summary"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T134158Z","end":"20220429T135051Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220429T154207Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T154207Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T154207Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220429T154207Z","tags":["listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220429T154207Z","end":"20220429T160439Z","tags":["listaflow checklist"]}

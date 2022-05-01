@@ -19,3 +19,18 @@
     save-update = "!f() { git stash && git fetch $1 && git reset --hard $1/master && git stash pop; }; f"
 	fu = fetch upstream
 	rum = reset --hard upstream/master
+
+[core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true  # use n and N to move between diff sections
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
