@@ -1,4 +1,5 @@
 -- Install packer
+require('impatient')
 local install_path = vim.fn.stdpath 'data' .. '/site/pack/packer/start/packer.nvim'
 local map = vim.keymap.set
 
@@ -35,6 +36,7 @@ local packer_group = vim.api.nvim_create_augroup('Packer', { clear = true })
 vim.api.nvim_create_autocmd('BufWritePost', { command = 'source <afile> | PackerCompile', group = packer_group, pattern = 'init.lua' })
 
 require('packer').startup(function(use)
+  use 'lewis6991/impatient.nvim'
   use 'wbthomason/packer.nvim' -- Package manager
   use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
   -- UI to select things (files, grep results, open buffers...)
@@ -209,6 +211,40 @@ require('gitsigns').setup {
     topdelete = { text = '‾' },
     changedelete = { text = '~' },
   },
+  on_attach = function(bufnr)
+    local gs = package.loaded.gitsigns
+
+    local function gmap(mode, l, r, opts)
+      opts = opts or {}
+      opts.buffer = bufnr
+      vim.keymap.set(mode, l, r, opts)
+    end
+
+    -- Navigation
+    gmap('n', ']c', function()
+      if vim.wo.diff then return ']c' end
+      vim.schedule(function() gs.next_hunk() end)
+      return '<Ignore>'
+    end, {expr=true})
+
+    gmap('n', '[c', function()
+      if vim.wo.diff then return '[c' end
+      vim.schedule(function() gs.prev_hunk() end)
+      return '<Ignore>'
+    end, {expr=true})
+
+    -- Actions
+    gmap('n', '<leader>hR', gs.reset_hunk)
+    gmap('n', '<leader>hp', gs.preview_hunk)
+    gmap('n', '<leader>hb', function() gs.blame_line{full=true} end)
+    gmap('n', '<leader>tb', gs.toggle_current_line_blame)
+    gmap('n', '<leader>hd', gs.diffthis)
+    gmap('n', '<leader>hD', function() gs.diffthis('~') end)
+    gmap('n', '<leader>td', gs.toggle_deleted)
+
+    -- Text object
+    map({'o', 'x'}, 'ih', ':<C-U>Gitsigns select_hunk<CR>')
+  end
 }
 
 -- Telescope
@@ -234,7 +270,7 @@ end)
 vim.keymap.set('n', '<leader>fb', require('telescope.builtin').current_buffer_fuzzy_find)
 vim.keymap.set('n', '<leader>fh', require('telescope.builtin').help_tags)
 vim.keymap.set('n', '<leader>ft', require('telescope.builtin').tags)
-vim.keymap.set('n', '<leader>ps', require('telescope.builtin').grep_string)
+vim.keymap.set('n', '<leader>pw', require('telescope.builtin').grep_string)
 vim.keymap.set('n', '<leader>fw', require('telescope.builtin').live_grep)
 vim.keymap.set('n', '<leader>so', function()
   require('telescope.builtin').tags { only_current_buffer = true }
