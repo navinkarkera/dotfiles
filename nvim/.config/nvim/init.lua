@@ -248,12 +248,16 @@ require('gitsigns').setup {
 }
 
 -- Telescope
+local telescope_actions = require("telescope.actions")
 require('telescope').setup {
   defaults = {
     mappings = {
       i = {
         ['<C-u>'] = false,
         ['<C-d>'] = false,
+        ["<C-p>"] = require("telescope.actions.layout").toggle_preview,
+        ["<C-j>"] = telescope_actions.move_selection_next,
+        ["<C-k>"] = telescope_actions.move_selection_previous,
       },
     },
   },
@@ -265,7 +269,7 @@ require('telescope').load_extension 'fzf'
 --Add leader shortcuts
 vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers)
 vim.keymap.set('n', '<leader>ff', function()
-  require('telescope.builtin').find_files { previewer = false }
+  require('telescope.builtin').find_files {}
 end)
 vim.keymap.set('n', '<leader>fb', require('telescope.builtin').current_buffer_fuzzy_find)
 vim.keymap.set('n', '<leader>fh', require('telescope.builtin').help_tags)
