@@ -69,6 +69,8 @@ require('packer').startup(function(use)
 	use "preservim/vimux"
   use "nathom/filetype.nvim"
   use "is0n/fm-nvim"
+  use "jakewvincent/mkdnflow.nvim"
+  use "AckslD/nvim-trevJ.lua"
 end)
 
 --Set highlight on search
@@ -198,6 +200,11 @@ api.nvim_create_autocmd("BufEnter", {
 api.nvim_create_autocmd("FileType", {
 	pattern = { "xml", "html", "xhtml", "css", "scss", "javascript", "yaml", "typescriptreact", "typescript", "lua" },
 	command = [[setlocal shiftwidth=2 tabstop=2]],
+	group = my_group,
+})
+api.nvim_create_autocmd("FileType", {
+  pattern = {"markdown"},
+	command = [[set autowriteall]],
 	group = my_group,
 })
 
@@ -558,10 +565,17 @@ map("n", "<Leader>nc", function() require('neogen').generate({ type = 'class' })
 -- fm-nvim
 local fmnvim = require("fm-nvim")
 fmnvim.setup({
-  broot_conf = "broot.toml"
+  broot_conf = vim.fn.stdpath("config") .. "/broot.toml"
 })
 vim.keymap.set('n', '<leader>pv', fmnvim.Broot)
+vim.keymap.set('n', '<C-p>', fmnvim.Broot)
 
+--mkdnflow
+require('mkdnflow').setup({})
+
+--nvim-trevJ
+require('trevj').setup({})
+vim.keymap.set('n', 'gS', require('trevj').format_at_cursor)
 
 -- vimux conf
 map("n", "<leader>vv", [[:call VimuxRunCommand("activate", 1)<CR>]])
