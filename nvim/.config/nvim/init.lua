@@ -56,6 +56,9 @@ require('packer').startup(function(use)
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
   use 'hrsh7th/cmp-nvim-lsp'
   use 'saadparwaiz1/cmp_luasnip'
+  use "rafamadriz/friendly-snippets"
+  use "honza/vim-snippets"
+  use "windwp/nvim-ts-autotag"
   use 'L3MON4D3/LuaSnip' -- Snippets plugin
   use "numToStr/Navigator.nvim" -- tmux navigation
   use "ThePrimeagen/harpoon"
@@ -65,10 +68,12 @@ require('packer').startup(function(use)
 	}
 	use "preservim/vimux"
   use "nathom/filetype.nvim"
+  use "is0n/fm-nvim"
 end)
 
 --Set highlight on search
 vim.o.hlsearch = false
+vim.o.swapfile = false
 
 --tab configurations
 vim.bo.expandtab = true
@@ -382,7 +387,7 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
 -- Enable the following language servers
-local servers = { 'pyright', 'tsserver' }
+local servers = { 'pyright', 'tsserver', 'cssls' }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
@@ -425,6 +430,9 @@ lspconfig.sumneko_lua.setup {
 
 -- luasnip setup
 local luasnip = require 'luasnip'
+require("luasnip.loaders.from_vscode").lazy_load()
+require("luasnip.loaders.from_snipmate").lazy_load()
+luasnip.filetype_extend("python", { "django" })
 
 -- nvim-cmp setup
 local cmp = require 'cmp'
@@ -462,8 +470,8 @@ cmp.setup {
     end, { 'i', 's' }),
   }),
   sources = {
-    { name = 'nvim_lsp' },
     { name = 'luasnip' },
+    { name = 'nvim_lsp' },
   },
 }
 
@@ -546,6 +554,14 @@ map(
 require("neogen").setup({})
 map("n", "<Leader>nf", require('neogen').generate)
 map("n", "<Leader>nc", function() require('neogen').generate({ type = 'class' }) end)
+
+-- fm-nvim
+local fmnvim = require("fm-nvim")
+fmnvim.setup({
+  broot_conf = "broot.toml"
+})
+vim.keymap.set('n', '<leader>pv', fmnvim.Broot)
+
 
 -- vimux conf
 map("n", "<leader>vv", [[:call VimuxRunCommand("activate", 1)<CR>]])

@@ -6423,3 +6423,1901 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20220429T154207Z","end":"20220429T160439Z","tags":["listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220502T042053Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T042053Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T042053Z","tags":["estimate tasks and find reviewers"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T042053Z","tags":["estimate tasks and find reviewers"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T042053Z","end":"20220502T043609Z","tags":["estimate tasks and find reviewers"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220502T043609Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T043609Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T043609Z","tags":["investigate heartbeat"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T043609Z","tags":["investigate heartbeat"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T043609Z","end":"20220502T051358Z","tags":["investigate heartbeat"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220502T051358Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T051358Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T051358Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T051358Z","tags":["mooc dns"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T051358Z","end":"20220502T053457Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220502T054333Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T054333Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T054333Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T054333Z","tags":["mooc dns"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T054333Z","end":"20220502T054554Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220502T054554Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T054554Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T054554Z","tags":["google tag ytp"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T054554Z","tags":["google tag ytp"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T054554Z","end":"20220502T060651Z","tags":["google tag ytp"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220502T060651Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T060651Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T060651Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T060651Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T060651Z","end":"20220502T065226Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220502T065226Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T065226Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T065226Z","tags":["wordpress plugin"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T065226Z","tags":["wordpress plugin"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T065226Z","end":"20220502T065744Z","tags":["wordpress plugin"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220502T070717Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T070717Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T070717Z","tags":["wordpress plugin"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T070717Z","tags":["wordpress plugin"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T070717Z","end":"20220502T072649Z","tags":["wordpress plugin"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220502T084220Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T084220Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T084220Z","tags":["fix import test setup bb-6139"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T084220Z","tags":["fix import test setup bb-6139"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T084220Z","end":"20220502T084943Z","tags":["fix import test setup bb-6139"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220502T084943Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T084943Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T084943Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T084943Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T084943Z","end":"20220502T085855Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220502T085855Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T085855Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T085855Z","tags":["fix import test setup bb-6139"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T085855Z","tags":["fix import test setup bb-6139"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T085855Z","end":"20220502T090518Z","tags":["fix import test setup bb-6139"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220502T090518Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T090518Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T090518Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T090518Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T090518Z","end":"20220502T100121Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220502T100631Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T100631Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T100631Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T100631Z","tags":["handbook summary"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T100631Z","end":"20220502T101441Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220502T102357Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T102357Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T102357Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T102357Z","tags":["handbook summary"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T102357Z","end":"20220502T103011Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220502T132934Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T132934Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T132934Z","tags":["next sprint prep"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T132934Z","tags":["next sprint prep"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T132934Z","end":"20220502T134502Z","tags":["next sprint prep"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220502T160104Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T160104Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T160104Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T160104Z","tags":["handbook summary"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T160104Z","end":"20220502T180058Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220502T180059Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T180059Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T180059Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220502T180059Z","tags":["handbook summary"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220502T180059Z","end":"20220502T184755Z","tags":["handbook summary"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220503T044353Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220503T044353Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220503T044353Z","tags":["end of sprint update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220503T044353Z","tags":["end of sprint update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220503T044353Z","end":"20220503T051314Z","tags":["end of sprint update"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220503T051314Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220503T051314Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220503T051314Z","tags":["end of sprint update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220503T051314Z","tags":["end of sprint update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220503T051314Z","end":"20220503T051818Z","tags":["end of sprint update"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220503T052625Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220503T052625Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220503T052625Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220503T052625Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220503T052625Z","end":"20220503T065129Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220503T084708Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220503T084708Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220503T084708Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220503T084708Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220503T084708Z","end":"20220503T085937Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220503T085937Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220503T085937Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220503T085937Z","tags":["sprint retrospective"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220503T085937Z","tags":["sprint retrospective"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220503T085937Z","end":"20220503T100200Z","tags":["sprint retrospective"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220503T104406Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220503T104406Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220503T104406Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220503T104406Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220503T104406Z","end":"20220503T105725Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":7,"start":"20220502T180059Z","end":"20220502T184755Z","tags":["handbook summary"]}
+  after: 
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220503T112204Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220503T112204Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220503T112204Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220503T112204Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220503T112204Z","end":"20220503T114045Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220503T115833Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220503T115833Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220503T115833Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220503T115833Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220503T115833Z","end":"20220503T130536Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220503T132228Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220503T132228Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220503T132228Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220503T132228Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220503T132228Z","end":"20220503T142952Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220504T033212Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220504T033212Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220504T033212Z","tags":["wordpress plugin"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220504T033212Z","tags":["wordpress plugin"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220504T033212Z","end":"20220504T033544Z","tags":["wordpress plugin"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220504T033544Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220504T033544Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220504T033544Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220504T033544Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220504T033544Z","end":"20220504T035720Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220504T042451Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220504T042451Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220504T042451Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220504T042451Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220504T042451Z","end":"20220504T043326Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220504T043407Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220504T043407Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220504T043407Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220504T043407Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220504T043407Z","end":"20220504T044340Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220504T044619Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220504T044619Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220504T044619Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220504T044619Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220504T044619Z","end":"20220504T053841Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220504T060827Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220504T060827Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220504T060827Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220504T060827Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220504T060827Z","end":"20220504T073728Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220504T085131Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220504T085131Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220504T085131Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220504T085131Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220504T085131Z","end":"20220504T112204Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220504T123604Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220504T123604Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220504T123604Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220504T123604Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220504T123604Z","end":"20220504T135932Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220505T031335Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220505T031335Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220505T031335Z","tags":["wordpress plugin"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220505T031335Z","tags":["wordpress plugin"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220505T031335Z","end":"20220505T032034Z","tags":["wordpress plugin"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220505T032034Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220505T032034Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220505T032034Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220505T032034Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220505T032034Z","end":"20220505T034709Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220505T042148Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220505T042148Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220505T042148Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220505T042148Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220505T042148Z","end":"20220505T064956Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220505T071734Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220505T071734Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220505T071734Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220505T071734Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220505T071734Z","end":"20220505T074334Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220505T084051Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220505T084051Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220505T084051Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220505T084051Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220505T084051Z","end":"20220505T102326Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220505T105912Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220505T105912Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220505T105912Z","tags":["social chat"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220505T105912Z","tags":["social chat"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220505T105912Z","end":"20220505T114035Z","tags":["social chat"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220505T124136Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220505T124136Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220505T124136Z","tags":["wordpress plugin"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220505T124136Z","tags":["wordpress plugin"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220505T124136Z","end":"20220505T125407Z","tags":["wordpress plugin"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220505T142255Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220505T142255Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220505T142255Z","tags":["wordpress plugin"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220505T142255Z","tags":["wordpress plugin"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220505T142255Z","end":"20220505T144052Z","tags":["wordpress plugin"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220505T144158Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220505T144158Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220505T144158Z","tags":["vault cli setup"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220505T144158Z","tags":["vault cli setup"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220505T144158Z","end":"20220505T145749Z","tags":["vault cli setup"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220506T030239Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220506T030239Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220506T030239Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220506T030239Z","tags":["mooc dns"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220506T030239Z","end":"20220506T030645Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220506T030645Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220506T030645Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220506T030645Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220506T030645Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220506T030645Z","end":"20220506T032359Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220506T041656Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220506T041656Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220506T041656Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220506T041656Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220506T041656Z","end":"20220506T044130Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220506T055628Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220506T055628Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220506T055628Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220506T055628Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220506T055628Z","end":"20220506T071535Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220506T045500Z","end":"20220506T055600Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220506T093946Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220506T093946Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220506T093946Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220506T093946Z","tags":["mooc dns"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220506T093946Z","end":"20220506T094542Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220506T094542Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220506T094542Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220506T094542Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220506T094542Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220506T094542Z","end":"20220506T111548Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220506T115659Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220506T115659Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220506T115659Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220506T115659Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220506T115659Z","end":"20220506T130939Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220506T130943Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220506T130943Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220506T130943Z","tags":["emails"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220506T130943Z","tags":["emails"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220506T130943Z","end":"20220506T131053Z","tags":["emails"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220506T131053Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220506T131053Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220506T131053Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220506T131053Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220506T131053Z","end":"20220506T131751Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220509T034704Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T034704Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T034704Z","tags":["wordpress plugin"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T034704Z","tags":["wordpress plugin"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T034704Z","end":"20220509T034932Z","tags":["wordpress plugin"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220509T034932Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T034932Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T034932Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T034932Z","tags":["mooc dns"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T034932Z","end":"20220509T044804Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220509T045031Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T045031Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T045031Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T045031Z","tags":["mooc dns"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T045031Z","end":"20220509T070351Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220509T075003Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T075003Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T075003Z","tags":["wordpress plugin"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T075003Z","tags":["wordpress plugin"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T075003Z","end":"20220509T075423Z","tags":["wordpress plugin"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220509T075423Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T075423Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T075423Z","tags":["google tag ytp"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T075423Z","tags":["google tag ytp"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T075423Z","end":"20220509T075657Z","tags":["google tag ytp"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220509T075657Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T075657Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T075657Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T075657Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T075657Z","end":"20220509T080214Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220509T090124Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T090124Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T090124Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T090124Z","tags":["mooc dns"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T090124Z","end":"20220509T090613Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220509T090613Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T090613Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T090613Z","tags":["google tag ytp"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T090613Z","tags":["google tag ytp"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T090613Z","end":"20220509T094303Z","tags":["google tag ytp"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220509T094303Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T094303Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T094303Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T094303Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T094303Z","end":"20220509T105908Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220509T105908Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T105908Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T105908Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T105908Z","tags":["mooc dns"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T105908Z","end":"20220509T110956Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220509T120147Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T120147Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T120147Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T120147Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T120147Z","end":"20220509T124411Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220509T124940Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T124940Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T124940Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T124940Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T124940Z","end":"20220509T132136Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220509T132138Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T132138Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T132138Z","tags":["mid sprint update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220509T132138Z","tags":["mid sprint update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220509T132138Z","end":"20220509T133003Z","tags":["mid sprint update"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220510T032214Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220510T032214Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220510T032214Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220510T032214Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220510T032214Z","end":"20220510T043613Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220510T043843Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220510T043843Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220510T043843Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220510T043843Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220510T043843Z","end":"20220510T050415Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220510T052720Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220510T052720Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220510T052720Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220510T052720Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220510T052720Z","end":"20220510T055636Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220510T055636Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220510T055636Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220510T055636Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220510T055636Z","tags":["mooc dns"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220510T055636Z","end":"20220510T060137Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220510T061440Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220510T061440Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220510T061440Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220510T061440Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220510T061440Z","end":"20220510T063909Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220510T065034Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220510T065034Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220510T065034Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220510T065034Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220510T065034Z","end":"20220510T065119Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220510T065119Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220510T065119Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220510T065119Z","tags":["google tag ytp"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220510T065119Z","tags":["google tag ytp"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220510T065119Z","end":"20220510T073720Z","tags":["google tag ytp"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220510T094839Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220510T094839Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220510T094839Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220510T094839Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220510T094839Z","end":"20220510T111746Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220510T121250Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220510T121250Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220510T121250Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220510T121250Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220510T121250Z","end":"20220510T130549Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220510T130804Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220510T130804Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220510T130804Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220510T130804Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220510T130804Z","end":"20220510T133832Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220511T031227Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220511T031227Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220511T031227Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220511T031227Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220511T031227Z","end":"20220511T033539Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220511T044215Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220511T044215Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220511T044215Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220511T044215Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220511T044215Z","end":"20220511T050440Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220511T052526Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220511T052526Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220511T052526Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220511T052526Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220511T052526Z","end":"20220511T070449Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220511T072958Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220511T072958Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220511T072958Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220511T072958Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220511T072958Z","end":"20220511T080408Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220511T085548Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220511T085548Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220511T085548Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220511T085548Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220511T085548Z","end":"20220511T110601Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220511T115625Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220511T115625Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220511T115625Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220511T115625Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220511T115625Z","end":"20220511T120109Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220511T150010Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220511T150010Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220511T150010Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220511T150010Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220511T150010Z","end":"20220511T153426Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220511T162249Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220511T162249Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220511T162249Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220511T162249Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220511T162249Z","end":"20220511T164408Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220512T034719Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T034719Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T034719Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T034719Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T034719Z","end":"20220512T054344Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220512T054925Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T054925Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T054925Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T054925Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T054925Z","end":"20220512T074740Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220512T075136Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T075136Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T075136Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T075136Z","tags":["mooc dns"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T075136Z","end":"20220512T080221Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220512T083435Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T083435Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T083435Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T083435Z","tags":["mooc dns"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T083435Z","end":"20220512T083917Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220512T094129Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T094129Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T094129Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T094129Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T094129Z","end":"20220512T100239Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220512T100826Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T100826Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T100826Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T100826Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T100826Z","end":"20220512T101329Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220512T101329Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T101329Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T101329Z","tags":["google tag ytp"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T101329Z","tags":["google tag ytp"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T101329Z","end":"20220512T102541Z","tags":["google tag ytp"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220512T102734Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T102734Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T102734Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T102734Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T102734Z","end":"20220512T111313Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220512T111804Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T111804Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T111804Z","tags":["google tag ytp"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T111804Z","tags":["google tag ytp"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T111804Z","end":"20220512T112639Z","tags":["google tag ytp"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220512T112641Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T112641Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T112641Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T112641Z","tags":["mooc dns"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T112641Z","end":"20220512T112816Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220512T112958Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T112958Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T112958Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T112958Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T112958Z","end":"20220512T114147Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220512T114200Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T114200Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T114200Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T114200Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T114200Z","end":"20220512T120314Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220512T120511Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T120511Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T120511Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T120511Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T120511Z","end":"20220512T124349Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220512T150402Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T150402Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T150402Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220512T150402Z","tags":["mooc dns"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220512T150402Z","end":"20220512T153140Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220513T040656Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220513T040656Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220513T040656Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220513T040656Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220513T040656Z","end":"20220513T070228Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220513T083725Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220513T083725Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220513T083725Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220513T083725Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220513T083725Z","end":"20220513T111310Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220513T112416Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220513T112416Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220513T112416Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220513T112416Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220513T112416Z","end":"20220513T124717Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220513T124717Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220513T124717Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220513T124717Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220513T124717Z","tags":["mooc dns"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220513T124717Z","end":"20220513T125942Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220513T135005Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220513T135005Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220513T135005Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220513T135005Z","tags":["mooc dns"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220513T135005Z","end":"20220513T142046Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220513T152008Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220513T152008Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220513T152008Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220513T152008Z","tags":["mooc dns"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220513T152008Z","end":"20220513T152942Z","tags":["mooc dns"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220514T040819Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220514T040819Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220514T040819Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220514T040819Z","tags":["custom auth listaflow"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220514T040819Z","end":"20220514T043813Z","tags":["custom auth listaflow"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220514T043955Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220514T043955Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220514T043955Z","tags":["create new issue"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220514T043955Z","tags":["create new issue"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220514T043955Z","end":"20220514T044815Z","tags":["create new issue"]}
