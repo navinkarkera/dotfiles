@@ -120,3 +120,7 @@ internal = ":toggle_preview"
 [[verbs]]
 key = "ctrl-l"
 internal = ":panel_right"
+
+[[verbs]]
+key = "ctrl-h"
+internal = ":panel_left"

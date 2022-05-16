@@ -457,11 +457,23 @@ cmp.setup {
       behavior = cmp.ConfirmBehavior.Replace,
       select = true,
     },
+    ['<C-l>'] = cmp.mapping(function(fallback)
+      if luasnip.expand_or_jumpable() then
+        luasnip.expand_or_jump()
+      else
+        fallback()
+      end
+    end, { 'i', 's' }),
+    ['<C-h>'] = cmp.mapping(function(fallback)
+      if luasnip.jumpable(-1) then
+        luasnip.jump(-1)
+      else
+        fallback()
+      end
+    end, { 'i', 's' }),
     ['<Tab>'] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_next_item()
-      elseif luasnip.expand_or_jumpable() then
-        luasnip.expand_or_jump()
       else
         fallback()
       end
@@ -469,8 +481,6 @@ cmp.setup {
     ['<S-Tab>'] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_prev_item()
-      elseif luasnip.jumpable(-1) then
-        luasnip.jump(-1)
       else
         fallback()
       end
@@ -522,6 +532,7 @@ require("refactoring").setup {
 	 },
 }
 -- prompt for a refactor to apply when the remap is triggered
+require('telescope').load_extension 'refactoring'
 map(
 	"v",
 	"<leader>rr",
@@ -565,9 +576,16 @@ map("n", "<Leader>nc", function() require('neogen').generate({ type = 'class' })
 -- fm-nvim
 local fmnvim = require("fm-nvim")
 fmnvim.setup({
-  broot_conf = vim.fn.stdpath("config") .. "/broot.toml"
+  broot_conf = vim.fn.stdpath("config") .. "/broot.toml",
+  mappings = {
+		vert_split = "<C-v>",
+		horz_split = "<C-b>",
+		tabedit    = "<C-t>",
+		edit       = "<C-e>",
+		ESC        = "<ESC>"
+	},
 })
-vim.keymap.set('n', '<leader>pv', fmnvim.Broot)
+vim.keymap.set('n', '<leader>pv', ":Broot %:h <CR>")
 vim.keymap.set('n', '<C-p>', fmnvim.Broot)
 
 --mkdnflow
