@@ -589,7 +589,9 @@ vim.keymap.set('n', '<leader>pv', ":Broot %:h <CR>")
 vim.keymap.set('n', '<C-p>', fmnvim.Broot)
 
 --mkdnflow
-require('mkdnflow').setup({})
+require('mkdnflow').setup({
+  filetypes = {md = true, rmd = true, markdown = true},
+})
 
 --nvim-trevJ
 require('trevj').setup({})
