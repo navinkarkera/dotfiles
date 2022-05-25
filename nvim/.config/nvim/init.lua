@@ -110,7 +110,7 @@ vim.o.termguicolors = true
 vim.cmd [[colorscheme gruvbox]]
 
 -- Set completeopt to have a better completion experience
-vim.o.completeopt = 'menuone,noselect'
+vim.o.completeopt = 'menu'
 
 -- window direction
 vim.o.splitright = true
@@ -441,6 +441,10 @@ require("luasnip.loaders.from_vscode").lazy_load()
 require("luasnip.loaders.from_snipmate").lazy_load()
 luasnip.filetype_extend("python", { "django" })
 
+local has_words_before = function()
+	local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+	return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
+end
 -- nvim-cmp setup
 local cmp = require 'cmp'
 cmp.setup {
@@ -448,6 +452,9 @@ cmp.setup {
     expand = function(args)
       luasnip.lsp_expand(args.body)
     end,
+  },
+  completion = {
+    autocomplete = false,
   },
   mapping = cmp.mapping.preset.insert({
     ['<C-d>'] = cmp.mapping.scroll_docs(-4),
@@ -472,14 +479,20 @@ cmp.setup {
       end
     end, { 'i', 's' }),
     ['<Tab>'] = cmp.mapping(function(fallback)
-      if cmp.visible() then
+			if vim.fn.pumvisible() == 1 then
+				vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-p>", true, true, true), "n", true)
+      elseif cmp.visible() then
         cmp.select_next_item()
+			elseif has_words_before() then
+				vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-p>", true, true, true), "n", true)
       else
         fallback()
       end
     end, { 'i', 's' }),
     ['<S-Tab>'] = cmp.mapping(function(fallback)
-      if cmp.visible() then
+			if vim.fn.pumvisible() == 1 then
+				vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-n>", true, true, true), "n", true)
+      elseif cmp.visible() then
         cmp.select_prev_item()
       else
         fallback()
@@ -630,6 +643,7 @@ map("n", "<m-p>", ':e <C-R>=expand("%:.:h")<CR>/')
 map("n", "<C-f>", ':silent grep ""<Left>')
 map("v", "<C-f>", [["hy:silent grep "<C-r>h"<CR>]])
 map("n", "<leader>pw", ':silent grep "<C-R>=expand("<cword>")<CR>"<CR>')
+map("v", "<C-r>", '"hy:%s/<C-r>h//gc<left><left><left>')
 
 map("i", "<C-l>", "<Left>")
 map("i", "<C-k>", "<Up>")
