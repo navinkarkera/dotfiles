@@ -111,6 +111,12 @@ vim.cmd [[colorscheme gruvbox]]
 
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menu'
+vim.o.complete = '.,w,b'
+
+-- fold
+vim.o.foldmethod = 'expr'
+vim.o.foldexpr = 'nvim_treesitter#foldexpr()'
+vim.o.foldlevel = 2
 
 -- window direction
 vim.o.splitright = true
@@ -130,6 +136,7 @@ require('lualine').setup {
     theme = 'gruvbox',
     component_separators = '|',
     section_separators = '',
+    globalstatus = true,
   },
 }
 
