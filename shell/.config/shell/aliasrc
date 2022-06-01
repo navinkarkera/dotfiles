@@ -293,3 +293,10 @@ EOF
 }
 # Example: set_superuser pr16297.sandbox.opencraft.hosting staff
 
+# vault helper
+opencraft_vault() {
+    source /home/navin/work/private/vault/setup-vault.sh $(pass github | grep "read access_token" | cut -d ":" -f 2)
+    selected=$(vault kv list secret/core/ | fzf)
+    vault kv get "secret/core/${selected}"
+}
+

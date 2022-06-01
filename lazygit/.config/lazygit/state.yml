@@ -1,0 +1,23 @@
+lastupdatecheck: 0
+recentrepos:
+- /home/navin/dotfiles
+- /home/navin/work/listaflow
+- /home/navin/work/mooc-floss
+- /home/navin/work/helm-charts
+- /home/navin/work/ansible-secrets
+- /home/navin/work/ocim
+- /home/navin/work/tutor
+- /home/navin/work/grove
+- /home/navin/work/sprintcraft
+- /home/navin/work/master-devstack/edx-platform
+- /home/navin/work/master-devstack/devstack
+- /home/navin/work/crafty-bot
+- /home/navin/work/configuration
+- /home/navin/work/master-devstack/configuration
+- /home/navin/work/lilac-devstack/src/themes/edx-theme
+- /home/navin/work/lilac-devstack/devstack
+- /home/navin/work/public
+- /home/navin/work/lilac-devstack/edx-platform
+startuppopupversion: 5
+customcommandshistory: []
+hidecommandlog: false

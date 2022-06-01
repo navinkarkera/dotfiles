@@ -113,11 +113,6 @@ vim.cmd [[colorscheme gruvbox]]
 vim.o.completeopt = 'menu'
 vim.o.complete = '.,w,b'
 
--- fold
-vim.o.foldmethod = 'expr'
-vim.o.foldexpr = 'nvim_treesitter#foldexpr()'
-vim.o.foldlevel = 2
-
 -- window direction
 vim.o.splitright = true
 vim.o.splitbelow = true
@@ -651,6 +646,8 @@ map("n", "<C-f>", ':silent grep ""<Left>')
 map("v", "<C-f>", [["hy:silent grep "<C-r>h"<CR>]])
 map("n", "<leader>pw", ':silent grep "<C-R>=expand("<cword>")<CR>"<CR>')
 map("v", "<C-r>", '"hy:%s/<C-r>h//gc<left><left><left>')
+map("v", "cy", '"+y')
+map("n", "cp", '"+p')
 
 map("i", "<C-l>", "<Left>")
 map("i", "<C-k>", "<Up>")
