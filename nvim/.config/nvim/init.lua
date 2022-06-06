@@ -201,7 +201,7 @@ api.nvim_create_autocmd("BufEnter", {
 })
 api.nvim_create_autocmd("FileType", {
 	pattern = { "xml", "html", "xhtml", "css", "scss", "javascript", "yaml", "typescriptreact", "typescript", "lua" },
-	command = [[setlocal shiftwidth=2 tabstop=2]],
+	command = [[setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab]],
 	group = my_group,
 })
 api.nvim_create_autocmd("FileType", {
@@ -403,6 +403,27 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+lspconfig['gopls'].setup{
+  cmd = {'gopls'},
+  on_attach = on_attach,
+  capabilities = capabilities,
+  settings = {
+    gopls = {
+      experimentalPostfixCompletions = true,
+      analyses = {
+        unusedparams = true,
+        shadow = true,
+      },
+      staticcheck = true,
+    },
+  },
+  init_options = {
+    usePlaceholders = true,
+  }
+}
+
+
 
 -- Example custom server
 -- Make runtime files discoverable to the server
