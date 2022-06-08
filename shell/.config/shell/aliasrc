@@ -53,6 +53,7 @@ alias \
 	t="tmux -u -f ~/.config/tmux/.tmux.conf" \
 	tn="t new-session -A -s main" \
 	ta="t attach"
+	bm="$EDITOR ~/.config/bookmarks/urls"
 
 alias v="project-files" \
     pcmd="project-cmd"

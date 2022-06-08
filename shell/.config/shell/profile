@@ -50,6 +50,8 @@ export MBSYNCRC="${XDG_CONFIG_HOME:-$HOME/.config}/mbsync/config"
 export ELECTRUMDIR="${XDG_DATA_HOME:-$HOME/.local/share}/electrum"
 export TASKRC="${XDG_CONFIG_HOME:-$HOME/.config}/task/taskrc"
 
+export PATH="$GOPATH/bin:$PATH"
+
 # Other program settings:
 export BAT_THEME="gruvbox-light"
 export ZK_NOTEBOOK_DIR="/home/navin/Documents/my-notes"
