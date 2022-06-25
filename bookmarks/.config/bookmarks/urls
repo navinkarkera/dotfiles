@@ -10,8 +10,6 @@ https://opencraft.com/blog/open-edx-devstack-a-toolkit-for-the-future-of-learnin
 https://handbook.opencraft.com/en/latest/task_workflows/ OpenCraft_Handbook
 https://console.opencraft.com/console OpenCraft_Instance_Manager_Console
 https://forum.opencraft.com/t/changing-config-on-lms-app-servers-without-downtime/1256 Changing_config_on_LMS_app_servers_without_downtime_-_Tips_&_Tricks_-_Public_-_OpenCraft
-https://tasks.opencraft.com/browse/BB-5050  Onboarding:_Kaustav_Banerjee_-_OpenCraft
-https://app.element.io/#/room/#mooc-floss:matrix.r2.enst.fr Element_|_MOOC-FLOSS
 https://manage.opencraft.com/instance/29550/ Instances_-_OpenCraft_-
 https://private.doc.opencraft.com/ OpenCraft_Private_Documentation
 https://tasks.opencraft.com/browse/BB-254  Meetings_-_OpenCraft
@@ -22,3 +20,5 @@ https://github.com/vladkomudrich/react-django-socialAuth drf_social_example
 https://gist.github.com/gabor-boros/ef3b964682025c0fff92ed29f371e81c terraform_instructions
 https://www.klm.co.in/trip/travel-party/advance-passenger-information/edc29a42-b5d7-44fc-9dcd-bf7f7c731ab6/3 View_flight_details_for_your_upcoming_flights_with_KLM_My_Trip_-_KLM
 https://vdo.ninja/?room=ITcracy15&push=sEjd8F6 Itcracy_obs_ninja
+https://tasks.opencraft.com/secure/TempoUserBoard!timesheet.jspa Jira_timesheet
+https://private.doc.opencraft.com/howtos/ocim/working_with_appservers_via_ssh/ OCIM_appserver_ssh

@@ -16,7 +16,7 @@ if [[ "$(command -v nvim)" ]]; then
     export EDITOR='nvim'
 fi
 export TERMINAL="alacritty"
-export BROWSER="brave"
+export BROWSER="firefox"
 export GPG_TTY=$(tty)
 export MANPAGER='bat'
 export MANWIDTH=999

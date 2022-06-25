@@ -1,4 +1,6 @@
-﻿# bspwm hotkeys
+﻿#!/bin/sh
+
+# bspwm hotkeys
 #
 # Cleanly quit bspwm
 # super + shift + q

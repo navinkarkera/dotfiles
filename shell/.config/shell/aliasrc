@@ -301,3 +301,36 @@ opencraft_vault() {
     vault kv get "secret/core/${selected}"
 }
 
+fbr() {
+  local branches branch
+  branches=$(git branch --all | grep -v HEAD) &&
+  branch=$(echo "$branches" |
+           fzf-tmux -d $(( 2 + $(wc -l <<< "$branches") )) +m) &&
+  git checkout $(echo "$branch" | sed "s/.* //" | sed "s#remotes/[^/]*/##")
+}
+
+fpac() {
+    paru -Slq | fzf -q "$1" -m --preview 'paru -Si {1}'| xargs -ro paru -S
+}
+
+# BUKU bookmark manager
+# get bookmark ids
+get_buku_ids() {
+    buku -p -f 5 | fzf --tac --layout=reverse-list -m | \
+      cut -d $'\t' -f 1
+    # awk -F= '{print $1}'
+    # cut -d $'\t' -f 1
+}
+
+# buku open
+fb() {
+    # save newline separated string into an array
+    ids=( $(get_buku_ids) )
+
+    echo buku --open ${ids[@]}
+
+    [[ -z $ids ]] && return 1 # return error if has no bookmark selected
+
+    buku --open ${ids[@]}
+}
+

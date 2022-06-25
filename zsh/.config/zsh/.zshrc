@@ -4,6 +4,7 @@ PS1="%B%F{75}%1~%f%b%f %(?.%F{green}$.%F{red}$)%f "
 setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
 setopt interactive_comments
+setopt share_history
 
 # git branch
 autoload -Uz vcs_info

@@ -5,6 +5,7 @@
 	last = !git --no-pager log -1 HEAD --stat
 	cm = commit -m
 	d = diff
+	dm = diff master..HEAD
 	dv = difftool -t vimdiff -y
 	gl = !git --no-pager config --global -l
 	se = !git rev-list --all | xargs git grep -F
