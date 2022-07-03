@@ -36,13 +36,15 @@ alias \
 	trem="transmission-remote" \
 	YT="youtube-viewer" \
 	sdn="sudo shutdown -h now" \
-	e="$EDITOR" \
+	e="$EDITOR --listen $NVIM_SERVER" \
+	ed="$EDITOR --server $NVIM_SERVER --remote" \
 	hx="helix" \
 	p="sudo pacman" \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove -R" \
 	xq="xbps-query" \
-	z="zathura"
+	z="zathura" \
+	ping-me='kdeconnect-cli --name="Moto G(60)" --ring'
 
 alias \
 	magit="nvim -c MagitOnly" \
@@ -50,7 +52,7 @@ alias \
 	weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \
 
 alias \
-	t="tmux -u -f ~/.config/tmux/.tmux.conf" \
+	t="tmux -u" \
 	tn="t new-session -A -s main" \
 	ta="t attach"
 	bm="$EDITOR ~/.config/bookmarks/urls"
@@ -58,9 +60,12 @@ alias \
 alias v="project-files" \
     pcmd="project-cmd"
 
-# task spooler aliases
-alias tsp-python="TS_SOCKET=/tmp/python-ts tsp" \
-    tsp-node="TS_SOCKET=/tmp/node-ts tsp"
+# pueue aliases
+alias \
+	nq="pueue" \
+	nql="pueue log" \
+	nqa="pueue add --" \
+	nqc="pueue clean"
 
 alias la='ls -a'
 alias ll='ls -la'
@@ -276,6 +281,8 @@ alias tws="timew summary"
 alias twday="timew day"
 alias twmonthtotal="timew report totals :month"
 alias twtotal="timew report totals "
+
+alias andriod-camera="scrcpy --lock-video-orientation=1 --v4l2-sink=/dev/video2 --turn-screen-off --stay-awake --power-off-on-close --crop 900:1440:0:400 -m 720 -N"
 
 
 # opencraft aliases

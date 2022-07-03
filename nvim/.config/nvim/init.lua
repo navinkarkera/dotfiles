@@ -716,6 +716,7 @@ require('trevj').setup({})
 vim.keymap.set('n', 'gS', require('trevj').format_at_cursor)
 
 -- vimux conf
+vim.g.VimuxExpandCommand = true
 map("n", "<leader>vv", [[:call VimuxRunCommand("activate", 1)<CR>]])
 map("n", "<leader>vp", ":VimuxPromptCommand<CR>")
 map("n", "<leader>vm", [[:VimuxPromptCommand("make ")<CR>]])

@@ -24,7 +24,7 @@ cfX	${XDG_CONFIG_HOME:-$HOME/.config}/sxiv/exec/key-handler	# sxiv (image viewer
 cft ${XDG_CONFIG_HOME:-$HOME/.config}/alacritty/alacritty.yml
 
 # tmux
-tt  ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/.tmux.conf
+tt  ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf
 
 # commands
 cmdf    ${XDG_DATA_HOME:-$HOME/.local/share}/commands

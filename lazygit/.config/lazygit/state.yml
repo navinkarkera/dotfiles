@@ -1,19 +1,21 @@
 lastupdatecheck: 0
 recentrepos:
 - /home/navin/dotfiles
-- /home/navin/work/lilac-devstack/src/xblock-interactive
+- /home/navin/work/master-devstack/src/themes/edx-theme
+- /home/navin/work/master-devstack/edx-platform
+- /home/navin/work/master-devstack/src/edx-theme
+- /home/navin/work/master-devstack/devstack
+- /home/navin/work/listaflow
 - /home/navin/work/lilac-devstack/edx-platform
+- /home/navin/work/lilac-devstack/src/xblock-interactive
 - /home/navin/work/lilac-devstack/devstack
 - /home/navin/work/configuration
-- /home/navin/work/listaflow
 - /home/navin/work/infrastructure
 - /home/navin/work/lilac-devstack/frontend-app-gradebook
-- /home/navin/work/master-devstack/edx-platform
 - /home/navin/work/helm-charts
 - /home/navin/work/master-devstack/frontend-app-gradebook
 - /home/navin/work/master-devstack/frontend-app-account
 - /home/navin/.local/share/nvim/site/pack/packer/start/fm-nvim
-- /home/navin/work/master-devstack/devstack
 - /home/navin/work/grove-stage-digitalocean
 - /home/navin/work/grove
 - /home/navin/work/grove-stage-digitalocean/grove

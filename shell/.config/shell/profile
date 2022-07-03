@@ -55,7 +55,7 @@ export PATH="$GOPATH/bin:$PATH"
 # Other program settings:
 export BAT_THEME="gruvbox-light"
 export ZK_NOTEBOOK_DIR="/home/navin/Documents/my-notes"
-export TS_ONFINISH="/home/navin/.local/bin/tsp-notify"
+export TS_ONFINISH="/home/navin/.local/bin/tsp-ring"
 export DICS="/usr/share/stardict/dic/"
 export SUDO_ASKPASS="$HOME/.local/bin/dmenupass"
 export FZF_DEFAULT_OPTS="--ansi --layout=reverse"
@@ -86,6 +86,7 @@ export MOZ_USE_XINPUT2="1"		# Mozilla smooth scrolling/touchpads.
 export AWT_TOOLKIT="MToolkit wmname LG3D"	#May have to install wmname
 export _JAVA_AWT_WM_NONREPARENTING=1	# Fix for Java applications in dwm
 export CARGO_TARGET_DIR="/home/navin/.local/share/shared_cargo_target/"
+export NVIM_SERVER="/tmp/default-nvim-server.pipe"
 
 # This is the list for lf icons:
 export LF_ICONS="di=📁:\
