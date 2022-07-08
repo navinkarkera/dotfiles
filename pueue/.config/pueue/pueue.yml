@@ -11,7 +11,7 @@ client:
 daemon:
   pause_group_on_failure: false
   pause_all_on_failure: false
-  callback: '/home/navin/.local/bin/tsp-ring "{{command}}" "{{path}}" "{{result}}" "{{start}}" "{{end}}" "{{output}}"'
+  callback: '/home/navin/.local/bin/tsp-ring "{{command}}" "{{path}}" "{{result}}" "{{start}}" "{{end}}" "{{output}}" "{{id}}"'
   # callback: 'notify-send "{{id}}" "{{command}}" "{{path}}" "{{result}}" "{{start}}" "{{end}}"'
   # callback: "notify-send \"Task {{ id }}\nCommand: {{ command }}\nPath: {{ path }}\nFinished with status '{{ result }}'\nTook: $(bc <<< \"{{end}} - {{start}}\") seconds\""
   callback_log_lines: 10

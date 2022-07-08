@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+dmenu -fn Monospace-18 -p "$1" <&- && echo

@@ -6,7 +6,9 @@ result=$3
 start=$4
 end=$5
 output=$6
+job_id=$7
 
 msg="[$result] command: '$command'; Took: $(bc <<< "$end - $start") seconds"
 notify-send -a "Task queue: $path" "$msg" "$(echo -e "$output")"
-kdeconnect-cli -d $(kdeconnect-cli -a --id-only) --ping-msg "$(echo -e "$msg\n\n$path\n\n$output")"
+# kdeconnect-cli -d $(kdeconnect-cli -a --id-only) --ping-msg "$(echo -e "$msg\n\n$path\n\n$output")"
+/home/navin/.local/bin/telegram-send-log.sh "$msg\n\n$output"

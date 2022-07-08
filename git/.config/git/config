@@ -5,6 +5,7 @@
 	last = !git --no-pager log -1 HEAD --stat
 	cm = commit -m
 	d = diff
+	dft = difftool
 	dm = diff master..HEAD
 	dv = difftool -t vimdiff -y
 	gl = !git --no-pager config --global -l
@@ -17,21 +18,31 @@
 	ps = push -f origin HEAD
 	lg = !git --no-pager log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
 	cc = commit
-    save-update = "!f() { git stash && git fetch $1 && git reset --hard $1/master && git stash pop; }; f"
+	save-update = "!f() { git stash && git fetch $1 && git reset --hard $1/master && git stash pop; }; f"
 	fu = fetch upstream
 	rum = reset --hard upstream/master
 
 [core]
-    pager = delta
+	pager = delta
 
 [interactive]
-    diffFilter = delta --color-only
+	diffFilter = delta --color-only
 
 [delta]
-    navigate = true  # use n and N to move between diff sections
+	navigate = true  # use n and N to move between diff sections
 
 [merge]
-    conflictstyle = diff3
+	conflictstyle = diff3
 
 [diff]
-    colorMoved = default
+	colorMoved = default
+	tool = difftastic
+
+[difftool]
+	prompt = false
+
+[difftool "difftastic"]
+	cmd = difft "$LOCAL" "$REMOTE"
+
+[pager]
+	difftool = true

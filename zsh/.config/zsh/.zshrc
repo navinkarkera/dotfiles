@@ -85,3 +85,8 @@ source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.
 
 source /home/navin/.config/broot/launcher/bash/br
 source /usr/share/nvm/init-nvm.sh
+
+export MCFLY_KEY_SCHEME=vim
+export MCFLY_FUZZY=2
+export MCFLY_HISTORY_LIMIT=10000
+eval "$(mcfly init zsh)"

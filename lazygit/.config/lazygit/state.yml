@@ -1,18 +1,19 @@
 lastupdatecheck: 0
 recentrepos:
 - /home/navin/dotfiles
-- /home/navin/work/master-devstack/src/themes/edx-theme
-- /home/navin/work/master-devstack/edx-platform
-- /home/navin/work/master-devstack/src/edx-theme
-- /home/navin/work/master-devstack/devstack
 - /home/navin/work/listaflow
+- /home/navin/work/public
+- /home/navin/work/infrastructure
+- /home/navin/work/helm-charts
+- /home/navin/work/master-devstack/edx-platform
+- /home/navin/work/master-devstack/devstack
+- /home/navin/work/master-devstack/src/themes/edx-theme
+- /home/navin/work/master-devstack/src/edx-theme
 - /home/navin/work/lilac-devstack/edx-platform
 - /home/navin/work/lilac-devstack/src/xblock-interactive
 - /home/navin/work/lilac-devstack/devstack
 - /home/navin/work/configuration
-- /home/navin/work/infrastructure
 - /home/navin/work/lilac-devstack/frontend-app-gradebook
-- /home/navin/work/helm-charts
 - /home/navin/work/master-devstack/frontend-app-gradebook
 - /home/navin/work/master-devstack/frontend-app-account
 - /home/navin/.local/share/nvim/site/pack/packer/start/fm-nvim
@@ -27,7 +28,6 @@ recentrepos:
 - /home/navin/work/master-devstack/configuration
 - /home/navin/work/itcracy/fabricate
 - /home/navin/work/koa-devstack/src/themes/edx-theme
-- /home/navin/work/public
 - /home/navin/work/koa-devstack/edx-platform
 - /home/navin/work/mooc-floss
 - /home/navin/work/ocim

@@ -26,6 +26,7 @@ alias \
 alias \
 	ls="ls -hN --color=auto --group-directories-first" \
 	grep="grep --color=auto" \
+	rcg="rg --context 10"
 	diff="diff --color=auto" \
 	ccat="highlight --out-format=ansi"
 
@@ -64,8 +65,12 @@ alias v="project-files" \
 alias \
 	nq="pueue" \
 	nql="pueue log" \
-	nqa="pueue add --" \
+	nqf="pueue follow" \
 	nqc="pueue clean"
+
+nqa() {
+	pueue add "$@"
+}
 
 alias la='ls -a'
 alias ll='ls -la'
