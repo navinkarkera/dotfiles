@@ -69,8 +69,8 @@ require('packer').startup(function(use)
 	use "preservim/vimux"
   use "nathom/filetype.nvim"
   use "is0n/fm-nvim"
-  use "jakewvincent/mkdnflow.nvim"
   use "AckslD/nvim-trevJ.lua"
+  use "kylechui/nvim-surround"
 end)
 
 --Set highlight on search
@@ -200,13 +200,19 @@ api.nvim_create_autocmd("BufEnter", {
 	group = my_group,
 })
 api.nvim_create_autocmd("FileType", {
-	pattern = { "xml", "html", "xhtml", "css", "scss", "javascript", "yaml", "typescriptreact", "typescript", "lua", "json" },
+	pattern = { "xml", "html", "htmldjango", "xhtml", "css", "scss", "javascript", "javascriptreact", "yaml", "typescriptreact", "typescript", "lua", "json" },
 	command = [[setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab]],
 	group = my_group,
 })
 api.nvim_create_autocmd("FileType", {
   pattern = {"markdown"},
 	command = [[set autowriteall]],
+	group = my_group,
+})
+api.nvim_create_autocmd("TermOpen", {
+	command = [[
+setlocal nonumber norelativenumber signcolumn=no
+]],
 	group = my_group,
 })
 
@@ -376,43 +382,10 @@ for type, icon in pairs(signs) do
 end
 
 -- LSP settings
-local function goto_definition(split_cmd)
-  local util = vim.lsp.util
-  local log = require("vim.lsp.log")
-
-  -- note, this handler style is for neovim 0.5.1/0.6, if on 0.5, call with function(_, method, result)
-  local handler = function(_, result, ctx)
-    if result == nil or vim.tbl_isempty(result) then
-      local _ = log.info() and log.info(ctx.method, "No location found")
-      return nil
-    end
-
-    if split_cmd then
-      vim.cmd(split_cmd)
-    end
-
-    if vim.tbl_islist(result) then
-      util.jump_to_location(result[1], "utf-8")
-
-      if #result > 1 then
-        util.set_qflist(util.locations_to_items(result))
-        api.nvim_command("copen")
-        api.nvim_command("wincmd p")
-      end
-    else
-      util.jump_to_location(result)
-    end
-  end
-
-  return handler
-end
-
-vim.lsp.handlers["textDocument/definition"] = goto_definition('split')
-
 local lspconfig = require 'lspconfig'
 local on_attach = function(_, bufnr)
   local opts = { buffer = bufnr }
-  vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
+  vim.keymap.set('n', 'gD', function() require('telescope.builtin').lsp_definitions({jump_type = "vsplit"}) end, opts)
   vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
   vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
@@ -425,6 +398,7 @@ local on_attach = function(_, bufnr)
   vim.keymap.set('n', '<leader>D', vim.lsp.buf.type_definition, opts)
   vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
+  vim.keymap.set('n', 'gR', require('telescope.builtin').lsp_references , opts)
   vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, opts)
   vim.keymap.set('n', '<leader>so', require('telescope.builtin').lsp_document_symbols, opts)
   vim.api.nvim_create_user_command("Format", vim.lsp.buf.formatting, {})
@@ -615,7 +589,7 @@ require("harpoon").setup({
 	global_settings = {
 		save_on_toggle = false,
 		save_on_change = true,
-		enter_on_sendcmd = false,
+		enter_on_sendcmd = true,
 		tmux_autoclose_windows = false,
 		excluded_filetypes = { "harpoon", "qf" },
 	},
@@ -632,6 +606,24 @@ map("n", "<leader>4", function() require('harpoon.ui').nav_file(4) end)
 map("n", "<leader>5", function() require('harpoon.ui').nav_file(5) end)
 map("n", "<leader>6", function() require('harpoon.ui').nav_file(6) end)
 
+-- cmd maps
+map("n", "<leader>mc", require('harpoon.cmd-ui').toggle_quick_menu)
+
+map("n", "<leader>m1", function() require('harpoon.term').gotoTerminal(1) end)
+map("n", "<leader>m2", function() require('harpoon.term').gotoTerminal(2) end)
+map("n", "<leader>m3", function() require('harpoon.term').gotoTerminal(3) end)
+map("n", "<leader>m4", function() require('harpoon.term').gotoTerminal(4) end)
+map("n", "<leader>m5", function() require('harpoon.term').gotoTerminal(5) end)
+map("n", "<leader>m6", function() require('harpoon.term').gotoTerminal(6) end)
+
+map("n", "<leader>me1", function() require('harpoon.term').sendCommand(1, 1) end)
+map("n", "<leader>me2", function() require('harpoon.term').sendCommand(2, 2) end)
+map("n", "<leader>me3", function() require('harpoon.term').sendCommand(3, 3) end)
+map("n", "<leader>me4", function() require('harpoon.term').sendCommand(4, 4) end)
+map("n", "<leader>me5", function() require('harpoon.term').sendCommand(5, 5) end)
+map("n", "<leader>me6", function() require('harpoon.term').sendCommand(6, 6) end)
+
+
 -- Navigator
 require("Navigator").setup({})
 map("n", "<m-h>", require("Navigator").left)
@@ -639,6 +631,13 @@ map("n", "<m-k>", require('Navigator').up)
 map("n", "<m-l>", require('Navigator').right)
 map("n", "<m-j>", require('Navigator').down)
 map("n", "<m-^>", require('Navigator').previous)
+-- terminal keymaps
+map("t", "<m-h>", require("Navigator").left)
+map("t", "<m-k>", require('Navigator').up)
+map("t", "<m-l>", require('Navigator').right)
+map("t", "<m-j>", require('Navigator').down)
+map("t", "<m-^>", require('Navigator').previous)
+
 
 -- refactoring.nvim
 require("refactoring").setup {
@@ -706,14 +705,12 @@ fmnvim.setup({
 vim.keymap.set('n', '<leader>pv', ":Broot %:h <CR>")
 vim.keymap.set('n', '<C-p>', fmnvim.Broot)
 
---mkdnflow
-require('mkdnflow').setup({
-  filetypes = {md = true, rmd = true, markdown = true},
-})
-
 --nvim-trevJ
 require('trevj').setup({})
 vim.keymap.set('n', 'gS', require('trevj').format_at_cursor)
+
+-- nvim-surround
+require("nvim-surround").setup({})
 
 -- vimux conf
 vim.g.VimuxExpandCommand = true
@@ -728,6 +725,7 @@ map("n", "<leader>vz", ":VimuxZoomRunner<CR>")
 map("n", "<leader>v<C-l>", ":VimuxClearTerminalScreen<CR>")
 map("n", "<leader>vrm", [[:call VimuxPromptCommand("rm " . bufname("%"))<CR>]])
 map("n", "<leader>vcp", [[:call VimuxPromptCommand("cp " . bufname("%") . " ")<CR>]])
+map("n", "<leader>vrn", [[:call VimuxPromptCommand("mv " . bufname("%") . " " . bufname("%"))<CR>]])
 
 map("v", "<leader>vs", [["vy<cmd>lua require('my-functions').VimuxSlime()<CR>]])
 map("n", "<leader>vs", [[^v$<leader>vs<CR>]], { remap = true })
@@ -752,6 +750,7 @@ map("n", "<leader>pw", ':silent grep "<C-R>=expand("<cword>")<CR>"<CR>')
 map("v", "<C-r>", '"hy:%s/<C-r>h//gc<left><left><left>')
 map("v", "cy", '"+y')
 map("n", "cp", '"+p')
+map("n", "<leader>k", ':silent !zeal "<C-R>=expand("<cword>")<CR>"<CR>')
 
 map("i", "<C-l>", "<Left>")
 map("i", "<C-k>", "<Up>")
