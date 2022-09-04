@@ -25230,3 +25230,39 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20220902T062408Z","end":"20220902T063258Z","tags":["BB-6664 create"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220902T130731Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220902T130731Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220902T130731Z","tags":["reduce scss"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220902T130731Z","tags":["reduce scss"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220902T130731Z","end":"20220902T131006Z","tags":["reduce scss"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20220902T131936Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220902T131936Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220902T131936Z","tags":["reduce scss"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20220902T131936Z","tags":["reduce scss"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20220902T131936Z","end":"20220902T152130Z","tags":["reduce scss"]}

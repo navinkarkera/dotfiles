@@ -1,0 +1,12 @@
+session: mooc-floss
+
+root: ~/work/mooc-floss/
+
+before_start:
+  - git config user.email 'navin@opencraft.com'
+
+windows:
+  - name: code
+    commands:
+      - e
+  - name: shell

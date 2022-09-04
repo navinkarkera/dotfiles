@@ -1,0 +1,19 @@
+session: itcracy/fabricate
+
+root: ~/work/itcracy/fabricate
+
+before_start:
+  - git config user.email 'navin@disroot.org'
+
+windows:
+  - name: code
+    layout: main-horizontal
+    commands:
+      - e
+    panes:
+      - type: vertical
+        commands:
+          - g s
+  - name: shell
+    commands:
+      - ls

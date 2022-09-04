@@ -1,0 +1,36 @@
+session: koa-devstack
+
+root: ~/work/koa-devstack/
+
+env:
+  OPENEDX_RELEASE: koa.master
+  PYTHON_ENV_PATH: /home/navin/work/python_shared_venvs/py38
+
+windows:
+  - name: edx-platform
+    root: edx-platform
+    layout: main-vertical
+    commands:
+      - activate
+      - e
+    panes:
+      - type: horizontal
+        commands:
+          - activate
+      - type: vertical
+        commands:
+          - activate
+          - g s
+  - name: devstack
+    root: devstack
+    layout: main-vertical
+    commands:
+      - activate
+    panes:
+      - type: horizontal
+        commands:
+          - activate
+      - type: vertical
+        commands:
+          - activate
+          - g s

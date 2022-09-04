@@ -1,0 +1,20 @@
+session: crafty-bot
+
+root: ~/work/crafty-bot/
+
+before_start:
+  - git config user.email 'navin@opencraft.com'
+
+env:
+  COMPOSE_FILE: local.yml
+  PYTHON_ENV_PATH: /home/navin/work/python_shared_venvs/py38
+
+windows:
+  - name: code
+    commands:
+      - activate
+      - e
+  - name: shell
+    commands:
+      - activate
+      - g s

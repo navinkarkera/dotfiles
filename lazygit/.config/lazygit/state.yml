@@ -1,8 +1,9 @@
 lastupdatecheck: 0
 recentrepos:
 - /home/navin/dotfiles
-- /home/navin/work/master-devstack/edx-platform
 - /home/navin/work/master-devstack/frontend-app-gradebook
+- /home/navin/work/master-devstack/devstack
+- /home/navin/work/master-devstack/edx-platform
 - /home/navin/work/listaflow
 - /home/navin/work/itcracy/fabricate
 - /home/navin/work/public
@@ -10,7 +11,6 @@ recentrepos:
 - /home/navin/work/helm-charts
 - /home/navin/work/ansible-secrets
 - /home/navin/work/sprintcraft
-- /home/navin/work/master-devstack/devstack
 - /home/navin/work/master-devstack/src/themes/said-oxford-theme
 - /home/navin/work/master-devstack/course-discovery
 - /home/navin/work/lilac-devstack/src/themes/said-oxford-theme

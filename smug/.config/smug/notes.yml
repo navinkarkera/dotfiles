@@ -1,0 +1,8 @@
+session: notes
+
+root: ~/Documents/notes
+
+windows:
+  - name: NOTES
+    commands:
+      - e

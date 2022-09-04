@@ -1,0 +1,6 @@
+tmux has-session -t sprintcraft:
+exit status 1
+/bin/sh -c sh -c "[ ! -d .venv ] && python39 -m venv .venv"
+exit status 1
+/bin/sh -c docker-compose stop
+exit status 127

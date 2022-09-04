@@ -1,0 +1,18 @@
+session: zoomus
+
+root: ~/work/zoomus/
+
+before_start:
+  - git config user.email 'navin@opencraft.com'
+
+env:
+  PYTHON_ENV_PATH: /home/navin/work/python_shared_venvs/py38
+
+windows:
+  - name: code
+    commands:
+      - activate
+      - e
+  - name: shell
+    commands:
+      - activate

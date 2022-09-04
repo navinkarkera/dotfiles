@@ -275,7 +275,7 @@
   "reading jira tickets in search of tasks":{"count":3},
   "reading opencraft private docs":{"count":1},
   "reading ytp certificate issue":{"count":1},
-  "reduce scss":{"count":11},
+  "reduce scss":{"count":13},
   "remove dat permissions from listaflow BB-6579":{"count":1},
   "replicating esme-staging env in local":{"count":1},
   "reply to jira ticket comment bb-4224":{"count":1},
