@@ -25,7 +25,7 @@ local builtins = {
 }
 
 for _, plugin in pairs(builtins) do
-   vim.g["loaded_" .. plugin] = 1
+  vim.g["loaded_" .. plugin] = 1
 end
 
 if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
@@ -33,7 +33,8 @@ if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
 end
 
 local packer_group = vim.api.nvim_create_augroup('Packer', { clear = true })
-vim.api.nvim_create_autocmd('BufWritePost', { command = 'source <afile> | PackerCompile', group = packer_group, pattern = 'init.lua' })
+vim.api.nvim_create_autocmd('BufWritePost',
+  { command = 'source <afile> | PackerCompile', group = packer_group, pattern = 'init.lua' })
 
 require('packer').startup(function(use)
   use 'lewis6991/impatient.nvim'
@@ -62,15 +63,17 @@ require('packer').startup(function(use)
   use 'L3MON4D3/LuaSnip' -- Snippets plugin
   use "numToStr/Navigator.nvim" -- tmux navigation
   use "ThePrimeagen/harpoon"
-	use "danymat/neogen"
+  use "danymat/neogen"
   use { "ThePrimeagen/refactoring.nvim",
-		requires = { "nvim-lua/plenary.nvim", "nvim-treesitter/nvim-treesitter" },
-	}
-	use "preservim/vimux"
+    requires = { "nvim-lua/plenary.nvim", "nvim-treesitter/nvim-treesitter" },
+  }
+  use "preservim/vimux"
   use "nathom/filetype.nvim"
   use "is0n/fm-nvim"
   use "AckslD/nvim-trevJ.lua"
   use "kylechui/nvim-surround"
+  use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+  use 'kyazdani42/nvim-web-devicons'
 end)
 
 --Set highlight on search
@@ -118,16 +121,16 @@ vim.o.splitright = true
 vim.o.splitbelow = true
 
 if vim.fn.executable("rg") == 1 then
-	vim.o.grepprg = [[rg --vimgrep --no-heading --smart-case --hidden -g '!.git/']]
-	vim.o.grepformat = "%f:%l:%c:%m"
+  vim.o.grepprg = [[rg --vimgrep --no-heading --smart-case --hidden -g '!.git/']]
+  vim.o.grepformat = "%f:%l:%c:%m"
 else
-	vim.o.grepprg = "grep -R -n --exclude-dir=.git --exclude-dir=.cache --exclude-dir=node_modules --exclude-dir=.venv"
+  vim.o.grepprg = "grep -R -n --exclude-dir=.git --exclude-dir=.cache --exclude-dir=node_modules --exclude-dir=.venv"
 end
 
 --Set statusbar
 require('lualine').setup {
   options = {
-    icons_enabled = false,
+    icons_enabled = true,
     theme = 'gruvbox',
     component_separators = '|',
     section_separators = '',
@@ -187,33 +190,34 @@ api.nvim_create_autocmd('TextYankPost', {
 })
 
 api.nvim_create_autocmd("FileType", {
-	pattern = { "help", "startuptime", "qf", "lspinfo" },
-	command = [[nnoremap <buffer><silent> q :close<CR>]],
-	group = my_group,
+  pattern = { "help", "startuptime", "qf", "lspinfo" },
+  command = [[nnoremap <buffer><silent> q :close<CR>]],
+  group = my_group,
 })
 api.nvim_create_autocmd("BufWritePre", {
-	command = [[:call TrimWhitespace()]],
-	group = my_group,
+  command = [[:call TrimWhitespace()]],
+  group = my_group,
 })
 api.nvim_create_autocmd("BufEnter", {
-	command = [[set fo-=c fo-=r fo-=o]],
-	group = my_group,
+  command = [[set fo-=c fo-=r fo-=o]],
+  group = my_group,
 })
 api.nvim_create_autocmd("FileType", {
-	pattern = { "xml", "html", "htmldjango", "xhtml", "css", "scss", "javascript", "javascriptreact", "yaml", "typescriptreact", "typescript", "lua", "json" },
-	command = [[setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab]],
-	group = my_group,
+  pattern = { "xml", "html", "htmldjango", "xhtml", "css", "scss", "javascript", "javascriptreact", "yaml",
+    "typescriptreact", "typescript", "json", "lua" },
+  command = [[setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab]],
+  group = my_group,
 })
 api.nvim_create_autocmd("FileType", {
-  pattern = {"markdown"},
-	command = [[set autowriteall]],
-	group = my_group,
+  pattern = { "markdown" },
+  command = [[set autowriteall]],
+  group = my_group,
 })
 api.nvim_create_autocmd("TermOpen", {
-	command = [[
+  command = [[
 setlocal nonumber norelativenumber signcolumn=no
-]],
-	group = my_group,
+]] ,
+  group = my_group,
 })
 
 -- Indent blankline
@@ -245,25 +249,25 @@ require('gitsigns').setup {
       if vim.wo.diff then return ']c' end
       vim.schedule(function() gs.next_hunk() end)
       return '<Ignore>'
-    end, {expr=true})
+    end, { expr = true })
 
     gmap('n', '[c', function()
       if vim.wo.diff then return '[c' end
       vim.schedule(function() gs.prev_hunk() end)
       return '<Ignore>'
-    end, {expr=true})
+    end, { expr = true })
 
     -- Actions
     gmap('n', '<leader>hR', gs.reset_hunk)
     gmap('n', '<leader>hp', gs.preview_hunk)
-    gmap('n', '<leader>hb', function() gs.blame_line{full=true} end)
+    gmap('n', '<leader>hb', function() gs.blame_line { full = true } end)
     gmap('n', '<leader>tb', gs.toggle_current_line_blame)
     gmap('n', '<leader>hd', gs.diffthis)
     gmap('n', '<leader>hD', function() gs.diffthis('~') end)
     gmap('n', '<leader>td', gs.toggle_deleted)
 
     -- Text object
-    map({'o', 'x'}, 'ih', ':<C-U>Gitsigns select_hunk<CR>')
+    map({ 'o', 'x' }, 'ih', ':<C-U>Gitsigns select_hunk<CR>')
   end
 }
 
@@ -331,9 +335,9 @@ require('nvim-treesitter.configs').setup {
   indent = {
     enable = true,
   },
-	autotag = {
-		enable = true,
-	},
+  autotag = {
+    enable = true,
+  },
   textobjects = {
     select = {
       enable = true,
@@ -385,7 +389,7 @@ end
 local lspconfig = require 'lspconfig'
 local on_attach = function(_, bufnr)
   local opts = { buffer = bufnr }
-  vim.keymap.set('n', 'gD', function() require('telescope.builtin').lsp_definitions({jump_type = "vsplit"}) end, opts)
+  vim.keymap.set('n', 'gD', function() require('telescope.builtin').lsp_definitions({ jump_type = "vsplit" }) end, opts)
   vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
   vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
@@ -398,7 +402,7 @@ local on_attach = function(_, bufnr)
   vim.keymap.set('n', '<leader>D', vim.lsp.buf.type_definition, opts)
   vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
-  vim.keymap.set('n', 'gR', require('telescope.builtin').lsp_references , opts)
+  vim.keymap.set('n', 'gR', require('telescope.builtin').lsp_references, opts)
   vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, opts)
   vim.keymap.set('n', '<leader>so', require('telescope.builtin').lsp_document_symbols, opts)
   vim.api.nvim_create_user_command("Format", vim.lsp.buf.formatting, {})
@@ -409,7 +413,7 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
 -- Enable the following language servers
-local servers = { 'pyright', 'tsserver', 'cssls' }
+local servers = { 'pyright', 'tsserver', 'cssls', 'eslint', 'html' }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
@@ -417,8 +421,8 @@ for _, lsp in ipairs(servers) do
   }
 end
 
-lspconfig['gopls'].setup{
-  cmd = {'gopls'},
+lspconfig['gopls'].setup {
+  cmd = { 'gopls' },
   on_attach = on_attach,
   capabilities = capabilities,
   settings = {
@@ -478,8 +482,8 @@ require("luasnip.loaders.from_snipmate").lazy_load()
 luasnip.filetype_extend("python", { "django" })
 
 local has_words_before = function()
-	local line, col = unpack(vim.api.nvim_win_get_cursor(0))
-	return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
+  local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+  return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
 end
 
 -- nvim-cmp setup
@@ -544,19 +548,19 @@ cmp.setup {
       end
     end, { 'i', 's' }),
     ['<Tab>'] = cmp.mapping(function(fallback)
-			if vim.fn.pumvisible() == 1 then
-				vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-p>", true, true, true), "n", true)
+      if vim.fn.pumvisible() == 1 then
+        vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-p>", true, true, true), "n", true)
       elseif cmp.visible() then
         cmp.select_next_item()
-			elseif has_words_before() then
-				vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-p>", true, true, true), "n", true)
+      elseif has_words_before() then
+        vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-p>", true, true, true), "n", true)
       else
         fallback()
       end
     end, { 'i', 's' }),
     ['<S-Tab>'] = cmp.mapping(function(fallback)
-			if vim.fn.pumvisible() == 1 then
-				vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-n>", true, true, true), "n", true)
+      if vim.fn.pumvisible() == 1 then
+        vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-n>", true, true, true), "n", true)
       elseif cmp.visible() then
         cmp.select_prev_item()
       else
@@ -586,13 +590,13 @@ cmp.setup {
 
 -- harpoon
 require("harpoon").setup({
-	global_settings = {
-		save_on_toggle = false,
-		save_on_change = true,
-		enter_on_sendcmd = true,
-		tmux_autoclose_windows = false,
-		excluded_filetypes = { "harpoon", "qf" },
-	},
+  global_settings = {
+    save_on_toggle = false,
+    save_on_change = true,
+    enter_on_sendcmd = true,
+    tmux_autoclose_windows = false,
+    excluded_filetypes = { "harpoon", "qf" },
+  },
 })
 
 map("n", "<leader>ma", require('harpoon.mark').add_file)
@@ -641,48 +645,46 @@ map("t", "<m-^>", require('Navigator').previous)
 
 -- refactoring.nvim
 require("refactoring").setup {
-	 -- overriding printf statement for python
-	 print_var_statements = {
-			python = {
-				 'print(f"""%s {%s}""")',
-			},
-	 },
+  -- overriding printf statement for python
+  print_var_statements = {
+    python = {
+      'print(f"""%s {%s}""")',
+    },
+  },
 }
 -- prompt for a refactor to apply when the remap is triggered
-require('telescope').load_extension 'refactoring'
 map(
-	"v",
-	"<leader>rr",
-	function ()
-		require('telescope').extensions.refactoring.refactors()
-	end
+  "v",
+  "<leader>rr",
+  ":lua require('refactoring').select_refactor()<CR>",
+  { noremap = true, silent = true, expr = false }
 )
 -- You can also use below = true here to to change the position of the printf
 -- statement (or set two remaps for either one). This remap must be made in normal mode.
 map(
-	"n",
-	"<leader>rp",
-	function()
-		require('refactoring').debug.printf({below = false})
-	end
+  "n",
+  "<leader>rp",
+  function()
+    require('refactoring').debug.printf({ below = false })
+  end
 )
 
 -- Print var: this remap should be made in visual mode
 map(
-	"v",
-	"<leader>rv",
-	function()
-		require('refactoring').debug.print_var({})
-	end
+  "v",
+  "<leader>rv",
+  function()
+    require('refactoring').debug.print_var({})
+  end
 )
 
 -- Cleanup function: this remap should be made in normal mode
 map(
-	"n",
-	"<leader>rc",
-	function ()
-		require('refactoring').debug.cleanup({})
-	end
+  "n",
+  "<leader>rc",
+  function()
+    require('refactoring').debug.cleanup({})
+  end
 )
 
 -- neogen conf
@@ -695,12 +697,12 @@ local fmnvim = require("fm-nvim")
 fmnvim.setup({
   broot_conf = vim.fn.stdpath("config") .. "/broot.toml",
   mappings = {
-		vert_split = "<C-v>",
-		horz_split = "<C-b>",
-		tabedit    = "<C-t>",
-		edit       = "<C-e>",
-		ESC        = "<ESC>"
-	},
+    vert_split = "<C-v>",
+    horz_split = "<C-b>",
+    tabedit    = "<C-t>",
+    edit       = "<C-e>",
+    ESC        = "<ESC>"
+  },
 })
 vim.keymap.set('n', '<leader>pv', ":Broot %:h <CR>")
 vim.keymap.set('n', '<C-p>', fmnvim.Broot)

@@ -1,5 +1,6 @@
 # Syntax theme for code preview
 syntax_theme = "Solarized (light)"
+icon_theme = "vscode"
 
 [skin]
 # base00 base3 / base1 base2
@@ -104,6 +105,10 @@ apply_to = "file"
 [[verbs]]
 invocation = "mkdir {subpath}"
 execution = "/bin/mkdir -p {directory}/{subpath}"
+
+[[verbs]]
+invocation = "touch {subpath}"
+execution = "/bin/touch {directory}/{subpath}"
 
 [[verbs]]
 key = "ctrl-j"
