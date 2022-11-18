@@ -18,6 +18,11 @@ function M.executePythonModuleInteractive(filePath)
 	vim.call("VimuxRunCommand", "activate; python -im " .. modulePath)
 end
 
+function M.importPythonModule(filePath)
+	local modulePath = M.getPythonModulePath(filePath)
+	vim.call("VimuxRunCommand", "from " .. modulePath .. " import *")
+end
+
 function M.VimuxSlime()
 	local code = vim.fn.getreg("v")
 	vim.call("VimuxRunCommand", code, 0)

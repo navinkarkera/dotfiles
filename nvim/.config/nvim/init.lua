@@ -68,7 +68,6 @@ require('packer').startup(function(use)
     requires = { "nvim-lua/plenary.nvim", "nvim-treesitter/nvim-treesitter" },
   }
   use "preservim/vimux"
-  use "nathom/filetype.nvim"
   use "is0n/fm-nvim"
   use "AckslD/nvim-trevJ.lua"
   use "kylechui/nvim-surround"
@@ -136,6 +135,23 @@ require('lualine').setup {
     section_separators = '',
     globalstatus = true,
   },
+  winbar = {
+    lualine_a = {},
+    lualine_b = {},
+    lualine_c = { 'filename' },
+    lualine_x = {},
+    lualine_y = {},
+    lualine_z = {}
+  },
+
+  inactive_winbar = {
+    lualine_a = {},
+    lualine_b = {},
+    lualine_c = { 'filename' },
+    lualine_x = {},
+    lualine_y = {},
+    lualine_z = {}
+  }
 }
 
 --Enable Comment.nvim
@@ -297,8 +313,7 @@ vim.keymap.set('n', '<leader>ff', function()
 end)
 vim.keymap.set('n', '<leader>fb', require('telescope.builtin').current_buffer_fuzzy_find)
 vim.keymap.set('n', '<leader>fh', require('telescope.builtin').help_tags)
-vim.keymap.set('n', '<leader>ft', require('telescope.builtin').tags)
-vim.keymap.set('n', '<leader>pw', require('telescope.builtin').grep_string)
+vim.keymap.set('n', '<leader>fg', require('telescope.builtin').git_status)
 vim.keymap.set('n', '<leader>fw', require('telescope.builtin').live_grep)
 vim.keymap.set('n', '<leader>so', function()
   require('telescope.builtin').tags { only_current_buffer = true }
@@ -528,7 +543,7 @@ cmp.setup {
   mapping = cmp.mapping.preset.insert({
     ['<C-d>'] = cmp.mapping.scroll_docs(-4),
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
-    ['<C-Space>'] = cmp.mapping.complete(),
+    ['<C-Space>'] = cmp.mapping.complete({}),
     ['<CR>'] = cmp.mapping.confirm {
       behavior = cmp.ConfirmBehavior.Replace,
       select = true,
@@ -648,7 +663,7 @@ require("refactoring").setup {
   -- overriding printf statement for python
   print_var_statements = {
     python = {
-      'print(f"""%s {%s}""")',
+      'print(f"""======================================= %s {%s}""")',
     },
   },
 }
@@ -669,13 +684,21 @@ map(
   end
 )
 
+
+-- Remap in normal mode and passing { normal = true } will automatically find the variable under the cursor and print it
+map(
+    "n",
+    "<leader>rv",
+    ":lua require('refactoring').debug.print_var({ normal = true })<CR>",
+    { noremap = true }
+)
+
 -- Print var: this remap should be made in visual mode
 map(
-  "v",
-  "<leader>rv",
-  function()
-    require('refactoring').debug.print_var({})
-  end
+    "v",
+    "<leader>rv",
+    ":lua require('refactoring').debug.print_var({})<CR>",
+    { noremap = true }
 )
 
 -- Cleanup function: this remap should be made in normal mode
@@ -747,8 +770,9 @@ map("v", ">", ">gv")
 map("n", "s", "ciw")
 map("n", "<m-p>", ':e <C-R>=expand("%:.:h")<CR>/')
 map("n", "<C-f>", ':silent grep ""<Left>')
-map("v", "<C-f>", [["hy:silent grep "<C-r>h"<CR>]])
-map("n", "<leader>pw", ':silent grep "<C-R>=expand("<cword>")<CR>"<CR>')
+map("v", "<C-f>", [["hy:silent grep "<C-r>h" <C-R>=expand("%:.:h")<CR>/]])
+map("n", "<leader>pw", ':silent grep "<C-R>=expand("<cword>")<CR>"')
+map("n", "<leader>ps", ':silent grep "<C-R>=expand("<cword>")<CR>" --type <C-R>=expand("%:.:e")<CR>')
 map("v", "<C-r>", '"hy:%s/<C-r>h//gc<left><left><left>')
 map("v", "cy", '"+y')
 map("n", "cp", '"+p')

@@ -68,7 +68,7 @@ zle -N zle-line-init
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
-bindkey -s '^f' 'cd "$(fd --type d --color=always . | fzf)"\n'
+bindkey -s '^f' 'cd "$(fd --type d . | fzf)"\n'
 
 bindkey '^[[P' delete-char
 
@@ -102,3 +102,4 @@ export MCFLY_KEY_SCHEME=vim
 export MCFLY_FUZZY=2
 export MCFLY_HISTORY_LIMIT=10000
 eval "$(mcfly init zsh)"
+eval "$(zoxide init zsh)"

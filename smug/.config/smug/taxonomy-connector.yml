@@ -1,13 +1,13 @@
-session: listaflow
+session: taxonomy_connector
 
-root: ~/work/opencraft/listaflow/
+root: ~/work/master-devstack/src/taxonomy-connector/
 
 before_start:
   - git config user.email 'navin@opencraft.com'
 
 env:
-  PYTHON_ENV_PATH: /home/navin/work/python_shared_venvs/py310
-  NVIM_SERVER: /tmp/listaflow-nvim.pipe
+  PYTHON_ENV_PATH: /home/navin/work/python_shared_venvs/py38/
+  NVIM_SERVER: /tmp/taxonomy_connector-nvim.pipe
 
 windows:
   - name: code

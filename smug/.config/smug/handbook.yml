@@ -1,6 +1,6 @@
 session: handbook
 
-root: ~/work/public/
+root: ~/work/opencraft/public/
 
 before_start:
   - git config user.email 'navin@opencraft.com'
