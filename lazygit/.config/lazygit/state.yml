@@ -1,13 +1,14 @@
 lastupdatecheck: 1664971041
 recentrepos:
 - /home/navin/dotfiles
-- /home/navin/work/master-devstack/course-discovery
 - /home/navin/work/master-devstack/src/taxonomy-connector
-- /home/navin/work/opencraft/listaflow
-- /home/navin/work/master-devstack/devstack
 - /home/navin/work/master-devstack/edx-platform
-- /home/navin/work/opencraft/public
+- /home/navin/work/master-devstack/course-discovery
+- /home/navin/work/master-devstack/devstack
+- /home/navin/work/master-devstack/src/event-bus-kafka
 - /home/navin/work/master-devstack/src/openedx-events
+- /home/navin/work/opencraft/listaflow
+- /home/navin/work/opencraft/public
 - /home/navin/work/opencraft/infrastructure
 - /home/navin/work/opencraft/helm-charts
 - /home/navin/work/master-devstack/edx-themes/hms

@@ -162,6 +162,9 @@ map({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+--python
+vim.g.python3_host_prog = '/usr/bin/python3'
+
 --Remap for dealing with word wrap
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
@@ -425,7 +428,7 @@ end
 
 -- nvim-cmp supports additional completion capabilities
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 -- Enable the following language servers
 local servers = { 'pyright', 'tsserver', 'cssls', 'eslint', 'html' }
@@ -742,6 +745,7 @@ vim.g.VimuxExpandCommand = true
 map("n", "<leader>vv", [[:call VimuxRunCommand("activate", 1)<CR>]])
 map("n", "<leader>vp", ":VimuxPromptCommand<CR>")
 map("n", "<leader>vm", [[:VimuxPromptCommand("make ")<CR>]])
+map("n", "<leader>vg", [[:VimuxPromptCommand("git ls-files -zm '*.<C-R>=expand("%:.:e")<CR>' | xargs --null -t ")<CR>]])
 map("n", "<leader>vl", ":VimuxRunLastCommand<CR>")
 map("n", "<leader>vi", ":VimuxInspectRunner<CR>")
 map("n", "<leader>vq", ":VimuxCloseRunner<CR>")
@@ -777,6 +781,8 @@ map("v", "<C-r>", '"hy:%s/<C-r>h//gc<left><left><left>')
 map("v", "cy", '"+y')
 map("n", "cp", '"+p')
 map("n", "<leader>k", ':silent !zeal "<C-R>=expand("<cword>")<CR>"<CR>')
+map("n", "<leader>cp", ':silent !echo % | xsel --clipboard<CR>')
+map("v", "<leader>prs", [[:w !curl --data-binary @- https://paste.rs/ | xsel --clipboard<CR>]])
 
 map("i", "<C-l>", "<Left>")
 map("i", "<C-k>", "<Up>")

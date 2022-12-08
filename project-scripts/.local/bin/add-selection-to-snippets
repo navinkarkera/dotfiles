@@ -1,0 +1,11 @@
+#!/bin/sh
+
+BOOKMARK_FILE=$HOME/dotfiles/bookmarks/.config/bookmarks/urls
+selection=$(xsel -o)
+if grep -q "$selection" $BOOKMARK_FILE; then
+    notify-send "Oops" "Already bookmarked"
+else
+    echo "$selection" >> $BOOKMARK_FILE
+    notify-send "Done" "Bookmarked!"
+fi
+xsel -c
