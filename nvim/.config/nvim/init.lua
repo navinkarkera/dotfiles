@@ -730,8 +730,8 @@ fmnvim.setup({
     ESC        = "<ESC>"
   },
 })
-vim.keymap.set('n', '<leader>pv', ":Broot %:h <CR>")
-vim.keymap.set('n', '<C-p>', fmnvim.Broot)
+vim.keymap.set('n', '<leader>pv', ":Broot -h %:h <CR>")
+vim.keymap.set('n', '<C-p>', ":Broot -h<CR>")
 
 --nvim-trevJ
 require('trevj').setup({})

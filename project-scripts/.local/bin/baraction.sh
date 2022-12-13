@@ -83,7 +83,7 @@ pkgicon() {
 #	    NETWORK
 ##############################
 networkicon() {
-    wire="$(ip a | grep "eth0\|enp" | grep inet | wc -l)"
+    wire="$(ip a | grep "eth0\|eno" | grep inet | wc -l)"
     wifi="$(ip a | grep wlan | grep inet | wc -l)"
 
     if [ $wire = 1 ]; then
@@ -164,17 +164,20 @@ clockinfo() {
     echo $(date "+%I:%M%p")
 }
 
+timetracker() {
+    echo "Tracking: $(echo $(timew | grep 'Total')) | $(echo $(timew day | grep 'Tracked'))"
+}
 
-SLEEP_SEC=2
+
+SLEEP_SEC=1
 #loops forever outputting a line every SLEEP_SEC secs
 while :; do
     # echo "$(cpu) | $(mem) | $(pkgs) | $(upgrades) | $(hdd) | $(vpn) $(network) | $(vol) | $(WEATHER) $(TEMP) "
     # echo "+@fg=1; $(cpuicon) +@fg=0; $(cpu)\
         # +@fg=3; $(hddicon) +@fg=0; $(hdd)\
-    echo "+@fg=1; $(memicon) +@fg=0; $(mem)\
-        +@fg=4; $(networkicon) +@fg=0; $(ipaddress)\
+    echo "+@fg=6; $(timetracker) +@fg=0; +@fg=1; $(memicon) +@fg=0; $(mem)\
+        +@fg=4; $(networkicon) \
         +@fg=5; $(volicon) +@fg=0; $(vol)\
-        +@fg=2; $(bat)\
         +@fg=1; $(dateinfo) +@fg=4; $(clockicon) +@fg=0; $(clockinfo)"
     sleep $SLEEP_SEC
 done
