@@ -1,0 +1,5 @@
+#!/bin/bash
+
+BOOKMARK_FILE=$HOME/dotfiles/bookmarks/.config/bookmarks/urls
+xdotool="xdotool type --delay 0 --clearmodifiers --file -"
+cat $BOOKMARK_FILE | dmenu -l 15 -p 'Select to type' | cut -d" " -f1 | $xdotool

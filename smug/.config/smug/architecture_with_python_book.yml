@@ -1,0 +1,20 @@
+session: architecture_with_python
+
+root: ~/work/books/architecture_with_python/
+
+env:
+  PYTHON_ENV_PATH: /home/navin/work/python_shared_venvs/py310
+  NVIM_SERVER: /tmp/architecture_with_python-nvim.pipe
+
+windows:
+  - name: code
+    layout: main-horizontal
+    commands:
+      - activate
+    panes:
+      - type: vertical
+        commands:
+          - activate
+  - name: shell
+    commands:
+      - activate
