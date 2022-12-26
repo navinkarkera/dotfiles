@@ -1,0 +1,51 @@
+endpoint: https://tasks.opencraft.com/
+user: navinkarkera
+password-source: pass
+password-name: opencraft-jira
+
+queries:
+  todo: |
+    resolution = unresolved {{if .project}}AND project = '{{.project}}'{{end}} AND status = 'To Do' AND (assignee=currentuser() OR "Reviewer 1"=currentuser() OR "Reviewer 2"=currentuser())
+  in-progress: |
+    resolution = unresolved {{if .project}}AND project = '{{.project}}'{{end}} AND status = 'In Progress' AND (assignee=currentuser() OR "Reviewer 1"=currentuser() OR "Reviewer 2"=currentuser())
+  in-review: |
+    resolution = unresolved {{if .project}}AND project = '{{.project}}'{{end}} AND status = 'In Review' AND (assignee=currentuser() OR "Reviewer 1"=currentuser() OR "Reviewer 2"=currentuser())
+  backlog: |
+    resolution = unresolved {{if .project}}AND project = '{{.project}}'{{end}} AND status = 'Backlog' AND (assignee=currentuser() OR "Reviewer 1"=currentuser() OR "Reviewer 2"=currentuser())
+  mine: |
+    resolution = unresolved {{if .project}}AND project = '{{.project}}'{{end}} AND (assignee=currentuser() OR "Reviewer 1"=currentuser() OR "Reviewer 2"=currentuser())
+  all: |
+    resolution = unresolved {{if .project}}AND project = '{{.project}}'{{end}} ORDER BY priority asc, created
+
+custom-commands:
+  - name: sprint
+    help: display issues for active sprint
+    script: |-
+      if [ -n "$JIRA_PROJECT" ]; then
+          # if `project: ...` configured just list the issues for current project
+          {{jira}} list --template table --query "sprint in openSprints() and assignee=currentuser() and type != epic and resolution = unresolved and project=$JIRA_PROJECT ORDER BY rank asc, created"
+      else
+          # otherwise list issues for all project
+          {{jira}} list --template table --query "sprint in openSprints() and assignee=currentuser() and type != epic and resolution = unresolved ORDER BY rank asc, created"
+      fi
+  - name: mine
+    help: display issues assigned to me
+    script: |-
+      if [ -n "$JIRA_PROJECT" ]; then
+          # if `project: ...` configured just list the issues for current project
+          {{jira}} list --template table --query "resolution = unresolved and assignee=currentuser() and project = $JIRA_PROJECT ORDER BY priority asc, created"
+      else
+          # otherwise list issues for all project
+          {{jira}} list --template table --query "resolution = unresolved and assignee=currentuser() ORDER BY priority asc, created"
+      fi
+  - name: ls-named-query-fzf
+    aliases:
+      - lf
+    help: ls with named queries using fzf interface
+    args:
+      - name: query
+    script: |-
+      {{jira}} ls -n {{if args.query}}{{args.query}}{{else}} all{{end}} | \
+        echo $(fzf --preview="echo {} | cut -d : -f 1 | xargs -I % sh -c 'jira view % > /tmp/%.yaml && bat --color=always /tmp/%.yaml'" --bind 'ctrl-o:execute-silent(jira view -b $(echo {+} | cut -d : -f 1))') |\
+        cut -d : -f 1 |\
+        xargs -I % sh -c 'echo /tmp/%.yaml'

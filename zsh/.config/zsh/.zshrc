@@ -103,3 +103,4 @@ export MCFLY_FUZZY=2
 export MCFLY_HISTORY_LIMIT=10000
 eval "$(mcfly init zsh)"
 eval "$(zoxide init zsh)"
+eval "$(jira --completion-script-bash)"

@@ -23,7 +23,7 @@
 	rum = reset --hard upstream/master
 
 [core]
-	pager = delta
+	pager = delta --paging=always
 
 [interactive]
 	diffFilter = delta --color-only
