@@ -1,7 +1,7 @@
 endpoint: https://tasks.opencraft.com/
 user: navinkarkera
 password-source: pass
-password-name: opencraft-jira
+password-name: opencraft-jira-navinkarkera
 
 queries:
   todo: |
@@ -48,4 +48,4 @@ custom-commands:
       {{jira}} ls -n {{if args.query}}{{args.query}}{{else}} all{{end}} | \
         echo $(fzf --preview="echo {} | cut -d : -f 1 | xargs -I % sh -c 'jira view % > /tmp/%.yaml && bat --color=always /tmp/%.yaml'" --bind 'ctrl-o:execute-silent(jira view -b $(echo {+} | cut -d : -f 1))') |\
         cut -d : -f 1 |\
-        xargs -I % sh -c 'echo /tmp/%.yaml'
+        xargs -I % sh -c 'echo %'

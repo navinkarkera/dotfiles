@@ -73,6 +73,11 @@ require('packer').startup(function(use)
   use "kylechui/nvim-surround"
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
   use 'kyazdani42/nvim-web-devicons'
+  use 'tpope/vim-sleuth' -- Detect tabstop and shiftwidth automatically
+  use {
+    "folke/trouble.nvim",
+    requires = "kyazdani42/nvim-web-devicons"
+  }
 end)
 
 --Set highlight on search
@@ -109,6 +114,7 @@ vim.wo.signcolumn = 'yes'
 --Set colorscheme
 vim.o.background = "light"
 vim.o.termguicolors = true
+vim.o.cursorline = true
 vim.cmd [[colorscheme gruvbox]]
 
 -- Set completeopt to have a better completion experience
@@ -154,13 +160,39 @@ require('lualine').setup {
   }
 }
 
---Enable Comment.nvim
-require('Comment').setup()
-
 --Remap space as leader key
 map({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+
+--Enable Comment.nvim
+require('Comment').setup()
+
+--Enable trouble.nvim
+require("trouble").setup({
+    auto_preview = false,
+})
+vim.keymap.set("n", "<C-q>", "<cmd>TroubleToggle<cr>",
+  {silent = true, noremap = true}
+)
+vim.keymap.set("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>",
+  {silent = true, noremap = true}
+)
+vim.keymap.set("n", "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>",
+  {silent = true, noremap = true}
+)
+vim.keymap.set("n", "<leader>xl", "<cmd>TroubleToggle loclist<cr>",
+  {silent = true, noremap = true}
+)
+vim.keymap.set("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>",
+  {silent = true, noremap = true}
+)
+vim.keymap.set("n", "<C-j>", function() require("trouble").next({skip_groups = true, jump = true}); end,
+  {silent = true, noremap = true}
+)
+vim.keymap.set("n", "<C-k>", function() require("trouble").previous({skip_groups = true, jump = true}); end,
+  {silent = true, noremap = true}
+)
 
 --python
 vim.g.python3_host_prog = '/usr/bin/python3'
@@ -292,6 +324,7 @@ require('gitsigns').setup {
 
 -- Telescope
 local telescope_actions = require("telescope.actions")
+local trouble = require("trouble.providers.telescope")
 require('telescope').setup {
   defaults = {
     mappings = {
@@ -301,7 +334,9 @@ require('telescope').setup {
         ["<C-p>"] = require("telescope.actions.layout").toggle_preview,
         ["<C-j>"] = telescope_actions.move_selection_next,
         ["<C-k>"] = telescope_actions.move_selection_previous,
+        ["<c-t>"] = trouble.open_with_trouble,
       },
+      n = { ["<c-t>"] = trouble.open_with_trouble },
     },
   },
 }
@@ -762,11 +797,11 @@ map("n", "<M-CR>", ":call VimuxSendKeys('Enter')<CR>")
 
 -- custom keymaps
 map("n", "<F4>", ":bd<CR>")
-map('n', '<C-q>', ":call ToggleQuickFix()<CR>")
+-- map('n', '<C-q>', ":TroubleToggle<CR>")
 map('n', '<C-s>', ":w<CR>")
 map("i", "<C-s>", "<C-c>:w<CR>")
-map("n", "<C-j>", ":cn<CR>")
-map("n", "<C-k>", ":cp<CR>")
+-- map("n", "<C-j>", ":cn<CR>")
+-- map("n", "<C-k>", ":cp<CR>")
 map("v", "J", ":m '>+1<CR>gv=gv")
 map("v", "K", ":m '<-2<CR>gv=gv")
 map("v", "<", "<gv")

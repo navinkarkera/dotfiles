@@ -24,7 +24,7 @@ alias \
 
 # Colorize commands when possible.
 alias \
-	ls="ls -hN --color=auto --group-directories-first" \
+	ls="exa --icons --git-ignore --group-directories-first" \
 	grep="grep --color=auto" \
 	rcg="rg --context 10"
 	diff="diff --color=auto" \
@@ -307,11 +307,11 @@ EOF
 # Example: set_superuser pr16297.sandbox.opencraft.hosting staff
 
 # vault helper
-opencraft_vault() {
-    source /home/navin/work/opencraft/private/vault/setup-vault.sh $(pass github | grep "read access_token" | cut -d ":" -f 2)
-    selected=$(vault kv list secret/core/ | fzf)
-    vault kv get "secret/core/${selected}"
-}
+# opencraft_vault() {
+#     source /home/navin/work/opencraft/private/vault/setup-vault.sh $(pass github | grep "read access_token" | cut -d ":" -f 2)
+#     selected=$(vault kv list secret/core/ | fzf)
+#     vault kv get "secret/core/${selected}"
+# }
 
 fbr() {
   local branches branch

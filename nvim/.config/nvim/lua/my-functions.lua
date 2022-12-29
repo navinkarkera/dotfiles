@@ -3,19 +3,19 @@ local luasnip = require("luasnip")
 local neogen = require("neogen")
 
 function M.getPythonModulePath(filePath)
-	local modulePath = string.gsub(filePath, "/", ".")
-	modulePath = string.gsub(modulePath, ".py$", "")
-	return modulePath
+  local modulePath = string.gsub(filePath, "/", ".")
+  modulePath = string.gsub(modulePath, ".py$", "")
+  return modulePath
 end
 
 function M.executePythonModule(filePath)
-	local modulePath = M.getPythonModulePath(filePath)
-	vim.call("VimuxRunCommand", "activate; python -m " .. modulePath)
+  local modulePath = M.getPythonModulePath(filePath)
+  vim.call("VimuxRunCommand", "activate; python -m " .. modulePath)
 end
 
 function M.executePythonModuleInteractive(filePath)
-	local modulePath = M.getPythonModulePath(filePath)
-	vim.call("VimuxRunCommand", "activate; python -im " .. modulePath)
+  local modulePath = M.getPythonModulePath(filePath)
+  vim.call("VimuxRunCommand", "activate; python -im " .. modulePath)
 end
 
 function M.importPythonModule(filePath)
@@ -45,10 +45,10 @@ function M.jump_prev()
 end
 
 function M.load_commands()
-    local pwd = vim.env.PWD
+	local pwd = vim.env.PWD
 	local filename = string.gsub(pwd, "/", "_")
-    vim.cmd(":e /tmp/" .. filename)
-    vim.cmd([[
+	vim.cmd(":e /tmp/" .. filename)
+	vim.cmd([[
     :set filetype=bash
     ]])
 end
