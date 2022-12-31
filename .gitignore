@@ -2,3 +2,4 @@ nvim/lua-language-server/
 nvim/.netrwhist
 zsh/.config/zsh/.zcompdump
 __pycache__/
+tmux/.config/tmux/plugins/

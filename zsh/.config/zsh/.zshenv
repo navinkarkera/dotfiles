@@ -1,1 +1,1 @@
-. "/home/navin/.local/share/cargo/env"
+[ -f $HOME/.local/share/cargo/env ] && . "$HOME/.local/share/cargo/env"
