@@ -51,7 +51,7 @@ window:
 
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: false
-  opacity: 1.0
+  opacity: 0.9
 
   # Window decorations
   #

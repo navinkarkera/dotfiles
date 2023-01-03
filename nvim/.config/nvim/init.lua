@@ -115,6 +115,10 @@ vim.wo.signcolumn = 'yes'
 vim.o.background = "light"
 vim.o.termguicolors = true
 vim.o.cursorline = true
+require('gruvbox').setup({
+  transparent_mode = true,
+  dim_inactive = false,
+})
 vim.cmd [[colorscheme gruvbox]]
 
 -- Set completeopt to have a better completion experience
@@ -141,14 +145,14 @@ require('lualine').setup {
     section_separators = '',
     globalstatus = true,
   },
-  winbar = {
-    lualine_a = {},
-    lualine_b = {},
-    lualine_c = { 'filename' },
-    lualine_x = {},
-    lualine_y = {},
-    lualine_z = {}
-  },
+  -- winbar = {
+  --   lualine_a = {},
+  --   lualine_b = {},
+  --   lualine_c = { 'filename' },
+  --   lualine_x = {},
+  --   lualine_y = {},
+  --   lualine_z = {}
+  -- },
 
   inactive_winbar = {
     lualine_a = {},

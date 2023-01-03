@@ -1,13 +1,13 @@
 lastupdatecheck: 1664971041
 recentrepos:
-- /home/navin/dotfiles
+- /home/navin/work/master-devstack/course-discovery
 - /home/navin/work/master-devstack/src/xblock-skill-tagging
+- /home/navin/work/opencraft/listaflow
 - /home/navin/work/opencraft/infrastructure
+- /home/navin/work/master-devstack/src/taxonomy-connector
+- /home/navin/dotfiles
 - /home/navin/work/opencraft/private
 - /home/navin/work/opencraft/helm-charts
-- /home/navin/work/master-devstack/course-discovery
-- /home/navin/work/master-devstack/src/taxonomy-connector
-- /home/navin/work/opencraft/listaflow
 - /home/navin/work/master-devstack/src/openedx-events
 - /home/navin/work/master-devstack/edx-platform
 - /home/navin/work/master-devstack/devstack
