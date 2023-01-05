@@ -11,28 +11,21 @@ env:
 windows:
   - name: edx-platform
     root: edx-platform
-    layout: main-vertical
+    layout: main-horizontal
     commands:
       - activate
       - e
     panes:
-      - type: horizontal
-        commands:
-          - activate
       - type: vertical
+        root: ../devstack
         commands:
           - activate
-          - g s
   - name: devstack
     root: devstack
-    layout: main-vertical
+    layout: main-horizontal
     commands:
       - activate
     panes:
-      - type: horizontal
-        commands:
-          - activate
       - type: vertical
         commands:
           - activate
-          - g s
