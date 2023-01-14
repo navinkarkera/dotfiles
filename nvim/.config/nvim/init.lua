@@ -114,7 +114,7 @@ vim.wo.signcolumn = 'yes'
 --Set colorscheme
 vim.o.background = "light"
 vim.o.termguicolors = true
-vim.o.cursorline = true
+vim.o.cursorline = false
 require('gruvbox').setup({
   transparent_mode = true,
   dim_inactive = false,
