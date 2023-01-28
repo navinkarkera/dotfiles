@@ -458,7 +458,7 @@ local on_attach = function(_, bufnr)
   end, opts)
   vim.keymap.set('n', '<leader>D', vim.lsp.buf.type_definition, opts)
   vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
-  vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
+  vim.keymap.set('n', 'gr', "<cmd>TroubleToggle lsp_references<cr>", opts)
   vim.keymap.set('n', 'gR', require('telescope.builtin').lsp_references, opts)
   vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, opts)
   vim.keymap.set('n', '<leader>so', require('telescope.builtin').lsp_document_symbols, opts)
@@ -470,7 +470,7 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 -- Enable the following language servers
-local servers = { 'pyright', 'tsserver', 'cssls', 'eslint', 'html' }
+local servers = { 'tsserver', 'cssls', 'eslint', 'html', 'ruff_lsp' }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
@@ -497,7 +497,11 @@ lspconfig['gopls'].setup {
   }
 }
 
-
+lspconfig['pyright'].setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  autostart = false,
+}
 
 -- Example custom server
 -- Make runtime files discoverable to the server
@@ -799,6 +803,7 @@ map("v", "<leader>vs", [["vy<cmd>lua require('my-functions').VimuxSlime()<CR>]])
 map("n", "<leader>vs", [[^v$<leader>vs<CR>]], { remap = true })
 map("n", "<M-CR>", ":call VimuxSendKeys('Enter')<CR>")
 
+vim.api.nvim_create_user_command("Grep", "silent grep! <q-args> | TroubleToggle quickfix", { nargs = 1})
 -- custom keymaps
 map("n", "<F4>", ":bd<CR>")
 -- map('n', '<C-q>', ":TroubleToggle<CR>")
@@ -812,10 +817,14 @@ map("v", "<", "<gv")
 map("v", ">", ">gv")
 map("n", "s", "ciw")
 map("n", "<m-p>", ':e <C-R>=expand("%:.:h")<CR>/')
-map("n", "<C-f>", ':silent grep ""<Left>')
-map("v", "<C-f>", [["hy:silent grep "<C-r>h" <C-R>=expand("%:.:h")<CR>/]])
-map("n", "<leader>pw", ':silent grep "<C-R>=expand("<cword>")<CR>"')
-map("n", "<leader>ps", ':silent grep "<C-R>=expand("<cword>")<CR>" --type <C-R>=expand("%:.:e")<CR>')
+map("n", "<C-f>", ':Grep ')
+map("v", "<C-f>", [["hy:silent grep "<C-r>h" <C-R>=expand("%:.:h")<CR>/ | TroubleToggle quickfix<S-left><S-left><S-left><S-left><left><left>]])
+map("n", "<leader>pw", ':silent grep "<C-R>=expand("<cword>")<CR>" | TroubleToggle quickfix<S-left><S-left><S-left><left><left>')
+map(
+    "n",
+    "<leader>ps",
+    ':silent grep "<C-R>=expand("<cword>")<CR>" --type <C-R>=expand("%:.:e")<CR> | TroubleToggle quickfix<S-left><S-left><S-left><S-left><S-left><left><left>'
+)
 map("v", "<C-r>", '"hy:%s/<C-r>h//gc<left><left><left>')
 map("v", "cy", '"+y')
 map("n", "cp", '"+p')
