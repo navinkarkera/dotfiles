@@ -804,6 +804,11 @@ map("n", "<leader>vs", [[^v$<leader>vs<CR>]], { remap = true })
 map("n", "<M-CR>", ":call VimuxSendKeys('Enter')<CR>")
 
 vim.api.nvim_create_user_command("Grep", "silent grep! <q-args> | TroubleToggle quickfix", { nargs = 1})
+vim.api.nvim_create_user_command(
+  "GBrowse",
+  [[:silent !git browse "" %:~:. <line1> <line2>]],
+  { nargs = 0, range = true }
+)
 -- custom keymaps
 map("n", "<F4>", ":bd<CR>")
 -- map('n', '<C-q>', ":TroubleToggle<CR>")
@@ -829,7 +834,7 @@ map("v", "<C-r>", '"hy:%s/<C-r>h//gc<left><left><left>')
 map("v", "cy", '"+y')
 map("n", "cp", '"+p')
 map("n", "<leader>k", ':silent !zeal "<C-R>=expand("<cword>")<CR>"<CR>')
-map("n", "<leader>cp", ':silent !echo % | xsel --clipboard<CR>')
+map("n", "<leader>cp", ':silent !echo %:~:. | xsel --clipboard<CR>')
 map("v", "<leader>prs", [[:w !curl --data-binary @- https://paste.rs/ | xsel --clipboard<CR>]])
 
 map("i", "<C-l>", "<Left>")
