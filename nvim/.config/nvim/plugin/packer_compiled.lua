@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/Navigator.nvim",
     url = "https://github.com/numToStr/Navigator.nvim"
   },
+  ["any-jump.vim"] = {
+    loaded = true,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/start/any-jump.vim",
+    url = "https://github.com/pechorin/any-jump.vim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",

@@ -78,6 +78,7 @@ require('packer').startup(function(use)
     "folke/trouble.nvim",
     requires = "kyazdani42/nvim-web-devicons"
   }
+  use {"pechorin/any-jump.vim"}
 end)
 
 --Set highlight on search
@@ -145,15 +146,14 @@ require('lualine').setup {
     section_separators = '',
     globalstatus = true,
   },
-  -- winbar = {
-  --   lualine_a = {},
-  --   lualine_b = {},
-  --   lualine_c = { 'filename' },
-  --   lualine_x = {},
-  --   lualine_y = {},
-  --   lualine_z = {}
-  -- },
-
+  sections = {
+    lualine_a = {'mode'},
+    lualine_b = {'branch', 'diff', 'diagnostics'},
+    lualine_c = {'filename', 'nvim_treesitter#statusline'},
+    lualine_x = {'encoding', 'fileformat', 'filetype'},
+    lualine_y = {'progress'},
+    lualine_z = {'location'}
+  },
   inactive_winbar = {
     lualine_a = {},
     lualine_b = {},
@@ -171,6 +171,14 @@ vim.g.maplocalleader = ' '
 
 --Enable Comment.nvim
 require('Comment').setup()
+
+-- Anyjump config
+vim.g.any_jump_grouping_enabled = 1
+vim.g.any_jump_preview_lines_count = 10
+vim.g.any_jump_references_only_for_current_filetype = 1
+vim.g.any_jump_window_width_ratio  = 0.8
+vim.g.any_jump_window_height_ratio = 0.8
+vim.g.any_jump_window_top_offset   = 5
 
 --Enable trouble.nvim
 require("trouble").setup({
@@ -257,12 +265,12 @@ api.nvim_create_autocmd("BufEnter", {
   command = [[set fo-=c fo-=r fo-=o]],
   group = my_group,
 })
-api.nvim_create_autocmd("FileType", {
-  pattern = { "xml", "html", "htmldjango", "xhtml", "css", "scss", "javascript", "javascriptreact", "yaml",
-    "typescriptreact", "typescript", "json", "lua" },
-  command = [[setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab]],
-  group = my_group,
-})
+-- api.nvim_create_autocmd("FileType", {
+--   pattern = { "xml", "html", "htmldjango", "xhtml", "css", "scss", "javascript", "javascriptreact", "yaml",
+--     "typescriptreact", "typescript", "json", "lua" },
+--   command = [[setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab]],
+--   group = my_group,
+-- })
 api.nvim_create_autocmd("FileType", {
   pattern = { "markdown" },
   command = [[set autowriteall]],
