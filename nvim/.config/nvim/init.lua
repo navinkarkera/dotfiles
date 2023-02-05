@@ -79,6 +79,7 @@ require('packer').startup(function(use)
     requires = "kyazdani42/nvim-web-devicons"
   }
   use {"pechorin/any-jump.vim"}
+  use {'axkirillov/easypick.nvim', requires = 'nvim-telescope/telescope.nvim'}
 end)
 
 --Set highlight on search
@@ -358,9 +359,7 @@ require('telescope').load_extension 'fzf'
 
 --Add leader shortcuts
 vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers)
-vim.keymap.set('n', '<leader>ff', function()
-  require('telescope.builtin').find_files {}
-end)
+vim.keymap.set('n', '<leader>ff', require('telescope.builtin').git_files)
 vim.keymap.set('n', '<leader>fb', require('telescope.builtin').current_buffer_fuzzy_find)
 vim.keymap.set('n', '<leader>fh', require('telescope.builtin').help_tags)
 vim.keymap.set('n', '<leader>fg', require('telescope.builtin').git_status)
@@ -369,6 +368,29 @@ vim.keymap.set('n', '<leader>so', function()
   require('telescope.builtin').tags { only_current_buffer = true }
 end)
 vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles)
+
+local easypick = require("easypick")
+
+local base_branch = "master"
+
+easypick.setup({
+	pickers = {
+		-- diff current branch with base_branch and show files that changed with respective diffs in preview
+		{
+			name = "changed_files",
+			command = "git diff --name-only $(git merge-base HEAD $(git parent))",
+			previewer = easypick.previewers.branch_diff({base_branch = base_branch})
+		},
+
+		-- list files that have conflicts with diffs in preview
+		{
+			name = "conflicts",
+			command = "git diff --name-only --diff-filter=U --relative",
+			previewer = easypick.previewers.file_diff()
+		},
+	}
+})
+vim.keymap.set('n', '<leader>fc', ":Easypick changed_files<CR>")
 
 -- Treesitter configuration
 -- Parsers must be installed manually via :TSInstall
@@ -478,11 +500,12 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 -- Enable the following language servers
-local servers = { 'tsserver', 'cssls', 'eslint', 'html', 'ruff_lsp' }
+local servers = { 'pyright', 'tsserver', 'cssls', 'eslint', 'html', 'ruff_lsp' }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
     capabilities = capabilities,
+    autostart = false,
   }
 end
 
@@ -490,6 +513,7 @@ lspconfig['gopls'].setup {
   cmd = { 'gopls' },
   on_attach = on_attach,
   capabilities = capabilities,
+  autostart = false,
   settings = {
     gopls = {
       experimentalPostfixCompletions = true,
@@ -505,12 +529,6 @@ lspconfig['gopls'].setup {
   }
 }
 
-lspconfig['pyright'].setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  autostart = false,
-}
-
 -- Example custom server
 -- Make runtime files discoverable to the server
 local runtime_path = vim.split(package.path, ';')
@@ -520,6 +538,7 @@ table.insert(runtime_path, 'lua/?/init.lua')
 lspconfig.sumneko_lua.setup {
   on_attach = on_attach,
   capabilities = capabilities,
+  autostart = false,
   settings = {
     Lua = {
       runtime = {

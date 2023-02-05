@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/diffview.nvim",
     url = "https://github.com/sindrets/diffview.nvim"
   },
+  ["easypick.nvim"] = {
+    loaded = true,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/start/easypick.nvim",
+    url = "https://github.com/axkirillov/easypick.nvim"
+  },
   ["fm-nvim"] = {
     loaded = true,
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/fm-nvim",
