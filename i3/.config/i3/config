@@ -242,6 +242,9 @@ bindsym $mod+e layout toggle split
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
+# toggle sticky
+bindsym $mod+Shift+t sticky toggle
+
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
@@ -450,6 +453,7 @@ exec --no-startup-id xfce4-clipman
 for_window [class="Yad" instance="yad"] floating enable
 for_window [class="Galculator" instance="galculator"] floating enable
 for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
+for_window [class="vokoscreenNG" instance="vokoscreenNG"] floating enable
 
 # set floating (nontiling) for special apps
 for_window [class="Xsane" instance="xsane"] floating enable
