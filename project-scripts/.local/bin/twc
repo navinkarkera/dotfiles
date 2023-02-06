@@ -1,4 +1,4 @@
 #!/bin/bash
 
-[[ $(timew get dom.active) = "1" ]] && timew tag "$1" && timew stop
+[[ $(timew get dom.active) = "1" ]] && timew tag "${1:-$(cat ~/.timewarrior/data/tags.data | jq 'keys | sort[]' -r | fzf)}" && timew stop
 [[ "$2" != "stop" ]] && timew start
