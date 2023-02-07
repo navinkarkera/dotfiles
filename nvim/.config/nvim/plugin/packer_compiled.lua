@@ -184,11 +184,6 @@ _G.packer_plugins = {
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects",
     url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
   },
-  ["nvim-trevJ.lua"] = {
-    loaded = true,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/start/nvim-trevJ.lua",
-    url = "https://github.com/AckslD/nvim-trevJ.lua"
-  },
   ["nvim-ts-autotag"] = {
     loaded = true,
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
@@ -228,6 +223,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/trouble.nvim",
     url = "https://github.com/folke/trouble.nvim"
+  },
+  ["ts-node-action"] = {
+    loaded = true,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/start/ts-node-action",
+    url = "https://github.com/ckolkey/ts-node-action"
   },
   ["vim-sleuth"] = {
     loaded = true,

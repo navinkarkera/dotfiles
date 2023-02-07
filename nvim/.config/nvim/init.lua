@@ -69,7 +69,10 @@ require('packer').startup(function(use)
   }
   use "preservim/vimux"
   use "is0n/fm-nvim"
-  use "AckslD/nvim-trevJ.lua"
+  use({
+    'ckolkey/ts-node-action',
+     requires = { 'nvim-treesitter' },
+  })
   use "kylechui/nvim-surround"
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
   use 'kyazdani42/nvim-web-devicons'
@@ -500,12 +503,19 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 -- Enable the following language servers
-local servers = { 'pyright', 'tsserver', 'cssls', 'eslint', 'html', 'ruff_lsp' }
+local servers = {
+    {name = 'pyright', autostart = false},
+    {name = 'tsserver', autostart = false},
+    {name = 'cssls', autostart = false},
+    {name = 'eslint', autostart = true},
+    {name = 'html', autostart = false},
+    {name = 'ruff_lsp', autostart=true},
+}
 for _, lsp in ipairs(servers) do
-  lspconfig[lsp].setup {
+  lspconfig[lsp['name']].setup {
     on_attach = on_attach,
     capabilities = capabilities,
-    autostart = false,
+    autostart = lsp['autostart'],
   }
 end
 
@@ -793,7 +803,7 @@ local fmnvim = require("fm-nvim")
 fmnvim.setup({
   broot_conf = vim.fn.stdpath("config") .. "/broot.toml",
   mappings = {
-    vert_split = "<C-v>",
+    vert_split = "<C-v",
     horz_split = "<C-b>",
     tabedit    = "<C-t>",
     edit       = "<C-e>",
@@ -803,9 +813,9 @@ fmnvim.setup({
 vim.keymap.set('n', '<leader>pv', ":Broot -h %:h <CR>")
 vim.keymap.set('n', '<C-p>', ":Broot -h<CR>")
 
---nvim-trevJ
-require('trevj').setup({})
-vim.keymap.set('n', 'gS', require('trevj').format_at_cursor)
+-- ts-node-action
+require('ts-node-action').setup({})
+vim.keymap.set({ "n" }, "gS", require("ts-node-action").node_action, { desc = "Trigger Node Action" })
 
 -- nvim-surround
 require("nvim-surround").setup({})
