@@ -341,7 +341,25 @@ require('gitsigns').setup {
 
 -- Telescope
 local fzf_lua = require("fzf-lua")
-fzf_lua.setup("fzf-tmux")
+-- fzf_lua.setup("fzf-tmux")
+require("fzf-lua").setup({
+    fzf_bin = "fzf-tmux",
+    fzf_opts = {
+      ["--border"] = "sharp",
+      ["--no-separator"] = "",
+    },
+    fzf_colors = {
+      ["bg"] = { "bg", "Normal" },
+      ["fg"] = { "fg", "Normal" },
+      ["border"] = { "fg", "Normal" },
+    },
+    fzf_tmux_opts = { ["-p"] = "90%,90%" },
+    winopts = { preview = { default = "bat" } },
+    manpages = { previewer = "man_native" },
+    helptags = { previewer = "help_native" },
+    tags = { previewer = "bat_async" },
+    btags = { previewer = "bat_async" },
+})
 fzf_lua.register_ui_select()
 
 --Add leader shortcuts
