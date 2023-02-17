@@ -41,8 +41,10 @@ require('packer').startup(function(use)
   use 'wbthomason/packer.nvim' -- Package manager
   use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
   -- UI to select things (files, grep results, open buffers...)
-  use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
-  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  use { 'ibhagwan/fzf-lua',
+    -- optional for icon support
+    requires = { 'nvim-tree/nvim-web-devicons' }
+  }
   use 'ellisonleao/gruvbox.nvim' -- gruvbox theme
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline
   -- Add indentation guides even on blank lines
@@ -82,7 +84,6 @@ require('packer').startup(function(use)
     requires = "kyazdani42/nvim-web-devicons"
   }
   use {"pechorin/any-jump.vim"}
-  use {'axkirillov/easypick.nvim', requires = 'nvim-telescope/telescope.nvim'}
 end)
 
 --Set highlight on search
@@ -339,61 +340,50 @@ require('gitsigns').setup {
 }
 
 -- Telescope
-local telescope_actions = require("telescope.actions")
-local trouble = require("trouble.providers.telescope")
-require('telescope').setup {
-  defaults = {
-    mappings = {
-      i = {
-        ['<C-u>'] = false,
-        ['<C-d>'] = false,
-        ["<C-p>"] = require("telescope.actions.layout").toggle_preview,
-        ["<C-j>"] = telescope_actions.move_selection_next,
-        ["<C-k>"] = telescope_actions.move_selection_previous,
-        ["<c-t>"] = trouble.open_with_trouble,
-      },
-      n = { ["<c-t>"] = trouble.open_with_trouble },
-    },
-  },
-}
-
--- Enable telescope fzf native
-require('telescope').load_extension 'fzf'
+local fzf_lua = require("fzf-lua")
+fzf_lua.setup("fzf-tmux")
+fzf_lua.register_ui_select()
 
 --Add leader shortcuts
-vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers)
-vim.keymap.set('n', '<leader>ff', require('telescope.builtin').git_files)
-vim.keymap.set('n', '<leader>fb', require('telescope.builtin').current_buffer_fuzzy_find)
-vim.keymap.set('n', '<leader>fh', require('telescope.builtin').help_tags)
-vim.keymap.set('n', '<leader>fg', require('telescope.builtin').git_status)
-vim.keymap.set('n', '<leader>fw', require('telescope.builtin').live_grep)
-vim.keymap.set('n', '<leader>so', function()
-  require('telescope.builtin').tags { only_current_buffer = true }
-end)
-vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles)
+vim.keymap.set('n', '<leader><space>', fzf_lua.buffers)
+vim.keymap.set('n', '<leader>ff', fzf_lua.git_files)
+vim.keymap.set('n', '<leader>fb', fzf_lua.lgrep_curbuf)
+vim.keymap.set('n', '<leader>fh', fzf_lua.help_tags)
+vim.keymap.set('n', '<leader>fg', fzf_lua.git_status)
+vim.keymap.set('n', '<leader>fw', fzf_lua.live_grep_glob)
+vim.keymap.set('n', '<leader>fl', fzf_lua.resume)
+vim.keymap.set('n', '<leader>fq', fzf_lua.quickfix)
+vim.keymap.set('n', '<leader>so', fzf_lua.tags)
+vim.keymap.set('n', '<leader>?', fzf_lua.oldfiles)
 
-local easypick = require("easypick")
+vim.api.nvim_create_user_command(
+  'ListFilesFromBranch',
+  function(opts)
+    require 'fzf-lua'.files({
+      cmd = "git diff -r --name-only " .. opts.args,
+      prompt = opts.args .. "> ",
+      previewer = false,
+      preview = require'fzf-lua'.shell.raw_preview_action_cmd(function(items)
+        local file = require'fzf-lua'.path.entry_to_file(items[1])
+        return string.format("git diff %s HEAD -- %s | delta", opts.args, file.path)
+      end)
+    })
+  end,
+  {
+    nargs = 1,
+    force = true,
+    complete = function()
+      local branches = vim.fn.systemlist("git branch --all --sort=-committerdate")
+      if vim.v.shell_error == 0 then
+        return vim.tbl_map(function(x)
+          return x:match("[^%s%*]+"):gsub("^remotes/", "")
+        end, branches)
+      end
+    end,
+  })
 
 local base_branch = os.getenv("GIT_PARENT_BRANCH") or "master"
-
-easypick.setup({
-	pickers = {
-		-- diff current branch with base_branch and show files that changed with respective diffs in preview
-		{
-			name = "changed_files",
-			command = "git diff --name-only $(git merge-base HEAD $(git parent))",
-			previewer = easypick.previewers.branch_diff({base_branch = base_branch})
-		},
-
-		-- list files that have conflicts with diffs in preview
-		{
-			name = "conflicts",
-			command = "git diff --name-only --diff-filter=U --relative",
-			previewer = easypick.previewers.file_diff()
-		},
-	}
-})
-vim.keymap.set('n', '<leader>fc', ":Easypick changed_files<CR>")
+vim.keymap.set('n', '<leader>fc', ":ListFilesFromBranch " .. base_branch .. "<CR>")
 
 -- Treesitter configuration
 -- Parsers must be installed manually via :TSInstall
@@ -479,7 +469,11 @@ end
 local lspconfig = require 'lspconfig'
 local on_attach = function(_, bufnr)
   local opts = { buffer = bufnr }
-  vim.keymap.set('n', 'gD', function() require('telescope.builtin').lsp_definitions({ jump_type = "vsplit" }) end, opts)
+    vim.keymap.set('n', 'gD', function() fzf_lua.lsp_definitions({
+        sync = true,
+        jump_to_single_result = true,
+        jump_to_single_result_action = fzf_lua.actions.file_vsplit,
+    }) end, opts)
   vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
   vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
@@ -492,9 +486,9 @@ local on_attach = function(_, bufnr)
   vim.keymap.set('n', '<leader>D', vim.lsp.buf.type_definition, opts)
   vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
   vim.keymap.set('n', 'gr', "<cmd>TroubleToggle lsp_references<cr>", opts)
-  vim.keymap.set('n', 'gR', require('telescope.builtin').lsp_references, opts)
+  vim.keymap.set('n', 'gR', fzf_lua.lsp_references, opts)
   vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, opts)
-  vim.keymap.set('n', '<leader>so', require('telescope.builtin').lsp_document_symbols, opts)
+  vim.keymap.set('n', '<leader>so', fzf_lua.lsp_document_symbols, opts)
   vim.api.nvim_create_user_command("Format", vim.lsp.buf.format, {})
 end
 
@@ -537,40 +531,6 @@ lspconfig['gopls'].setup {
   init_options = {
     usePlaceholders = true,
   }
-}
-
--- Example custom server
--- Make runtime files discoverable to the server
-local runtime_path = vim.split(package.path, ';')
-table.insert(runtime_path, 'lua/?.lua')
-table.insert(runtime_path, 'lua/?/init.lua')
-
-lspconfig.sumneko_lua.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  autostart = false,
-  settings = {
-    Lua = {
-      runtime = {
-        -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
-        version = 'LuaJIT',
-        -- Setup your lua path
-        path = runtime_path,
-      },
-      diagnostics = {
-        -- Get the language server to recognize the `vim` global
-        globals = { 'vim' },
-      },
-      workspace = {
-        -- Make the server aware of Neovim runtime files
-        library = vim.api.nvim_get_runtime_file('', true),
-      },
-      -- Do not send telemetry data containing a randomized but unique identifier
-      telemetry = {
-        enable = false,
-      },
-    },
-  },
 }
 
 -- luasnip setup
@@ -810,8 +770,21 @@ fmnvim.setup({
     ESC        = "<ESC>"
   },
 })
-vim.keymap.set('n', '<leader>pv', ":Broot -h %:h <CR>")
-vim.keymap.set('n', '<C-p>', ":Broot -h<CR>")
+local function git_files_cwd_aware(opts)
+  opts = opts or {}
+  local fzf_lua = require('fzf-lua')
+  -- git_root() will warn us if we're not inside a git repo
+  -- so we don't have to add another warning here, if
+  -- you want to avoid the error message change it to:
+  -- local git_root = fzf_lua.path.git_root(opts, true)
+  local git_root = fzf_lua.path.git_root(opts)
+  if not git_root then return end
+  local relative = fzf_lua.path.relative(vim.loop.cwd(), git_root)
+  opts.fzf_opts = { ['--query'] = git_root ~= relative and relative or nil }
+  return fzf_lua.git_files(opts)
+end
+vim.keymap.set('n', '<leader>pv', function() git_files_cwd_aware({ cwd = "%:h" }) end)
+vim.keymap.set('n', '<C-p>', fzf_lua.files)
 
 -- ts-node-action
 require('ts-node-action').setup({})

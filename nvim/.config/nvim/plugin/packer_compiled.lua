@@ -109,11 +109,6 @@ _G.packer_plugins = {
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/diffview.nvim",
     url = "https://github.com/sindrets/diffview.nvim"
   },
-  ["easypick.nvim"] = {
-    loaded = true,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/start/easypick.nvim",
-    url = "https://github.com/axkirillov/easypick.nvim"
-  },
   ["fm-nvim"] = {
     loaded = true,
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/fm-nvim",
@@ -123,6 +118,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
+  },
+  ["fzf-lua"] = {
+    loaded = true,
+    path = "/home/navin/.local/share/nvim/site/pack/packer/start/fzf-lua",
+    url = "https://github.com/ibhagwan/fzf-lua"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
@@ -208,16 +208,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/refactoring.nvim",
     url = "https://github.com/ThePrimeagen/refactoring.nvim"
-  },
-  ["telescope-fzf-native.nvim"] = {
-    loaded = true,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
-    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
-  },
-  ["telescope.nvim"] = {
-    loaded = true,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/start/telescope.nvim",
-    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["trouble.nvim"] = {
     loaded = true,
