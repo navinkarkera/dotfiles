@@ -6,7 +6,7 @@
 	cm = commit -m
 	d = diff
 	dft = difftool
-	parent = "!git show-branch -a | grep '*' | grep -v `git rev-parse --abbrev-ref HEAD` | head -n1 | sed 's/.*\\[\\(.*\\)\\].*/\\1/' | sed 's/[\\^~].*//' #"
+	parent = "!echo ${GIT_PARENT_BRANCH:-master}"
 	dm = "!f() { [[ `git rev-parse --abbrev-ref HEAD` != \"master\" ]] && [[ `git rev-parse --abbrev-ref HEAD` != \"main\" ]] && git diff $(git parent)..HEAD; }; f"
 	dv = difftool -t vimdiff -y
 	gl = !git --no-pager config --global -l

@@ -8,6 +8,7 @@ before_start:
 env:
   PYTHON_ENV_PATH: /home/navin/work/python_shared_venvs/py38/
   NVIM_SERVER: /tmp/taxonomy_connector-nvim.pipe
+  GIT_PARENT_BRANCH: openedx-master
 
 windows:
   - name: code

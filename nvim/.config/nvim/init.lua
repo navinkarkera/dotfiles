@@ -374,7 +374,7 @@ vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles)
 
 local easypick = require("easypick")
 
-local base_branch = "master"
+local base_branch = os.getenv("GIT_PARENT_BRANCH") or "master"
 
 easypick.setup({
 	pickers = {
@@ -495,7 +495,7 @@ local on_attach = function(_, bufnr)
   vim.keymap.set('n', 'gR', require('telescope.builtin').lsp_references, opts)
   vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, opts)
   vim.keymap.set('n', '<leader>so', require('telescope.builtin').lsp_document_symbols, opts)
-  vim.api.nvim_create_user_command("Format", vim.lsp.buf.formatting, {})
+  vim.api.nvim_create_user_command("Format", vim.lsp.buf.format, {})
 end
 
 -- nvim-cmp supports additional completion capabilities
@@ -504,12 +504,12 @@ capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 -- Enable the following language servers
 local servers = {
-    {name = 'pyright', autostart = false},
-    {name = 'tsserver', autostart = false},
-    {name = 'cssls', autostart = false},
+    {name = 'pyright', autostart = true},
+    {name = 'tsserver', autostart = true},
+    {name = 'cssls', autostart = true},
     {name = 'eslint', autostart = true},
-    {name = 'html', autostart = false},
-    {name = 'ruff_lsp', autostart=true},
+    {name = 'html', autostart = true},
+    {name = 'ruff_lsp', autostart=false},
 }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp['name']].setup {
