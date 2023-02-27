@@ -1,0 +1,25 @@
+session: event_bus_redis
+
+root: ~/work/master-devstack/src/event-bus-redis/
+
+before_start:
+  - git config user.email 'navin@opencraft.com'
+
+env:
+  PYTHON_ENV_PATH: /home/navin/work/python_shared_venvs/py38/
+  NVIM_SERVER: /tmp/event_bus_redis-nvim.pipe
+  GIT_PARENT_BRANCH: upstream/main
+
+windows:
+  - name: code
+    layout: main-horizontal
+    commands:
+      - activate
+      - e
+    panes:
+      - type: vertical
+        commands:
+          - activate
+  - name: shell
+    commands:
+      - activate

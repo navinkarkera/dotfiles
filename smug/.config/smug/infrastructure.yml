@@ -1,0 +1,30 @@
+session: infrastructure
+
+root: ~/work/opencraft/infrastructure/
+
+before_start:
+  - git config user.email 'navin@opencraft.com'
+
+env:
+  PYTHON_ENV_PATH: /home/navin/work/python_shared_venvs/py310
+  GIT_PARENT_BRANCH: main
+
+windows:
+  - name: code
+    commands:
+      - activate
+      - e
+  - name: shell
+    layout: tiled
+    commands:
+      - activate
+      - cd environments/staging
+      - echo "STAGING ENV"
+      - vault login -method="github" -address="https://vault.staging.do.opencraft.com"
+    panes:
+      - type: horizontal
+        commands:
+          - activate
+          - cd environments/production
+          - echo "PRODUCTION ENV, PROCEED WITH CAUTION!!"
+          - vault login -method="github" -address="https://vault.opencraft.com"

@@ -84,6 +84,7 @@ require('packer').startup(function(use)
     requires = "kyazdani42/nvim-web-devicons"
   }
   use {"pechorin/any-jump.vim"}
+  use {"stevearc/oil.nvim"}
 end)
 
 --Set highlight on search
@@ -339,6 +340,10 @@ require('gitsigns').setup {
   end
 }
 
+-- oil.nvim
+require('oil').setup()
+vim.keymap.set('n', '<leader>to', require('oil').open)
+
 -- Telescope
 local fzf_lua = require("fzf-lua")
 -- fzf_lua.setup("fzf-tmux")
@@ -368,12 +373,13 @@ vim.keymap.set('n', '<leader>ff', fzf_lua.git_files)
 vim.keymap.set('n', '<leader>fb', fzf_lua.lgrep_curbuf)
 vim.keymap.set('n', '<leader>fh', fzf_lua.help_tags)
 vim.keymap.set('n', '<leader>fg', fzf_lua.git_status)
-vim.keymap.set('n', '<leader>fw', fzf_lua.live_grep_glob)
-vim.keymap.set('v', '<leader>fw', fzf_lua.grep_visual)
 vim.keymap.set('n', '<leader>fl', fzf_lua.resume)
 vim.keymap.set('n', '<leader>fq', fzf_lua.quickfix)
 vim.keymap.set('n', '<leader>so', fzf_lua.tags)
 vim.keymap.set('n', '<leader>?', fzf_lua.oldfiles)
+vim.keymap.set('n', '<C-f>', fzf_lua.live_grep_glob)
+vim.keymap.set("v", "<C-f>", fzf_lua.grep_visual)
+vim.keymap.set("n", "<leader>pw", fzf_lua.grep_cword)
 
 vim.api.nvim_create_user_command(
   'ListFilesFromBranch',
@@ -851,14 +857,14 @@ map("v", "<", "<gv")
 map("v", ">", ">gv")
 map("n", "s", "ciw")
 map("n", "<m-p>", ':e <C-R>=expand("%:.:h")<CR>/')
-map("n", "<C-f>", ':Grep ')
-map("v", "<C-f>", [["hy:silent grep "<C-r>h" <C-R>=expand("%:.:h")<CR>/ | TroubleToggle quickfix<S-left><S-left><S-left><S-left><left><left>]])
-map("n", "<leader>pw", ':silent grep "<C-R>=expand("<cword>")<CR>" | TroubleToggle quickfix<S-left><S-left><S-left><left><left>')
-map(
-    "n",
-    "<leader>ps",
-    ':silent grep "<C-R>=expand("<cword>")<CR>" --type <C-R>=expand("%:.:e")<CR> | TroubleToggle quickfix<S-left><S-left><S-left><S-left><S-left><left><left>'
-)
+-- map("n", "<C-f>", ':Grep ')
+-- map("v", "<C-f>", [["hy:silent grep "<C-r>h" <C-R>=expand("%:.:h")<CR>/ | TroubleToggle quickfix<S-left><S-left><S-left><S-left><left><left>]])
+-- map("n", "<leader>pw", ':silent grep "<C-R>=expand("<cword>")<CR>" | TroubleToggle quickfix<S-left><S-left><S-left><left><left>')
+-- map(
+--     "n",
+--     "<leader>ps",
+--     ':silent grep "<C-R>=expand("<cword>")<CR>" --type <C-R>=expand("%:.:e")<CR> | TroubleToggle quickfix<S-left><S-left><S-left><S-left><S-left><left><left>'
+-- )
 map("v", "<C-r>", '"hy:%s/<C-r>h//gc<left><left><left>')
 map("v", "cy", '"+y')
 map("n", "cp", '"+p')
