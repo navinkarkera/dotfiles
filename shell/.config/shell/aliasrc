@@ -66,7 +66,8 @@ alias \
 	nq="pueue" \
 	nql="pueue log" \
 	nqf="pueue follow" \
-	nqc="pueue clean"
+	nqc="pueue clean" \
+	pf="pueue-fuzzy"
 
 nqa() {
 	pueue add "$@"

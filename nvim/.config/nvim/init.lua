@@ -370,7 +370,7 @@ fzf_lua.register_ui_select()
 --Add leader shortcuts
 vim.keymap.set('n', '<leader><space>', fzf_lua.buffers)
 vim.keymap.set('n', '<leader>ff', fzf_lua.git_files)
-vim.keymap.set('n', '<leader>fb', fzf_lua.lgrep_curbuf)
+vim.keymap.set('n', '<leader>fb', fzf_lua.git_bcommits)
 vim.keymap.set('n', '<leader>fh', fzf_lua.help_tags)
 vim.keymap.set('n', '<leader>fg', fzf_lua.git_status)
 vim.keymap.set('n', '<leader>fl', fzf_lua.resume)
