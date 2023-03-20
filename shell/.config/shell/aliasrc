@@ -70,7 +70,7 @@ alias \
 	pf="pueue-fuzzy"
 
 nqa() {
-	pueue add "$@"
+	pueue add --group ${PUEUE_GROUP:-default} -- "$@"
 }
 
 alias la='ls -a'

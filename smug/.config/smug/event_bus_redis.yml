@@ -9,6 +9,7 @@ env:
   PYTHON_ENV_PATH: /home/navin/work/python_shared_venvs/py38/
   NVIM_SERVER: /tmp/event_bus_redis-nvim.pipe
   GIT_PARENT_BRANCH: upstream/main
+  PUEUE_GROUP: event_bus_redis
 
 windows:
   - name: code

@@ -7,6 +7,7 @@ before_start:
 
 env:
   PYTHON_ENV_PATH: /home/navin/work/python_shared_venvs/py38
+  PUEUE_GROUP: master-devstack
 
 windows:
   - name: edx-platform

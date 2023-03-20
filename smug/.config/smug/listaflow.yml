@@ -8,6 +8,7 @@ before_start:
 env:
   PYTHON_ENV_PATH: /home/navin/work/python_shared_venvs/py310
   NVIM_SERVER: /tmp/listaflow-nvim.pipe
+  PUEUE_GROUP: listaflow
 
 windows:
   - name: code

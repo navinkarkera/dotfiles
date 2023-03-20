@@ -8,6 +8,7 @@ before_start:
 env:
   OPENEDX_RELEASE: nutmeg.master
   PYTHON_ENV_PATH: /home/navin/work/python_shared_venvs/py38
+  PUEUE_GROUP: nutmeg-devstack
 
 windows:
   - name: edx-platform

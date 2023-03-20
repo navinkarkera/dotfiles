@@ -1,0 +1,8 @@
+**BB. Mid sprint update**
+
+Sprint is going .
+
+{{ range .issues }}- [{{ .key }}](https://tasks.opencraft.com/browse/{{ .key }}): {{ .fields.summary }} | *{{ .fields.status.name }}* |
+{{ end }}
+
+Also have few reviews. Not expecting any spillovers.
