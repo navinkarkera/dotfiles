@@ -58,6 +58,7 @@ require('packer').startup(function(use)
   use 'neovim/nvim-lspconfig' -- Collection of configurations for built-in LSP client
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
   use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-nvim-lsp-signature-help'
   use 'saadparwaiz1/cmp_luasnip'
   use "rafamadriz/friendly-snippets"
   use "honza/vim-snippets"
@@ -654,6 +655,7 @@ cmp.setup {
   sources = {
     { name = 'luasnip' },
     { name = 'nvim_lsp' },
+    { name = 'nvim_lsp_signature_help' }
   },
   formatting = {
     format = function(entry, vim_item)

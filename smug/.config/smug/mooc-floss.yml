@@ -1,6 +1,6 @@
 session: mooc-floss
 
-root: ~/work/mooc-floss/
+root: ~/work/opencraft/mooc-floss/
 
 before_start:
   - git config user.email 'navin@opencraft.com'
