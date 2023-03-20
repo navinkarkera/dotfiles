@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 set -f
-PUEUE_TASKS="pueue status --group=${PUEUE_GROUP:-'default'} --json | jq -c '.tasks' | jq -r '.[] | \"\(.id | tostring | (\" \" * (2 - length)) + .) | \(.group) | \(.path[-15:]) | \(.status) | \(.command[-15:]) | \(.start[:19])\"'"
+PUEUE_TASKS="pueue status --group=${PUEUE_GROUP:-'default'} --json | jq -c '.tasks' | jq -r '.[] | \"\(.id | tostring | (\" \" * (2 - length)) + .) | \(.group) | \(.path[-25:]) | \(.status) | \(.command[-55:])\"'"
 header="p:pause | s:start | r:restart | q:kill | l:log | f:reload | e:edit log in nvim | t: tail log"
 
 bind="\
