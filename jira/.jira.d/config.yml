@@ -28,6 +28,10 @@ custom-commands:
           # otherwise list issues for all project
           {{jira}} list --template table --query "sprint in openSprints() and assignee=currentuser() and type != epic and resolution = unresolved ORDER BY rank asc, created"
       fi
+  - name: text-update
+    help: display issues for active sprint
+    script: |-
+      {{jira}} list --template markdown_list --query "sprint in openSprints() and assignee=currentuser() and type != epic and status != Done and status != Recurring ORDER BY rank asc, created"
   - name: mine
     help: display issues assigned to me
     script: |-
