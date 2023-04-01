@@ -712,6 +712,12 @@ map("n", "<leader>me4", function() require('harpoon.term').sendCommand(4, 4) end
 map("n", "<leader>me5", function() require('harpoon.term').sendCommand(5, 5) end)
 map("n", "<leader>me6", function() require('harpoon.term').sendCommand(6, 6) end)
 
+map("v", "<leader>me1", [["vy<cmd>lua require('harpoon.term').sendCommand(1, vim.fn.getreg("v"))<CR> ]])
+map("v", "<leader>me2", [["vy<cmd>lua require('harpoon.term').sendCommand(2, vim.fn.getreg("v"))<CR> ]])
+map("v", "<leader>me3", [["vy<cmd>lua require('harpoon.term').sendCommand(3, vim.fn.getreg("v"))<CR> ]])
+map("v", "<leader>me4", [["vy<cmd>lua require('harpoon.term').sendCommand(4, vim.fn.getreg("v"))<CR> ]])
+map("v", "<leader>me5", [["vy<cmd>lua require('harpoon.term').sendCommand(5, vim.fn.getreg("v"))<CR> ]])
+map("v", "<leader>me6", [["vy<cmd>lua require('harpoon.term').sendCommand(6, vim.fn.getreg("v"))<CR> ]])
 
 -- Navigator
 require("Navigator").setup({})
