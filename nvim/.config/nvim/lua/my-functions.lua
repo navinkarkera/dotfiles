@@ -49,8 +49,16 @@ function M.load_commands()
 	local filename = string.gsub(pwd, "/", "_")
 	vim.cmd(":e /tmp/" .. filename)
 	vim.cmd([[
-    :set filetype=bash
-    ]])
+		:set filetype=bash
+		]])
+end
+
+function M.count_or_one()
+  if vim.v.count == nil or vim.v.count == 0 then
+    return 1
+  else
+    return vim.v.count
+  end
 end
 
 return M

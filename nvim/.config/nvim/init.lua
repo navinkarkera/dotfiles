@@ -695,29 +695,11 @@ map("n", "<leader>4", function() require('harpoon.ui').nav_file(4) end)
 map("n", "<leader>5", function() require('harpoon.ui').nav_file(5) end)
 map("n", "<leader>6", function() require('harpoon.ui').nav_file(6) end)
 
--- cmd maps
 map("n", "<leader>mc", require('harpoon.cmd-ui').toggle_quick_menu)
-
-map("n", "<leader>m1", function() require('harpoon.term').gotoTerminal(1) end)
-map("n", "<leader>m2", function() require('harpoon.term').gotoTerminal(2) end)
-map("n", "<leader>m3", function() require('harpoon.term').gotoTerminal(3) end)
-map("n", "<leader>m4", function() require('harpoon.term').gotoTerminal(4) end)
-map("n", "<leader>m5", function() require('harpoon.term').gotoTerminal(5) end)
-map("n", "<leader>m6", function() require('harpoon.term').gotoTerminal(6) end)
-
-map("n", "<leader>me1", function() require('harpoon.term').sendCommand(1, 1) end)
-map("n", "<leader>me2", function() require('harpoon.term').sendCommand(2, 2) end)
-map("n", "<leader>me3", function() require('harpoon.term').sendCommand(3, 3) end)
-map("n", "<leader>me4", function() require('harpoon.term').sendCommand(4, 4) end)
-map("n", "<leader>me5", function() require('harpoon.term').sendCommand(5, 5) end)
-map("n", "<leader>me6", function() require('harpoon.term').sendCommand(6, 6) end)
-
-map("v", "<leader>me1", [["vy<cmd>lua require('harpoon.term').sendCommand(1, vim.fn.getreg("v"))<CR> ]])
-map("v", "<leader>me2", [["vy<cmd>lua require('harpoon.term').sendCommand(2, vim.fn.getreg("v"))<CR> ]])
-map("v", "<leader>me3", [["vy<cmd>lua require('harpoon.term').sendCommand(3, vim.fn.getreg("v"))<CR> ]])
-map("v", "<leader>me4", [["vy<cmd>lua require('harpoon.term').sendCommand(4, vim.fn.getreg("v"))<CR> ]])
-map("v", "<leader>me5", [["vy<cmd>lua require('harpoon.term').sendCommand(5, vim.fn.getreg("v"))<CR> ]])
-map("v", "<leader>me6", [["vy<cmd>lua require('harpoon.term').sendCommand(6, vim.fn.getreg("v"))<CR> ]])
+map("n", ",m", [[<cmd>lua require('harpoon.term').gotoTerminal(require('my-functions').count_or_one())<CR>]])
+map("n", ",e", [[<cmd>lua require('harpoon.term').sendCommand(require('my-functions').count_or_one(), require('my-functions').count_or_one())<CR>]])
+map("v", ",e", [["vy<cmd>lua require('harpoon.term').sendCommand(require('my-functions').count_or_one(), vim.fn.getreg("v"))<CR> ]])
+map("n", ",l", [[<cmd>lua require('harpoon.term').sendCommand(require('my-functions').count_or_one(), '!!')<CR>]])
 
 -- Navigator
 require("Navigator").setup({})

@@ -13,6 +13,6 @@ msg="[$result]: '$command'; Took: $took seconds"
 notify-send -a "Task queue: $group" "$msg" "$(echo -e "$output")"
 priority="default"
 tag="information_source"
-topic=${NTFY_TOPIC:-"nrk_mangalpete_laptop"}
+topic="nrk_mangalpete_$(hostname)"
 [[ $result != "Success" ]]  && priority="high" && tag="warning";
-[[ $took > 5 ]] && curl -H "Title: [$took seconds]$command" -H "Priority: $priority" -H "Tags: $tag" -d "$(echo -e "$output")" ntfy.sh/$topic
+(( $took > 5 )) && curl -H "Title: [$took seconds]$command" -H "Priority: $priority" -H "Tags: $tag" -d "$(echo -e "$output")" ntfy.sh/$topic

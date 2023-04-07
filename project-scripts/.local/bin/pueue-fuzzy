@@ -16,6 +16,6 @@ ctrl-f:reload^$PUEUE_TASKS^\
 "
 
 echo $PUEUE_TASKS | sh | fzf --header "${header}" -m --query "${PUEUE_GROUP:-default}" \
---preview="echo {} | cut -d'|' -f1 | xargs pueue log -l 100 | bat -l log --style=rule,numbers --color=always -r ':200'" \
+--preview="echo {} | cut -d'|' -f1 | xargs pueue log -l 57 | bat -l log --style=rule,numbers --color=always -r ':200'" \
 --bind="$bind"
 set +f

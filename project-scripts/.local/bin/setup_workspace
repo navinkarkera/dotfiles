@@ -1,0 +1,12 @@
+#!/bin/bash
+
+BROWSER=${BROWSER:-"firefox"}
+EDITOR=${EDITOR:-"nvim"}
+
+xdotool --delay 100ms key super+1 ctrl+F2 super+2
+
+$BROWSER "mail.google.com" \
+    "chat.opencraft.com" \
+    "tasks.opencraft.com"
+
+tmux -u new-session -A -s main
