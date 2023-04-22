@@ -229,11 +229,6 @@ _G.packer_plugins = {
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/ts-node-action",
     url = "https://github.com/ckolkey/ts-node-action"
   },
-  ["vim-sleuth"] = {
-    loaded = true,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/start/vim-sleuth",
-    url = "https://github.com/tpope/vim-sleuth"
-  },
   ["vim-snippets"] = {
     loaded = true,
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/vim-snippets",

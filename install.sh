@@ -3,7 +3,7 @@
 if [[ -z $HOME/dotfiles ]]; then
 	cd $HOME && git clone git@gitlab.com:navinkarkera/dotfiles.git
 fi
-sudo pacman -Syy --needed neovim tmux alacritty stow paru zsh bat fd ripgrep exa fzf broot zoxide xsel btop ttf-firacode-nerd lazygit git-delta glow nitrogen pass xdotool timew pueue bc
+sudo pacman -Syy --needed neovim tmux alacritty stow paru zsh bat fd ripgrep exa fzf broot zoxide xsel btop ttf-firacode-nerd lazygit git-delta glow nitrogen pass xdotool timew pueue bc ttf-ibmplex-mono-nerd
 paru -S --needed smug go-jira-bin nvm nerd-fonts-anonymous-pro tmux-plugin-manager-git git-extras
 
 cd $HOME/dotfiles

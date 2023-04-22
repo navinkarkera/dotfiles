@@ -79,7 +79,6 @@ require('packer').startup(function(use)
   use "kylechui/nvim-surround"
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
   use 'kyazdani42/nvim-web-devicons'
-  use 'tpope/vim-sleuth' -- Detect tabstop and shiftwidth automatically
   use {
     "folke/trouble.nvim",
     requires = "kyazdani42/nvim-web-devicons"
@@ -518,6 +517,18 @@ local on_attach = function(_, bufnr)
   vim.api.nvim_create_user_command("Format", vim.lsp.buf.format, {})
 end
 
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
+  vim.lsp.handlers.hover, {
+    -- Use a sharp border with `FloatBorder` highlights
+    border = "single",
+  }
+)
+vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(
+  vim.lsp.handlers.signature_help, {
+    -- Use a sharp border with `FloatBorder` highlights
+    border = "single"
+  }
+)
 -- nvim-cmp supports additional completion capabilities
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
