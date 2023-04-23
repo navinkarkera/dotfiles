@@ -85,6 +85,7 @@ require('packer').startup(function(use)
   }
   use {"pechorin/any-jump.vim"}
   use {"stevearc/oil.nvim"}
+  use {"akinsho/toggleterm.nvim"}
 end)
 
 --Set highlight on search
@@ -712,6 +713,12 @@ map("n", ",e", [[<cmd>lua require('harpoon.term').sendCommand(require('my-functi
 map("v", ",e", [["vy<cmd>lua require('harpoon.term').sendCommand(require('my-functions').count_or_one(), vim.fn.getreg("v"))<CR> ]])
 map("n", ",l", [[<cmd>lua require('harpoon.term').sendCommand(require('my-functions').count_or_one(), '!!')<CR>]])
 
+require("toggleterm").setup{
+  open_mapping = [[<C-\>]]
+}
+map("n", "<M-CR>", ":ToggleTermSendCurrentLine<CR>")
+map("v", "<M-CR>", ":ToggleTermSendVisualSelection<CR>")
+
 -- Navigator
 require("Navigator").setup({})
 map("n", "<m-h>", require("Navigator").left)
@@ -837,7 +844,6 @@ map("n", "<leader>vrn", [[:call VimuxPromptCommand("mv " . bufname("%") . " " . 
 
 map("v", "<leader>vs", [["vy<cmd>lua require('my-functions').VimuxSlime()<CR>]])
 map("n", "<leader>vs", [[^v$<leader>vs<CR>]], { remap = true })
-map("n", "<M-CR>", ":call VimuxSendKeys('Enter')<CR>")
 
 vim.api.nvim_create_user_command("Grep", "silent grep! <q-args> | TroubleToggle quickfix", { nargs = 1})
 vim.api.nvim_create_user_command(
