@@ -1,12 +1,13 @@
 session: tutor
 
-root: ~/work/tutor/
+root: ~/work/opencraft/tutor/
 
 before_start:
   - git config user.email 'navin@opencraft.com'
 
 env:
-  PYTHON_ENV_PATH: /home/navin/work/python_shared_venvs/py38
+  PYTHON_ENV_PATH: /home/navin/work/python_shared_venvs/tutor3.8
+  PUEUE_GROUP: tutor
 
 windows:
   - name: code
