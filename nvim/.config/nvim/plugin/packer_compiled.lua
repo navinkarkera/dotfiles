@@ -219,11 +219,6 @@ _G.packer_plugins = {
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/refactoring.nvim",
     url = "https://github.com/ThePrimeagen/refactoring.nvim"
   },
-  ["toggleterm.nvim"] = {
-    loaded = true,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
-    url = "https://github.com/akinsho/toggleterm.nvim"
-  },
   ["trouble.nvim"] = {
     loaded = true,
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/trouble.nvim",
@@ -238,11 +233,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/navin/.local/share/nvim/site/pack/packer/start/vim-snippets",
     url = "https://github.com/honza/vim-snippets"
-  },
-  vimux = {
-    loaded = true,
-    path = "/home/navin/.local/share/nvim/site/pack/packer/start/vimux",
-    url = "https://github.com/preservim/vimux"
   }
 }
 

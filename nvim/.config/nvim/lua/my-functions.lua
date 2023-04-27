@@ -2,31 +2,37 @@ local M = {}
 local luasnip = require("luasnip")
 local neogen = require("neogen")
 
+function M.add_to_hist_and_run(cmd)
+	local vim_cmd = "Run " .. cmd
+	vim.cmd([[:call histadd("cmd", "]] .. vim_cmd .. [[")]])
+	vim.cmd(":" .. vim_cmd)
+end
+
 function M.getPythonModulePath(filePath)
-  local modulePath = string.gsub(filePath, "/", ".")
-  modulePath = string.gsub(modulePath, ".py$", "")
-  return modulePath
+	local modulePath = string.gsub(filePath, "/", ".")
+	modulePath = string.gsub(modulePath, ".py$", "")
+	return modulePath
 end
 
 function M.executePythonModule(filePath)
-  local modulePath = M.getPythonModulePath(filePath)
-  vim.call("VimuxRunCommand", "activate; python -m " .. modulePath)
+	local modulePath = M.getPythonModulePath(filePath)
+	M.add_to_hist_and_run("python -m " .. modulePath)
 end
 
 function M.executePythonModuleInteractive(filePath)
-  local modulePath = M.getPythonModulePath(filePath)
-  vim.call("VimuxRunCommand", "activate; python -im " .. modulePath)
-end
-
-function M.importPythonModule(filePath)
 	local modulePath = M.getPythonModulePath(filePath)
-	vim.call("VimuxRunCommand", "from " .. modulePath .. " import *")
+	M.add_to_hist_and_run("python -im " .. modulePath)
 end
 
-function M.VimuxSlime()
-	local code = vim.fn.getreg("v")
-	vim.call("VimuxRunCommand", code, 0)
-end
+-- function M.importPythonModule(filePath)
+-- 	local modulePath = M.getPythonModulePath(filePath)
+-- 	vim.call("VimuxRunCommand", "from " .. modulePath .. " import *")
+-- end
+
+-- function M.VimuxSlime()
+-- 	local code = vim.fn.getreg("v")
+-- 	vim.call("VimuxRunCommand", code, 0)
+-- end
 
 function M.expand_or_jump()
 	if luasnip.expand_or_jumpable() then
@@ -54,11 +60,18 @@ function M.load_commands()
 end
 
 function M.count_or_one()
-  if vim.v.count == nil or vim.v.count == 0 then
-    return 1
-  else
-    return vim.v.count
-  end
+	if vim.v.count == nil or vim.v.count == 0 then
+		return 1
+	else
+		return vim.v.count
+	end
+end
+
+function M.execute_from_harpoon()
+	local cmd = require("harpoon").get_term_config().cmds[M.count_or_one()]
+	if cmd then
+		M.add_to_hist_and_run(cmd)
+	end
 end
 
 return M

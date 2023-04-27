@@ -70,7 +70,6 @@ require('packer').startup(function(use)
   use { "ThePrimeagen/refactoring.nvim",
     requires = { "nvim-lua/plenary.nvim", "nvim-treesitter/nvim-treesitter" },
   }
-  use "preservim/vimux"
   use "is0n/fm-nvim"
   use({
     'ckolkey/ts-node-action',
@@ -85,7 +84,6 @@ require('packer').startup(function(use)
   }
   use {"pechorin/any-jump.vim"}
   use {"stevearc/oil.nvim"}
-  use {"akinsho/toggleterm.nvim"}
 end)
 
 --Set highlight on search
@@ -708,16 +706,11 @@ map("n", "<leader>5", function() require('harpoon.ui').nav_file(5) end)
 map("n", "<leader>6", function() require('harpoon.ui').nav_file(6) end)
 
 map("n", "<leader>mc", require('harpoon.cmd-ui').toggle_quick_menu)
-map("n", ",m", [[<cmd>lua require('harpoon.term').gotoTerminal(require('my-functions').count_or_one())<CR>]])
-map("n", ",e", [[<cmd>lua require('harpoon.term').sendCommand(require('my-functions').count_or_one(), require('my-functions').count_or_one())<CR>]])
-map("v", ",e", [["vy<cmd>lua require('harpoon.term').sendCommand(require('my-functions').count_or_one(), vim.fn.getreg("v"))<CR> ]])
+map("n", [[<M-\>]], [[<cmd>botright split | lua require('harpoon.term').gotoTerminal(require('my-functions').count_or_one())<CR>]])
+map("n", [[<M-e>]], [[<cmd>lua require('harpoon.term').sendCommand(require('my-functions').count_or_one(), require('my-functions').count_or_one())<CR>]])
+map("v", [[<M-e>]], [["vy<cmd>lua require('harpoon.term').sendCommand(require('my-functions').count_or_one(), vim.fn.getreg("v"))<CR> ]])
 map("n", ",l", [[<cmd>lua require('harpoon.term').sendCommand(require('my-functions').count_or_one(), '!!')<CR>]])
-
-require("toggleterm").setup{
-  open_mapping = [[<C-\>]]
-}
-map("n", "<M-CR>", ":ToggleTermSendCurrentLine<CR>")
-map("v", "<M-CR>", ":ToggleTermSendVisualSelection<CR>")
+map("n", "<M-space>", require('my-functions').execute_from_harpoon)
 
 -- Navigator
 require("Navigator").setup({})
@@ -826,24 +819,9 @@ vim.keymap.set({ "n" }, "gS", require("ts-node-action").node_action, { desc = "T
 -- nvim-surround
 require("nvim-surround").setup({})
 
--- vimux conf
-vim.g.VimuxExpandCommand = true
-map("n", "<leader>vv", [[:call VimuxRunCommand("activate", 1)<CR>]])
-map("n", "<leader>vp", ":VimuxPromptCommand<CR>")
-map("n", "<leader>vm", [[:VimuxPromptCommand("make ")<CR>]])
-map("n", "<leader>vg", [[:VimuxPromptCommand("git ls-files -zm '*.<C-R>=expand("%:.:e")<CR>' | xargs --null -t ")<CR>]])
-map("n", "<leader>vl", ":VimuxRunLastCommand<CR>")
-map("n", "<leader>vi", ":VimuxInspectRunner<CR>")
-map("n", "<leader>vq", ":VimuxCloseRunner<CR>")
-map("n", "<leader>vx", ":VimuxInterruptRunner<CR>")
-map("n", "<leader>vz", ":VimuxZoomRunner<CR>")
-map("n", "<leader>v<C-l>", ":VimuxClearTerminalScreen<CR>")
-map("n", "<leader>vrm", [[:call VimuxPromptCommand("rm " . bufname("%"))<CR>]])
-map("n", "<leader>vcp", [[:call VimuxPromptCommand("cp " . bufname("%") . " ")<CR>]])
-map("n", "<leader>vrn", [[:call VimuxPromptCommand("mv " . bufname("%") . " " . bufname("%"))<CR>]])
-
-map("v", "<leader>vs", [["vy<cmd>lua require('my-functions').VimuxSlime()<CR>]])
-map("n", "<leader>vs", [[^v$<leader>vs<CR>]], { remap = true })
+map("n", "<leader>vrm", [[:Run rm <C-R>=bufname("%")<CR>]])
+map("n", "<leader>vcp", [[:Run cp <C-R>=bufname("%"))<CR>]])
+map("n", "<leader>vrn", [[:Run mv <C-R>=bufname("%")<CR> <C-R>=bufname("%")<CR>]])
 
 vim.api.nvim_create_user_command("Grep", "silent grep! <q-args> | TroubleToggle quickfix", { nargs = 1})
 vim.api.nvim_create_user_command(
@@ -851,13 +829,14 @@ vim.api.nvim_create_user_command(
   [[:silent !git browse "" %:~:. <line1> <line2>]],
   { nargs = 0, range = true }
 )
+vim.api.nvim_create_user_command("Run", [[split | terminal <args>]], { nargs = 1, complete = "shellcmd" })
+map("n", "<M-CR>", ":Run ")
+map("v", "<M-CR>", [["vy:Run <C-R>v]])
+map("n", "<F2>", ":Run <Up><CR>G<C-w><C-p>")
 -- custom keymaps
 map("n", "<F4>", ":bd<CR>")
--- map('n', '<C-q>', ":TroubleToggle<CR>")
 map('n', '<C-s>', ":w<CR>")
 map("i", "<C-s>", "<C-c>:w<CR>")
--- map("n", "<C-j>", ":cn<CR>")
--- map("n", "<C-k>", ":cp<CR>")
 map("v", "J", ":m '>+1<CR>gv=gv")
 map("v", "K", ":m '<-2<CR>gv=gv")
 map("v", "<", "<gv")
@@ -865,18 +844,9 @@ map("v", ">", ">gv")
 map("n", "s", "ciw")
 map("n", "<m-p>", ':e <C-R>=expand("%:.:h")<CR>/')
 map("n", "]p", [[/\(\/[^\\]\+\)\+\(\.\w\+\)\?<CR>]])
--- map("n", "<C-f>", ':Grep ')
--- map("v", "<C-f>", [["hy:silent grep "<C-r>h" <C-R>=expand("%:.:h")<CR>/ | TroubleToggle quickfix<S-left><S-left><S-left><S-left><left><left>]])
--- map("n", "<leader>pw", ':silent grep "<C-R>=expand("<cword>")<CR>" | TroubleToggle quickfix<S-left><S-left><S-left><left><left>')
--- map(
---     "n",
---     "<leader>ps",
---     ':silent grep "<C-R>=expand("<cword>")<CR>" --type <C-R>=expand("%:.:e")<CR> | TroubleToggle quickfix<S-left><S-left><S-left><S-left><S-left><left><left>'
--- )
 map("v", "<C-r>", '"hy:%s/<C-r>h//gc<left><left><left>')
 map("v", "cy", '"+y')
 map("n", "cp", '"+p')
-map("n", "<leader>k", ':silent !zeal "<C-R>=expand("<cword>")<CR>"<CR>')
 map("n", "<leader>cp", ':silent !echo %:~:. | xsel --clipboard<CR>')
 map("v", "<leader>prs", [[:w !curl --data-binary @- https://paste.rs/ | xsel --clipboard<CR>]])
 
