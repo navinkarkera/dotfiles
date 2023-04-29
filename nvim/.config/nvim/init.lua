@@ -343,29 +343,35 @@ require('gitsigns').setup {
 require('oil').setup()
 vim.keymap.set('n', '<leader>to', require('oil').open)
 
--- Telescope
 local fzf_lua = require("fzf-lua")
--- fzf_lua.setup("fzf-tmux")
-require("fzf-lua").setup({
-    fzf_bin = "fzf-tmux",
-    fzf_opts = {
-      ["--border"] = "sharp",
-      ["--no-separator"] = "",
+fzf_lua.setup({
+    'fzf-native',
+    winopts = {
+        preview = { default = "bat" },
+        height = 0.90,            -- window height
+        width = 0.90,
     },
-    fzf_colors = {
-      ["bg"] = { "bg", "Normal" },
-      ["fg"] = { "fg", "Normal" },
-      ["border"] = { "fg", "Normal" },
-    },
-    fzf_tmux_opts = { ["-p"] = "90%,90%" },
-    winopts = { preview = { default = "bat" } },
-    manpages = { previewer = "man_native" },
-    helptags = { previewer = "help_native" },
-    tags = { previewer = "bat_async" },
-    btags = { previewer = "bat_async" },
 })
+-- fzf_lua.setup({
+--     fzf_bin = "fzf-native",
+--     fzf_opts = {
+--       ["--no-separator"] = "",
+--     },
+--     fzf_colors = {
+--       ["bg"] = { "bg", "Normal" },
+--       ["fg"] = { "fg", "Normal" },
+--       ["border"] = { "fg", "Normal" },
+--     },
+--     fzf_tmux_opts = { ["-p"] = "90%,90%" },
+--     winopts = { preview = { default = "bat" } },
+--     manpages = { previewer = "man_native" },
+--     helptags = { previewer = "help_native" },
+--     tags = { previewer = "bat_async" },
+--     btags = { previewer = "bat_async" },
+-- })
 fzf_lua.register_ui_select()
 
+local my_functions = require('my-functions')
 --Add leader shortcuts
 vim.keymap.set('n', '<leader><space>', fzf_lua.buffers)
 vim.keymap.set('n', '<leader>ff', fzf_lua.git_files)
@@ -379,6 +385,7 @@ vim.keymap.set('n', '<leader>?', fzf_lua.oldfiles)
 vim.keymap.set('n', '<C-f>', fzf_lua.live_grep_glob)
 vim.keymap.set("v", "<C-f>", fzf_lua.grep_visual)
 vim.keymap.set("n", "<leader>pw", fzf_lua.grep_cword)
+vim.keymap.set("n", "<leader>tt", my_functions.get_terminals)
 
 vim.api.nvim_create_user_command(
   'ListFilesFromBranch',
@@ -704,13 +711,12 @@ map("n", "<leader>3", function() require('harpoon.ui').nav_file(3) end)
 map("n", "<leader>4", function() require('harpoon.ui').nav_file(4) end)
 map("n", "<leader>5", function() require('harpoon.ui').nav_file(5) end)
 map("n", "<leader>6", function() require('harpoon.ui').nav_file(6) end)
-
 map("n", "<leader>mc", require('harpoon.cmd-ui').toggle_quick_menu)
 map("n", [[<M-\>]], [[<cmd>botright split | lua require('harpoon.term').gotoTerminal(require('my-functions').count_or_one())<CR>]])
 map("n", [[<M-e>]], [[<cmd>lua require('harpoon.term').sendCommand(require('my-functions').count_or_one(), require('my-functions').count_or_one())<CR>]])
 map("v", [[<M-e>]], [["vy<cmd>lua require('harpoon.term').sendCommand(require('my-functions').count_or_one(), vim.fn.getreg("v"))<CR> ]])
 map("n", ",l", [[<cmd>lua require('harpoon.term').sendCommand(require('my-functions').count_or_one(), '!!')<CR>]])
-map("n", "<M-space>", require('my-functions').execute_from_harpoon)
+map("n", "<M-space>", my_functions.execute_from_harpoon)
 
 -- Navigator
 require("Navigator").setup({})
@@ -816,6 +822,8 @@ vim.keymap.set('n', '<C-p>', fzf_lua.files)
 require('ts-node-action').setup({})
 vim.keymap.set({ "n" }, "gS", require("ts-node-action").node_action, { desc = "Trigger Node Action" })
 
+vim.api.nvim_create_user_command("Run", [[split | terminal <args>]], { nargs = 1, complete = "shellcmd" })
+
 -- nvim-surround
 require("nvim-surround").setup({})
 
@@ -829,10 +837,11 @@ vim.api.nvim_create_user_command(
   [[:silent !git browse "" %:~:. <line1> <line2>]],
   { nargs = 0, range = true }
 )
-vim.api.nvim_create_user_command("Run", [[split | terminal <args>]], { nargs = 1, complete = "shellcmd" })
 map("n", "<M-CR>", ":Run ")
 map("v", "<M-CR>", [["vy:Run <C-R>v]])
 map("n", "<F2>", ":Run <Up><CR>G<C-w><C-p>")
+map("n", "<F2>", ":Run <Up><CR>G<C-w><C-p>")
+map("n", "<F3>", my_functions.restart_cmd)
 -- custom keymaps
 map("n", "<F4>", ":bd<CR>")
 map('n', '<C-s>', ":w<CR>")

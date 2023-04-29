@@ -1,5 +1,4 @@
 nnoremap <leader>pd Obreakpoint()<Esc>==
-nnoremap <silent> <buffer> <F3> :Run python<CR>
 nnoremap <silent> <buffer> <F5> :lua require("my-functions").executePythonModule('<C-R>=expand("%:.")<CR>')<CR>
 
 " Run all tests

@@ -74,4 +74,39 @@ function M.execute_from_harpoon()
 	end
 end
 
+function M.get_terminals()
+	local final_table = {}
+	local bufs = vim.api.nvim_list_bufs()
+	local fzf_lua = require'fzf-lua'
+	for _, b in ipairs(bufs) do
+		local path = vim.api.nvim_buf_get_name(b)
+		if vim.startswith(path, "term://") and vim.api.nvim_buf_is_loaded(b) then
+			table.insert(final_table, path)
+		end
+	end
+	fzf_lua.fzf_exec(
+		final_table,
+		{
+			actions = {
+				['default'] = function(selected, opts)
+					vim.cmd(":b " .. selected[1])
+				end,
+				['ctrl-x'] = function(selected, opts)
+					vim.cmd(":bd! " .. selected[1])
+				end,
+			},
+		}
+	)
+end
+
+function M.restart_cmd()
+	local title = vim.b.term_title
+	if title == nil then
+		return
+	end
+	local cmd = title:match("term://.*:(.*)")
+	local current_id = vim.api.nvim_get_current_buf()
+	vim.cmd(":terminal " .. cmd)
+	vim.api.nvim_buf_delete(current_id, {force = true})
+end
 return M
