@@ -1,7 +1,26 @@
--- Install packer
-require('impatient')
-local install_path = vim.fn.stdpath 'data' .. '/site/pack/packer/start/packer.nvim'
+-- Set <space> as the leader key
+-- See `:help mapleader`
+--  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
 local map = vim.keymap.set
+
+-- Install package manager
+--    https://github.com/folke/lazy.nvim
+--    `:help lazy.nvim.txt` for more info
+local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system {
+    'git',
+    'clone',
+    '--filter=blob:none',
+    'https://github.com/folke/lazy.nvim.git',
+    '--branch=stable', -- latest stable release
+    lazypath,
+  }
+end
+vim.opt.rtp:prepend(lazypath)
+
 
 local builtins = {
   "2html_plugin",
@@ -28,63 +47,65 @@ for _, plugin in pairs(builtins) do
   vim.g["loaded_" .. plugin] = 1
 end
 
-if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
-  vim.fn.execute('!git clone https://github.com/wbthomason/packer.nvim ' .. install_path)
-end
+require('lazy').setup{
+  'numToStr/Comment.nvim',
+  { 'ibhagwan/fzf-lua',
+    dependencies = { 'nvim-tree/nvim-web-devicons' }
+  },
+  'ellisonleao/gruvbox.nvim',
+  'nvim-lualine/lualine.nvim',
+  {
+    'lukas-reineke/indent-blankline.nvim',
+    opts = {
+      char = '┊',
+      show_trailing_blankline_indent = false,
+    }
+  },
+  { 'lewis6991/gitsigns.nvim', dependencies = { 'nvim-lua/plenary.nvim' } },
+  {
+    'nvim-treesitter/nvim-treesitter',
+    dependencies = {'nvim-treesitter/nvim-treesitter-textobjects'},
+    build = ":TSUpdate",
+  },
+  {
+    'neovim/nvim-lspconfig',
+    dependencies = {
+      { 'williamboman/mason.nvim', config = true },
+      'williamboman/mason-lspconfig.nvim',
+      { 'j-hui/fidget.nvim', opts = {} },
+      'folke/neodev.nvim',
+    },
+  },
 
-local packer_group = vim.api.nvim_create_augroup('Packer', { clear = true })
-vim.api.nvim_create_autocmd('BufWritePost',
-  { command = 'source <afile> | PackerCompile', group = packer_group, pattern = 'init.lua' })
-
-require('packer').startup(function(use)
-  use 'lewis6991/impatient.nvim'
-  use 'wbthomason/packer.nvim' -- Package manager
-  use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
-  -- UI to select things (files, grep results, open buffers...)
-  use { 'ibhagwan/fzf-lua',
-    -- optional for icon support
-    requires = { 'nvim-tree/nvim-web-devicons' }
-  }
-  use 'ellisonleao/gruvbox.nvim' -- gruvbox theme
-  use 'nvim-lualine/lualine.nvim' -- Fancier statusline
-  -- Add indentation guides even on blank lines
-  use 'lukas-reineke/indent-blankline.nvim'
-  -- Add git related info in the signs columns and popups
-  use { 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } }
-  -- Highlight, edit, and navigate code using a fast incremental parsing library
-  use 'nvim-treesitter/nvim-treesitter'
-  -- Additional textobjects for treesitter
-  use 'nvim-treesitter/nvim-treesitter-textobjects'
-  use 'neovim/nvim-lspconfig' -- Collection of configurations for built-in LSP client
-  use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/cmp-nvim-lsp-signature-help'
-  use 'saadparwaiz1/cmp_luasnip'
-  use "rafamadriz/friendly-snippets"
-  use "honza/vim-snippets"
-  use "windwp/nvim-ts-autotag"
-  use 'L3MON4D3/LuaSnip' -- Snippets plugin
-  use "numToStr/Navigator.nvim" -- tmux navigation
-  use "ThePrimeagen/harpoon"
-  use "danymat/neogen"
-  use { "ThePrimeagen/refactoring.nvim",
-    requires = { "nvim-lua/plenary.nvim", "nvim-treesitter/nvim-treesitter" },
-  }
-  use "is0n/fm-nvim"
-  use({
+  { -- Autocompletion
+    'hrsh7th/nvim-cmp',
+    dependencies = { 'hrsh7th/cmp-nvim-lsp', 'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip', 'hrsh7th/cmp-nvim-lsp-signature-help' },
+  },
+  "rafamadriz/friendly-snippets",
+  "honza/vim-snippets",
+  "windwp/nvim-ts-autotag",
+  "numToStr/Navigator.nvim",
+  "ThePrimeagen/harpoon",
+  "danymat/neogen",
+  { "ThePrimeagen/refactoring.nvim",
+    dependencies = { "nvim-lua/plenary.nvim", "nvim-treesitter/nvim-treesitter" },
+  },
+  "is0n/fm-nvim",
+  {
     'ckolkey/ts-node-action',
-     requires = { 'nvim-treesitter' },
-  })
-  use "kylechui/nvim-surround"
-  use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
-  use 'kyazdani42/nvim-web-devicons'
-  use {
+     dependencies = { 'nvim-treesitter' },
+  },
+  "kylechui/nvim-surround",
+  { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim' },
+  'nvim-tree/nvim-web-devicons',
+  {
     "folke/trouble.nvim",
-    requires = "kyazdani42/nvim-web-devicons"
-  }
-  use {"pechorin/any-jump.vim"}
-  use {"stevearc/oil.nvim"}
-end)
+    dependencies = "nvim-tree/nvim-web-devicons"
+  },
+  {"pechorin/any-jump.vim"},
+  {"stevearc/oil.nvim"},
+  { import = 'custom.plugins' },
+}
 
 --Set highlight on search
 vim.o.hlsearch = false
@@ -288,12 +309,6 @@ setlocal nonumber norelativenumber signcolumn=no
   group = my_group,
 })
 
--- Indent blankline
-require('indent_blankline').setup {
-  char = '┊',
-  show_trailing_blankline_indent = false,
-}
-
 -- Gitsigns
 require('gitsigns').setup {
   signs = {
@@ -437,15 +452,13 @@ require('nvim-treesitter.configs').setup {
   incremental_selection = {
     enable = true,
     keymaps = {
-      init_selection = 'gnn',
-      node_incremental = 'grn',
-      scope_incremental = 'grc',
-      node_decremental = 'grm',
+      init_selection = '<c-space>',
+      node_incremental = '<c-space>',
+      scope_incremental = '<c-s>',
+      node_decremental = '<M-space>',
     },
   },
-  indent = {
-    enable = true,
-  },
+  indent = { enable = true, disable = { 'python' } },
   autotag = {
     enable = true,
   },
@@ -497,7 +510,6 @@ for type, icon in pairs(signs) do
 end
 
 -- LSP settings
-local lspconfig = require 'lspconfig'
 local on_attach = function(_, bufnr)
   local opts = { buffer = bufnr }
     vim.keymap.set('n', 'gD', function() fzf_lua.lsp_definitions({
@@ -541,41 +553,74 @@ capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 -- Enable the following language servers
 local servers = {
-    {name = 'pyright', autostart = true},
-    {name = 'tsserver', autostart = true},
-    {name = 'cssls', autostart = true},
-    {name = 'eslint', autostart = true},
-    {name = 'html', autostart = true},
-    {name = 'ruff_lsp', autostart=false},
-}
-for _, lsp in ipairs(servers) do
-  lspconfig[lsp['name']].setup {
+  pyright = {
     on_attach = on_attach,
     capabilities = capabilities,
-    autostart = lsp['autostart'],
-  }
-end
-
-lspconfig['gopls'].setup {
-  cmd = { 'gopls' },
-  on_attach = on_attach,
-  capabilities = capabilities,
-  autostart = false,
-  settings = {
-    gopls = {
-      experimentalPostfixCompletions = true,
-      analyses = {
-        unusedparams = true,
-        shadow = true,
+  },
+  tsserver = {
+    on_attach = on_attach,
+    capabilities = capabilities,
+  },
+  cssls = {
+    on_attach = on_attach,
+    capabilities = capabilities,
+  },
+  eslint = {
+    on_attach = on_attach,
+    capabilities = capabilities,
+  },
+  html = {
+    on_attach = on_attach,
+    capabilities = capabilities,
+  },
+  ruff_lsp = {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    autostart = false
+  },
+  gopls = {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    autostart = false,
+    settings = {
+      gopls = {
+        experimentalPostfixCompletions = true,
+        analyses = {
+          unusedparams = true,
+          shadow = true,
+        },
+        staticcheck = true,
       },
-      staticcheck = true,
+    },
+    init_options = {
+      usePlaceholders = true,
+    }
+  },
+  lua_ls = {
+    settings = {
+      Lua = {
+        workspace = { checkThirdParty = false },
+        telemetry = { enable = false },
+      }
     },
   },
-  init_options = {
-    usePlaceholders = true,
-  }
 }
 
+-- Setup neovim lua configuration
+require('neodev').setup()
+
+-- Ensure the servers above are installed
+local mason_lspconfig = require 'mason-lspconfig'
+
+mason_lspconfig.setup {
+  ensure_installed = vim.tbl_keys(servers),
+}
+
+mason_lspconfig.setup_handlers {
+  function(server_name)
+    require('lspconfig')[server_name].setup(servers[server_name])
+  end,
+}
 -- luasnip setup
 local luasnip = require 'luasnip'
 require("luasnip.loaders.from_vscode").lazy_load()
@@ -804,7 +849,6 @@ fmnvim.setup({
 })
 local function git_files_cwd_aware(opts)
   opts = opts or {}
-  local fzf_lua = require('fzf-lua')
   -- git_root() will warn us if we're not inside a git repo
   -- so we don't have to add another warning here, if
   -- you want to avoid the error message change it to:

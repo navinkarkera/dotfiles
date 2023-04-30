@@ -100,4 +100,4 @@ source /usr/share/nvm/init-nvm.sh
 
 eval "$(zoxide init zsh)"
 eval "$(jira --completion-script-bash)"
-eval "$(tmuxifier init -)"
+# eval "$(tmuxifier init -)"
