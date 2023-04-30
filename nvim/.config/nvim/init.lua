@@ -47,9 +47,10 @@ for _, plugin in pairs(builtins) do
   vim.g["loaded_" .. plugin] = 1
 end
 
-require('lazy').setup{
+require('lazy').setup {
   'numToStr/Comment.nvim',
-  { 'ibhagwan/fzf-lua',
+  {
+    'ibhagwan/fzf-lua',
     dependencies = { 'nvim-tree/nvim-web-devicons' }
   },
   'ellisonleao/gruvbox.nvim',
@@ -64,7 +65,7 @@ require('lazy').setup{
   { 'lewis6991/gitsigns.nvim', dependencies = { 'nvim-lua/plenary.nvim' } },
   {
     'nvim-treesitter/nvim-treesitter',
-    dependencies = {'nvim-treesitter/nvim-treesitter-textobjects'},
+    dependencies = { 'nvim-treesitter/nvim-treesitter-textobjects' },
     build = ":TSUpdate",
   },
   {
@@ -72,14 +73,15 @@ require('lazy').setup{
     dependencies = {
       { 'williamboman/mason.nvim', config = true },
       'williamboman/mason-lspconfig.nvim',
-      { 'j-hui/fidget.nvim', opts = {} },
+      { 'j-hui/fidget.nvim',       opts = {} },
       'folke/neodev.nvim',
     },
   },
-
-  { -- Autocompletion
+  {
+    -- Autocompletion
     'hrsh7th/nvim-cmp',
-    dependencies = { 'hrsh7th/cmp-nvim-lsp', 'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip', 'hrsh7th/cmp-nvim-lsp-signature-help' },
+    dependencies = { 'hrsh7th/cmp-nvim-lsp', 'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip',
+      'hrsh7th/cmp-nvim-lsp-signature-help' },
   },
   "rafamadriz/friendly-snippets",
   "honza/vim-snippets",
@@ -87,23 +89,22 @@ require('lazy').setup{
   "numToStr/Navigator.nvim",
   "ThePrimeagen/harpoon",
   "danymat/neogen",
-  { "ThePrimeagen/refactoring.nvim",
+  {
+    "ThePrimeagen/refactoring.nvim",
     dependencies = { "nvim-lua/plenary.nvim", "nvim-treesitter/nvim-treesitter" },
   },
-  "is0n/fm-nvim",
   {
     'ckolkey/ts-node-action',
-     dependencies = { 'nvim-treesitter' },
+    dependencies = { 'nvim-treesitter' },
   },
   "kylechui/nvim-surround",
-  { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim' },
-  'nvim-tree/nvim-web-devicons',
+  { 'sindrets/diffview.nvim',  dependencies = 'nvim-lua/plenary.nvim' },
   {
     "folke/trouble.nvim",
     dependencies = "nvim-tree/nvim-web-devicons"
   },
-  {"pechorin/any-jump.vim"},
-  {"stevearc/oil.nvim"},
+  { "pechorin/any-jump.vim" },
+  { "stevearc/oil.nvim" },
   { import = 'custom.plugins' },
 }
 
@@ -142,11 +143,6 @@ vim.wo.signcolumn = 'yes'
 vim.o.background = "light"
 vim.o.termguicolors = true
 vim.o.cursorline = false
-require('gruvbox').setup({
-  transparent_mode = true,
-  dim_inactive = false,
-})
-vim.cmd [[colorscheme gruvbox]]
 
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menu'
@@ -155,6 +151,12 @@ vim.o.complete = '.,w,b'
 -- window direction
 vim.o.splitright = true
 vim.o.splitbelow = true
+
+require('gruvbox').setup({
+  transparent_mode = true,
+  dim_inactive = false,
+})
+vim.cmd [[colorscheme gruvbox]]
 
 if vim.fn.executable("rg") == 1 then
   vim.o.grepprg = [[rg --vimgrep --no-heading --smart-case --hidden -g '!.git/']]
@@ -173,12 +175,12 @@ require('lualine').setup {
     globalstatus = true,
   },
   sections = {
-    lualine_a = {'mode'},
-    lualine_b = {'branch', 'diff', 'diagnostics'},
-    lualine_c = {'filename', 'nvim_treesitter#statusline'},
-    lualine_x = {'encoding', 'fileformat', 'filetype'},
-    lualine_y = {'progress'},
-    lualine_z = {'location'}
+    lualine_a = { 'mode' },
+    lualine_b = { 'branch', 'diff', 'diagnostics' },
+    lualine_c = { 'filename', 'nvim_treesitter#statusline' },
+    lualine_x = { 'encoding', 'fileformat', 'filetype' },
+    lualine_y = { 'progress' },
+    lualine_z = { 'location' }
   },
   inactive_winbar = {
     lualine_a = {},
@@ -192,52 +194,50 @@ require('lualine').setup {
 
 --Remap space as leader key
 map({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
 
---Enable Comment.nvim
+-- Enable Comment.nvim
 require('Comment').setup()
 
 -- Anyjump config
-vim.g.any_jump_grouping_enabled = 1
-vim.g.any_jump_preview_lines_count = 10
+vim.g.any_jump_grouping_enabled                     = 1
+vim.g.any_jump_preview_lines_count                  = 10
 vim.g.any_jump_references_only_for_current_filetype = 1
-vim.g.any_jump_window_width_ratio  = 0.8
-vim.g.any_jump_window_height_ratio = 0.8
-vim.g.any_jump_window_top_offset   = 5
+vim.g.any_jump_window_width_ratio                   = 0.8
+vim.g.any_jump_window_height_ratio                  = 0.8
+vim.g.any_jump_window_top_offset                    = 5
 
 --Enable trouble.nvim
 require("trouble").setup({
-    auto_preview = false,
+  auto_preview = false,
 })
-vim.keymap.set("n", "<C-q>", "<cmd>TroubleToggle<cr>",
-  {silent = true, noremap = true}
+map("n", "<C-q>", "<cmd>TroubleToggle<cr>",
+  { silent = true, noremap = true }
 )
-vim.keymap.set("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>",
-  {silent = true, noremap = true}
+map("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>",
+  { silent = true, noremap = true }
 )
-vim.keymap.set("n", "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>",
-  {silent = true, noremap = true}
+map("n", "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>",
+  { silent = true, noremap = true }
 )
-vim.keymap.set("n", "<leader>xl", "<cmd>TroubleToggle loclist<cr>",
-  {silent = true, noremap = true}
+map("n", "<leader>xl", "<cmd>TroubleToggle loclist<cr>",
+  { silent = true, noremap = true }
 )
-vim.keymap.set("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>",
-  {silent = true, noremap = true}
+map("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>",
+  { silent = true, noremap = true }
 )
-vim.keymap.set("n", "<C-j>", function() require("trouble").next({skip_groups = true, jump = true}); end,
-  {silent = true, noremap = true}
+map("n", "<C-j>", function() require("trouble").next({ skip_groups = true, jump = true }); end,
+  { silent = true, noremap = true }
 )
-vim.keymap.set("n", "<C-k>", function() require("trouble").previous({skip_groups = true, jump = true}); end,
-  {silent = true, noremap = true}
+map("n", "<C-k>", function() require("trouble").previous({ skip_groups = true, jump = true }); end,
+  { silent = true, noremap = true }
 )
 
 --python
 vim.g.python3_host_prog = '/usr/bin/python3'
 
 --Remap for dealing with word wrap
-vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
-vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
+map('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
+map('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
 -- Vim functions
 vim.cmd([[
@@ -291,12 +291,12 @@ api.nvim_create_autocmd("BufEnter", {
   command = [[set fo-=c fo-=r fo-=o]],
   group = my_group,
 })
--- api.nvim_create_autocmd("FileType", {
---   pattern = { "xml", "html", "htmldjango", "xhtml", "css", "scss", "javascript", "javascriptreact", "yaml",
---     "typescriptreact", "typescript", "json", "lua" },
---   command = [[setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab]],
---   group = my_group,
--- })
+api.nvim_create_autocmd("FileType", {
+  pattern = { "xml", "html", "htmldjango", "xhtml", "css", "scss", "javascript", "javascriptreact", "yaml",
+    "typescriptreact", "typescript", "json", "lua" },
+  command = [[setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab]],
+  group = my_group,
+})
 api.nvim_create_autocmd("FileType", {
   pattern = { "markdown" },
   command = [[set autowriteall]],
@@ -305,7 +305,7 @@ api.nvim_create_autocmd("FileType", {
 api.nvim_create_autocmd("TermOpen", {
   command = [[
 setlocal nonumber norelativenumber signcolumn=no
-]] ,
+]],
   group = my_group,
 })
 
@@ -324,7 +324,7 @@ require('gitsigns').setup {
     local function gmap(mode, l, r, opts)
       opts = opts or {}
       opts.buffer = bufnr
-      vim.keymap.set(mode, l, r, opts)
+      map(mode, l, r, opts)
     end
 
     -- Navigation
@@ -356,51 +356,34 @@ require('gitsigns').setup {
 
 -- oil.nvim
 require('oil').setup()
-vim.keymap.set('n', '<leader>to', require('oil').open)
+map('n', '<leader>to', require('oil').open)
 
 local fzf_lua = require("fzf-lua")
 fzf_lua.setup({
-    'fzf-native',
-    winopts = {
-        preview = { default = "bat" },
-        height = 0.90,            -- window height
-        width = 0.90,
-    },
+  'fzf-native',
+  winopts = {
+    preview = { default = "bat" },
+    height = 0.90,     -- window height
+    width = 0.90,
+  },
 })
--- fzf_lua.setup({
---     fzf_bin = "fzf-native",
---     fzf_opts = {
---       ["--no-separator"] = "",
---     },
---     fzf_colors = {
---       ["bg"] = { "bg", "Normal" },
---       ["fg"] = { "fg", "Normal" },
---       ["border"] = { "fg", "Normal" },
---     },
---     fzf_tmux_opts = { ["-p"] = "90%,90%" },
---     winopts = { preview = { default = "bat" } },
---     manpages = { previewer = "man_native" },
---     helptags = { previewer = "help_native" },
---     tags = { previewer = "bat_async" },
---     btags = { previewer = "bat_async" },
--- })
 fzf_lua.register_ui_select()
 
 local my_functions = require('my-functions')
 --Add leader shortcuts
-vim.keymap.set('n', '<leader><space>', fzf_lua.buffers)
-vim.keymap.set('n', '<leader>ff', fzf_lua.git_files)
-vim.keymap.set('n', '<leader>fb', fzf_lua.git_bcommits)
-vim.keymap.set('n', '<leader>fh', fzf_lua.help_tags)
-vim.keymap.set('n', '<leader>fg', fzf_lua.git_status)
-vim.keymap.set('n', '<leader>fl', fzf_lua.resume)
-vim.keymap.set('n', '<leader>fq', fzf_lua.quickfix)
-vim.keymap.set('n', '<leader>so', fzf_lua.tags)
-vim.keymap.set('n', '<leader>?', fzf_lua.oldfiles)
-vim.keymap.set('n', '<C-f>', fzf_lua.live_grep_glob)
-vim.keymap.set("v", "<C-f>", fzf_lua.grep_visual)
-vim.keymap.set("n", "<leader>pw", fzf_lua.grep_cword)
-vim.keymap.set("n", "<leader>tt", my_functions.get_terminals)
+map('n', '<leader><space>', fzf_lua.buffers)
+map('n', '<leader>ff', fzf_lua.git_files)
+map('n', '<leader>fb', fzf_lua.git_bcommits)
+map('n', '<leader>fh', fzf_lua.help_tags)
+map('n', '<leader>fg', fzf_lua.git_status)
+map('n', '<leader>fl', fzf_lua.resume)
+map('n', '<leader>fq', fzf_lua.quickfix)
+map('n', '<leader>so', fzf_lua.tags)
+map('n', '<leader>?', fzf_lua.oldfiles)
+map('n', '<C-f>', fzf_lua.live_grep_glob)
+map("v", "<C-f>", fzf_lua.grep_visual)
+map("n", "<leader>pw", fzf_lua.grep_cword)
+map("n", "<leader>tt", my_functions.get_terminals)
 
 vim.api.nvim_create_user_command(
   'ListFilesFromBranch',
@@ -409,8 +392,8 @@ vim.api.nvim_create_user_command(
       cmd = "git diff -r --name-only " .. opts.args,
       prompt = opts.args .. "> ",
       previewer = false,
-      preview = require'fzf-lua'.shell.raw_preview_action_cmd(function(items)
-        local file = require'fzf-lua'.path.entry_to_file(items[1])
+      preview = require 'fzf-lua'.shell.raw_preview_action_cmd(function(items)
+        local file = require 'fzf-lua'.path.entry_to_file(items[1])
         return string.format("git diff %s HEAD -- %s | delta", opts.args, file.path)
       end)
     })
@@ -429,7 +412,7 @@ vim.api.nvim_create_user_command(
   })
 
 local base_branch = os.getenv("GIT_PARENT_BRANCH") or "master"
-vim.keymap.set('n', '<leader>fc', ":ListFilesFromBranch " .. base_branch .. "<CR>")
+map('n', '<leader>fc', ":ListFilesFromBranch " .. base_branch .. "<CR>")
 
 -- Treesitter configuration
 -- Parsers must be installed manually via :TSInstall
@@ -498,10 +481,10 @@ require('nvim-treesitter.configs').setup {
 }
 
 -- Diagnostic keymaps
-vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
-vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
+map('n', '<leader>e', vim.diagnostic.open_float)
+map('n', '[d', vim.diagnostic.goto_prev)
+map('n', ']d', vim.diagnostic.goto_next)
+map('n', '<leader>q', vim.diagnostic.setloclist)
 
 local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
 for type, icon in pairs(signs) do
@@ -512,27 +495,32 @@ end
 -- LSP settings
 local on_attach = function(_, bufnr)
   local opts = { buffer = bufnr }
-    vim.keymap.set('n', 'gD', function() fzf_lua.lsp_definitions({
-        sync = true,
-        jump_to_single_result = true,
-        jump_to_single_result_action = fzf_lua.actions.file_vsplit,
-    }) end, opts)
-  vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
-  vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
-  vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
-  vim.keymap.set('n', '<leader>si', vim.lsp.buf.signature_help, opts)
-  vim.keymap.set('n', '<leader>wa', vim.lsp.buf.add_workspace_folder, opts)
-  vim.keymap.set('n', '<leader>wr', vim.lsp.buf.remove_workspace_folder, opts)
-  vim.keymap.set('n', '<leader>wl', function()
+  map('n', 'gD', function()
+    fzf_lua.lsp_definitions({
+      sync = true,
+      jump_to_single_result = true,
+      jump_to_single_result_action = fzf_lua.actions.file_vsplit,
+    })
+  end, opts)
+  map('n', 'gd', vim.lsp.buf.definition, opts)
+  map('n', 'K', vim.lsp.buf.hover, opts)
+  map('n', 'gi', vim.lsp.buf.implementation, opts)
+  map('n', '<leader>si', vim.lsp.buf.signature_help, opts)
+  map('n', '<leader>wa', vim.lsp.buf.add_workspace_folder, opts)
+  map('n', '<leader>wr', vim.lsp.buf.remove_workspace_folder, opts)
+  map('n', '<leader>wl', function()
     vim.inspect(vim.lsp.buf.list_workspace_folders())
   end, opts)
-  vim.keymap.set('n', '<leader>D', vim.lsp.buf.type_definition, opts)
-  vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
-  vim.keymap.set('n', 'gr', "<cmd>TroubleToggle lsp_references<cr>", opts)
-  vim.keymap.set('n', 'gR', fzf_lua.lsp_references, opts)
-  vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, opts)
-  vim.keymap.set('n', '<leader>so', fzf_lua.lsp_document_symbols, opts)
-  vim.api.nvim_create_user_command("Format", vim.lsp.buf.format, {})
+  map('n', '<leader>D', vim.lsp.buf.type_definition, opts)
+  map('n', '<leader>rn', vim.lsp.buf.rename, opts)
+  map('n', 'gr', "<cmd>TroubleToggle lsp_references<cr>", opts)
+  map('n', 'gR', fzf_lua.lsp_references, opts)
+  map('n', '<leader>ca', vim.lsp.buf.code_action, opts)
+  map('n', '<leader>so', fzf_lua.lsp_document_symbols, opts)
+  -- Create a command `:Format` local to the LSP buffer
+  vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
+    vim.lsp.buf.format()
+  end, { desc = 'Format current buffer with LSP' })
 end
 
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
@@ -597,6 +585,8 @@ local servers = {
     }
   },
   lua_ls = {
+    capabilities = capabilities,
+    on_attach = on_attach,
     settings = {
       Lua = {
         workspace = { checkThirdParty = false },
@@ -757,25 +747,29 @@ map("n", "<leader>4", function() require('harpoon.ui').nav_file(4) end)
 map("n", "<leader>5", function() require('harpoon.ui').nav_file(5) end)
 map("n", "<leader>6", function() require('harpoon.ui').nav_file(6) end)
 map("n", "<leader>mc", require('harpoon.cmd-ui').toggle_quick_menu)
-map("n", [[<M-\>]], [[<cmd>botright split | lua require('harpoon.term').gotoTerminal(require('my-functions').count_or_one())<CR>]])
-map("n", [[<M-e>]], [[<cmd>lua require('harpoon.term').sendCommand(require('my-functions').count_or_one(), require('my-functions').count_or_one())<CR>]])
-map("v", [[<M-e>]], [["vy<cmd>lua require('harpoon.term').sendCommand(require('my-functions').count_or_one(), vim.fn.getreg("v"))<CR> ]])
+map("n", [[<M-\>]],
+  [[<cmd>botright split | lua require('harpoon.term').gotoTerminal(require('my-functions').count_or_one())<CR>]])
+map("n", [[<M-e>]],
+  [[<cmd>lua require('harpoon.term').sendCommand(require('my-functions').count_or_one(), require('my-functions').count_or_one())<CR>]])
+map("v", [[<M-e>]],
+  [["vy<cmd>lua require('harpoon.term').sendCommand(require('my-functions').count_or_one(), vim.fn.getreg("v"))<CR> ]])
 map("n", ",l", [[<cmd>lua require('harpoon.term').sendCommand(require('my-functions').count_or_one(), '!!')<CR>]])
 map("n", "<M-space>", my_functions.execute_from_harpoon)
 
 -- Navigator
-require("Navigator").setup({})
-map("n", "<m-h>", require("Navigator").left)
-map("n", "<m-k>", require('Navigator').up)
-map("n", "<m-l>", require('Navigator').right)
-map("n", "<m-j>", require('Navigator').down)
-map("n", "<m-^>", require('Navigator').previous)
+local Navigator = require("Navigator")
+Navigator.setup({})
+map("n", "<m-h>", Navigator.left)
+map("n", "<m-k>", Navigator.up)
+map("n", "<m-l>", Navigator.right)
+map("n", "<m-j>", Navigator.down)
+map("n", "<m-^>", Navigator.previous)
 -- terminal keymaps
-map("t", "<m-h>", require("Navigator").left)
-map("t", "<m-k>", require('Navigator').up)
-map("t", "<m-l>", require('Navigator').right)
-map("t", "<m-j>", require('Navigator').down)
-map("t", "<m-^>", require('Navigator').previous)
+map("t", "<m-h>", Navigator.left)
+map("t", "<m-k>", Navigator.up)
+map("t", "<m-l>", Navigator.right)
+map("t", "<m-j>", Navigator.down)
+map("t", "<m-^>", Navigator.previous)
 
 
 -- refactoring.nvim
@@ -807,18 +801,18 @@ map(
 
 -- Remap in normal mode and passing { normal = true } will automatically find the variable under the cursor and print it
 map(
-    "n",
-    "<leader>rv",
-    ":lua require('refactoring').debug.print_var({ normal = true })<CR>",
-    { noremap = true }
+  "n",
+  "<leader>rv",
+  ":lua require('refactoring').debug.print_var({ normal = true })<CR>",
+  { noremap = true }
 )
 
 -- Print var: this remap should be made in visual mode
 map(
-    "v",
-    "<leader>rv",
-    ":lua require('refactoring').debug.print_var({})<CR>",
-    { noremap = true }
+  "v",
+  "<leader>rv",
+  ":lua require('refactoring').debug.print_var({})<CR>",
+  { noremap = true }
 )
 
 -- Cleanup function: this remap should be made in normal mode
@@ -833,20 +827,7 @@ map(
 -- neogen conf
 require("neogen").setup({})
 map("n", "<Leader>nf", require('neogen').generate)
-map("n", "<Leader>nc", function() require('neogen').generate({ type = 'class' }) end)
 
--- fm-nvim
-local fmnvim = require("fm-nvim")
-fmnvim.setup({
-  broot_conf = vim.fn.stdpath("config") .. "/broot.toml",
-  mappings = {
-    vert_split = "<C-v",
-    horz_split = "<C-b>",
-    tabedit    = "<C-t>",
-    edit       = "<C-e>",
-    ESC        = "<ESC>"
-  },
-})
 local function git_files_cwd_aware(opts)
   opts = opts or {}
   -- git_root() will warn us if we're not inside a git repo
@@ -859,33 +840,33 @@ local function git_files_cwd_aware(opts)
   opts.fzf_opts = { ['--query'] = git_root ~= relative and relative or nil }
   return fzf_lua.git_files(opts)
 end
-vim.keymap.set('n', '<leader>pv', function() git_files_cwd_aware({ cwd = "%:h" }) end)
-vim.keymap.set('n', '<C-p>', fzf_lua.files)
+map('n', '<leader>pv', function() git_files_cwd_aware({ cwd = "%:h" }) end)
+map('n', '<C-p>', fzf_lua.files)
 
 -- ts-node-action
 require('ts-node-action').setup({})
-vim.keymap.set({ "n" }, "gS", require("ts-node-action").node_action, { desc = "Trigger Node Action" })
-
-vim.api.nvim_create_user_command("Run", [[split | terminal <args>]], { nargs = 1, complete = "shellcmd" })
+map({ "n" }, "gS", require("ts-node-action").node_action, { desc = "Trigger Node Action" })
 
 -- nvim-surround
 require("nvim-surround").setup({})
 
+-- terminal setup
+vim.api.nvim_create_user_command("Run", [[split | terminal <args>]], { nargs = 1, complete = "shellcmd" })
 map("n", "<leader>vrm", [[:Run rm <C-R>=bufname("%")<CR>]])
 map("n", "<leader>vcp", [[:Run cp <C-R>=bufname("%"))<CR>]])
 map("n", "<leader>vrn", [[:Run mv <C-R>=bufname("%")<CR> <C-R>=bufname("%")<CR>]])
-
-vim.api.nvim_create_user_command("Grep", "silent grep! <q-args> | TroubleToggle quickfix", { nargs = 1})
-vim.api.nvim_create_user_command(
-  "GBrowse",
-  [[:silent !git browse "" %:~:. <line1> <line2>]],
-  { nargs = 0, range = true }
-)
 map("n", "<M-CR>", ":Run ")
 map("v", "<M-CR>", [["vy:Run <C-R>v]])
 map("n", "<F2>", ":Run <Up><CR>G<C-w><C-p>")
 map("n", "<F2>", ":Run <Up><CR>G<C-w><C-p>")
 map("n", "<F3>", my_functions.restart_cmd)
+
+vim.api.nvim_create_user_command("Grep", "silent grep! <q-args> | TroubleToggle quickfix", { nargs = 1 })
+vim.api.nvim_create_user_command(
+  "GBrowse",
+  [[:silent !git browse "" %:~:. <line1> <line2>]],
+  { nargs = 0, range = true }
+)
 -- custom keymaps
 map("n", "<F4>", ":bd<CR>")
 map('n', '<C-s>', ":w<CR>")
