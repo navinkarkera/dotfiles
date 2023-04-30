@@ -12,4 +12,3 @@ nnoremap <silent> <buffer> <F8> :norm mww[mw<CR> :lua require("my-functions").ad
 
 " run module interactive
 nnoremap <silent> <buffer> <leader>, :lua require("my-functions").executePythonModuleInteractive('<C-R>=expand("%:.")<CR>')<CR>
-nnoremap <silent> <buffer> <leader>im :lua require("my-functions").importPythonModule('<C-R>=expand("%:.")<CR>')<CR>

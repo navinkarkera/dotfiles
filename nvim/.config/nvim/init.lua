@@ -384,6 +384,12 @@ map('n', '<C-f>', fzf_lua.live_grep_glob)
 map("v", "<C-f>", fzf_lua.grep_visual)
 map("n", "<leader>pw", fzf_lua.grep_cword)
 map("n", "<leader>tt", my_functions.get_terminals)
+map(
+  { "n", "v", "i" },
+  "<C-x><C-f>",
+  fzf_lua.complete_path,
+  { silent = true, desc = "Fuzzy complete path" }
+)
 
 vim.api.nvim_create_user_command(
   'ListFilesFromBranch',
@@ -852,9 +858,6 @@ require("nvim-surround").setup({})
 
 -- terminal setup
 vim.api.nvim_create_user_command("Run", [[split | terminal <args>]], { nargs = 1, complete = "shellcmd" })
-map("n", "<leader>vrm", [[:Run rm <C-R>=bufname("%")<CR>]])
-map("n", "<leader>vcp", [[:Run cp <C-R>=bufname("%"))<CR>]])
-map("n", "<leader>vrn", [[:Run mv <C-R>=bufname("%")<CR> <C-R>=bufname("%")<CR>]])
 map("n", "<M-CR>", ":Run ")
 map("v", "<M-CR>", [["vy:Run <C-R>v]])
 map("n", "<F2>", ":Run <Up><CR>G<C-w><C-p>")

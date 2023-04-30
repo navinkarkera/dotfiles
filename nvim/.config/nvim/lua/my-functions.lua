@@ -24,16 +24,6 @@ function M.executePythonModuleInteractive(filePath)
 	M.add_to_hist_and_run("python -im " .. modulePath)
 end
 
--- function M.importPythonModule(filePath)
--- 	local modulePath = M.getPythonModulePath(filePath)
--- 	vim.call("VimuxRunCommand", "from " .. modulePath .. " import *")
--- end
-
--- function M.VimuxSlime()
--- 	local code = vim.fn.getreg("v")
--- 	vim.call("VimuxRunCommand", code, 0)
--- end
-
 function M.expand_or_jump()
 	if luasnip.expand_or_jumpable() then
 		luasnip.expand_or_jump()
@@ -107,6 +97,7 @@ function M.restart_cmd()
 	local cmd = title:match("term://.*:(.*)")
 	local current_id = vim.api.nvim_get_current_buf()
 	vim.cmd(":terminal " .. cmd)
+  vim.api.nvim_input("G")
 	vim.api.nvim_buf_delete(current_id, {force = true})
 end
 return M
