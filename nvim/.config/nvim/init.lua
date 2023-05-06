@@ -393,6 +393,7 @@ map('n', '<leader>fg', fzf_lua.git_status)
 map('n', '<leader>fl', fzf_lua.resume)
 map('n', '<leader>fq', fzf_lua.quickfix)
 map('n', '<leader>so', fzf_lua.tags)
+map('n', '<C-]>', function() fzf_lua.command_history({fzf_opts = { ["--tiebreak"] = "index", ["--query"] = "Run " }}) end)
 map('n', '<leader>?', fzf_lua.oldfiles)
 map('n', '<C-f>', fzf_lua.live_grep_glob)
 map("v", "<C-f>", fzf_lua.grep_visual)
@@ -871,11 +872,10 @@ map({ "n" }, "gS", require("ts-node-action").node_action, { desc = "Trigger Node
 require("nvim-surround").setup({})
 
 -- terminal setup
-vim.api.nvim_create_user_command("Run", [[split | terminal <args>]], { nargs = 1, complete = "shellcmd" })
+vim.api.nvim_create_user_command("Run", function(opts) my_functions.run_command(opts.args) end, { nargs = 1, complete = "shellcmd" })
 map("n", "<M-CR>", ":Run ")
 map("v", "<M-CR>", [["vy:Run <C-R>v]])
-map("n", "<F2>", ":Run <Up><CR>G<C-w><C-p>")
-map("n", "<F2>", ":Run <Up><CR>G<C-w><C-p>")
+map("n", "<F2>", ":Run <Up><CR>")
 map("n", "<F3>", my_functions.restart_cmd)
 
 vim.api.nvim_create_user_command("Grep", "silent grep! <q-args> | TroubleToggle quickfix", { nargs = 1 })

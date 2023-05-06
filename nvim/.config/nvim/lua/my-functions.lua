@@ -100,4 +100,35 @@ function M.restart_cmd()
   vim.api.nvim_input("G")
 	vim.api.nvim_buf_delete(current_id, {force = true})
 end
+
+function M.find_terminal_buffer_by_cmd(cmd)
+  cmd = ":" .. string.gsub(cmd, "%s+", "%%s+") .. "$"
+  for _, buf in ipairs(vim.api.nvim_list_bufs()) do
+    local buf_name = vim.api.nvim_buf_get_name(buf)
+    local is_match = string.find(buf_name, cmd)
+    if is_match and vim.api.nvim_buf_is_loaded(buf) then
+      return buf
+    end
+  end
+  return nil
+end
+
+function M.run_command(cmd)
+  local buf = M.find_terminal_buffer_by_cmd(cmd)
+  if buf then
+    local win_id = vim.fn.win_findbuf(buf)
+    if win_id[1] then
+      vim.api.nvim_set_current_win(win_id[1])
+    else
+      vim.cmd(":botright split")
+      vim.api.nvim_set_current_buf(buf)
+    end
+    vim.cmd(":terminal " .. cmd)
+	  vim.api.nvim_buf_delete(buf, {force = true})
+  else
+    vim.cmd(":botright split | terminal " .. cmd)
+  end
+  vim.api.nvim_input("G")
+  vim.api.nvim_input("<C-w><C-p>")
+end
 return M
