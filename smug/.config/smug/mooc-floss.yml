@@ -8,5 +8,5 @@ before_start:
 windows:
   - name: code
     commands:
-      - e
+      - e .
   - name: shell

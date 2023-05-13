@@ -15,7 +15,7 @@ windows:
   - name: code
     commands:
       - activate
-      - e
+      - e .
   - name: shell
     commands:
       - activate

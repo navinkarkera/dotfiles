@@ -15,7 +15,7 @@ windows:
     layout: main-horizontal
     commands:
       - activate
-      - e
+      - e .
     panes:
       - type: vertical
         root: ../devstack

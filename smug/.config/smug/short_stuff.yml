@@ -15,7 +15,7 @@ windows:
   - name: code
     layout: main-horizontal
     commands:
-      - e
+      - e .
     panes:
       - type: vertical
         commands:

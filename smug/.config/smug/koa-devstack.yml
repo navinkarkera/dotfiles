@@ -12,7 +12,7 @@ windows:
     layout: main-vertical
     commands:
       - activate
-      - e
+      - e .
     panes:
       - type: horizontal
         commands:
