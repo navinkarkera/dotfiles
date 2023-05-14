@@ -398,7 +398,7 @@ map('n', '<leader>?', fzf_lua.oldfiles)
 map('n', '<C-f>', fzf_lua.live_grep_glob)
 map("v", "<C-f>", fzf_lua.grep_visual)
 map("n", "<leader>pw", fzf_lua.grep_cword)
-map("n", "<leader>tt", my_functions.get_terminals)
+map("n", "<leader>tt", my_functions.fzf_get_terminals)
 map(
   { "n", "v", "i" },
   "<C-x><C-f>",
@@ -872,11 +872,22 @@ map({ "n" }, "gS", require("ts-node-action").node_action, { desc = "Trigger Node
 require("nvim-surround").setup({})
 
 -- terminal setup
-vim.api.nvim_create_user_command("Run", function(opts) my_functions.run_command(opts.args) end, { nargs = 1, complete = "shellcmd" })
+vim.api.nvim_create_user_command("Run", function(opts) my_functions.run_command(opts.args, false, false) end, { nargs = 1, complete = "shellcmd" })
+vim.api.nvim_create_user_command("RunB", function(opts) my_functions.run_command(opts.args, false, true) end, { nargs = 1, complete = "shellcmd" })
+vim.api.nvim_create_user_command("RunF", function(opts) my_functions.run_command(opts.args, true, false) end, { nargs = 1, complete = "shellcmd" })
+vim.api.nvim_create_user_command("RunFB", function(opts) my_functions.run_command(opts.args, true, true) end, { nargs = 1, complete = "shellcmd" })
 map("n", "<M-CR>", ":Run ")
 map("v", "<M-CR>", [["vy:Run <C-R>v]])
-map("n", "<F2>", ":Run <Up><CR>")
+map("n", "<M-BS>", ":RunB ")
+map("v", "<M-BS>", [["vy:RunB <C-R>v]])
+
+map("n", "<M-'>", ":RunF ")
+map("v", "<M-'>", [["vy:RunF <C-R>v]])
+map("n", "<M-[>", ":RunFB ")
+map("v", "<M-[>", [["vy:RunFB <C-R>v]])
+map("n", "<F2>", ":Run<Up><CR>")
 map("n", "<F3>", my_functions.restart_cmd)
+map("n", "<leader>mt", my_functions.fzf_make_tasks)
 
 vim.api.nvim_create_user_command("Grep", "silent grep! <q-args> | TroubleToggle quickfix", { nargs = 1 })
 vim.api.nvim_create_user_command(
