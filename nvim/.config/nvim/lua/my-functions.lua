@@ -148,6 +148,18 @@ function M.find_terminal_buffer_by_cmd(cmd)
   return nil
 end
 
+local function term_run_cmd(cmd)
+  vim.fn.termopen(cmd, {on_exit=function(job_id, exit_code, event)
+    local status = "SUCCESS-0"
+    if exit_code ~= 0 then
+      status = "FAILED-" .. exit_code
+    end
+    cmd = string.gsub(cmd, '"', '\\"')
+    os.execute([[notify-send --icon neovim "[]] .. status .. [[]" "CMD: ]] .. cmd .. [["]])
+  end})
+end
+
+
 function M.run_command(cmd, full_shell, background)
   if full_shell then
     cmd = [[zsh -ic "]] .. cmd .. [["]]
@@ -158,13 +170,15 @@ function M.run_command(cmd, full_shell, background)
     if win_id[1] then
       vim.api.nvim_set_current_win(win_id[1])
     else
-      vim.cmd(":botright split")
+      vim.cmd("botright split")
       vim.api.nvim_set_current_buf(buf)
     end
-    vim.cmd(":terminal " .. cmd)
+    vim.cmd("new")
+    term_run_cmd(cmd)
     vim.api.nvim_buf_delete(buf, { force = true })
   else
-    vim.cmd(":botright split | terminal " .. cmd)
+    vim.cmd("new")
+    term_run_cmd(cmd)
   end
   vim.api.nvim_input("G")
   if background then
