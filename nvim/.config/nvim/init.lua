@@ -462,7 +462,7 @@ require('nvim-treesitter.configs').setup {
       node_decremental = '<M-space>',
     },
   },
-  indent = { enable = true, disable = { 'python' } },
+  indent = { enable = true },
   autotag = {
     enable = true,
   },

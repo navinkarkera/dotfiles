@@ -112,7 +112,7 @@ function M.fzf_make_tasks()
       actions = {
         ['default'] = function(selected, opts)
           local cmd = selected[1]:match("%S+")
-          vim.cmd(":Run make " .. cmd)
+          M.add_to_hist_and_run("make " .. cmd)
         end,
         ['ctrl-e'] = function(selected, opts)
           local cmd = selected[1]:match("%S+")
