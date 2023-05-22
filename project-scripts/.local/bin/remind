@@ -6,6 +6,7 @@ function remind () {
   local OP="$2"
   shift 2
   local WHEN="$@"
+  local topic="nrk_mangalpete_$(hostname)_reminders"
   # Display help if no parameters or help command
   if [[ $COUNT -eq 0 || "$COMMAND" == "help" || "$COMMAND" == "--help" || "$COMMAND" == "-h" ]]; then
     echo "COMMAND"
@@ -55,9 +56,7 @@ function remind () {
     return
   fi
   # Schedule the notification
-  echo "notify-send '$MESSAGE' 'Reminder' -u critical"
-  echo "notify-send '$MESSAGE' 'Reminder' -u critical" | at $TIME 2>/dev/null
-  echo "Notification scheduled at $TIME"
+  echo "notify-send '$MESSAGE' 'Reminder' -u critical; curl -H 'Title: Reminder' -H 'Priority: high' -H 'Tags: warning' -d '$MESSAGE' ntfy.sh/$topic" | at $TIME && echo "Notification scheduled at $TIME"
 }
 
 remind "$@"

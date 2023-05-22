@@ -4,7 +4,7 @@ local neogen = require("neogen")
 
 function M.add_to_hist_and_run(cmd)
   local vim_cmd = "Run " .. cmd
-  vim.cmd([[:call histadd("cmd", "]] .. vim_cmd .. [[")]])
+  vim.cmd([[:call histadd("cmd", "]] .. string.gsub(vim_cmd, '"', '\\"') .. [[")]])
   vim.cmd(":" .. vim_cmd)
 end
 
@@ -130,7 +130,7 @@ function M.restart_cmd()
   end
   local cmd = title:match("term://.*:(.*)")
   local current_id = vim.api.nvim_get_current_buf()
-  vim.cmd([[:call histadd("cmd", "Run ]] .. cmd .. [[")]])
+  vim.cmd([[:call histadd("cmd", "Run ]] .. string.gsub(cmd, '"', '\\"') .. [[")]])
   vim.cmd(":terminal " .. cmd)
   vim.api.nvim_input("G")
   vim.api.nvim_buf_delete(current_id, { force = true })
@@ -155,7 +155,7 @@ local function term_run_cmd(cmd)
       status = "FAILED-" .. exit_code
     end
     cmd = string.gsub(cmd, '"', '\\"')
-    os.execute([[notify-send --icon neovim "[]] .. status .. [[]" "CMD: ]] .. cmd .. [["]])
+    os.execute([[notify-send --icon neovim "[]] .. status .. [[]" "CMD: ]] .. cmd .. [[\n]].. vim.fn.getcwd() ..[["]])
   end})
 end
 
