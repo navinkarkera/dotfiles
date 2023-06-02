@@ -176,16 +176,24 @@ require('lualine').setup {
   },
   sections = {
     lualine_a = { 'mode' },
-    lualine_b = { 'branch', 'diff', 'diagnostics' },
-    lualine_c = { 'filename', 'nvim_treesitter#statusline' },
+    lualine_b = { 'vim.fn.fnamemodify(vim.fn.getcwd(), ":t")', 'branch'},
+    lualine_c = { 'filename' },
     lualine_x = { 'encoding', 'fileformat', 'filetype' },
     lualine_y = { 'progress' },
     lualine_z = { 'location' }
   },
+  winbar = {
+    lualine_a = {{ 'filename', path = 1 }},
+    lualine_b = { 'diff', 'diagnostics', 'nvim_treesitter#statusline' },
+    lualine_c = {},
+    lualine_x = {},
+    lualine_y = {},
+    lualine_z = {}
+  },
   inactive_winbar = {
-    lualine_a = {},
+    lualine_a = {{ 'filename', path = 1 }},
     lualine_b = {},
-    lualine_c = { 'filename' },
+    lualine_c = {},
     lualine_x = {},
     lualine_y = {},
     lualine_z = {}
@@ -452,6 +460,7 @@ require('nvim-treesitter.configs').setup {
   },
   highlight = {
     enable = true, -- false will disable the whole extension
+    additional_vim_regex_highlighting = { "markdown" }
   },
   incremental_selection = {
     enable = true,

@@ -54,7 +54,7 @@ export PATH="$GOPATH/bin:$PATH"
 
 # Other program settings:
 export BAT_THEME="gruvbox-light"
-# export ZK_NOTEBOOK_DIR="/home/navin/Documents/my-notes"
+export ZK_NOTEBOOK_DIR="/home/navin/Documents/zk-notes"
 export TS_ONFINISH="/home/navin/.local/bin/tsp-ring"
 export DICS="/usr/share/stardict/dic/"
 export SUDO_ASKPASS="$HOME/.local/bin/dmenupass"

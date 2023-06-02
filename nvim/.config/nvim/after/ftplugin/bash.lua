@@ -1,2 +1,2 @@
 -- Keybindings
-vim.keymap.set("n", "<F5>", [[:call VimuxRunCommand("bash " . bufname("%"), 1)<CR>]])
+vim.keymap.set("n", "<F5>", require("my-functions").add_to_hist_and_run([[bash ]] .. vim.fn.bufname("%")))

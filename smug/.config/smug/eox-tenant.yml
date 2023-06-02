@@ -10,10 +10,7 @@ env:
   PUEUE_GROUP: eox-tenant
 
 windows:
-  - name: code
+  - name: eox-tenant
     commands:
       - activate
       - e .
-  - name: shell
-    commands:
-      - activate

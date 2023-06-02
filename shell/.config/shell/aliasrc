@@ -287,6 +287,7 @@ alias tws="timew summary"
 alias twday="timew day"
 alias twmonthtotal="timew report totals :month"
 alias twtotal="timew report totals "
+alias twjira="timew report total_jira_report "
 
 alias andriod-camera="scrcpy --lock-video-orientation=1 --v4l2-sink=/dev/video2 --turn-screen-off --stay-awake --power-off-on-close --crop 900:1440:0:400 -m 720 -N"
 
