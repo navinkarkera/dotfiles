@@ -1,8 +1,8 @@
 session: notes
 
-root: ~/Documents/notes
+root: ~/Documents/notes/
 
 windows:
   - name: NOTES
     commands:
-      - e
+      - e index.md

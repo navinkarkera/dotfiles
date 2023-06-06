@@ -1,0 +1,31 @@
+return {
+  'jakewvincent/mkdnflow.nvim',
+  config = function()
+    require('mkdnflow').setup({
+      perspective = {
+        priority = 'root',
+        fallback = 'current',
+        root_tell = 'index.md',
+      },
+      links = {
+        conceal = true,
+        transform_explicit = function(text)
+          text = text:gsub(" ", "-")
+          text = text:lower()
+          return (text)
+        end
+      },
+      new_file_template = {
+        use_template = true,
+        placeholders = {
+          before = {
+            title = "link_title",
+          },
+          after = {}
+        },
+        template = "# {{ title }}"
+      },
+    })
+    vim.api.nvim_create_autocmd("FileType", { pattern = "markdown", command = "set awa" })
+  end
+}

@@ -457,10 +457,14 @@ require('nvim-treesitter.configs').setup {
     "vim",
     "bash",
     "json",
+    "org",
+    "markdown",
+    "markdown_inline",
   },
   highlight = {
     enable = true, -- false will disable the whole extension
-    additional_vim_regex_highlighting = { "markdown" }
+    disable = {'org'},
+    additional_vim_regex_highlighting = { "markdown", "org" }
   },
   incremental_selection = {
     enable = true,
@@ -588,6 +592,10 @@ local servers = {
     capabilities = capabilities,
   },
   html = {
+    on_attach = on_attach,
+    capabilities = capabilities,
+  },
+  marksman = {
     on_attach = on_attach,
     capabilities = capabilities,
   },
@@ -737,7 +745,8 @@ cmp.setup {
   sources = {
     { name = 'luasnip' },
     { name = 'nvim_lsp' },
-    { name = 'nvim_lsp_signature_help' }
+    { name = 'nvim_lsp_signature_help' },
+    { name = 'neorg' }
   },
   formatting = {
     format = function(entry, vim_item)
