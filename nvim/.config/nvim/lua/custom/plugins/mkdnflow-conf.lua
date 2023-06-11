@@ -8,7 +8,7 @@ return {
         root_tell = 'index.md',
       },
       links = {
-        conceal = true,
+        conceal = false,
         transform_explicit = function(text)
           text = text:gsub(" ", "-")
           text = text:lower()

@@ -4,3 +4,4 @@ zsh/.config/zsh/.zcompdump
 __pycache__/
 tmux/.config/tmux/plugins/
 vale/.config/vale/styles/
+task/.timewarrior/

@@ -155,6 +155,12 @@ vim.o.splitbelow = true
 require('gruvbox').setup({
   transparent_mode = true,
   dim_inactive = false,
+  italic = {
+    strings = true,
+    comments = true,
+    operators = false,
+    folds = false,
+  },
 })
 vim.cmd [[colorscheme gruvbox]]
 
@@ -400,7 +406,9 @@ map('n', '<leader>fh', fzf_lua.help_tags)
 map('n', '<leader>fg', fzf_lua.git_status)
 map('n', '<leader>fl', fzf_lua.resume)
 map('n', '<leader>fq', fzf_lua.quickfix)
-map('n', '<leader>so', fzf_lua.tags)
+map('n', '<leader>fs', fzf_lua.lsp_document_symbols)
+map('n', '<leader>fj', fzf_lua.jumps)
+map('n', '<leader>fws', fzf_lua.lsp_live_workspace_symbols)
 map('n', '<C-]>', function() fzf_lua.command_history({fzf_opts = { ["--tiebreak"] = "index", ["--query"] = "Run " }}) end)
 map('n', '<leader>?', fzf_lua.oldfiles)
 map('n', '<C-f>', fzf_lua.live_grep_glob)
@@ -463,8 +471,6 @@ require('nvim-treesitter.configs').setup {
   },
   highlight = {
     enable = true, -- false will disable the whole extension
-    disable = {'org'},
-    additional_vim_regex_highlighting = { "markdown", "org" }
   },
   incremental_selection = {
     enable = true,
@@ -525,6 +531,10 @@ for type, icon in pairs(signs) do
   local hl = "DiagnosticSign" .. type
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 end
+
+vim.diagnostic.config({
+  virtual_text = false,
+})
 
 -- LSP settings
 local on_attach = function(_, bufnr)
