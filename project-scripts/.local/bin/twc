@@ -1,4 +1,11 @@
 #!/bin/bash
 
-[[ $(timew get dom.active) = "1" ]] && timew tag "${1:-$(cat ~/.timewarrior/data/tags.data | jq 'keys | sort[]' -r | fzf)}" && timew stop
-[[ "$2" != "stop" ]] && timew start
+if [[ -z "$1" ]]; then
+	if [[ $(timew get dom.active) = "1" ]]; then
+		cat ~/.timewarrior/data/tags.data | jq 'keys | sort[]' -r | fzf --print-query --bind 'enter:become(timew tag {} && timew stop),ctrl-e:become(timew tag {} && timew stop && timew start),ctrl-n:become(timew tag {q} && timew stop)' --query "BB-"
+	else
+		timew start
+	fi
+else
+	timew tag "${1}" && timew stop
+fi
