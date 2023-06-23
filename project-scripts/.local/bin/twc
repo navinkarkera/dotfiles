@@ -2,7 +2,8 @@
 
 if [[ -z "$1" ]]; then
 	if [[ $(timew get dom.active) = "1" ]]; then
-		cat ~/.timewarrior/data/tags.data | jq 'keys | sort[]' -r | fzf --print-query --bind 'enter:become(timew tag {} && timew stop),ctrl-e:become(timew tag {} && timew stop && timew start),ctrl-n:become(timew tag {q} && timew stop)' --query "BB-"
+		# cat ~/.timewarrior/data/tags.data | jq 'keys | sort[]' -r | fzf --print-query --bind 'enter:become(timew tag {} && timew stop),ctrl-e:become(timew tag {} && timew stop && timew start),ctrl-n:become(timew tag {q} && timew stop)' --query "BB-"
+		timew twfzf 6m
 	else
 		timew start
 	fi
