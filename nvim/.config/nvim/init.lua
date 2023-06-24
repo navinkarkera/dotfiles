@@ -182,14 +182,14 @@ require('lualine').setup {
   },
   sections = {
     lualine_a = { 'mode' },
-    lualine_b = { 'vim.fn.fnamemodify(vim.fn.getcwd(), ":t")', 'branch'},
+    lualine_b = { 'vim.fn.fnamemodify(vim.fn.getcwd(), ":t")', 'branch' },
     lualine_c = { 'filename' },
     lualine_x = { 'encoding', 'fileformat', 'filetype' },
     lualine_y = { 'progress' },
     lualine_z = { 'location' }
   },
   winbar = {
-    lualine_a = {{ 'filename', path = 1 }},
+    lualine_a = { { 'filename', path = 1 } },
     lualine_b = { 'diff', 'diagnostics', 'nvim_treesitter#statusline' },
     lualine_c = {},
     lualine_x = {},
@@ -197,7 +197,7 @@ require('lualine').setup {
     lualine_z = {}
   },
   inactive_winbar = {
-    lualine_a = {{ 'filename', path = 1 }},
+    lualine_a = { { 'filename', path = 1 } },
     lualine_b = {},
     lualine_c = {},
     lualine_x = {},
@@ -391,7 +391,7 @@ fzf_lua.setup({
   'fzf-native',
   winopts = {
     preview = { default = "bat" },
-    height = 0.90,     -- window height
+    height = 0.90, -- window height
     width = 0.90,
   },
 })
@@ -409,7 +409,7 @@ map('n', '<leader>fq', fzf_lua.quickfix)
 map('n', '<leader>fs', fzf_lua.lsp_document_symbols)
 map('n', '<leader>fj', fzf_lua.jumps)
 map('n', '<leader>fws', fzf_lua.lsp_live_workspace_symbols)
-map('n', '<C-]>', function() fzf_lua.command_history({fzf_opts = { ["--tiebreak"] = "index", ["--query"] = "Run " }}) end)
+map('n', '<C-]>', function() fzf_lua.command_history({ fzf_opts = { ["--tiebreak"] = "index", ["--query"] = "Run " } }) end)
 map('n', '<leader>?', fzf_lua.oldfiles)
 map('n', '<C-f>', fzf_lua.live_grep_glob)
 map("v", "<C-f>", fzf_lua.grep_visual)
@@ -537,6 +537,22 @@ vim.diagnostic.config({
 })
 
 -- LSP settings
+local function peekOrHover()
+  local winid = require('ufo').peekFoldedLinesUnderCursor()
+  if winid then
+    local bufnr = vim.api.nvim_win_get_buf(winid)
+    local keys = { 'a', 'i', 'o', 'A', 'I', 'O', 'gd', 'gr' }
+    for _, k in ipairs(keys) do
+      -- Add a prefix key to fire `trace` action,
+      -- if Neovim is 0.8.0 before, remap yourself
+      vim.keymap.set('n', k, '<CR>' .. k, { noremap = false, buffer = bufnr })
+    end
+  else
+    -- nvimlsp
+    vim.lsp.buf.hover()
+  end
+end
+
 local on_attach = function(_, bufnr)
   local opts = { buffer = bufnr }
   map('n', 'gD', function()
@@ -547,7 +563,7 @@ local on_attach = function(_, bufnr)
     })
   end, opts)
   map('n', 'gd', vim.lsp.buf.definition, opts)
-  map('n', 'K', vim.lsp.buf.hover, opts)
+  map('n', 'K', peekOrHover, opts)
   map('n', 'gi', vim.lsp.buf.implementation, opts)
   map('n', '<leader>si', vim.lsp.buf.signature_help, opts)
   map('n', '<leader>wa', vim.lsp.buf.add_workspace_folder, opts)
@@ -582,6 +598,10 @@ vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(
 -- nvim-cmp supports additional completion capabilities
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
+capabilities.textDocument.foldingRange = {
+  dynamicRegistration = false,
+  lineFoldingOnly = true
+}
 
 -- Enable the following language servers
 local servers = {
@@ -900,10 +920,14 @@ map({ "n" }, "gS", require("ts-node-action").node_action, { desc = "Trigger Node
 require("nvim-surround").setup({})
 
 -- terminal setup
-vim.api.nvim_create_user_command("Run", function(opts) my_functions.run_command(opts.args, false, false) end, { nargs = 1, complete = "shellcmd" })
-vim.api.nvim_create_user_command("RunB", function(opts) my_functions.run_command(opts.args, false, true) end, { nargs = 1, complete = "shellcmd" })
-vim.api.nvim_create_user_command("RunF", function(opts) my_functions.run_command(opts.args, true, false) end, { nargs = 1, complete = "shellcmd" })
-vim.api.nvim_create_user_command("RunFB", function(opts) my_functions.run_command(opts.args, true, true) end, { nargs = 1, complete = "shellcmd" })
+vim.api.nvim_create_user_command("Run", function(opts) my_functions.run_command(opts.args, false, false) end,
+  { nargs = 1, complete = "shellcmd" })
+vim.api.nvim_create_user_command("RunB", function(opts) my_functions.run_command(opts.args, false, true) end,
+  { nargs = 1, complete = "shellcmd" })
+vim.api.nvim_create_user_command("RunF", function(opts) my_functions.run_command(opts.args, true, false) end,
+  { nargs = 1, complete = "shellcmd" })
+vim.api.nvim_create_user_command("RunFB", function(opts) my_functions.run_command(opts.args, true, true) end,
+  { nargs = 1, complete = "shellcmd" })
 map("n", "<M-CR>", ":Run ")
 map("v", "<M-CR>", [["vy:Run <C-R>v]])
 map("n", "<M-BS>", ":RunB ")
