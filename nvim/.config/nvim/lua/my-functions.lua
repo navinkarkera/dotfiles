@@ -5,7 +5,7 @@ local neogen = require("neogen")
 function M.add_to_hist_and_run(cmd)
   local vim_cmd = "Run " .. cmd
   vim.cmd([[:call histadd("cmd", "]] .. string.gsub(vim_cmd, '"', '\\"') .. [[")]])
-  vim.cmd(":" .. vim_cmd)
+  vim.cmd(vim_cmd)
 end
 
 function M.getPythonModulePath(filePath)
@@ -161,6 +161,8 @@ end
 
 
 function M.run_command(cmd, full_shell, background)
+  local cur_win = vim.api.nvim_get_current_win()
+  local cur_position = vim.api.nvim_win_get_cursor(cur_win)
   if full_shell then
     cmd = [[zsh -ic "]] .. cmd .. [["]]
   end
@@ -180,11 +182,13 @@ function M.run_command(cmd, full_shell, background)
     vim.cmd("new")
     term_run_cmd(cmd)
   end
-  vim.api.nvim_input("G")
+  vim.cmd("norm G")
   if background then
     vim.api.nvim_input("<C-w>c")
   else
-    vim.api.nvim_input("<C-w><C-p>")
+    vim.api.nvim_set_current_win(cur_win)
+    vim.api.nvim_win_set_cursor(cur_win, cur_position)
+    -- vim.api.nvim_input("<C-w><C-p>")
   end
 end
 

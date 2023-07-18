@@ -12,7 +12,7 @@ if initialize_session "eox-tenant"; then
   tmux setenv -t eox-tenant GIT_PARENT_BRANCH upstream/master
   new_window
   run_cmd "activate"
-  run_cmd "e"
+  run_cmd "v"
   # Select the default active window on session creation.
   select_window 1
 

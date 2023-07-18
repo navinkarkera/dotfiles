@@ -60,7 +60,7 @@ export TS_ONFINISH="/home/navin/.local/bin/tsp-ring"
 export DICS="/usr/share/stardict/dic/"
 export SUDO_ASKPASS="$HOME/.local/bin/dmenupass"
 export FZF_DEFAULT_OPTS="--ansi --layout=reverse"
-export FZF_DEFAULT_COMMAND="fd --type file --follow -H --color=always"
+export FZF_DEFAULT_COMMAND="fd --type file -E .git --follow -H --color=always"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND . $HOME"
 export FZF_CTRL_T_OPTS="--preview 'bat --style=numbers --color=always --line-range :100 {}'"
 _gen_fzf_default_opts() {
@@ -112,7 +112,7 @@ _gen_fzf_default_opts() {
   "
 }
 _gen_fzf_default_opts
-export FZF_ALT_C_COMMAND="fd --type d --color=always . $HOME"
+export FZF_ALT_C_COMMAND="fd --type d --color=auto . $HOME"
 export FZF_ALT_C_OPTS="--preview 'exa --tree --level=3 {}'"
 export FZF_TMUX_HEIGHT=80%
 export FZF_TMUX_OPTS="-p"

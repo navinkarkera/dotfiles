@@ -1,15 +1,15 @@
 # Set a custom session root path. Default is `$HOME`.
 # Must be called before `initialize_session`.
-session_root "~/work/master-devstack/src/event-bus-redis/"
+session_root "~/work/opencraft/listaflow/"
 
 # Create session with specified name if it does not already exist. If no
 # argument is given, session name will be based on layout file name.
-if initialize_session "event_bus_redis"; then
+if initialize_session "listaflow"; then
 
   # Create a new window inline within session layout definition.
-  tmux setenv -t event_bus_redis PYTHON_ENV_PATH /home/navin/work/python_shared_venvs/py38/
-  tmux setenv -t event_bus_redis NVIM_SERVER /tmp/event_bus_redis-nvim.pipe
-  tmux setenv -t event_bus_redis GIT_PARENT_BRANCH upstream/main
+  tmux setenv -t listaflow PYTHON_ENV_PATH /home/navin/work/python_shared_venvs/py38/
+  tmux setenv -t listaflow NVIM_SERVER /tmp/listaflow-nvim.pipe
+  tmux setenv -t listaflow GIT_PARENT_BRANCH master
   new_window
   run_cmd "activate"
   run_cmd "v"

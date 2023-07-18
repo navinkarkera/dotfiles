@@ -23,6 +23,7 @@
 	save-update = "!f() { git stash && git fetch $1 && git reset --hard $1/master && git stash pop; }; f"
 	fu = fetch upstream
 	rum = reset --hard upstream/master
+	save = "!f() { git add . && git commit -m \"chore: update\"; git push; }; f"
 
 [core]
 	pager = delta --paging=always

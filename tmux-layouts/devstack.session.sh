@@ -9,10 +9,11 @@ if initialize_session "devstack"; then
   # Create a new window inline within session layout definition.
   tmux setenv -t devstack PYTHON_ENV_PATH /home/navin/work/python_shared_venvs/py38/
   tmux setenv -t devstack NVIM_SERVER /tmp/devstack-nvim.pipe
-  tmux setenv -t devstack GIT_PARENT_BRANCH upstream/master
+  tmux setenv -t devstack GIT_PARENT_BRANCH master
   new_window
   run_cmd "activate"
   run_cmd "cd edx-platform"
+  run_cmd "v"
   new_window
   run_cmd "activate"
   run_cmd "cd devstack"

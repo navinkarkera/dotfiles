@@ -12,7 +12,7 @@ if initialize_session "openedx-events"; then
   tmux setenv -t openedx-events GIT_PARENT_BRANCH upstream-main
   new_window
   run_cmd "activate"
-  run_cmd "e"
+  run_cmd "v"
   # Select the default active window on session creation.
   select_window 1
 

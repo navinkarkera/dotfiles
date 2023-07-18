@@ -68,7 +68,7 @@ zle -N zle-line-init
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
-bindkey -s '^p' 'cd "$(fd --hidden --exclude .git --type d . | fzf)"\n'
+bindkey -s '^p' 'cd "$(fd --hidden --exclude .git --type d . | fzf --preview \"exa --tree --level=3 {}\")"\n'
 
 bindkey '^[[P' delete-char
 

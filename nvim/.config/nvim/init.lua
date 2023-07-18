@@ -73,7 +73,7 @@ require('lazy').setup {
     dependencies = {
       { 'williamboman/mason.nvim', config = true },
       'williamboman/mason-lspconfig.nvim',
-      { 'j-hui/fidget.nvim',       opts = {} },
+      { 'j-hui/fidget.nvim',       opts = {}, tag = "legacy" },
       'folke/neodev.nvim',
     },
   },

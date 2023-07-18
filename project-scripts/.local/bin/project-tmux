@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-selected=$(smug list | fzf-tmux -p)
+selected=$(tmuxifier list-sessions | fzf)
 [[ -z $selected ]] && exit 0
-smug start "$selected" -a > /dev/null
+tmuxifier load-session "$selected"
