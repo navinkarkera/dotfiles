@@ -54,6 +54,7 @@ require('lazy').setup {
     dependencies = { 'nvim-tree/nvim-web-devicons' }
   },
   'ellisonleao/gruvbox.nvim',
+  { "rebelot/kanagawa.nvim",   name = "kanagawa",                         priority = 1000 },
   'nvim-lualine/lualine.nvim',
   {
     'lukas-reineke/indent-blankline.nvim',
@@ -73,7 +74,6 @@ require('lazy').setup {
     dependencies = {
       { 'williamboman/mason.nvim', config = true },
       'williamboman/mason-lspconfig.nvim',
-      { 'j-hui/fidget.nvim',       opts = {}, tag = "legacy" },
       'folke/neodev.nvim',
     },
   },
@@ -98,11 +98,7 @@ require('lazy').setup {
     dependencies = { 'nvim-treesitter' },
   },
   "kylechui/nvim-surround",
-  { 'sindrets/diffview.nvim',  dependencies = 'nvim-lua/plenary.nvim' },
-  {
-    "folke/trouble.nvim",
-    dependencies = "nvim-tree/nvim-web-devicons"
-  },
+  { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim' },
   { "pechorin/any-jump.vim" },
   { "stevearc/oil.nvim" },
   { import = 'custom.plugins' },
@@ -140,7 +136,7 @@ vim.o.updatetime = 250
 vim.wo.signcolumn = 'yes'
 
 --Set colorscheme
-vim.o.background = "light"
+-- vim.o.background = "light"
 vim.o.termguicolors = true
 vim.o.cursorline = false
 
@@ -152,17 +148,36 @@ vim.o.complete = '.,w,b'
 vim.o.splitright = true
 vim.o.splitbelow = true
 
-require('gruvbox').setup({
-  transparent_mode = true,
-  dim_inactive = false,
-  italic = {
-    strings = true,
-    comments = true,
-    operators = false,
-    folds = false,
+-- require('gruvbox').setup({
+--   transparent_mode = true,
+--   dim_inactive = false,
+--   italic = {
+--     strings = true,
+--     comments = true,
+--     operators = false,
+--     folds = false,
+--   },
+-- })
+-- vim.cmd.colorscheme "catppuccin"
+require('kanagawa').setup({
+  dimInactive = true,    -- dim inactive window `:h hl-NormalNC`
+  terminalColors = true, -- define vim.g.terminal_color_{0,17}
+  theme = "wave",        -- Load "wave" theme when 'background' option is not set
+  overrides = function(colors)
+    local theme = colors.theme
+    return {
+      Pmenu = { fg = theme.ui.shade0, bg = theme.ui.bg_p1 }, -- add `blend = vim.o.pumblend` to enable transparency
+      PmenuSel = { fg = "NONE", bg = theme.ui.bg_p2 },
+      PmenuSbar = { bg = theme.ui.bg_m1 },
+      PmenuThumb = { bg = theme.ui.bg_p2 },
+    }
+  end,
+  background = {   -- map the value of 'background' option to a theme
+    dark = "wave", -- try "dragon" !
+    light = "lotus"
   },
 })
-vim.cmd [[colorscheme gruvbox]]
+vim.cmd("colorscheme kanagawa")
 
 if vim.fn.executable("rg") == 1 then
   vim.o.grepprg = [[rg --vimgrep --no-heading --smart-case --hidden -g '!.git/']]
@@ -175,7 +190,7 @@ end
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = 'gruvbox',
+    theme = 'kanagawa',
     component_separators = '|',
     section_separators = '',
     globalstatus = true,
@@ -220,29 +235,13 @@ vim.g.any_jump_window_width_ratio                   = 0.8
 vim.g.any_jump_window_height_ratio                  = 0.8
 vim.g.any_jump_window_top_offset                    = 5
 
---Enable trouble.nvim
-require("trouble").setup({
-  auto_preview = false,
-})
-map("n", "<C-q>", "<cmd>TroubleToggle<cr>",
+map("n", "<C-q>", ":call ToggleQuickFix()<CR>",
   { silent = true, noremap = true }
 )
-map("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>",
+map("n", "<C-j>", ":cn<CR>",
   { silent = true, noremap = true }
 )
-map("n", "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>",
-  { silent = true, noremap = true }
-)
-map("n", "<leader>xl", "<cmd>TroubleToggle loclist<cr>",
-  { silent = true, noremap = true }
-)
-map("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>",
-  { silent = true, noremap = true }
-)
-map("n", "<C-j>", function() require("trouble").next({ skip_groups = true, jump = true }); end,
-  { silent = true, noremap = true }
-)
-map("n", "<C-k>", function() require("trouble").previous({ skip_groups = true, jump = true }); end,
+map("n", "<C-k>", ":cp<CR>",
   { silent = true, noremap = true }
 )
 
@@ -389,6 +388,11 @@ map('n', '<leader>to', require('oil').open)
 local fzf_lua = require("fzf-lua")
 fzf_lua.setup({
   'fzf-native',
+  keymap = {
+    fzf = {
+      ['CTRL-Q'] = 'select-all+accept',
+    },
+  },
   winopts = {
     preview = { default = "bat" },
     height = 0.90, -- window height
@@ -409,7 +413,8 @@ map('n', '<leader>fq', fzf_lua.quickfix)
 map('n', '<leader>fs', fzf_lua.lsp_document_symbols)
 map('n', '<leader>fj', fzf_lua.jumps)
 map('n', '<leader>fws', fzf_lua.lsp_live_workspace_symbols)
-map('n', '<C-]>', function() fzf_lua.command_history({ fzf_opts = { ["--tiebreak"] = "index", ["--query"] = "Run " } }) end)
+map('n', '<C-]>',
+  function() fzf_lua.command_history({ fzf_opts = { ["--tiebreak"] = "index", ["--query"] = "Run " } }) end)
 map('n', '<leader>?', fzf_lua.oldfiles)
 map('n', '<C-f>', fzf_lua.live_grep_glob)
 map("v", "<C-f>", fzf_lua.grep_visual)
@@ -573,7 +578,7 @@ local on_attach = function(_, bufnr)
   end, opts)
   map('n', '<leader>D', vim.lsp.buf.type_definition, opts)
   map('n', '<leader>rn', vim.lsp.buf.rename, opts)
-  map('n', 'gr', "<cmd>TroubleToggle lsp_references<cr>", opts)
+  map('n', 'gr', vim.lsp.buf.references, opts)
   map('n', 'gR', fzf_lua.lsp_references, opts)
   map('n', '<leader>ca', vim.lsp.buf.code_action, opts)
   map('n', '<leader>so', fzf_lua.lsp_document_symbols, opts)
@@ -941,7 +946,7 @@ map("n", "<F2>", ":Run<Up><CR>")
 map("n", "<F3>", my_functions.restart_cmd)
 map("n", "<leader>mt", my_functions.fzf_make_tasks)
 
-vim.api.nvim_create_user_command("Grep", "silent grep! <q-args> | TroubleToggle quickfix", { nargs = 1 })
+vim.api.nvim_create_user_command("Grep", "silent grep! <q-args>", { nargs = 1 })
 vim.api.nvim_create_user_command(
   "GBrowse",
   [[:silent !git browse "" %:~:. <line1> <line2>]],

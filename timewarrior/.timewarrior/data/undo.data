@@ -1,0 +1,1314 @@
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230724T110143Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230724T110143Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230724T110143Z","tags":["BB-254 listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230724T110143Z","tags":["BB-254 listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230724T110143Z","end":"20230724T110806Z","tags":["BB-254 listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230724T110807Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230724T110807Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230724T110807Z","tags":["BB-7391 check"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230724T110807Z","tags":["BB-7391 check"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230724T110807Z","end":"20230724T111239Z","tags":["BB-7391 check"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230724T111830Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230724T111830Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230724T111830Z","tags":["BB-7391 check"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230724T111830Z","tags":["BB-7391 check"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230724T111830Z","end":"20230724T112258Z","tags":["BB-7391 check"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230724T112258Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230724T112258Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230724T112258Z","tags":["BB-7407 fix devstack setup"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230724T112258Z","tags":["BB-7407 fix devstack setup"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230724T112258Z","end":"20230724T121218Z","tags":["BB-7407 fix devstack setup"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230724T122913Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230724T122913Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230724T122913Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230724T122913Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230724T122913Z","end":"20230724T125957Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230724T130000Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230724T130000Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230724T130000Z","tags":["BB-7666 investigate pydantic and alternatives and update PR"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230724T130000Z","tags":["BB-7666 investigate pydantic and alternatives and update PR"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230724T130000Z","end":"20230724T135706Z","tags":["BB-7666 investigate pydantic and alternatives and update PR"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230724T135707Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230724T135707Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230724T135707Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230724T135707Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230724T135707Z","end":"20230724T161908Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230724T165934Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230724T165934Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230724T165934Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230724T165934Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230724T165934Z","end":"20230724T171609Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230724T171609Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230724T171609Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230724T171609Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230724T171609Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230724T171609Z","end":"20230724T175240Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230724T175722Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230724T175722Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230724T175722Z","tags":["BB-254 post end of sprint update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230724T175722Z","tags":["BB-254 post end of sprint update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230724T175722Z","end":"20230724T181831Z","tags":["BB-254 post end of sprint update"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230725T090827Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T090827Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T090827Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T090827Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T090827Z","end":"20230725T092449Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230725T092450Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T092450Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T092450Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T092450Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T092450Z","end":"20230725T092642Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230725T092642Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T092642Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T092642Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T092642Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T092642Z","end":"20230725T095458Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230725T095458Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T095458Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T095458Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T095458Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T095458Z","end":"20230725T100344Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230725T100345Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T100345Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T100345Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T100345Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T100345Z","end":"20230725T104903Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230725T130752Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T130752Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T130752Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T130752Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T130752Z","end":"20230725T132007Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230725T132007Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T132007Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T132007Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T132007Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T132007Z","end":"20230725T132627Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230725T135350Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T135350Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T135350Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T135350Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T135350Z","end":"20230725T135536Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230725T135942Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T135942Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T135942Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T135942Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T135942Z","end":"20230725T140542Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230725T140542Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T140542Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T140542Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T140542Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T140542Z","end":"20230725T142607Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230725T143443Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T143443Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T143443Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T143443Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T143443Z","end":"20230725T143549Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230725T143549Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T143549Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T143549Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T143549Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T143549Z","end":"20230725T143623Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230725T144534Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T144534Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T144534Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T144534Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T144534Z","end":"20230725T144822Z","tags":["BB-7677 approve and post on slack informing about merge timing"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230725T145104Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T145104Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T145104Z","tags":["BB-254  catch up on sprint updates"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T145104Z","tags":["BB-254  catch up on sprint updates"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T145104Z","end":"20230725T150750Z","tags":["BB-254  catch up on sprint updates"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230725T150752Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T150752Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T150752Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T150752Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T150752Z","end":"20230725T152559Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230725T152559Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T152559Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T152559Z","tags":["BB-7698 review and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T152559Z","tags":["BB-7698 review and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T152559Z","end":"20230725T154650Z","tags":["BB-7698 review and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230725T160103Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T160103Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T160103Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T160103Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T160103Z","end":"20230725T160638Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230725T161224Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T161224Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T161224Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230725T161224Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230725T161224Z","end":"20230725T163054Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230726T091144Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230726T091144Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230726T091144Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230726T091144Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230726T091144Z","end":"20230726T092746Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230726T094301Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230726T094301Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230726T094301Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230726T094301Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230726T094301Z","end":"20230726T094637Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230726T110614Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230726T110614Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230726T110614Z","tags":["BB-7427 post update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230726T110614Z","tags":["BB-7427 post update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230726T110614Z","end":"20230726T110753Z","tags":["BB-7427 post update"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230726T110753Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230726T110753Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230726T110753Z","tags":["BB-7407 reduce 30 mins or so"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230726T110753Z","tags":["BB-7407 reduce 30 mins or so"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230726T110753Z","end":"20230726T124312Z","tags":["BB-7407 reduce 30 mins or so"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230726T124313Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230726T124313Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230726T124313Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230726T124313Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230726T124313Z","end":"20230726T132158Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230726T135113Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230726T135113Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230726T135113Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230726T135113Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230726T135113Z","end":"20230726T154120Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230726T162920Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230726T162920Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230726T162920Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230726T162920Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230726T162920Z","end":"20230726T170117Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230726T194622Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230726T194622Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230726T194622Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230726T194622Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230726T194622Z","end":"20230726T194637Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230727T092533Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T092533Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T092533Z","tags":["BB-7391 add staging site"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T092533Z","tags":["BB-7391 add staging site"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T092533Z","end":"20230727T094936Z","tags":["BB-7391 add staging site"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230727T095150Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T095150Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T095150Z","tags":["BB-7391 add staging site"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T095150Z","tags":["BB-7391 add staging site"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T095150Z","end":"20230727T100410Z","tags":["BB-7391 add staging site"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230727T100410Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T100410Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T100410Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T100410Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T100410Z","end":"20230727T104432Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230727T104432Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T104432Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T104432Z","tags":["BB-7391 add staging site"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T104432Z","tags":["BB-7391 add staging site"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T104432Z","end":"20230727T104750Z","tags":["BB-7391 add staging site"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230727T104750Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T104750Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T104750Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T104750Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T104750Z","end":"20230727T105616Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230727T105616Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T105616Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T105616Z","tags":["BB-7391 add staging site"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T105616Z","tags":["BB-7391 add staging site"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T105616Z","end":"20230727T105708Z","tags":["BB-7391 add staging site"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230727T105708Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T105708Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T105708Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T105708Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T105708Z","end":"20230727T114215Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230727T130443Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T130443Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T130443Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T130443Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T130443Z","end":"20230727T132359Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230727T132359Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T132359Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T132359Z","tags":["BB-7126 meeting with client"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T132359Z","tags":["BB-7126 meeting with client"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T132359Z","end":"20230727T134940Z","tags":["BB-7126 meeting with client"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230727T134940Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T134940Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T134940Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T134940Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T134940Z","end":"20230727T140152Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230727T140152Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T140152Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T140152Z","tags":["BB-254  social chat"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T140152Z","tags":["BB-254  social chat"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T140152Z","end":"20230727T143140Z","tags":["BB-254  social chat"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230727T143144Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T143144Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T143144Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T143144Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T143144Z","end":"20230727T145837Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230727T151013Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T151013Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T151013Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T151013Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T151013Z","end":"20230727T152120Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230727T152120Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T152120Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T152120Z","tags":["BB-7391 add staging site"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T152120Z","tags":["BB-7391 add staging site"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T152120Z","end":"20230727T154706Z","tags":["BB-7391 add staging site"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230727T154706Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T154706Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T154706Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T154706Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T154706Z","end":"20230727T161349Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230727T165124Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T165124Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T165124Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230727T165124Z","tags":["BB-7407 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230727T165124Z","end":"20230727T183804Z","tags":["BB-7407 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230728T093128Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230728T093128Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230728T093128Z","tags":["BB-7599 check and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230728T093128Z","tags":["BB-7599 check and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230728T093128Z","end":"20230728T093809Z","tags":["BB-7599 check and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230728T093930Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230728T093930Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230728T093930Z","tags":["BB-7599 check and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230728T093930Z","tags":["BB-7599 check and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230728T093930Z","end":"20230728T094006Z","tags":["BB-7599 check and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230728T094159Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230728T094159Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230728T094159Z","tags":["BB-7518 update PR and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230728T094159Z","tags":["BB-7518 update PR and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230728T094159Z","end":"20230728T095221Z","tags":["BB-7518 update PR and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230728T095222Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230728T095222Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230728T095222Z","tags":["BB-7666 replace handlers in edx-platform"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230728T095222Z","tags":["BB-7666 replace handlers in edx-platform"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230728T095222Z","end":"20230728T102157Z","tags":["BB-7666 replace handlers in edx-platform"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230728T102652Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230728T102652Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230728T102652Z","tags":["BB-7666 replace handlers in edx-platform"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230728T102652Z","tags":["BB-7666 replace handlers in edx-platform"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230728T102652Z","end":"20230728T104534Z","tags":["BB-7666 replace handlers in edx-platform"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230728T104621Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230728T104621Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230728T104621Z","tags":["BB-7666 replace handlers in edx-platform"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230728T104621Z","tags":["BB-7666 replace handlers in edx-platform"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230728T104621Z","end":"20230728T105031Z","tags":["BB-7666 replace handlers in edx-platform"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230728T130700Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230728T130700Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230728T130700Z","tags":["BB-7666 replace handlers in xblock-skill-tagging"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230728T130700Z","tags":["BB-7666 replace handlers in xblock-skill-tagging"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230728T130700Z","end":"20230728T142545Z","tags":["BB-7666 replace handlers in xblock-skill-tagging"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230728T153128Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230728T153128Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230728T153128Z","tags":["BB-7599 create release branch and new PR"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230728T153128Z","tags":["BB-7599 create release branch and new PR"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230728T153128Z","end":"20230728T154533Z","tags":["BB-7599 create release branch and new PR"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230728T155959Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230728T155959Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230728T155959Z","tags":["BB-7391 update upstream ticket and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230728T155959Z","tags":["BB-7391 update upstream ticket and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230728T155959Z","end":"20230728T160643Z","tags":["BB-7391 update upstream ticket and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230731T100901Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T100901Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T100901Z","tags":["BB-7599 update PR, merge and update ticket"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T100901Z","tags":["BB-7599 update PR, merge and update ticket"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T100901Z","end":"20230731T102029Z","tags":["BB-7599 update PR, merge and update ticket"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230731T102030Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T102030Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T102030Z","tags":["BB-7407 check and ping reviewer"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T102030Z","tags":["BB-7407 check and ping reviewer"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T102030Z","end":"20230731T102607Z","tags":["BB-7407 check and ping reviewer"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230731T113327Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T113327Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T113327Z","tags":["BB-7518 update ticket"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T113327Z","tags":["BB-7518 update ticket"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T113327Z","end":"20230731T113511Z","tags":["BB-7518 update ticket"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230731T113517Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T113517Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T113517Z","tags":["BB-7568 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T113517Z","tags":["BB-7568 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T113517Z","end":"20230731T114223Z","tags":["BB-7568 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230731T120034Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T120034Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T120034Z","tags":["BB-7568 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T120034Z","tags":["BB-7568 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T120034Z","end":"20230731T121823Z","tags":["BB-7568 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230731T121823Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T121823Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T121823Z","tags":["BB-7694 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T121823Z","tags":["BB-7694 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T121823Z","end":"20230731T122340Z","tags":["BB-7694 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230731T133031Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T133031Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T133031Z","tags":["BB-7698 review and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T133031Z","tags":["BB-7698 review and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T133031Z","end":"20230731T133931Z","tags":["BB-7698 review and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230731T134031Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T134031Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T134031Z","tags":["BB-7694 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T134031Z","tags":["BB-7694 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T134031Z","end":"20230731T142330Z","tags":["BB-7694 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230731T142330Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T142330Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T142330Z","tags":["BB-7568 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T142330Z","tags":["BB-7568 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T142330Z","end":"20230731T144019Z","tags":["BB-7568 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230731T144042Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T144042Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T144042Z","tags":["BB-7698 review and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T144042Z","tags":["BB-7698 review and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T144042Z","end":"20230731T144106Z","tags":["BB-7698 review and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230731T152659Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T152659Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T152659Z","tags":["BB-7698 review and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T152659Z","tags":["BB-7698 review and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T152659Z","end":"20230731T153100Z","tags":["BB-7698 review and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20230731T172445Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T172445Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T172445Z","tags":["BB-254  post mid sprint update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20230731T172445Z","tags":["BB-254  post mid sprint update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20230731T172445Z","end":"20230731T173610Z","tags":["BB-254  post mid sprint update"]}
