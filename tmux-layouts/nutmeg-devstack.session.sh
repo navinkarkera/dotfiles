@@ -7,7 +7,6 @@ session_root "~/work/master-devstack/"
 if initialize_session "nutmeg-devstack"; then
 
   # Create a new window inline within session layout definition.
-  tmux setenv -t nutmeg-devstack PYTHON_ENV_PATH /home/navin/work/python_shared_venvs/py38/
   tmux setenv -t nutmeg-devstack NVIM_SERVER /tmp/nutmeg-devstack-nvim.pipe
   tmux setenv -t nutmeg-devstack GIT_PARENT_BRANCH opencraft-release/nutmeg.2
   tmux setenv -t nutmeg-devstack OPENEDX_RELEASE nutmeg.master

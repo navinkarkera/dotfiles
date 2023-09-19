@@ -1,0 +1,4 @@
+# Direnv stuff
+.direnv
+.envrc
+.venv

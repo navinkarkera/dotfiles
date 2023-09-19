@@ -7,7 +7,6 @@ session_root "~/work/master-devstack/src/event-bus-redis/"
 if initialize_session "event_bus_redis"; then
 
   # Create a new window inline within session layout definition.
-  tmux setenv -t event_bus_redis PYTHON_ENV_PATH /home/navin/work/python_shared_venvs/py38/
   tmux setenv -t event_bus_redis NVIM_SERVER /tmp/event_bus_redis-nvim.pipe
   tmux setenv -t event_bus_redis GIT_PARENT_BRANCH upstream/main
   new_window

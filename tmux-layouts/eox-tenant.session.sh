@@ -7,7 +7,6 @@ session_root "~/work/master-devstack/src/eox-tenant/"
 if initialize_session "eox-tenant"; then
 
   # Create a new window inline within session layout definition.
-  tmux setenv -t eox-tenant PYTHON_ENV_PATH /home/navin/work/python_shared_venvs/py38/
   tmux setenv -t eox-tenant NVIM_SERVER /tmp/eox-tenant-nvim.pipe
   tmux setenv -t eox-tenant GIT_PARENT_BRANCH upstream/master
   new_window

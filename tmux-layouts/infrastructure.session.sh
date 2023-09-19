@@ -7,7 +7,6 @@ session_root "~/work/opencraft/infrastructure/"
 if initialize_session "infrastructure"; then
 
   # Create a new window inline within session layout definition.
-  tmux setenv -t infrastructure PYTHON_ENV_PATH /home/navin/work/python_shared_venvs/py310/
   tmux setenv -t infrastructure NVIM_SERVER /tmp/infrastructure-nvim.pipe
   tmux setenv -t infrastructure GIT_PARENT_BRANCH main
   new_window

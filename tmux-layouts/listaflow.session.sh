@@ -7,7 +7,6 @@ session_root "~/work/opencraft/listaflow/"
 if initialize_session "listaflow"; then
 
   # Create a new window inline within session layout definition.
-  tmux setenv -t listaflow PYTHON_ENV_PATH /home/navin/work/python_shared_venvs/py38/
   tmux setenv -t listaflow NVIM_SERVER /tmp/listaflow-nvim.pipe
   tmux setenv -t listaflow GIT_PARENT_BRANCH master
   new_window

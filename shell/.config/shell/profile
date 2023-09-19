@@ -52,6 +52,9 @@ export TMUXIFIER_LAYOUT_PATH="$HOME/dotfiles/tmux-layouts"
 
 export PATH="$GOPATH/bin:$PATH"
 
+# Python pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+
 # Other program settings:
 export BAT_THEME="OneHalfDark"
 export ZK_NOTEBOOK_DIR="/home/navin/Documents/zk-notes"

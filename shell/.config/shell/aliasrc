@@ -334,6 +334,6 @@ get_buku_ids() {
     # cut -d $'\t' -f 1
 }
 
-function btree {
-     br -c :pt "$@"
+function test-mic {
+     arecord -vvv -f dat /dev/null
 }

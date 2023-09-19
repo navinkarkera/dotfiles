@@ -123,6 +123,28 @@ function M.fzf_make_tasks()
   )
 end
 
+function M.fzf_all_tasks()
+  local fzf_lua = require 'fzf-lua'
+  local actions = require "fzf-lua.actions"
+  fzf_lua.fzf_exec(
+    "atuin history list --cmd-only",
+    {
+      prompt="Run> ",
+      fzf_opts = { ["--header"] = [["enter:run | ctrl-e:edit"]]  },
+      actions = {
+        ['default'] = function(selected, opts)
+          local cmd = selected[1]
+          M.add_to_hist_and_run(cmd)
+        end,
+        ['ctrl-e'] = function(selected, opts)
+          local cmd = selected[1]
+          actions.ex_run({ "Run " .. cmd })
+        end,
+      },
+    }
+  )
+end
+
 function M.restart_cmd()
   local title = vim.b.term_title
   if title == nil then

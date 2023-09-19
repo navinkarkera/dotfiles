@@ -7,7 +7,6 @@ session_root "~/work/master-devstack/src/taxonomy-connector/"
 if initialize_session "taxonomy-connector"; then
 
   # Create a new window inline within session layout definition.
-  tmux setenv -t taxonomy-connector PYTHON_ENV_PATH /home/navin/work/python_shared_venvs/py38/
   tmux setenv -t taxonomy-connector NVIM_SERVER /tmp/taxonomy-connector-nvim.pipe
   tmux setenv -t taxonomy-connector GIT_PARENT_BRANCH openedx-master
   new_window

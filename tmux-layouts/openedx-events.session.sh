@@ -7,7 +7,6 @@ session_root "~/work/master-devstack/src/openedx-events/"
 if initialize_session "openedx-events"; then
 
   # Create a new window inline within session layout definition.
-  tmux setenv -t openedx-events PYTHON_ENV_PATH /home/navin/work/python_shared_venvs/py38/
   tmux setenv -t openedx-events NVIM_SERVER /tmp/openedx_events-nvim.pipe
   tmux setenv -t openedx-events GIT_PARENT_BRANCH upstream-main
   new_window

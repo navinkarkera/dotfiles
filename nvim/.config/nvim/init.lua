@@ -54,7 +54,7 @@ require('lazy').setup {
     dependencies = { 'nvim-tree/nvim-web-devicons' }
   },
   'ellisonleao/gruvbox.nvim',
-  { "rebelot/kanagawa.nvim",   name = "kanagawa",                         priority = 1000 },
+  { "rebelot/kanagawa.nvim",   name = "kanagawa", priority = 1000 },
   'nvim-lualine/lualine.nvim',
   {
     'lukas-reineke/indent-blankline.nvim',
@@ -66,7 +66,7 @@ require('lazy').setup {
   { 'lewis6991/gitsigns.nvim', dependencies = { 'nvim-lua/plenary.nvim' } },
   {
     'nvim-treesitter/nvim-treesitter',
-    dependencies = { 'nvim-treesitter/nvim-treesitter-textobjects' },
+    dependencies = { 'nvim-treesitter/nvim-treesitter-textobjects', 'nvim-treesitter/nvim-treesitter-refactor' },
     build = ":TSUpdate",
   },
   {
@@ -74,14 +74,12 @@ require('lazy').setup {
     dependencies = {
       { 'williamboman/mason.nvim', config = true },
       'williamboman/mason-lspconfig.nvim',
-      'folke/neodev.nvim',
     },
   },
   {
     -- Autocompletion
     'hrsh7th/nvim-cmp',
-    dependencies = { 'hrsh7th/cmp-nvim-lsp', 'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip',
-      'hrsh7th/cmp-nvim-lsp-signature-help' },
+    dependencies = { 'hrsh7th/cmp-nvim-lsp', 'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip' },
   },
   "rafamadriz/friendly-snippets",
   "honza/vim-snippets",
@@ -170,6 +168,8 @@ require('kanagawa').setup({
       PmenuSel = { fg = "NONE", bg = theme.ui.bg_p2 },
       PmenuSbar = { bg = theme.ui.bg_m1 },
       PmenuThumb = { bg = theme.ui.bg_p2 },
+      WinSeparator = { bg = theme.ui.shade0, fg = theme.ui.nontext }, -- brighter
+      -- WinSeparator = { fg = "black" }, -- darker
     }
   end,
   background = {   -- map the value of 'background' option to a theme
@@ -287,9 +287,7 @@ nnoremap <silent> <M-a> :ZoomToggle<CR>
 -- Highlight on yank
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
 vim.api.nvim_create_autocmd('TextYankPost', {
-  callback = function()
-    vim.highlight.on_yank()
-  end,
+  callback = function() vim.highlight.on_yank() end,
   group = highlight_group,
   pattern = '*',
 })
@@ -298,9 +296,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 local my_group = vim.api.nvim_create_augroup('my_group', { clear = true })
 local api = vim.api
 api.nvim_create_autocmd('TextYankPost', {
-  callback = function()
-    vim.highlight.on_yank()
-  end,
+  callback = function() vim.highlight.on_yank() end,
   group = my_group,
   pattern = '*',
 })
@@ -523,6 +519,26 @@ require('nvim-treesitter.configs').setup {
       },
     },
   },
+  refactor = {
+    smart_rename = {
+      enable = true,
+      -- Assign keymaps to false to disable them, e.g. `smart_rename = false`.
+      keymaps = {
+        smart_rename = "grr",
+      },
+    },
+    navigation = {
+      enable = true,
+      -- Assign keymaps to false to disable them, e.g. `goto_definition = false`.
+      keymaps = {
+        goto_definition_lsp_fallback = "gd",
+        list_definitions = "gD",
+        list_definitions_toc = "gO",
+        goto_next_usage = "<a-*>",
+        goto_previous_usage = "<a-#>",
+      },
+    },
+  },
 }
 
 -- Diagnostic keymaps
@@ -613,26 +629,32 @@ local servers = {
   pyright = {
     on_attach = on_attach,
     capabilities = capabilities,
+    autostart = false,
   },
   tsserver = {
     on_attach = on_attach,
     capabilities = capabilities,
+    autostart = false,
   },
   cssls = {
     on_attach = on_attach,
     capabilities = capabilities,
+    autostart = false,
   },
   eslint = {
     on_attach = on_attach,
     capabilities = capabilities,
+    autostart = false,
   },
   html = {
     on_attach = on_attach,
     capabilities = capabilities,
+    autostart = false,
   },
   marksman = {
     on_attach = on_attach,
     capabilities = capabilities,
+    autostart = false,
   },
   ruff_lsp = {
     on_attach = on_attach,
@@ -660,6 +682,7 @@ local servers = {
   lua_ls = {
     capabilities = capabilities,
     on_attach = on_attach,
+    autostart = false,
     settings = {
       Lua = {
         workspace = { checkThirdParty = false },
@@ -669,8 +692,6 @@ local servers = {
   },
 }
 
--- Setup neovim lua configuration
-require('neodev').setup()
 
 -- Ensure the servers above are installed
 local mason_lspconfig = require 'mason-lspconfig'
@@ -943,6 +964,7 @@ map("v", "<M-'>", [["vy:RunF <C-R>v]])
 map("n", "<M-[>", ":RunFB ")
 map("v", "<M-[>", [["vy:RunFB <C-R>v]])
 map("n", "<F2>", ":Run<Up><CR>")
+map("n", "<M-]>", my_functions.fzf_all_tasks)
 map("n", "<F3>", my_functions.restart_cmd)
 map("n", "<leader>mt", my_functions.fzf_make_tasks)
 

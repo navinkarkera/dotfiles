@@ -100,3 +100,6 @@ source /usr/share/nvm/init-nvm.sh
 eval "$(zoxide init zsh)"
 eval "$(jira --completion-script-bash)"
 eval "$(tmuxifier init -)"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(atuin init zsh --disable-up-arrow)"

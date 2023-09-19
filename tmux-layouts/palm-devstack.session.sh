@@ -1,23 +1,20 @@
 # Set a custom session root path. Default is `$HOME`.
 # Must be called before `initialize_session`.
-session_root "~/work/master-devstack/"
+session_root "~/work/master-devstack/palm"
 
 # Create session with specified name if it does not already exist. If no
 # argument is given, session name will be based on layout file name.
 if initialize_session "palm-devstack"; then
 
   # Create a new window inline within session layout definition.
-  tmux setenv -t palm-devstack PYTHON_ENV_PATH /home/navin/work/python_shared_venvs/py38/
   tmux setenv -t palm-devstack NVIM_SERVER /tmp/palm-devstack-nvim.pipe
   tmux setenv -t palm-devstack GIT_PARENT_BRANCH opencraft-release/palm.2
   tmux setenv -t palm-devstack OPENEDX_RELEASE palm.master
+  tmux setenv -t palm-devstack TUTOR_ROOT /home/navin/work/master-devstack/palm
   new_window
-  run_cmd "activate"
-  run_cmd "cd edx-platform"
+  run_cmd "cd ../edx-platform"
   run_cmd "v"
   new_window
-  run_cmd "activate"
-  run_cmd "cd devstack"
   # Select the default active window on session creation.
   select_window 1
 
