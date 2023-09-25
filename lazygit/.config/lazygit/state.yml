@@ -5,7 +5,6 @@ recentrepos:
 - /home/navin/work/master-devstack/edx-platform
 - /home/navin/work/master-devstack/devstack
 - /home/navin/work/master-devstack/frontend-app-learning
-- /home/navin/work/opencraft/asu/grove-development
 - /home/navin/work/master-devstack/src/frontend-component-footer
 - /home/navin/work/opencraft/tutor-contrib-grove
 - /home/navin/work/master-devstack/src/openedx-events
@@ -21,11 +20,8 @@ recentrepos:
 - /home/navin/work/master-devstack/src/taxonomy-connector
 - /home/navin/work/master-devstack/src/xblock-skill-tagging
 - /home/navin/work/opencraft/public
-- /home/navin/work/opencraft/accounting
-- /home/navin/work/master-devstack/edx-documentation
 - /home/navin/work/master-devstack/src/ytp_api
 - /home/navin/.local/share/password-store
-- /home/navin/work/opencraft/asu/grove-stage
 - /home/navin/dotfiles/tmux/.config/tmux/plugins/tmuxifier
 - /home/navin/work/master-devstack/edx-notes-api
 - /home/navin/work/master-devstack/frontend-app-publisher
