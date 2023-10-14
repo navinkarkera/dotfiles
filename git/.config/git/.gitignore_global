@@ -2,3 +2,6 @@
 .direnv
 .envrc
 .venv
+tags
+.ctags
+.python-version

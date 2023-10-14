@@ -56,13 +56,7 @@ require('lazy').setup {
   'ellisonleao/gruvbox.nvim',
   { "rebelot/kanagawa.nvim",   name = "kanagawa", priority = 1000 },
   'nvim-lualine/lualine.nvim',
-  {
-    'lukas-reineke/indent-blankline.nvim',
-    opts = {
-      char = '┊',
-      show_trailing_blankline_indent = false,
-    }
-  },
+  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
   { 'lewis6991/gitsigns.nvim', dependencies = { 'nvim-lua/plenary.nvim' } },
   {
     'nvim-treesitter/nvim-treesitter',
@@ -79,7 +73,17 @@ require('lazy').setup {
   {
     -- Autocompletion
     'hrsh7th/nvim-cmp',
-    dependencies = { 'hrsh7th/cmp-nvim-lsp', 'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip' },
+    dependencies = {
+      'hrsh7th/cmp-nvim-lsp',
+      'L3MON4D3/LuaSnip',
+      'saadparwaiz1/cmp_luasnip',
+      {
+        'quangnguyen30192/cmp-nvim-tags',
+        ft = {
+          'python',
+        }
+      }
+    },
   },
   "rafamadriz/friendly-snippets",
   "honza/vim-snippets",
@@ -410,7 +414,9 @@ map('n', '<leader>fs', fzf_lua.lsp_document_symbols)
 map('n', '<leader>fj', fzf_lua.jumps)
 map('n', '<leader>fws', fzf_lua.lsp_live_workspace_symbols)
 map('n', '<C-]>',
-  function() fzf_lua.command_history({ fzf_opts = { ["--tiebreak"] = "index", ["--query"] = "Run " } }) end)
+  function()
+    fzf_lua.command_history({ fzf_opts = { ["--tiebreak"] = "index", ["--query"] = "Run " } })
+  end)
 map('n', '<leader>?', fzf_lua.oldfiles)
 map('n', '<C-f>', fzf_lua.live_grep_glob)
 map("v", "<C-f>", fzf_lua.grep_visual)
@@ -532,7 +538,7 @@ require('nvim-treesitter.configs').setup {
       -- Assign keymaps to false to disable them, e.g. `goto_definition = false`.
       keymaps = {
         goto_definition_lsp_fallback = "gd",
-        list_definitions = "gD",
+        list_definitions = false,
         list_definitions_toc = "gO",
         goto_next_usage = "<a-*>",
         goto_previous_usage = "<a-#>",
@@ -654,7 +660,7 @@ local servers = {
   marksman = {
     on_attach = on_attach,
     capabilities = capabilities,
-    autostart = false,
+    autostart = true,
   },
   ruff_lsp = {
     on_attach = on_attach,
@@ -800,9 +806,9 @@ cmp.setup {
   }),
   sources = {
     { name = 'luasnip' },
+    { name = 'tags' },
     { name = 'nvim_lsp' },
     { name = 'nvim_lsp_signature_help' },
-    { name = 'neorg' }
   },
   formatting = {
     format = function(entry, vim_item)
@@ -990,6 +996,8 @@ map("v", "cy", '"+y')
 map("n", "cp", '"+p')
 map("n", "<leader>cp", ':silent !echo %:~:. | xsel --clipboard<CR>')
 map("v", "<leader>prs", [[:w !curl --data-binary @- https://paste.rs/ | xsel --clipboard<CR>]])
+map("n", "gD", ":tag <C-R>=expand('<cword>')<CR><CR>")
+map("n", "gP", ":ptselect <C-R>=expand('<cword>')<CR><CR>")
 
 map("i", "<C-l>", "<Left>")
 map("i", "<C-k>", "<Up>")

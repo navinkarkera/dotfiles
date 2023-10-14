@@ -3,9 +3,12 @@
 PICTURE=/tmp/i3lock.png
 SCREENSHOT="scrot -z $PICTURE"
 
+if [[ $(timew get dom.active) = "1" ]]; then
+	timew stop
+fi
 BLUR="5x4"
 
 $SCREENSHOT
 convert $PICTURE -blur $BLUR $PICTURE
-i3lock -i $PICTURE
+i3lock -i $PICTURE -n; [[ $(timew get dom.tracked.1.tag.count) = "0" ]] && timew continue
 rm $PICTURE

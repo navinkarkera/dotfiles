@@ -72,7 +72,7 @@ def calculate_totals(input_stream):
 
     # Sum the seconds tracked by tag.
     totals = dict()
-    untagged = None
+    untagged_tracked = datetime.timedelta(0)
     j = json.loads(body)
     for object in j:
         start = datetime.datetime.strptime(object["start"], DATEFORMAT)
@@ -85,11 +85,10 @@ def calculate_totals(input_stream):
         tracked = end - start
 
         if "tags" not in object or object["tags"] == []:
-            if untagged is None:
-                untagged = tracked
-            else:
-                untagged += tracked
+            untagged_tracked += tracked
         else:
+            tracked += untagged_tracked
+            untagged_tracked = datetime.timedelta(0)
             for tag in object["tags"]:
                 if tag in totals:
                     totals[tag] += tracked
@@ -122,37 +121,14 @@ def calculate_totals(input_stream):
     # Compose report header.
     output = []
 
-    # Compose table header.
-    # if configuration["color"] == "on":
-    #     output.append("[4m{:{width}}[0m [4m{:>10}[0m".format("Tag", "Total", width=max_width))
-    # else:
-    #     output.append("{:{width}} {:>10}".format("Tag", "Total", width=max_width))
-    #     output.append("{} {}".format("-" * max_width, "----------"))
-
     # Compose table rows.
     grand_total = 0
     for tag in sorted(totals):
         seconds = int(totals[tag].total_seconds())
         formatted = format_seconds(seconds)
         grand_total += seconds
-        # output.append("{:{width}} {:10}".format(tag, formatted, width=max_width))
-        output.append(f'jira worklog add BB- -m "{tag}" -T "{formatted}" --noedit')
-
-    if untagged is not None:
-        seconds = int(untagged.total_seconds())
-        formatted = format_seconds(seconds)
-        grand_total += seconds
-        # output.append("{:{width}} {:10}".format("", formatted, width=max_width))
-        output.append(f'jira worklog add BB- -m "" -T "{formatted}" --noedit')
-
-    # Compose total.
-    # if configuration["color"] == "on":
-    #     output.append("{} {}".format(" " * max_width, "[4m          [0m"))
-    # else:
-    #     output.append("{} {}".format(" " * max_width, "----------"))
-
-    # output.append("{:{width}} {:10}".format("Total", format_seconds(grand_total), width=max_width))
-    # output.append("")
+        ticket, msg = tag.split(" ", 1)
+        output.append(f'jira worklog add {ticket.strip()} -m "{msg.strip()}" -T "{formatted}" --noedit')
 
     return output
 

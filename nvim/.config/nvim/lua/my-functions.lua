@@ -2,8 +2,9 @@ local M = {}
 local luasnip = require("luasnip")
 local neogen = require("neogen")
 
-function M.add_to_hist_and_run(cmd)
-  local vim_cmd = "Run " .. cmd
+function M.add_to_hist_and_run(cmd, runner)
+  local cmd_runner = runner or "Run "
+  local vim_cmd = cmd_runner .. cmd
   vim.cmd([[:call histadd("cmd", "]] .. string.gsub(vim_cmd, '"', '\\"') .. [[")]])
   vim.cmd(vim_cmd)
 end
@@ -78,6 +79,7 @@ function M.fzf_get_terminals()
   fzf_lua.fzf_exec(
     final_table,
     {
+      fzf_opts = { ["--header"] = [["enter,ctrl-s:split | ctrl-v:vsplit | ctrl-t:tab | ctrl-r:restart | ctrl-x:close"]]  },
       actions = {
         ['default'] = function(selected, opts)
           actions.vimcmd("split | b", selected, opts)
@@ -127,14 +129,18 @@ function M.fzf_all_tasks()
   local fzf_lua = require 'fzf-lua'
   local actions = require "fzf-lua.actions"
   fzf_lua.fzf_exec(
-    "atuin history list --cmd-only",
+    "atuin search --format={command} --reverse",
     {
       prompt="Run> ",
-      fzf_opts = { ["--header"] = [["enter:run | ctrl-e:edit"]]  },
+      fzf_opts = { ["--header"] = [["enter:run | ctrl-b:background | ctrl-e:edit"]]  },
       actions = {
         ['default'] = function(selected, opts)
           local cmd = selected[1]
           M.add_to_hist_and_run(cmd)
+        end,
+        ['ctrl-b'] = function(selected, opts)
+          local cmd = selected[1]
+          M.add_to_hist_and_run(cmd, "RunB ")
         end,
         ['ctrl-e'] = function(selected, opts)
           local cmd = selected[1]
@@ -204,7 +210,8 @@ function M.run_command(cmd, full_shell, background)
     vim.cmd("new")
     term_run_cmd(cmd)
   end
-  vim.cmd("norm G")
+  vim.api.nvim_input([[<C-\><C-n>]])
+  -- vim.api.nvim_input("G")
   if background then
     vim.api.nvim_input("<C-w>c")
   else

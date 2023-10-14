@@ -22,7 +22,7 @@
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango: Noto Sans Regular 10
+font pango: Iosevka SS07 10
 
 # set the mod key to the winkey:
 set $mod Mod4
@@ -521,7 +521,7 @@ bar {
 		mode hide
 		hidden_state hide
 		modifier Mod4
-		font pango: Noto Sans Regular 10
+		font pango: Iosevka SS07 11
 		status_command i3blocks -c ~/.config/i3/i3blocks.conf
 	    	position bottom
 #	    	i3bar_command i3bar --transparency
