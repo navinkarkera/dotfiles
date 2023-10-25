@@ -880,6 +880,9 @@ require("refactoring").setup {
     python = {
       'print(f"""======================================= %s {%s}""")',
     },
+    javascript = {
+      'console.log("============================= %s ", %s);',
+    },
   },
 }
 -- prompt for a refactor to apply when the remap is triggered
@@ -983,6 +986,7 @@ vim.api.nvim_create_user_command(
 -- custom keymaps
 map("n", "<F4>", ":bd<CR>")
 map('n', '<C-s>', ":w<CR>")
+map("n", "K", ":Ptag <C-R>=expand('<cword>')<CR><CR>")
 map("i", "<C-s>", "<C-c>:w<CR>")
 map("v", "J", ":m '>+1<CR>gv=gv")
 map("v", "K", ":m '<-2<CR>gv=gv")

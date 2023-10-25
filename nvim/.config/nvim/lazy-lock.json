@@ -22,6 +22,7 @@
   "mkdnflow.nvim": { "branch": "main", "commit": "a728a3533bb57502fdfd6fdb4e5839fc87430edc" },
   "neogen": { "branch": "main", "commit": "70127baaff25611deaf1a29d801fc054ad9d2dc1" },
   "nvim-cmp": { "branch": "main", "commit": "5dce1b778b85c717f6614e3f4da45e9f19f54435" },
+  "nvim-floating-tag-preview": { "branch": "master", "commit": "85666944687ebe601fb97b861f61f14cf065b7aa" },
   "nvim-lspconfig": { "branch": "master", "commit": "2b361e043810d5587d9af0787f8ce40da92ec5e9" },
   "nvim-surround": { "branch": "main", "commit": "1c2ef599abeeb98e40706830bcd27e90e259367a" },
   "nvim-treesitter": { "branch": "master", "commit": "10bfa4826f2235c600c073a82e0d78718aa7240e" },

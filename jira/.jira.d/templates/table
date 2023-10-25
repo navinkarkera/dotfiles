@@ -1,6 +1,6 @@
 {{/* table template */ -}}
-{{- headers "Issue" "Summary" "Type" "Priority" "Status" "Age" "Reporter" "Assignee" -}}
-{{- range .issues -}} 
+{{- headers "Issue" "Summary" "Type" "Priority" "Status" "Age" -}}
+{{- range .issues -}}
   {{- row -}}
   {{- cell .key -}}
   {{- cell .fields.summary -}}
@@ -12,14 +12,4 @@
   {{- end -}}
   {{- cell .fields.status.name -}}
   {{- cell (.fields.created | age) -}}
-  {{- if .fields.reporter -}}
-    {{- cell .fields.reporter.displayName -}}
-  {{- else -}}
-    {{- cell "<unknown>" -}}
-  {{- end -}}
-  {{- if .fields.assignee -}}
-    {{- cell .fields.assignee.displayName -}}
-  {{- else -}}
-    {{- cell "<unassigned>" -}}
-  {{- end -}}
 {{- end -}}

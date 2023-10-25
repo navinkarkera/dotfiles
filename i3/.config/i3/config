@@ -382,6 +382,8 @@ exec --no-startup-id setxkbmap -option ctrl:nocaps
 exec --no-startup-id xset r rate 300 40
 # Disable tab
 exec --no-startup-id xinput set-prop 13 333 0
+# Mouse acceleration
+exec --no-startup-id xinput --set-prop 22 332 0.4
 
 # dex execute .desktop files + apps using /etc/xdg/autostart.
 # when second to i3 a DE is installed or mixed usage of i3 + xfce4 or GNOME

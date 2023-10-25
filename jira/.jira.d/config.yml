@@ -26,7 +26,7 @@ custom-commands:
           {{jira}} list --template table --query "sprint in openSprints() and assignee=currentuser() and type != epic and resolution = unresolved and project=$JIRA_PROJECT ORDER BY rank asc, created"
       else
           # otherwise list issues for all project
-          {{jira}} list --template table --query "sprint in openSprints() and assignee=currentuser() and type != epic and resolution = unresolved ORDER BY rank asc, created"
+          {{jira}} list --template table --query "sprint in openSprints() and assignee=currentuser() and type != epic and status != Done and status != Recurring and status != Archived and created > -30d  ORDER BY rank asc, created"
       fi
   - name: text-update
     help: display issues for active sprint

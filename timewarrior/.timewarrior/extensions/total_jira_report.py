@@ -115,7 +115,7 @@ def calculate_totals(input_stream):
     else:
         end = datetime.datetime.now()
 
-    if len(totals) == 0 and untagged is None:
+    if len(totals) == 0:
         return ["No data in the range {:%Y-%m-%d %H:%M:%S} - {:%Y-%m-%d %H:%M:%S}".format(start, end)]
 
     # Compose report header.
@@ -128,7 +128,7 @@ def calculate_totals(input_stream):
         formatted = format_seconds(seconds)
         grand_total += seconds
         ticket, msg = tag.split(" ", 1)
-        output.append(f'jira worklog add {ticket.strip()} -m "{msg.strip()}" -T "{formatted}" --noedit')
+        output.append(f'jira worklog add {ticket.strip()} -m "{msg.strip()}" -T "{formatted}" --noedit &')
 
     return output
 
