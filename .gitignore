@@ -5,3 +5,8 @@ __pycache__/
 tmux/.config/tmux/plugins/
 vale/.config/vale/styles/
 task/.timewarrior/
+lazygit/.config/lazygit/state.yml
+zsh/.config/zsh/.zcompdump.bk
+project-scripts/.local/bin/pip*
+project-scripts/.local/bin/wheel
+project-scripts/.local/bin/czkawka*

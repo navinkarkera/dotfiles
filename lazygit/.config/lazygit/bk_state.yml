@@ -23,7 +23,14 @@ recentrepos:
 - /home/navin/work/master-devstack/src/ytp_api
 - /home/navin/.local/share/password-store
 - /home/navin/dotfiles/tmux/.config/tmux/plugins/tmuxifier
+- /home/navin/work/master-devstack/src/xblock-wistia
+- /home/navin/work/opencraft/tutor-discovery
+- /home/navin/work/master-devstack/src/event-bus-kafka
+- /home/navin/work/opencraft/sprintcraft
+- /home/navin/work/opencraft/tutor-notes
 - /home/navin/work/master-devstack/edx-notes-api
+- /home/navin/work/opencraft/tutor-mfe
+- /home/navin/work/master-devstack/frontend-app-learning
 - /home/navin/work/master-devstack/frontend-app-publisher
 - /home/navin/work/master-devstack/ecommerce
 - /home/navin/work/master-devstack/frontend-app-gradebook
@@ -31,4 +38,4 @@ recentrepos:
 startuppopupversion: 5
 customcommandshistory: []
 hidecommandlog: false
-ignorewhitespaceindiffview: true
+ignorewhitespaceindiffview: false
