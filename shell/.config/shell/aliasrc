@@ -24,7 +24,7 @@ alias \
 
 # Colorize commands when possible.
 alias \
-	ls="exa --icons --git-ignore --group-directories-first" \
+	ls="exa --icons --group-directories-first" \
 	grep="grep --color=auto" \
 	rcg="rg --context 10"
 	diff="diff --color=auto" \
@@ -74,7 +74,6 @@ nqa() {
 
 alias la='ls -a'
 alias ll='ls -la'
-alias l='nnn -de'
 alias l.="ls -A | egrep '^\.'"
 
 #fix obvious typo's

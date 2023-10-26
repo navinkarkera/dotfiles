@@ -128,7 +128,7 @@ def calculate_totals(input_stream):
         formatted = format_seconds(seconds)
         grand_total += seconds
         ticket, msg = tag.split(" ", 1)
-        output.append(f'jira worklog add {ticket.strip()} -m "{msg.strip()}" -T "{formatted}" --noedit &')
+        output.append(f'jira worklog add {ticket.strip()} -m "{msg.strip()}" -T "{formatted}" --noedit')
 
     return output
 

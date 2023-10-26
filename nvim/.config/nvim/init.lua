@@ -150,38 +150,38 @@ vim.o.complete = '.,w,b'
 vim.o.splitright = true
 vim.o.splitbelow = true
 
--- require('gruvbox').setup({
---   transparent_mode = true,
---   dim_inactive = false,
---   italic = {
---     strings = true,
---     comments = true,
---     operators = false,
---     folds = false,
---   },
--- })
--- vim.cmd.colorscheme "catppuccin"
-require('kanagawa').setup({
-  dimInactive = true,    -- dim inactive window `:h hl-NormalNC`
-  terminalColors = true, -- define vim.g.terminal_color_{0,17}
-  theme = "wave",        -- Load "wave" theme when 'background' option is not set
-  overrides = function(colors)
-    local theme = colors.theme
-    return {
-      Pmenu = { fg = theme.ui.shade0, bg = theme.ui.bg_p1 }, -- add `blend = vim.o.pumblend` to enable transparency
-      PmenuSel = { fg = "NONE", bg = theme.ui.bg_p2 },
-      PmenuSbar = { bg = theme.ui.bg_m1 },
-      PmenuThumb = { bg = theme.ui.bg_p2 },
-      WinSeparator = { bg = theme.ui.shade0, fg = theme.ui.nontext }, -- brighter
-      -- WinSeparator = { fg = "black" }, -- darker
-    }
-  end,
-  background = {   -- map the value of 'background' option to a theme
-    dark = "wave", -- try "dragon" !
-    light = "lotus"
+require('gruvbox').setup({
+  transparent_mode = true,
+  dim_inactive = false,
+  italic = {
+    strings = true,
+    comments = true,
+    operators = false,
+    folds = false,
   },
 })
-vim.cmd("colorscheme kanagawa")
+vim.cmd.colorscheme "gruvbox"
+-- require('kanagawa').setup({
+--   dimInactive = true,    -- dim inactive window `:h hl-NormalNC`
+--   terminalColors = true, -- define vim.g.terminal_color_{0,17}
+--   theme = "wave",        -- Load "wave" theme when 'background' option is not set
+--   overrides = function(colors)
+--     local theme = colors.theme
+--     return {
+--       Pmenu = { fg = theme.ui.shade0, bg = theme.ui.bg_p1 }, -- add `blend = vim.o.pumblend` to enable transparency
+--       PmenuSel = { fg = "NONE", bg = theme.ui.bg_p2 },
+--       PmenuSbar = { bg = theme.ui.bg_m1 },
+--       PmenuThumb = { bg = theme.ui.bg_p2 },
+--       WinSeparator = { bg = theme.ui.shade0, fg = theme.ui.nontext }, -- brighter
+--       -- WinSeparator = { fg = "black" }, -- darker
+--     }
+--   end,
+--   background = {   -- map the value of 'background' option to a theme
+--     dark = "wave", -- try "dragon" !
+--     light = "lotus"
+--   },
+-- })
+-- vim.cmd("colorscheme kanagawa")
 
 if vim.fn.executable("rg") == 1 then
   vim.o.grepprg = [[rg --vimgrep --no-heading --smart-case --hidden -g '!.git/']]
@@ -194,7 +194,7 @@ end
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = 'kanagawa',
+    theme = 'auto',
     component_separators = '|',
     section_separators = '',
     globalstatus = true,
