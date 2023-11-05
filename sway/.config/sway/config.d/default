@@ -219,6 +219,7 @@ bindsym $mod+r mode "resize"
 # App shortcuts
 #
     bindsym $mod+n exec thunar
+    bindsym $mod+t exec wezterm start -- yazi
     bindsym $mod+w exec firefox
     bindsym $mod+Shift+p exec passmenu --type
 

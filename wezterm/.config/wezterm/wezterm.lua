@@ -20,7 +20,7 @@ config.window_padding = {
 }
 
 config.font = wezterm.font('monospace')
-config.font_size = 11.0
+config.font_size = 12.0
 config.line_height = 1.1
 config.use_dead_keys = false
 -- config.disable_default_key_bindings = true
