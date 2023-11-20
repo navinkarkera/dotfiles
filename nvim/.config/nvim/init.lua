@@ -54,6 +54,7 @@ require('lazy').setup {
     dependencies = { 'nvim-tree/nvim-web-devicons' }
   },
   'ellisonleao/gruvbox.nvim',
+  'luisiacc/gruvbox-baby',
   { "rebelot/kanagawa.nvim",   name = "kanagawa", priority = 1000 },
   'nvim-lualine/lualine.nvim',
   { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
@@ -150,17 +151,18 @@ vim.o.complete = '.,w,b'
 vim.o.splitright = true
 vim.o.splitbelow = true
 
-require('gruvbox').setup({
-  transparent_mode = true,
-  dim_inactive = false,
-  italic = {
-    strings = true,
-    comments = true,
-    operators = false,
-    folds = false,
-  },
-})
-vim.cmd.colorscheme "gruvbox"
+-- require('gruvbox').setup({
+--   transparent_mode = true,
+--   dim_inactive = false,
+--   italic = {
+--     strings = true,
+--     comments = true,
+--     operators = false,
+--     folds = false,
+--   },
+-- })
+vim.g.gruvbox_baby_transparent_mode = 1
+vim.cmd.colorscheme "gruvbox-baby"
 -- require('kanagawa').setup({
 --   dimInactive = true,    -- dim inactive window `:h hl-NormalNC`
 --   terminalColors = true, -- define vim.g.terminal_color_{0,17}
@@ -580,6 +582,15 @@ local function peekOrHover()
   end
 end
 
+local linter_on_attach = function(_, bufnr)
+  local opts = { buffer = bufnr }
+  map('n', '<leader>ca', vim.lsp.buf.code_action, opts)
+  -- Create a command `:Format` local to the LSP buffer
+  vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
+    vim.lsp.buf.format()
+  end, { desc = 'Format current buffer with LSP' })
+end
+
 local on_attach = function(_, bufnr)
   local opts = { buffer = bufnr }
   map('n', 'gD', function()
@@ -663,9 +674,12 @@ local servers = {
     autostart = true,
   },
   ruff_lsp = {
-    on_attach = on_attach,
-    capabilities = capabilities,
-    autostart = false
+    on_attach = linter_on_attach,
+    autostart = true
+  },
+  quick_lint_js = {
+    on_attach = linter_on_attach,
+    autostart = true
   },
   gopls = {
     on_attach = on_attach,
@@ -978,6 +992,22 @@ map("n", "<F3>", my_functions.restart_cmd)
 map("n", "<leader>mt", my_functions.fzf_make_tasks)
 
 vim.api.nvim_create_user_command("Grep", "silent grep! <q-args>", { nargs = 1 })
+vim.api.nvim_create_user_command(
+  "Gqdiff",
+  [[cexpr system("/usr/share/git/git-jump/git-jump --stdout diff ]] .. "<args>" .. [[")]],
+  {
+    nargs = '*',
+    force = true,
+    complete = function()
+      local branches = vim.fn.systemlist("git branch --all --sort=-committerdate")
+      if vim.v.shell_error == 0 then
+        return vim.tbl_map(function(x)
+          return x:match("[^%s%*]+"):gsub("^remotes/", "")
+        end, branches)
+      end
+    end,
+  }
+)
 vim.api.nvim_create_user_command(
   "GBrowse",
   [[:silent !git browse "" %:~:. <line1> <line2>]],

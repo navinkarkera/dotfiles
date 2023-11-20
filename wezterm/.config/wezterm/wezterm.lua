@@ -2,7 +2,7 @@ local wezterm = require 'wezterm'
 local config = {}
 
 config.color_scheme = 'Gruvbox Dark'
-config.window_background_opacity = 0.9
+config.window_background_opacity = 0.8
 config.hide_tab_bar_if_only_one_tab = true
 config.window_frame = {
   font = wezterm.font { family = 'monospace', weight = 'Bold' },
@@ -20,7 +20,7 @@ config.window_padding = {
 }
 
 config.font = wezterm.font('monospace')
-config.font_size = 12.0
+config.font_size = 11.0
 config.line_height = 1.1
 config.use_dead_keys = false
 -- config.disable_default_key_bindings = true

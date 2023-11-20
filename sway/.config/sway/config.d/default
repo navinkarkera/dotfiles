@@ -142,6 +142,9 @@ exec swayidle -w\
     # Toggle the current focus between tiling and floating mode
     bindsym $mod+Shift+space floating toggle
 
+    # toggle sticky
+    bindsym $mod+Shift+t sticky toggle
+
     # Swap focus between the tiling area and the floating area
     bindsym $mod+space focus mode_toggle
 
