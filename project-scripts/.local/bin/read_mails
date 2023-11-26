@@ -1,21 +1,16 @@
 #!/usr/bin/env sh
 
-if [[ ! -f /tmp/latest-emails.json ]]; then
-	himalaya list --output=json --page-size=50 > /tmp/latest-emails.json
-fi
-# select(.flags == []) |
-
-MAILS="cat /tmp/latest-emails.json | jq -r '.[] | \"\(.id)|\(.flags) \(.from.name): \(.subject)\"'"
+MAILS="[ ! -f /tmp/latest-emails.json ] && himalaya list --output=json --page-size=50 > /tmp/latest-emails.json; cat /tmp/latest-emails.json | jq -r '.[] | \"\(.id)|\(.flags) \(.from.name): \(.subject)\"'"
 PREVIEW="echo {} | cut -d'|' -f1 | xargs -I% sh -c '[ -f /tmp/%.msg ] && bat --wrap=auto --style=plain --color=always /tmp/%.msg || (himalaya read --mime-type plain % > /tmp/%.msg && bat --wrap=auto --style=plain --color=always /tmp/%.msg)'"
 
 bind="\
 ctrl-o:execute-silent(echo {} | cut -d'|' -f1 | xargs -I% sh -c '[ -f /tmp/%.html ] && firefox /tmp/%.html || (himalaya read --mime-type html % > /tmp/%.html && firefox /tmp/%.html)'),\
 ctrl-p:toggle-preview,\
 ctrl-s:execute-silent(echo {} | cut -d'|' -f1 | xargs -I% himalaya flags remove % -- seen),\
-ctrl-s:+reload(himalaya list --output=json --page-size=50 > /tmp/latest-emails.json && $MAILS),\
-ctrl-t:execute-silent(echo {} | cut -d'|' -f1 | xargs -I% himalaya flags add % -- flagged)+reload(himalaya list --output=json --page-size=50 > /tmp/latest-emails.json && $MAILS),\
-ctrl-d:execute-silent(echo {} | cut -d'|' -f1 | xargs -I% himalaya flags remove % -- flagged)+reload(himalaya list --output=json --page-size=50 > /tmp/latest-emails.json && $MAILS),\
-ctrl-r:reload(himalaya list --output=json --page-size=50 > /tmp/latest-emails.json && $MAILS)\
+ctrl-s:+reload(rm /tmp/latest-emails.json && $MAILS),\
+ctrl-t:execute-silent(echo {} | cut -d'|' -f1 | xargs -I% himalaya flags add % -- flagged)+reload(rm /tmp/latest-emails.json && $MAILS),\
+ctrl-d:execute-silent(echo {} | cut -d'|' -f1 | xargs -I% himalaya flags remove % -- flagged)+reload(rm /tmp/latest-emails.json && $MAILS),\
+ctrl-r:reload(rm /tmp/latest-emails.json && $MAILS)\
 "
 
 echo $MAILS | sh | fzf --delimiter='|' -m --layout='reverse' \
