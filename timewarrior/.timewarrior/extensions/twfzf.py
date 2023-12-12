@@ -5,7 +5,6 @@
 # A timewarrior extension to list and restart
 # recently tracked intervals with the help of fzf
 
-import os
 import sys
 
 from pyfzf.pyfzf import FzfPrompt
@@ -51,4 +50,4 @@ if __name__ == '__main__':
     intervals = parser.get_intervals()
 
     # Launch fzf and get a selection
-    FzfPrompt().prompt(get_lines_for_fzf(intervals), "--print-query --bind 'enter:become(timew tag {} && timew stop),ctrl-e:become(timew tag {} && timew stop && timew start),ctrl-n:become(timew tag {q} && timew stop)'")
+    FzfPrompt().prompt(get_lines_for_fzf(intervals), "--query 'BB-' --print-query --bind 'enter:become(timew tag {} && timew stop),ctrl-e:become(timew tag {} && timew stop && timew start),ctrl-n:become(timew tag {q} && timew stop)'")

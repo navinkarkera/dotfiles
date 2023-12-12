@@ -223,6 +223,7 @@ bindsym $mod+r mode "resize"
 #
     bindsym $mod+n exec thunar
     bindsym $mod+t exec wezterm start -- yazi
+    bindsym $mod+m exec wezterm start -- neomutt
     bindsym $mod+w exec firefox
     bindsym $mod+Shift+p exec passmenu --type
 

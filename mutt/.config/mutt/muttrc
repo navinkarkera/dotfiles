@@ -1,0 +1,4 @@
+# vim: filetype=neomuttrc
+source /usr/share/mutt-wizard/mutt-wizard.muttrc
+source /home/navin/.config/mutt/accounts/navin@opencraft.com.muttrc
+macro index,pager i1 '<sync-mailbox><enter-command>source /home/navin/.config/mutt/accounts/navin@opencraft.com.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to navin@opencraft.com"

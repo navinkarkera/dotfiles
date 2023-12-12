@@ -1,7 +1,7 @@
 local wezterm = require 'wezterm'
 local config = {}
 
-config.color_scheme = 'Gruvbox Dark'
+config.color_scheme = 'GruvboxDarkHard'
 config.window_background_opacity = 0.8
 config.hide_tab_bar_if_only_one_tab = true
 config.window_frame = {
@@ -19,8 +19,12 @@ config.window_padding = {
   bottom = 0,
 }
 
-config.font = wezterm.font('monospace')
-config.font_size = 11.0
+config.font = wezterm.font_with_fallback({
+  "monospace",
+  "BlexMono Nerd Font",
+  "CodeNewRoman Nerd Font",
+})
+config.font_size = 8.5
 config.line_height = 1.1
 config.use_dead_keys = false
 -- config.disable_default_key_bindings = true

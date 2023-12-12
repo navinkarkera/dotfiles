@@ -1,0 +1,56 @@
+# vim: filetype=neomuttrc
+# muttrc file for account navin@opencraft.com
+set realname = "Navin Karkera"
+set from = "navin@opencraft.com"
+set sendmail = "msmtp -a navin@opencraft.com"
+alias me navin <navin@opencraft.com>
+set folder = "/home/navin/.local/share/mail/navin@opencraft.com"
+set header_cache = /home/navin/.cache/mutt-wizard/navin@opencraft.com/headers
+set message_cachedir = /home/navin/.cache/mutt-wizard/navin@opencraft.com/bodies
+set mbox_type = Maildir
+set hostname = "opencraft.com"
+source /usr/share/mutt-wizard/switch.muttrc
+set spoolfile = +INBOX
+set postponed = +Drafts
+set trash = +Trash
+set record = +Sent
+set pager_index_lines=10
+set nm_default_url = "notmuch:///home/navin/.local/share/mail"
+
+macro index o "<shell-escape>mw -y navin@opencraft.com<enter>" "run mbsync to sync navin@opencraft.com"
+
+mailboxes "=INBOX" "=Jira" "=Git" "=Forum" "=[Gmail]/Drafts" "=[Gmail]/Sent Mail" "=Mailing Lists/help" =Trash =Sent
+virtual-mailboxes "Unread" "notmuch://?query=tag:unread and tag:inbox and (to:navin@opencraft.com or cc:navin@opencraft.com)"
+virtual-mailboxes "Flagged" "notmuch://?query=tag:flagged"
+virtual-mailboxes "Mentions" "notmuch://?query=body:navin"
+
+macro index,pager gi "<change-folder>=INBOX<enter>" "go to inbox"
+macro index,pager Mi ";<save-message>=INBOX<enter>" "move mail to inbox"
+macro index,pager Ci ";<copy-message>=INBOX<enter>" "copy mail to inbox"
+macro index,pager gd "<change-folder>=[Gmail]/Drafts<enter>" "go to drafts"
+macro index,pager Md ";<save-message>=[Gmail]/Drafts<enter>" "move mail to drafts"
+macro index,pager Cd ";<copy-message>=[Gmail]/Drafts<enter>" "copy mail to drafts"
+macro index,pager gj "<change-folder>=Jira<enter>" "go to jira"
+macro index,pager Mj ";<save-message>=Jira<enter>" "move mail to jira"
+macro index,pager Cj ";<copy-message>=Jira<enter>" "copy mail to jira"
+macro index,pager gt "<change-folder>=Trash<enter>" "go to trash"
+macro index,pager Mt ";<save-message>=Trash<enter>" "move mail to trash"
+macro index,pager Ct ";<copy-message>=Trash<enter>" "copy mail to trash"
+macro index,pager gs "<change-folder>=Sent<enter>" "go to sent"
+macro index,pager Ms ";<save-message>=Sent<enter>" "move mail to sent"
+macro index,pager Cs ";<copy-message>=Sent<enter>" "copy mail to sent"
+macro index,pager ga "<change-folder>=Archive<enter>" "go to archive"
+macro index,pager Ma ";<save-message>=Archive<enter>" "move mail to archive"
+macro index,pager Ca ";<copy-message>=Archive<enter>" "copy mail to archive"
+
+macro index,pager gu "<change-folder>Unread<enter>" "go to unread"
+macro index,pager Mu ";<save-message>Unread<enter>" "move mail to unread"
+macro index,pager Cu ";<copy-message>Unread<enter>" "copy mail to unread"
+
+macro index,pager gf "<change-folder>Flagged<enter>" "go to flagged"
+macro index,pager Mf ";<save-message>Flagged<enter>" "move mail to flagged"
+macro index,pager Cf ";<copy-message>Flagged<enter>" "copy mail to flagged"
+
+macro index,pager gF "<change-folder>=Forum<enter>" "go to flagged"
+macro index,pager MF ";<save-message>=Forum<enter>" "move mail to flagged"
+macro index,pager CF ";<copy-message>=Forum<enter>" "copy mail to flagged"

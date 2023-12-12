@@ -9,3 +9,20 @@
 # Wacom Tablet - Example
 #   input "1386:884:Wacom_Intuos_S_Pad" map_to_output HDMI-A-1
 #   input "1386:884:Wacom_Intuos_S_Pen" map_to_output HDMI-A-1
+
+output HDMI-A-2 {
+   # ...config options...
+   mode 3840x2160@60Hz
+   scale 2
+   pos 0 0
+   bg ~/.config/sway/goku-4k.jpg stretch
+}
+
+output HDMI-A-1 {
+   # ...config options...
+   mode 1920x1080@75Hz
+   pos 1920 0
+   scale 1
+   transform 90
+   bg ~/.config/sway/vertical.jpg stretch
+}
