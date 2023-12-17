@@ -51,6 +51,10 @@ macro index,pager gf "<change-folder>Flagged<enter>" "go to flagged"
 macro index,pager Mf ";<save-message>Flagged<enter>" "move mail to flagged"
 macro index,pager Cf ";<copy-message>Flagged<enter>" "copy mail to flagged"
 
-macro index,pager gF "<change-folder>=Forum<enter>" "go to flagged"
-macro index,pager MF ";<save-message>=Forum<enter>" "move mail to flagged"
-macro index,pager CF ";<copy-message>=Forum<enter>" "copy mail to flagged"
+macro index,pager gF "<change-folder>=Forum<enter>" "go to Forum"
+macro index,pager MF ";<save-message>=Forum<enter>" "move mail to Forum"
+macro index,pager CF ";<copy-message>=Forum<enter>" "copy mail to Forum"
+
+macro index,pager gm "<change-folder>Mentions<enter>" "go to mentions"
+macro index,pager Mm ";<save-message>Mentions<enter>" "move mail to mentions"
+macro index,pager Cm ";<copy-message>Mentions<enter>" "copy mail to mentions"
