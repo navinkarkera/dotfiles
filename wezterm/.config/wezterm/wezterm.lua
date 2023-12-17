@@ -13,7 +13,7 @@ config.window_frame = {
 
 config.window_background_image = '/home/navin/Pictures/goku.jpg'
 config.window_background_image_hsb = {
-  brightness = 0.02,
+  brightness = 0.04,
 }
 
 config.window_decorations = "NONE"
@@ -133,6 +133,13 @@ config.keys = {
     mods = 'LEADER',
     action = act.SpawnCommandInNewTab {
       args = { '/usr/bin/taskwarrior-tui' },
+    },
+  },
+  {
+    key = 'm',
+    mods = 'LEADER',
+    action = act.SpawnCommandInNewTab {
+      args = { '/usr/bin/neomutt' },
     },
   },
   {
