@@ -3,7 +3,7 @@ local act = wezterm.action
 local config = {}
 
 config.color_scheme = 'GruvboxDarkHard'
-config.window_background_opacity = 0.8
+config.window_background_opacity = 1
 config.hide_tab_bar_if_only_one_tab = true
 config.use_fancy_tab_bar = true
 config.status_update_interval = 1000
@@ -91,6 +91,13 @@ config.keys = {
     mods = 'LEADER',
     action = act.SpawnCommandInNewTab {
       args = { '/usr/bin/lazygit' },
+    },
+  },
+  {
+    key = 'G',
+    mods = 'LEADER',
+    action = act.SpawnCommandInNewTab {
+      args = { '/usr/bin/gh', 'dash' },
     },
   },
   {
@@ -252,6 +259,20 @@ function os.capture(cmd, raw)
    return output
 end
 
+-- Current working directory
+local basename = function(s)
+  -- Nothing a little regex can't fix
+  s = s:gsub("%/$", "")
+  return string.gsub(s, "(.*[/\\])(.*)", "%2")
+end
+
+wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
+  local title = basename(tab.active_pane.current_working_dir)
+  return {
+    { Text = wezterm.nerdfonts.md_folder .. " " .. title },
+  }
+end)
+
 wezterm.on("update-status", function(window, pane)
   -- Workspace name
   local stat = window:active_workspace()
@@ -267,15 +288,6 @@ wezterm.on("update-status", function(window, pane)
     stat_color = "#bb9af7"
   end
 
-  -- Current working directory
-  local basename = function(s)
-    -- Nothing a little regex can't fix
-    s = s:gsub("%/$", "")
-    return string.gsub(s, "(.*[/\\])(.*)", "%2")
-  end
-  -- CWD and CMD could be nil (e.g. viewing log using Ctrl-Alt-l). Not a big deal, but check in case
-  local cwd = pane:get_current_working_dir()
-  cwd = cwd and basename(cwd) or ""
   -- Current command
   local cmd = pane:get_foreground_process_name()
   cmd = cmd and basename(cmd) or ""
@@ -301,8 +313,6 @@ wezterm.on("update-status", function(window, pane)
     { Text = wezterm.nerdfonts.oct_stopwatch .. " " .. cur_tracked },
     { Text = " | " },
     { Text = wezterm.nerdfonts.md_calendar_clock_outline .. " Total: " .. total_tracked },
-    { Text = " | " },
-    { Text = wezterm.nerdfonts.md_folder .. " " .. cwd },
     { Text = " | " },
     { Foreground = { Color = "#e0af68" } },
     { Text = wezterm.nerdfonts.fa_code .. " " .. cmd },
