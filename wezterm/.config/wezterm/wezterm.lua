@@ -2,7 +2,7 @@ local wezterm = require 'wezterm'
 local act = wezterm.action
 local config = {}
 
-config.color_scheme = 'GruvboxDarkHard'
+config.color_scheme = 'Modus-Operandi'
 config.window_background_opacity = 1
 config.hide_tab_bar_if_only_one_tab = true
 config.use_fancy_tab_bar = true
@@ -11,10 +11,10 @@ config.window_frame = {
   font = wezterm.font { family = 'monospace', scale = 0.85 },
 }
 
-config.window_background_image = '/home/navin/Pictures/goku.jpg'
-config.window_background_image_hsb = {
-  brightness = 0.04,
-}
+-- config.window_background_image = '/home/navin/Pictures/goku.jpg'
+-- config.window_background_image_hsb = {
+--   brightness = 0.04,
+-- }
 
 config.window_decorations = "NONE"
 config.window_close_confirmation = "AlwaysPrompt"

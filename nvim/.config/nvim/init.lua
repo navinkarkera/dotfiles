@@ -53,7 +53,7 @@ require('lazy').setup {
     'ibhagwan/fzf-lua',
     dependencies = { 'nvim-tree/nvim-web-devicons' }
   },
-  'ellisonleao/gruvbox.nvim',
+  { "miikanissi/modus-themes.nvim", priority = 1000 },
   'luisiacc/gruvbox-baby',
   { "rebelot/kanagawa.nvim",   name = "kanagawa", priority = 1000 },
   'nvim-lualine/lualine.nvim',
@@ -139,7 +139,7 @@ vim.o.updatetime = 250
 vim.wo.signcolumn = 'yes'
 
 --Set colorscheme
--- vim.o.background = "light"
+vim.o.background = "light"
 vim.o.termguicolors = true
 vim.o.cursorline = false
 
@@ -151,39 +151,23 @@ vim.o.complete = '.,w,b'
 vim.o.splitright = true
 vim.o.splitbelow = true
 
--- require('gruvbox').setup({
---   transparent_mode = true,
---   dim_inactive = false,
---   italic = {
---     strings = true,
---     comments = true,
---     operators = false,
---     folds = false,
---   },
--- })
-vim.g.gruvbox_baby_transparent_mode = 1
-vim.cmd.colorscheme "gruvbox-baby"
--- require('kanagawa').setup({
---   dimInactive = true,    -- dim inactive window `:h hl-NormalNC`
---   terminalColors = true, -- define vim.g.terminal_color_{0,17}
---   theme = "wave",        -- Load "wave" theme when 'background' option is not set
---   overrides = function(colors)
---     local theme = colors.theme
---     return {
---       Pmenu = { fg = theme.ui.shade0, bg = theme.ui.bg_p1 }, -- add `blend = vim.o.pumblend` to enable transparency
---       PmenuSel = { fg = "NONE", bg = theme.ui.bg_p2 },
---       PmenuSbar = { bg = theme.ui.bg_m1 },
---       PmenuThumb = { bg = theme.ui.bg_p2 },
---       WinSeparator = { bg = theme.ui.shade0, fg = theme.ui.nontext }, -- brighter
---       -- WinSeparator = { fg = "black" }, -- darker
---     }
---   end,
---   background = {   -- map the value of 'background' option to a theme
---     dark = "wave", -- try "dragon" !
---     light = "lotus"
---   },
--- })
--- vim.cmd("colorscheme kanagawa")
+-- vim.g.gruvbox_baby_transparent_mode = 1
+require("modus-themes").setup({
+	-- Theme comes in two styles `modus_operandi` and `modus_vivendi`
+	-- `auto` will automatically set style based on background set with vim.o.background
+	style = "auto",
+	variant = "tinted", -- Theme comes in four variants `default`, `tinted`, `deuteranopia`, and `tritanopia`
+	dim_inactive = false, -- "non-current" windows are dimmed
+	styles = {
+		-- Style to be applied to different syntax groups
+		-- Value is any valid attr-list value for `:help nvim_set_hl`
+		comments = { italic = true },
+		keywords = { italic = true },
+		functions = {},
+		variables = {},
+	},
+})
+vim.cmd.colorscheme "modus"
 
 if vim.fn.executable("rg") == 1 then
   vim.o.grepprg = [[rg --vimgrep --no-heading --smart-case --hidden -g '!.git/']]

@@ -58,3 +58,7 @@ macro index,pager CF ";<copy-message>=Forum<enter>" "copy mail to Forum"
 macro index,pager gm "<change-folder>Mentions<enter>" "go to mentions"
 macro index,pager Mm ";<save-message>Mentions<enter>" "move mail to mentions"
 macro index,pager Cm ";<copy-message>Mentions<enter>" "copy mail to mentions"
+
+
+color indicator brightyellow black
+color sidebar_highlight blue black
