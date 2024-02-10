@@ -2,6 +2,7 @@ local wezterm = require 'wezterm'
 local act = wezterm.action
 local config = {}
 
+config.audible_bell = 'Disabled'
 config.color_scheme = 'Modus-Operandi'
 config.window_background_opacity = 1
 config.hide_tab_bar_if_only_one_tab = true

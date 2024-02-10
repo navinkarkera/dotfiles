@@ -8196,3 +8196,1418 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20231025T140839Z","end":"20231025T145809Z","tags":["BB-7985 read"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20231215T051653Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20231215T051653Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20231215T051653Z","tags":["BB-8140 check PR and update PR"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20231215T051653Z","tags":["BB-8140 check PR and update PR"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20231215T051653Z","end":"20231215T052241Z","tags":["BB-8140 check PR and update PR"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20231215T052513Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20231215T052513Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20231215T052513Z","tags":["BB-8219 check previous implementation"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20231215T052513Z","tags":["BB-8219 check previous implementation"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20231215T052513Z","end":"20231215T062019Z","tags":["BB-8219 check previous implementation"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20231215T064623Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20231215T064623Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20231215T064623Z","tags":["BB-8219 use drag-n-drop components from lib"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20231215T064623Z","tags":["BB-8219 use drag-n-drop components from lib"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20231215T064623Z","end":"20231215T110112Z","tags":["BB-8219 use drag-n-drop components from lib"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20231215T064623Z","end":"20231215T110112Z","tags":["BB-8219 use drag-n-drop components from lib"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20231215T064623Z","end":"20231215T082112Z","tags":["BB-8219 use drag-n-drop components from lib"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20231215T110258Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20231215T110258Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20231215T110258Z","tags":["BB-8219 use drag-n-drop components from lib"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20231215T110258Z","tags":["BB-8219 use drag-n-drop components from lib"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20231215T110258Z","end":"20231215T112157Z","tags":["BB-8219 use drag-n-drop components from lib"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20231215T112157Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20231215T112157Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20231215T112157Z","tags":["BB-8124 prepare for meeting"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20231215T112157Z","tags":["BB-8124 prepare for meeting"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20231215T112157Z","end":"20231215T112956Z","tags":["BB-8124 prepare for meeting"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20231215T112957Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20231215T112957Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20231215T112957Z","tags":["BB-8279 start working on unit implementation"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20231215T112957Z","tags":["BB-8279 start working on unit implementation"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20231215T112957Z","end":"20231215T122504Z","tags":["BB-8279 start working on unit implementation"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20231215T150023Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20231215T150023Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20231215T150023Z","tags":["BB-8124 meeting with client"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20231215T150023Z","tags":["BB-8124 meeting with client"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20231215T150023Z","end":"20231215T152336Z","tags":["BB-8124 meeting with client"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20231215T153038Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20231215T153038Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20231215T153038Z","tags":["BB-8279 start working on unit implementation"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20231215T153038Z","tags":["BB-8279 start working on unit implementation"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20231215T153038Z","end":"20231215T154644Z","tags":["BB-8279 start working on unit implementation"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20231215T160953Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20231215T160953Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20231215T160953Z","tags":["BB-8279 start working on unit implementation"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20231215T160953Z","tags":["BB-8279 start working on unit implementation"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20231215T160953Z","end":"20231215T163814Z","tags":["BB-8279 start working on unit implementation"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20231217T073524Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20231217T073524Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20231217T073524Z","tags":["Dummy"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20231217T073524Z","tags":["Dummy"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20231217T073524Z","end":"20231217T100030Z","tags":["Dummy"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20231217T073524Z","end":"20231217T100030Z","tags":["Dummy"]}
+  after: 
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240102T130536Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240102T130536Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240102T130536Z","tags":["BB-7988 going through time logs"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240102T130536Z","tags":["BB-7988 going through time logs"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240102T130536Z","end":"20240102T131644Z","tags":["BB-7988 going through time logs"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240103T131953Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240103T131953Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240103T131953Z","tags":["BB-8277 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240103T131953Z","tags":["BB-8277 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240103T131953Z","end":"20240103T135414Z","tags":["BB-8277 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240103T135415Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240103T135415Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240103T135415Z","tags":["BB-8287 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240103T135415Z","tags":["BB-8287 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240103T135415Z","end":"20240103T141544Z","tags":["BB-8287 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240103T141730Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240103T141730Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240103T141730Z","tags":["BB-7643 address review comments for openedx-events PR"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240103T141730Z","tags":["BB-7643 address review comments for openedx-events PR"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240103T141730Z","end":"20240103T142653Z","tags":["BB-7643 address review comments for openedx-events PR"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240106T134942Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240106T134942Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240106T134942Z","tags":["BB-8279 respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240106T134942Z","tags":["BB-8279 respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240106T134942Z","end":"20240106T135852Z","tags":["BB-8279 respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240106T135853Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240106T135853Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240106T135853Z","tags":["BB-8424 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240106T135853Z","tags":["BB-8424 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240106T135853Z","end":"20240106T153213Z","tags":["BB-8424 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240109T151005Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240109T151005Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240109T151005Z","tags":["BB-8431 add tests"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240109T151005Z","tags":["BB-8431 add tests"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240109T151005Z","end":"20240109T160708Z","tags":["BB-8431 add tests"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240109T170155Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240109T170155Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240109T170155Z","tags":["BB-8431 add tests"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240109T170155Z","tags":["BB-8431 add tests"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240109T170155Z","end":"20240109T170545Z","tags":["BB-8431 add tests"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240127T064114Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240127T064114Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240127T064114Z","tags":["BB-8500 work on paste componentn"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240127T064114Z","tags":["BB-8500 work on paste componentn"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240127T064114Z","end":"20240127T075259Z","tags":["BB-8500 work on paste componentn"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240127T100340Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240127T100340Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240127T100340Z","tags":["BB-8500 work on paste componentn"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240127T100340Z","tags":["BB-8500 work on paste componentn"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240127T100340Z","end":"20240127T102519Z","tags":["BB-8500 work on paste componentn"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240129T064653Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240129T064653Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240129T064653Z","tags":["BB-8500 work on paste componentn"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240129T064653Z","tags":["BB-8500 work on paste componentn"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240129T064653Z","end":"20240129T075945Z","tags":["BB-8500 work on paste componentn"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240129T093822Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240129T093822Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240129T093822Z","tags":["BB-8456 respond and review PR"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240129T093822Z","tags":["BB-8456 respond and review PR"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240129T093822Z","end":"20240129T095704Z","tags":["BB-8456 respond and review PR"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240129T095705Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240129T095705Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240129T095705Z","tags":["BB-8500 work on paste componentn"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240129T095705Z","tags":["BB-8500 work on paste componentn"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240129T095705Z","end":"20240129T100449Z","tags":["BB-8500 work on paste componentn"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240129T100449Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240129T100449Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240129T100449Z","tags":["BB-8500 work on paste componentn"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240129T100449Z","tags":["BB-8500 work on paste componentn"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240129T100449Z","end":"20240129T110708Z","tags":["BB-8500 work on paste componentn"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240129T113341Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240129T113341Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240129T113341Z","tags":["BB-8500 work on paste componentn"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240129T113341Z","tags":["BB-8500 work on paste componentn"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240129T113341Z","end":"20240129T120536Z","tags":["BB-8500 work on paste componentn"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240129T124531Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240129T124531Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240129T124531Z","tags":["BB-8500 work on paste componentn"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240129T124531Z","tags":["BB-8500 work on paste componentn"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240129T124531Z","end":"20240129T130004Z","tags":["BB-8500 work on paste componentn"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240129T142223Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240129T142223Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240129T142223Z","tags":["BB-8500 work on paste componentn"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240129T142223Z","tags":["BB-8500 work on paste componentn"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240129T142223Z","end":"20240129T143706Z","tags":["BB-8500 work on paste componentn"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240129T143706Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240129T143706Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240129T143706Z","tags":["BB-8485 update backend PR"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240129T143706Z","tags":["BB-8485 update backend PR"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240129T143706Z","end":"20240129T144609Z","tags":["BB-8485 update backend PR"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240129T144610Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240129T144610Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240129T144610Z","tags":["BB-8560 work on first 2 items"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240129T144610Z","tags":["BB-8560 work on first 2 items"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240129T144610Z","end":"20240129T155215Z","tags":["BB-8560 work on first 2 items"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240129T163711Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240129T163711Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240129T163711Z","tags":["BB-8560 work on first 2 items"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240129T163711Z","tags":["BB-8560 work on first 2 items"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240129T163711Z","end":"20240129T172254Z","tags":["BB-8560 work on first 2 items"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240130T055219Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240130T055219Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240130T055219Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240130T055219Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240130T055219Z","end":"20240130T073528Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240130T081245Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240130T081245Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240130T081245Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240130T081245Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240130T081245Z","end":"20240130T082928Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240130T082928Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240130T082928Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240130T082928Z","tags":["BB-254  post mid sprint update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240130T082928Z","tags":["BB-254  post mid sprint update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240130T082928Z","end":"20240130T083447Z","tags":["BB-254  post mid sprint update"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240130T083447Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240130T083447Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240130T083447Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240130T083447Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240130T083447Z","end":"20240130T102827Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240130T102827Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240130T102827Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240130T102827Z","tags":["BB-8485 update PR and ping upstream review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240130T102827Z","tags":["BB-8485 update PR and ping upstream review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240130T102827Z","end":"20240130T103311Z","tags":["BB-8485 update PR and ping upstream review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240130T103311Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240130T103311Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240130T103311Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240130T103311Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240130T103311Z","end":"20240130T105142Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240130T111706Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240130T111706Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240130T111706Z","tags":["BB-8560 use formik in configuration modal"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240130T111706Z","tags":["BB-8560 use formik in configuration modal"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240130T111706Z","end":"20240130T130606Z","tags":["BB-8560 use formik in configuration modal"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240130T135736Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240130T135736Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240130T135736Z","tags":["BB-8560 use formik in configuration modal"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240130T135736Z","tags":["BB-8560 use formik in configuration modal"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240130T135736Z","end":"20240130T144054Z","tags":["BB-8560 use formik in configuration modal"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240130T144902Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240130T144902Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240130T144902Z","tags":["BB-8560 use formik in configuration modal"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240130T144902Z","tags":["BB-8560 use formik in configuration modal"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240130T144902Z","end":"20240130T153823Z","tags":["BB-8560 use formik in configuration modal"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240130T155932Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240130T155932Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240130T155932Z","tags":["BB-8560 use formik in configuration modal"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240130T155932Z","tags":["BB-8560 use formik in configuration modal"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240130T155932Z","end":"20240130T160022Z","tags":["BB-8560 use formik in configuration modal"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240131T055049Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240131T055049Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240131T055049Z","tags":["BB-8500 update PR based on review feedback"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240131T055049Z","tags":["BB-8500 update PR based on review feedback"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240131T055049Z","end":"20240131T063955Z","tags":["BB-8500 update PR based on review feedback"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240131T063955Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240131T063955Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240131T063955Z","tags":["BB-8560 use formik in configuration modal"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240131T063955Z","tags":["BB-8560 use formik in configuration modal"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240131T063955Z","end":"20240131T074447Z","tags":["BB-8560 use formik in configuration modal"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240131T083914Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240131T083914Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240131T083914Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240131T083914Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240131T083914Z","end":"20240131T111920Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240131T115038Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240131T115038Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240131T115038Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240131T115038Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240131T115038Z","end":"20240131T120321Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240131T121929Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240131T121929Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240131T121929Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240131T121929Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240131T121929Z","end":"20240131T124859Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240131T130857Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240131T130857Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240131T130857Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240131T130857Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240131T130857Z","end":"20240131T134939Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240201T050651Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240201T050651Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240201T050651Z","tags":["BB-8500 update PR based on review feedback"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240201T050651Z","tags":["BB-8500 update PR based on review feedback"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240201T050651Z","end":"20240201T065039Z","tags":["BB-8500 update PR based on review feedback"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240201T065039Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240201T065039Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240201T065039Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240201T065039Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240201T065039Z","end":"20240201T075323Z","tags":["BB-8560 add proctoring settings to advanced tab"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240201T085300Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240201T085300Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240201T085300Z","tags":["BB-8560 add tests"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240201T085300Z","tags":["BB-8560 add tests"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240201T085300Z","end":"20240201T103824Z","tags":["BB-8560 add tests"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240201T111644Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240201T111644Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240201T111644Z","tags":["BB-8560 add tests"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240201T111644Z","tags":["BB-8560 add tests"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240201T111644Z","end":"20240201T113604Z","tags":["BB-8560 add tests"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240201T114505Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240201T114505Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240201T114505Z","tags":["BB-8560 add tests"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240201T114505Z","tags":["BB-8560 add tests"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240201T114505Z","end":"20240201T115320Z","tags":["BB-8560 add tests"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240201T120820Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240201T120820Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240201T120820Z","tags":["BB-8560 add tests"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240201T120820Z","tags":["BB-8560 add tests"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240201T120820Z","end":"20240201T130805Z","tags":["BB-8560 add tests"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240201T132309Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240201T132309Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240201T132309Z","tags":["BB-8560 add tests"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240201T132309Z","tags":["BB-8560 add tests"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240201T132309Z","end":"20240201T133136Z","tags":["BB-8560 add tests"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240201T133136Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240201T133136Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240201T133136Z","tags":["BB-7643 attend maintainer group meeting"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240201T133136Z","tags":["BB-7643 attend maintainer group meeting"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240201T133136Z","end":"20240201T143140Z","tags":["BB-7643 attend maintainer group meeting"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240201T143140Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240201T143140Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240201T143140Z","tags":["BB-8560 work on page alerts"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240201T143140Z","tags":["BB-8560 work on page alerts"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240201T143140Z","end":"20240201T152126Z","tags":["BB-8560 work on page alerts"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240201T152615Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240201T152615Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240201T152615Z","tags":["BB-8560 work on page alerts"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240201T152615Z","tags":["BB-8560 work on page alerts"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240201T152615Z","end":"20240201T160124Z","tags":["BB-8560 work on page alerts"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240201T163507Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240201T163507Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240201T163507Z","tags":["BB-8560 work on page alerts"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240201T163507Z","tags":["BB-8560 work on page alerts"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240201T163507Z","end":"20240201T172034Z","tags":["BB-8560 work on page alerts"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240202T033758Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240202T033758Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240202T033758Z","tags":["BB-8500 update PR based on review feedback"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240202T033758Z","tags":["BB-8500 update PR based on review feedback"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240202T033758Z","end":"20240202T035442Z","tags":["BB-8500 update PR based on review feedback"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240202T042142Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240202T042142Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240202T042142Z","tags":["BB-8560 work on page alerts"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240202T042142Z","tags":["BB-8560 work on page alerts"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240202T042142Z","end":"20240202T053908Z","tags":["BB-8560 work on page alerts"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240202T095106Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240202T095106Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240202T095106Z","tags":["BB-8560 work on page alerts"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240202T095106Z","tags":["BB-8560 work on page alerts"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240202T095106Z","end":"20240202T113840Z","tags":["BB-8560 work on page alerts"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240202T114527Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240202T114527Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240202T114527Z","tags":["BB-8560 work on page alerts"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240202T114527Z","tags":["BB-8560 work on page alerts"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240202T114527Z","end":"20240202T133202Z","tags":["BB-8560 work on page alerts"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240202T134455Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240202T134455Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240202T134455Z","tags":["BB-8560 work on page alerts"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240202T134455Z","tags":["BB-8560 work on page alerts"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240202T134455Z","end":"20240202T140934Z","tags":["BB-8560 work on page alerts"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240202T144700Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240202T144700Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240202T144700Z","tags":["BB-8560 work on page alerts"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240202T144700Z","tags":["BB-8560 work on page alerts"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240202T144700Z","end":"20240202T154610Z","tags":["BB-8560 work on page alerts"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240205T101645Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T101645Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T101645Z","tags":["BB-7872 read and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T101645Z","tags":["BB-7872 read and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T101645Z","end":"20240205T103028Z","tags":["BB-7872 read and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240205T103029Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T103029Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T103029Z","tags":["BB-8456 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T103029Z","tags":["BB-8456 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T103029Z","end":"20240205T103358Z","tags":["BB-8456 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240205T103358Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T103358Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T103358Z","tags":["BB-8091 update PR as per review comments"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T103358Z","tags":["BB-8091 update PR as per review comments"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T103358Z","end":"20240205T114907Z","tags":["BB-8091 update PR as per review comments"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240205T114908Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T114908Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T114908Z","tags":["BB-8091 update PR as per review comments"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T114908Z","tags":["BB-8091 update PR as per review comments"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T114908Z","end":"20240205T122853Z","tags":["BB-8091 update PR as per review comments"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240205T122853Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T122853Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T122853Z","tags":["BB-8559 read"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T122853Z","tags":["BB-8559 read"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T122853Z","end":"20240205T123642Z","tags":["BB-8559 read"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240205T123643Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T123643Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T123643Z","tags":["BB-8091 update PR as per review comments"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T123643Z","tags":["BB-8091 update PR as per review comments"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T123643Z","end":"20240205T123945Z","tags":["BB-8091 update PR as per review comments"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240205T123945Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T123945Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T123945Z","tags":["BB-8559 update styles"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T123945Z","tags":["BB-8559 update styles"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T123945Z","end":"20240205T124931Z","tags":["BB-8559 update styles"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240205T124931Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T124931Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T124931Z","tags":["BB-8091 update PR as per review comments"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T124931Z","tags":["BB-8091 update PR as per review comments"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T124931Z","end":"20240205T130449Z","tags":["BB-8091 update PR as per review comments"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240205T130449Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T130449Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T130449Z","tags":["BB-8559 update styles"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T130449Z","tags":["BB-8559 update styles"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T130449Z","end":"20240205T143419Z","tags":["BB-8559 update styles"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240205T152222Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T152222Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T152222Z","tags":["BB-8559 udpate date format"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T152222Z","tags":["BB-8559 udpate date format"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T152222Z","end":"20240205T154605Z","tags":["BB-8559 udpate date format"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240205T155731Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T155731Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T155731Z","tags":["BB-8559 udpate date format"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T155731Z","tags":["BB-8559 udpate date format"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T155731Z","end":"20240205T160202Z","tags":["BB-8559 udpate date format"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240205T161553Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T161553Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T161553Z","tags":["BB-7643 update catalog info for library repo and go through maintainership docs"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T161553Z","tags":["BB-7643 update catalog info for library repo and go through maintainership docs"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T161553Z","end":"20240205T164243Z","tags":["BB-7643 update catalog info for library repo and go through maintainership docs"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240205T164302Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T164302Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T164302Z","tags":["BB-254 post end of sprint update and complete listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T164302Z","tags":["BB-254 post end of sprint update and complete listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T164302Z","end":"20240205T164605Z","tags":["BB-254 post end of sprint update and complete listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240205T170742Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T170742Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T170742Z","tags":["BB-254 post end of sprint update and complete listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240205T170742Z","tags":["BB-254 post end of sprint update and complete listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240205T170742Z","end":"20240205T173424Z","tags":["BB-254 post end of sprint update and complete listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240210T054419Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240210T054419Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240210T054419Z","tags":["FAL-3599: CC: review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240210T054419Z","tags":["FAL-3599: CC: review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240210T054419Z","end":"20240210T071757Z","tags":["FAL-3599: CC: review"]}
