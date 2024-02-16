@@ -9611,3 +9611,39 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20240210T054419Z","end":"20240210T071757Z","tags":["FAL-3599: CC: review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240211T133922Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240211T133922Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240211T133922Z","tags":["BB-8560 update PR based on review comments"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240211T133922Z","tags":["BB-8560 update PR based on review comments"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240211T133922Z","end":"20240211T143149Z","tags":["BB-8560 update PR based on review comments"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240211T143157Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240211T143157Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240211T143157Z","tags":["FAL-3599 respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240211T143157Z","tags":["FAL-3599 respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240211T143157Z","end":"20240211T143324Z","tags":["FAL-3599 respond"]}

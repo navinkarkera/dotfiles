@@ -46,3 +46,15 @@ new [description:"Find a working group, related to openedx-events if possible" e
 time 1708068396
 new [description:"Ask someone about this being CC work: `Writing code that is being submitted upstream`" entry:"1708068396" modified:"1708068396" status:"pending" uuid:"929732b9-47da-4c6f-a7ce-4d1dd7877120"]
 ---
+time 1707662100
+old [description:"Resolve review comments in PR" due:"1707589800" entry:"1707559977" modified:"1707559977" project:"course_outline" status:"pending" uuid:"db4897b7-c2ad-4d2f-9ad4-87b2962e11b2"]
+new [description:"Resolve review comments in PR" due:"1707589800" end:"1707662100" entry:"1707559977" modified:"1707662100" project:"course_outline" status:"completed" uuid:"db4897b7-c2ad-4d2f-9ad4-87b2962e11b2"]
+---
+time 1707662102
+old [description:"Resolve review comments in PR" due:"1707589800" end:"1707662100" entry:"1707559977" modified:"1707662100" project:"course_outline" status:"completed" uuid:"db4897b7-c2ad-4d2f-9ad4-87b2962e11b2"]
+new [description:"Resolve review comments in PR" due:"1707589800" entry:"1707559977" modified:"1707662102" project:"course_outline" status:"pending" uuid:"db4897b7-c2ad-4d2f-9ad4-87b2962e11b2"]
+---
+time 1707662136
+old [description:"Resolve review comments in PR" due:"1707589800" entry:"1707559977" modified:"1707662102" project:"course_outline" status:"pending" uuid:"db4897b7-c2ad-4d2f-9ad4-87b2962e11b2"]
+new [description:"Resolve review comments in PR" due:"1707589800" end:"1707662136" entry:"1707559977" modified:"1707662136" project:"course_outline" status:"completed" uuid:"db4897b7-c2ad-4d2f-9ad4-87b2962e11b2"]
+---
