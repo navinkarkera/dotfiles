@@ -20,7 +20,7 @@
 # To use the default location of the XDG directories,
 # move this configuration file from ~/.taskrc to ~/.config/task/taskrc and uncomment below
 
-data.location=~/.config/task/
+data.location=~/Documents/notes/tasks/
 hooks.location=~/.config/task/hooks
 
 # Color theme (uncomment one to use)

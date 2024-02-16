@@ -11,3 +11,5 @@ project-scripts/.local/bin/pip*
 project-scripts/.local/bin/wheel
 project-scripts/.local/bin/czkawka*
 jira/.jira.d/cookies.js
+project-scripts/.local/bin/log.txt
+log.txt

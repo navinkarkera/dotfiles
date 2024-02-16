@@ -107,6 +107,9 @@ require('lazy').setup {
   { import = 'custom.plugins' },
 }
 
+-- conceal
+vim.o.conceallevel = 1
+
 --Set highlight on search
 vim.o.hlsearch = false
 vim.o.swapfile = false
@@ -627,11 +630,6 @@ capabilities.textDocument.foldingRange = {
 
 -- Enable the following language servers
 local servers = {
-  pyright = {
-    on_attach = on_attach,
-    capabilities = capabilities,
-    autostart = false,
-  },
   tsserver = {
     on_attach = on_attach,
     capabilities = capabilities,

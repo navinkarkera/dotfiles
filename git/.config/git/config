@@ -54,3 +54,5 @@
 	gpgsign = true
 [init]
 	defaultBranch = main
+[credential]
+	helper = cache --timeout=3600
