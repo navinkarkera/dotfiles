@@ -1,0 +1,51 @@
+[general]
+
+targets = opencraft_jira_tasks, opencraft_jira_reviews
+
+# Specify which TaskRC configuration file to use.
+taskrc = /home/navin/.config/task/taskrc
+
+# Set to true to shorten links.
+shorten = False
+
+# When false, links are appended as an annotation.
+inline_links = False
+
+# When true will include a link to the ticket as an annotation.
+annotation_links = True
+
+# When false skips putting issue comments into annotations.
+annotation_comments = False
+
+# Set to one of DEBUG, INFO, WARNING, ERROR, CRITICAL, or DISABLED to
+# control the logging verbosity.
+log.level = INFO
+
+[notifications]
+notifications = true
+backend = gobject
+only_on_new_tasks = true
+
+[opencraft_jira_tasks]
+service = jira
+jira.base_uri = https://tasks.opencraft.com
+jira.username = navinkarkera
+jira.password = @oracle:eval:pass opencraft-jira-navinkarkera
+jira.import_labels_as_tags = False
+jira.import_sprints_as_tags = False
+jira.label_template = jira_{{label}}
+jira.query = sprint IN openSprints() AND assignee=currentuser() AND type != epic AND (status = 'In progress' OR status = 'Backlog')
+jira.add_tags = jira_task, {{jirastatus.split(' ')|join('_')}}
+jira.description_template = {{jiraid}} - {{jirasummary}}
+
+[opencraft_jira_reviews]
+service = jira
+jira.base_uri = https://tasks.opencraft.com
+jira.username = navinkarkera
+jira.password = @oracle:eval:pass opencraft-jira-navinkarkera
+jira.import_labels_as_tags = False
+jira.import_sprints_as_tags = False
+jira.label_template = jira_reviews_{{label}}
+jira.query = sprint IN openSprints() AND ('Reviewer 1'=currentuser() OR 'Reviewer 2'=currentuser()) AND type != epic AND (status = 'Need review')
+jira.add_tags = jira_review
+jira.description_template = {{jiraid}} - {{jirasummary}}

@@ -681,17 +681,6 @@ local servers = {
       usePlaceholders = true,
     }
   },
-  lua_ls = {
-    capabilities = capabilities,
-    on_attach = on_attach,
-    autostart = false,
-    settings = {
-      Lua = {
-        workspace = { checkThirdParty = false },
-        telemetry = { enable = false },
-      }
-    },
-  },
 }
 
 

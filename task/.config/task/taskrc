@@ -20,8 +20,8 @@
 # To use the default location of the XDG directories,
 # move this configuration file from ~/.taskrc to ~/.config/task/taskrc and uncomment below
 
-data.location=~/Documents/notes/tasks/
-hooks.location=~/.config/task/hooks
+data.location=/home/navin/Documents/notes/tasks/
+hooks.location=/home/navin/.config/task/hooks
 
 # Color theme (uncomment one to use)
 #include light-16.theme
@@ -35,8 +35,78 @@ hooks.location=~/.config/task/hooks
 #include dark-yellow-green.theme
 #include dark-gray-256.theme
 #include dark-gray-blue-256.theme
-include solarized-dark-256.theme
+# include solarized-dark-256.theme
 # include solarized-light-256.theme
 #include no-color.theme
 
+# ========================================================================================================================================================================================================
+rule.precedence.color=deleted,completed,active,keyword.,tag.,uda.,project.,overdue,scheduled,due.today,due,blocked,blocking,recurring,tagged,pri.
+
+# basics
+color.active=bold yellow on bright black
+color.completed=green on black
+color.deleted=red on black
+color.due.today=on bright yellow
+color.due=on bright green
+color.overdue=on bright magenta
+color.blocking=red
+color.blocked=blue
+color.recurring=
+color.scheduled=on bright cyan
+color.tagged=
+color.pri.H=
+color.pri.M=
+color.pri.L=bold black
+color.pri.none=
+
+# missing attributes
+color.project.none=
+color.tag.none=
+color.pri.none=
+
+# personal color rules (replace "X" with your value)
+color.keyword.X=
+color.project.X=
+color.tag.next=bold yellow on bright black
+color.uda.X=
+
+# interface
+color.alternate=
+color.header=bold white on bright black
+color.label=white on black
+color.footnote=bold cyan on bright black
+
+# burndown report
+color.burndown.pending=on bright green
+color.burndown.started=on bright yellow
+color.burndown.done=on red
+
+# calendar
+color.calendar.holiday=yellow
+color.calendar.today=yellow
+color.calendar.due.today=yellow on bright yellow
+color.calendar.due=on bright green
+color.calendar.overdue=on bright magenta
+color.calendar.weekend=on white
+color.calendar.weeknumber=white on bright black
+
+# history report
+color.history.add=blue on bright yellow
+color.history.done=red on bright green
+color.history.delete=black on bright red
+
+# summary report (background color only)
+color.summary.bar=on bright green
+color.summary.background=on white
+
+# status
+color.error=red on white
+color.debug=white on black
+color.undo.before=yellow
+color.undo.after=green
+color.sync.added=green
+color.sync.changed=yellow
+color.sync.rejected=red
+color.warning=bold red
+# ========================================================================================================================================================================================================
 news.version=2.6.0
