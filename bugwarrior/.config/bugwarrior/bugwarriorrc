@@ -22,7 +22,7 @@ annotation_comments = False
 log.level = INFO
 
 [notifications]
-notifications = true
+notifications = false
 backend = gobject
 only_on_new_tasks = true
 

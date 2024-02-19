@@ -4,6 +4,8 @@ import sys
 import json
 from datetime import datetime, timedelta
 
+midnight_format = '%Y%m%dT235959Z'
+
 def next_weekday(d, weekday):
     days_ahead = weekday - d.weekday()
     if days_ahead <= 0: # Target day already happened this week
@@ -11,14 +13,18 @@ def next_weekday(d, weekday):
     return d + timedelta(days_ahead)
 
 task = json.loads(sys.stdin.readline())
-if "In_progress" in task.get("tags", []):
-    task["start"] = datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
-    task["modified"] = datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
+if "In_progress" in task.get("tags", []) and not task.get("start", ""):
+    task["start"] = datetime.utcnow().strftime(midnight_format)
+    task["modified"] = datetime.utcnow().strftime(midnight_format)
 
-if "jiraid" in task and (datetime.utcnow().isocalendar().week - datetime(2022, 4, 18).isocalendar().week) % 2 == 1:
-    task["due"] = next_weekday(datetime.utcnow(), 0).strftime('%Y%m%dT%H%M%SZ')
-else:
-    task["due"] = (next_weekday(datetime.utcnow(), 0) + timedelta(weeks=1)).strftime('%Y%m%dT%H%M%SZ')
+if "jiraid" in task:
+    if (datetime.utcnow().isocalendar().week - datetime(2022, 4, 18).isocalendar().week) % 2 == 1:
+        task["due"] = next_weekday(datetime.utcnow(), 0).strftime(midnight_format)
+    else:
+        if datetime.now().isocalendar().weekday == 1:
+            task["due"] = datetime.utcnow().strftime(midnight_format)
+        else:
+            task["due"] = (next_weekday(datetime.utcnow(), 0) + timedelta(weeks=2)).strftime(midnight_format)
 
 print(json.dumps(task))
 

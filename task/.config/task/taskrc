@@ -20,7 +20,7 @@
 # To use the default location of the XDG directories,
 # move this configuration file from ~/.taskrc to ~/.config/task/taskrc and uncomment below
 
-data.location=/home/navin/Documents/notes/tasks/
+data.location=/home/navin/Documents/notes/tasks
 hooks.location=/home/navin/.config/task/hooks
 
 # Color theme (uncomment one to use)
@@ -40,20 +40,21 @@ hooks.location=/home/navin/.config/task/hooks
 #include no-color.theme
 
 # ========================================================================================================================================================================================================
-rule.precedence.color=deleted,completed,active,keyword.,tag.,uda.,project.,overdue,scheduled,due.today,due,blocked,blocking,recurring,tagged,pri.
+rule.precedence.color=deleted,completed,active,keyword.,tag.,project.,overdue,scheduled,due.today,due.tomorrow,due,blocked,blocking,recurring,tagged,pri.
 
 # basics
-color.active=bold yellow on bright black
+color.active=bold green on black
 color.completed=green on black
 color.deleted=red on black
-color.due.today=on bright yellow
-color.due=on bright green
-color.overdue=on bright magenta
+color.due.today=yellow on black
+color.due=blue on black
+color.overdue=magenta on black
 color.blocking=red
 color.blocked=blue
 color.recurring=
-color.scheduled=on bright cyan
+color.scheduled=bright cyan on black
 color.tagged=
+color.uda=
 color.pri.H=
 color.pri.M=
 color.pri.L=bold black
@@ -71,10 +72,10 @@ color.tag.next=bold yellow on bright black
 color.uda.X=
 
 # interface
-color.alternate=
-color.header=bold white on bright black
-color.label=white on black
-color.footnote=bold cyan on bright black
+color.alternate=white
+color.header=bold white
+color.label=white
+color.footnote=bold cyan
 
 # burndown report
 color.burndown.pending=on bright green
@@ -100,7 +101,7 @@ color.summary.bar=on bright green
 color.summary.background=on white
 
 # status
-color.error=red on white
+color.error=red on black
 color.debug=white on black
 color.undo.before=yellow
 color.undo.after=green
