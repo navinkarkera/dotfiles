@@ -12,6 +12,7 @@ def next_weekday(d, weekday):
         days_ahead += 7
     return d + timedelta(days_ahead)
 
+sys.stdin.reconfigure(encoding='utf-8', errors="ignore")
 _ = sys.stdin.readline()
 modified_task = json.loads(sys.stdin.readline())
 if "In_progress" in modified_task.get("tags", []) and not modified_task.get("start", ""):
