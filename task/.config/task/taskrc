@@ -111,3 +111,5 @@ color.sync.rejected=red
 color.warning=bold red
 # ========================================================================================================================================================================================================
 news.version=2.6.0
+# Reports
+report.next.filter=status:pending -WAITING limit:page -github

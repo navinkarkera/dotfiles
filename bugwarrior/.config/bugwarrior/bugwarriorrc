@@ -1,6 +1,6 @@
 [general]
 
-targets = opencraft_jira_tasks, opencraft_jira_reviews
+targets = opencraft_jira_tasks, opencraft_jira_reviews, openedx_github
 
 # Specify which TaskRC configuration file to use.
 taskrc = /home/navin/.config/task/taskrc
@@ -49,3 +49,14 @@ jira.label_template = jira_reviews_{{label}}
 jira.query = sprint IN openSprints() AND ('Reviewer 1'=currentuser() OR 'Reviewer 2'=currentuser()) AND type != epic AND (status = 'Need review')
 jira.add_tags = jira_review
 jira.description_template = {{jiraid}} - {{jirasummary}}
+
+[openedx_github]
+service = github
+github.login = navinkarkera
+github.token = @oracle:eval:pass github/access_token
+github.username = navinkarkera
+github.query = is:open org:openedx involves:navinkarkera archived:false
+github.include_user_issues = False
+github.include_user_repos = False
+github.add_tags = github
+github.description_template = [{{githubtype}}] {{githubnumber}} - {{githubtitle}}
