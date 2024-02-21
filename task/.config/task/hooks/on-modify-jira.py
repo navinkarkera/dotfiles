@@ -20,10 +20,10 @@ if "In_progress" in modified_task.get("tags", []) and not modified_task.get("sta
     modified_task["modified"] = datetime.utcnow().strftime(midnight_format)
 
 if "jiraid" in modified_task:
-    if (datetime.utcnow().isocalendar().week - datetime(2022, 4, 18).isocalendar().week) % 2 == 1:
+    if (datetime.utcnow().isocalendar()[1] - datetime(2022, 4, 18).isocalendar()[1]) % 2 == 1:
         modified_task["due"] = next_weekday(datetime.utcnow(), 0).strftime(midnight_format)
     else:
-        if datetime.now().isocalendar().weekday == 1:
+        if datetime.now().isocalendar()[2] == 1:
             modified_task["due"] = datetime.utcnow().strftime(midnight_format)
         else:
             modified_task["due"] = (next_weekday(datetime.utcnow(), 0) + timedelta(weeks=2)).strftime(midnight_format)

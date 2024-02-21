@@ -57,7 +57,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 
 # Other program settings:
 export BAT_THEME="GitHub"
-export ZK_NOTEBOOK_DIR="/home/navin/Documents/zk-notes"
+export ZK_NOTEBOOK_DIR="/home/navin/Documents/notes"
 export YDOTOOL_SOCKET="/tmp/.ydotool_socket"
 export NB_DIR="/home/navin/Documents/notes-nb"
 export TS_ONFINISH="/home/navin/.local/bin/tsp-ring"

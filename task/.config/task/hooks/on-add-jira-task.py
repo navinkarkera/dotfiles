@@ -19,10 +19,10 @@ if "In_progress" in task.get("tags", []) and not task.get("start", ""):
     task["modified"] = datetime.utcnow().strftime(midnight_format)
 
 if "jiraid" in task:
-    if (datetime.utcnow().isocalendar().week - datetime(2022, 4, 18).isocalendar().week) % 2 == 1:
+    if (datetime.utcnow().isocalendar()[1] - datetime(2022, 4, 18).isocalendar()[1]) % 2 == 1:
         task["due"] = next_weekday(datetime.utcnow(), 0).strftime(midnight_format)
     else:
-        if datetime.now().isocalendar().weekday == 1:
+        if datetime.now().isocalendar()[2] == 1:
             task["due"] = datetime.utcnow().strftime(midnight_format)
         else:
             task["due"] = (next_weekday(datetime.utcnow(), 0) + timedelta(weeks=2)).strftime(midnight_format)
