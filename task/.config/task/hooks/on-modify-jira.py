@@ -26,7 +26,7 @@ if "jiraid" in modified_task:
         if datetime.now().isocalendar()[2] == 1:
             modified_task["due"] = datetime.utcnow().strftime(midnight_format)
         else:
-            modified_task["due"] = (next_weekday(datetime.utcnow(), 0) + timedelta(weeks=2)).strftime(midnight_format)
+            modified_task["due"] = (next_weekday(datetime.utcnow(), 0) + timedelta(days=6)).strftime(midnight_format)
 
 print(json.dumps(modified_task))
 

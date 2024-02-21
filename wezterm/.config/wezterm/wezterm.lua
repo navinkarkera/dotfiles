@@ -205,7 +205,7 @@ config.keys = {
       name = 'notes',
       spawn = {
         cwd = wezterm.home_dir .. '/Documents/notes',
-        args = { "nvim", "index.md" }
+        args = { "zk", "edit", "-i" }
       },
     },
   },

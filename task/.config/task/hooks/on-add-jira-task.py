@@ -25,7 +25,7 @@ if "jiraid" in task:
         if datetime.now().isocalendar()[2] == 1:
             task["due"] = datetime.utcnow().strftime(midnight_format)
         else:
-            task["due"] = (next_weekday(datetime.utcnow(), 0) + timedelta(weeks=2)).strftime(midnight_format)
+            task["due"] = (next_weekday(datetime.utcnow(), 0) + timedelta(days=6)).strftime(midnight_format)
 
 print(json.dumps(task))
 
