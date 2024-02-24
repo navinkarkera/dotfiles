@@ -52,7 +52,7 @@ color.overdue=magenta on black
 color.blocking=red
 color.blocked=blue
 color.recurring=
-color.scheduled=bright cyan on black
+color.scheduled=cyan on black
 color.tagged=
 color.uda=
 color.pri.H=
@@ -112,4 +112,22 @@ color.warning=bold red
 # ========================================================================================================================================================================================================
 news.version=2.6.0
 # Reports
-report.next.filter=status:pending -WAITING limit:page -github
+report.next.filter=status:pending -WAITING
+
+# Tasks to work on today
+report.today.description=Tasks for today
+report.today.columns=id,start.age,entry.age,depends,priority,project,tags,recur,scheduled.countdown,due.relative,until.remaining,description,urgency
+report.today.labels=ID,Active,Age,Deps,P,Project,Tag,Recur,S,Due,Until,Description,Urg
+report.today.sort=urgency-
+report.today.filter=status:pending -WAITING (due.before:eow or +ACTIVE or sch:today)
+
+# Tasks from jira
+report.jira.description=Tasks from jira
+report.jira.columns=id,start.age,entry.age,depends,priority,project,tags,recur,scheduled.countdown,due.relative,until.remaining,description,urgency
+report.jira.labels=ID,Active,Age,Deps,P,Project,Tag,Recur,S,Due,Until,Description,Urg
+report.jira.sort=urgency-
+report.jira.filter=status:pending -WAITING +jira_task or +jira_review
+
+# Taskwarrior tui
+uda.taskwarrior-tui.task-report.next.filter=status:pending -WAITING (due.before:eow or +ACTIVE or sch:today)
+uda.taskwarrior-tui.selection.reverse=yes

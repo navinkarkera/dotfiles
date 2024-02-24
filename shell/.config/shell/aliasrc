@@ -50,11 +50,16 @@ alias \
 	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" \
 	weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \
 
+# taskwarrior
 alias \
-	t="tmux -u" \
-	tn="t new-session -A -s main" \
-	ta="t attach"
-	bm="$EDITOR ~/.config/bookmarks/urls"
+	t="task" \
+	tall="task all" \
+	ta="task add" \
+	td="task today" \
+	tda="task add sch:today due:eod " \
+	ttui="taskwarrior-tui" \
+	tjira="task jira" \
+	tgh="task +github"
 
 alias v="project-files"
 
@@ -270,12 +275,6 @@ activate() {
     echo "activating $v_path"
     [[ -d "$v_path" && "$VIRTUAL_ENV" == "" ]] && source "$v_path/bin/activate"
 }
-
-# taskwarrior
-alias td="task"
-alias tda="task add"
-alias tdall="task all"
-alias ttui="taskwarrior-tui"
 
 # timewarrior
 alias tw="timew"
