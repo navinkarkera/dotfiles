@@ -866,7 +866,10 @@ require("refactoring").setup {
       'print(f"""======================================= %s {%s}""")',
     },
     javascript = {
-      'console.log("============================= %s ", %s);',
+      'console.log("%s ", %s);',
+    },
+    javascriptreact = {
+      'console.log("%s ", %s);',
     },
   },
 }
