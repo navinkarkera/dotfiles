@@ -119,7 +119,7 @@ report.today.description=Tasks for today
 report.today.columns=id,start.age,entry.age,depends,priority,project,tags,recur,scheduled.countdown,due.relative,until.remaining,description,urgency
 report.today.labels=ID,Active,Age,Deps,P,Project,Tag,Recur,S,Due,Until,Description,Urg
 report.today.sort=urgency-
-report.today.filter=status:pending -WAITING (due.before:eow or +ACTIVE or sch:today)
+report.today.filter=status:pending -WAITING (due.before:eow or +ACTIVE or sch:today or due.before:2w)
 
 # Tasks from jira
 report.jira.description=Tasks from jira
@@ -128,6 +128,13 @@ report.jira.labels=ID,Active,Age,Deps,P,Project,Tag,Recur,S,Due,Until,Descriptio
 report.jira.sort=urgency-
 report.jira.filter=status:pending -WAITING +jira_task or +jira_review
 
+# Tasks from github
+report.github.description=Tasks from github
+report.github.columns=id,start.age,entry.age,depends,priority,project,tags,recur,scheduled.countdown,due.relative,until.remaining,description,urgency,modified.age
+report.github.labels=ID,Active,Age,Deps,P,Project,Tag,Recur,S,Due,Until,Description,Urg,Modified
+report.github.sort=entry-,modified-
+report.github.filter=status:pending -WAITING +github
+
 # Taskwarrior tui
-uda.taskwarrior-tui.task-report.next.filter=status:pending -WAITING (due.before:eow or +ACTIVE or sch:today)
+uda.taskwarrior-tui.task-report.next.filter=status:pending -WAITING (due.before:eow or +ACTIVE or sch:today or due.before:2w)
 uda.taskwarrior-tui.selection.reverse=yes
