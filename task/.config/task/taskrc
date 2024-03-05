@@ -138,3 +138,12 @@ report.github.filter=status:pending -WAITING +github
 # Taskwarrior tui
 uda.taskwarrior-tui.task-report.next.filter=status:pending -WAITING (due.before:eow or +ACTIVE or sch:today or due.before:2w)
 uda.taskwarrior-tui.selection.reverse=yes
+
+# Alias
+alias.attach=execute /home/navin/.config/taskopen/attach
+alias.addnote=execute /home/navin/.config/taskopen/addnote
+
+# Shortcut
+uda.taskwarrior-tui.shortcuts.1=taskopen
+uda.taskwarrior-tui.shortcuts.2=task addnote
+uda.taskwarrior-tui.shortcuts.3=task attach

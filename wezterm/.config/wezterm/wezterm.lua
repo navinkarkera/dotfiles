@@ -3,13 +3,13 @@ local act = wezterm.action
 local config = {}
 
 config.audible_bell = 'Disabled'
-config.color_scheme = 'Modus-Operandi'
+config.color_scheme = 'OneHalfDark'
 config.window_background_opacity = 1
 config.hide_tab_bar_if_only_one_tab = true
 config.use_fancy_tab_bar = true
 config.status_update_interval = 1000
 config.window_frame = {
-  font = wezterm.font { family = 'monospace', scale = 0.85 },
+  font = wezterm.font { family = 'monospace', scale = 0.75 },
 }
 
 -- config.window_background_image = '/home/navin/Pictures/goku.jpg'
@@ -34,8 +34,8 @@ config.inactive_pane_hsb = {
 }
 
 config.font = wezterm.font_with_fallback({
-  { family = "monospace",  scale = 1, weight = "Regular", },
-  { family = "Symbols Nerd Font",  scale = 1, weight = "Regular", },
+  { family = "monospace",  scale = 0.95, weight = "Regular", },
+  { family = "Symbols Nerd Font",  scale = 0.95, weight = "Regular", },
 })
 config.use_dead_keys = false
 -- config.disable_default_key_bindings = true

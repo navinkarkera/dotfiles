@@ -54,6 +54,10 @@ require('lazy').setup {
     dependencies = { 'nvim-tree/nvim-web-devicons' }
   },
   { "miikanissi/modus-themes.nvim", priority = 1000 },
+  {
+    "olimorris/onedarkpro.nvim",
+    priority = 1000, -- Ensure it loads first
+  },
   'luisiacc/gruvbox-baby',
   { "rebelot/kanagawa.nvim",   name = "kanagawa", priority = 1000 },
   'nvim-lualine/lualine.nvim',
@@ -155,22 +159,22 @@ vim.o.splitright = true
 vim.o.splitbelow = true
 
 -- vim.g.gruvbox_baby_transparent_mode = 1
-require("modus-themes").setup({
-	-- Theme comes in two styles `modus_operandi` and `modus_vivendi`
-	-- `auto` will automatically set style based on background set with vim.o.background
-	style = "auto",
-	variant = "tinted", -- Theme comes in four variants `default`, `tinted`, `deuteranopia`, and `tritanopia`
-	dim_inactive = false, -- "non-current" windows are dimmed
-	styles = {
-		-- Style to be applied to different syntax groups
-		-- Value is any valid attr-list value for `:help nvim_set_hl`
-		comments = { italic = true },
-		keywords = { italic = true },
-		functions = {},
-		variables = {},
-	},
-})
-vim.cmd.colorscheme "modus"
+-- require("modus-themes").setup({
+-- 	-- Theme comes in two styles `modus_operandi` and `modus_vivendi`
+-- 	-- `auto` will automatically set style based on background set with vim.o.background
+-- 	style = "auto",
+-- 	variant = "tinted", -- Theme comes in four variants `default`, `tinted`, `deuteranopia`, and `tritanopia`
+-- 	dim_inactive = false, -- "non-current" windows are dimmed
+-- 	styles = {
+-- 		-- Style to be applied to different syntax groups
+-- 		-- Value is any valid attr-list value for `:help nvim_set_hl`
+-- 		comments = { italic = true },
+-- 		keywords = { italic = true },
+-- 		functions = {},
+-- 		variables = {},
+-- 	},
+-- })
+vim.cmd.colorscheme "onedark"
 
 if vim.fn.executable("rg") == 1 then
   vim.o.grepprg = [[rg --vimgrep --no-heading --smart-case --hidden -g '!.git/']]

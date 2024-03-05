@@ -18,6 +18,7 @@ set pager_index_lines=10
 set nm_default_url = "notmuch:///home/navin/.local/share/mail"
 
 macro index o "<shell-escape>mw -y navin@opencraft.com<enter>" "run mbsync to sync navin@opencraft.com"
+macro index,pager \\ "<pipe-message>/home/navin/.config/taskopen/1.x/mutt2task<enter>" "create task from email"
 
 mailboxes "=INBOX" "=Jira" "=Git" "=Forum"  "=Mailing Lists/help" =Trash =Sent =Drafts
 virtual-mailboxes "Unread" "notmuch://?query=tag:unread and tag:inbox and (to:navin@opencraft.com or cc:navin@opencraft.com)"
