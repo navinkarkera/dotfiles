@@ -22,7 +22,7 @@
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango: Iosevka SS07 10
+font pango: monospace 10
 
 # set the mod key to the winkey:
 set $mod Mod4
@@ -452,13 +452,13 @@ exec --no-startup-id xset s 480 dpms 600 600 600
 # you need to have tray apps started manually one by one:
 
 # start blueberry app for managing bluetooth devices from tray:
-# exec --no-startup-id blueberry-tray
+exec --no-startup-id blueberry-tray
 
 # networkmanager-applet
-# exec --no-startup-id nm-applet
+exec --no-startup-id nm-applet
 
 # clipman-applet
-# exec --no-startup-id xfce4-clipman
+exec --no-startup-id xfce4-clipman
 
 ##################
 # floating rules #
@@ -523,13 +523,13 @@ bar {
 		mode hide
 		hidden_state hide
 		modifier Mod4
-		font pango: Iosevka SS07 11
+		font pango: monospace 11
 		status_command i3blocks -c ~/.config/i3/i3blocks.conf
 	    	position bottom
 #	    	i3bar_command i3bar --transparency
 # it could be that you have no primary display set: set one (xrandr --output <output> --primary)
 # reference: https://i3wm.org/docs/userguide.html#_tray_output
-		    #tray_output primary
+		    tray_output primary
 		    tray_padding 0
 
 # When strip_workspace_numbers is set to yes,

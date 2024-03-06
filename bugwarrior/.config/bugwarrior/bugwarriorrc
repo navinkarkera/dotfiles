@@ -47,7 +47,7 @@ jira.import_labels_as_tags = False
 jira.import_sprints_as_tags = False
 jira.label_template = jira_reviews_{{label}}
 jira.query = sprint IN openSprints() AND ('Reviewer 1'=currentuser() OR 'Reviewer 2'=currentuser()) AND type != epic AND (status = 'Need review')
-jira.add_tags = jira_review
+jira.add_tags = jira_task, {{jirastatus.split(' ')|join('_')}}
 jira.description_template = {{jiraid}} - {{jirasummary}}
 
 [openedx_github]

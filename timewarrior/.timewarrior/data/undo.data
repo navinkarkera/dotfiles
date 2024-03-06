@@ -9719,3 +9719,147 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20240305T102632Z","end":"20240305T103043Z","tags":["BB-7609 ping reviewers"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240306T071824Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240306T071824Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240306T071824Z","tags":["BB-XXXX triage urgent email as FF"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240306T071824Z","tags":["BB-XXXX triage urgent email as FF"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240306T071824Z","end":"20240306T074113Z","tags":["BB-XXXX triage urgent email as FF"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240306T075610Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240306T075610Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240306T075610Z","tags":["BB-XXXX triage urgent email as FF"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240306T075610Z","tags":["BB-XXXX triage urgent email as FF"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240306T075610Z","end":"20240306T075612Z","tags":["BB-XXXX triage urgent email as FF"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240306T082906Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240306T082906Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240306T082906Z","tags":["BB-8634 ping reviewer"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240306T082906Z","tags":["BB-8634 ping reviewer"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240306T082906Z","end":"20240306T083137Z","tags":["BB-8634 ping reviewer"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240306T084208Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240306T084208Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240306T084208Z","tags":["BB-8535 research docs"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240306T084208Z","tags":["BB-8535 research docs"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240306T084208Z","end":"20240306T091344Z","tags":["BB-8535 research docs"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240306T101634Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240306T101634Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240306T101634Z","tags":["BB-8676 read"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240306T101634Z","tags":["BB-8676 read"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240306T101634Z","end":"20240306T102559Z","tags":["BB-8676 read"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240306T103126Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240306T103126Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240306T103126Z","tags":["BB-8676 read"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240306T103126Z","tags":["BB-8676 read"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240306T103126Z","end":"20240306T103150Z","tags":["BB-8676 read"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240306T111646Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240306T111646Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240306T111646Z","tags":["BB-8676 volunteer for maintainership and find PRs for CC review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240306T111646Z","tags":["BB-8676 volunteer for maintainership and find PRs for CC review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240306T111646Z","end":"20240306T123803Z","tags":["BB-8676 volunteer for maintainership and find PRs for CC review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240306T123808Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240306T123808Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240306T123808Z","tags":["BB-8633 check"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240306T123808Z","tags":["BB-8633 check"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240306T123808Z","end":"20240306T124342Z","tags":["BB-8633 check"]}

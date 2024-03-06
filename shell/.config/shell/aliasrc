@@ -59,7 +59,7 @@ alias \
 	tda="task add sch:today due:eod " \
 	ttui="taskwarrior-tui" \
 	tjira="task jira" \
-	tgh="task +github"
+	tgh="task github"
 
 alias v="project-files"
 

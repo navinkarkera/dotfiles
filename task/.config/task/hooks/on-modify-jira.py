@@ -15,7 +15,7 @@ def next_weekday(d, weekday):
 sys.stdin.reconfigure(encoding='utf-8', errors="ignore")
 _ = sys.stdin.readline()
 modified_task = json.loads(sys.stdin.readline())
-if "In_progress" in modified_task.get("tags", []) and not modified_task.get("start", ""):
+if ("In_progress" in modified_task.get("tags", []) or "Need_Review" in modified_task.get("tags", [])) and not modified_task.get("start", ""):
     modified_task["start"] = datetime.utcnow().strftime(midnight_format)
     modified_task["modified"] = datetime.utcnow().strftime(midnight_format)
 
