@@ -205,7 +205,7 @@ config.keys = {
       name = 'notes',
       spawn = {
         cwd = wezterm.home_dir .. '/Documents/notes',
-        args = { "zk", "edit", "-i" }
+        args = { "zk", "edit", "-s", "modified", "-i" }
       },
     },
   },
@@ -223,6 +223,16 @@ config.keys = {
             "wezterm cli spawn --cwd=edx-platform && wezterm cli spawn --cwd=devstack"
           },
         },
+      },
+    },
+  },
+  {
+    key = '$',
+    mods = 'LEADER|SHIFT',
+    action = act.SwitchToWorkspace {
+      name = 'tutor',
+      spawn = {
+        cwd = wezterm.home_dir .. '/work/opencraft/tutor',
       },
     },
   },
