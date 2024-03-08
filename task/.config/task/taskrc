@@ -135,6 +135,13 @@ report.github.labels=ID,Active,Age,Deps,P,Project,Tag,Recur,S,Due,Until,Descript
 report.github.sort=entry-,modified-
 report.github.filter=status:pending -WAITING +github
 
+# Maintainer tasks
+report.maintainer.description=Maintainer tasks
+report.maintainer.columns=id,start.age,entry.age,depends,priority,project,tags,recur,scheduled.countdown,due.relative,until.remaining,description,urgency,modified.age
+report.maintainer.labels=ID,Active,Age,Deps,P,Project,Tag,Recur,S,Due,Until,Description,Urg,Modified
+report.maintainer.sort=entry,modified-
+report.maintainer.filter=status:pending -WAITING +maintainer
+
 # Taskwarrior tui
 uda.taskwarrior-tui.task-report.next.filter=status:pending -WAITING (due.before:eow or +ACTIVE or sch:today or due.before:2w)
 uda.taskwarrior-tui.selection.reverse=yes

@@ -232,7 +232,7 @@ config.keys = {
     action = act.SwitchToWorkspace {
       name = 'tutor',
       spawn = {
-        cwd = wezterm.home_dir .. '/work/opencraft/tutor',
+        cwd = wezterm.home_dir .. '/work/opencraft/tutor-env',
       },
     },
   },
@@ -376,6 +376,12 @@ table.insert(config.hyperlink_rules, {
 })
 
 config.launch_menu = {
+  {
+    args = { 'taskwarrior-tui', '-r', 'maintainer' },
+  },
+  {
+    args = { 'taskwarrior-tui', '-r', 'github' },
+  },
   {
     args = { 'btop' },
   },

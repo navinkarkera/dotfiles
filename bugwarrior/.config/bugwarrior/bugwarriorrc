@@ -1,6 +1,6 @@
 [general]
 
-targets = opencraft_jira_tasks, opencraft_jira_reviews, openedx_github
+targets = opencraft_jira_tasks, opencraft_jira_reviews, openedx_github, openedx_maintainer, opencraft_email
 
 # Specify which TaskRC configuration file to use.
 taskrc = /home/navin/.config/task/taskrc
@@ -60,3 +60,21 @@ github.include_user_issues = False
 github.include_user_repos = False
 github.add_tags = github
 github.description_template = [{{githubtype}}] {{githubnumber}} - {{githubtitle}}
+
+[openedx_maintainer]
+service = github
+github.login = navinkarkera
+github.token = @oracle:eval:pass github/access_token
+github.username = navinkarkera
+github.query = is:open repo:openedx/frontend-app-library-authoring archived:false
+github.include_user_issues = False
+github.include_user_repos = False
+github.add_tags = github, maintainer
+github.description_template = [{{githubtype}}] {{githubnumber}} - {{githubtitle}}
+
+[opencraft_email]
+service = gmail
+gmail.login_name = navin@opencraft.com
+gmail.client_secret_path = /home/navin/.local/share/gmail_client_secret.json
+gmail.add_tags = email
+gmail.description_template = [{{gmaillastsender}}] {{gmailsubject}}
