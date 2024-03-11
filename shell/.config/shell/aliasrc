@@ -42,7 +42,6 @@ alias \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove -R" \
 	xq="xbps-query" \
-	z="zathura" \
 	ping-me='kdeconnect-cli --name="Moto G(60)" --ring'
 
 alias \

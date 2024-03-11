@@ -446,7 +446,8 @@ vim.api.nvim_create_user_command(
         end, branches)
       end
     end,
-  })
+  }
+)
 
 local base_branch = os.getenv("GIT_PARENT_BRANCH") or "master"
 map('n', '<leader>fc', ":ListFilesFromBranch " .. base_branch .. "<CR>")
@@ -924,19 +925,7 @@ map(
 require("neogen").setup({})
 map("n", "<Leader>nf", require('neogen').generate)
 
-local function git_files_cwd_aware(opts)
-  opts = opts or {}
-  -- git_root() will warn us if we're not inside a git repo
-  -- so we don't have to add another warning here, if
-  -- you want to avoid the error message change it to:
-  -- local git_root = fzf_lua.path.git_root(opts, true)
-  local git_root = fzf_lua.path.git_root(opts)
-  if not git_root then return end
-  local relative = fzf_lua.path.relative(vim.loop.cwd(), git_root)
-  opts.fzf_opts = { ['--query'] = git_root ~= relative and relative or nil }
-  return fzf_lua.git_files(opts)
-end
-map('n', '<leader>pv', function() git_files_cwd_aware({ cwd = "%:h" }) end)
+map('n', '<leader>pv', function() fzf_lua.files({ cwd = "%:h" }) end)
 map('n', '<C-p>', fzf_lua.files)
 
 -- ts-node-action
