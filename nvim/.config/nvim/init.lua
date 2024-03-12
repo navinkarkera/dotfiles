@@ -53,13 +53,10 @@ require('lazy').setup {
     'ibhagwan/fzf-lua',
     dependencies = { 'nvim-tree/nvim-web-devicons' }
   },
-  { "miikanissi/modus-themes.nvim", priority = 1000 },
   {
     "olimorris/onedarkpro.nvim",
     priority = 1000, -- Ensure it loads first
   },
-  'luisiacc/gruvbox-baby',
-  { "rebelot/kanagawa.nvim",   name = "kanagawa", priority = 1000 },
   'nvim-lualine/lualine.nvim',
   { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
   { 'lewis6991/gitsigns.nvim', dependencies = { 'nvim-lua/plenary.nvim' } },
@@ -107,7 +104,6 @@ require('lazy').setup {
   "kylechui/nvim-surround",
   { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim' },
   { "pechorin/any-jump.vim" },
-  { "stevearc/oil.nvim" },
   { import = 'custom.plugins' },
 }
 
@@ -373,10 +369,6 @@ require('gitsigns').setup {
     map({ 'o', 'x' }, 'ih', ':<C-U>Gitsigns select_hunk<CR>')
   end
 }
-
--- oil.nvim
-require('oil').setup()
-map('n', '<leader>to', require('oil').open)
 
 local fzf_lua = require("fzf-lua")
 fzf_lua.setup({
