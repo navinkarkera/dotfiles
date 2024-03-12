@@ -53,9 +53,10 @@ color.blocking=red
 color.blocked=blue
 color.recurring=
 color.scheduled=cyan on black
-color.tagged=
+color.tagged=rgb350
+color.tag.maintainer=rgb531
 color.uda=
-color.pri.H=
+color.pri.H=on yellow
 color.pri.M=
 color.pri.L=bold black
 color.pri.none=
@@ -72,9 +73,9 @@ color.tag.next=bold yellow on bright black
 color.uda.X=
 
 # interface
-color.alternate=white
-color.header=bold white
-color.label=white
+color.alternate=yellow
+color.header=bold yellow
+color.label=yellow
 color.footnote=bold cyan
 
 # burndown report
@@ -133,14 +134,14 @@ report.github.description=Tasks from github
 report.github.columns=id,start.age,entry.age,depends,priority,project,tags,recur,scheduled.countdown,due.relative,until.remaining,description,urgency,modified.age
 report.github.labels=ID,Active,Age,Deps,P,Project,Tag,Recur,S,Due,Until,Description,Urg,Modified
 report.github.sort=entry-,modified-
-report.github.filter=status:pending -WAITING +github
+report.github.filter=status:pending -WAITING +github +new -maintainer
 
 # Maintainer tasks
 report.maintainer.description=Maintainer tasks
 report.maintainer.columns=id,start.age,entry.age,depends,priority,project,tags,recur,scheduled.countdown,due.relative,until.remaining,description,urgency,modified.age
 report.maintainer.labels=ID,Active,Age,Deps,P,Project,Tag,Recur,S,Due,Until,Description,Urg,Modified
-report.maintainer.sort=entry,modified-
-report.maintainer.filter=status:pending -WAITING +maintainer
+report.maintainer.sort=entry-,modified-
+report.maintainer.filter=status:pending -WAITING +maintainer +new
 
 # Taskwarrior tui
 uda.taskwarrior-tui.task-report.next.filter=status:pending -WAITING (due.before:eow or +ACTIVE or sch:today or due.before:2w)
@@ -151,6 +152,8 @@ alias.attach=execute /home/navin/.config/taskopen/attach
 alias.addnote=execute /home/navin/.config/taskopen/addnote
 
 # Shortcut
+# uda.taskwarrior-tui.keyconfig.shortcut1=o
 uda.taskwarrior-tui.shortcuts.1=taskopen
 uda.taskwarrior-tui.shortcuts.2=task addnote
 uda.taskwarrior-tui.shortcuts.3=task attach
+uda.taskwarrior-tui.shortcuts.4=task rc.confirmation=off modify -new

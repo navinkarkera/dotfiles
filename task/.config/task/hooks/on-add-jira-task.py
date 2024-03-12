@@ -30,6 +30,9 @@ if "jiraid" in task:
 if "gmailurl" in task:
     task["due"] = datetime.utcnow().strftime(midnight_format)
 
+if "githuburl" in task:
+    task["tags"].append("new")
+
 print(json.dumps(task))
 
 sys.exit(0)

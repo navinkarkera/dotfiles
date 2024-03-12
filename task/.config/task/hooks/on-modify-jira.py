@@ -13,8 +13,12 @@ def next_weekday(d, weekday):
     return d + timedelta(days_ahead)
 
 sys.stdin.reconfigure(encoding='utf-8', errors="ignore")
-_ = sys.stdin.readline()
+old_task = json.loads(sys.stdin.readline())
 modified_task = json.loads(sys.stdin.readline())
+
+if modified_task.get("githubupdatedat", 0) > old_task.get("githubupdatedat", 0):
+    modified_task["tags"].append("new")
+
 if ("In_progress" in modified_task.get("tags", []) or "Need_Review" in modified_task.get("tags", [])) and not modified_task.get("start", ""):
     modified_task["start"] = datetime.utcnow().strftime(midnight_format)
     modified_task["modified"] = datetime.utcnow().strftime(midnight_format)
