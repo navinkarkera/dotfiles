@@ -390,6 +390,9 @@ config.launch_menu = {
     args = { 'taskwarrior-tui', '-r', 'github' },
   },
   {
+    args = { 'taskwarrior-tui', '-r', 'ideas' },
+  },
+  {
     args = { 'btop' },
   },
   {

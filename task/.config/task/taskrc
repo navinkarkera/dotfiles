@@ -143,6 +143,13 @@ report.maintainer.labels=ID,Active,Age,Deps,P,Project,Tag,Recur,S,Due,Until,Desc
 report.maintainer.sort=entry-,modified-
 report.maintainer.filter=status:pending -WAITING +maintainer +new
 
+# Ideas
+report.ideas.description=Ideas
+report.ideas.columns=id,start.age,entry.age,depends,priority,project,tags,recur,scheduled.countdown,due.relative,until.remaining,description,urgency,modified.age
+report.ideas.labels=ID,Active,Age,Deps,P,Project,Tag,Recur,S,Due,Until,Description,Urg,Modified
+report.ideas.sort=entry-,modified-
+report.ideas.filter=status:pending -WAITING +ideas
+
 # Taskwarrior tui
 uda.taskwarrior-tui.task-report.next.filter=status:pending -WAITING (due.before:eow or +ACTIVE or sch:today or due.before:2w)
 uda.taskwarrior-tui.selection.reverse=yes
