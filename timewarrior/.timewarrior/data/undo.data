@@ -10313,3 +10313,129 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20240312T143151Z","end":"20240312T144621Z","tags":["BB-8634 update PR"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240313T104427Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240313T104427Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240313T104427Z","tags":["BB-7643 test issue from library-authoring as maintainer and close it"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240313T104427Z","tags":["BB-7643 test issue from library-authoring as maintainer and close it"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240313T104427Z","end":"20240313T110127Z","tags":["BB-7643 test issue from library-authoring as maintainer and close it"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240313T110131Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240313T110131Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240313T110131Z","tags":["BB-7643 review PR as CC"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240313T110131Z","tags":["BB-7643 review PR as CC"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240313T110131Z","end":"20240313T112048Z","tags":["BB-7643 review PR as CC"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240314T060057Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240314T060057Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240314T060057Z","tags":["BB-8634 update PR"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240314T060057Z","tags":["BB-8634 update PR"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240314T060057Z","end":"20240314T063829Z","tags":["BB-8634 update PR"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240314T110156Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240314T110156Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240314T110156Z","tags":["BB-8535 book flight (20 mins)"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240314T110156Z","tags":["BB-8535 book flight (20 mins)"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240314T110156Z","end":"20240314T110215Z","tags":["BB-8535 book flight (20 mins)"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240314T110841Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240314T110841Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240314T110841Z","tags":["BB-8535 book flight (20 mins)"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240314T110841Z","tags":["BB-8535 book flight (20 mins)"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240314T110841Z","end":"20240314T110844Z","tags":["BB-8535 book flight (20 mins)"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240314T123655Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240314T123655Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240314T123655Z","tags":["BB-7643 attend maintainer group meeting"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240314T123655Z","tags":["BB-7643 attend maintainer group meeting"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240314T123655Z","end":"20240314T123713Z","tags":["BB-7643 attend maintainer group meeting"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240314T133347Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240314T133347Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240314T133347Z","tags":["BB-7643 attend maintainer group meeting"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240314T133347Z","tags":["BB-7643 attend maintainer group meeting"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240314T133347Z","end":"20240314T135521Z","tags":["BB-7643 attend maintainer group meeting"]}

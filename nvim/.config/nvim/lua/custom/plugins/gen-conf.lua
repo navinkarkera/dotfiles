@@ -2,7 +2,7 @@ return {
   "David-Kunz/gen.nvim",
   opts = {
     model = "mistral", -- The default model to use.
-    host = "192.168.0.3", -- The host running the Ollama service.
+    host = "localhost", -- The host running the Ollama service.
     port = "11434", -- The port on which the Ollama service is listening.
     display_mode = "split", -- The display mode. Can be "float" or "split".
     show_prompt = false, -- Shows the Prompt submitted to Ollama.

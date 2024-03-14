@@ -155,7 +155,14 @@ config.keys = {
     mods = 'LEADER',
     action = act.QuickSelectArgs{
       label = 'open url',
-      patterns = { 'https?://[a-zA-Z0-9.:/_-]+' },
+      patterns = {
+        '\\((\\w+://\\S+)\\)',
+        '\\[(\\w+://\\S+)\\]',
+        '\\{(\\w+://\\S+)\\}',
+        '<(\\w+://\\S+)>',
+        '\\b\\w+://\\S+[)/a-zA-Z0-9-]+',
+        '\\b\\w+@[\\w-]+(\\.[\\w-]+)+\\b',
+      },
       action = wezterm.action_callback(function(window, pane)
         local url = window:get_selection_text_for_pane(pane)
         wezterm.open_with(url)
