@@ -356,7 +356,12 @@ config.quick_select_patterns = {
   -- match things that look like sha1 hashes
   -- (this is actually one of the default patterns)
   '[0-9a-f]{7,40}',
-  'https?://[a-zA-Z0-9.:/_-]+',
+  '\\((\\w+://\\S+)\\)',
+  '\\[(\\w+://\\S+)\\]',
+  '\\{(\\w+://\\S+)\\}',
+  '<(\\w+://\\S+)>',
+  '\\b\\w+://\\S+[)/a-zA-Z0-9-]+',
+  '\\b\\w+@[\\w-]+(\\.[\\w-]+)+\\b',
   'BB-[0-9]+',
   'STAR-[0-9]+',
   'FAL-[0-9]+',
