@@ -1,7 +1,7 @@
 [user]
-	email = navin@disroot.org
+	email = navin@opencraft.com
 	name = Navin Karkera
-	signingkey = 91B8B0723E814AF9FE52F5E15B13E9C4DE324F30
+	signingkey = 5B13E9C4DE324F30
 [alias]
 	last = !git --no-pager log -1 HEAD --stat
 	cm = commit -m

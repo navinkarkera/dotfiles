@@ -95,12 +95,6 @@ zstyle ':fzf-tab:*' switch-group ',' '.'
 
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
 
-source /usr/share/nvm/init-nvm.sh
-
 eval "$(zoxide init zsh)"
-eval "$(jira --completion-script-bash)"
-eval "$(tmuxifier init -)"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(direnv hook zsh)"
 eval "$(atuin init zsh --disable-up-arrow)"
+eval "$(mise activate zsh)"

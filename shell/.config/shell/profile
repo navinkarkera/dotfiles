@@ -148,3 +148,5 @@ export NVIM_SERVER="/tmp/default-nvim-server.pipe"
 
 # Switch escape and caps if tty and no passwd required:
 # sudo -n loadkeys ${XDG_DATA_HOME:-$HOME/.local/share}/larbs/ttymaps.kmap 2>/dev/null
+
+export JIRA_API_TOKEN="$(pass opencraft-jira-navinkarkera)"
