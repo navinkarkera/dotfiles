@@ -164,3 +164,4 @@ uda.taskwarrior-tui.shortcuts.1=taskopen
 uda.taskwarrior-tui.shortcuts.2=task addnote
 uda.taskwarrior-tui.shortcuts.3=task attach
 uda.taskwarrior-tui.shortcuts.4=task rc.confirmation=off modify -new
+uda.taskwarrior-tui.shortcuts.9=view_task_info

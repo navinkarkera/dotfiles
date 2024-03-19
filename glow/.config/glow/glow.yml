@@ -1,7 +1,7 @@
 # style name or JSON path (default "auto")
-style: "light"
+style: "dark"
 # show local files only; no network (TUI-mode only)
-local: true
+local: false
 # mouse support (TUI-mode only)
 mouse: true
 # use pager to display markdown

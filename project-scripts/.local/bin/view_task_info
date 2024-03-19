@@ -1,0 +1,34 @@
+#!/usr/bin/env sh
+
+task_info=$(task $1 export)
+jira_id=$(jq -r '.[0].jiraid' <<< $task_info)
+if [ $jira_id != "null" ]; then
+	jira issue view $jira_id --comments 10
+	exit 0
+fi
+github_url=$(jq -r '.[0].githuburl' <<< $task_info)
+if [ $github_url != "null" ]; then
+	github_repo=$(jq -r '.[0].githubrepo' <<< $task_info)
+	github_type=$(jq -r '.[0].githubtype' <<< $task_info)
+	if [ $github_type == "pull_request" ]; then
+		GH_PAGER=less gh pr view $github_url --comments
+	fi
+	exit 0
+fi
+emailid=$(jq -r '.[0].gmaillastmessageid' <<< $task_info)
+if [ "$emailid" != "null" ]; then
+	# notmuch show --format=json --include-html id:1202503531.15.1710573446861@asucsprd-PSUNX4 | jq -r ".[0][0][0].body[0].content" | w3m -dump -T text/html -o display_link_number=1 | less
+	email_content=$(notmuch show --format=json --include-html id:$emailid | jq 'first(.[0][0][0].body[].content
+	| if type == "string" then { content: ., "content-type": "text/html" } else .[]
+	| select((."content-type"=="text/html") or (."content-type"=="text/plain"))
+	| { content, "content-type" } end)')
+	final_content=$(jq -r '.content' <<< $email_content)
+	content_type=$(jq -r '."content-type"' <<< $email_content)
+	if [ "$content_type" == "text/html" ]; then
+		echo $final_content | w3m -dump -T $content_type -o display_link_number=1 | less
+		exit 0
+	else
+		echo "$final_content" | glow
+		exit 0
+	fi
+fi
