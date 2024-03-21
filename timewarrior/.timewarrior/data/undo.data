@@ -10691,3 +10691,327 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20240319T101203Z","end":"20240319T102602Z","tags":["BB-254 catch up on sprint updates"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240319T144242Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240319T144242Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240319T144242Z","tags":["BB-8644 check and update tickets"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240319T144242Z","tags":["BB-8644 check and update tickets"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240319T144242Z","end":"20240319T144930Z","tags":["BB-8644 check and update tickets"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240319T150031Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240319T150031Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240319T150031Z","tags":["BB-254 sprint retrospective meeting"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240319T150031Z","tags":["BB-254 sprint retrospective meeting"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240319T150031Z","end":"20240319T163506Z","tags":["BB-254 sprint retrospective meeting"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240320T070446Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240320T070446Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240320T070446Z","tags":["BB-8285 read and start setting up devstack"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240320T070446Z","tags":["BB-8285 read and start setting up devstack"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240320T070446Z","end":"20240320T075015Z","tags":["BB-8285 read and start setting up devstack"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240320T084729Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240320T084729Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240320T084729Z","tags":["BB-8285 read and start setting up devstack"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240320T084729Z","tags":["BB-8285 read and start setting up devstack"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240320T084729Z","end":"20240320T100254Z","tags":["BB-8285 read and start setting up devstack"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240320T110112Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240320T110112Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240320T110112Z","tags":["BB-8285 read and start setting up devstack"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240320T110112Z","tags":["BB-8285 read and start setting up devstack"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240320T110112Z","end":"20240320T113446Z","tags":["BB-8285 read and start setting up devstack"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240320T115238Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240320T115238Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240320T115238Z","tags":["BB-8285 read and start setting up devstack"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240320T115238Z","tags":["BB-8285 read and start setting up devstack"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240320T115238Z","end":"20240320T125755Z","tags":["BB-8285 read and start setting up devstack"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240320T141444Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240320T141444Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240320T141444Z","tags":["BB-8285 read and start setting up devstack"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240320T141444Z","tags":["BB-8285 read and start setting up devstack"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240320T141444Z","end":"20240320T141543Z","tags":["BB-8285 read and start setting up devstack"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240321T063221Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240321T063221Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240321T063221Z","tags":["BB-8124 respond to clients chat msgs"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240321T063221Z","tags":["BB-8124 respond to clients chat msgs"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240321T063221Z","end":"20240321T063605Z","tags":["BB-8124 respond to clients chat msgs"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240321T063606Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240321T063606Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240321T063606Z","tags":["BB-8740 read and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240321T063606Z","tags":["BB-8740 read and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240321T063606Z","end":"20240321T064042Z","tags":["BB-8740 read and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240321T064043Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240321T064043Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240321T064043Z","tags":["BB-8676 read"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240321T064043Z","tags":["BB-8676 read"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240321T064043Z","end":"20240321T064540Z","tags":["BB-8676 read"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240321T064803Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240321T064803Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240321T064803Z","tags":["BB-8676 find new repositories"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240321T064803Z","tags":["BB-8676 find new repositories"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240321T064803Z","end":"20240321T070119Z","tags":["BB-8676 find new repositories"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240321T070119Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240321T070119Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240321T070119Z","tags":["BB-7543 read response in PRs"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240321T070119Z","tags":["BB-7543 read response in PRs"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240321T070119Z","end":"20240321T070721Z","tags":["BB-7543 read response in PRs"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240321T070723Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240321T070723Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240321T070723Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240321T070723Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240321T070723Z","end":"20240321T072433Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240321T073648Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240321T073648Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240321T073648Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240321T073648Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240321T073648Z","end":"20240321T074704Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240321T092856Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240321T092856Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240321T092856Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240321T092856Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240321T092856Z","end":"20240321T104737Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240321T114322Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240321T114322Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240321T114322Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240321T114322Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240321T114322Z","end":"20240321T123208Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240321T123208Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240321T123208Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240321T123208Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240321T123208Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240321T123208Z","end":"20240321T130612Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240321T140045Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240321T140045Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240321T140045Z","tags":["BB-8271 social chat"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240321T140045Z","tags":["BB-8271 social chat"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240321T140045Z","end":"20240321T143406Z","tags":["BB-8271 social chat"]}

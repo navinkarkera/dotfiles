@@ -415,19 +415,23 @@ table.insert(config.hyperlink_rules, {
 
 config.launch_menu = {
   {
+    label = "Maintainer tasks",
     args = { 'taskwarrior-tui', '-r', 'maintainer' },
   },
   {
+    label = "Github tasks",
     args = { 'taskwarrior-tui', '-r', 'github' },
   },
   {
+    label = "Ideas",
     args = { 'taskwarrior-tui', '-r', 'ideas' },
   },
   {
+    label = "Btop",
     args = { 'btop' },
   },
   {
-    label = "lazygit",
+    label = "Lazygit",
     args = { '/usr/bin/lazygit' },
   },
 }
