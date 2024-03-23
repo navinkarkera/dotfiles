@@ -78,6 +78,7 @@ config.keys = {
   { key = "z", mods = "LEADER",       action="TogglePaneZoomState" },
   { key = "c", mods = "LEADER",       action=act{SpawnTab="CurrentPaneDomain"}},
   { key = "l", mods = "LEADER",       action=act.ActivateLastTab},
+  { key = "Tab", mods = "CTRL",       action=act.ActivateLastTab},
   { key = "w", mods = "LEADER",       action = act.ShowTabNavigator },
   { key = "s", mods = "LEADER",       action = act.ShowLauncherArgs{flags="FUZZY|WORKSPACES|LAUNCH_MENU_ITEMS"} },
   { key = "H", mods = "LEADER|SHIFT", action=act{AdjustPaneSize={"Left", 5}}},
@@ -225,15 +226,15 @@ config.keys = {
   bind_if(is_outside_vim, 'k', 'ALT', act.ActivatePaneDirection('Up')),
   bind_if(is_outside_vim, 'l', 'ALT', act.ActivatePaneDirection('Right')),
   {
-    key = '!',
-    mods = 'LEADER|SHIFT',
+    key = '1',
+    mods = 'LEADER',
     action = act.SwitchToWorkspace {
       name = 'main',
     },
   },
   {
-    key = '@',
-    mods = 'LEADER|SHIFT',
+    key = '2',
+    mods = 'LEADER',
     action = act.SwitchToWorkspace {
       name = 'notes',
       spawn = {
@@ -243,8 +244,8 @@ config.keys = {
     },
   },
   {
-    key = '#',
-    mods = 'LEADER|SHIFT',
+    key = '3',
+    mods = 'LEADER',
     action = act.Multiple {
       act.SwitchToWorkspace {
         name = 'devstack',
@@ -260,12 +261,12 @@ config.keys = {
     },
   },
   {
-    key = '$',
-    mods = 'LEADER|SHIFT',
+    key = '4',
+    mods = 'LEADER',
     action = act.SwitchToWorkspace {
       name = 'tutor',
       spawn = {
-        cwd = wezterm.home_dir .. '/work/opencraft/tutor-env',
+        cwd = wezterm.home_dir .. '/work/opencraft/tutor-palm',
       },
     },
   },
@@ -275,7 +276,7 @@ config.keys = {
 for i = 1, 9 do
   table.insert(config.keys, {
     key = tostring(i),
-    mods = "LEADER",
+    mods = "ALT",
     action = act.ActivateTab(i - 1)
   })
 end
@@ -311,9 +312,10 @@ local basename = function(s)
 end
 
 wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
-  local title = basename(tab.active_pane.current_working_dir)
+  local title = basename(tab.active_pane.current_working_dir.file_path)
+  local index = tab.tab_index + 1
   return {
-    { Text = wezterm.nerdfonts.md_folder .. " " .. title },
+    { Text = "[" .. index .. "]" .. wezterm.nerdfonts.md_folder .. " " .. title },
   }
 end)
 

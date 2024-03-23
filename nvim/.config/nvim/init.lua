@@ -461,6 +461,7 @@ require('nvim-treesitter.configs').setup {
     "org",
     "markdown",
     "markdown_inline",
+    "yaml",
   },
   highlight = {
     enable = true, -- false will disable the whole extension
@@ -627,6 +628,16 @@ capabilities.textDocument.foldingRange = {
 
 -- Enable the following language servers
 local servers = {
+  basedpyright = {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    autostart = false,
+    settings = {
+      basedpyright = {
+        typeCheckingMode = "standard",
+      },
+    }
+  },
   tsserver = {
     on_attach = on_attach,
     capabilities = capabilities,
