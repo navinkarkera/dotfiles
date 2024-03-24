@@ -119,7 +119,7 @@ report.next.filter=status:pending -WAITING
 report.today.description=Tasks for today
 report.today.columns=id,start.age,entry.age,depends,priority,project,tags,recur,scheduled.countdown,due.relative,until.remaining,description,urgency
 report.today.labels=ID,Active,Age,Deps,P,Project,Tag,Recur,S,Due,Until,Description,Urg
-report.today.sort=urgency-
+report.today.sort=due,urgency-
 report.today.filter=status:pending -WAITING (due.before:eow or +ACTIVE or sch:today or due.before:2w)
 
 # Tasks from jira
@@ -151,7 +151,6 @@ report.ideas.sort=entry-,modified-
 report.ideas.filter=status:pending -WAITING +ideas
 
 # Taskwarrior tui
-uda.taskwarrior-tui.task-report.next.filter=status:pending -WAITING (due.before:eow or +ACTIVE or sch:today or due.before:2w)
 uda.taskwarrior-tui.selection.reverse=yes
 
 # Alias

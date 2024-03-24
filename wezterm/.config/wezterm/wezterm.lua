@@ -167,7 +167,7 @@ config.keys = {
     key = 't',
     mods = 'LEADER',
     action = act.SpawnCommandInNewTab {
-      args = { '/usr/bin/taskwarrior-tui' },
+      args = { 'taskwarrior-tui', '-r', 'today' },
     },
   },
   {
