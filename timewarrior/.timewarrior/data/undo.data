@@ -11141,3 +11141,129 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20240322T140123Z","end":"20240322T153221Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240325T070657Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240325T070657Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240325T070657Z","tags":["BB-8124 post epic update and update related tickets"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240325T070657Z","tags":["BB-8124 post epic update and update related tickets"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240325T070657Z","end":"20240325T072029Z","tags":["BB-8124 post epic update and update related tickets"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240325T072029Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240325T072029Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240325T072029Z","tags":["BB-254  post mid sprint update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240325T072029Z","tags":["BB-254  post mid sprint update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240325T072029Z","end":"20240325T073307Z","tags":["BB-254  post mid sprint update"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240325T081634Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240325T081634Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240325T081634Z","tags":["BB-7609 respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240325T081634Z","tags":["BB-7609 respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240325T081634Z","end":"20240325T082614Z","tags":["BB-7609 respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240325T082617Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240325T082617Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240325T082617Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240325T082617Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240325T082617Z","end":"20240325T085242Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240325T092313Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240325T092313Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240325T092313Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240325T092313Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240325T092313Z","end":"20240325T110232Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240325T112525Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240325T112525Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240325T112525Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240325T112525Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240325T112525Z","end":"20240325T114953Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240325T132622Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240325T132622Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240325T132622Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240325T132622Z","tags":["BB-8285 investigate tutor enterprise setup"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240325T132622Z","end":"20240325T135904Z","tags":["BB-8285 investigate tutor enterprise setup"]}

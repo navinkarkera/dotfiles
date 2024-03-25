@@ -6,6 +6,7 @@ return {
   config = function()
     require('render-markdown').setup({
       headings = { '󰖙', '󰈸', '▶', '✺', '', '⤷' },
+      quote = '┃',
       bullet = "",
       highlights = {
         heading = {
@@ -32,6 +33,8 @@ return {
           row = 'Normal',
         },
         latex = 'Special',
+        -- Quote character in a block quote
+        quote = '@markup.quote',
       },
     })
   end,

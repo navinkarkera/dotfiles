@@ -149,8 +149,6 @@ config.keys = {
         'list',
         '-R',
         'unresolved',
-        '-s',
-        'Need Review',
         '--jql',
         'sprint in openSprints() and ("Reviewer 1"=currentuser() OR "Reviewer 2"=currentuser())',
       },

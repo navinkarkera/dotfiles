@@ -1,6 +1,6 @@
 [general]
 
-targets = opencraft_jira_tasks, opencraft_jira_reviews, openedx_github, openedx_maintainer, opencraft_email, opencraft_listaflow
+targets = opencraft_jira_tasks, opencraft_jira_reviews, openedx_github, openedx_maintainer, opencraft_email
 
 # Specify which TaskRC configuration file to use.
 taskrc = /home/navin/.config/task/taskrc

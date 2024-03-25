@@ -11,7 +11,7 @@ from bugwarrior.services import IssueService, Issue, ServiceClient
 log = logging.getLogger(__name__)
 LISTS_URL = 'https://api.app.listaflow.com/api/workflow/checklist/list/?is_archived=false&list_name=TO_DO&page=1&size=24&statuses=&usernames=&name='
 TASK_URL = 'https://api.app.listaflow.com/api/workflow/user/{username}/checklist/{list_id}/task/'
-HEADERS = {'Authorization': 'Bearer bYSUzSoSQxJhHZ9ZDQuVb56ucXSao5'}
+HEADERS = {'Authorization': ''}
 LIST_NAME = 'OpenCraft Sprint Checklist'
 MIDNIGHT_FORMAT = '%Y%m%dT235959Z'
 
