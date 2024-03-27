@@ -159,8 +159,8 @@ alias.addnote=execute /home/navin/.config/taskopen/addnote
 
 # Shortcut
 # uda.taskwarrior-tui.keyconfig.shortcut1=o
-uda.taskwarrior-tui.shortcuts.1=wezterm cli spawn -- taskopen
+uda.taskwarrior-tui.shortcuts.1=wezterm cli split-pane --right -- taskopen
 uda.taskwarrior-tui.shortcuts.2=task addnote
 uda.taskwarrior-tui.shortcuts.3=task attach
 uda.taskwarrior-tui.shortcuts.4=task rc.confirmation=off modify -new
-uda.taskwarrior-tui.shortcuts.9=wezterm cli spawn -- view_task_info
+uda.taskwarrior-tui.shortcuts.9=wezterm cli split-pane --right -- view_task_info

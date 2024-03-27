@@ -1,6 +1,6 @@
 [general]
 
-targets = opencraft_jira_tasks, opencraft_jira_reviews, openedx_github, openedx_maintainer, opencraft_email
+targets = opencraft_jira_tasks, opencraft_jira_reviews, openedx_github, openedx_maintainer, opencraft_email, opencraft_listaflow
 
 # Specify which TaskRC configuration file to use.
 taskrc = /home/navin/.config/task/taskrc
@@ -82,4 +82,6 @@ gmail.description_template = [{{gmaillastsender}}] {{gmailsubject}}
 [opencraft_listaflow]
 service = listaflow
 listaflow.username = navin
+listaflow.token = @oracle:eval:pass listaflow/access_token
 listaflow.description_template =  {{listaflowlabel}}
+listaflow.url = https://api.app.listaflow.com

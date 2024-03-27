@@ -9,9 +9,8 @@ from bugwarrior import config
 from bugwarrior.services import IssueService, Issue, ServiceClient
 
 log = logging.getLogger(__name__)
-LISTS_URL = 'https://api.app.listaflow.com/api/workflow/checklist/list/?is_archived=false&list_name=TO_DO&page=1&size=24&statuses=&usernames=&name='
-TASK_URL = 'https://api.app.listaflow.com/api/workflow/user/{username}/checklist/{list_id}/task/'
-HEADERS = {'Authorization': ''}
+LISTS_URL = '{api_url}/api/workflow/checklist/list/?is_archived=false&list_name=TO_DO&page=1&size=24&statuses=&usernames=&name='
+TASK_URL = '{api_url}/api/workflow/user/{username}/checklist/{list_id}/task/'
 LIST_NAME = 'OpenCraft Sprint Checklist'
 MIDNIGHT_FORMAT = '%Y%m%dT235959Z'
 
@@ -20,6 +19,8 @@ class ListaflowConfig(config.ServiceConfig):
     service: typing_extensions.Literal['listaflow']
 
     username: str
+    token: str
+    url: str = "https://api.app.listaflow.com"
 
     import_labels_as_tags: bool = False
     label_template: str = '{{label}}'
@@ -82,12 +83,14 @@ class ListaflowTask(Issue):
 
 
 class ListaflowClient(ServiceClient):
-    def __init__(self, username):
+    def __init__(self, username, token, url):
         self.username = username
+        self.url = url
+        self.headers = {'Authorization': f'Bearer {token}'}
         self.list_info = {}
 
     def _get_sprint_details(self) -> dict[str, str]:
-        response = requests.get(LISTS_URL, headers=HEADERS)
+        response = requests.get(LISTS_URL.format(api_url=self.url), headers=self.headers)
         lists = self.json_response(response)
         for checklist in lists['results']:
             if checklist['name'].lower() == LIST_NAME.lower() and checklist['status'] in ['TO_DO', 'IN_PROGRESS', 'PAST_DUE']:
@@ -99,7 +102,7 @@ class ListaflowClient(ServiceClient):
         return {}
 
     def _query_tasks(self, list_id: str):
-        response = requests.get(TASK_URL.format(username=self.username, list_id=list_id), headers=HEADERS)
+        response = requests.get(TASK_URL.format(username=self.username, list_id=list_id, api_url=self.url), headers=self.headers)
         return self.json_response(response)
 
     def get_scheduled_date(self, weekday, num):
@@ -153,8 +156,16 @@ class ListaflowService(IssueService):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        token = self.get_password('token')
 
-        self.client = ListaflowClient(username=self.config.get("username"))
+        self.client = ListaflowClient(username=self.config.get("username"), token=token, url=self.config.get("url"))
+
+    @staticmethod
+    def get_keyring_service(config):
+        username = config.get('username')
+        url = config.get('url')
+        return f"listaflow://{username}@{url}"
+
 
     def get_owner(self, issue):
         return self.config.get("username")
@@ -164,5 +175,5 @@ class ListaflowService(IssueService):
             yield self.get_issue_for_record(issue)
 
 # if __name__ == '__main__':
-#     client = ListaflowClient(username='navin')
-#     print(client.get_issues())
+    # client = ListaflowClient(username='navin', token="W7BZJvBMmYKFGuCc1sJi8hV9s7Ph7E")
+    # print(client.get_issues())
