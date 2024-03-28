@@ -140,7 +140,7 @@ config.keys = {
     },
   },
   {
-    key = 'J',
+    key = 'R',
     mods = 'LEADER|SHIFT',
     action = act.SpawnCommandInNewTab {
       args = {
