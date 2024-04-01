@@ -11537,3 +11537,525 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20240328T144454Z","end":"20240328T153647Z","tags":["BB-8285 update PR and investigate license-manager"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240329T064328Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T064328Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T064328Z","tags":["BB-8723 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T064328Z","tags":["BB-8723 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T064328Z","end":"20240329T064811Z","tags":["BB-8723 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240329T064811Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T064811Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T064811Z","tags":["BB-8723 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T064811Z","tags":["BB-8723 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T064811Z","end":"20240329T065242Z","tags":["BB-8723 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240329T065242Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T065242Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T065242Z","tags":["BB-254 listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T065242Z","tags":["BB-254 listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T065242Z","end":"20240329T065546Z","tags":["BB-254 listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240329T065546Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T065546Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T065546Z","tags":["BB-8753 estimate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T065546Z","tags":["BB-8753 estimate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T065546Z","end":"20240329T065632Z","tags":["BB-8753 estimate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240329T065632Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T065632Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T065632Z","tags":["BB-8746 estimate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T065632Z","tags":["BB-8746 estimate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T065632Z","end":"20240329T065722Z","tags":["BB-8746 estimate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240329T065722Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T065722Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T065722Z","tags":["BB-8747 estimate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T065722Z","tags":["BB-8747 estimate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T065722Z","end":"20240329T065737Z","tags":["BB-8747 estimate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240329T065737Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T065737Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T065737Z","tags":["BB-8749 estimate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T065737Z","tags":["BB-8749 estimate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T065737Z","end":"20240329T065808Z","tags":["BB-8749 estimate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240329T065808Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T065808Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T065808Z","tags":["BB-8751 estimate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T065808Z","tags":["BB-8751 estimate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T065808Z","end":"20240329T065905Z","tags":["BB-8751 estimate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240329T065905Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T065905Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T065905Z","tags":["BB-8754 estimate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T065905Z","tags":["BB-8754 estimate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T065905Z","end":"20240329T065929Z","tags":["BB-8754 estimate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240329T065929Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T065929Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T065929Z","tags":["BB-8756 estimate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T065929Z","tags":["BB-8756 estimate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T065929Z","end":"20240329T070021Z","tags":["BB-8756 estimate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240329T070021Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T070021Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T070021Z","tags":["BB-8759 estimate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T070021Z","tags":["BB-8759 estimate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T070021Z","end":"20240329T070105Z","tags":["BB-8759 estimate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240329T070105Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T070105Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T070105Z","tags":["BB-8760 estimate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T070105Z","tags":["BB-8760 estimate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T070105Z","end":"20240329T070141Z","tags":["BB-8760 estimate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240329T070141Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T070141Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T070141Z","tags":["BB-8763 estimate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T070141Z","tags":["BB-8763 estimate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T070141Z","end":"20240329T070233Z","tags":["BB-8763 estimate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240329T070233Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T070233Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T070233Z","tags":["BB-8285 add license-manager to tutor"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T070233Z","tags":["BB-8285 add license-manager to tutor"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T070233Z","end":"20240329T081554Z","tags":["BB-8285 add license-manager to tutor"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240329T095355Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T095355Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T095355Z","tags":["BB-8285 add license-manager to tutor"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T095355Z","tags":["BB-8285 add license-manager to tutor"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T095355Z","end":"20240329T104911Z","tags":["BB-8285 add license-manager to tutor"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240329T111904Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T111904Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T111904Z","tags":["BB-8285 add license-manager to tutor"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T111904Z","tags":["BB-8285 add license-manager to tutor"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T111904Z","end":"20240329T113905Z","tags":["BB-8285 add license-manager to tutor"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240329T122129Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T122129Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T122129Z","tags":["BB-8285 add license-manager to tutor"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240329T122129Z","tags":["BB-8285 add license-manager to tutor"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240329T122129Z","end":"20240329T140551Z","tags":["BB-8285 add license-manager to tutor"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240330T093006Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240330T093006Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240330T093006Z","tags":["BB-8285 add enterprise-access to tutor"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240330T093006Z","tags":["BB-8285 add enterprise-access to tutor"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240330T093006Z","end":"20240330T112206Z","tags":["BB-8285 add enterprise-access to tutor"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240401T065004Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240401T065004Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240401T065004Z","tags":["BB-8124 create tickets for next sprint"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240401T065004Z","tags":["BB-8124 create tickets for next sprint"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240401T065004Z","end":"20240401T070955Z","tags":["BB-8124 create tickets for next sprint"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240401T070957Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240401T070957Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240401T070957Z","tags":["BB-8124 create tickets for next sprint"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240401T070957Z","tags":["BB-8124 create tickets for next sprint"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240401T070957Z","end":"20240401T071049Z","tags":["BB-8124 create tickets for next sprint"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240401T073938Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240401T073938Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240401T073938Z","tags":["BB-8285 add enterprise-subsidy"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240401T073938Z","tags":["BB-8285 add enterprise-subsidy"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240401T073938Z","end":"20240401T075958Z","tags":["BB-8285 add enterprise-subsidy"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240401T084941Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240401T084941Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240401T084941Z","tags":["BB-8285 add enterprise-subsidy"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240401T084941Z","tags":["BB-8285 add enterprise-subsidy"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240401T084941Z","end":"20240401T092724Z","tags":["BB-8285 add enterprise-subsidy"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240401T094124Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240401T094124Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240401T094124Z","tags":["BB-8285 add enterprise-subsidy"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240401T094124Z","tags":["BB-8285 add enterprise-subsidy"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240401T094124Z","end":"20240401T105712Z","tags":["BB-8285 add enterprise-subsidy"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240401T105712Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240401T105712Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240401T105712Z","tags":["BB-8723 read and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240401T105712Z","tags":["BB-8723 read and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240401T105712Z","end":"20240401T105839Z","tags":["BB-8723 read and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240401T105840Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240401T105840Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240401T105840Z","tags":["BB-8285 investigate high memory usage in production"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240401T105840Z","tags":["BB-8285 investigate high memory usage in production"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240401T105840Z","end":"20240401T113920Z","tags":["BB-8285 investigate high memory usage in production"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240401T125824Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240401T125824Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240401T125824Z","tags":["BB-8285 investigate high memory usage in production"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240401T125824Z","tags":["BB-8285 investigate high memory usage in production"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240401T125824Z","end":"20240401T134926Z","tags":["BB-8285 investigate high memory usage in production"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240401T134926Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240401T134926Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240401T134926Z","tags":["BB-8285 investigate high memory usage in production"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240401T134926Z","tags":["BB-8285 investigate high memory usage in production"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240401T134926Z","end":"20240401T134929Z","tags":["BB-8285 investigate high memory usage in production"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240401T141637Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240401T141637Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240401T141637Z","tags":["BB-8285 fix issues in production mode"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240401T141637Z","tags":["BB-8285 fix issues in production mode"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240401T141637Z","end":"20240401T150458Z","tags":["BB-8285 fix issues in production mode"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240401T150502Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240401T150502Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240401T150502Z","tags":["BB-254 post end of sprint update and complete listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240401T150502Z","tags":["BB-254 post end of sprint update and complete listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240401T150502Z","end":"20240401T153336Z","tags":["BB-254 post end of sprint update and complete listaflow checklist"]}
