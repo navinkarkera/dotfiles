@@ -12,7 +12,7 @@ def next_weekday(d, weekday):
         days_ahead += 7
     return d + timedelta(days_ahead)
 
-sys.stdin.reconfigure(encoding='utf-8', errors="ignore")
+sys.stdin.reconfigure(encoding='ascii', errors="ignore")
 task = json.loads(sys.stdin.readline())
 if ("In_progress" in task.get("tags", []) or "Need_Review" in task.get("tags", [])) and not task.get("start", ""):
     task["start"] = datetime.utcnow().strftime(midnight_format)

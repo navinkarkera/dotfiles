@@ -12,7 +12,7 @@ def next_weekday(d, weekday):
         days_ahead += 7
     return d + timedelta(days_ahead)
 
-sys.stdin.reconfigure(encoding='utf-8', errors="ignore")
+sys.stdin.reconfigure(encoding='ascii', errors="ignore")
 old_task = json.loads(sys.stdin.readline())
 modified_task = json.loads(sys.stdin.readline())
 

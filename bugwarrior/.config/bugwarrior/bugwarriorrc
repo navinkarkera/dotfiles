@@ -59,7 +59,7 @@ github.query = is:open org:openedx org:open-craft involves:navinkarkera archived
 github.include_user_issues = False
 github.include_user_repos = False
 github.add_tags = github
-github.description_template = [{{githubtype}}] {{githubnumber}} - {{githubtitle}}
+github.description_template = {{githubtype}} - {{githubtitle}}
 
 [openedx_maintainer]
 service = github
@@ -70,14 +70,14 @@ github.query = is:open repo:openedx/frontend-app-library-authoring archived:fals
 github.include_user_issues = False
 github.include_user_repos = False
 github.add_tags = github, maintainer
-github.description_template = [{{githubtype}}] {{githubnumber}} - {{githubtitle}}
+github.description_template = {{githubtype}} - {{githubtitle}}
 
 [opencraft_email]
 service = gmail
 gmail.login_name = navin@opencraft.com
 gmail.client_secret_path = /home/navin/.local/share/gmail_client_secret.json
 gmail.add_tags = email
-gmail.description_template = [{{gmaillastsender}}] {{gmailsubject}}
+gmail.description_template = {{gmaillastsender}}|{{gmailsubject}}
 
 [opencraft_listaflow]
 service = listaflow
