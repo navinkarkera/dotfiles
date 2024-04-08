@@ -242,7 +242,7 @@ config.keys = {
     },
   },
   {
-    key = '3',
+    key = '4',
     mods = 'LEADER',
     action = act.Multiple {
       act.SwitchToWorkspace {
@@ -259,7 +259,7 @@ config.keys = {
     },
   },
   {
-    key = '4',
+    key = '3',
     mods = 'LEADER',
     action = act.SwitchToWorkspace {
       name = 'tutor',

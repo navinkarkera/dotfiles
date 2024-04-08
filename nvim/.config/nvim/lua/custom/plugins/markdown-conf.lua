@@ -5,32 +5,7 @@ return {
   dependencies = { 'nvim-treesitter/nvim-treesitter' },
   config = function()
     require('render-markdown').setup({
-        markdown_query = [[
-            (atx_heading [
-                (atx_h1_marker)
-                (atx_h2_marker)
-                (atx_h3_marker)
-                (atx_h4_marker)
-                (atx_h5_marker)
-                (atx_h6_marker)
-            ] @heading)
-
-            [
-                (list_marker_plus)
-                (list_marker_minus)
-                (list_marker_star)
-            ] @list_marker
-
-            (fenced_code_block) @code
-
-            (block_quote (block_quote_marker) @quote_marker)
-            (block_quote (paragraph (inline (block_continuation) @quote_marker)))
-
-            (pipe_table_header) @table_head
-            (pipe_table_delimiter_row) @table_delim
-            (pipe_table_row) @table_row
-        ]],
-      headings = { '󰖙', '󰈸', '▶', '✺', '', '⤷' },
+      headings = { '󰖙 ', '󰈸 ', '▶ ', '✺ ', ' ', '⤷ ' },
       quote = '┃',
       bullets = {"●","○","◆","◇"},
       highlights = {

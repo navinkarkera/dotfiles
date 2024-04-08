@@ -12329,3 +12329,417 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20240403T153803Z","end":"20240403T154255Z","tags":["BB-8635 experiment with scss variables"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240404T055435Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240404T055435Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240404T055435Z","tags":["BB-8285 check other plugin"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240404T055435Z","tags":["BB-8285 check other plugin"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240404T055435Z","end":"20240404T065639Z","tags":["BB-8285 check other plugin"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240404T070356Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240404T070356Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240404T070356Z","tags":["BB-8772 investigate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240404T070356Z","tags":["BB-8772 investigate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240404T070356Z","end":"20240404T073122Z","tags":["BB-8772 investigate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240404T090033Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240404T090033Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240404T090033Z","tags":["BB-8772 investigate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240404T090033Z","tags":["BB-8772 investigate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240404T090033Z","end":"20240404T091705Z","tags":["BB-8772 investigate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240404T091724Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240404T091724Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240404T091724Z","tags":["BB-8723 read and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240404T091724Z","tags":["BB-8723 read and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240404T091724Z","end":"20240404T093225Z","tags":["BB-8723 read and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240404T162121Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240404T162121Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240404T162121Z","tags":["BB-7643 complete CC survey"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240404T162121Z","tags":["BB-7643 complete CC survey"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240404T162121Z","end":"20240404T164036Z","tags":["BB-7643 complete CC survey"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240405T071154Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240405T071154Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240405T071154Z","tags":["BB-8124 post epic update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240405T071154Z","tags":["BB-8124 post epic update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240405T071154Z","end":"20240405T072354Z","tags":["BB-8124 post epic update"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240405T072357Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240405T072357Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240405T072357Z","tags":["BB-8285 update lms init task"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240405T072357Z","tags":["BB-8285 update lms init task"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240405T072357Z","end":"20240405T075023Z","tags":["BB-8285 update lms init task"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240405T093857Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240405T093857Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240405T093857Z","tags":["BB-8285 update lms init task"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240405T093857Z","tags":["BB-8285 update lms init task"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240405T093857Z","end":"20240405T094959Z","tags":["BB-8285 update lms init task"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240405T094959Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240405T094959Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240405T094959Z","tags":["BB-8285 update lms init task"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240405T094959Z","tags":["BB-8285 update lms init task"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240405T094959Z","end":"20240405T095103Z","tags":["BB-8285 update lms init task"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240405T095104Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240405T095104Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240405T095104Z","tags":["BB-8635 experiment with scss variables"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240405T095104Z","tags":["BB-8635 experiment with scss variables"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240405T095104Z","end":"20240405T100111Z","tags":["BB-8635 experiment with scss variables"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240405T102306Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240405T102306Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240405T102306Z","tags":["BB-8635 experiment with scss variables"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240405T102306Z","tags":["BB-8635 experiment with scss variables"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240405T102306Z","end":"20240405T110830Z","tags":["BB-8635 experiment with scss variables"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240405T114328Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240405T114328Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240405T114328Z","tags":["BB-8635 experiment with scss variables"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240405T114328Z","tags":["BB-8635 experiment with scss variables"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240405T114328Z","end":"20240405T115612Z","tags":["BB-8635 experiment with scss variables"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240405T130106Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240405T130106Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240405T130106Z","tags":["BB-8635 experiment with scss variables"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240405T130106Z","tags":["BB-8635 experiment with scss variables"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240405T130106Z","end":"20240405T131018Z","tags":["BB-8635 experiment with scss variables"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240405T131018Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240405T131018Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240405T131018Z","tags":["BB-8780 investigate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240405T131018Z","tags":["BB-8780 investigate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240405T131018Z","end":"20240405T135719Z","tags":["BB-8780 investigate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240405T135808Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240405T135808Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240405T135808Z","tags":["BB-8124 async update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240405T135808Z","tags":["BB-8124 async update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240405T135808Z","end":"20240405T140429Z","tags":["BB-8124 async update"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240408T065843Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240408T065843Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240408T065843Z","tags":["BB-8723 read and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240408T065843Z","tags":["BB-8723 read and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240408T065843Z","end":"20240408T070633Z","tags":["BB-8723 read and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240408T070633Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240408T070633Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240408T070633Z","tags":["BB-8621 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240408T070633Z","tags":["BB-8621 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240408T070633Z","end":"20240408T073028Z","tags":["BB-8621 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240408T073028Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240408T073028Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240408T073028Z","tags":["BB-8624 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240408T073028Z","tags":["BB-8624 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240408T073028Z","end":"20240408T075052Z","tags":["BB-8624 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240408T075052Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240408T075052Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240408T075052Z","tags":["BB-8772 send approval email"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240408T075052Z","tags":["BB-8772 send approval email"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240408T075052Z","end":"20240408T080549Z","tags":["BB-8772 send approval email"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240408T080550Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240408T080550Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240408T080550Z","tags":["BB-254  post mid sprint update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240408T080550Z","tags":["BB-254  post mid sprint update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240408T080550Z","end":"20240408T081904Z","tags":["BB-254  post mid sprint update"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240408T094931Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240408T094931Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240408T094931Z","tags":["BB-8780 start working on modularizing email code"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240408T094931Z","tags":["BB-8780 start working on modularizing email code"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240408T094931Z","end":"20240408T114256Z","tags":["BB-8780 start working on modularizing email code"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240408T125623Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240408T125623Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240408T125623Z","tags":["BB-8780 start working on modularizing email code"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240408T125623Z","tags":["BB-8780 start working on modularizing email code"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240408T125623Z","end":"20240408T131738Z","tags":["BB-8780 start working on modularizing email code"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240408T131738Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240408T131738Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240408T131738Z","tags":["BB-8772 start working"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240408T131738Z","tags":["BB-8772 start working"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240408T131738Z","end":"20240408T135521Z","tags":["BB-8772 start working"]}
