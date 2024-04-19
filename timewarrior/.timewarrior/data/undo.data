@@ -12743,3 +12743,1231 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20240408T131738Z","end":"20240408T135521Z","tags":["BB-8772 start working"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240409T070129Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240409T070129Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240409T070129Z","tags":["BB-8285 update PR and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240409T070129Z","tags":["BB-8285 update PR and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240409T070129Z","end":"20240409T072553Z","tags":["BB-8285 update PR and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240409T072554Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240409T072554Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240409T072554Z","tags":["BB-8780 read and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240409T072554Z","tags":["BB-8780 read and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240409T072554Z","end":"20240409T072612Z","tags":["BB-8780 read and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240409T072613Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240409T072613Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240409T072613Z","tags":["BB-8772 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240409T072613Z","tags":["BB-8772 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240409T072613Z","end":"20240409T075448Z","tags":["BB-8772 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240409T091756Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240409T091756Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240409T091756Z","tags":["BB-8772 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240409T091756Z","tags":["BB-8772 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240409T091756Z","end":"20240409T093704Z","tags":["BB-8772 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240409T093704Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240409T093704Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240409T093704Z","tags":["BB-8772 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240409T093704Z","tags":["BB-8772 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240409T093704Z","end":"20240409T114652Z","tags":["BB-8772 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240409T122211Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240409T122211Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240409T122211Z","tags":["BB-8772 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240409T122211Z","tags":["BB-8772 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240409T122211Z","end":"20240409T131716Z","tags":["BB-8772 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240409T142746Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240409T142746Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240409T142746Z","tags":["BB-8772 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240409T142746Z","tags":["BB-8772 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240409T142746Z","end":"20240409T152621Z","tags":["BB-8772 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240410T060330Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240410T060330Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240410T060330Z","tags":["BB-8772 read and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240410T060330Z","tags":["BB-8772 read and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240410T060330Z","end":"20240410T061133Z","tags":["BB-8772 read and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240410T061134Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240410T061134Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240410T061134Z","tags":["BB-8791 read and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240410T061134Z","tags":["BB-8791 read and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240410T061134Z","end":"20240410T061330Z","tags":["BB-8791 read and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240410T061331Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240410T061331Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240410T061331Z","tags":["BB-8791 read and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240410T061331Z","tags":["BB-8791 read and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240410T061331Z","end":"20240410T061354Z","tags":["BB-8791 read and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240410T063248Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240410T063248Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240410T063248Z","tags":["BB-8285 update PR and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240410T063248Z","tags":["BB-8285 update PR and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240410T063248Z","end":"20240410T074154Z","tags":["BB-8285 update PR and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240410T074200Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240410T074200Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240410T074200Z","tags":["BB-8285 update PR and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240410T074200Z","tags":["BB-8285 update PR and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240410T074200Z","end":"20240410T083155Z","tags":["BB-8285 update PR and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240410T092818Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240410T092818Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240410T092818Z","tags":["BB-8285 update PR and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240410T092818Z","tags":["BB-8285 update PR and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240410T092818Z","end":"20240410T093138Z","tags":["BB-8285 update PR and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240410T095339Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240410T095339Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240410T095339Z","tags":["BB-8285 update PR and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240410T095339Z","tags":["BB-8285 update PR and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240410T095339Z","end":"20240410T114013Z","tags":["BB-8285 update PR and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240410T122607Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240410T122607Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240410T122607Z","tags":["BB-8285 update PR and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240410T122607Z","tags":["BB-8285 update PR and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240410T122607Z","end":"20240410T134817Z","tags":["BB-8285 update PR and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240410T134914Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240410T134914Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240410T134914Z","tags":["BB-8285 update PR and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240410T134914Z","tags":["BB-8285 update PR and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240410T134914Z","end":"20240410T135029Z","tags":["BB-8285 update PR and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240411T051742Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240411T051742Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240411T051742Z","tags":["BB-8744 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240411T051742Z","tags":["BB-8744 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240411T051742Z","end":"20240411T061650Z","tags":["BB-8744 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240411T061651Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240411T061651Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240411T061651Z","tags":["BB-8723 read and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240411T061651Z","tags":["BB-8723 read and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240411T061651Z","end":"20240411T062308Z","tags":["BB-8723 read and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240411T062308Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240411T062308Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240411T062308Z","tags":["BB-8624 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240411T062308Z","tags":["BB-8624 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240411T062308Z","end":"20240411T063858Z","tags":["BB-8624 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240411T063858Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240411T063858Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240411T063858Z","tags":["BB-8621 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240411T063858Z","tags":["BB-8621 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240411T063858Z","end":"20240411T064222Z","tags":["BB-8621 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240411T064222Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240411T064222Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240411T064222Z","tags":["BB-8772 read and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240411T064222Z","tags":["BB-8772 read and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240411T064222Z","end":"20240411T071221Z","tags":["BB-8772 read and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240411T071221Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240411T071221Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240411T071221Z","tags":["BB-8635 experiment with scss variables"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240411T071221Z","tags":["BB-8635 experiment with scss variables"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240411T071221Z","end":"20240411T073958Z","tags":["BB-8635 experiment with scss variables"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240411T083751Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240411T083751Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240411T083751Z","tags":["BB-8635 fix discussions and learning header theme"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240411T083751Z","tags":["BB-8635 fix discussions and learning header theme"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240411T083751Z","end":"20240411T103924Z","tags":["BB-8635 fix discussions and learning header theme"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240411T103932Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240411T103932Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240411T103932Z","tags":["BB-8744 review estimates and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240411T103932Z","tags":["BB-8744 review estimates and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240411T103932Z","end":"20240411T110007Z","tags":["BB-8744 review estimates and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240411T110424Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240411T110424Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240411T110424Z","tags":["BB-8791 investigate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240411T110424Z","tags":["BB-8791 investigate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240411T110424Z","end":"20240411T113844Z","tags":["BB-8791 investigate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240411T115548Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240411T115548Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240411T115548Z","tags":["BB-8744 review estimates and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240411T115548Z","tags":["BB-8744 review estimates and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240411T115548Z","end":"20240411T115919Z","tags":["BB-8744 review estimates and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240412T052517Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240412T052517Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240412T052517Z","tags":["BB-8635 update PR and merge"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240412T052517Z","tags":["BB-8635 update PR and merge"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240412T052517Z","end":"20240412T055136Z","tags":["BB-8635 update PR and merge"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240412T055136Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240412T055136Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240412T055136Z","tags":["BB-8772 publish package and test tutor plugin locally"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240412T055136Z","tags":["BB-8772 publish package and test tutor plugin locally"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240412T055136Z","end":"20240412T063323Z","tags":["BB-8772 publish package and test tutor plugin locally"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240412T101047Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240412T101047Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240412T101047Z","tags":["BB-8772 publish package and test tutor plugin locally"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240412T101047Z","tags":["BB-8772 publish package and test tutor plugin locally"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240412T101047Z","end":"20240412T105450Z","tags":["BB-8772 publish package and test tutor plugin locally"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240412T105450Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240412T105450Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240412T105450Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240412T105450Z","tags":["BB-8791 work on components"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240412T105450Z","end":"20240412T115606Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240412T122137Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240412T122137Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240412T122137Z","end":"20240412T125559Z"}
+txn:
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240412T125603Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240412T125603Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240412T125603Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240412T125603Z","tags":["BB-8791 work on components"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240412T125603Z","end":"20240412T140014Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240412T145023Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240412T145023Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240412T145023Z","tags":["BB-8772 add test instructions"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240412T145023Z","tags":["BB-8772 add test instructions"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240412T145023Z","end":"20240412T150140Z","tags":["BB-8772 add test instructions"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240413T062313Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240413T062313Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240413T062313Z","tags":["BB-8772 update code drift board and epic description"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240413T062313Z","tags":["BB-8772 update code drift board and epic description"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240413T062313Z","end":"20240413T064543Z","tags":["BB-8772 update code drift board and epic description"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240415T060630Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T060630Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T060630Z","tags":["BB-8285 check and ping reviewer"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T060630Z","tags":["BB-8285 check and ping reviewer"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T060630Z","end":"20240415T061359Z","tags":["BB-8285 check and ping reviewer"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240415T061400Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T061400Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T061400Z","tags":["BB-8780 update ticket"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T061400Z","tags":["BB-8780 update ticket"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T061400Z","end":"20240415T061623Z","tags":["BB-8780 update ticket"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240415T061624Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T061624Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T061624Z","tags":["BB-8635 check and update ticket"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T061624Z","tags":["BB-8635 check and update ticket"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T061624Z","end":"20240415T061916Z","tags":["BB-8635 check and update ticket"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240415T061916Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T061916Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T061916Z","tags":["BB-7589 update PR"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T061916Z","tags":["BB-7589 update PR"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T061916Z","end":"20240415T062743Z","tags":["BB-7589 update PR"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240415T062743Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T062743Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T062743Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T062743Z","tags":["BB-8791 work on components"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T062743Z","end":"20240415T072558Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240415T095803Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T095803Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T095803Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T095803Z","tags":["BB-8791 work on components"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T095803Z","end":"20240415T104720Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240415T110901Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T110901Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T110901Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T110901Z","tags":["BB-8791 work on components"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T110901Z","end":"20240415T112402Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240415T112402Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T112402Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T112402Z","tags":["BB-8285 test learner portal"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T112402Z","tags":["BB-8285 test learner portal"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T112402Z","end":"20240415T114227Z","tags":["BB-8285 test learner portal"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240415T120041Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T120041Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T120041Z","tags":["BB-8285 update PR and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T120041Z","tags":["BB-8285 update PR and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T120041Z","end":"20240415T122142Z","tags":["BB-8285 update PR and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240415T122142Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T122142Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T122142Z","tags":["BB-8624 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T122142Z","tags":["BB-8624 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T122142Z","end":"20240415T123408Z","tags":["BB-8624 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240415T123408Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T123408Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T123408Z","tags":["FAL-3697 investigate missing job error"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T123408Z","tags":["FAL-3697 investigate missing job error"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T123408Z","end":"20240415T131130Z","tags":["FAL-3697 investigate missing job error"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240415T131130Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T131130Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T131130Z","tags":["BB-8285 update PR and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240415T131130Z","tags":["BB-8285 update PR and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240415T131130Z","end":"20240415T134750Z","tags":["BB-8285 update PR and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240416T055243Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240416T055243Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240416T055243Z","tags":["BB-8124 check new ticket from client"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240416T055243Z","tags":["BB-8124 check new ticket from client"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240416T055243Z","end":"20240416T055817Z","tags":["BB-8124 check new ticket from client"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240416T055817Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240416T055817Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240416T055817Z","tags":["BB-8772 create theme change PR"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240416T055817Z","tags":["BB-8772 create theme change PR"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240416T055817Z","end":"20240416T060721Z","tags":["BB-8772 create theme change PR"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240416T060722Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240416T060722Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240416T060722Z","tags":["BB-8290 read and vote"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240416T060722Z","tags":["BB-8290 read and vote"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240416T060722Z","end":"20240416T061308Z","tags":["BB-8290 read and vote"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240416T061309Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240416T061309Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240416T061309Z","tags":["BB-254 post end of sprint update and catchup on others updates"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240416T061309Z","tags":["BB-254 post end of sprint update and catchup on others updates"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240416T061309Z","end":"20240416T064849Z","tags":["BB-254 post end of sprint update and catchup on others updates"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240416T064849Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240416T064849Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240416T064849Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240416T064849Z","tags":["BB-8791 work on components"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240416T064849Z","end":"20240416T073821Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240416T094438Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240416T094438Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240416T094438Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240416T094438Z","tags":["BB-8791 work on components"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240416T094438Z","end":"20240416T105852Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240416T115546Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240416T115546Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240416T115546Z","tags":["BB-8772 test production"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240416T115546Z","tags":["BB-8772 test production"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240416T115546Z","end":"20240416T120251Z","tags":["BB-8772 test production"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240416T120252Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240416T120252Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240416T120252Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240416T120252Z","tags":["BB-8791 work on components"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240416T120252Z","end":"20240416T133458Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240416T145421Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240416T145421Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240416T145421Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240416T145421Z","tags":["BB-8791 work on components"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240416T145421Z","end":"20240416T150032Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240416T150032Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240416T150032Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240416T150032Z","end":"20240416T150107Z"}
+txn:
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240416T150112Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240416T150112Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240416T150112Z","tags":["BB-254 sprint retrospective meeting"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240416T150112Z","tags":["BB-254 sprint retrospective meeting"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240416T150112Z","end":"20240416T160000Z","tags":["BB-254 sprint retrospective meeting"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240417T060836Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240417T060836Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240417T060836Z","tags":["BB-8124 check new ticket from client"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240417T060836Z","tags":["BB-8124 check new ticket from client"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240417T060836Z","end":"20240417T061359Z","tags":["BB-8124 check new ticket from client"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240417T061359Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240417T061359Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240417T061359Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240417T061359Z","tags":["BB-8791 work on components"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240417T061359Z","end":"20240417T072824Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240417T092035Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240417T092035Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240417T092035Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240417T092035Z","tags":["BB-8791 work on components"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240417T092035Z","end":"20240417T115146Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240417T130801Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240417T130801Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240417T130801Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240417T130801Z","tags":["BB-8791 work on components"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240417T130801Z","end":"20240417T135545Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240418T104254Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240418T104254Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240418T104254Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240418T104254Z","tags":["BB-8791 work on components"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240418T104254Z","end":"20240418T114439Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240418T130559Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240418T130559Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240418T130559Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240418T130559Z","tags":["BB-8791 work on components"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240418T130559Z","end":"20240418T131051Z","tags":["BB-8791 work on components"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240418T131051Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240418T131051Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240418T131051Z","tags":["BB-8780 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240418T131051Z","tags":["BB-8780 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240418T131051Z","end":"20240418T134433Z","tags":["BB-8780 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240418T140319Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240418T140319Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240418T140319Z","tags":["BB-8271 social chat"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240418T140319Z","tags":["BB-8271 social chat"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240418T140319Z","end":"20240418T143525Z","tags":["BB-8271 social chat"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240419T054533Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240419T054533Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240419T054533Z","tags":["BB-8791 fix styling"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240419T054533Z","tags":["BB-8791 fix styling"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240419T054533Z","end":"20240419T073651Z","tags":["BB-8791 fix styling"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240419T101547Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240419T101547Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240419T101547Z","tags":["BB-8791 fix styling"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240419T101547Z","tags":["BB-8791 fix styling"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240419T101547Z","end":"20240419T111319Z","tags":["BB-8791 fix styling"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240419T111319Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240419T111319Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240419T111319Z","tags":["BB-8780 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240419T111319Z","tags":["BB-8780 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240419T111319Z","end":"20240419T121722Z","tags":["BB-8780 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240419T140000Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240419T140000Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240419T140000Z","tags":["BB-8780 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240419T140000Z","tags":["BB-8780 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240419T140000Z","end":"20240419T150631Z","tags":["BB-8780 work on feature"]}

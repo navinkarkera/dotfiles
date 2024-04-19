@@ -1002,6 +1002,7 @@ map("n", "<leader>cp", ':silent !echo %:~:. | xsel --clipboard<CR>')
 map("v", "<leader>prs", [[:w !curl --data-binary @- https://paste.rs/ | xsel --clipboard<CR>]])
 map("n", "gD", ":tag <C-R>=expand('<cword>')<CR><CR>")
 map("n", "gP", ":ptselect <C-R>=expand('<cword>')<CR><CR>")
+map("n", "<leader>sg", ":spellgood <C-R>=expand('<cword>')<CR><CR>")
 
 map("i", "<C-l>", "<Left>")
 map("i", "<C-k>", "<Up>")

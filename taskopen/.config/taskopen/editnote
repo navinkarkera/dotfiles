@@ -3,6 +3,14 @@
 
 # Usage
 if [ $# -eq 3 ]; then
+	export TASK_DESCRIPTION=$2
+	export TASK_UUID=$3
+	task_description_array=($TASK_DESCRIPTION)
+	# if [ - ]; then
+	#
+	# fi
+
+	content=$(cat jiranote_template.md | envsubst)
 	if [ ! -e $1 ]; then
 		echo "# $2  #$3" > $1
 	fi
