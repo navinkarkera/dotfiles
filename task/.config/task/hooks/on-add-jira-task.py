@@ -27,9 +27,6 @@ if "jiraid" in task:
         else:
             task["due"] = (next_weekday(datetime.utcnow(), 0) + timedelta(days=6)).strftime(midnight_format)
 
-if "gmailurl" in task:
-    task["due"] = datetime.utcnow().strftime(midnight_format)
-
 if "githuburl" in task:
     task["tags"].append("new")
 
