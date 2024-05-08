@@ -15887,3 +15887,143 @@ txn:
   type: interval
   before: 
   after: {"id":0,"start":"20240507T112155Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240507T112155Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240507T112155Z","tags":["BB-8780 add tests for mailchimp and make enterprise-tutor plugin nightly compatible"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240507T112155Z","tags":["BB-8780 add tests for mailchimp and make enterprise-tutor plugin nightly compatible"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240507T112155Z","end":"20240507T130818Z","tags":["BB-8780 add tests for mailchimp and make enterprise-tutor plugin nightly compatible"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240507T152425Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240507T152425Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240507T152425Z","tags":["BB-8780 add tests for mailchimp and make enterprise-tutor plugin nightly compatible"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240507T152425Z","tags":["BB-8780 add tests for mailchimp and make enterprise-tutor plugin nightly compatible"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240507T152425Z","end":"20240507T154554Z","tags":["BB-8780 add tests for mailchimp and make enterprise-tutor plugin nightly compatible"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240507T160007Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240507T160007Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240507T160007Z","tags":["BB-8780 add tests for mailchimp and make enterprise-tutor plugin nightly compatible"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240507T160007Z","tags":["BB-8780 add tests for mailchimp and make enterprise-tutor plugin nightly compatible"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240507T160007Z","end":"20240507T161648Z","tags":["BB-8780 add tests for mailchimp and make enterprise-tutor plugin nightly compatible"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240508T062007Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240508T062007Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240508T062007Z","tags":["BB-8831 update PR"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240508T062007Z","tags":["BB-8831 update PR"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240508T062007Z","end":"20240508T073913Z","tags":["BB-8831 update PR"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240508T073914Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240508T073914Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240508T073914Z","tags":["BB-8780 add tests for mailchimp and make enterprise-tutor plugin nightly compatible"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240508T073914Z","tags":["BB-8780 add tests for mailchimp and make enterprise-tutor plugin nightly compatible"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240508T073914Z","end":"20240508T075107Z","tags":["BB-8780 add tests for mailchimp and make enterprise-tutor plugin nightly compatible"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240508T113047Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240508T113047Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240508T113047Z","tags":["BB-8780 add tests for mailchimp and make enterprise-tutor plugin nightly compatible"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240508T113047Z","tags":["BB-8780 add tests for mailchimp and make enterprise-tutor plugin nightly compatible"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240508T113047Z","end":"20240508T114551Z","tags":["BB-8780 add tests for mailchimp and make enterprise-tutor plugin nightly compatible"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240508T120536Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240508T120536Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240508T120536Z","tags":["BB-8780 fix issues with mandrill and test assignment email"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240508T120536Z","tags":["BB-8780 fix issues with mandrill and test assignment email"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240508T120536Z","end":"20240508T132312Z","tags":["BB-8780 fix issues with mandrill and test assignment email"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240508T145219Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240508T145219Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240508T145219Z","tags":["BB-8780 add remaining tests"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240508T145219Z","tags":["BB-8780 add remaining tests"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240508T145219Z","end":"20240508T154823Z","tags":["BB-8780 add remaining tests"]}

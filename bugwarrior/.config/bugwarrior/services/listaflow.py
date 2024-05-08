@@ -62,7 +62,7 @@ class ListaflowTask(Issue):
         return {
             'project': 'Listaflow',
             'priority': self.origin['default_priority'],
-            'annotations': self.record.get('annotations', []),
+            'annotations': self.record.get('annotations', [f'https://app.listaflow.com/lists/{self.record["list_id"]}']),
             'tags': self.get_tags(),
             'entry': self.parse_date(self.record.get('start')),
             'due': self.record.get('scheduled') + relativedelta.relativedelta(days=+1),
@@ -145,6 +145,7 @@ class ListaflowClient(ServiceClient):
             task['parent'] = parent['label']
             task["start"] = self.list_info["start"]
             task["end"] = self.list_info["end"]
+            task["list_id"] = self.list_info["id"]
             tasks.append(task)
         return tasks
 
