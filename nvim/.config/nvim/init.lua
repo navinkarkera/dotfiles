@@ -189,6 +189,9 @@ require("onedarkpro").setup({
     conditionals = "italic",
     virtual_text = "NONE",
   },
+  options = {
+    highlight_inactive_windows = true,
+  },
 })
 
 vim.cmd.colorscheme "onedark"
