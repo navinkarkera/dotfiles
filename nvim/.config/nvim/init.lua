@@ -155,6 +155,7 @@ vim.o.complete = '.,w,b'
 -- window direction
 vim.o.splitright = true
 vim.o.splitbelow = true
+vim.o.splitkeep = "screen"
 
 -- vim.g.gruvbox_baby_transparent_mode = 1
 -- require("modus-themes").setup({
@@ -172,6 +173,24 @@ vim.o.splitbelow = true
 -- 		variables = {},
 -- 	},
 -- })
+require("onedarkpro").setup({
+  styles = {
+    types = "NONE",
+    methods = "NONE",
+    numbers = "NONE",
+    strings = "NONE",
+    comments = "italic",
+    keywords = "bold,italic",
+    constants = "NONE",
+    functions = "NONE",
+    operators = "NONE",
+    variables = "NONE",
+    parameters = "NONE",
+    conditionals = "italic",
+    virtual_text = "NONE",
+  },
+})
+
 vim.cmd.colorscheme "onedark"
 
 if vim.fn.executable("rg") == 1 then

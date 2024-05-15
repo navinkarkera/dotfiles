@@ -209,6 +209,7 @@ function M.run_command(cmd, full_shell, background)
   else
     vim.cmd("new")
     term_run_cmd(cmd)
+    vim.cmd("setfiletype terminal")
   end
   vim.api.nvim_input([[<C-\><C-n>]])
   -- vim.api.nvim_input("G")
