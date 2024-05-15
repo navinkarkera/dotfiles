@@ -158,6 +158,7 @@ config.keys = {
     key = 'T',
     mods = 'LEADER|SHIFT',
     action = act.SpawnCommandInNewTab {
+      cwd = '/home/navin',
       args = { '/home/navin/.local/bin/twc' },
     },
   },

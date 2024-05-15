@@ -13,6 +13,9 @@ if [ $github_url != "null" ]; then
 	if [ $github_type == "pull_request" ]; then
 		GH_PAGER=less gh pr view $github_url --comments
 	fi
+	if [ $github_type == "issue" ]; then
+		GH_PAGER=less gh issue view $github_url --comments
+	fi
 	exit 0
 fi
 emailid=$(jq -r '.[0].gmaillastmessageid' <<< $task_info)

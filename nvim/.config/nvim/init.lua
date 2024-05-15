@@ -72,6 +72,7 @@ require('lazy').setup {
       'williamboman/mason-lspconfig.nvim',
     },
   },
+  {'tzachar/cmp-ai', dependencies = 'nvim-lua/plenary.nvim'},
   {
     -- Autocompletion
     'hrsh7th/nvim-cmp',
@@ -79,6 +80,7 @@ require('lazy').setup {
       'hrsh7th/cmp-nvim-lsp',
       'L3MON4D3/LuaSnip',
       'saadparwaiz1/cmp_luasnip',
+      'tzachar/cmp-ai',
       {
         'quangnguyen30192/cmp-nvim-tags',
         ft = {
@@ -744,6 +746,26 @@ local kind_icons = {
   TypeParameter = ""
 }
 
+local cmp_ai = require('cmp_ai.config')
+
+cmp_ai:setup({
+  max_lines = 100,
+  provider = 'Ollama',
+  provider_options = {
+    model = 'codellama:7b-code',
+  },
+  notify = true,
+  notify_callback = function(msg)
+    vim.notify(msg)
+  end,
+  run_on_every_keystroke = false,
+  ignored_file_types = {
+    -- default is not to ignore
+    -- uncomment to ignore in lua:
+    -- lua = true
+  },
+})
+
 local cmp = require 'cmp'
 cmp.setup {
   snippet = {
@@ -758,6 +780,16 @@ cmp.setup {
     ['<C-d>'] = cmp.mapping.scroll_docs(-4),
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
     ['<C-Space>'] = cmp.mapping.complete({}),
+    ['<C-q>'] = cmp.mapping(
+      cmp.mapping.complete({
+        config = {
+          sources = cmp.config.sources({
+            { name = 'cmp_ai' },
+          }),
+        },
+      }),
+      { 'i' }
+    ),
     ['<CR>'] = cmp.mapping.confirm {
       behavior = cmp.ConfirmBehavior.Replace,
       select = true,
@@ -813,6 +845,7 @@ cmp.setup {
         nvim_lsp = "[LSP]",
         luasnip = "[LuaSnip]",
         nvim_lua = "[Lua]",
+        cmp_ai = "[AI]",
       })[entry.source.name]
       return vim_item
     end

@@ -16027,3 +16027,408 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20240508T145219Z","end":"20240508T154823Z","tags":["BB-8780 add remaining tests"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240509T110755Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240509T110755Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240509T110755Z","tags":["BB-8831 update ticket"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240509T110755Z","tags":["BB-8831 update ticket"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240509T110755Z","end":"20240509T111143Z","tags":["BB-8831 update ticket"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240509T111144Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240509T111144Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240509T111144Z","tags":["BB-8825 go through PR and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240509T111144Z","tags":["BB-8825 go through PR and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240509T111144Z","end":"20240509T112826Z","tags":["BB-8825 go through PR and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240509T112832Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240509T112832Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240509T112832Z","tags":["BB-8535 prepare company letter"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240509T112832Z","tags":["BB-8535 prepare company letter"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240509T112832Z","end":"20240509T113823Z","tags":["BB-8535 prepare company letter"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240509T121356Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240509T121356Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240509T121356Z","tags":["BB-8535 prepare company letter"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240509T121356Z","tags":["BB-8535 prepare company letter"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240509T121356Z","end":"20240509T122342Z","tags":["BB-8535 prepare company letter"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240509T123006Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240509T123006Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240509T123006Z","tags":["BB-7643 wait for maintainer meeting session"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240509T123006Z","tags":["BB-7643 wait for maintainer meeting session"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240509T123006Z","end":"20240509T123511Z","tags":["BB-7643 wait for maintainer meeting session"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240509T124222Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240509T124222Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240509T124222Z","tags":["BB-8780 create tutor plugin PR"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240509T124222Z","tags":["BB-8780 create tutor plugin PR"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240509T124222Z","end":"20240509T125144Z","tags":["BB-8780 create tutor plugin PR"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240509T125151Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240509T125151Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240509T125151Z","tags":["BB-7643 go through issuse and PRs in frontend-app-library-authoring as a maintainer"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240509T125151Z","tags":["BB-7643 go through issuse and PRs in frontend-app-library-authoring as a maintainer"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240509T125151Z","end":"20240509T134340Z","tags":["BB-7643 go through issuse and PRs in frontend-app-library-authoring as a maintainer"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240509T145655Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240509T145655Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240509T145655Z","tags":["BB-7643 go through issuse and PRs in frontend-app-library-authoring as a maintainer"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240509T145655Z","tags":["BB-7643 go through issuse and PRs in frontend-app-library-authoring as a maintainer"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240509T145655Z","end":"20240509T145741Z","tags":["BB-7643 go through issuse and PRs in frontend-app-library-authoring as a maintainer"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240510T092024Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240510T092024Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240510T092024Z","tags":[";read"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240510T092024Z","tags":[";read"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240510T092024Z","end":"20240510T100320Z","tags":[";read"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240510T100408Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240510T100408Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240510T100408Z","tags":[";read"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240510T100408Z","tags":[";read"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240510T100408Z","end":"20240510T100509Z","tags":[";read"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240510T100408Z","end":"20240510T100509Z","tags":[";read"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240510T100408Z","end":"20240510T100509Z","tags":[";read","BB-8824 create and test palm PR"]}
+txn:
+  type: interval
+  before: {"id":2,"start":"20240510T092024Z","end":"20240510T100320Z","tags":[";read"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":2,"start":"20240510T092024Z","end":"20240510T100320Z","tags":[";read","BB-8824 create and test palm PR"]}
+txn:
+  type: interval
+  before: {"id":2,"start":"20240510T092024Z","end":"20240510T100320Z","tags":[";read","BB-8824 create and test palm PR"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":2,"start":"20240510T092024Z","end":"20240510T100320Z","tags":["BB-8824 create and test palm PR"]}
+  type: interval
+  before: {"id":1,"start":"20240510T100408Z","end":"20240510T100509Z","tags":[";read","BB-8824 create and test palm PR"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240510T100408Z","end":"20240510T100509Z","tags":["BB-8824 create and test palm PR"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240510T140136Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240510T140136Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240510T140136Z","tags":["BB-8847 check new issue"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240510T140136Z","tags":["BB-8847 check new issue"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240510T140136Z","end":"20240510T142837Z","tags":["BB-8847 check new issue"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240510T154750Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240510T154750Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240510T154750Z","tags":["BB-8847 fix modal dialogs"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240510T154750Z","tags":["BB-8847 fix modal dialogs"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240510T154750Z","end":"20240510T155804Z","tags":["BB-8847 fix modal dialogs"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240510T155806Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240510T155806Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240510T155806Z","tags":["BB-8780 read and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240510T155806Z","tags":["BB-8780 read and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240510T155806Z","end":"20240510T155925Z","tags":["BB-8780 read and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240513T070719Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240513T070719Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240513T070719Z","tags":["BB-7643 complete checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240513T070719Z","tags":["BB-7643 complete checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240513T070719Z","end":"20240513T071152Z","tags":["BB-7643 complete checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240513T071153Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240513T071153Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240513T071153Z","tags":["BB-254 finding tasks by going through listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240513T071153Z","tags":["BB-254 finding tasks by going through listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240513T071153Z","end":"20240513T073338Z","tags":["BB-254 finding tasks by going through listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240513T144243Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240513T144243Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240513T144243Z","tags":["BB-8847 check"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240513T144243Z","tags":["BB-8847 check"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240513T144243Z","end":"20240513T144912Z","tags":["BB-8847 check"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240513T145008Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240513T145008Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240513T145008Z","tags":["BB-254 post end of sprint update and complete listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240513T145008Z","tags":["BB-254 post end of sprint update and complete listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240513T145008Z","end":"20240513T151511Z","tags":["BB-254 post end of sprint update and complete listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240514T162609Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240514T162609Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240514T162609Z","tags":["BB-254 sprint retrospective meeting"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240514T162609Z","tags":["BB-254 sprint retrospective meeting"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240514T162609Z","end":"20240514T162618Z","tags":["BB-254 sprint retrospective meeting"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240515T061241Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240515T061241Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240515T061241Z","tags":["BB-8124 post epic update and update related tickets"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240515T061241Z","tags":["BB-8124 post epic update and update related tickets"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240515T061241Z","end":"20240515T062749Z","tags":["BB-8124 post epic update and update related tickets"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240515T062751Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240515T062751Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240515T062751Z","tags":["BB-254 catch up on sprint updates"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240515T062751Z","tags":["BB-254 catch up on sprint updates"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240515T062751Z","end":"20240515T063526Z","tags":["BB-254 catch up on sprint updates"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240515T063526Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240515T063526Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240515T063526Z","tags":["BB-8865 investigate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240515T063526Z","tags":["BB-8865 investigate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240515T063526Z","end":"20240515T075134Z","tags":["BB-8865 investigate"]}
