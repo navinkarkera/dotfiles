@@ -11,7 +11,7 @@ return {
       highlights = {
         heading = {
           -- Used for rendering heading line backgrounds
-          backgrounds = { 'FloatShadow', '@comment.todo', '@comment.note', 'CurSearch' },
+          backgrounds = { 'CurSearch', '@comment.todo', '@comment.note', 'FloatTitle' },
           -- Used for rendering the foreground of the heading character only
           foregrounds = {
             'markdownH1',

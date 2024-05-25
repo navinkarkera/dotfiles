@@ -6,5 +6,6 @@ image/*; (clear && wezterm imgcat %s && read -N 1); needsterminal
 video/*; setsid mpv --quiet %s &; copiousoutput
 audio/*; mpv %s ;
 application/pdf; /usr/lib/mutt-wizard/openfile %s ;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; /usr/lib/mutt-wizard/openfile %s ;
 application/pgp-encrypted; gpg -d '%s'; copiousoutput;
 application/pgp-keys; gpg --import '%s'; copiousoutput;

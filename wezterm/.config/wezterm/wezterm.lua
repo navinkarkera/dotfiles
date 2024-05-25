@@ -155,6 +155,22 @@ config.keys = {
     },
   },
   {
+    key = 'o',
+    mods = 'LEADER|SHIFT',
+    action = act.SpawnCommandInNewTab {
+      args = {
+        'jira',
+        'issue',
+        'list',
+        '-ax',
+        '-R',
+        'unresolved',
+        '--jql',
+        'sprint in futureSprints() and sprint != "Last resort - Accepted" and sprint != "Last resort - Proposed"',
+      },
+    },
+  },
+  {
     key = 'T',
     mods = 'LEADER|SHIFT',
     action = act.SpawnCommandInNewTab {

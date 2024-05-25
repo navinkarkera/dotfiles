@@ -48,7 +48,6 @@ for _, plugin in pairs(builtins) do
 end
 
 require('lazy').setup {
-  'numToStr/Comment.nvim',
   {
     'ibhagwan/fzf-lua',
     dependencies = { 'nvim-tree/nvim-web-devicons' }
@@ -98,10 +97,6 @@ require('lazy').setup {
   {
     "ThePrimeagen/refactoring.nvim",
     dependencies = { "nvim-lua/plenary.nvim", "nvim-treesitter/nvim-treesitter" },
-  },
-  {
-    'ckolkey/ts-node-action',
-    dependencies = { 'nvim-treesitter' },
   },
   "kylechui/nvim-surround",
   { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim' },
@@ -240,9 +235,6 @@ require('lualine').setup {
 
 --Remap space as leader key
 map({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
-
--- Enable Comment.nvim
-require('Comment').setup()
 
 -- Anyjump config
 vim.g.any_jump_grouping_enabled                     = 1
@@ -985,10 +977,6 @@ map("n", "<Leader>nf", require('neogen').generate)
 
 map('n', '<leader>pv', function() fzf_lua.files({ cwd = "%:h" }) end)
 map('n', '<C-p>', fzf_lua.files)
-
--- ts-node-action
-require('ts-node-action').setup({})
-map({ "n" }, "gS", require("ts-node-action").node_action, { desc = "Trigger Node Action" })
 
 -- nvim-surround
 require("nvim-surround").setup({})
