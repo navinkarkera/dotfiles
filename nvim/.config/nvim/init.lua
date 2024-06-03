@@ -999,11 +999,6 @@ vim.api.nvim_create_user_command(
     end,
   }
 )
-vim.api.nvim_create_user_command(
-  "GBrowse",
-  [[:silent !git browse "" %:~:. <line1> <line2>]],
-  { nargs = 0, range = true }
-)
 -- custom keymaps
 map("n", "<F4>", ":bd<CR>")
 map('n', '<C-s>', ":w<CR>")
