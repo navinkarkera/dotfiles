@@ -16846,3 +16846,812 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20240524T154436Z","end":"20240524T154440Z","tags":["BB-8865 prepare script to clone course and fight api auth mechanism"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240527T061838Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T061838Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T061838Z","tags":["BB-8503 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T061838Z","tags":["BB-8503 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T061838Z","end":"20240527T064808Z","tags":["BB-8503 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240527T064808Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T064808Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T064808Z","end":"20240527T065015Z"}
+txn:
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T065019Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T065019Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T065019Z","tags":["BB-8829 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T065019Z","tags":["BB-8829 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T065019Z","end":"20240527T072358Z","tags":["BB-8829 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240527T072613Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T072613Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T072613Z","tags":["BB-8865 update ticket"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T072613Z","tags":["BB-8865 update ticket"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T072613Z","end":"20240527T072851Z","tags":["BB-8865 update ticket"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240527T093946Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T093946Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T093946Z","tags":["BB-254 finding tasks by going through listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T093946Z","tags":["BB-254 finding tasks by going through listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T093946Z","end":"20240527T094344Z","tags":["BB-254 finding tasks by going through listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240527T094927Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T094927Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T094927Z","tags":["BB-254 finding tasks by going through listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T094927Z","tags":["BB-254 finding tasks by going through listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T094927Z","end":"20240527T095021Z","tags":["BB-254 finding tasks by going through listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240527T095542Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T095542Z"}
+  after: 
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240527T095945Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T095945Z"}
+  after: 
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240527T101136Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T101136Z"}
+  after: 
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240527T102705Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T102705Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T102705Z","tags":["BB-7643 recommenderxblock issue"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T102705Z","tags":["BB-7643 recommenderxblock issue"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T102705Z","end":"20240527T112838Z","tags":["BB-7643 recommenderxblock issue"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240527T114107Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T114107Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T114107Z","tags":["BB-7643 recommenderxblock issue"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T114107Z","tags":["BB-7643 recommenderxblock issue"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T114107Z","end":"20240527T114125Z","tags":["BB-7643 recommenderxblock issue"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240527T131915Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T131915Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T131915Z","tags":["BB-283 read post"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T131915Z","tags":["BB-283 read post"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T131915Z","end":"20240527T132238Z","tags":["BB-283 read post"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240527T132409Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T132409Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T132409Z","tags":["BB-8829 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T132409Z","tags":["BB-8829 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T132409Z","end":"20240527T132745Z","tags":["BB-8829 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240527T140627Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T140627Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T140627Z","tags":["BB-7643 recommenderxblock issue"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T140627Z","tags":["BB-7643 recommenderxblock issue"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T140627Z","end":"20240527T152011Z","tags":["BB-7643 recommenderxblock issue"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240527T164113Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T164113Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T164113Z","tags":["BB-254  post mid sprint update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240527T164113Z","tags":["BB-254  post mid sprint update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240527T164113Z","end":"20240527T164513Z","tags":["BB-254  post mid sprint update"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240528T063358Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240528T063358Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240528T063358Z","tags":["BB-2276 check sprintcraft issue"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240528T063358Z","tags":["BB-2276 check sprintcraft issue"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240528T063358Z","end":"20240528T070149Z","tags":["BB-2276 check sprintcraft issue"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240528T070547Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240528T070547Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240528T070547Z","tags":["BB-8824 update PR based on feedback"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240528T070547Z","tags":["BB-8824 update PR based on feedback"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240528T070547Z","end":"20240528T074719Z","tags":["BB-8824 update PR based on feedback"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240528T090422Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240528T090422Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240528T090422Z","tags":["BB-254 sprint retrospective meeting"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240528T090422Z","tags":["BB-254 sprint retrospective meeting"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240528T090422Z","end":"20240528T104223Z","tags":["BB-254 sprint retrospective meeting"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240528T113049Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240528T113049Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240528T113049Z","tags":["BB-8824 update PR based on feedback"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240528T113049Z","tags":["BB-8824 update PR based on feedback"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240528T113049Z","end":"20240528T115336Z","tags":["BB-8824 update PR based on feedback"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240528T122839Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240528T122839Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240528T122839Z","tags":["BB-8882 read and start investigating"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240528T122839Z","tags":["BB-8882 read and start investigating"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240528T122839Z","end":"20240528T125725Z","tags":["BB-8882 read and start investigating"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240528T143546Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240528T143546Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240528T143546Z","tags":["BB-8876 respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240528T143546Z","tags":["BB-8876 respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240528T143546Z","end":"20240528T144252Z","tags":["BB-8876 respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240528T144254Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240528T144254Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240528T144254Z","tags":["STAR-3595 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240528T144254Z","tags":["STAR-3595 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240528T144254Z","end":"20240528T152546Z","tags":["STAR-3595 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240529T064040Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240529T064040Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240529T064040Z","tags":["BB-254 catch up on sprint updates"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240529T064040Z","tags":["BB-254 catch up on sprint updates"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240529T064040Z","end":"20240529T065645Z","tags":["BB-254 catch up on sprint updates"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240529T065645Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240529T065645Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240529T065645Z","tags":["BB-8882 read and start investigating"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240529T065645Z","tags":["BB-8882 read and start investigating"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240529T065645Z","end":"20240529T073845Z","tags":["BB-8882 read and start investigating"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240529T075912Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240529T075912Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240529T075912Z","tags":["BB-8882 read and start investigating"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240529T075912Z","tags":["BB-8882 read and start investigating"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240529T075912Z","end":"20240529T082109Z","tags":["BB-8882 read and start investigating"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240529T093814Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240529T093814Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240529T093814Z","tags":["BB-8882 read and start investigating"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240529T093814Z","tags":["BB-8882 read and start investigating"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240529T093814Z","end":"20240529T103341Z","tags":["BB-8882 read and start investigating"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240529T105827Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240529T105827Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240529T105827Z","tags":["BB-8882 read and start investigating"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240529T105827Z","tags":["BB-8882 read and start investigating"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240529T105827Z","end":"20240529T113111Z","tags":["BB-8882 read and start investigating"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240529T133823Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240529T133823Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240529T133823Z","tags":["BB-8865 investigate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240529T133823Z","tags":["BB-8865 investigate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240529T133823Z","end":"20240529T151345Z","tags":["BB-8865 investigate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240530T062606Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240530T062606Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240530T062606Z","tags":["BB-8824 update review proposal"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240530T062606Z","tags":["BB-8824 update review proposal"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240530T062606Z","end":"20240530T063249Z","tags":["BB-8824 update review proposal"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240530T064525Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240530T064525Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240530T064525Z","tags":["BB-7643 read issues in library-authoring"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240530T064525Z","tags":["BB-7643 read issues in library-authoring"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240530T064525Z","end":"20240530T064857Z","tags":["BB-7643 read issues in library-authoring"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240530T064858Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240530T064858Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240530T064858Z","tags":["BB-8824 update review proposal"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240530T064858Z","tags":["BB-8824 update review proposal"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240530T064858Z","end":"20240530T065408Z","tags":["BB-8824 update review proposal"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240530T065408Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240530T065408Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240530T065408Z","tags":["BB-8865 create script to get admin users"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240530T065408Z","tags":["BB-8865 create script to get admin users"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240530T065408Z","end":"20240530T074249Z","tags":["BB-8865 create script to get admin users"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240530T090031Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240530T090031Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240530T090031Z","tags":["BB-8865 work on script"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240530T090031Z","tags":["BB-8865 work on script"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240530T090031Z","end":"20240530T100054Z","tags":["BB-8865 work on script"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240530T150742Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240530T150742Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240530T150742Z","tags":["BB-8271 social chat"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240530T150742Z","tags":["BB-8271 social chat"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240530T150742Z","end":"20240530T153815Z","tags":["BB-8271 social chat"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240531T063414Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240531T063414Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240531T063414Z","tags":["BB-8124 post epic update and ping client for project status"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240531T063414Z","tags":["BB-8124 post epic update and ping client for project status"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240531T063414Z","end":"20240531T065933Z","tags":["BB-8124 post epic update and ping client for project status"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240531T065935Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240531T065935Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240531T065935Z","tags":["BB-8865 work on script"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240531T065935Z","tags":["BB-8865 work on script"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240531T065935Z","end":"20240531T075356Z","tags":["BB-8865 work on script"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240531T100434Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240531T100434Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240531T100434Z","tags":["BB-8865 work on script"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240531T100434Z","tags":["BB-8865 work on script"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240531T100434Z","end":"20240531T103036Z","tags":["BB-8865 work on script"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240531T112749Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240531T112749Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240531T112749Z","tags":["BB-8865 work on script"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240531T112749Z","tags":["BB-8865 work on script"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240531T112749Z","end":"20240531T113409Z","tags":["BB-8865 work on script"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240531T120608Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240531T120608Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240531T120608Z","tags":["BB-8865 work on script"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240531T120608Z","tags":["BB-8865 work on script"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240531T120608Z","end":"20240531T124901Z","tags":["BB-8865 work on script"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240531T140053Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240531T140053Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240531T140053Z","tags":["BB-8865 work on script"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240531T140053Z","tags":["BB-8865 work on script"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240531T140053Z","end":"20240531T150856Z","tags":["BB-8865 work on script"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240603T064216Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240603T064216Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240603T064216Z","tags":["BB-8865 work on script"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240603T064216Z","tags":["BB-8865 work on script"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240603T064216Z","end":"20240603T064450Z","tags":["BB-8865 work on script"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240603T065310Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240603T065310Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240603T065310Z","tags":["BB-8865 start cloning in batches"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240603T065310Z","tags":["BB-8865 start cloning in batches"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240603T065310Z","end":"20240603T075221Z","tags":["BB-8865 start cloning in batches"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240603T095718Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240603T095718Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240603T095718Z","tags":["BB-8865 start cloning in batches"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240603T095718Z","tags":["BB-8865 start cloning in batches"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240603T095718Z","end":"20240603T105500Z","tags":["BB-8865 start cloning in batches"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240603T115647Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240603T115647Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240603T115647Z","tags":["BB-8865 start cloning in batches"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240603T115647Z","tags":["BB-8865 start cloning in batches"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240603T115647Z","end":"20240603T125330Z","tags":["BB-8865 start cloning in batches"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240603T131018Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240603T131018Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240603T131018Z","tags":["BB-8865 update staff and get team details (add 20 mins)"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240603T131018Z","tags":["BB-8865 update staff and get team details (add 20 mins)"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240603T131018Z","end":"20240603T132811Z","tags":["BB-8865 update staff and get team details (add 20 mins)"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240603T134125Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240603T134125Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240603T134125Z","tags":["BB-8865 update staff and get team details (add 20 mins)"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240603T134125Z","tags":["BB-8865 update staff and get team details (add 20 mins)"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240603T134125Z","end":"20240603T140727Z","tags":["BB-8865 update staff and get team details (add 20 mins)"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240603T151959Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240603T151959Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240603T151959Z","tags":["BB-8865 update staff and get team details (add 20 mins)"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240603T151959Z","tags":["BB-8865 update staff and get team details (add 20 mins)"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240603T151959Z","end":"20240603T152023Z","tags":["BB-8865 update staff and get team details (add 20 mins)"]}

@@ -173,6 +173,9 @@ bindcode $mod+Shift+90 	 move container to workspace  $ws10
 # start a terminal
 bindsym $mod+Return exec wezterm
 
+# Trigger time tracking script
+bindsym Mod1+Shift+t exec "wezterm start --class floating.terminal --cwd /home/navin -- twc"
+
 # kill focused window
 bindsym $mod+q kill
 
@@ -477,6 +480,7 @@ for_window [class="qt5ct" instance="qt5ct"] floating enable
 for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
 for_window [class="Bluetooth-sendto" instance="bluetooth-sendto"] floating enable
 for_window [class="Pamac-manager"] floating enable
+for_window [class="floating.terminal"] floating enable
 for_window [window_role="About"] floating enable
 
 # set border of floating window

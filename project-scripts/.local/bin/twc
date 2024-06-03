@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env -S mise x python@3.11 -- sh
 
 if [[ -z "$1" ]]; then
 	if [[ $(timew get dom.active) = "1" ]]; then
