@@ -104,7 +104,7 @@ require('lazy').setup {
 }
 
 -- conceal
-vim.o.conceallevel = 1
+vim.o.conceallevel = 2
 
 --Set highlight on search
 vim.o.hlsearch = false

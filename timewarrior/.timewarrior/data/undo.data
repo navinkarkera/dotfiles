@@ -17655,3 +17655,219 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20240603T151959Z","end":"20240603T152023Z","tags":["BB-8865 update staff and get team details (add 20 mins)"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240604T063254Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240604T063254Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240604T063254Z","tags":["BB-8865 check and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240604T063254Z","tags":["BB-8865 check and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240604T063254Z","end":"20240604T064252Z","tags":["BB-8865 check and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240604T070330Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240604T070330Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240604T070330Z","tags":["BB-8865 check and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240604T070330Z","tags":["BB-8865 check and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240604T070330Z","end":"20240604T070647Z","tags":["BB-8865 check and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240604T073000Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240604T073000Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240604T073000Z","tags":["BB-254  post mid sprint update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240604T073000Z","tags":["BB-254  post mid sprint update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240604T073000Z","end":"20240604T074110Z","tags":["BB-254  post mid sprint update"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240604T102132Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240604T102132Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240604T102132Z","tags":["BB-8882 jot down notes"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240604T102132Z","tags":["BB-8882 jot down notes"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240604T102132Z","end":"20240604T112520Z","tags":["BB-8882 jot down notes"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240604T143559Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240604T143559Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240604T143559Z","tags":["BB-8882 jot down notes"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240604T143559Z","tags":["BB-8882 jot down notes"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240604T143559Z","end":"20240604T150453Z","tags":["BB-8882 jot down notes"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240605T065008Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240605T065008Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240605T065008Z","tags":["BB-8124 check status"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240605T065008Z","tags":["BB-8124 check status"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240605T065008Z","end":"20240605T065216Z","tags":["BB-8124 check status"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240605T065217Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240605T065217Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240605T065217Z","tags":["BB-7643 vote for new CC"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240605T065217Z","tags":["BB-7643 vote for new CC"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240605T065217Z","end":"20240605T070259Z","tags":["BB-7643 vote for new CC"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240605T070300Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240605T070300Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240605T070300Z","tags":["BB-8882 jot down notes"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240605T070300Z","tags":["BB-8882 jot down notes"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240605T070300Z","end":"20240605T073655Z","tags":["BB-8882 jot down notes"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240605T095204Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240605T095204Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240605T095204Z","tags":["BB-8882 jot down notes"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240605T095204Z","tags":["BB-8882 jot down notes"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240605T095204Z","end":"20240605T103036Z","tags":["BB-8882 jot down notes"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240605T111253Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240605T111253Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240605T111253Z","tags":["BB-8882 jot down notes"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240605T111253Z","tags":["BB-8882 jot down notes"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240605T111253Z","end":"20240605T112544Z","tags":["BB-8882 jot down notes"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240605T122857Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240605T122857Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240605T122857Z","tags":["BB-8882 jot down notes"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240605T122857Z","tags":["BB-8882 jot down notes"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240605T122857Z","end":"20240605T125045Z","tags":["BB-8882 jot down notes"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240605T132816Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240605T132816Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240605T132816Z","tags":["BB-8882 jot down notes"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240605T132816Z","tags":["BB-8882 jot down notes"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240605T132816Z","end":"20240605T153221Z","tags":["BB-8882 jot down notes"]}
