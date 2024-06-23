@@ -12,8 +12,9 @@
 
 output HDMI-A-2 {
    # ...config options...
-   mode 3840x2160@60Hz
-   scale 1.5
+   # mode 3840x2160@60Hz
+   # scale 1.5
+   mode 1920x1080
    pos 0 0
    bg ~/.config/sway/goku-4k.jpg stretch
 }
