@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+description=$(task _get $1.description)
+remind "$description" in 2 hour

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S mise x python@3.11 -- python
 #
 # timew-fzf
 #

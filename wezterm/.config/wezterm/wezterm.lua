@@ -3,7 +3,7 @@ local act = wezterm.action
 local config = {}
 
 config.audible_bell = 'Disabled'
-config.color_scheme = 'OneHalfDark'
+config.color_scheme = 'rose-pine'
 config.window_background_opacity = 1
 config.hide_tab_bar_if_only_one_tab = true
 config.use_fancy_tab_bar = true
@@ -111,9 +111,16 @@ config.keys = {
   },
   {
     key = 'd',
-    mods = 'LEADER',
+    mods = 'LEADER|SHIFT',
     action = act.SpawnCommandInNewTab {
       args = { '/usr/bin/git', 'dm' },
+    },
+  },
+  {
+    key = 'd',
+    mods = 'LEADER',
+    action = act.SpawnCommandInNewTab {
+      args = { '/usr/bin/git', 'diff' },
     },
   },
   {
@@ -167,6 +174,23 @@ config.keys = {
         'unresolved',
         '--jql',
         'sprint in futureSprints() and sprint != "Last resort - Accepted" and sprint != "Last resort - Proposed"',
+      },
+    },
+  },
+  {
+    key = 'n',
+    mods = 'LEADER',
+    action = act.SpawnCommandInNewTab {
+      args = {
+        'jira',
+        'issue',
+        'list',
+        '-a',
+        'navinkarkera',
+        '-R',
+        'unresolved',
+        '--jql',
+        'sprint in futureSprints() and status != Done',
       },
     },
   },

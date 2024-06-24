@@ -54,6 +54,10 @@ require('lazy').setup {
   },
   {
     "olimorris/onedarkpro.nvim",
+    -- priority = 1000, -- Ensure it loads first
+  },
+  {
+    "rose-pine/neovim",
     priority = 1000, -- Ensure it loads first
   },
   'nvim-lualine/lualine.nvim',
@@ -138,9 +142,9 @@ vim.o.updatetime = 250
 vim.wo.signcolumn = 'yes'
 
 --Set colorscheme
-vim.o.background = "light"
+vim.o.background = "dark"
 vim.o.termguicolors = true
-vim.o.cursorline = false
+vim.o.cursorline = true
 
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menu'
@@ -167,28 +171,47 @@ vim.o.splitkeep = "screen"
 -- 		variables = {},
 -- 	},
 -- })
-require("onedarkpro").setup({
-  styles = {
-    types = "NONE",
-    methods = "NONE",
-    numbers = "NONE",
-    strings = "NONE",
-    comments = "italic",
-    keywords = "bold,italic",
-    constants = "NONE",
-    functions = "NONE",
-    operators = "NONE",
-    variables = "NONE",
-    parameters = "NONE",
-    conditionals = "italic",
-    virtual_text = "NONE",
+-- require("onedarkpro").setup({
+--   styles = {
+--     types = "NONE",
+--     methods = "NONE",
+--     numbers = "NONE",
+--     strings = "NONE",
+--     comments = "italic",
+--     keywords = "bold,italic",
+--     constants = "NONE",
+--     functions = "NONE",
+--     operators = "NONE",
+--     variables = "NONE",
+--     parameters = "NONE",
+--     conditionals = "italic",
+--     virtual_text = "NONE",
+--   },
+--   options = {
+--     highlight_inactive_windows = true,
+--   },
+-- })
+
+require("rose-pine").setup({
+  variant = "auto", -- auto, main, moon, or dawn
+  dark_variant = "main", -- main, moon, or dawn
+  dim_inactive_windows = true,
+  extend_background_behind_borders = true,
+
+  enable = {
+    terminal = true,
+    legacy_highlights = false, -- Improve compatibility for previous versions of Neovim
+    migrations = true, -- Handle deprecated options automatically
   },
-  options = {
-    highlight_inactive_windows = true,
-  },
+
+  disable_italics = true,
+  highlight_groups = {
+    Comment = { italic = true },
+    String = { italic = true },
+  }
 })
 
-vim.cmd.colorscheme "onedark"
+vim.cmd.colorscheme "rose-pine"
 
 if vim.fn.executable("rg") == 1 then
   vim.o.grepprg = [[rg --vimgrep --no-heading --smart-case --hidden -g '!.git/']]
