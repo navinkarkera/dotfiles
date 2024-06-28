@@ -1,4 +1,4 @@
--- Set <space> as the leader key
+-- Set <space> as the leader key: lazy.spawn(terminal),
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
@@ -1002,7 +1002,7 @@ map("n", "<M-[>", ":RunFB ")
 map("v", "<M-[>", [["vy:RunFB <C-R>v]])
 map("n", "<F2>", ":Run<Up><CR>")
 map("n", "<M-]>", my_functions.fzf_all_tasks)
-map("n", "<F3>", my_functions.restart_cmd)
+map("t", "<M-r>", my_functions.restart_cmd)
 map("n", "<leader>mt", my_functions.fzf_make_tasks)
 
 vim.api.nvim_create_user_command("Grep", "silent grep! <q-args>", { nargs = 1 })

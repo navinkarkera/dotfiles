@@ -22,7 +22,7 @@ alias \
 
 # Colorize commands when possible.
 alias \
-	ls="exa --icons --group-directories-first" \
+	ls="exa --icons --group-directories-first --hyperlink" \
 	grep="grep --color=auto" \
 	rcg="rg --context 10"
 	diff="diff --color=auto" \
