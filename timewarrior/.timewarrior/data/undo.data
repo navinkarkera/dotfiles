@@ -20440,3 +20440,21 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20240628T150406Z","end":"20240628T150749Z","tags":["BB-8932 check"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240705T112053Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240705T112053Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240705T112053Z","tags":["BB-8932 check"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240705T112053Z","tags":["BB-8932 check"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240705T112053Z","end":"20240705T112203Z","tags":["BB-8932 check"]}

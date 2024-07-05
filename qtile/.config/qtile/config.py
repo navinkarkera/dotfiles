@@ -380,6 +380,7 @@ screens = [
                     },
                     name_transform=lambda name: name.upper(),
                 ),
+                widget.Battery(),
                 widget.ThermalSensor(tag_sensor='Package id 0'),
                 widget.GenPollCommand(
                     cmd='~/.config/i3/scripts/timewarrior-status',
