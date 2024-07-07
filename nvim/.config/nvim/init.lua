@@ -1042,9 +1042,9 @@ map("n", "gD", ":tag <C-R>=expand('<cword>')<CR><CR>")
 map("n", "gP", ":ptselect <C-R>=expand('<cword>')<CR><CR>")
 map("n", "<leader>sg", ":spellgood <C-R>=expand('<cword>')<CR><CR>")
 
-map("i", "<C-l>", "<Left>")
+map("i", "<C-h>", "<Left>")
 map("i", "<C-k>", "<Up>")
-map("i", "<C-h>", "<Right>")
+map("i", "<C-l>", "<Right>")
 map("i", "<C-j>", "<Down>")
 
 -- undo breakpoints

@@ -28,7 +28,7 @@ import os
 import subprocess
 
 from libqtile import bar, hook, layout, qtile, widget
-from libqtile.config import Click, Drag, DropDown, Group, Key, Match, ScratchPad, Screen
+from libqtile.config import Click, Drag, DropDown, Group, Key, KeyChord, Match, ScratchPad, Screen
 from libqtile.extension import CommandSet
 from libqtile.lazy import lazy
 
@@ -57,11 +57,19 @@ keys = [
     Key([mod, 'shift'], 'k', lazy.layout.shuffle_up(), desc='Move window up'),
     # Grow windows. If current window is on the edge of screen and direction
     # will be to screen edge - window would shrink.
-    Key([mod, 'control'], 'h', lazy.layout.grow_left(), desc='Grow window to the left'),
-    Key([mod, 'control'], 'l', lazy.layout.grow_right(), desc='Grow window to the right'),
-    Key([mod, 'control'], 'j', lazy.layout.grow_down(), desc='Grow window down'),
-    Key([mod, 'control'], 'k', lazy.layout.grow_up(), desc='Grow window up'),
-    Key([mod], 'n', lazy.layout.normalize(), desc='Reset all window sizes'),
+
+    KeyChord([mod], "r", [
+        Key([], "i", lazy.layout.grow(), desc='Grow window in monad layout'),
+        Key([], "d", lazy.layout.shrink(), desc='Shrink window in monad layout'),
+        Key([], "r", lazy.layout.reset(), desc='Reset window in monad layout'),
+        Key([], 'h', lazy.layout.grow_left(), desc='Grow window to the left'),
+        Key([], 'l', lazy.layout.grow_right(), desc='Grow window to the right'),
+        Key([], 'j', lazy.layout.grow_down(), desc='Grow window down'),
+        Key([], 'k', lazy.layout.grow_up(), desc='Grow window up'),
+        Key([], "m", lazy.layout.maximize(), desc='Grow to maximum size in monad layout'),
+        Key([], 'n', lazy.layout.normalize(), desc='Reset all window sizes'),
+    ]),
+
     Key([mod, 'shift'], 'space', lazy.layout.flip()),
     # Toggle between split and unsplit sides of stack.
     # Split = all windows displayed
@@ -73,7 +81,7 @@ keys = [
         lazy.next_layout(),
         desc='Next layout',
     ),
-    Key([mod], 'Return', lazy.spawn(terminal), desc='Launch terminal'),
+    Key([mod, 'shift'], 'Return', lazy.spawn(terminal), desc='Launch terminal'),
     Key([mod], 'w', lazy.spawn(browser), desc='Launch browser'),
     Key([mod], 'd', lazy.spawn(menu), desc='Launch menu'),
     Key([mod, 'shift'], 'd', lazy.spawn(dmenu), desc='Launch menu'),
@@ -90,14 +98,14 @@ keys = [
     ),
     Key([mod, 'control'], 'r', lazy.reload_config(), desc='Reload the config'),
     Key([mod, 'control'], 'q', lazy.shutdown(), desc='Shutdown Qtile'),
-    Key([mod], 'r', lazy.spawncmd(), desc='Spawn a command using a prompt widget'),
-    Key([mod, 'shift'], 'Return', lazy.group['0'].dropdown_toggle('terminal'), desc='Open scratch terminal'),
+    Key([mod], 'Return', lazy.group['0'].dropdown_toggle('terminal'), desc='Open scratch terminal'),
     Key([mod], 'n', lazy.group['0'].dropdown_toggle('notes'), desc='Open notes'),
     Key([mod], 'm', lazy.group['0'].dropdown_toggle('mail'), desc='Open mail'),
     Key([mod], 't', lazy.group['0'].dropdown_toggle('taskwarrior'), desc='Open taskwarrior'),
     Key([mod, 'control'], 't', lazy.group['0'].dropdown_toggle('timer'), desc='Start and log time'),
     Key([mod], 'b', lazy.group['0'].dropdown_toggle('btop'), desc='Show btop'),
     Key([mod, 'shift'], 'f', lazy.group['0'].dropdown_toggle('filemanager'), desc='Show yazi filemanager'),
+    Key([mod, 'shift'], 'p', lazy.spawn('passmenu --type'), desc='Password manager in type mode'),
 
     Key(
         [mod, 'control'],
