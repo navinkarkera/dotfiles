@@ -20530,3 +20530,147 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20240707T190231Z","end":"20240707T195532Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240708T085343Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240708T085343Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240708T085343Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240708T085343Z","tags":["BB-8950 work on block"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240708T085343Z","end":"20240708T101857Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240708T103717Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240708T103717Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240708T103717Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240708T103717Z","tags":["BB-8950 work on block"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240708T103717Z","end":"20240708T113335Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240708T134647Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240708T134647Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240708T134647Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240708T134647Z","tags":["BB-8950 work on block"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240708T134647Z","end":"20240708T145139Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240708T145139Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240708T145139Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240708T145139Z","tags":["BB-8883 check"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240708T145139Z","tags":["BB-8883 check"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240708T145139Z","end":"20240708T145732Z","tags":["BB-8883 check"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240708T150443Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240708T150443Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240708T150443Z","tags":["BB-8932 test sandbox"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240708T150443Z","tags":["BB-8932 test sandbox"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240708T150443Z","end":"20240708T152415Z","tags":["BB-8932 test sandbox"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240708T152421Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240708T152421Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240708T152421Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240708T152421Z","tags":["BB-8950 work on block"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240708T152421Z","end":"20240708T152639Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240708T164955Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240708T164955Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240708T164955Z","tags":["BB-254 post end of sprint update and complete listaflow checklist"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240708T164955Z","tags":["BB-254 post end of sprint update and complete listaflow checklist"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240708T164955Z","end":"20240708T170526Z","tags":["BB-254 post end of sprint update and complete listaflow checklist"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240708T194414Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240708T194414Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240708T194414Z","tags":["BB-8932 merge PR and update ticket"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240708T194414Z","tags":["BB-8932 merge PR and update ticket"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240708T194414Z","end":"20240708T194627Z","tags":["BB-8932 merge PR and update ticket"]}

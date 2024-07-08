@@ -31,6 +31,7 @@ from libqtile import bar, hook, layout, qtile, widget
 from libqtile.config import Click, Drag, DropDown, Group, Key, KeyChord, Match, ScratchPad, Screen
 from libqtile.extension import CommandSet
 from libqtile.lazy import lazy
+from libqtile.widget import backlight
 
 mod = 'mod4'
 alt = 'mod1'
@@ -57,19 +58,82 @@ keys = [
     Key([mod, 'shift'], 'k', lazy.layout.shuffle_up(), desc='Move window up'),
     # Grow windows. If current window is on the edge of screen and direction
     # will be to screen edge - window would shrink.
-
-    KeyChord([mod], "r", [
-        Key([], "i", lazy.layout.grow(), desc='Grow window in monad layout'),
-        Key([], "d", lazy.layout.shrink(), desc='Shrink window in monad layout'),
-        Key([], "r", lazy.layout.reset(), desc='Reset window in monad layout'),
-        Key([], 'h', lazy.layout.grow_left(), desc='Grow window to the left'),
-        Key([], 'l', lazy.layout.grow_right(), desc='Grow window to the right'),
-        Key([], 'j', lazy.layout.grow_down(), desc='Grow window down'),
-        Key([], 'k', lazy.layout.grow_up(), desc='Grow window up'),
-        Key([], "m", lazy.layout.maximize(), desc='Grow to maximum size in monad layout'),
-        Key([], 'n', lazy.layout.normalize(), desc='Reset all window sizes'),
-    ]),
-
+    Key(
+        [],
+        'XF86MonBrightnessUp',
+        lazy.widget['backlight'].change_backlight(backlight.ChangeDirection.UP),
+    ),
+    Key([], 'XF86MonBrightnessDown', lazy.widget['backlight'].change_backlight(backlight.ChangeDirection.DOWN)),
+    Key(
+        [],
+        'XF86AudioRaiseVolume',
+        lazy.widget['volume'].increase_vol(),
+    ),
+    Key(
+        [],
+        'XF86AudioLowerVolume',
+        lazy.widget['volume'].decrease_vol(),
+    ),
+    Key(
+        [],
+        'XF86AudioMute',
+        lazy.widget['volume'].mute(),
+    ),
+    KeyChord(
+        [mod],
+        'r',
+        [
+            Key([], 'i', lazy.layout.grow(), desc='Grow window in monad layout'),
+            Key([], 'd', lazy.layout.shrink(), desc='Shrink window in monad layout'),
+            Key([], 'r', lazy.layout.reset(), desc='Reset window in monad layout'),
+            Key([], 'h', lazy.layout.grow_left(), desc='Grow window to the left'),
+            Key([], 'l', lazy.layout.grow_right(), desc='Grow window to the right'),
+            Key([], 'j', lazy.layout.grow_down(), desc='Grow window down'),
+            Key([], 'k', lazy.layout.grow_up(), desc='Grow window up'),
+            Key([], 'm', lazy.layout.maximize(), desc='Grow to maximum size in monad layout'),
+            Key([], 'n', lazy.layout.normalize(), desc='Reset all window sizes'),
+        ],
+    ),
+    # Applications
+    KeyChord(
+        [mod],
+        'a',
+        [
+            Key([], 'b', lazy.spawn(browser), desc='Launch browser'),
+            Key([], 'd', lazy.spawn(menu), desc='Launch menu'),
+            Key([], 'f', lazy.spawn('thunar'), desc='Launch file browser'),
+            Key(
+                [],
+                'j',
+                lazy.run_extension(
+                    CommandSet(
+                        commands={
+                            'Current tasks': 'kitty --class floating.terminal -e jira issue list -a navinkarkera -R unresolved -s~Recurring -s~Archived --updated -14d --jql "sprint in openSprints()"',
+                            'Current reviews': """kitty --class floating.terminal -e jira issue list -R unresolved --jql 'sprint in openSprints() and ("Reviewer 1"=currentuser() OR "Reviewer 2"=currentuser())'""",
+                            'Future tasks': 'kitty --class floating.terminal -e jira issue list -a navinkarkera -R unresolved --jql "sprint in futureSprints() and status != Done"',
+                            'Future Unassigned tasks': """ kitty --class floating.terminal -e jira issue list -ax -R unresolved --jql 'sprint in futureSprints() and sprint != "Last resort - Accepted" and sprint != "Last resort - Proposed"' """,
+                        },
+                        dmenu_lines=10,
+                    )
+                ),
+                desc='Jira tasks',
+            ),
+            Key(
+                [],
+                'w',
+                lazy.run_extension(
+                    CommandSet(
+                        commands={
+                            'Nightly tutor': 'kitty --session ~/.config/kitty/sessions/nightly-tutor.conf --detach',
+                            'Redwood tutor': 'kitty --session ~/.config/kitty/sessions/redwood-tutor.conf --detach',
+                        },
+                        dmenu_lines=10,
+                    )
+                ),
+                desc='Jira tasks',
+            ),
+        ],
+    ),
     Key([mod, 'shift'], 'space', lazy.layout.flip()),
     # Toggle between split and unsplit sides of stack.
     # Split = all windows displayed
@@ -82,8 +146,6 @@ keys = [
         desc='Next layout',
     ),
     Key([mod, 'shift'], 'Return', lazy.spawn(terminal), desc='Launch terminal'),
-    Key([mod], 'w', lazy.spawn(browser), desc='Launch browser'),
-    Key([mod], 'd', lazy.spawn(menu), desc='Launch menu'),
     Key([mod, 'shift'], 'd', lazy.spawn(dmenu), desc='Launch menu'),
     # Toggle between different layouts as defined below
     Key([mod], 'Tab', lazy.screen.toggle_group(), desc='Toggle last screen'),
@@ -106,37 +168,6 @@ keys = [
     Key([mod], 'b', lazy.group['0'].dropdown_toggle('btop'), desc='Show btop'),
     Key([mod, 'shift'], 'f', lazy.group['0'].dropdown_toggle('filemanager'), desc='Show yazi filemanager'),
     Key([mod, 'shift'], 'p', lazy.spawn('passmenu --type'), desc='Password manager in type mode'),
-
-    Key(
-        [mod, 'control'],
-        'j',
-        lazy.run_extension(
-            CommandSet(
-                commands={
-                    'Current tasks': 'kitty --class floating.terminal -e jira issue list -a navinkarkera -R unresolved -s~Recurring -s~Archived --updated -14d --jql "sprint in openSprints()"',
-                    'Current reviews': """kitty --class floating.terminal -e jira issue list -R unresolved --jql 'sprint in openSprints() and ("Reviewer 1"=currentuser() OR "Reviewer 2"=currentuser())'""",
-                    'Future tasks': 'kitty --class floating.terminal -e jira issue list -a navinkarkera -R unresolved --jql "sprint in futureSprints() and status != Done"',
-                    'Future Unassigned tasks': """ kitty --class floating.terminal -e jira issue list -ax -R unresolved --jql 'sprint in futureSprints() and sprint != "Last resort - Accepted" and sprint != "Last resort - Proposed"' """,
-                },
-                dmenu_lines=10,
-            )
-        ),
-        desc='Jira tasks',
-    ),
-    Key(
-        [mod, 'control'],
-        'w',
-        lazy.run_extension(
-            CommandSet(
-                commands={
-                    'Nightly tutor': 'kitty --session ~/.config/kitty/sessions/nightly-tutor.conf --detach',
-                    'Redwood tutor': 'kitty --session ~/.config/kitty/sessions/redwood-tutor.conf --detach',
-                },
-                dmenu_lines=10,
-            )
-        ),
-        desc='Jira tasks',
-    ),
 ]
 
 
@@ -183,7 +214,7 @@ scratchpad_group = [
                 'mail',
                 [terminal, '-e', 'neomutt'],
                 height=0.8,
-                width=0.7,
+                width=0.8,
                 x=0.1,
                 y=0.0,
                 on_focus_lost_hide=True,
@@ -194,7 +225,7 @@ scratchpad_group = [
                 'taskwarrior',
                 [terminal, '-e', 'taskwarrior-tui', '-r', 'today'],
                 height=0.8,
-                width=0.7,
+                width=0.8,
                 x=0.1,
                 y=0.0,
                 on_focus_lost_hide=True,
@@ -318,9 +349,7 @@ colors = [
     ['#008080', '#008080'],
 ]
 
-default_layout_params = {
-    "border_focus": colors[8][1], "border_width": 1, "single_border_width": 0
-}
+default_layout_params = {'border_focus': colors[8][1], 'border_width': 1, 'single_border_width': 0}
 
 layouts = [
     layout.MonadTall(ratio=0.6, **default_layout_params),
@@ -357,107 +386,61 @@ async def _():
         groupbox2.bar.draw()
 
 
-screens = [
-    Screen(
+def get_screen(show_systray=True):
+    widgets = [
+        widget.CurrentLayout(),
+        widget.GroupBox(
+            margin_y=3,
+            margin_x=0,
+            padding_y=5,
+            padding_x=3,
+            borderwidth=3,
+            rounded=False,
+            active=colors[2],
+            inactive=colors[11],
+            highlight_color=colors[1],
+            highlight_method='line',
+            this_current_screen_border=colors[10],
+            this_screen_border=colors[10],
+            other_current_screen_border=colors[6],
+            other_screen_border=colors[10],
+            foreground=colors[2],
+            background=colors[0],
+        ),
+        widget.Prompt(),
+        widget.WindowName(),
+        widget.Chord(
+            chords_colors={
+                'launch': ('#ff0000', '#ffffff'),
+            },
+            name_transform=lambda name: name.upper(),
+        ),
+        widget.Volume(emoji=True),
+        widget.Battery(foreground='#f09ff6'),
+        widget.ThermalSensor(tag_sensor='Package id 0'),
+        widget.GenPollCommand(
+            cmd='~/.config/i3/scripts/timewarrior-status', update_interval=1, shell=True, foreground='#fff986'
+        ),
+        # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
+        # widget.StatusNotifier(),
+        widget.Backlight(
+            backlight_name='nvidia_wmi_ec_backlight', change_command='brightnessctl s {0}%', foreground='#4ff4ff'
+        ),
+        widget.Clock(format='%Y-%m-%d %a %I:%M %p', foreground='#fff986'),
+    ]
+    if show_systray:
+        widgets.append(widget.Systray())
+    return Screen(
         bottom=bar.Bar(
-            [
-                widget.CurrentLayout(),
-                widget.GroupBox(
-                    margin_y=3,
-                    margin_x=0,
-                    padding_y=5,
-                    padding_x=3,
-                    borderwidth=3,
-                    rounded=False,
-                    active=colors[2],
-                    inactive=colors[11],
-                    highlight_color=colors[1],
-                    highlight_method='line',
-                    this_current_screen_border=colors[10],
-                    this_screen_border=colors[10],
-                    other_current_screen_border=colors[6],
-                    other_screen_border=colors[10],
-                    foreground=colors[2],
-                    background=colors[0],
-                ),
-                widget.Prompt(),
-                widget.WindowName(),
-                widget.Chord(
-                    chords_colors={
-                        'launch': ('#ff0000', '#ffffff'),
-                    },
-                    name_transform=lambda name: name.upper(),
-                ),
-                widget.Battery(),
-                widget.ThermalSensor(tag_sensor='Package id 0'),
-                widget.GenPollCommand(
-                    cmd='~/.config/i3/scripts/timewarrior-status',
-                    update_interval=1,
-                    shell=True,
-                ),
-                # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
-                # widget.StatusNotifier(),
-                widget.Systray(),
-                widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
-                widget.QuickExit(),
-            ],
+            widgets,
             24,
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
         ),
-    ),
-    Screen(
-        bottom=bar.Bar(
-            [
-                widget.CurrentLayout(),
-                widget.GroupBox(
-                    margin_y=3,
-                    margin_x=0,
-                    padding_y=5,
-                    padding_x=3,
-                    borderwidth=3,
-                    rounded=False,
-                    active=colors[2],
-                    inactive=colors[11],
-                    highlight_color=colors[1],
-                    highlight_method='line',
-                    this_current_screen_border=colors[10],
-                    this_screen_border=colors[10],
-                    other_current_screen_border=colors[6],
-                    other_screen_border=colors[10],
-                    foreground=colors[2],
-                    background=colors[0],
-                ),
-                widget.Prompt(),
-                widget.WindowName(),
-                widget.Chord(
-                    chords_colors={
-                        'launch': ('#ff0000', '#ffffff'),
-                    },
-                    name_transform=lambda name: name.upper(),
-                ),
-                widget.ThermalSensor(tag_sensor='Package id 0'),
-                widget.GenPollCommand(
-                    cmd='~/.config/i3/scripts/timewarrior-status',
-                    update_interval=1,
-                    shell=True,
-                ),
-                widget.BatteryIcon(),
-                # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
-                # widget.StatusNotifier(),
-                widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
-                widget.QuickExit(),
-            ],
-            24,
-            # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
-            # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
-        ),
-        # You can uncomment this variable if you see that on X11 floating resize/moving is laggy
-        # By default we handle these events delayed to already improve performance, however your system might still be struggling
-        # This variable is set to None (no cap) by default, but you can set it to 60 to indicate that you limit it to 60 events per second
-        # x11_drag_polling_rate = 60,
-    ),
-]
+    )
+
+
+screens = [get_screen(), get_screen(False)]
 
 # Drag floating layouts.
 mouse = [
