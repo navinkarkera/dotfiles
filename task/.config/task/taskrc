@@ -40,82 +40,82 @@ hooks.location=/home/navin/.config/task/hooks
 #include no-color.theme
 
 # ========================================================================================================================================================================================================
-rule.precedence.color=deleted,completed,active,keyword.,tag.,project.,overdue,scheduled,due.today,due.tomorrow,due,blocked,blocking,recurring,tagged,pri.
-
-# basics
-color.active=bold green on black
-color.completed=green on black
-color.deleted=red on black
-color.due.today=yellow on black
-color.due=blue on black
-color.overdue=magenta on black
-color.blocking=red
-color.blocked=blue
-color.recurring=
-color.scheduled=cyan on black
-color.tagged=rgb350
-color.tag.maintainer=rgb531
-color.uda=
-color.pri.H=on yellow
-color.pri.M=
-color.pri.L=bold black
-color.pri.none=
-
-# missing attributes
-color.project.none=
-color.tag.none=
-color.pri.none=
-
-# personal color rules (replace "X" with your value)
-color.keyword.X=
-color.project.X=
-color.tag.next=bold yellow on bright black
-color.uda.X=
-
-# interface
-color.alternate=yellow
-color.header=bold yellow
-color.label=yellow
-color.footnote=bold cyan
-
-# burndown report
-color.burndown.pending=on bright green
-color.burndown.started=on bright yellow
-color.burndown.done=on red
-
-# calendar
-color.calendar.holiday=yellow
-color.calendar.today=yellow
-color.calendar.due.today=yellow on bright yellow
-color.calendar.due=on bright green
-color.calendar.overdue=on bright magenta
-color.calendar.weekend=on white
-color.calendar.weeknumber=white on bright black
-
-# history report
-color.history.add=blue on bright yellow
-color.history.done=red on bright green
-color.history.delete=black on bright red
-
-# summary report (background color only)
-color.summary.bar=on bright green
-color.summary.background=on white
-
-# status
-color.error=red on black
-color.debug=white on black
-color.undo.before=yellow
-color.undo.after=green
-color.sync.added=green
-color.sync.changed=yellow
-color.sync.rejected=red
-color.warning=bold red
-# ========================================================================================================================================================================================================
-news.version=2.6.0
-# Reports
+# rule.precedence.color=deleted,completed,active,keyword.,tag.,project.,overdue,scheduled,due.today,due.tomorrow,due,blocked,blocking,recurring,tagged,pri.
+#
+# # basics
+# color.active=bold green on black
+# color.completed=green on black
+# color.deleted=red on black
+# color.due.today=yellow on black
+# color.due=blue on black
+# color.overdue=magenta on black
+# color.blocking=red
+# color.blocked=blue
+# color.recurring=
+# color.scheduled=cyan on black
+# color.tagged=rgb350
+# color.tag.maintainer=rgb531
+# color.uda=
+# color.pri.H=on yellow
+# color.pri.M=
+# color.pri.L=bold black
+# color.pri.none=
+#
+# # missing attributes
+# color.project.none=
+# color.tag.none=
+# color.pri.none=
+#
+# # personal color rules (replace "X" with your value)
+# color.keyword.X=
+# color.project.X=
+# color.tag.next=bold yellow on bright black
+# color.uda.X=
+#
+# # interface
+# color.alternate=yellow
+# color.header=bold yellow
+# color.label=yellow
+# color.footnote=bold cyan
+#
+# # burndown report
+# color.burndown.pending=on bright green
+# color.burndown.started=on bright yellow
+# color.burndown.done=on red
+#
+# # calendar
+# color.calendar.holiday=yellow
+# color.calendar.today=yellow
+# color.calendar.due.today=yellow on bright yellow
+# color.calendar.due=on bright green
+# color.calendar.overdue=on bright magenta
+# color.calendar.weekend=on white
+# color.calendar.weeknumber=white on bright black
+#
+# # history report
+# color.history.add=blue on bright yellow
+# color.history.done=red on bright green
+# color.history.delete=black on bright red
+#
+# # summary report (background color only)
+# color.summary.bar=on bright green
+# color.summary.background=on white
+#
+# # status
+# color.error=red on black
+# color.debug=white on black
+# color.undo.before=yellow
+# color.undo.after=green
+# color.sync.added=green
+# color.sync.changed=yellow
+# color.sync.rejected=red
+# color.warning=bold red
+# # ========================================================================================================================================================================================================
+# news.version=2.6.0
+# # Reports
 report.next.filter=status:pending -WAITING
-
-# Tasks to work on today
+#
+# # Tasks to work on today
 report.today.description=Tasks for today
 report.today.columns=id,start.age,entry.age,depends,priority,project,tags,recur,scheduled.countdown,due.relative,until.remaining,description,urgency
 report.today.labels=ID,Active,Age,Deps,P,Project,Tag,Recur,S,Due,Until,Description,Urg
@@ -149,19 +149,19 @@ report.ideas.columns=id,start.age,entry.age,depends,priority,project,tags,recur,
 report.ideas.labels=ID,Active,Age,Deps,P,Project,Tag,Recur,S,Due,Until,Description,Urg,Modified
 report.ideas.sort=entry-,modified-
 report.ideas.filter=status:pending -WAITING +ideas
-
-# Taskwarrior tui
-uda.taskwarrior-tui.selection.reverse=yes
-
-# Alias
+#
+# # Taskwarrior tui
+# uda.taskwarrior-tui.selection.reverse=yes
+#
+# # Alias
 alias.attach=execute /home/navin/.config/taskopen/attach
 alias.addnote=execute /home/navin/.config/taskopen/addnote
-
-# Shortcut
-# uda.taskwarrior-tui.keyconfig.shortcut1=o
-uda.taskwarrior-tui.shortcuts.1=taskopen
-uda.taskwarrior-tui.shortcuts.2=task addnote
-uda.taskwarrior-tui.shortcuts.3=task attach
-uda.taskwarrior-tui.shortcuts.4=task rc.confirmation=off modify -new
-uda.taskwarrior-tui.shortcuts.9=view_task_info
-uda.taskwarrior-tui.shortcuts.8=task_reminder
+#
+# # Shortcut
+# # uda.taskwarrior-tui.keyconfig.shortcut1=o
+# uda.taskwarrior-tui.shortcuts.1=taskopen
+# uda.taskwarrior-tui.shortcuts.2=task addnote
+# uda.taskwarrior-tui.shortcuts.3=task attach
+# uda.taskwarrior-tui.shortcuts.4=task rc.confirmation=off modify -new
+# uda.taskwarrior-tui.shortcuts.9=view_task_info
+# uda.taskwarrior-tui.shortcuts.8=task_reminder

@@ -94,6 +94,13 @@ keys = [
             Key([], 'n', lazy.layout.normalize(), desc='Reset all window sizes'),
         ],
     ),
+    KeyChord(
+        [mod, 'shift'],
+        'm',
+        [
+            Key([], 'l', lazy.layout.move_window_to_next_split(), desc='Move window to next split'),
+        ],
+    ),
     # Applications
     KeyChord(
         [mod],
@@ -223,7 +230,7 @@ scratchpad_group = [
             ),
             DropDown(
                 'taskwarrior',
-                [terminal, '-e', 'taskwarrior-tui', '-r', 'today'],
+                [terminal, '-e', 'vit'],
                 height=0.8,
                 width=0.8,
                 x=0.1,
@@ -357,6 +364,10 @@ layouts = [
     layout.Columns(**default_layout_params),
     # layout.Stack(num_stacks=2),
     layout.Max(),
+    layout.ScreenSplit(splits=[
+        {'layout': layout.Max(), 'name': 'left', 'rect': (0.5, 0, 0.5, 1)},
+        {'layout': layout.Columns(), 'name': 'right', 'rect': (0, 0, 0.5, 1)},
+    ]),
     # Try more layouts by unleashing below layouts.
     # layout.Bsp(),
     # layout.Matrix(),
