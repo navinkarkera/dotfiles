@@ -38,7 +38,7 @@ alt = 'mod1'
 ctrl = 'control'
 terminal = 'kitty'
 floating_terminal = terminal + ' --class floating.terminal '
-browser = 'firefox'
+browser = 'firefox-developer-edition'
 menu = 'rofi -modi drun -show drun -config ~/.config/rofi/rofidmenu.rasi'
 dmenu = 'dmenu_run'
 
@@ -141,7 +141,6 @@ keys = [
             ),
         ],
     ),
-    Key([mod, 'shift'], 'space', lazy.layout.flip()),
     # Toggle between split and unsplit sides of stack.
     # Split = all windows displayed
     # Unsplit = 1 window displayed, like Max layout, but still with
@@ -171,6 +170,8 @@ keys = [
     Key([mod], 'n', lazy.group['0'].dropdown_toggle('notes'), desc='Open notes'),
     Key([mod], 'm', lazy.group['0'].dropdown_toggle('mail'), desc='Open mail'),
     Key([mod], 't', lazy.group['0'].dropdown_toggle('taskwarrior'), desc='Open taskwarrior'),
+    Key([mod], 'g', lazy.group['0'].dropdown_toggle('taskwarrior-github'), desc='Open taskwarrior github'),
+    Key([mod, 'shift'], 'm', lazy.group['0'].dropdown_toggle('taskwarrior-maintainer'), desc='Open taskwarrior github'),
     Key([mod, 'control'], 't', lazy.group['0'].dropdown_toggle('timer'), desc='Start and log time'),
     Key([mod], 'b', lazy.group['0'].dropdown_toggle('btop'), desc='Show btop'),
     Key([mod, 'shift'], 'f', lazy.group['0'].dropdown_toggle('filemanager'), desc='Show yazi filemanager'),
@@ -219,7 +220,7 @@ scratchpad_group = [
             ),
             DropDown(
                 'mail',
-                [terminal, '-e', 'neomutt'],
+                [terminal, '-T', 'Email', '-e', 'neomutt'],
                 height=0.8,
                 width=0.8,
                 x=0.1,
@@ -230,7 +231,29 @@ scratchpad_group = [
             ),
             DropDown(
                 'taskwarrior',
-                [terminal, '-e', 'vit'],
+                [terminal, '-T', 'Tasks', '-e', 'vit'],
+                height=0.8,
+                width=0.8,
+                x=0.1,
+                y=0.0,
+                on_focus_lost_hide=True,
+                opacity=0.85,
+                warp_pointer=False,
+            ),
+            DropDown(
+                'taskwarrior-github',
+                [terminal, '-T', 'Tasks', '-e', 'vit', 'github'],
+                height=0.8,
+                width=0.8,
+                x=0.1,
+                y=0.0,
+                on_focus_lost_hide=True,
+                opacity=0.85,
+                warp_pointer=False,
+            ),
+            DropDown(
+                'taskwarrior-maintainer',
+                [terminal, '-T', 'Tasks', '-e', 'vit', 'maintainer'],
                 height=0.8,
                 width=0.8,
                 x=0.1,
@@ -360,8 +383,12 @@ default_layout_params = {'border_focus': colors[8][1], 'border_width': 1, 'singl
 
 layouts = [
     layout.MonadTall(ratio=0.6, **default_layout_params),
+    layout.Columns(
+        initial_ratio=1.2,
+        split=False,
+        **default_layout_params
+    ),
     layout.MonadWide(ratio=0.7, **default_layout_params),
-    layout.Columns(**default_layout_params),
     # layout.Stack(num_stacks=2),
     layout.Max(),
     layout.ScreenSplit(splits=[
@@ -426,7 +453,7 @@ def get_screen(show_systray=True):
             },
             name_transform=lambda name: name.upper(),
         ),
-        widget.Volume(emoji=True),
+        widget.Volume(emoji=False),
         widget.Battery(foreground='#f09ff6'),
         widget.ThermalSensor(tag_sensor='Package id 0'),
         widget.GenPollCommand(

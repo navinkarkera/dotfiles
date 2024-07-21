@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 pids="$(vit --list-pids)"
 for pid in ${pids}; do

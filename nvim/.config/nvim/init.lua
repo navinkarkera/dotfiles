@@ -487,6 +487,7 @@ map('n', '<leader>fc', ":ListFilesFromBranch " .. base_branch .. "<CR>")
 require('nvim-treesitter.configs').setup {
   ensure_installed = {
     "html",
+    "htmldjango",
     "css",
     "typescript",
     "javascript",
@@ -497,6 +498,7 @@ require('nvim-treesitter.configs').setup {
     "bash",
     "json",
     "org",
+    "ron",
     "markdown",
     "markdown_inline",
     "yaml",

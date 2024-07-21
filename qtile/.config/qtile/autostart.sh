@@ -7,3 +7,4 @@ xset r rate 300 40 &
 "$HOME"/.screenlayout/dual-screen.sh &
 sleep 2
 nitrogen --restore &
+# xrandr -r 60 &
