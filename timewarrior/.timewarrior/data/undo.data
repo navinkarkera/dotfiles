@@ -21744,3 +21744,79 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20240721T144112Z","end":"20240721T144123Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240722T092613Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240722T092613Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240722T092613Z","tags":["SE-6225 respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240722T092613Z","tags":["SE-6225 respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240722T092613Z","end":"20240722T093237Z","tags":["SE-6225 respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240722T093239Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240722T093239Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240722T093239Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240722T093239Z","tags":["BB-8950 work on block"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240722T093239Z","end":"20240722T102859Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240722T104055Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240722T104055Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240722T104055Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240722T104055Z","tags":["BB-8950 work on block"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240722T104055Z","end":"20240722T115518Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240722T123236Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240722T123236Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240722T123236Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240722T123236Z","tags":["BB-8950 work on block"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240722T123236Z","end":"20240722T130510Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240722T134830Z"}
