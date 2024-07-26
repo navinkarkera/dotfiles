@@ -32,10 +32,6 @@ fi
 if [ -x "$(command -v nm-applet)" ]; then
   nm-applet &
 fi
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-setxkbmap -option ctrl:nocaps &
-xset r rate 300 40 &
-"$HOME"/.screenlayout/dual-screen.sh &
 
 index=0
 monitors="$(polybar -m | sed s/:.*//)"

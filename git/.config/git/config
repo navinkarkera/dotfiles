@@ -9,7 +9,7 @@
 	dft = difftool
 	parent = "!echo ${GIT_PARENT_BRANCH:-master}"
 	dm = "!f() { [[ `git rev-parse --abbrev-ref HEAD` != \"master\" ]] && [[ `git rev-parse --abbrev-ref HEAD` != \"main\" ]] && git diff $(git parent)..HEAD; }; f"
-	dv = difftool -t vimdiff -y
+	dv = difftool --no-symlinks --dir-diff
 	gl = !git --no-pager config --global -l
 	se = !git rev-list --all | xargs git grep -F
 	s = status
@@ -41,12 +41,18 @@
 [diff]
 	colorMoved = default
 	tool = difftastic
+	tool = kitty
+	guitool = kitty.gui
 
 [difftool]
 	prompt = false
+	trustExitCode = true
 
-[difftool "difftastic"]
-	cmd = difft "$LOCAL" "$REMOTE"
+[difftool "kitty"]
+	cmd = kitten diff $LOCAL $REMOTE
+
+[difftool "kitty.gui"]
+	cmd = kitten diff $LOCAL $REMOTE
 
 [pager]
 	difftool = true

@@ -21820,3 +21820,557 @@ txn:
   type: interval
   before: 
   after: {"id":0,"start":"20240722T134830Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240722T134830Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240722T134830Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240722T134830Z","tags":["BB-8950 work on block"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240722T134830Z","end":"20240722T145758Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240722T151448Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240722T151448Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240722T151448Z","tags":["BB-8893 check and update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240722T151448Z","tags":["BB-8893 check and update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240722T151448Z","end":"20240722T151607Z","tags":["BB-8893 check and update"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240723T024527Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240723T024527Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240723T024527Z","tags":["BB-254 catch up on sprint updates"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240723T024527Z","tags":["BB-254 catch up on sprint updates"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240723T024527Z","end":"20240723T025036Z","tags":["BB-254 catch up on sprint updates"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240723T025036Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240723T025036Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240723T025036Z","tags":["BB-9012 setup"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240723T025036Z","tags":["BB-9012 setup"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240723T025036Z","end":"20240723T031519Z","tags":["BB-9012 setup"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240723T061157Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240723T061157Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240723T061157Z","tags":["BB-9012 fix bug"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240723T061157Z","tags":["BB-9012 fix bug"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240723T061157Z","end":"20240723T072725Z","tags":["BB-9012 fix bug"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240723T091433Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240723T091433Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240723T091433Z","tags":["BB-254 sprint retrospective meeting"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240723T091433Z","tags":["BB-254 sprint retrospective meeting"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240723T091433Z","end":"20240723T100303Z","tags":["BB-254 sprint retrospective meeting"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240723T104908Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240723T104908Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240723T104908Z","tags":["BB-9012 fix bug"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240723T104908Z","tags":["BB-9012 fix bug"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240723T104908Z","end":"20240723T110206Z","tags":["BB-9012 fix bug"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240723T110206Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240723T110206Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240723T110206Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240723T110206Z","tags":["BB-8950 work on block"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240723T110206Z","end":"20240723T115146Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240723T135959Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240723T135959Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240723T135959Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240723T135959Z","tags":["BB-8950 work on block"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240723T135959Z","end":"20240723T152214Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240723T154400Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240723T154400Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240723T154400Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240723T154400Z","tags":["BB-8950 work on block"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240723T154400Z","end":"20240723T154547Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240723T154547Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240723T154547Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240723T154547Z","tags":["BB-254 post end of sprint update and catchup on others updates"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240723T154547Z","tags":["BB-254 post end of sprint update and catchup on others updates"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240723T154547Z","end":"20240723T155053Z","tags":["BB-254 post end of sprint update and catchup on others updates"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240724T090615Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240724T090615Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240724T090615Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240724T090615Z","tags":["BB-8950 work on block"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240724T090615Z","end":"20240724T113953Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240724T124033Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240724T124033Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240724T124033Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240724T124033Z","tags":["BB-8950 work on block"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240724T124033Z","end":"20240724T135411Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240724T143143Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240724T143143Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240724T143143Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240724T143143Z","tags":["BB-8950 work on block"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240724T143143Z","end":"20240724T155233Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240725T022714Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240725T022714Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240725T022714Z","tags":["BB-8950 fix show_correctness save bug"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240725T022714Z","tags":["BB-8950 fix show_correctness save bug"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240725T022714Z","end":"20240725T032448Z","tags":["BB-8950 fix show_correctness save bug"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240725T032737Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240725T032737Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240725T032737Z","tags":["BB-8950 fix show_correctness save bug"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240725T032737Z","tags":["BB-8950 fix show_correctness save bug"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240725T032737Z","end":"20240725T032742Z","tags":["BB-8950 fix show_correctness save bug"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240725T062153Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240725T062153Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240725T062153Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240725T062153Z","tags":["BB-8950 work on block"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240725T062153Z","end":"20240725T080519Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240725T100531Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240725T100531Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240725T100531Z","tags":["BB-8824 update PR based on feedback"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240725T100531Z","tags":["BB-8824 update PR based on feedback"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240725T100531Z","end":"20240725T101741Z","tags":["BB-8824 update PR based on feedback"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240725T101741Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240725T101741Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240725T101741Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240725T101741Z","tags":["BB-8950 work on block"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240725T101741Z","end":"20240725T110729Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240725T135947Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240725T135947Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240725T135947Z","tags":["BB-8271 wait for people in social chat meeting"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240725T135947Z","tags":["BB-8271 wait for people in social chat meeting"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240725T135947Z","end":"20240725T140754Z","tags":["BB-8271 wait for people in social chat meeting"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240725T140755Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240725T140755Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240725T140755Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240725T140755Z","tags":["BB-8950 work on block"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240725T140755Z","end":"20240725T141240Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240725T141240Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240725T141240Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240725T141240Z","tags":["BB-8271 social chat"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240725T141240Z","tags":["BB-8271 social chat"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240725T141240Z","end":"20240725T143730Z","tags":["BB-8271 social chat"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240725T143730Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240725T143730Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240725T143730Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240725T143730Z","tags":["BB-8950 work on block"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240725T143730Z","end":"20240725T150550Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240725T150550Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240725T150550Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240725T150550Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240725T150550Z","tags":["BB-8950 work on block"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240725T150550Z","end":"20240725T151123Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240726T061547Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240726T061547Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240726T061547Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240726T061547Z","tags":["BB-8950 work on block"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240726T061547Z","end":"20240726T075249Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240726T094234Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240726T094234Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240726T094234Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240726T094234Z","tags":["BB-8950 work on block"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240726T094234Z","end":"20240726T104749Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240726T104749Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240726T104749Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240726T104749Z","tags":["FAL-49 read and respond to Falcon move post"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240726T104749Z","tags":["FAL-49 read and respond to Falcon move post"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240726T104749Z","end":"20240726T105330Z","tags":["FAL-49 read and respond to Falcon move post"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240726T105332Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240726T105332Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240726T105332Z","tags":["SE-6267 read post"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240726T105332Z","tags":["SE-6267 read post"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240726T105332Z","end":"20240726T110446Z","tags":["SE-6267 read post"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240726T110447Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240726T110447Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240726T110447Z","tags":["BB-8893 read email and comment"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240726T110447Z","tags":["BB-8893 read email and comment"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240726T110447Z","end":"20240726T111805Z","tags":["BB-8893 read email and comment"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240726T124714Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240726T124714Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240726T124714Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240726T124714Z","tags":["BB-8950 work on block"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240726T124714Z","end":"20240726T130040Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240726T131129Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240726T131129Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240726T131129Z","tags":["BB-8950 work on block"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240726T131129Z","tags":["BB-8950 work on block"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240726T131129Z","end":"20240726T143352Z","tags":["BB-8950 work on block"]}

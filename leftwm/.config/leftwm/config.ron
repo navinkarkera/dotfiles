@@ -14,8 +14,8 @@
     backend: X11rb,
     mousekey: "Mod4",
     workspaces: [
-	( output: "eDP-1", y: 442, x: 0, height: 1440, width: 2560 ),
-	( output: "DP-1-2", y: 0, x: 2560, height: 2160, width: 3840 ),
+	//( output: "eDP-1", y: 442, x: 0, height: 1440, width: 2560 ),
+	//( output: "DP-1-2", y: 0, x: 2560, height: 2160, width: 3840 ),
     ],
     tags: [
         "1",
@@ -63,7 +63,7 @@
         (name: "Timer", value: "kitty -T Timer -e twc", x: 0.2, y: 0.2, height: 0.6, width: 0.6),
         (name: "Btop", value: "kitty -T Monitor -e btop", x: 0.1, y: 0.1, height: 0.8, width: 0.8),
         (name: "Filemanager", value: "kitty -T Filemanager -e yazi", x: 0.05, y: 0.1, height: 0.8, width: 0.9),
-        (name: "Filemanager-GUI", value: "thunar", x: 0.05, y: 0.1, height: 0.8, width: 0.9),
+        (name: "Filemanager-GUI", value: "thunar", x: 0.6, y: 0.3, height: 0.4, width: 0.4),
     ],
     window_rules: [],
     disable_current_tag_swap: false,
@@ -74,7 +74,7 @@
     single_window_border: false,
     sloppy_mouse_follows_focus: true,
     create_follows_cursor: None,
-    auto_derive_workspaces: false,
+    auto_derive_workspaces: true,
     disable_cursor_reposition_on_resize: false,
     keybind: [
         (command: Execute, value: "rofi -modi drun -show drun -config ~/.config/rofi/rofidmenu.rasi", modifier: ["modkey"], key: "p"),
