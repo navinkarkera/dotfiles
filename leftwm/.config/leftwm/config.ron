@@ -30,13 +30,13 @@
     ],
     max_window_width: None,
     layouts: [
+        "MainAndDeck",
         "MainAndVertStack",
         "MainAndHorizontalStack",
         "Monocle",
         "CenterMain",
         "CenterMainBalanced",
         "CenterMainFluid",
-        "MainAndDeck",
     ],
     layout_definitions: [
         (name: "EvenHorizontal", flip: None, rotate: North, reserve: None, columns: (flip: None, rotate: North, main: None, stack: (flip: None, rotate: North, split: Vertical), second_stack: None)),
@@ -73,19 +73,19 @@
     focus_new_windows: true,
     single_window_border: false,
     sloppy_mouse_follows_focus: true,
-    create_follows_cursor: None,
+    create_follows_cursor: true,
     auto_derive_workspaces: true,
     disable_cursor_reposition_on_resize: false,
     keybind: [
         (command: Execute, value: "rofi -modi drun -show drun -config ~/.config/rofi/rofidmenu.rasi", modifier: ["modkey"], key: "p"),
         (command: Execute, value: "kitty", modifier: ["modkey", "Shift"], key: "Return"),
         (command: Execute, value: "passmenu --type", modifier: ["modkey", "Shift"], key: "p"),
-        (command: CloseWindow, value: "", modifier: ["modkey", "Shift"], key: "q"),
+        (command: CloseWindow, value: "", modifier: ["modkey"], key: "q"),
         (command: SoftReload, value: "", modifier: ["modkey", "Shift"], key: "r"),
         (command: Execute, value: "loginctl kill-session $XDG_SESSION_ID", modifier: ["modkey", "Shift"], key: "x"),
         (command: Execute, value: "i3lock", modifier: ["modkey", "Control"], key: "l"),
-        (command: MoveToLastWorkspace, value: "", modifier: ["modkey", "Shift"], key: "w"),
-        (command: SwapTags, value: "", modifier: ["modkey"], key: "w"),
+        (command: MoveToLastWorkspace, value: "", modifier: ["modkey", "Shift"], key: "Tab"),
+        (command: ReturnToLastTag, value: "", modifier: ["modkey"], key: "Tab"),
         (command: MoveWindowUp, value: "", modifier: ["modkey", "Shift"], key: "k"),
         (command: MoveWindowDown, value: "", modifier: ["modkey", "Shift"], key: "j"),
         (command: MoveWindowTop, value: "", modifier: ["modkey", "Control"], key: "Return"),
@@ -122,6 +122,7 @@
         (command: MoveToTag, value: "8", modifier: ["modkey", "Shift"], key: "8"),
         (command: MoveToTag, value: "9", modifier: ["modkey", "Shift"], key: "9"),
 	(command: ToggleFullScreen, modifier: ["modkey"], key: "f"),
+	(command: ToggleFloating, modifier: ["modkey", "Alt"], key: "f"),
 
 	(command: ToggleScratchPad, value: "Terminal", modifier: ["modkey"], key: "Return"),
 	(command: ToggleScratchPad, value: "Notes", modifier: ["modkey"], key: "n"),
@@ -132,10 +133,15 @@
 	(command: ToggleScratchPad, value: "Filemanager", modifier: ["modkey", "Shift"], key: "f"),
 	(command: ToggleScratchPad, value: "Filemanager-GUI", modifier: ["modkey", "Control"], key: "f"),
 
+	// Dedicated keys
 	(command: Execute, value: "~/.config/i3/scripts/volume_brightness.sh volume_up", modifier: [], key: "XF86AudioRaiseVolume"),
 	(command: Execute, value: "~/.config/i3/scripts/volume_brightness.sh volume_down", modifier: [], key: "XF86AudioLowerVolume"),
 	(command: Execute, value: "~/.config/i3/scripts/volume_brightness.sh brightness_up", modifier: [], key: "XF86MonBrightnessUp"),
 	(command: Execute, value: "~/.config/i3/scripts/volume_brightness.sh brightness_down", modifier: [], key: "XF86MonBrightnessDown"),
+	(command: Execute, value: "flameshot gui", modifier: [], key: "Print"),
+
+	// Applications
+	(command: Execute, value: "firefox-developer-edition", modifier: ["modkey", "Shift"], key: "w"),
     ],
     state_path: None,
 )

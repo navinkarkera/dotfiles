@@ -94,7 +94,6 @@ require('lazy').setup {
   "rafamadriz/friendly-snippets",
   "honza/vim-snippets",
   "windwp/nvim-ts-autotag",
-  "numToStr/Navigator.nvim",
   "ThePrimeagen/harpoon",
   "danymat/neogen",
   {
@@ -899,22 +898,6 @@ map("v", [[<M-e>]],
   [["vy<cmd>lua require('harpoon.term').sendCommand(require('my-functions').count_or_one(), vim.fn.getreg("v"))<CR> ]])
 map("n", ",l", [[<cmd>lua require('harpoon.term').sendCommand(require('my-functions').count_or_one(), '!!')<CR>]])
 map("n", "<M-space>", my_functions.execute_from_harpoon)
-
--- Navigator
-local Navigator = require("Navigator")
-Navigator.setup({})
-map("n", "<m-h>", Navigator.left)
-map("n", "<m-k>", Navigator.up)
-map("n", "<m-l>", Navigator.right)
-map("n", "<m-j>", Navigator.down)
-map("n", "<m-^>", Navigator.previous)
--- terminal keymaps
-map("t", "<m-h>", Navigator.left)
-map("t", "<m-k>", Navigator.up)
-map("t", "<m-l>", Navigator.right)
-map("t", "<m-j>", Navigator.down)
-map("t", "<m-^>", Navigator.previous)
-
 
 -- refactoring.nvim
 require("refactoring").setup {
