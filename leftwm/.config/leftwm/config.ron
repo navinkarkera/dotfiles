@@ -31,12 +31,7 @@
     max_window_width: None,
     layouts: [
         "MainAndDeck",
-        "MainAndVertStack",
-        "MainAndHorizontalStack",
         "Monocle",
-        "CenterMain",
-        "CenterMainBalanced",
-        "CenterMainFluid",
     ],
     layout_definitions: [
         (name: "EvenHorizontal", flip: None, rotate: North, reserve: None, columns: (flip: None, rotate: North, main: None, stack: (flip: None, rotate: North, split: Vertical), second_stack: None)),
@@ -77,7 +72,7 @@
     auto_derive_workspaces: true,
     disable_cursor_reposition_on_resize: false,
     keybind: [
-        (command: Execute, value: "rofi -modi drun -show drun -config ~/.config/rofi/rofidmenu.rasi", modifier: ["modkey"], key: "p"),
+        (command: Execute, value: "rofi -modi drun -show drun -config ~/.config/rofi/rofidmenu.rasi", modifier: ["modkey"], key: "d"),
         (command: Execute, value: "kitty", modifier: ["modkey", "Shift"], key: "Return"),
         (command: Execute, value: "passmenu --type", modifier: ["modkey", "Shift"], key: "p"),
         (command: CloseWindow, value: "", modifier: ["modkey"], key: "q"),
@@ -101,6 +96,8 @@
         (command: FocusWindowDown, value: "", modifier: ["modkey"], key: "Down"),
         (command: NextLayout, value: "", modifier: ["modkey", "Control"], key: "Up"),
         (command: PreviousLayout, value: "", modifier: ["modkey", "Control"], key: "Down"),
+        (command: IncreaseMainWidth, value: "5", modifier: ["modkey"], key: "i"),
+        (command: DecreaseMainWidth, value: "5", modifier: ["modkey", "Control"], key: "i"),
         (command: FocusWorkspaceNext, value: "", modifier: ["modkey"], key: "Right"),
         (command: FocusWorkspacePrevious, value: "", modifier: ["modkey"], key: "Left"),
         (command: GotoTag, value: "1", modifier: ["modkey"], key: "1"),

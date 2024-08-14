@@ -1,4 +1,6 @@
 #!/usr/bin/env sh
 
-description=$(task _get $1.description)
-remind "$description" in 2 hour
+due=$(task _get $1.due)
+formatted_date=$(date -d $due +"%H:%M %m/%d/%Y")
+remind "$2" at $formatted_date
+task $1 modify +reminder

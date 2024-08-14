@@ -60,6 +60,7 @@ macro index,pager gm "<change-folder>Mentions<enter>" "go to mentions"
 macro index,pager Mm ";<save-message>Mentions<enter>" "move mail to mentions"
 macro index,pager Cm ";<copy-message>Mentions<enter>" "copy mail to mentions"
 
+bind index,pager <Tab> previous-unread
 
 color indicator white cyan
 color sidebar_highlight blue black
