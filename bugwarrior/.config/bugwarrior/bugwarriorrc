@@ -34,7 +34,7 @@ jira.password = @oracle:eval:pass opencraft-jira-navinkarkera
 jira.import_labels_as_tags = False
 jira.import_sprints_as_tags = False
 jira.label_template = jira_{{label}}
-jira.query = (sprint IN openSprints() OR sprint = "Stretch Goals") AND assignee=currentuser() AND type != epic AND (status = 'In progress' OR status = 'Backlog')
+jira.query = ((sprint IN openSprints() OR sprint = "Stretch Goals") OR sprint IN futureSprints() AND status = 'In progress') AND assignee=currentuser() AND type != epic AND (status = 'In progress' OR status = 'Backlog')
 jira.add_tags = jira_task, {{jirastatus.split(' ')|join('_')}}
 jira.description_template = {{jiraid}} - {{jirasummary}}
 

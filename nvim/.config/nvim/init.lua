@@ -987,8 +987,11 @@ map("n", "<M-[>", ":RunFB ")
 map("v", "<M-[>", [["vy:RunFB <C-R>v]])
 map("n", "<F2>", ":Run<Up><CR>")
 map("n", "<M-]>", my_functions.fzf_all_tasks)
-map("t", "<M-r>", my_functions.restart_cmd)
+map("n", "<M-r>", my_functions.restart_cmd)
 map("n", "<leader>mt", my_functions.fzf_make_tasks)
+-- github
+map("n", "<leader>gv", "<cmd>Run gh pr view<CR>")
+map("n", "<leader>gc", "<cmd>Run gh pr checks --watch --fail-fast<CR>")
 
 vim.api.nvim_create_user_command("Grep", "silent grep! <q-args>", { nargs = 1 })
 vim.api.nvim_create_user_command(

@@ -28,6 +28,7 @@
 [core]
 	pager = delta --paging=always
 	excludesfile = /home/navin/dotfiles/git/.config/git/.gitignore_global
+	compression = 0
 
 [interactive]
 	diffFilter = delta --color-only
@@ -62,3 +63,6 @@
 	defaultBranch = main
 [credential]
 	helper = store
+[http]
+	postBuffer = 500M
+	maxRequestBuffer = 100M

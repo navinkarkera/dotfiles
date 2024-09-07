@@ -24012,3 +24012,1479 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20240814T151247Z","end":"20240814T153748Z","tags":["FAL-3797 work on feedback"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240815T064406Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240815T064406Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240815T064406Z","tags":["BB-8757 respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240815T064406Z","tags":["BB-8757 respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240815T064406Z","end":"20240815T064729Z","tags":["BB-8757 respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240815T064730Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240815T064730Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240815T064730Z","tags":["FAL-3781 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240815T064730Z","tags":["FAL-3781 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240815T064730Z","end":"20240815T073802Z","tags":["FAL-3781 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240815T095045Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240815T095045Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240815T095045Z","tags":["FAL-3781 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240815T095045Z","tags":["FAL-3781 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240815T095045Z","end":"20240815T101027Z","tags":["FAL-3781 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240815T104932Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240815T104932Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240815T104932Z","tags":["FAL-3781 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240815T104932Z","tags":["FAL-3781 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240815T104932Z","end":"20240815T111232Z","tags":["FAL-3781 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240815T111323Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240815T111323Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240815T111323Z","tags":["BB-8950 setup olive tutor"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240815T111323Z","tags":["BB-8950 setup olive tutor"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240815T111323Z","end":"20240815T111752Z","tags":["BB-8950 setup olive tutor"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240815T112801Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240815T112801Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240815T112801Z","tags":["BB-8950 setup olive tutor"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240815T112801Z","tags":["BB-8950 setup olive tutor"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240815T112801Z","end":"20240815T113505Z","tags":["BB-8950 setup olive tutor"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240815T134305Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240815T134305Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240815T134305Z","tags":["FAL-3786 find reviewer"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240815T134305Z","tags":["FAL-3786 find reviewer"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240815T134305Z","end":"20240815T135050Z","tags":["FAL-3786 find reviewer"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240815T135051Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240815T135051Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240815T135051Z","tags":["BB-8950 setup olive tutor"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240815T135051Z","tags":["BB-8950 setup olive tutor"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240815T135051Z","end":"20240815T145423Z","tags":["BB-8950 setup olive tutor"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240816T093733Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240816T093733Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240816T093733Z","tags":["BB-8950 fix olive issues"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240816T093733Z","tags":["BB-8950 fix olive issues"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240816T093733Z","end":"20240816T095629Z","tags":["BB-8950 fix olive issues"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240816T095629Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240816T095629Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240816T095629Z","tags":["BB-9081 respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240816T095629Z","tags":["BB-9081 respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240816T095629Z","end":"20240816T101549Z","tags":["BB-9081 respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240816T101550Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240816T101550Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240816T101550Z","tags":["FAL-3797 test queryset"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240816T101550Z","tags":["FAL-3797 test queryset"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240816T101550Z","end":"20240816T110249Z","tags":["FAL-3797 test queryset"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240816T135130Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240816T135130Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240816T135130Z","tags":["FAL-3797 test queryset"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240816T135130Z","tags":["FAL-3797 test queryset"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240816T135130Z","end":"20240816T142625Z","tags":["FAL-3797 test queryset"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240816T142627Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240816T142627Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240816T142627Z","tags":["BB-8950 fix olive issues"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240816T142627Z","tags":["BB-8950 fix olive issues"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240816T142627Z","end":"20240816T143631Z","tags":["BB-8950 fix olive issues"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240816T163532Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240816T163532Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240816T163532Z","tags":["BB-8950 fix olive issues"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240816T163532Z","tags":["BB-8950 fix olive issues"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240816T163532Z","end":"20240816T164352Z","tags":["BB-8950 fix olive issues"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240819T064731Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240819T064731Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240819T064731Z","tags":["FAL-3778 read"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240819T064731Z","tags":["FAL-3778 read"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240819T064731Z","end":"20240819T064917Z","tags":["FAL-3778 read"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240819T064917Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240819T064917Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240819T064917Z","tags":["FAL-3799 read response (10m)"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240819T064917Z","tags":["FAL-3799 read response (10m)"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240819T064917Z","end":"20240819T065205Z","tags":["FAL-3799 read response (10m)"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240819T065206Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240819T065206Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240819T065206Z","tags":["FAL-3797 post slack msg before merge"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240819T065206Z","tags":["FAL-3797 post slack msg before merge"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240819T065206Z","end":"20240819T070305Z","tags":["FAL-3797 post slack msg before merge"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240819T070308Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240819T070308Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240819T070308Z","tags":["FAL-3797 post slack msg before merge"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240819T070308Z","tags":["FAL-3797 post slack msg before merge"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240819T070308Z","end":"20240819T070436Z","tags":["FAL-3797 post slack msg before merge"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240819T073230Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240819T073230Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240819T073230Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240819T073230Z","tags":["FAL-3786 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240819T073230Z","end":"20240819T074405Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240819T091017Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240819T091017Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240819T091017Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240819T091017Z","tags":["FAL-3786 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240819T091017Z","end":"20240819T103536Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240819T113051Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240819T113051Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240819T113051Z","tags":["FAL-3797 merge edx PR and create sandbox config"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240819T113051Z","tags":["FAL-3797 merge edx PR and create sandbox config"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240819T113051Z","end":"20240819T115205Z","tags":["FAL-3797 merge edx PR and create sandbox config"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240819T131840Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240819T131840Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240819T131840Z","tags":["FAL-3797 debug sandbox issue"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240819T131840Z","tags":["FAL-3797 debug sandbox issue"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240819T131840Z","end":"20240819T133120Z","tags":["FAL-3797 debug sandbox issue"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240819T133121Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240819T133121Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240819T133121Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240819T133121Z","tags":["FAL-3786 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240819T133121Z","end":"20240819T134950Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240819T140639Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240819T140639Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240819T140639Z","tags":["BB-8950 send email to Mike and update task"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240819T140639Z","tags":["BB-8950 send email to Mike and update task"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240819T140639Z","end":"20240819T142131Z","tags":["BB-8950 send email to Mike and update task"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240819T144532Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240819T144532Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240819T144532Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240819T144532Z","tags":["FAL-3786 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240819T144532Z","end":"20240819T150412Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240820T063539Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240820T063539Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240820T063539Z","tags":["FAL-3797 update ticket and spillover reason"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240820T063539Z","tags":["FAL-3797 update ticket and spillover reason"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240820T063539Z","end":"20240820T064439Z","tags":["FAL-3797 update ticket and spillover reason"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240820T064440Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240820T064440Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240820T064440Z","tags":["FAL-3781 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240820T064440Z","tags":["FAL-3781 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240820T064440Z","end":"20240820T065101Z","tags":["FAL-3781 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240820T065101Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240820T065101Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240820T065101Z","tags":["FAL-3786 read docs and investigate models"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240820T065101Z","tags":["FAL-3786 read docs and investigate models"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240820T065101Z","end":"20240820T074903Z","tags":["FAL-3786 read docs and investigate models"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240820T074953Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240820T074953Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240820T074953Z","tags":["FAL-3786 read docs and investigate models"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240820T074953Z","tags":["FAL-3786 read docs and investigate models"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240820T074953Z","end":"20240820T074955Z","tags":["FAL-3786 read docs and investigate models"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240820T100138Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240820T100138Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240820T100138Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240820T100138Z","tags":["FAL-3786 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240820T100138Z","end":"20240820T114101Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240820T134443Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240820T134443Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240820T134443Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240820T134443Z","tags":["FAL-3786 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240820T134443Z","end":"20240820T143451Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240820T152053Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240820T152053Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240820T152053Z","tags":["BB-254 post end of sprint update and catchup on others updates"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240820T152053Z","tags":["BB-254 post end of sprint update and catchup on others updates"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240820T152053Z","end":"20240820T153603Z","tags":["BB-254 post end of sprint update and catchup on others updates"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240821T031419Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240821T031419Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240821T031419Z","tags":["FAL-3786 respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240821T031419Z","tags":["FAL-3786 respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240821T031419Z","end":"20240821T031936Z","tags":["FAL-3786 respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240821T031939Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240821T031939Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240821T031939Z","tags":["FAL-3797 read sandbox docs"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240821T031939Z","tags":["FAL-3797 read sandbox docs"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240821T031939Z","end":"20240821T032649Z","tags":["FAL-3797 read sandbox docs"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240821T064255Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240821T064255Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240821T064255Z","tags":["FAL-3781 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240821T064255Z","tags":["FAL-3781 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240821T064255Z","end":"20240821T074315Z","tags":["FAL-3781 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240821T094623Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240821T094623Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240821T094623Z","tags":["FAL-3781 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240821T094623Z","tags":["FAL-3781 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240821T094623Z","end":"20240821T095819Z","tags":["FAL-3781 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240821T095819Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240821T095819Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240821T095819Z","tags":["FAL-3786 investigate filters"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240821T095819Z","tags":["FAL-3786 investigate filters"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240821T095819Z","end":"20240821T105219Z","tags":["FAL-3786 investigate filters"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240821T105508Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240821T105508Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240821T105508Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240821T105508Z","tags":["FAL-3786 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240821T105508Z","end":"20240821T110552Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240821T111447Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240821T111447Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240821T111447Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240821T111447Z","tags":["FAL-3786 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240821T111447Z","end":"20240821T112317Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240821T141155Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240821T141155Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240821T141155Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240821T141155Z","tags":["FAL-3786 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240821T141155Z","end":"20240821T150612Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240821T153318Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240821T153318Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240821T153318Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240821T153318Z","tags":["FAL-3786 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240821T153318Z","end":"20240821T153419Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240822T050631Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T050631Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T050631Z","tags":["BB-9075 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T050631Z","tags":["BB-9075 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T050631Z","end":"20240822T051945Z","tags":["BB-9075 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240822T051946Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T051946Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T051946Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T051946Z","tags":["FAL-3786 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T051946Z","end":"20240822T063542Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240822T065731Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T065731Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T065731Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T065731Z","tags":["FAL-3786 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T065731Z","end":"20240822T071435Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240822T084032Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T084032Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T084032Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T084032Z","tags":["FAL-3786 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T084032Z","end":"20240822T091714Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240822T092659Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T092659Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T092659Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T092659Z","tags":["FAL-3786 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T092659Z","end":"20240822T093254Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240822T093254Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T093254Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T093254Z","tags":["FAL-3800 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T093254Z","tags":["FAL-3800 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T093254Z","end":"20240822T094138Z","tags":["FAL-3800 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240822T132454Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T132454Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T132454Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T132454Z","tags":["FAL-3786 work on feature"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T132454Z","end":"20240822T133236Z","tags":["FAL-3786 work on feature"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240822T133236Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T133236Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T133236Z","tags":["FAL-3800 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T133236Z","tags":["FAL-3800 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T133236Z","end":"20240822T135219Z","tags":["FAL-3800 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240822T135219Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T135219Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T135219Z","tags":["FAL-3800 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T135219Z","tags":["FAL-3800 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T135219Z","end":"20240822T140206Z","tags":["FAL-3800 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240822T143420Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T143420Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T143420Z","tags":["FAL-3800 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T143420Z","tags":["FAL-3800 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T143420Z","end":"20240822T150603Z","tags":["FAL-3800 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240822T150722Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T150722Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T150722Z","tags":["FAL-3797 update sandbox (split with FAL-3786)"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T150722Z","tags":["FAL-3797 update sandbox (split with FAL-3786)"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T150722Z","end":"20240822T153013Z","tags":["FAL-3797 update sandbox (split with FAL-3786)"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240822T160507Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T160507Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T160507Z","tags":["FAL-3797 update sandbox (split with FAL-3786)"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T160507Z","tags":["FAL-3797 update sandbox (split with FAL-3786)"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T160507Z","end":"20240822T161818Z","tags":["FAL-3797 update sandbox (split with FAL-3786)"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240822T161921Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T161921Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T161921Z","tags":["FAL-3797 update sandbox (split with FAL-3786)"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240822T161921Z","tags":["FAL-3797 update sandbox (split with FAL-3786)"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240822T161921Z","end":"20240822T162115Z","tags":["FAL-3797 update sandbox (split with FAL-3786)"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240823T050855Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240823T050855Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240823T050855Z","tags":["FAL-3786 address feedback"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240823T050855Z","tags":["FAL-3786 address feedback"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240823T050855Z","end":"20240823T061026Z","tags":["FAL-3786 address feedback"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240823T061027Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240823T061027Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240823T061027Z","tags":["FAL-3797 investigate sandbox issue"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240823T061027Z","tags":["FAL-3797 investigate sandbox issue"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240823T061027Z","end":"20240823T064445Z","tags":["FAL-3797 investigate sandbox issue"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240823T065641Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240823T065641Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240823T065641Z","tags":["FAL-3797 investigate sandbox issue"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240823T065641Z","tags":["FAL-3797 investigate sandbox issue"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240823T065641Z","end":"20240823T073403Z","tags":["FAL-3797 investigate sandbox issue"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240823T095322Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240823T095322Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240823T095322Z","tags":["FAL-3797 investigate sandbox issue"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240823T095322Z","tags":["FAL-3797 investigate sandbox issue"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240823T095322Z","end":"20240823T102041Z","tags":["FAL-3797 investigate sandbox issue"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240823T102046Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240823T102046Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240823T102046Z","tags":["FAL-3786 address feedback"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240823T102046Z","tags":["FAL-3786 address feedback"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240823T102046Z","end":"20240823T102954Z","tags":["FAL-3786 address feedback"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240823T113357Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240823T113357Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240823T113357Z","tags":["FAL-3797 investigate sandbox issue"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240823T113357Z","tags":["FAL-3797 investigate sandbox issue"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240823T113357Z","end":"20240823T115456Z","tags":["FAL-3797 investigate sandbox issue"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240823T144545Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240823T144545Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240823T144545Z","tags":["FAL-3786 check"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240823T144545Z","tags":["FAL-3786 check"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240823T144545Z","end":"20240823T144745Z","tags":["FAL-3786 check"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240823T144746Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240823T144746Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240823T144746Z","tags":["BB-7643 recommenderxblock maintenance"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240823T144746Z","tags":["BB-7643 recommenderxblock maintenance"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240823T144746Z","end":"20240823T145607Z","tags":["BB-7643 recommenderxblock maintenance"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240904T050816Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240904T050816Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240904T050816Z","tags":["BB-9075 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240904T050816Z","tags":["BB-9075 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240904T050816Z","end":"20240904T061822Z","tags":["BB-9075 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240904T061822Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240904T061822Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240904T061822Z","tags":["BB-254 post end of sprint update and catchup on others updates"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240904T061822Z","tags":["BB-254 post end of sprint update and catchup on others updates"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240904T061822Z","end":"20240904T064609Z","tags":["BB-254 post end of sprint update and catchup on others updates"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240904T071331Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240904T071331Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240904T071331Z","tags":["BB-9075 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240904T071331Z","tags":["BB-9075 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240904T071331Z","end":"20240904T071800Z","tags":["BB-9075 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240904T071800Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240904T071800Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240904T071800Z","tags":["FAL-3789 setup and read"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240904T071800Z","tags":["FAL-3789 setup and read"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240904T071800Z","end":"20240904T073912Z","tags":["FAL-3789 setup and read"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240904T094701Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240904T094701Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240904T094701Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240904T094701Z","tags":["FAL-3789 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240904T094701Z","end":"20240904T110925Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240904T123931Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240904T123931Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240904T123931Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240904T123931Z","tags":["FAL-3789 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240904T123931Z","end":"20240904T133652Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240904T142824Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240904T142824Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240904T142824Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240904T142824Z","tags":["FAL-3789 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240904T142824Z","end":"20240904T151444Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240905T054548Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240905T054548Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240905T054548Z","tags":["STAR-3734 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240905T054548Z","tags":["STAR-3734 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240905T054548Z","end":"20240905T061019Z","tags":["STAR-3734 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240905T064723Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240905T064723Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240905T064723Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240905T064723Z","tags":["FAL-3789 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240905T064723Z","end":"20240905T073549Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240905T101646Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240905T101646Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240905T101646Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240905T101646Z","tags":["FAL-3789 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240905T101646Z","end":"20240905T111938Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240905T115504Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240905T115504Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240905T115504Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240905T115504Z","tags":["FAL-3789 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240905T115504Z","end":"20240905T134027Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240905T141544Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240905T141544Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240905T141544Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240905T141544Z","tags":["FAL-3789 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240905T141544Z","end":"20240905T151856Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240906T052754Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240906T052754Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240906T052754Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240906T052754Z","tags":["FAL-3789 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240906T052754Z","end":"20240906T060029Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240906T060915Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240906T060915Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240906T060915Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240906T060915Z","tags":["FAL-3789 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240906T060915Z","end":"20240906T061218Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240906T062050Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240906T062050Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240906T062050Z","tags":["FAL-3783 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240906T062050Z","tags":["FAL-3783 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240906T062050Z","end":"20240906T070621Z","tags":["FAL-3783 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240906T071416Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240906T071416Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240906T071416Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240906T071416Z","tags":["FAL-3789 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240906T071416Z","end":"20240906T073956Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240906T080838Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240906T080838Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240906T080838Z","tags":["FAL-3783 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240906T080838Z","tags":["FAL-3783 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240906T080838Z","end":"20240906T081538Z","tags":["FAL-3783 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240906T092542Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240906T092542Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240906T092542Z","tags":["FAL-3783 merge and release"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240906T092542Z","tags":["FAL-3783 merge and release"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240906T092542Z","end":"20240906T093253Z","tags":["FAL-3783 merge and release"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240906T121340Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240906T121340Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240906T121340Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240906T121340Z","tags":["FAL-3789 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240906T121340Z","end":"20240906T132233Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240906T155252Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240906T155252Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240906T155252Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240906T155252Z","tags":["FAL-3789 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240906T155252Z","end":"20240906T155331Z","tags":["FAL-3789 work"]}
