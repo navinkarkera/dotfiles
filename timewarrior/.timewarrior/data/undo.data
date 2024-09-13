@@ -25488,3 +25488,795 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20240906T155252Z","end":"20240906T155331Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240909T051913Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240909T051913Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240909T051913Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240909T051913Z","tags":["FAL-3789 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240909T051913Z","end":"20240909T070837Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240909T071155Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240909T071155Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240909T071155Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240909T071155Z","tags":["FAL-3789 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240909T071155Z","end":"20240909T073651Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240909T093914Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240909T093914Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240909T093914Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240909T093914Z","tags":["FAL-3789 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240909T093914Z","end":"20240909T112030Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240909T151047Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240909T151047Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240909T151047Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240909T151047Z","tags":["FAL-3789 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240909T151047Z","end":"20240909T155008Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240910T045536Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T045536Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T045536Z","tags":["BB-254  post mid sprint update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T045536Z","tags":["BB-254  post mid sprint update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T045536Z","end":"20240910T050531Z","tags":["BB-254  post mid sprint update"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240910T050533Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T050533Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T050533Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T050533Z","tags":["FAL-3789 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T050533Z","end":"20240910T053248Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240910T060023Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T060023Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T060023Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T060023Z","tags":["FAL-3789 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T060023Z","end":"20240910T061338Z","tags":["FAL-3789 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240910T061338Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T061338Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T061338Z","tags":["FAL-3790 read related tickets"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T061338Z","tags":["FAL-3790 read related tickets"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T061338Z","end":"20240910T062105Z","tags":["FAL-3790 read related tickets"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240910T062107Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T062107Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T062107Z","tags":["BB-8950 rebase PR"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T062107Z","tags":["BB-8950 rebase PR"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T062107Z","end":"20240910T062311Z","tags":["BB-8950 rebase PR"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240910T062802Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T062802Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T062802Z","tags":["BB-8824 check and rebase PR"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T062802Z","tags":["BB-8824 check and rebase PR"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T062802Z","end":"20240910T062811Z","tags":["BB-8824 check and rebase PR"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240910T065108Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T065108Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T065108Z","tags":["BB-7643 review PR as CC (log 1h)"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T065108Z","tags":["BB-7643 review PR as CC (log 1h)"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T065108Z","end":"20240910T065147Z","tags":["BB-7643 review PR as CC (log 1h)"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240910T092921Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T092921Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T092921Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T092921Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T092921Z","end":"20240910T110535Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240910T125348Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T125348Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T125348Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T125348Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T125348Z","end":"20240910T135316Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240910T143207Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T143207Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T143207Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T143207Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T143207Z","end":"20240910T143906Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240910T144411Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T144411Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T144411Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T144411Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T144411Z","end":"20240910T152730Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240910T154834Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T154834Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T154834Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240910T154834Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240910T154834Z","end":"20240910T154901Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240911T050629Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T050629Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T050629Z","tags":["FAL-3789 rebase with upstream"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T050629Z","tags":["FAL-3789 rebase with upstream"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T050629Z","end":"20240911T052414Z","tags":["FAL-3789 rebase with upstream"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240911T052416Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T052416Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T052416Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T052416Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T052416Z","end":"20240911T063641Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240911T071818Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T071818Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T071818Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T071818Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T071818Z","end":"20240911T075831Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240911T100554Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T100554Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T100554Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T100554Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T100554Z","end":"20240911T110930Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240911T132804Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T132804Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T132804Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T132804Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T132804Z","end":"20240911T151210Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240911T151211Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T151211Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T151211Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T151211Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T151211Z","end":"20240911T151335Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240911T151335Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T151335Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T151335Z","tags":["FAL-3791 estimate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T151335Z","tags":["FAL-3791 estimate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T151335Z","end":"20240911T151354Z","tags":["FAL-3791 estimate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240911T151354Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T151354Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T151354Z","tags":["FAL-3792 estimate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T151354Z","tags":["FAL-3792 estimate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T151354Z","end":"20240911T151425Z","tags":["FAL-3792 estimate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240911T151425Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T151425Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T151425Z","tags":["FAL-3793 estimate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T151425Z","tags":["FAL-3793 estimate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T151425Z","end":"20240911T151451Z","tags":["FAL-3793 estimate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240911T151451Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T151451Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T151451Z","tags":["FAL-3826 estimate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T151451Z","tags":["FAL-3826 estimate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T151451Z","end":"20240911T151557Z","tags":["FAL-3826 estimate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240911T151557Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T151557Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T151557Z","tags":["FAL-3827 estimate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T151557Z","tags":["FAL-3827 estimate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T151557Z","end":"20240911T151627Z","tags":["FAL-3827 estimate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240911T151627Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T151627Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T151627Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240911T151627Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240911T151627Z","end":"20240911T151710Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240912T063206Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240912T063206Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240912T063206Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240912T063206Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240912T063206Z","end":"20240912T064030Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240912T064356Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240912T064356Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240912T064356Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240912T064356Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240912T064356Z","end":"20240912T074554Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240912T094753Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240912T094753Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240912T094753Z","tags":["FAL-3789 address review comments"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240912T094753Z","tags":["FAL-3789 address review comments"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240912T094753Z","end":"20240912T101458Z","tags":["FAL-3789 address review comments"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240912T101500Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240912T101500Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240912T101500Z","tags":["FAL-3789 address review comments"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240912T101500Z","tags":["FAL-3789 address review comments"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240912T101500Z","end":"20240912T101931Z","tags":["FAL-3789 address review comments"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240912T101931Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240912T101931Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240912T101931Z","tags":["BB-8970 merge PR and check new tasks"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240912T101931Z","tags":["BB-8970 merge PR and check new tasks"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240912T101931Z","end":"20240912T103010Z","tags":["BB-8970 merge PR and check new tasks"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240912T103012Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240912T103012Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240912T103012Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240912T103012Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240912T103012Z","end":"20240912T105010Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240912T122602Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240912T122602Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240912T122602Z","tags":["BB-8970 merge PR and check new tasks"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240912T122602Z","tags":["BB-8970 merge PR and check new tasks"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240912T122602Z","end":"20240912T122800Z","tags":["BB-8970 merge PR and check new tasks"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240912T122803Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240912T122803Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240912T122803Z","tags":["FAL-3789 address review comments"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240912T122803Z","tags":["FAL-3789 address review comments"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240912T122803Z","end":"20240912T123006Z","tags":["FAL-3789 address review comments"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240912T123006Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240912T123006Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240912T123006Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240912T123006Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240912T123006Z","end":"20240912T133301Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240912T142655Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240912T142655Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240912T142655Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240912T142655Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240912T142655Z","end":"20240912T145541Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240912T151549Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240912T151549Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240912T151549Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240912T151549Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240912T151549Z","end":"20240912T151721Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240913T052339Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240913T052339Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240913T052339Z","tags":["BB-8919 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240913T052339Z","tags":["BB-8919 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240913T052339Z","end":"20240913T061508Z","tags":["BB-8919 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240913T061509Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240913T061509Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240913T061509Z","tags":["FAL-3789 update sandbox and ping clients"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240913T061509Z","tags":["FAL-3789 update sandbox and ping clients"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240913T061509Z","end":"20240913T072123Z","tags":["FAL-3789 update sandbox and ping clients"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240913T152354Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240913T152354Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240913T152354Z","tags":["BB-8998 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240913T152354Z","tags":["BB-8998 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240913T152354Z","end":"20240913T152929Z","tags":["BB-8998 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240913T152929Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240913T152929Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240913T152929Z","tags":["BB-8970 check"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240913T152929Z","tags":["BB-8970 check"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240913T152929Z","end":"20240913T153316Z","tags":["BB-8970 check"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240913T153318Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240913T153318Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240913T153318Z","tags":["BB-8919 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240913T153318Z","tags":["BB-8919 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240913T153318Z","end":"20240913T153551Z","tags":["BB-8919 review"]}

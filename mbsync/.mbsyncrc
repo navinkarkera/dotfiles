@@ -1,0 +1,28 @@
+
+
+IMAPStore navin@opencraft.com-remote
+Host imap.gmail.com
+Port 993
+User navin@opencraft.com
+PassCmd "pass navin@opencraft.com"
+AuthMechs LOGIN
+TLSType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore navin@opencraft.com-local
+Subfolders Verbatim
+Path /home/navin/.local/share/mail/navin@opencraft.com/
+Inbox /home/navin/.local/share/mail/navin@opencraft.com/INBOX
+
+Channel navin@opencraft.com
+Expunge Both
+Far :navin@opencraft.com-remote:
+Near :navin@opencraft.com-local:
+Patterns * ![Gmail]* "[Gmail]/Important" "[Gmail]/Drafts" "[Gmail]Sent Mail" "[Gmail]/Starred"
+Create Both
+SyncState *
+MaxMessages 1000
+ExpireUnread no
+CopyArrivalDate yes
+# End profile
+

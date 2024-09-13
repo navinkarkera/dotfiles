@@ -677,7 +677,7 @@ local servers = {
       },
     }
   },
-  tsserver = {
+  ts_ls = {
     on_attach = on_attach,
     capabilities = capabilities,
     autostart = false,
