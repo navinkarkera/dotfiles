@@ -103,6 +103,17 @@ require('lazy').setup {
   "kylechui/nvim-surround",
   { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim' },
   { "pechorin/any-jump.vim" },
+  {
+    "ramojus/mellifluous.nvim",
+    -- version = "v0.*", -- uncomment for stable config (some features might be missed if/when v1 comes out)
+    config = function()
+      require("mellifluous").setup({
+        dim_inactive = true,
+        colorset = "mellifluous",
+      }) -- optional, see configuration section.
+      vim.cmd("colorscheme mellifluous")
+    end,
+  },
   { import = 'custom.plugins' },
 }
 
@@ -191,26 +202,26 @@ vim.o.splitkeep = "screen"
 --   },
 -- })
 
-require("rose-pine").setup({
-  variant = "auto", -- auto, main, moon, or dawn
-  dark_variant = "main", -- main, moon, or dawn
-  dim_inactive_windows = true,
-  extend_background_behind_borders = true,
+-- require("rose-pine").setup({
+--   variant = "auto", -- auto, main, moon, or dawn
+--   dark_variant = "main", -- main, moon, or dawn
+--   dim_inactive_windows = true,
+--   extend_background_behind_borders = true,
+--
+--   enable = {
+--     terminal = true,
+--     legacy_highlights = false, -- Improve compatibility for previous versions of Neovim
+--     migrations = true, -- Handle deprecated options automatically
+--   },
+--
+--   disable_italics = true,
+--   highlight_groups = {
+--     Comment = { italic = true },
+--     String = { italic = true },
+--   }
+-- })
 
-  enable = {
-    terminal = true,
-    legacy_highlights = false, -- Improve compatibility for previous versions of Neovim
-    migrations = true, -- Handle deprecated options automatically
-  },
-
-  disable_italics = true,
-  highlight_groups = {
-    Comment = { italic = true },
-    String = { italic = true },
-  }
-})
-
-vim.cmd.colorscheme "rose-pine"
+-- vim.cmd.colorscheme "sorbet"
 
 if vim.fn.executable("rg") == 1 then
   vim.o.grepprg = [[rg --vimgrep --no-heading --smart-case --hidden -g '!.git/']]

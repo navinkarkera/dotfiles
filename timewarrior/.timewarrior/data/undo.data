@@ -26280,3 +26280,165 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20240913T153318Z","end":"20240913T153551Z","tags":["BB-8919 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240914T065552Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240914T065552Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240914T065552Z","tags":["BB-8919 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240914T065552Z","tags":["BB-8919 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240914T065552Z","end":"20240914T071613Z","tags":["BB-8919 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240914T100455Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240914T100455Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240914T100455Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240914T100455Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240914T100455Z","end":"20240914T111911Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240916T044701Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240916T044701Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240916T044701Z","tags":["FAL-3789 fix colors"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240916T044701Z","tags":["FAL-3789 fix colors"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240916T044701Z","end":"20240916T052226Z","tags":["FAL-3789 fix colors"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240916T052226Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240916T052226Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240916T052226Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240916T052226Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240916T052226Z","end":"20240916T072044Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240916T092005Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240916T092005Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240916T092005Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240916T092005Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240916T092005Z","end":"20240916T101453Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240916T105257Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240916T105257Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240916T105257Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240916T105257Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240916T105257Z","end":"20240916T111223Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240916T124659Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240916T124659Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240916T124659Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240916T124659Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240916T124659Z","end":"20240916T131235Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240916T134052Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240916T134052Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240916T134052Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240916T134052Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240916T134052Z","end":"20240916T135458Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20240916T141217Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240916T141217Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240916T141217Z","tags":["FAL-3790 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20240916T141217Z","tags":["FAL-3790 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20240916T141217Z","end":"20240916T151940Z","tags":["FAL-3790 work"]}
