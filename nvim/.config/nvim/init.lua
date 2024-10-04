@@ -512,6 +512,7 @@ require('nvim-treesitter.configs').setup {
     "markdown",
     "markdown_inline",
     "yaml",
+    "templ",
   },
   highlight = {
     enable = true, -- false will disable the whole extension
@@ -706,7 +707,8 @@ local servers = {
   html = {
     on_attach = on_attach,
     capabilities = capabilities,
-    autostart = false,
+    autostart = true,
+    filetypes = { "html", "templ", "htmldjango" },
   },
   marksman = {
     on_attach = on_attach,
@@ -724,7 +726,7 @@ local servers = {
   gopls = {
     on_attach = on_attach,
     capabilities = capabilities,
-    autostart = false,
+    autostart = true,
     settings = {
       gopls = {
         experimentalPostfixCompletions = true,
@@ -733,12 +735,31 @@ local servers = {
           shadow = true,
         },
         staticcheck = true,
+        templateExtensions = { "templ" },
       },
     },
     init_options = {
       usePlaceholders = true,
     }
   },
+  templ = {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    autostart = true,
+  },
+  tailwindcss = {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    autostart = true,
+    filetypes = { "templ", "astro", "javascript", "typescript", "react" },
+    settings = {
+      tailwindCSS = {
+        includeLanguages = {
+          templ = "html",
+        },
+      },
+    },
+  }
 }
 
 
@@ -902,7 +923,7 @@ map("n", "<leader>5", function() require('harpoon.ui').nav_file(5) end)
 map("n", "<leader>6", function() require('harpoon.ui').nav_file(6) end)
 map("n", "<leader>mc", require('harpoon.cmd-ui').toggle_quick_menu)
 map("n", [[<M-\>]],
-  [[<cmd>botright split | lua require('harpoon.term').gotoTerminal(require('my-functions').count_or_one())<CR>]])
+  [[<cmd>botright split | resize 20 | lua require('harpoon.term').gotoTerminal(require('my-functions').count_or_one())<CR>]])
 map("n", [[<M-e>]],
   [[<cmd>lua require('harpoon.term').sendCommand(require('my-functions').count_or_one(), require('my-functions').count_or_one())<CR>]])
 map("v", [[<M-e>]],
@@ -1001,7 +1022,7 @@ map("n", "<M-]>", my_functions.fzf_all_tasks)
 map("n", "<M-r>", my_functions.restart_cmd)
 map("n", "<leader>mt", my_functions.fzf_make_tasks)
 -- github
-map("n", "<leader>gv", "<cmd>Run gh pr view<CR>")
+map("n", "<leader>gv", "<cmd>Run gh pr view --comments<CR>")
 map("n", "<leader>gc", "<cmd>Run gh pr checks --watch --fail-fast<CR>")
 
 vim.api.nvim_create_user_command("Grep", "silent grep! <q-args>", { nargs = 1 })

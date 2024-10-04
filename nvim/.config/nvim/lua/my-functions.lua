@@ -204,10 +204,12 @@ function M.run_command(cmd, full_shell, background)
       vim.api.nvim_set_current_buf(buf)
     end
     vim.cmd("new")
+    vim.cmd("resize 20")
     term_run_cmd(cmd)
     vim.api.nvim_buf_delete(buf, { force = true })
   else
     vim.cmd("new")
+    vim.cmd("resize 20")
     term_run_cmd(cmd)
     vim.cmd("setfiletype terminal")
   end

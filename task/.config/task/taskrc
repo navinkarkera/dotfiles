@@ -165,3 +165,4 @@ alias.addnote=execute /home/navin/.config/taskopen/addnote
 # uda.taskwarrior-tui.shortcuts.4=task rc.confirmation=off modify -new
 # uda.taskwarrior-tui.shortcuts.9=view_task_info
 # uda.taskwarrior-tui.shortcuts.8=task_reminder
+news.version=3.1.0
