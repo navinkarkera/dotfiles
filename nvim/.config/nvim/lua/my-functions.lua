@@ -177,13 +177,23 @@ function M.find_terminal_buffer_by_cmd(cmd)
 end
 
 local function term_run_cmd(cmd)
+  local start = os.time()
   vim.fn.termopen(cmd, {on_exit=function(job_id, exit_code, event)
     local status = "SUCCESS-0"
+    local priority = "default"
     if exit_code ~= 0 then
       status = "FAILED-" .. exit_code
+      priority = "high"
     end
     cmd = string.gsub(cmd, '"', '\\"')
-    os.execute([[notify-send --icon neovim "[]] .. status .. [[]" "CMD: ]] .. cmd .. [[\n]].. vim.fn.getcwd() ..[["]])
+    local elapsed_time = os.difftime(os.time(), start)
+    vim.system({'notify-send', '--icon', 'neovim', [[[]] .. status .. [[ | Took: ]] .. elapsed_time .. [[] ]], [[CMD: ]] .. cmd .. [[\n]].. vim.fn.getcwd()})
+    if elapsed_time > 5 then
+    -- if true then
+      local hostname = vim.fn.hostname()
+      local nfty_cmd = {'curl', '-H', [[Title: ]] .. cmd .. [[ | ]] .. status .. [[ | Took: ]] .. elapsed_time, '-H', [[Priority: ]] .. priority, '-d', [["]] .. vim.fn.getcwd() .. [["]], 'ntfy.sh/nrk_mangalpete_' .. hostname .. '_reminders'}
+      vim.system(nfty_cmd)
+    end
   end})
 end
 
