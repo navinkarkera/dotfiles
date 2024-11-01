@@ -139,7 +139,7 @@
 	(command: Execute, value: "flameshot gui", modifier: [], key: "Print"),
 
 	// Applications
-	(command: Execute, value: "firefox-developer-edition", modifier: ["modkey", "Shift"], key: "w"),
+	(command: Execute, value: "zen-browser", modifier: ["modkey", "Shift"], key: "w"),
     ],
     state_path: None,
 )

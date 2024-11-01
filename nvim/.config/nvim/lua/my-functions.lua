@@ -188,7 +188,7 @@ local function term_run_cmd(cmd)
     cmd = string.gsub(cmd, '"', '\\"')
     local elapsed_time = os.difftime(os.time(), start)
     vim.system({'notify-send', '--icon', 'neovim', [[[]] .. status .. [[ | Took: ]] .. elapsed_time .. [[] ]], [[CMD: ]] .. cmd .. [[\n]].. vim.fn.getcwd()})
-    if elapsed_time > 5 then
+    if elapsed_time > 10 then
     -- if true then
       local hostname = vim.fn.hostname()
       local nfty_cmd = {'curl', '-H', [[Title: ]] .. cmd .. [[ | ]] .. status .. [[ | Took: ]] .. elapsed_time, '-H', [[Priority: ]] .. priority, '-d', [["]] .. vim.fn.getcwd() .. [["]], 'ntfy.sh/nrk_mangalpete_' .. hostname .. '_reminders'}

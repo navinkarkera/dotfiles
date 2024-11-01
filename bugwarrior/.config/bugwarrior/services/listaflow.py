@@ -91,6 +91,8 @@ class ListaflowClient(ServiceClient):
 
     def _get_sprint_details(self) -> dict[str, str]:
         response = requests.get(LISTS_URL.format(api_url=self.url), headers=self.headers)
+        if response.status_code != 200:
+            return {}
         lists = self.json_response(response)
         for checklist in lists['results']:
             if checklist['name'].lower() == LIST_NAME.lower() and checklist['status'] in ['TO_DO', 'IN_PROGRESS', 'PAST_DUE']:

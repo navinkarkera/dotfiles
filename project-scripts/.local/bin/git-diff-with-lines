@@ -1,0 +1,4 @@
+#!/bin/bash
+
+branch=$@
+git diff --unified=0 ${branch} | grep -Po '(^diff --git .* |^@@.*@@)' | while read l; do if [[ -n ${l##@@*} ]]; then f=${l#*/}; else echo "$f:${l##@@ }" | cut -d' ' -f1 | sed s/:-/:/ | sed s/,/:/; fi; done

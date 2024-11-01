@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+text=$1
+echo "$text" > /tmp/time_text
+echo "" >> /tmp/time_text
+echo "" >> /tmp/time_text
+echo "####################################################################################################" >> /tmp/time_text
+cat /tmp/all_time_texts >> /tmp/time_text
+nvim /tmp/time_text
+final_text="$(head -n 1 /tmp/time_text)"
+if [[ $final_text != "" ]]; then
+	timew tag "$final_text" && timew stop
+fi

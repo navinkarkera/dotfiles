@@ -394,13 +394,13 @@ require('gitsigns').setup {
     -- Navigation
     gmap('n', ']c', function()
       if vim.wo.diff then return ']c' end
-      vim.schedule(function() gs.next_hunk() end)
+      vim.schedule(function() gs.nav_hunk('next') end)
       return '<Ignore>'
     end, { expr = true })
 
     gmap('n', '[c', function()
       if vim.wo.diff then return '[c' end
-      vim.schedule(function() gs.prev_hunk() end)
+      vim.schedule(function() gs.nav_hunk('prev') end)
       return '<Ignore>'
     end, { expr = true })
 
@@ -466,7 +466,7 @@ vim.api.nvim_create_user_command(
   'ListFilesFromBranch',
   function(opts)
     require 'fzf-lua'.files({
-      cmd = "git diff -r --name-only " .. opts.args,
+      cmd = "git-diff-with-lines " .. opts.args,
       prompt = opts.args .. "> ",
       previewer = false,
       preview = require 'fzf-lua'.shell.raw_preview_action_cmd(function(items)
@@ -491,6 +491,7 @@ vim.api.nvim_create_user_command(
 
 local base_branch = os.getenv("GIT_PARENT_BRANCH") or "master"
 map('n', '<leader>fc', ":ListFilesFromBranch " .. base_branch .. "<CR>")
+map('n', '<leader>dc', ":DiffviewOpen " .. base_branch .. "<CR>")
 
 -- Treesitter configuration
 -- Parsers must be installed manually via :TSInstall

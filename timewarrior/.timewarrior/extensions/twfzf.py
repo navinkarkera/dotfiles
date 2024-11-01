@@ -5,6 +5,8 @@
 # A timewarrior extension to list and restart
 # recently tracked intervals with the help of fzf
 
+import os
+import shelve
 import sys
 
 from pyfzf.pyfzf import FzfPrompt
@@ -36,11 +38,25 @@ def get_lines_for_fzf(intervals):
     Get lines to feed to fzf. We used | to delimit fields in the output
     which means you can not use | within your timewarrior tags if you want this to work
     """
-    lines = []
+    lines = add_current_jira_tickets()
     for interval in get_recent_uniquelly_tagged_intervals(intervals):
         tags = interval.get_tags()
         lines.extend(tags)
+    with open("/tmp/all_time_texts", "w") as f:
+        f.write('\n'.join(lines))
     return lines
+
+
+def add_current_jira_tickets():
+    with shelve.open('/tmp/jira_tickets') as f:
+        if tasks := f.get('tasks'):
+            return tasks
+        cmd = os.popen(
+            ''' jira issue list -a navinkarkera -R unresolved -s~Archived --updated -14d --jql "sprint in openSprints()" | grep -Eo '(FAL|BB|STAR|SE)-[[:digit:]]+' '''
+        )
+        output = [line.strip() for line in cmd.readlines() if line.strip()]
+        f["tasks"] = output
+        return output
 
 
 if __name__ == '__main__':
@@ -50,4 +66,10 @@ if __name__ == '__main__':
     intervals = parser.get_intervals()
 
     # Launch fzf and get a selection
-    FzfPrompt().prompt(get_lines_for_fzf(intervals), "--print-query --bind 'enter:become(timew tag {} && timew stop),ctrl-e:become(timew tag {} && timew stop && timew start),ctrl-n:become(timew tag {q} && timew stop)'")
+    FzfPrompt().prompt(
+        get_lines_for_fzf(intervals),
+        "--print-query --bind 'enter:become(timew tag {} && timew stop),"
+        "ctrl-r:become(timew tag {} && timew stop && timew start),"
+        "ctrl-n:become(timew tag {q} && timew stop),"
+        "ctrl-e:execute(time_helper {})+abort'"
+    )
