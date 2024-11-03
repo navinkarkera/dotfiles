@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+interval=$@
+echo $(timew report totals ${interval} | grep -Eo '^(BB-|FAL-|SE-)[[:digit:]]+') | sed 's| |,|g'

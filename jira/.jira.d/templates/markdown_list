@@ -1,8 +1,13 @@
-**BB. Mid sprint update**
+**FAL. Mid sprint update**
 
 Sprint is going .
 
-{{ range .issues }}- [{{ .key }}](https://tasks.opencraft.com/browse/{{ .key }}): {{ .fields.summary }} | *{{ .fields.status.name }}* |
-{{ end }}
+{{ range .issues }}{{ if .fields.assignee }}{{ if eq .fields.assignee.name "navinkarkera" }}- [{{ .key }}](https://tasks.opencraft.com/browse/{{ .key }}): {{ .fields.summary }} | *{{ .fields.status.name }}* |
+{{ end }}{{ end }}{{ end }}
 
-Also have few reviews. Not expecting any spillovers.
+Reviewed or helped in below tasks:
+
+{{ range .issues }}{{ if or (eq .fields.assignee nil) (ne .fields.assignee.name "navinkarkera") }}- [{{ .key }}](https://tasks.opencraft.com/browse/{{ .key }}): {{ .fields.summary }} | *{{ .fields.status.name }}* |
+{{ end }}{{ end }}
+
+Not expecting any spillovers.
