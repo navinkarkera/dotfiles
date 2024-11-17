@@ -1,5 +1,5 @@
 {{/* table template */ -}}
-{{- headers "Issue" "Summary" "Type" "Priority" "Status" "Age" -}}
+{{- headers "Issue" "Summary" "Type" "Priority" "Status" "Age" "Assignee" -}}
 {{- range .issues -}}
   {{- row -}}
   {{- cell .key -}}
@@ -12,4 +12,9 @@
   {{- end -}}
   {{- cell .fields.status.name -}}
   {{- cell (.fields.created | age) -}}
+  {{- if .fields.assignee -}}
+    {{- cell .fields.assignee.displayName -}}
+  {{- else -}}
+    {{- cell "<none>" -}}
+  {{- end -}}
 {{- end -}}

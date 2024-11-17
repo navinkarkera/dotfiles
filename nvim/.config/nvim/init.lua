@@ -81,6 +81,8 @@ require('lazy').setup {
     dependencies = {
       'hrsh7th/cmp-nvim-lsp',
       'lukas-reineke/cmp-rg',
+      'hrsh7th/cmp-buffer',
+      'hrsh7th/cmp-nvim-lsp-signature-help',
       'L3MON4D3/LuaSnip',
       'saadparwaiz1/cmp_luasnip',
       {
@@ -279,10 +281,10 @@ vim.g.any_jump_window_top_offset                    = 5
 map("n", "<C-q>", ":call ToggleQuickFix()<CR>",
   { silent = true, noremap = true }
 )
-map("n", "<C-j>", ":cn<CR>",
+map("n", "<C-j>", ":cn<CR>zz",
   { silent = true, noremap = true }
 )
-map("n", "<C-k>", ":cp<CR>",
+map("n", "<C-k>", ":cp<CR>zz",
   { silent = true, noremap = true }
 )
 
@@ -694,6 +696,14 @@ local servers = {
     on_attach = on_attach,
     capabilities = capabilities,
     autostart = false,
+    init_options = {
+      hostInfo = "neovim",
+      preferences = {
+        includeCompletionsForModuleExports = true,
+        includeCompletionsForImportStatements = true,
+        importModuleSpecifierPreference = "relative",
+      },
+    }
   },
   cssls = {
     on_attach = on_attach,
@@ -845,14 +855,14 @@ cmp.setup {
       select = true,
     },
     ['<C-l>'] = cmp.mapping(function(fallback)
-      if luasnip.expand_or_jumpable() then
+      if luasnip.locally_expand_or_jumpable() then
         luasnip.expand_or_jump()
       else
         fallback()
       end
     end, { 'i', 's' }),
     ['<C-h>'] = cmp.mapping(function(fallback)
-      if luasnip.jumpable(-1) then
+      if luasnip.locally_jumpable(-1) then
         luasnip.jump(-1)
       else
         fallback()
@@ -864,7 +874,36 @@ cmp.setup {
       elseif cmp.visible() then
         cmp.select_next_item()
       elseif has_words_before() then
-        vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-p>", true, true, true), "n", true)
+        -- vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-p>", true, true, true), "n", true)
+        cmp.complete({
+          config = {
+            sources = cmp.config.sources({
+              {
+                name = 'buffer',
+                option = {
+                  get_bufnrs = function()
+                    local buf = vim.api.nvim_get_current_buf()
+                    local byte_size = vim.api.nvim_buf_get_offset(buf, vim.api.nvim_buf_line_count(buf))
+                    if byte_size > 1024 * 1024 then -- 1 Megabyte max
+                      return {}
+                    end
+                    return { buf }
+                  end
+                }
+              },
+            },{
+              { name = 'rg' },
+            }),
+            sorting = {
+              comparators = {
+                function(...) return require('cmp_buffer'):compare_locality(...) end,
+              }
+            }
+          },
+        })
+        if #cmp.get_entries() == 1 then
+          cmp.confirm({ select = true })
+        end
       else
         fallback()
       end
@@ -879,12 +918,13 @@ cmp.setup {
       end
     end, { 'i', 's' }),
   }),
-  sources = {
+  sources = cmp.config.sources({
     { name = 'luasnip' },
     { name = 'tags' },
     { name = 'nvim_lsp' },
     { name = 'nvim_lsp_signature_help' },
-  },
+    {{ name = 'rg' }},
+  }),
   formatting = {
     format = function(entry, vim_item)
       -- Kind icons
@@ -895,6 +935,7 @@ cmp.setup {
         nvim_lsp = "[LSP]",
         luasnip = "[LuaSnip]",
         nvim_lua = "[Lua]",
+        rg = "[RG]"
       })[entry.source.name]
       return vim_item
     end

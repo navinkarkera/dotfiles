@@ -78,7 +78,7 @@ def calculate_totals(input_stream):
         if "end" in object:
             end = datetime.datetime.strptime(object["end"], DATEFORMAT)
         else:
-            end = datetime.datetime.utcnow()
+            end = datetime.datetime.now()
 
         tracked = end - start
 
