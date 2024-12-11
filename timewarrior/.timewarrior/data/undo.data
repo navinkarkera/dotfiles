@@ -33213,3 +33213,1393 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20241115T170617Z","end":"20241115T170651Z","tags":["FAL-3943 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241118T043006Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241118T043006Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241118T043006Z","tags":["FAL-3943 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241118T043006Z","tags":["FAL-3943 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241118T043006Z","end":"20241118T060122Z","tags":["FAL-3943 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241118T060123Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241118T060123Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241118T060123Z","tags":["FAL-3943 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241118T060123Z","tags":["FAL-3943 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241118T060123Z","end":"20241118T060607Z","tags":["FAL-3943 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241118T062457Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241118T062457Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241118T062457Z","tags":["FAL-3959 investigate and create ticket"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241118T062457Z","tags":["FAL-3959 investigate and create ticket"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241118T062457Z","end":"20241118T063521Z","tags":["FAL-3959 investigate and create ticket"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241118T063522Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241118T063522Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241118T063522Z","tags":["FAL-3951 ping Irfan"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241118T063522Z","tags":["FAL-3951 ping Irfan"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241118T063522Z","end":"20241118T064058Z","tags":["FAL-3951 ping Irfan"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241118T064059Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241118T064059Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241118T064059Z","tags":["FAL-3936 update sandbox"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241118T064059Z","tags":["FAL-3936 update sandbox"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241118T064059Z","end":"20241118T071027Z","tags":["FAL-3936 update sandbox"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241118T093608Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241118T093608Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241118T093608Z","tags":["FAL-3936 update sandbox"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241118T093608Z","tags":["FAL-3936 update sandbox"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241118T093608Z","end":"20241118T100548Z","tags":["FAL-3936 update sandbox"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241118T100548Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241118T100548Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241118T100548Z","tags":["FAL-3835 maintainer work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241118T100548Z","tags":["FAL-3835 maintainer work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241118T100548Z","end":"20241118T104031Z","tags":["FAL-3835 maintainer work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241118T140312Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241118T140312Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241118T140312Z","tags":["FAL-3835 fix recommender block template issues"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241118T140312Z","tags":["FAL-3835 fix recommender block template issues"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241118T140312Z","end":"20241118T153915Z","tags":["FAL-3835 fix recommender block template issues"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241119T043132Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241119T043132Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241119T043132Z","tags":["FAL-3943 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241119T043132Z","tags":["FAL-3943 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241119T043132Z","end":"20241119T043817Z","tags":["FAL-3943 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241119T043817Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241119T043817Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241119T043817Z","tags":["FAL-3943 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241119T043817Z","tags":["FAL-3943 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241119T043817Z","end":"20241119T044048Z","tags":["FAL-3943 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241119T044530Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241119T044530Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241119T044530Z","tags":["FAL-3951 chat with Irfan and collect info and post it."]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241119T044530Z","tags":["FAL-3951 chat with Irfan and collect info and post it."]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241119T044530Z","end":"20241119T044840Z","tags":["FAL-3951 chat with Irfan and collect info and post it."]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241119T044841Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241119T044841Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241119T044841Z","tags":["FAL-3943 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241119T044841Z","tags":["FAL-3943 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241119T044841Z","end":"20241119T053901Z","tags":["FAL-3943 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241119T054429Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241119T054429Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241119T054429Z","tags":["FAL-3943 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241119T054429Z","tags":["FAL-3943 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241119T054429Z","end":"20241119T061054Z","tags":["FAL-3943 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241119T092941Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241119T092941Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241119T092941Z","tags":["FAL-3943 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241119T092941Z","tags":["FAL-3943 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241119T092941Z","end":"20241119T094831Z","tags":["FAL-3943 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241119T094832Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241119T094832Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241119T094832Z","tags":["FAL-3943 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241119T094832Z","tags":["FAL-3943 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241119T094832Z","end":"20241119T095731Z","tags":["FAL-3943 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241119T095731Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241119T095731Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241119T095731Z","tags":["FAL-3835 fix recommender block template issues"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241119T095731Z","tags":["FAL-3835 fix recommender block template issues"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241119T095731Z","end":"20241119T104822Z","tags":["FAL-3835 fix recommender block template issues"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241119T144159Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241119T144159Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241119T144159Z","tags":["FAL-175 post mid sprint update and catch up"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241119T144159Z","tags":["FAL-175 post mid sprint update and catch up"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241119T144159Z","end":"20241119T145238Z","tags":["FAL-175 post mid sprint update and catch up"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241119T145238Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241119T145238Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241119T145238Z","tags":["FAL-3959 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241119T145238Z","tags":["FAL-3959 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241119T145238Z","end":"20241119T155946Z","tags":["FAL-3959 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241120T053235Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241120T053235Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241120T053235Z","tags":["FAL-3943 investigate modal display issues"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241120T053235Z","tags":["FAL-3943 investigate modal display issues"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241120T053235Z","end":"20241120T054821Z","tags":["FAL-3943 investigate modal display issues"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241120T054822Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241120T054822Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241120T054822Z","tags":["FAL-3943 investigate modal display issues"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241120T054822Z","tags":["FAL-3943 investigate modal display issues"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241120T054822Z","end":"20241120T054935Z","tags":["FAL-3943 investigate modal display issues"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241120T054935Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241120T054935Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241120T054935Z","tags":["FAL-3951 update proposal and submit it."]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241120T054935Z","tags":["FAL-3951 update proposal and submit it."]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241120T054935Z","end":"20241120T060944Z","tags":["FAL-3951 update proposal and submit it."]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241120T060945Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241120T060945Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241120T060945Z","tags":["FAL-3959 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241120T060945Z","tags":["FAL-3959 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241120T060945Z","end":"20241120T075436Z","tags":["FAL-3959 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241120T091218Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241120T091218Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241120T091218Z","tags":["FAL-3959 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241120T091218Z","tags":["FAL-3959 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241120T091218Z","end":"20241120T093443Z","tags":["FAL-3959 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241120T100015Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241120T100015Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241120T100015Z","tags":["FAL-3959 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241120T100015Z","tags":["FAL-3959 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241120T100015Z","end":"20241120T100910Z","tags":["FAL-3959 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241120T102604Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241120T102604Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241120T102604Z","tags":["FAL-3959 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241120T102604Z","tags":["FAL-3959 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241120T102604Z","end":"20241120T104303Z","tags":["FAL-3959 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241120T105917Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241120T105917Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241120T105917Z","tags":["FAL-3959 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241120T105917Z","tags":["FAL-3959 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241120T105917Z","end":"20241120T112620Z","tags":["FAL-3959 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241120T120620Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241120T120620Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241120T120620Z","tags":["FAL-3959 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241120T120620Z","tags":["FAL-3959 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241120T120620Z","end":"20241120T122254Z","tags":["FAL-3959 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241120T125834Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241120T125834Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241120T125834Z","tags":["FAL-3959 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241120T125834Z","tags":["FAL-3959 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241120T125834Z","end":"20241120T130141Z","tags":["FAL-3959 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241120T132010Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241120T132010Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241120T132010Z","tags":["FAL-3959 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241120T132010Z","tags":["FAL-3959 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241120T132010Z","end":"20241120T132829Z","tags":["FAL-3959 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241121T042950Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241121T042950Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241121T042950Z","tags":["FAL-3959 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241121T042950Z","tags":["FAL-3959 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241121T042950Z","end":"20241121T043107Z","tags":["FAL-3959 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241121T043500Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241121T043500Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241121T043500Z","tags":["FAL-3943 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241121T043500Z","tags":["FAL-3943 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241121T043500Z","end":"20241121T060143Z","tags":["FAL-3943 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241121T072750Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241121T072750Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241121T072750Z","tags":["FAL-3943 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241121T072750Z","tags":["FAL-3943 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241121T072750Z","end":"20241121T072820Z","tags":["FAL-3943 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241121T072820Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241121T072820Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241121T072820Z","tags":["FAL-3835 maintainer work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241121T072820Z","tags":["FAL-3835 maintainer work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241121T072820Z","end":"20241121T081538Z","tags":["FAL-3835 maintainer work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241122T042450Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241122T042450Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241122T042450Z","tags":["FAL-3943 investigate and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241122T042450Z","tags":["FAL-3943 investigate and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241122T042450Z","end":"20241122T044507Z","tags":["FAL-3943 investigate and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241122T044508Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241122T044508Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241122T044508Z","tags":["FAL-3922 create sumac backport PR"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241122T044508Z","tags":["FAL-3922 create sumac backport PR"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241122T044508Z","end":"20241122T050553Z","tags":["FAL-3922 create sumac backport PR"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241122T050553Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241122T050553Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241122T050553Z","tags":["FAL-3959 update PR"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241122T050553Z","tags":["FAL-3959 update PR"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241122T050553Z","end":"20241122T053147Z","tags":["FAL-3959 update PR"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241123T102129Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241123T102129Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241123T102129Z","tags":["FAL-3749 test flicker PR and respond to epic related questions"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241123T102129Z","tags":["FAL-3749 test flicker PR and respond to epic related questions"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241123T102129Z","end":"20241123T104222Z","tags":["FAL-3749 test flicker PR and respond to epic related questions"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241123T104223Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241123T104223Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241123T104223Z","tags":["FAL-3749 test implemented tickets in sandbox, update them and post update in slack"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241123T104223Z","tags":["FAL-3749 test implemented tickets in sandbox, update them and post update in slack"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241123T104223Z","end":"20241123T112035Z","tags":["FAL-3749 test implemented tickets in sandbox, update them and post update in slack"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241123T112038Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241123T112038Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241123T112038Z","tags":["FAL-3971 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241123T112038Z","tags":["FAL-3971 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241123T112038Z","end":"20241123T115300Z","tags":["FAL-3971 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241123T115302Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241123T115302Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241123T115302Z","tags":["FAL-3971 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241123T115302Z","tags":["FAL-3971 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241123T115302Z","end":"20241123T115305Z","tags":["FAL-3971 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241125T120019Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241125T120019Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241125T120019Z","tags":["FAL-3835 maintainer work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241125T120019Z","tags":["FAL-3835 maintainer work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241125T120019Z","end":"20241125T121802Z","tags":["FAL-3835 maintainer work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241126T043921Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241126T043921Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241126T043921Z","tags":["FAL-175 post end of sprint update and catchup of others updates"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241126T043921Z","tags":["FAL-175 post end of sprint update and catchup of others updates"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241126T043921Z","end":"20241126T044920Z","tags":["FAL-175 post end of sprint update and catchup of others updates"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241126T044920Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241126T044920Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241126T044920Z","tags":["FAL-3974 read"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241126T044920Z","tags":["FAL-3974 read"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241126T044920Z","end":"20241126T045345Z","tags":["FAL-3974 read"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241126T060435Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241126T060435Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241126T060435Z","tags":["FAL-3971 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241126T060435Z","tags":["FAL-3971 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241126T060435Z","end":"20241126T061041Z","tags":["FAL-3971 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241126T061255Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241126T061255Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241126T061255Z","tags":["FAL-3835 maintainer work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241126T061255Z","tags":["FAL-3835 maintainer work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241126T061255Z","end":"20241126T062304Z","tags":["FAL-3835 maintainer work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241126T062309Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241126T062309Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241126T062309Z","tags":["FAL-3974 read"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241126T062309Z","tags":["FAL-3974 read"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241126T062309Z","end":"20241126T062810Z","tags":["FAL-3974 read"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241126T062810Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241126T062810Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241126T062810Z","tags":["BB-8514 check slack and respond"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241126T062810Z","tags":["BB-8514 check slack and respond"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241126T062810Z","end":"20241126T063616Z","tags":["BB-8514 check slack and respond"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241126T071826Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241126T071826Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241126T071826Z","tags":["FAL-3749 respond to issues in testing"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241126T071826Z","tags":["FAL-3749 respond to issues in testing"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241126T071826Z","end":"20241126T073016Z","tags":["FAL-3749 respond to issues in testing"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241126T141858Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241126T141858Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241126T141858Z","tags":["FAL-175 post end of sprint update and catchup of others updates"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241126T141858Z","tags":["FAL-175 post end of sprint update and catchup of others updates"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241126T141858Z","end":"20241126T143442Z","tags":["FAL-175 post end of sprint update and catchup of others updates"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241126T143554Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241126T143554Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241126T143554Z","tags":["FAL-3971 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241126T143554Z","tags":["FAL-3971 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241126T143554Z","end":"20241126T143651Z","tags":["FAL-3971 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241127T124730Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241127T124730Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241127T124730Z","tags":["FAL-3749 check ticket status and post epic update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241127T124730Z","tags":["FAL-3749 check ticket status and post epic update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241127T124730Z","end":"20241127T130652Z","tags":["FAL-3749 check ticket status and post epic update"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241127T130726Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241127T130726Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241127T130726Z","tags":["FAL-3749 check ticket status and post epic update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241127T130726Z","tags":["FAL-3749 check ticket status and post epic update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241127T130726Z","end":"20241127T130739Z","tags":["FAL-3749 check ticket status and post epic update"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241209T050318Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241209T050318Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241209T050318Z","tags":["FAL-175 complete checklist items"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241209T050318Z","tags":["FAL-175 complete checklist items"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241209T050318Z","end":"20241209T050700Z","tags":["FAL-175 complete checklist items"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241209T050700Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241209T050700Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241209T050700Z","tags":["FAL-3749 update ticket status and due date"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241209T050700Z","tags":["FAL-3749 update ticket status and due date"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241209T050700Z","end":"20241209T052803Z","tags":["FAL-3749 update ticket status and due date"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241209T055548Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241209T055548Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241209T055548Z","tags":["FAL-3871 read and check related epics"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241209T055548Z","tags":["FAL-3871 read and check related epics"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241209T055548Z","end":"20241209T061456Z","tags":["FAL-3871 read and check related epics"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241209T061458Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241209T061458Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241209T061458Z","tags":["FAL-3986 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241209T061458Z","tags":["FAL-3986 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241209T061458Z","end":"20241209T074507Z","tags":["FAL-3986 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241209T092456Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241209T092456Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241209T092456Z","tags":["FAL-3986 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241209T092456Z","tags":["FAL-3986 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241209T092456Z","end":"20241209T110432Z","tags":["FAL-3986 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241209T135938Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241209T135938Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241209T135938Z","tags":["FAL-3986 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241209T135938Z","tags":["FAL-3986 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241209T135938Z","end":"20241209T153745Z","tags":["FAL-3986 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241209T164228Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241209T164228Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241209T164228Z","tags":["FAL-3986 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241209T164228Z","tags":["FAL-3986 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241209T164228Z","end":"20241209T164243Z","tags":["FAL-3986 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241210T035014Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241210T035014Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241210T035014Z","tags":["FAL-3871 go through designs, create tasks and update epic description"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241210T035014Z","tags":["FAL-3871 go through designs, create tasks and update epic description"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241210T035014Z","end":"20241210T044523Z","tags":["FAL-3871 go through designs, create tasks and update epic description"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241210T044524Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241210T044524Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241210T044524Z","tags":["FAL-3749 Check ticket status"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241210T044524Z","tags":["FAL-3749 Check ticket status"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241210T044524Z","end":"20241210T045201Z","tags":["FAL-3749 Check ticket status"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241210T045202Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241210T045202Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241210T045202Z","tags":["FAL-3749 respond on issue comments in ac testing"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241210T045202Z","tags":["FAL-3749 respond on issue comments in ac testing"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241210T045202Z","end":"20241210T051046Z","tags":["FAL-3749 respond on issue comments in ac testing"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241210T051048Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241210T051048Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241210T051048Z","tags":["FAL-3986 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241210T051048Z","tags":["FAL-3986 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241210T051048Z","end":"20241210T060532Z","tags":["FAL-3986 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241210T063402Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241210T063402Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241210T063402Z","tags":["FAL-3986 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241210T063402Z","tags":["FAL-3986 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241210T063402Z","end":"20241210T064842Z","tags":["FAL-3986 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241210T064842Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241210T064842Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241210T064842Z","tags":["FAL-3983 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241210T064842Z","tags":["FAL-3983 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241210T064842Z","end":"20241210T065749Z","tags":["FAL-3983 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241210T095609Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241210T095609Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241210T095609Z","tags":["FAL-3983 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241210T095609Z","tags":["FAL-3983 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241210T095609Z","end":"20241210T103534Z","tags":["FAL-3983 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241210T103534Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241210T103534Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241210T103534Z","tags":["BB-8998 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241210T103534Z","tags":["BB-8998 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241210T103534Z","end":"20241210T105418Z","tags":["BB-8998 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241210T140847Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241210T140847Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241210T140847Z","tags":["BB-8950 update PR"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241210T140847Z","tags":["BB-8950 update PR"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241210T140847Z","end":"20241210T141810Z","tags":["BB-8950 update PR"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241210T141810Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241210T141810Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241210T141810Z","tags":["FAL-175 post end of sprint update and catchup of others updates"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241210T141810Z","tags":["FAL-175 post end of sprint update and catchup of others updates"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241210T141810Z","end":"20241210T143833Z","tags":["FAL-175 post end of sprint update and catchup of others updates"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241210T143833Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241210T143833Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241210T143833Z","tags":["FAL-3875 read"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241210T143833Z","tags":["FAL-3875 read"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241210T143833Z","end":"20241210T151539Z","tags":["FAL-3875 read"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241211T041144Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241211T041144Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241211T041144Z","tags":["FAL-3983 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241211T041144Z","tags":["FAL-3983 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241211T041144Z","end":"20241211T043103Z","tags":["FAL-3983 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241211T043103Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241211T043103Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241211T043103Z","tags":["FAL-3871 create tasks"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241211T043103Z","tags":["FAL-3871 create tasks"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241211T043103Z","end":"20241211T044920Z","tags":["FAL-3871 create tasks"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241211T050352Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241211T050352Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241211T050352Z","tags":["FAL-3835 maintainer work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241211T050352Z","tags":["FAL-3835 maintainer work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241211T050352Z","end":"20241211T053932Z","tags":["FAL-3835 maintainer work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241211T053932Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241211T053932Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241211T053932Z","tags":["FAL-3875 investigate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241211T053932Z","tags":["FAL-3875 investigate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241211T053932Z","end":"20241211T061621Z","tags":["FAL-3875 investigate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241211T094654Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241211T094654Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241211T094654Z","tags":["FAL-3875 investigate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241211T094654Z","tags":["FAL-3875 investigate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241211T094654Z","end":"20241211T103844Z","tags":["FAL-3875 investigate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241211T122542Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241211T122542Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241211T122542Z","tags":["FAL-3875 investigate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241211T122542Z","tags":["FAL-3875 investigate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241211T122542Z","end":"20241211T130819Z","tags":["FAL-3875 investigate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241211T150837Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241211T150837Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241211T150837Z","tags":["FAL-3875 investigate"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241211T150837Z","tags":["FAL-3875 investigate"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241211T150837Z","end":"20241211T154121Z","tags":["FAL-3875 investigate"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241211T162740Z"}

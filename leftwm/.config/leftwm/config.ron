@@ -54,8 +54,8 @@
     scratchpad: [
         (name: "Terminal", value: "kitty", x: 0.05, y: 0.015, height: 0.4, width: 0.9),
         (name: "Notes", value: "kitty -T Notes -d ~/Documents/notes/ -e zk edit -s modified -i", x: 0.05, y: 0.6, height: 0.4, width: 0.9),
-        (name: "Mail", value: "kitty -T Email -e neomutt", x: 0.2, y: 0.5, height: 0.5, width: 0.6),
-        (name: "Taskwarrior", value: "kitty -T Tasks -e vit", x: 0.5, y: 0.6, height: 0.4, width: 0.5),
+        (name: "Mail", value: "kitty -T Email -e neomutt", x: 0.15, y: 0.4, height: 0.6, width: 0.7),
+        (name: "Taskwarrior", value: "kitty -T Tasks -e vit", x: 0.3, y: 0.6, height: 0.4, width: 0.7),
         (name: "Timer", value: "kitty -T Timer -e twc", x: 0.8, y: 0.3, height: 0.4, width: 0.20),
         (name: "Btop", value: "kitty -T Monitor -e btop", x: 0.1, y: 0.1, height: 0.8, width: 0.8),
         (name: "Filemanager", value: "kitty -T Filemanager -e yazi", x: 0.05, y: 0.1, height: 0.8, width: 0.9),

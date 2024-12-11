@@ -52,7 +52,7 @@ def add_current_jira_tickets():
         if tasks := f.get('tasks'):
             return tasks
         cmd = os.popen(
-            ''' jira issue list -a navinkarkera -R unresolved -s~Archived --updated -14d --jql "sprint in openSprints()" | grep -Eo '(FAL|BB|STAR|SE)-[[:digit:]]+' '''
+            '''gojira mine | grep -Eo '(FAL|BB|STAR|SE)-[[:digit:]]+' '''
         )
         output = [line.strip() for line in cmd.readlines() if line.strip()]
         f["tasks"] = output

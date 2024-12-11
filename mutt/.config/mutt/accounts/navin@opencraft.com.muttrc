@@ -24,6 +24,7 @@ mailboxes "=INBOX" "=Jira" "=Git" "=Forum"  "=Mailing Lists/help" =Trash =Sent =
 virtual-mailboxes "Unread" "notmuch://?query=tag:unread and tag:inbox and (to:navin@opencraft.com or cc:navin@opencraft.com)"
 virtual-mailboxes "Flagged" "notmuch://?query=tag:flagged"
 virtual-mailboxes "Mentions" "notmuch://?query=body:navin"
+virtual-mailboxes "Github" "notmuch://?query=from:github"
 
 macro index,pager gi "<change-folder>=INBOX<enter>" "go to inbox"
 macro index,pager Mi ";<save-message>=INBOX<enter>" "move mail to inbox"
@@ -51,6 +52,10 @@ macro index,pager Cu ";<copy-message>Unread<enter>" "copy mail to unread"
 macro index,pager gf "<change-folder>Flagged<enter>" "go to flagged"
 macro index,pager Mf ";<save-message>Flagged<enter>" "move mail to flagged"
 macro index,pager Cf ";<copy-message>Flagged<enter>" "copy mail to flagged"
+
+macro index,pager gh "<change-folder>Github<enter>" "go to github"
+macro index,pager Mh ";<save-message>Github<enter>" "move mail to github"
+macro index,pager Ch ";<copy-message>Github<enter>" "copy mail to github"
 
 macro index,pager gF "<change-folder>=Forum<enter>" "go to Forum"
 macro index,pager MF ";<save-message>=Forum<enter>" "move mail to Forum"

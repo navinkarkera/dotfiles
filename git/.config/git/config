@@ -7,9 +7,10 @@
 	cm = commit -m
 	d = diff
 	dft = difftool
-	parent = "!echo ${GIT_PARENT_BRANCH:-master}"
+	parent = rev-parse --abbrev-ref origin/HEAD
 	dm = "!f() { [[ `git rev-parse --abbrev-ref HEAD` != \"master\" ]] && [[ `git rev-parse --abbrev-ref HEAD` != \"main\" ]] && git diff $(git parent)..HEAD; }; f"
 	dv = difftool --no-symlinks --dir-diff
+	dvm = "!f() { [[ `git rev-parse --abbrev-ref HEAD` != \"master\" ]] && [[ `git rev-parse --abbrev-ref HEAD` != \"main\" ]] && git dv $(git parent)..HEAD; }; f"
 	gl = !git --no-pager config --global -l
 	se = !git rev-list --all | xargs git grep -F
 	s = status

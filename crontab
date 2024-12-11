@@ -1,3 +1,3 @@
 */5 * * * * . $HOME/.config/shell/profile; /usr/bin/mailsync
 */15 * * * * . $HOME/.config/shell/profile; /home/navin/.local/bin/bugwarrior-pull; /home/navin/.local/bin/vit-external-refresh.sh
-*/30 * * * * . $HOME/.config/shell/profile; DISPLAY=:0 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus notify-send "NEW jira tickets" "$(jira issue list -ax -R unresolved --jql 'sprint in futureSprints() and sprint != "Last resort - Accepted" and sprint != "Last resort - Proposed"' --plain --no-headers | cut -f3)"
+*/30 * * * * . $HOME/.config/shell/profile; DISPLAY=:0 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus notify-send "NEW jira tickets" "$(gojira available)"

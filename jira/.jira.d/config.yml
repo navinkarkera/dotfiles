@@ -46,11 +46,15 @@ custom-commands:
     script: |-
       if [ -n "$JIRA_PROJECT" ]; then
           # if `project: ...` configured just list the issues for current project
-          {{jira}} list --template table --query "resolution = unresolved and (assignee=currentuser() OR 'Reviewer 1'=currentuser() OR 'Reviewer 2'=currentuser()) and project = $JIRA_PROJECT ORDER BY priority asc, created"
+          {{jira}} list --template table --query "(sprint in openSprints() OR sprint in futureSprints()) and resolution = unresolved and (assignee=currentuser() OR 'Reviewer 1'=currentuser() OR 'Reviewer 2'=currentuser()) and project = $JIRA_PROJECT status != Archived and status != Done and status != \"External Review / Blocker\" ORDER BY priority asc, created"
       else
           # otherwise list issues for all project
-          {{jira}} list --template table --query "resolution = unresolved and (assignee=currentuser() OR 'Reviewer 1'=currentuser() OR 'Reviewer 2'=currentuser()) ORDER BY priority asc, created"
+          {{jira}} list --template table --query "(sprint in openSprints() OR sprint in futureSprints()) and resolution = unresolved and (assignee=currentuser() OR 'Reviewer 1'=currentuser() OR 'Reviewer 2'=currentuser()) and status != Archived and status != Done and status != \"External Review / Blocker\" ORDER BY priority asc, created"
       fi
+  - name: available
+    help: display issues not assignee to anyone
+    script: |-
+      {{jira}} list --query "assignee = EMPTY and project = 'FAL' and resolution = unresolved and sprint in futureSprints() and sprint != 'Last resort - Accepted' and sprint != 'Last resort - Proposed'"
   - name: ls-named-query-fzf
     aliases:
       - lf
@@ -62,3 +66,40 @@ custom-commands:
         echo $(fzf --preview="echo {} | cut -d : -f 1 | xargs -I % sh -c '[ -f /tmp/%.yaml ] && bat --style=plain --color=always /tmp/%.yaml || gojira view % > /tmp/%.yaml && bat --style=plain --color=always /tmp/%.yaml'" --preview-window=70%,border-double,bottom --bind 'ctrl-o:execute-silent(gojira view -b $(echo {+} | cut -d : -f 1))') |\
         cut -d : -f 1 |\
         xargs -I % sh -c 'echo %'
+  - name: quick-create
+    aliases:
+        - qc
+    help: quick create jira ticket using web ui
+    options:
+      - name: type
+        default: 3
+      - name: priority
+        default: 3
+      - name: summary
+        default: Title
+      - name: project
+        default: FAL
+      - name: epic
+      - name: account
+
+    script: |
+      board_name="Falcon"
+
+      echo "Creaing issue on project $JIRA_PROJECT ($project_id), board $board_name ($board_id)"
+
+      url="https://tasks.opencraft.com/secure/CreateIssueDetails%21init.jspa?"
+      url+="&issuetype={{options.type}}"
+      url+="&priority={{options.priority}}"
+      url+="&pid={{options.project}}"
+
+      if [[ "{{ options.account }}" != "<no value>" ]]; then
+        url+="&customfield_10011={{options.account}}"
+      fi
+
+      if [[ "{{ options.epic }}" != "<no value>" ]]; then
+        url+="&customfield_10007=key:{{ options.epic }}"
+      fi
+      url+="&summary={{options.summary}}"
+
+      echo "\nURL: $url"
+      zen-browser "$url"

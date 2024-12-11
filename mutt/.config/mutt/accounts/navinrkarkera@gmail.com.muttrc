@@ -1,0 +1,28 @@
+# vim: filetype=neomuttrc
+# muttrc file for account navinrkarkera@gmail.com
+set realname = "navinrkarkera"
+set from = "navinrkarkera@gmail.com"
+set sendmail = "msmtp -a navinrkarkera@gmail.com"
+alias me navinrkarkera <navinrkarkera@gmail.com>
+set folder = "/home/navin/.local/share/mail/navinrkarkera@gmail.com"
+set header_cache = /home/navin/.cache/mutt-wizard/navinrkarkera@gmail.com/headers
+set message_cachedir = /home/navin/.cache/mutt-wizard/navinrkarkera@gmail.com/bodies
+set mbox_type = Maildir
+set hostname = "gmail.com"
+source /usr/share/mutt-wizard/switch.muttrc
+set spoolfile = +INBOX
+set postponed = +Drafts
+set trash = +Trash
+set record = +Sent
+set pager_index_lines=10
+set nm_default_url = "notmuch:///home/navin/.local/share/mail"
+
+macro index o "<shell-escape>mw -y navinrkarkera@gmail.com<enter>" "run mbsync to sync navinrkarkera@gmail.com"
+macro index,pager \\ "<pipe-message>/home/navin/.config/taskopen/1.x/mutt2task<enter>" "create task from email"
+
+macro index \eg "<enter-command>unset wait_key<enter><shell-escape>gpg --list-secret-keys; printf 'Enter email ID of user to publish: '; read eID; printf 'Enter fingerprint of GPG key to publish: '; read eFGPT; /usr/libexec/gpg-wks-client --create \$eFGPT \$eID | msmtp --read-envelope-from --read-recipients -a navinrkarkera@gmail.com<enter>"  "publish GPG key to WKS provider"
+macro index \eh "<pipe-message>/usr/libexec/gpg-wks-client --receive | msmtp --read-envelope-from --read-recipients -a navinrkarkera@gmail.com<enter>" "confirm GPG publication"
+
+mailboxes "=INBOX" "=[Gmail]/Important" "=[Gmail]/Drafts" "=[Gmail]/Sent Mail" "=[Gmail]/Spam" "=[Gmail]/Starred" "=[Gmail]/Trash" "=[Gmail]/All Mail" "=N1-Snoozed" "=Sent Items" "=Trash/Deleted" "=Trash/Deleted Items"
+virtual-mailboxes "Unread" "notmuch://?query=tag:unread and tag:inbox and (to:navin@opencraft.com or cc:navin@opencraft.com)"
+virtual-mailboxes "Mentions" "notmuch://?query=body:navin"

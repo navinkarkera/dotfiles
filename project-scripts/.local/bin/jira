@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+export JIRA_API_TOKEN="$(pass opencraft-jira-navinkarkera)"
+/usr/bin/jira $@

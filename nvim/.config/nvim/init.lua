@@ -47,7 +47,7 @@ for _, plugin in pairs(builtins) do
   vim.g["loaded_" .. plugin] = 1
 end
 
-require('lazy').setup {
+require('lazy').setup({
   {
     'ibhagwan/fzf-lua',
     dependencies = { 'nvim-tree/nvim-web-devicons' }
@@ -81,7 +81,6 @@ require('lazy').setup {
     dependencies = {
       'hrsh7th/cmp-nvim-lsp',
       'lukas-reineke/cmp-rg',
-      'hrsh7th/cmp-buffer',
       'hrsh7th/cmp-nvim-lsp-signature-help',
       'L3MON4D3/LuaSnip',
       'saadparwaiz1/cmp_luasnip',
@@ -117,7 +116,11 @@ require('lazy').setup {
     end,
   },
   { import = 'custom.plugins' },
-}
+}, {
+  rocks = {
+    hererocks = true,  -- recommended if you do not have global installation of Lua 5.1.
+  },
+})
 
 -- conceal
 vim.o.conceallevel = 2
@@ -447,6 +450,7 @@ map('n', '<leader>fl', fzf_lua.resume)
 map('n', '<leader>fq', fzf_lua.quickfix)
 map('n', '<leader>fs', fzf_lua.lsp_document_symbols)
 map('n', '<leader>fj', fzf_lua.jumps)
+map('n', '<leader>ft', fzf_lua.treesitter)
 map('n', '<leader>fws', fzf_lua.lsp_live_workspace_symbols)
 map('n', '<C-]>',
   function()
@@ -457,6 +461,7 @@ map('n', '<C-f>', fzf_lua.live_grep_glob)
 map("v", "<C-f>", fzf_lua.grep_visual)
 map("n", "<leader>pw", fzf_lua.grep_cword)
 map("n", "<leader>tt", my_functions.fzf_get_terminals)
+map("n", "<leader>z=", fzf_lua.spell_suggest)
 map(
   { "n", "v", "i" },
   "<C-x><C-f>",
@@ -491,7 +496,8 @@ vim.api.nvim_create_user_command(
   }
 )
 
-local base_branch = os.getenv("GIT_PARENT_BRANCH") or "master"
+local base_branch = vim.fn.system({'git', 'rev-parse', '--abbrev-ref', 'origin/HEAD'})
+base_branch = vim.trim(base_branch)
 map('n', '<leader>fc', ":ListFilesFromBranch " .. base_branch .. "<CR>")
 map('n', '<leader>dc', ":DiffviewOpen " .. base_branch .. "<CR>")
 
@@ -855,7 +861,7 @@ cmp.setup {
       select = true,
     },
     ['<C-l>'] = cmp.mapping(function(fallback)
-      if luasnip.locally_expand_or_jumpable() then
+      if luasnip.expand_or_jumpable() then
         luasnip.expand_or_jump()
       else
         fallback()
@@ -874,36 +880,7 @@ cmp.setup {
       elseif cmp.visible() then
         cmp.select_next_item()
       elseif has_words_before() then
-        -- vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-p>", true, true, true), "n", true)
-        cmp.complete({
-          config = {
-            sources = cmp.config.sources({
-              {
-                name = 'buffer',
-                option = {
-                  get_bufnrs = function()
-                    local buf = vim.api.nvim_get_current_buf()
-                    local byte_size = vim.api.nvim_buf_get_offset(buf, vim.api.nvim_buf_line_count(buf))
-                    if byte_size > 1024 * 1024 then -- 1 Megabyte max
-                      return {}
-                    end
-                    return { buf }
-                  end
-                }
-              },
-            },{
-              { name = 'rg' },
-            }),
-            sorting = {
-              comparators = {
-                function(...) return require('cmp_buffer'):compare_locality(...) end,
-              }
-            }
-          },
-        })
-        if #cmp.get_entries() == 1 then
-          cmp.confirm({ select = true })
-        end
+        vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-p>", true, true, true), "n", true)
       else
         fallback()
       end
@@ -1116,5 +1093,9 @@ map("i", "!", "!<c-g>u")
 map("i", "?", "?<c-g>u")
 map("i", "[", "[<c-g>u")
 map("i", "(", "(<c-g>u")
+
+-- search
+map('v', ",s", [["vy:silent !s <C-R>v<CR>]])
+map('n', ",s", [[:silent !s <C-R>=expand('<cword>')<CR><CR>]])
 
 -- vim: ts=2 sts=2 sw=2 et

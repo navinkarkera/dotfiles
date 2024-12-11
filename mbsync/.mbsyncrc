@@ -26,3 +26,30 @@ ExpireUnread no
 CopyArrivalDate yes
 # End profile
 
+
+IMAPStore navinrkarkera@gmail.com-remote
+Host imap.gmail.com
+Port 993
+User navinrkarkera@gmail.com
+PassCmd "pass navinrkarkera@gmail.com"
+AuthMechs LOGIN
+TLSType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore navinrkarkera@gmail.com-local
+Subfolders Verbatim
+Path /home/navin/.local/share/mail/navinrkarkera@gmail.com/
+Inbox /home/navin/.local/share/mail/navinrkarkera@gmail.com/INBOX
+
+Channel navinrkarkera@gmail.com
+Expunge Both
+Far :navinrkarkera@gmail.com-remote:
+Near :navinrkarkera@gmail.com-local:
+Patterns * !"[Gmail]/All Mail" "[Gmail]/Important"
+Create Both
+SyncState *
+MaxMessages 1000
+ExpireUnread yes
+CopyArrivalDate yes
+# End profile
+
