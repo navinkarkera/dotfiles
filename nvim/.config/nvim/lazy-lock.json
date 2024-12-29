@@ -45,7 +45,6 @@
   "repo-url.nvim": { "branch": "master", "commit": "ca85eaad08f847ec009ee579b9979647f82a5efe" },
   "snacks.nvim": { "branch": "main", "commit": "98df370703b3c47a297988f3e55ce99628639590" },
   "ssr.nvim": { "branch": "main", "commit": "7c95cfa5836508f08ae833a4b31d2ed265560f64" },
-  "treesj": { "branch": "main", "commit": "94f6df623f2d15630b1b617abff39962024cb501" },
   "vim-snippets": { "branch": "master", "commit": "f0a3184d9f90b96b044d5914625a25c554d7f301" },
   "zk-nvim": { "branch": "main", "commit": "6beea6fafe2c781cb10e80878e68d5e32937692a" }
 }
