@@ -79,10 +79,12 @@ function M.fzf_get_terminals()
   fzf_lua.fzf_exec(
     final_table,
     {
-      fzf_opts = { ["--header"] = [["enter,ctrl-s:split | ctrl-v:vsplit | ctrl-t:tab | ctrl-r:restart | ctrl-x:close"]]  },
+      fzf_opts = { ["--header"] = [[enter,ctrl-s:split | ctrl-v:vsplit | ctrl-t:tab | ctrl-r:restart | ctrl-x:close]]  },
       actions = {
         ['default'] = function(selected, opts)
-          actions.vimcmd("split | b", selected, opts)
+          -- actions.vimcmd("split | b", selected, opts)
+          local cmd = vim.split(selected[1], ":")[3]
+          Snacks.terminal.toggle(cmd)
         end,
         ['ctrl-s'] = function(selected, opts)
           actions.vimcmd("split | b", selected, opts)
@@ -132,7 +134,7 @@ function M.fzf_all_tasks()
     "atuin search --format={command} --reverse",
     {
       prompt="Run> ",
-      fzf_opts = { ["--header"] = [["enter:run | ctrl-b:background | ctrl-e:edit"]]  },
+      fzf_opts = { ["--header"] = [[enter:run | ctrl-b:background | ctrl-e:edit]]  },
       actions = {
         ['default'] = function(selected, opts)
           local cmd = selected[1]
@@ -232,6 +234,89 @@ function M.run_command(cmd, full_shell, background)
     vim.api.nvim_win_set_cursor(cur_win, cur_position)
     -- vim.api.nvim_input("<C-w><C-p>")
   end
+end
+
+function M.run_snack_command(cmd)
+  local terminal, created = Snacks.terminal.get(cmd, {interactive = false})
+  if created then
+    local start = os.time()
+    vim.api.nvim_create_autocmd("TermClose", {
+      once = true,
+      buffer = terminal.buf,
+      callback = function()
+        local status = "SUCCESS-0"
+        local priority = "default"
+        local exit_code = vim.v.event.status
+        if exit_code ~= 0 then
+          status = "FAILED-" .. exit_code
+          priority = "high"
+        end
+        cmd = string.gsub(cmd, '"', '\\"')
+        local elapsed_time = os.difftime(os.time(), start)
+        vim.system({'notify-send', '--icon', 'neovim', [[[]] .. status .. [[ | Took: ]] .. elapsed_time .. [[] ]], [[CMD: ]] .. cmd .. [[\n]].. vim.fn.getcwd()})
+        if elapsed_time > 10 then
+          -- if true then
+          local hostname = vim.fn.hostname()
+          local nfty_cmd = {'curl', '-H', [[Title: ]] .. cmd .. [[ | ]] .. status .. [[ | Took: ]] .. elapsed_time, '-H', [[Priority: ]] .. priority, '-d', [["]] .. vim.fn.getcwd() .. [["]], 'ntfy.sh/nrk_mangalpete_' .. hostname .. '_reminders'}
+          vim.system(nfty_cmd)
+        end
+      end,
+    })
+  else
+    terminal:toggle()
+  end
+end
+
+---@param types string[] Will return the first node that matches one of these types
+---@param node TSNode|nil
+---@return TSNode|nil
+local function find_node_ancestor(types, node)
+  if not node then
+    return nil
+  end
+
+  if vim.tbl_contains(types, node:type()) then
+    return node
+  end
+
+  local parent = node:parent()
+
+  return find_node_ancestor(types, parent)
+end
+
+
+---When typing "await" add "async" to the function declaration if the function
+---isn't async already.
+function M.add_async()
+  -- This function should be executed when the user types "t" in insert mode,
+  -- but "t" is not inserted because it's the trigger.
+  vim.api.nvim_feedkeys('t', 'n', true)
+
+  local buffer = vim.fn.bufnr()
+
+  local text_before_cursor = vim.fn.getline('.'):sub(vim.fn.col '.' - 4, vim.fn.col '.' - 1)
+  if text_before_cursor ~= 'awai' then
+    return
+  end
+
+  -- ignore_injections = false makes this snippet work in filetypes where JS is injected
+  -- into other languages
+  local current_node = vim.treesitter.get_node { ignore_injections = false }
+  local function_node = find_node_ancestor(
+    { 'arrow_function', 'function_declaration', 'function', 'method_definition' },
+    current_node
+  )
+  if not function_node then
+    return
+  end
+
+  local function_text = vim.treesitter.get_node_text(function_node, 0)
+  if vim.startswith(function_text, 'async') then
+    return
+  end
+
+  local start_row, start_col = function_node:start()
+  vim.api.nvim_buf_set_text(buffer, start_row, start_col, start_row, start_col, { 'async ' })
 end
 
 return M

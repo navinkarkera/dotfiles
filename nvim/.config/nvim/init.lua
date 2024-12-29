@@ -61,7 +61,6 @@ require('lazy').setup({
     priority = 1000, -- Ensure it loads first
   },
   'nvim-lualine/lualine.nvim',
-  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
   { 'lewis6991/gitsigns.nvim', dependencies = { 'nvim-lua/plenary.nvim' } },
   {
     'nvim-treesitter/nvim-treesitter',
@@ -170,64 +169,6 @@ vim.o.splitright = true
 vim.o.splitbelow = true
 vim.o.splitkeep = "screen"
 
--- vim.g.gruvbox_baby_transparent_mode = 1
--- require("modus-themes").setup({
--- 	-- Theme comes in two styles `modus_operandi` and `modus_vivendi`
--- 	-- `auto` will automatically set style based on background set with vim.o.background
--- 	style = "auto",
--- 	variant = "tinted", -- Theme comes in four variants `default`, `tinted`, `deuteranopia`, and `tritanopia`
--- 	dim_inactive = false, -- "non-current" windows are dimmed
--- 	styles = {
--- 		-- Style to be applied to different syntax groups
--- 		-- Value is any valid attr-list value for `:help nvim_set_hl`
--- 		comments = { italic = true },
--- 		keywords = { italic = true },
--- 		functions = {},
--- 		variables = {},
--- 	},
--- })
--- require("onedarkpro").setup({
---   styles = {
---     types = "NONE",
---     methods = "NONE",
---     numbers = "NONE",
---     strings = "NONE",
---     comments = "italic",
---     keywords = "bold,italic",
---     constants = "NONE",
---     functions = "NONE",
---     operators = "NONE",
---     variables = "NONE",
---     parameters = "NONE",
---     conditionals = "italic",
---     virtual_text = "NONE",
---   },
---   options = {
---     highlight_inactive_windows = true,
---   },
--- })
-
--- require("rose-pine").setup({
---   variant = "auto", -- auto, main, moon, or dawn
---   dark_variant = "main", -- main, moon, or dawn
---   dim_inactive_windows = true,
---   extend_background_behind_borders = true,
---
---   enable = {
---     terminal = true,
---     legacy_highlights = false, -- Improve compatibility for previous versions of Neovim
---     migrations = true, -- Handle deprecated options automatically
---   },
---
---   disable_italics = true,
---   highlight_groups = {
---     Comment = { italic = true },
---     String = { italic = true },
---   }
--- })
-
--- vim.cmd.colorscheme "sorbet"
-
 if vim.fn.executable("rg") == 1 then
   vim.o.grepprg = [[rg --vimgrep --no-heading --smart-case --hidden -g '!.git/']]
   vim.o.grepformat = "%f:%l:%c:%m"
@@ -313,20 +254,6 @@ function! ToggleQuickFix()
     cclose
   endif
 endfunction
-" Zoom / Restore window.
-function! s:ZoomToggle() abort
-  if exists('t:zoomed') && t:zoomed
-    execute t:zoom_winrestcmd
-    let t:zoomed = 0
-  else
-    let t:zoom_winrestcmd = winrestcmd()
-    resize
-    vertical resize
-    let t:zoomed = 1
-  endif
-endfunction
-command! ZoomToggle call s:ZoomToggle()
-nnoremap <silent> <M-a> :ZoomToggle<CR>
 ]])
 
 
@@ -659,7 +586,7 @@ local on_attach = function(_, bufnr)
   map('n', 'gr', vim.lsp.buf.references, opts)
   map('n', 'gR', fzf_lua.lsp_references, opts)
   map('n', '<leader>ca', vim.lsp.buf.code_action, opts)
-  map('n', '<leader>so', fzf_lua.lsp_document_symbols, opts)
+  map('n', '<leader>li', fzf_lua.lsp_incoming_calls)
   -- Create a command `:Format` local to the LSP buffer
   vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
     vim.lsp.buf.format()
@@ -1019,7 +946,7 @@ map('n', '<C-p>', fzf_lua.files)
 require("nvim-surround").setup({})
 
 -- terminal setup
-vim.api.nvim_create_user_command("Run", function(opts) my_functions.run_command(opts.args, false, false) end,
+vim.api.nvim_create_user_command("Run", function(opts) my_functions.run_snack_command(opts.args) end,
   { nargs = 1, complete = "shellcmd" })
 vim.api.nvim_create_user_command("RunB", function(opts) my_functions.run_command(opts.args, false, true) end,
   { nargs = 1, complete = "shellcmd" })

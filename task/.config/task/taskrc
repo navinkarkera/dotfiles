@@ -133,8 +133,8 @@ report.jira.filter=status:pending -WAITING +jira_task or +jira_review
 report.github.description=Tasks from github
 report.github.columns=id,start.age,entry.age,depends,priority,project,tags,recur,scheduled.countdown,due.relative,until.remaining,description,urgency,modified.age
 report.github.labels=ID,Active,Age,Deps,P,Project,Tag,Recur,S,Due,Until,Description,Urg,Modified
-report.github.sort=entry-,modified-
-report.github.filter=status:pending -WAITING +github +new -maintainer
+report.github.sort=modified-,entry-
+report.github.filter=status:pending -WAITING +github -maintainer
 
 # Maintainer tasks
 report.maintainer.description=Maintainer tasks
