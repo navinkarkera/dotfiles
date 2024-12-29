@@ -948,7 +948,7 @@ require("nvim-surround").setup({})
 -- terminal setup
 vim.api.nvim_create_user_command("Run", function(opts) my_functions.run_snack_command(opts.args) end,
   { nargs = 1, complete = "shellcmd" })
-vim.api.nvim_create_user_command("RunB", function(opts) my_functions.run_command(opts.args, false, true) end,
+vim.api.nvim_create_user_command("RunB", function(opts) my_functions.run_snack_command(opts.args, true) end,
   { nargs = 1, complete = "shellcmd" })
 vim.api.nvim_create_user_command("RunF", function(opts) my_functions.run_command(opts.args, true, false) end,
   { nargs = 1, complete = "shellcmd" })

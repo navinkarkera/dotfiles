@@ -236,7 +236,7 @@ function M.run_command(cmd, full_shell, background)
   end
 end
 
-function M.run_snack_command(cmd)
+function M.run_snack_command(cmd, background)
   local terminal, created = Snacks.terminal.get(cmd, {interactive = false})
   if created then
     local start = os.time()
@@ -264,6 +264,9 @@ function M.run_snack_command(cmd)
     })
   else
     terminal:toggle()
+  end
+  if background then
+    terminal:hide()
   end
 end
 
