@@ -35928,3 +35928,93 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20241227T161307Z","end":"20241227T161543Z","tags":["FAL-4016 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241230T042801Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241230T042801Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241230T042801Z","tags":["FAL-4016 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241230T042801Z","tags":["FAL-4016 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241230T042801Z","end":"20241230T044416Z","tags":["FAL-4016 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241230T044416Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241230T044416Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241230T044416Z","tags":["FAL-3984 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241230T044416Z","tags":["FAL-3984 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241230T044416Z","end":"20241230T044745Z","tags":["FAL-3984 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241230T044745Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241230T044745Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241230T044745Z","tags":["FAL-4016 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241230T044745Z","tags":["FAL-4016 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241230T044745Z","end":"20241230T060944Z","tags":["FAL-4016 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241230T091719Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241230T091719Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241230T091719Z","tags":["FAL-4016 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241230T091719Z","tags":["FAL-4016 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241230T091719Z","end":"20241230T105255Z","tags":["FAL-4016 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20241230T150829Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241230T150829Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241230T150829Z","tags":["FAL-4016 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20241230T150829Z","tags":["FAL-4016 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20241230T150829Z","end":"20241230T152804Z","tags":["FAL-4016 work"]}

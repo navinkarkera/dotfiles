@@ -65,6 +65,14 @@ function M.execute_from_harpoon()
   end
 end
 
+local function cmd_from_term_title(title)
+  title_parts = vim.split(title, ":")
+  table.remove(title_parts, 1)
+  table.remove(title_parts, 1)
+  cmd = vim.iter(title_parts):join(":")
+  return cmd
+end
+
 function M.fzf_get_terminals()
   local final_table = {}
   local bufs = vim.api.nvim_list_bufs()
@@ -79,25 +87,15 @@ function M.fzf_get_terminals()
   fzf_lua.fzf_exec(
     final_table,
     {
-      fzf_opts = { ["--header"] = [[enter,ctrl-s:split | ctrl-v:vsplit | ctrl-t:tab | ctrl-r:restart | ctrl-x:close]]  },
       actions = {
         ['default'] = function(selected, opts)
-          -- actions.vimcmd("split | b", selected, opts)
-          local cmd = vim.split(selected[1], ":")[3]
-          Snacks.terminal.toggle(cmd)
-        end,
-        ['ctrl-s'] = function(selected, opts)
-          actions.vimcmd("split | b", selected, opts)
-        end,
-        ['ctrl-v'] = function(selected, opts)
-          actions.vimcmd("vertical split | b", selected, opts)
-        end,
-        ['ctrl-t'] = function(selected, opts)
-          actions.vimcmd("tab split | b", selected, opts)
+          Snacks.terminal.toggle(cmd_from_term_title(selected[1]))
         end,
         ['ctrl-r'] = function(selected, opts)
-          local cmd = selected[1]:match("term://.*:(.*)")
-          actions.ex_run_cr({ "RunB " .. cmd })
+          local cmd = cmd_from_term_title(selected[1])
+          local terminal = Snacks.terminal.get(cmd)
+          terminal:close()
+          actions.ex_run_cr({ "Run " .. cmd })
         end,
         ['ctrl-x'] = function(selected, opts)
           actions.vimcmd(":bd!", selected, opts)
@@ -158,12 +156,10 @@ function M.restart_cmd()
   if title == nil then
     return
   end
-  local cmd = title:match("term://.*:(.*)")
-  local current_id = vim.api.nvim_get_current_buf()
-  vim.cmd([[:call histadd("cmd", "Run ]] .. string.gsub(cmd, '"', '\\"') .. [[")]])
-  vim.cmd(":terminal " .. cmd)
-  vim.api.nvim_input("G")
-  vim.api.nvim_buf_delete(current_id, { force = true })
+  local cmd = cmd_from_term_title(title)
+  local terminal = Snacks.terminal.get(cmd)
+  terminal:close()
+  M.add_to_hist_and_run(cmd)
 end
 
 function M.find_terminal_buffer_by_cmd(cmd)
