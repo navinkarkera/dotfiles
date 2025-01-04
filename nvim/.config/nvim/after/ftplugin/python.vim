@@ -16,5 +16,9 @@ nnoremap <silent> <buffer> <F8> :norm w[mw<CR> :lua require("my-functions").add_
 " Run test function under cursor in harpoon term
 nnoremap <silent> <buffer> <leader><F8> :norm w[mw<CR> :lua require("harpoon.term").sendCommand(require('my-functions').count_or_one(), "unset DJANGO_SETTINGS_MODULE; unset SERVICE_VARIANT; export EDXAPP_TEST_MONGO_HOST=mongodb; python -m pytest --ds=cms.envs.tutor.test -vvs <C-R>=expand('%:.')<CR> -k <C-R>=expand('<cword>')<CR>")<CR>
 
-" run module interactive
-nnoremap <silent> <buffer> <leader>, :lua require("my-functions").executePythonModuleInteractive('<C-R>=expand("%:.")<CR>')<CR>
+
+nnoremap <silent> <buffer> ,<F5> :lua require("my-functions").add_to_hist_and_run('echo <C-R>=expand("%:.")<CR> \| entr -c python -m <C-R>=expand("%:.")<CR>')<CR>
+" Run current test file
+nnoremap <silent> <buffer> ,<F7> :lua require("my-functions").add_to_hist_and_run("echo <C-R>=expand('%:.')<CR> \| entr -c python -m pytest -vvs <C-R>=expand('%:.')<CR>")<CR>
+" Run test function under cursor
+nnoremap <silent> <buffer> ,<F8> :norm w[mw<CR> :lua require("my-functions").add_to_hist_and_run("echo <C-R>=expand('%:.')<CR> \| entr -c python -m pytest -vvs <C-R>=expand('%:.')<CR> -k <C-R>=expand('<cword>')<CR>")<CR>

@@ -20,6 +20,24 @@ return {
       notification = {
         -- wo = { wrap = true } -- Wrap notifications
       }
+    },
+    terminal = {
+      win = {
+        position = "right",
+        width = 0.6,
+        keys = {
+          gf = function(self)
+            local f = vim.fn.findfile(vim.fn.expand("<cfile>"), "**")
+            if f == "" then
+              Snacks.notify.warn("No file under cursor")
+            else
+              vim.schedule(function()
+                vim.cmd("e " .. f)
+              end)
+            end
+          end,
+        }
+      },
     }
   },
   keys = {

@@ -91,15 +91,25 @@ function M.fzf_get_terminals()
         ['default'] = function(selected, opts)
           Snacks.terminal.toggle(cmd_from_term_title(selected[1]))
         end,
-        ['ctrl-r'] = function(selected, opts)
-          local cmd = cmd_from_term_title(selected[1])
-          local terminal = Snacks.terminal.get(cmd)
-          terminal:close()
-          actions.ex_run_cr({ "Run " .. cmd })
-        end,
-        ['ctrl-x'] = function(selected, opts)
-          actions.vimcmd(":bd!", selected, opts)
-        end,
+        ['ctrl-r'] = {
+          fn = function(selected, opts)
+            local cmd = cmd_from_term_title(selected[1])
+            local terminal = Snacks.terminal.get(cmd)
+            terminal:close()
+            actions.ex_run_cr({ "RunB " .. cmd })
+          end,
+          exec_silent = true,
+          reload = true,
+        },
+        ['ctrl-x'] = {
+          fn = function(selected, opts)
+            local cmd = cmd_from_term_title(selected[1])
+            local terminal = Snacks.terminal.get(cmd)
+            terminal:close()
+          end,
+          exec_silent = true,
+          reload = true,
+        },
       },
     }
   )

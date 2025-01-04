@@ -36018,3 +36018,273 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20241230T150829Z","end":"20241230T152804Z","tags":["FAL-4016 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250102T052207Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250102T052207Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250102T052207Z","tags":["FAL-3984 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250102T052207Z","tags":["FAL-3984 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250102T052207Z","end":"20250102T061939Z","tags":["FAL-3984 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250102T061939Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250102T061939Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250102T061939Z","tags":["FAL-3990 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250102T061939Z","tags":["FAL-3990 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250102T061939Z","end":"20250102T073532Z","tags":["FAL-3990 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250102T094058Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250102T094058Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250102T094058Z","tags":["FAL-3990 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250102T094058Z","tags":["FAL-3990 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250102T094058Z","end":"20250102T112112Z","tags":["FAL-3990 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250102T112112Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250102T112112Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250102T112112Z","tags":["FAL-3871 post epic update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250102T112112Z","tags":["FAL-3871 post epic update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250102T112112Z","end":"20250102T112642Z","tags":["FAL-3871 post epic update"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250102T112642Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250102T112642Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250102T112642Z","tags":["FAL-3871 post epic update"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250102T112642Z","tags":["FAL-3871 post epic update"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250102T112642Z","end":"20250102T112738Z","tags":["FAL-3871 post epic update"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250102T151147Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250102T151147Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250102T151147Z","tags":["FAL-3990 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250102T151147Z","tags":["FAL-3990 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250102T151147Z","end":"20250102T151548Z","tags":["FAL-3990 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250102T151548Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250102T151548Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250102T151548Z","tags":["FAL-3875 update discovery and create related tasks"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250102T151548Z","tags":["FAL-3875 update discovery and create related tasks"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250102T151548Z","end":"20250102T155548Z","tags":["FAL-3875 update discovery and create related tasks"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250102T164514Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250102T164514Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250102T164514Z","tags":["FAL-3875 update discovery and create related tasks"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250102T164514Z","tags":["FAL-3875 update discovery and create related tasks"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250102T164514Z","end":"20250102T164610Z","tags":["FAL-3875 update discovery and create related tasks"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250103T050705Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250103T050705Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250103T050705Z","tags":["FAL-3990 update ticket"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250103T050705Z","tags":["FAL-3990 update ticket"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250103T050705Z","end":"20250103T052236Z","tags":["FAL-3990 update ticket"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250103T052237Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250103T052237Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250103T052237Z","tags":["FAL-4016 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250103T052237Z","tags":["FAL-4016 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250103T052237Z","end":"20250103T061400Z","tags":["FAL-4016 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250103T064748Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250103T064748Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250103T064748Z","tags":["FAL-4016 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250103T064748Z","tags":["FAL-4016 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250103T064748Z","end":"20250103T072714Z","tags":["FAL-4016 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250103T090725Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250103T090725Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250103T090725Z","tags":["FAL-4016 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250103T090725Z","tags":["FAL-4016 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250103T090725Z","end":"20250103T110040Z","tags":["FAL-4016 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250103T125234Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250103T125234Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250103T125234Z","tags":["FAL-3984 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250103T125234Z","tags":["FAL-3984 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250103T125234Z","end":"20250103T130347Z","tags":["FAL-3984 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250104T101543Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250104T101543Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250104T101543Z","tags":["FAL-4004 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250104T101543Z","tags":["FAL-4004 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250104T101543Z","end":"20250104T112058Z","tags":["FAL-4004 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250104T171029Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250104T171029Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250104T171029Z","tags":["FAL-4004 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250104T171029Z","tags":["FAL-4004 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250104T171029Z","end":"20250104T171044Z","tags":["FAL-4004 work"]}
