@@ -1,20 +1,10 @@
 # Enable colors and change prompt:
 autoload -U colors && colors	# Load colors
-PS1="%B%F{75}%1~%f%b%f %(?.%F{green}$.%F{red}$)%f "
 setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
 setopt interactive_comments
 setopt share_history
 
-# git branch
-autoload -Uz vcs_info
-precmd_vcs_info() { vcs_info }
-precmd_functions+=( precmd_vcs_info )
-setopt prompt_subst
-RPROMPT=\$vcs_info_msg_0_
-# PROMPT=\$vcs_info_msg_0_'%# '
-zstyle ':vcs_info:git:*' formats '%F{208}(%b)%f'
-zstyle ':vcs_info:*' enable git
 
 # up down arrow history search
 autoload -U up-line-or-beginning-search
@@ -95,6 +85,7 @@ zstyle ':fzf-tab:*' switch-group ',' '.'
 
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
 
+eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh --disable-up-arrow)"
 eval "$(mise activate zsh)"
