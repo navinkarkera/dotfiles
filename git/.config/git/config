@@ -67,3 +67,5 @@
 [http]
 	postBuffer = 500M
 	maxRequestBuffer = 100M
+[rerere]
+	enabled = true

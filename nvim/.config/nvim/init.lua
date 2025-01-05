@@ -1007,6 +1007,8 @@ map("v", "<leader>prs", [[:w !curl --data-binary @- https://paste.rs/ | xsel --c
 map("n", "gD", ":tag <C-R>=expand('<cword>')<CR><CR>")
 map("n", "gP", ":ptselect <C-R>=expand('<cword>')<CR><CR>")
 map("n", "<leader>sg", ":spellgood <C-R>=expand('<cword>')<CR><CR>")
+map("n", "<leader>gf", [[:norm w[mw<CR> :lua Snacks.terminal.open("git log -L :<C-R>=expand('<cword>')<CR>:<C-R>=expand('%:.')<CR>")<CR>]])
+map("v", "<leader>gf", my_functions.visual_selection_git_log)
 
 map("i", "<C-h>", "<Left>")
 map("i", "<C-k>", "<Up>")

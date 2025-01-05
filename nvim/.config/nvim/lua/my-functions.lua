@@ -336,4 +336,15 @@ function M.add_async()
   vim.api.nvim_buf_set_text(buffer, start_row, start_col, start_row, start_col, { 'async ' })
 end
 
+function M.visual_selection_git_log()
+	local start_pos = vim.api.nvim_buf_get_mark(0, "<")
+	local end_pos = vim.api.nvim_buf_get_mark(0, ">")
+
+	local start_line = start_pos[1]
+	local end_line = end_pos[1]
+  local current_file = vim.fn.expand('%:.')
+
+  Snacks.terminal.open("git log -L " .. start_line .. "," .. end_line .. ":" .. current_file)
+end
+
 return M
