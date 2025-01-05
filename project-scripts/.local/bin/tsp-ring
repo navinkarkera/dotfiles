@@ -15,4 +15,4 @@ priority="default"
 tag="information_source"
 topic="nrk_mangalpete_$(hostname)"
 [[ $result != "Success" ]]  && priority="high" && tag="warning";
-(( $took > 5 )) && curl -H "Title: [$took seconds]$command" -H "Priority: $priority" -H "Tags: $tag" -d "$(echo -e "$output")" ntfy.sh/$topic
+(( $took > 10 )) && curl -H "Title: [$took seconds]$command" -H "Priority: $priority" -H "Tags: $tag" -d "$(echo -e "$output")" ntfy.sh/$topic

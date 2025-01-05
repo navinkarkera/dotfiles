@@ -1,6 +1,7 @@
 local M = {}
 local luasnip = require("luasnip")
 local neogen = require("neogen")
+local last_cmd = nil
 
 function M.add_to_hist_and_run(cmd, runner)
   local cmd_runner = runner or "Run "
@@ -163,13 +164,14 @@ end
 
 function M.restart_cmd()
   local title = vim.b.term_title
-  if title == nil then
-    return
+  if title ~= nil then
+    local cmd = cmd_from_term_title(title)
+    local terminal = Snacks.terminal.get(cmd)
+    terminal:close()
+    M.add_to_hist_and_run(cmd)
+  elseif last_cmd ~= nil then
+    M.run_snack_command(last_cmd, false, true)
   end
-  local cmd = cmd_from_term_title(title)
-  local terminal = Snacks.terminal.get(cmd)
-  terminal:close()
-  M.add_to_hist_and_run(cmd)
 end
 
 function M.find_terminal_buffer_by_cmd(cmd)
@@ -242,9 +244,10 @@ function M.run_command(cmd, full_shell, background)
   end
 end
 
-function M.run_snack_command(cmd, background)
+function M.run_snack_command(cmd, background, restart)
   local terminal, created = Snacks.terminal.get(cmd, {interactive = false})
   if created then
+    last_cmd = cmd
     local start = os.time()
     vim.api.nvim_create_autocmd("TermClose", {
       once = true,
@@ -268,11 +271,16 @@ function M.run_snack_command(cmd, background)
         end
       end,
     })
+    if background == true then
+      terminal:hide()
+    end
   else
-    terminal:toggle()
-  end
-  if background then
-    terminal:hide()
+    if restart == true then
+      terminal:close()
+      M.add_to_hist_and_run(cmd)
+    else
+      terminal:toggle()
+    end
   end
 end
 
