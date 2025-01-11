@@ -1,10 +1,15 @@
 local M = {}
 local luasnip = require("luasnip")
 local neogen = require("neogen")
+local ts_utils = require 'nvim-treesitter.ts_utils'
 local last_cmd = nil
 
-function M.add_to_hist_and_run(cmd, runner)
+function M.add_to_hist_and_run(cmd, runner, reload_on_change)
   local cmd_runner = runner or "Run "
+  if reload_on_change == true then
+    local current_file = vim.fn.expand('%:.')
+    cmd = "echo " .. current_file .. " | entr -c " .. cmd
+  end
   local vim_cmd = cmd_runner .. cmd
   vim.cmd([[:call histadd("cmd", "]] .. string.gsub(vim_cmd, '"', '\\"') .. [[")]])
   vim.cmd(vim_cmd)
@@ -16,9 +21,14 @@ function M.getPythonModulePath(filePath)
   return modulePath
 end
 
-function M.executePythonModule(filePath)
+function M.executePythonModule(filePath, reload_on_change)
   local modulePath = M.getPythonModulePath(filePath)
-  M.add_to_hist_and_run("python -m " .. modulePath)
+  if reload_on_change == true then
+    local current_file = vim.fn.expand('%:.')
+    M.add_to_hist_and_run("echo " .. current_file .. " | entr -c python -m " .. modulePath)
+  else
+    M.add_to_hist_and_run("python -m " .. modulePath)
+  end
 end
 
 function M.executePythonModuleInteractive(filePath)
@@ -345,6 +355,33 @@ function M.visual_selection_git_log()
   local current_file = vim.fn.expand('%:.')
 
   Snacks.terminal.open("git log -L " .. start_line .. "," .. end_line .. ":" .. current_file)
+end
+
+function M.find_nearest_test(filetype, ts_query, parse_testname)
+  local query = vim.treesitter.query.parse(filetype, ts_query)
+  local result = {}
+  if query then
+    local curnode = ts_utils.get_node_at_cursor()
+    while curnode do
+      local iter = query:iter_captures(curnode, 0)
+      local capture_id, capture_node = iter()
+      if capture_node == curnode and query.captures[capture_id] == "scope-root" then
+        while query.captures[capture_id] ~= "test-name" do
+          capture_id, capture_node = iter()
+          if not capture_id then
+            return result
+          end
+        end
+        local name = vim.treesitter.get_node_text(capture_node, 0)
+        if parse_testname then
+          name = parse_testname(name)
+        end
+        table.insert(result, 1, name)
+      end
+      curnode = curnode:parent()
+    end
+  end
+  return result
 end
 
 return M

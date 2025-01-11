@@ -18,7 +18,7 @@ local function parse_testname(name)
 end
 
 local function run_test(reload_on_change)
-  local tests = my_funs.find_nearest_test("typescript", ts_query, parse_testname)
+  local tests = my_funs.find_nearest_test("javascript", ts_query, parse_testname)
   local current_file = vim.fn.expand('%:.')
   if reload_on_change == true then
     current_file = "--watch " .. current_file
