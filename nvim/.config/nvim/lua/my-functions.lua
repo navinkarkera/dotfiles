@@ -15,6 +15,14 @@ function M.add_to_hist_and_run(cmd, runner, reload_on_change)
   vim.cmd(vim_cmd)
 end
 
+function M.run_cmd_with_shell_runner(cmd, runner, reload_on_change)
+  local shell_runner = os.getenv("SHELL_RUNNER")
+  if shell_runner ~= nil then
+    cmd = shell_runner .. cmd
+  end
+  M.add_to_hist_and_run(cmd, runner, reload_on_change)
+end
+
 function M.getPythonModulePath(filePath)
   local modulePath = string.gsub(filePath, "/", ".")
   modulePath = string.gsub(modulePath, ".py$", "")
@@ -279,6 +287,13 @@ function M.run_snack_command(cmd, background, restart)
           local nfty_cmd = {'curl', '-H', [[Title: ]] .. cmd .. [[ | ]] .. status .. [[ | Took: ]] .. elapsed_time, '-H', [[Priority: ]] .. priority, '-d', [["]] .. vim.fn.getcwd() .. [["]], 'ntfy.sh/nrk_mangalpete_' .. hostname .. '_reminders'}
           vim.system(nfty_cmd)
         end
+      end,
+    })
+    vim.api.nvim_create_autocmd("TextChanged", {
+      once = true,
+      buffer = terminal.buf,
+      callback = function()
+        vim.cmd("$")
       end,
     })
     if background == true then

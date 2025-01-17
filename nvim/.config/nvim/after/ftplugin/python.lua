@@ -24,10 +24,10 @@ local function run_test(in_harpoon, reload_on_change)
   if in_harpoon == true then
     harpoon_term.sendCommand(
       my_funs.count_or_one(),
-      "unset DJANGO_SETTINGS_MODULE; unset SERVICE_VARIANT; export EDXAPP_TEST_MONGO_HOST=mongodb; python -m pytest --ds=cms.envs.tutor.test --no-header --no-summary -s --disable-warnings -rfex --pdb " .. current_file .. " -k " .. table.concat(tests, "::")
+      "unset DJANGO_SETTINGS_MODULE; unset SERVICE_VARIANT; export EDXAPP_TEST_MONGO_HOST=mongodb; python -m pytest --ds=cms.envs.tutor.test --no-header --no-summary -s --disable-warnings -rfex --pdb " .. current_file .. " -k '" .. table.concat(tests, " and ") .. "'"
     )
   else
-    my_funs.add_to_hist_and_run("python -m pytest --no-header --no-summary -s --disable-warnings -rfex --pdb " .. current_file .. " -k " .. table.concat(tests, "::"), nil, reload_on_change)
+    my_funs.run_cmd_with_shell_runner("python -m pytest --no-header --no-summary -s --disable-warnings -rfex --pdb " .. current_file .. " -k '" .. table.concat(tests, " and ") .. "'", nil, reload_on_change)
   end
 end
 
@@ -37,10 +37,10 @@ vim.keymap.set('n', ',<F5>', function() my_funs.executePythonModule(vim.fn.expan
 
 -- Run all tests
 vim.keymap.set('n', '<F6>', function()
-  my_funs.add_to_hist_and_run("python -m pytest --no-header --no-summary -s --disable-warnings -rfex --pdb")
+  my_funs.run_cmd_with_shell_runner("python -m pytest --no-header --no-summary -s --disable-warnings -rfex --pdb")
 end, { buffer = true })
 vim.keymap.set('n', ',<F6>', function()
-  my_funs.add_to_hist_and_run(
+  my_funs.run_cmd_with_shell_runner(
     "python -m pytest --no-header --no-summary -s --disable-warnings -rfex --pdb",
     nil,
     true
@@ -56,10 +56,10 @@ end, { buffer = true })
 
 -- Run all tests in current_file
 vim.keymap.set('n', '<F7>', function()
-  my_funs.add_to_hist_and_run("python -m pytest --no-header --no-summary -s --disable-warnings -rfex --pdb " .. vim.fn.expand('%:.'))
+  my_funs.run_cmd_with_shell_runner("python -m pytest --no-header --no-summary -s --disable-warnings -rfex --pdb " .. vim.fn.expand('%:.'))
 end, { buffer = true })
 vim.keymap.set('n', ',<F7>', function()
-  my_funs.add_to_hist_and_run(
+  my_funs.run_cmd_with_shell_runner(
     "python -m pytest --no-header --no-summary -s --disable-warnings -rfex --pdb " .. vim.fn.expand('%:.'),
     nil,
     true
@@ -69,7 +69,7 @@ end, { buffer = true })
 vim.keymap.set('n', '<leader><F7>', function()
   harpoon_term.sendCommand(
     my_funs.count_or_one(),
-    "unset DJANGO_SETTINGS_MODULE; unset SERVICE_VARIANT; export EDXAPP_TEST_MONGO_HOST=mongodb; python -m pytest --ds=cms.envs.tutor.test --no-header --no-summary -s --disable-warnings -rfex --pdb" .. vim.fn.expand('%:.')
+    "unset DJANGO_SETTINGS_MODULE; unset SERVICE_VARIANT; export EDXAPP_TEST_MONGO_HOST=mongodb; python -m pytest --ds=cms.envs.tutor.test --no-header --no-summary -s --disable-warnings -rfex --pdb " .. vim.fn.expand('%:.')
   )
 end, { buffer = true })
 

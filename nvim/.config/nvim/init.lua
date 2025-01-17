@@ -381,7 +381,7 @@ map('n', '<leader>ft', fzf_lua.treesitter)
 map('n', '<leader>fws', fzf_lua.lsp_live_workspace_symbols)
 map('n', '<C-]>',
   function()
-    fzf_lua.command_history({ fzf_opts = { ["--tiebreak"] = "index", ["--query"] = "Run " } })
+    fzf_lua.command_history({ fzf_opts = { ["--tiebreak"] = "index", ["--query"] = "Run " }, winopts = { height = 20, width = 0.6, row = 0 }})
   end)
 map('n', '<leader>?', fzf_lua.oldfiles)
 map('n', '<C-f>', fzf_lua.live_grep_glob)
