@@ -3,6 +3,7 @@ local luasnip = require("luasnip")
 local neogen = require("neogen")
 local ts_utils = require 'nvim-treesitter.ts_utils'
 local last_cmd = nil
+local last_runner = nil
 local last_term_job_id = nil
 
 function M.add_to_hist_and_run(cmd, runner, reload_on_change)
@@ -29,7 +30,7 @@ function M.run_cmd_with_shell_runner(cmd, background, reload_on_change)
     local current_file = vim.fn.expand('%:.')
     cmd = "echo " .. current_file .. " | entr -c " .. cmd
   end
-  M.run_snack_command(cmd, reload_on_change)
+  M.run_snack_command(cmd, background, false, "RunT ")
 end
 
 function M.getPythonModulePath(filePath)
@@ -195,9 +196,12 @@ function M.restart_cmd()
     local cmd = cmd_from_term_title(title)
     local terminal = Snacks.terminal.get(cmd)
     terminal:close()
-    M.add_to_hist_and_run(cmd)
+    local runner = terminal.runner_name
+    M.add_to_hist_and_run(cmd, runner)
   elseif last_cmd ~= nil then
-    M.run_snack_command(last_cmd, false, true)
+    local terminal = Snacks.terminal.get(last_cmd, { create = false })
+    terminal:close()
+    M.add_to_hist_and_run(last_cmd, last_runner)
   end
 end
 
@@ -271,11 +275,13 @@ function M.run_command(cmd, full_shell, background)
   end
 end
 
-function M.run_snack_command(cmd, background, restart)
+function M.run_snack_command(cmd, background, restart, runner)
   local terminal, created = Snacks.terminal.get(cmd, {interactive = false})
   last_term_job_id = vim.bo[terminal.buf].channel
   if created then
     last_cmd = cmd
+    last_runner = runner
+    terminal.runner_name = runner
     local start = os.time()
     vim.api.nvim_create_autocmd("TermClose", {
       once = true,

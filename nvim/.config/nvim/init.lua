@@ -954,9 +954,9 @@ vim.api.nvim_create_user_command("Run", function(opts) my_functions.run_snack_co
   { nargs = 1, complete = "shellcmd" })
 vim.api.nvim_create_user_command("RunB", function(opts) my_functions.run_snack_command(opts.args, true, false) end,
   { nargs = 1, complete = "shellcmd" })
-vim.api.nvim_create_user_command("RunT", function(opts) my_functions.run_cmd_with_shell_runner(opts.args, false, false) end,
+vim.api.nvim_create_user_command("RunT", function(opts) my_functions.run_cmd_with_shell_runner(opts.args, false, false, "RunT") end,
   { nargs = 1, complete = "shellcmd" })
-vim.api.nvim_create_user_command("RunTR", function(opts) my_functions.run_cmd_with_shell_runner(opts.args, false, true) end,
+vim.api.nvim_create_user_command("RunTR", function(opts) my_functions.run_cmd_with_shell_runner(opts.args, false, true, "RunT") end,
   { nargs = 1, complete = "shellcmd" })
 map("n", "<M-CR>", ":Run ")
 map("v", "<M-CR>", [["vy:Run <C-R>v]])
