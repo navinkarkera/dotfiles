@@ -3,6 +3,7 @@ local luasnip = require("luasnip")
 local neogen = require("neogen")
 local ts_utils = require 'nvim-treesitter.ts_utils'
 local last_cmd = nil
+local last_term_job_id = nil
 
 function M.add_to_hist_and_run(cmd, runner, reload_on_change)
   local cmd_runner = runner or "Run "
@@ -15,12 +16,20 @@ function M.add_to_hist_and_run(cmd, runner, reload_on_change)
   vim.cmd(vim_cmd)
 end
 
-function M.run_cmd_with_shell_runner(cmd, runner, reload_on_change)
+function M.run_cmd_with_shell_runner(cmd, background, reload_on_change)
+  local test_prefix = os.getenv("TEST_PREFIX")
+  if test_prefix ~= nil then
+    cmd = 'sh -c "' .. test_prefix .. cmd .. '"'
+  end
   local shell_runner = os.getenv("SHELL_RUNNER")
   if shell_runner ~= nil then
     cmd = shell_runner .. cmd
   end
-  M.add_to_hist_and_run(cmd, runner, reload_on_change)
+  if reload_on_change == true then
+    local current_file = vim.fn.expand('%:.')
+    cmd = "echo " .. current_file .. " | entr -c " .. cmd
+  end
+  M.run_snack_command(cmd, reload_on_change)
 end
 
 function M.getPythonModulePath(filePath)
@@ -80,7 +89,7 @@ end
 function M.execute_from_harpoon()
   local cmd = require("harpoon").get_term_config().cmds[M.count_or_one()]
   if cmd then
-    M.add_to_hist_and_run(cmd)
+    M.run_cmd_with_shell_runner(cmd)
   end
 end
 
@@ -264,6 +273,7 @@ end
 
 function M.run_snack_command(cmd, background, restart)
   local terminal, created = Snacks.terminal.get(cmd, {interactive = false})
+  last_term_job_id = vim.bo[terminal.buf].channel
   if created then
     last_cmd = cmd
     local start = os.time()
@@ -397,6 +407,16 @@ function M.find_nearest_test(filetype, ts_query, parse_testname)
     end
   end
   return result
+end
+
+function M.send_to_term(cmd)
+  if last_term_job_id ~= nil then
+    if cmd == nil then
+      cmd = vim.api.nvim_get_current_line()
+      cmd = cmd .. "\n"
+    end
+    vim.api.nvim_chan_send(last_term_job_id, cmd)
+  end
 end
 
 return M

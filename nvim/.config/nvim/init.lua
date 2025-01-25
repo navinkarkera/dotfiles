@@ -396,21 +396,26 @@ map(
   { silent = true, desc = "Fuzzy complete path" }
 )
 
+local base_branch = vim.fn.system({'git', 'rev-parse', '--abbrev-ref', 'origin/HEAD'})
+base_branch = vim.trim(base_branch)
 vim.api.nvim_create_user_command(
   'ListFilesFromBranch',
   function(opts)
+    if opts.args ~= "" then
+      base_branch = opts.args
+    end
     require 'fzf-lua'.files({
-      cmd = "git-diff-with-lines " .. opts.args,
-      prompt = opts.args .. "> ",
+      cmd = "git-diff-with-lines " .. base_branch,
+      prompt = base_branch .. "> ",
       previewer = false,
       preview = require 'fzf-lua'.shell.raw_preview_action_cmd(function(items)
         local file = require 'fzf-lua'.path.entry_to_file(items[1])
-        return string.format("git diff %s HEAD -- %s | delta", opts.args, file.path)
+        return string.format("git diff %s HEAD -- %s | delta", base_branch, file.path)
       end)
     })
   end,
   {
-    nargs = 1,
+    nargs = "?",
     force = true,
     complete = function()
       local branches = vim.fn.systemlist("git branch --all --sort=-committerdate")
@@ -423,10 +428,8 @@ vim.api.nvim_create_user_command(
   }
 )
 
-local base_branch = vim.fn.system({'git', 'rev-parse', '--abbrev-ref', 'origin/HEAD'})
-base_branch = vim.trim(base_branch)
-map('n', '<leader>fc', ":ListFilesFromBranch " .. base_branch .. "<CR>")
-map('n', '<leader>dc', ":DiffviewOpen " .. base_branch .. "<CR>")
+map('n', '<leader>fc', ":ListFilesFromBranch<CR>")
+map('n', '<leader>dc', function() vim.cmd(":DiffviewOpen " .. base_branch .. "...HEAD") end)
 
 -- Treesitter configuration
 -- Parsers must be installed manually via :TSInstall
@@ -553,6 +556,7 @@ local function peekOrHover()
     vim.lsp.buf.hover()
   end
 end
+map('n', 'K', peekOrHover, opts)
 
 local linter_on_attach = function(_, bufnr)
   local opts = { buffer = bufnr }
@@ -573,7 +577,6 @@ local on_attach = function(_, bufnr)
     })
   end, opts)
   map('n', 'gd', vim.lsp.buf.definition, opts)
-  map('n', 'K', peekOrHover, opts)
   map('n', 'gi', vim.lsp.buf.implementation, opts)
   map('n', '<leader>si', vim.lsp.buf.signature_help, opts)
   map('n', '<leader>wa', vim.lsp.buf.add_workspace_folder, opts)
@@ -610,7 +613,6 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 capabilities.textDocument.foldingRange = {
   dynamicRegistration = false,
-  lineFoldingOnly = true
 }
 
 -- Enable the following language servers
@@ -876,6 +878,8 @@ map("v", [[<M-e>]],
   [["vy<cmd>lua require('harpoon.term').sendCommand(require('my-functions').count_or_one(), vim.fn.getreg("v"))<CR> ]])
 map("n", ",l", [[<cmd>lua require('harpoon.term').sendCommand(require('my-functions').count_or_one(), '!!')<CR>]])
 map("n", "<M-space>", my_functions.execute_from_harpoon)
+map("n", "<C-CR>", my_functions.send_to_term)
+map("v", "<C-CR>", [["vy<cmd>lua require("my-functions").send_to_term(vim.fn.getreg("v"))<CR> ]])
 
 -- refactoring.nvim
 require("refactoring").setup {
@@ -940,7 +944,7 @@ require("neogen").setup({})
 map("n", "<Leader>nf", require('neogen').generate)
 
 map('n', '<leader>pv', function() fzf_lua.files({ cwd = "%:h" }) end)
-map('n', '<C-p>', fzf_lua.files)
+-- map('n', '<C-p>', fzf_lua.files)
 
 -- nvim-surround
 require("nvim-surround").setup({})
@@ -950,19 +954,19 @@ vim.api.nvim_create_user_command("Run", function(opts) my_functions.run_snack_co
   { nargs = 1, complete = "shellcmd" })
 vim.api.nvim_create_user_command("RunB", function(opts) my_functions.run_snack_command(opts.args, true, false) end,
   { nargs = 1, complete = "shellcmd" })
-vim.api.nvim_create_user_command("RunF", function(opts) my_functions.run_command(opts.args, true, false) end,
+vim.api.nvim_create_user_command("RunT", function(opts) my_functions.run_cmd_with_shell_runner(opts.args, false, false) end,
   { nargs = 1, complete = "shellcmd" })
-vim.api.nvim_create_user_command("RunFB", function(opts) my_functions.run_command(opts.args, true, true) end,
+vim.api.nvim_create_user_command("RunTR", function(opts) my_functions.run_cmd_with_shell_runner(opts.args, false, true) end,
   { nargs = 1, complete = "shellcmd" })
 map("n", "<M-CR>", ":Run ")
 map("v", "<M-CR>", [["vy:Run <C-R>v]])
 map("n", "<M-BS>", ":RunB ")
 map("v", "<M-BS>", [["vy:RunB <C-R>v]])
 
-map("n", "<M-'>", ":RunF ")
-map("v", "<M-'>", [["vy:RunF <C-R>v]])
-map("n", "<M-[>", ":RunFB ")
-map("v", "<M-[>", [["vy:RunFB <C-R>v]])
+map("n", "<M-'>", ":RunT ")
+map("v", "<M-'>", [["vy:RunT <C-R>v]])
+map("n", "<M-[>", ":RunTR ")
+map("v", "<M-[>", [["vy:RunTR <C-R>v]])
 map("n", "<F2>", ":Run<Up><CR>")
 map("n", "<M-]>", my_functions.fzf_all_tasks)
 map("n", "<M-r>", my_functions.restart_cmd)

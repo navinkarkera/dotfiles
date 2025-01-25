@@ -21,6 +21,20 @@ return {
         -- wo = { wrap = true } -- Wrap notifications
       }
     },
+    pickers = {
+      previewers = {
+        git = {
+          native = true,
+        }
+      },
+      layout = {
+        cycle = true,
+        --- Use the ivy layout or vertical if the window is too narrow
+        preset = function()
+          return vim.o.columns >= 120 and "ivy" or "vertical"
+        end,
+      },
+    },
     terminal = {
       win = {
         position = "right",
@@ -53,6 +67,7 @@ return {
     { "<leader>un", function() Snacks.notifier.hide() end, desc = "Dismiss All Notifications" },
     { "<c-/>",      function() Snacks.terminal() end, desc = "Toggle Terminal" },
     { "<c-_>",      function() Snacks.terminal() end, desc = "which_key_ignore" },
+    { "<C-p>",      function() Snacks.picker.smart({layout="ivy"}) end, desc = "Smart picker" },
     {
       "<leader>N",
       desc = "Neovim News",

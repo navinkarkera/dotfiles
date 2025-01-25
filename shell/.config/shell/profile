@@ -140,6 +140,7 @@ export AWT_TOOLKIT="MToolkit wmname LG3D"	#May have to install wmname
 export _JAVA_AWT_WM_NONREPARENTING=1	# Fix for Java applications in dwm
 export CARGO_TARGET_DIR="/home/navin/.local/share/shared_cargo_target/"
 export NVIM_SERVER="/tmp/default-nvim-server.pipe"
+export TERMV_DEFAULT_MPV_FLAGS="--no-vid"
 
 [ ! -f ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ] && shortcuts >/dev/null 2>&1 &
 
