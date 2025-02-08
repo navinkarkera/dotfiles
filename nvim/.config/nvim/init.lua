@@ -254,6 +254,7 @@ function! ToggleQuickFix()
     cclose
   endif
 endfunction
+highlight FloatBorder guifg=#b7b3c6
 ]])
 
 

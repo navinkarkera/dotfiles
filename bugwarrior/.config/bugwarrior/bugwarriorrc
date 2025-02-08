@@ -46,7 +46,7 @@ jira.password = @oracle:eval:pass opencraft-jira-navinkarkera
 jira.import_labels_as_tags = False
 jira.import_sprints_as_tags = False
 jira.label_template = jira_reviews_{{label}}
-jira.query = sprint IN openSprints() AND ('Reviewer 1'=currentuser() OR 'Reviewer 2'=currentuser()) AND type != epic AND (status = 'Need review')
+jira.query = sprint IN openSprints() AND ('Reviewer 1'=currentuser() OR 'Reviewer 2'=currentuser() OR 'Core Committer'=currentuser() OR 'Core Committer 2'=currentuser()) AND type != epic AND (status = 'Need review' OR status = 'Core Committer Review')
 jira.add_tags = jira_task, {{jirastatus.split(' ')|join('_')}}
 jira.description_template = {{jiraid}} - {{jirasummary}}
 

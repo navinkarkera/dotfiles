@@ -10,7 +10,7 @@ from bugwarrior.services import IssueService, Issue, ServiceClient
 
 log = logging.getLogger(__name__)
 LISTS_URL = '{api_url}/api/workflow/checklist/list/?is_archived=false&list_name=TO_DO&page=1&size=24&statuses=&usernames=&name='
-TASK_URL = '{api_url}/api/workflow/user/{username}/checklist/{list_id}/task/'
+TASK_URL = '{api_url}/api/workflow/checklist/list/{list_id}/task/'
 LIST_NAME = 'OpenCraft Sprint Checklist'
 MIDNIGHT_FORMAT = '%Y%m%dT235959Z'
 
@@ -104,7 +104,7 @@ class ListaflowClient(ServiceClient):
         return {}
 
     def _query_tasks(self, list_id: str):
-        response = requests.get(TASK_URL.format(username=self.username, list_id=list_id, api_url=self.url), headers=self.headers)
+        response = requests.get(TASK_URL.format(list_id=list_id, api_url=self.url), headers=self.headers)
         return self.json_response(response)
 
     def get_scheduled_date(self, weekday, num):

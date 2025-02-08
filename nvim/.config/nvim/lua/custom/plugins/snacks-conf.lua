@@ -37,20 +37,10 @@ return {
     },
     terminal = {
       win = {
-        position = "right",
-        width = 0.6,
-        keys = {
-          gf = function(self)
-            local f = vim.fn.findfile(vim.fn.expand("<cfile>"), "**")
-            if f == "" then
-              Snacks.notify.warn("No file under cursor")
-            else
-              vim.schedule(function()
-                vim.cmd("e " .. f)
-              end)
-            end
-          end,
-        },
+        position = "bottom",
+        height = 0.4,
+        border = "rounded",
+        backdrop = false,
       },
     }
   },
@@ -67,7 +57,12 @@ return {
     { "<leader>un", function() Snacks.notifier.hide() end, desc = "Dismiss All Notifications" },
     { "<c-/>",      function() Snacks.terminal() end, desc = "Toggle Terminal" },
     { "<c-_>",      function() Snacks.terminal() end, desc = "which_key_ignore" },
-    { "<C-p>",      function() Snacks.picker.smart({layout="ivy"}) end, desc = "Smart picker" },
+    { "<c-e>",      function() Snacks.picker.explorer({ hidden = true }) end, desc = "File explorer" },
+    { "<C-p>",      function() Snacks.picker.smart({
+      layout="ivy",
+      multi = { "buffers", "files" },
+      hidden = true,
+    }) end, desc = "Smart picker" },
     {
       "<leader>N",
       desc = "Neovim News",
