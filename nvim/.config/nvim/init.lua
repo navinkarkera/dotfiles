@@ -327,7 +327,7 @@ require('gitsigns').setup {
     -- Navigation
     gmap('n', ']c', function()
       if vim.wo.diff then return ']c' end
-      vim.schedule(function() gs.nav_hunk('next') end)
+      vim.schedule(function() gs.nav_hunk('next', {target='all'}) end)
       return '<Ignore>'
     end, { expr = true })
 
@@ -341,6 +341,7 @@ require('gitsigns').setup {
     gmap('n', '<leader>hR', gs.reset_hunk)
     gmap('n', '<leader>hp', gs.preview_hunk)
     gmap('n', '<leader>hb', function() gs.blame_line { full = true } end)
+    gmap('n', '<leader>hB', gs.blame)
     gmap('n', '<leader>tb', gs.toggle_current_line_blame)
     gmap('n', '<leader>hd', gs.diffthis)
     gmap('n', '<leader>hD', function() gs.diffthis('~') end)
@@ -397,7 +398,7 @@ map(
   { silent = true, desc = "Fuzzy complete path" }
 )
 
-local base_branch = vim.fn.system({'git', 'rev-parse', '--abbrev-ref', 'origin/HEAD'})
+local base_branch = vim.fn.system({'git', 'parent'})
 base_branch = vim.trim(base_branch)
 vim.api.nvim_create_user_command(
   'ListFilesFromBranch',
@@ -573,8 +574,8 @@ local on_attach = function(_, bufnr)
   map('n', 'gD', function()
     fzf_lua.lsp_definitions({
       sync = true,
-      jump_to_single_result = true,
-      jump_to_single_result_action = fzf_lua.actions.file_vsplit,
+      jump1 = true,
+      jump1_action = fzf_lua.actions.file_vsplit,
     })
   end, opts)
   map('n', 'gd', vim.lsp.buf.definition, opts)
@@ -959,6 +960,10 @@ vim.api.nvim_create_user_command("RunT", function(opts) my_functions.run_cmd_wit
   { nargs = 1, complete = "shellcmd" })
 vim.api.nvim_create_user_command("RunTR", function(opts) my_functions.run_cmd_with_shell_runner(opts.args, false, true, "RunT") end,
   { nargs = 1, complete = "shellcmd" })
+vim.api.nvim_create_user_command("RunTest", function(opts) my_functions.run_cmd_with_test_prefix(opts.args, false, false, "RunT") end,
+  { nargs = 1, complete = "shellcmd" })
+vim.api.nvim_create_user_command("RunTestR", function(opts) my_functions.run_cmd_with_test_prefix(opts.args, false, true, "RunT") end,
+  { nargs = 1, complete = "shellcmd" })
 map("n", "<M-CR>", ":Run ")
 map("v", "<M-CR>", [["vy:Run <C-R>v]])
 map("n", "<M-BS>", ":RunB ")
@@ -993,6 +998,7 @@ vim.api.nvim_create_user_command(
     end,
   }
 )
+map("n", "<leader>GD", "<cmd>Gqdiff " .. base_branch .. "...HEAD<CR>")
 -- custom keymaps
 map("n", "<F4>", ":bd<CR>")
 map('n', '<C-s>', ":w<CR>")

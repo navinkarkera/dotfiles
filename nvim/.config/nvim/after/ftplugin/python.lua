@@ -27,7 +27,7 @@ local function run_test(in_harpoon, reload_on_change)
       "unset DJANGO_SETTINGS_MODULE; unset SERVICE_VARIANT; export EDXAPP_TEST_MONGO_HOST=mongodb; python -m pytest --ds=cms.envs.tutor.test --no-header --no-summary -s --disable-warnings -rfex --pdb " .. current_file .. " -k '" .. table.concat(tests, " and ") .. "'"
     )
   else
-    my_funs.add_to_hist_and_run("python -m pytest --no-header --no-cov -s --disable-warnings -rfex " .. current_file .. " -k '" .. table.concat(tests, " and ") .. "'", "RunT ", reload_on_change)
+    my_funs.add_to_hist_and_run("python -m pytest --no-header --no-cov -s --disable-warnings -rfex " .. current_file .. " -k '" .. table.concat(tests, " and ") .. "'", "RunTest ", reload_on_change)
   end
 end
 
@@ -37,12 +37,12 @@ vim.keymap.set('n', ',<F5>', function() my_funs.executePythonModule(vim.fn.expan
 
 -- Run all tests
 vim.keymap.set('n', '<F6>', function()
-  my_funs.add_to_hist_and_run("python -m pytest --no-header --no-cov-on-fail --no-summary -s --disable-warnings -rfex", "RunT ")
+  my_funs.add_to_hist_and_run("python -m pytest --no-header --no-cov-on-fail --no-summary -s --disable-warnings -rfex", "RunTest ")
 end, { buffer = true })
 vim.keymap.set('n', ',<F6>', function()
   my_funs.add_to_hist_and_run(
     "python -m pytest --no-header --no-summary --no-cov -s --disable-warnings -rfex",
-    "RunT ",
+    "RunTest ",
     true
   )
 end, { buffer = true })
@@ -56,12 +56,12 @@ end, { buffer = true })
 
 -- Run all tests in current_file
 vim.keymap.set('n', '<F7>', function()
-  my_funs.add_to_hist_and_run("python -m pytest --no-header --no-cov-on-fail -s --disable-warnings -rfex " .. vim.fn.expand('%:.'), "RunT ")
+  my_funs.add_to_hist_and_run("python -m pytest --no-header --no-cov-on-fail -s --disable-warnings -rfex " .. vim.fn.expand('%:.'), "RunTest ")
 end, { buffer = true })
 vim.keymap.set('n', ',<F7>', function()
   my_funs.add_to_hist_and_run(
     "python -m pytest --no-header --no-cov-on-fail -s --disable-warnings -rfex " .. vim.fn.expand('%:.'),
-    "RunT ",
+    "RunTest ",
     true
   )
 end, { buffer = true })

@@ -2,7 +2,6 @@ vim.wo.spell = true
 vim.wo.linebreak = true
 vim.wo.conceallevel = 2
 vim.keymap.set("n", "<leader>me", require 'mdeval'.eval_code_block)
-vim.keymap.set("n", "<CR>", "ciw[]()<esc>F[pf)i")
 
 -- Add the key mappings only for Markdown files in a zk notebook.
 if require("zk.util").notebook_root(vim.fn.expand('%:p')) ~= nil then

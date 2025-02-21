@@ -42,7 +42,8 @@ return {
         border = "rounded",
         backdrop = false,
       },
-    }
+    },
+    image = {}
   },
   keys = {
     { ",z",  function() Snacks.zen() end, desc = "Toggle Zen Mode" },

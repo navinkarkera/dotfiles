@@ -17,11 +17,15 @@ function M.add_to_hist_and_run(cmd, runner, reload_on_change)
   vim.cmd(vim_cmd)
 end
 
-function M.run_cmd_with_shell_runner(cmd, background, reload_on_change)
+function M.run_cmd_with_test_prefix(cmd, background, reload_on_change)
   local test_prefix = os.getenv("TEST_PREFIX")
   if test_prefix ~= nil then
     cmd = 'sh -c "' .. test_prefix .. cmd .. '"'
   end
+  M.run_cmd_with_shell_runner(cmd, background, reload_on_change)
+end
+
+function M.run_cmd_with_shell_runner(cmd, background, reload_on_change)
   local shell_runner = os.getenv("SHELL_RUNNER")
   if shell_runner ~= nil then
     cmd = shell_runner .. cmd
