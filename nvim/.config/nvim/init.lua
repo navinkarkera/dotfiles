@@ -432,6 +432,7 @@ vim.api.nvim_create_user_command(
 
 map('n', '<leader>fc', ":ListFilesFromBranch<CR>")
 map('n', '<leader>dc', function() vim.cmd(":DiffviewOpen " .. base_branch .. "...HEAD") end)
+map('n', '<leader><F4>', ":tabclose<CR>")
 
 -- Treesitter configuration
 -- Parsers must be installed manually via :TSInstall

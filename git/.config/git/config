@@ -25,6 +25,7 @@
 	fu = fetch upstream
 	rum = reset --hard upstream/master
 	save = "!f() { git add . && git commit -m \"chore: update\"; git push; }; f"
+	jump = "!f() { /usr/share/git/git-jump/git-jump $@; }; f"
 
 [core]
 	pager = delta --paging=always

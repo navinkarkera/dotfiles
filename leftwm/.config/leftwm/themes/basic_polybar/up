@@ -29,10 +29,6 @@ if [ -x "$(command -v nm-applet)" ]; then
   nm-applet &
 fi
 
-if [ -x "$(command -v nm-applet)" ]; then
-  nm-applet &
-fi
-
 index=0
 monitors="$(polybar -m | sed s/:.*//)"
 leftwm-state -q -n -t $SCRIPTPATH/sizes.liquid | sed -r '/^\s*$/d' | while read -r width x y
