@@ -161,7 +161,7 @@ vim.o.termguicolors = true
 vim.o.cursorline = true
 
 -- Set completeopt to have a better completion experience
-vim.o.completeopt = 'menu'
+vim.o.completeopt = 'menu,fuzzy,longest,preview,nosort'
 vim.o.complete = '.,w,b'
 
 -- window direction
@@ -400,38 +400,18 @@ map(
 
 local base_branch = vim.fn.system({'git', 'parent'})
 base_branch = vim.trim(base_branch)
-vim.api.nvim_create_user_command(
-  'ListFilesFromBranch',
-  function(opts)
-    if opts.args ~= "" then
-      base_branch = opts.args
-    end
-    require 'fzf-lua'.files({
-      cmd = "git-diff-with-lines " .. base_branch,
-      prompt = base_branch .. "> ",
-      previewer = false,
-      preview = require 'fzf-lua'.shell.raw_preview_action_cmd(function(items)
-        local file = require 'fzf-lua'.path.entry_to_file(items[1])
-        return string.format("git diff %s HEAD -- %s | delta", base_branch, file.path)
-      end)
-    })
-  end,
-  {
-    nargs = "?",
-    force = true,
-    complete = function()
-      local branches = vim.fn.systemlist("git branch --all --sort=-committerdate")
-      if vim.v.shell_error == 0 then
-        return vim.tbl_map(function(x)
-          return x:match("[^%s%*]+"):gsub("^remotes/", "")
-        end, branches)
-      end
-    end,
-  }
-)
 
-map('n', '<leader>fc', ":ListFilesFromBranch<CR>")
-map('n', '<leader>dc', function() vim.cmd(":DiffviewOpen " .. base_branch .. "...HEAD") end)
+local function toggle_diffview(cmd)
+  if next(require("diffview.lib").views) == nil then
+    vim.cmd(cmd)
+  else
+    vim.cmd("DiffviewClose")
+  end
+end
+
+-- map('n', '<leader>fC', ":ListFilesFromBranch<CR>")
+map('n', '<leader>dc', function() toggle_diffview("DiffviewOpen") end)
+map('n', '<leader>dC', function() toggle_diffview("DiffviewOpen " .. base_branch .. "...HEAD") end)
 map('n', '<leader><F4>', ":tabclose<CR>")
 
 -- Treesitter configuration
@@ -897,6 +877,12 @@ require("refactoring").setup {
     javascriptreact = {
       'console.log("%s ", %s);',
     },
+    typescript = {
+      'console.log("%s ", %s);',
+    },
+    typescriptreact = {
+      'console.log("%s ", %s);',
+    },
   },
 }
 -- prompt for a refactor to apply when the remap is triggered
@@ -1038,5 +1024,54 @@ map("i", "(", "(<c-g>u")
 -- search
 map('v', ",s", [["vy:silent !s <C-R>v<CR>]])
 map('n', ",s", [[:silent !s <C-R>=expand('<cword>')<CR><CR>]])
+
+local function pick_cmd_result(picker_opts)
+  local git_root = Snacks.git.get_root()
+  local function finder(opts, ctx)
+    return require("snacks.picker.source.proc").proc({
+      opts,
+      {
+        cmd = picker_opts.cmd,
+        args = picker_opts.args,
+        transform = function(item)
+          item.cwd = picker_opts.cwd or git_root
+          item.file = item.text
+        end,
+      },
+    }, ctx)
+  end
+
+  Snacks.picker.pick {
+    source = picker_opts.name,
+    finder = finder,
+    preview = picker_opts.preview,
+    title = picker_opts.title,
+  }
+end
+
+-- Custom Pickers
+local custom_pickers = {}
+
+function custom_pickers.git_show()
+  pick_cmd_result {
+    cmd = "git",
+    args = { "diff-tree", "--no-commit-id", "--name-only", "--diff-filter=d", "HEAD", "-r" },
+    name = "git_show",
+    title = "Git Last Commit",
+    preview = "git_show",
+  }
+end
+
+function custom_pickers.git_diff_upstream()
+  pick_cmd_result {
+    cmd = "git",
+    args = { "diff", "--no-commit-id", "--name-only", "--diff-filter=d", base_branch .. "...HEAD", "-r" },
+    name = "git_diff_upstream",
+    title = "Git Branch Changed Files",
+    preview = "git_show",
+  }
+end
+map("n", "<leader>fc", custom_pickers.git_show)
+map("n", "<leader>fC", custom_pickers.git_diff_upstream)
 
 -- vim: ts=2 sts=2 sw=2 et

@@ -35,7 +35,7 @@ alias \
 	trem="transmission-remote" \
 	YT="youtube-viewer" \
 	sdn="sudo shutdown -h now" \
-	e="$EDITOR --listen $NVIM_SERVER" \
+	e="$EDITOR" \
 	ge="e -c \"FzfLua git_status\"" \
 	ed="$EDITOR --server $NVIM_SERVER --remote" \
 	hx="helix" \

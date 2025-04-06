@@ -11,7 +11,7 @@
 #![enable(unwrap_newtypes)]
 (
     modkey: "Mod4",
-    backend: XLib,
+    backend: X11rb,
     mousekey: "Mod4",
     workspaces: [
 	//( output: "eDP-1", y: 442, x: 0, height: 1440, width: 2560 ),
@@ -134,12 +134,18 @@
 	// Dedicated keys
 	(command: Execute, value: "~/.config/i3/scripts/volume_brightness.sh volume_up", modifier: [], key: "XF86AudioRaiseVolume"),
 	(command: Execute, value: "~/.config/i3/scripts/volume_brightness.sh volume_down", modifier: [], key: "XF86AudioLowerVolume"),
+	(command: Execute, value: "~/.config/i3/scripts/volume_brightness.sh volume_mute", modifier: [], key: "XF86AudioMute"),
 	(command: Execute, value: "~/.config/i3/scripts/volume_brightness.sh brightness_up", modifier: [], key: "XF86MonBrightnessUp"),
 	(command: Execute, value: "~/.config/i3/scripts/volume_brightness.sh brightness_down", modifier: [], key: "XF86MonBrightnessDown"),
 	(command: Execute, value: "flameshot gui", modifier: [], key: "Print"),
+	// music
+	(command: Execute, value: "playerctl play-pause", modifier: [], key: "XF86AudioPlay"),
+	(command: Execute, value: "playerctl next", modifier: [], key: "XF86AudioNext"),
+	(command: Execute, value: "playerctl previous", modifier: [], key: "XF86AudioPrev"),
 
 	// Applications
 	(command: Execute, value: "zen-browser", modifier: ["modkey", "Shift"], key: "w"),
+
     ],
     state_path: None,
 )

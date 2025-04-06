@@ -198,11 +198,20 @@ function M.restart_cmd()
   local title = vim.b.term_title
   if title ~= nil then
     local cmd = cmd_from_term_title(title)
-    Snacks.bufdelete.delete()
+    local terminal = Snacks.terminal.get(cmd, { create = false })
+    terminal:close()
+    if terminal.buf ~= nil then
+      Snacks.bufdelete.delete(terminal.buf)
+    end
     M.run_snack_command(cmd)
   elseif last_cmd ~= nil then
     local terminal = Snacks.terminal.get(last_cmd, { create = false })
-    terminal:close({ buf = true })
+    if terminal ~= nil then
+      terminal:close()
+      if terminal.buf ~= nil then
+        Snacks.bufdelete.delete(terminal.buf)
+      end
+    end
     vim.cmd.checktime()
     M.run_snack_command(last_cmd)
   end
