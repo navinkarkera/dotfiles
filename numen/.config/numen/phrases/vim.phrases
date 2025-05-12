@@ -1,0 +1,35 @@
+# vi and family (Vim, NeoVim, vis) are text editors that expose functionality mainly through
+# sequences of key binds, which is quite handy with numen. The learning curve can be significant.
+
+save: caps off \
+	press Escape colon w Return
+exit: caps off \
+	press Escape colon q Return
+save and exit: caps off \
+	press Escape colon w q Return
+discard and exit: caps off \
+	press Escape colon c q Return
+
+# This cycles round splits in Vim
+switch: caps off \
+	press Escape ctrl+w w
+
+half page: caps off \
+	press ctrl+d
+half reel: caps off \
+	press ctrl+u
+
+request checks: caps off \
+	press space g c
+
+request details: caps off \
+	press space g v
+
+run file tests: caps off \
+	press F7
+
+run this test: caps off \
+	press F8
+
+vim restart process: caps off \
+	press alt+r

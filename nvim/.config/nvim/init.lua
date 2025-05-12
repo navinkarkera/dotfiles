@@ -74,25 +74,6 @@ require('lazy').setup({
       'williamboman/mason-lspconfig.nvim',
     },
   },
-  {
-    -- Autocompletion
-    'hrsh7th/nvim-cmp',
-    dependencies = {
-      'hrsh7th/cmp-nvim-lsp',
-      'lukas-reineke/cmp-rg',
-      'hrsh7th/cmp-nvim-lsp-signature-help',
-      'L3MON4D3/LuaSnip',
-      'saadparwaiz1/cmp_luasnip',
-      {
-        'quangnguyen30192/cmp-nvim-tags',
-        ft = {
-          'python',
-        }
-      }
-    },
-  },
-  "rafamadriz/friendly-snippets",
-  "honza/vim-snippets",
   "windwp/nvim-ts-autotag",
   "ThePrimeagen/harpoon",
   "danymat/neogen",
@@ -512,6 +493,7 @@ map('n', '<leader>e', vim.diagnostic.open_float)
 map('n', '[d', vim.diagnostic.goto_prev)
 map('n', ']d', vim.diagnostic.goto_next)
 map('n', '<leader>q', vim.diagnostic.setloclist)
+map('n', '<leader>dd', fzf_lua.lsp_document_diagnostics)
 
 local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
 for type, icon in pairs(signs) do
@@ -591,18 +573,11 @@ vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(
     border = "single"
   }
 )
--- nvim-cmp supports additional completion capabilities
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
-capabilities.textDocument.foldingRange = {
-  dynamicRegistration = false,
-}
 
 -- Enable the following language servers
 local servers = {
   basedpyright = {
     on_attach = on_attach,
-    capabilities = capabilities,
     autostart = false,
     settings = {
       basedpyright = {
@@ -612,7 +587,6 @@ local servers = {
   },
   ts_ls = {
     on_attach = on_attach,
-    capabilities = capabilities,
     autostart = false,
     init_options = {
       hostInfo = "neovim",
@@ -625,23 +599,19 @@ local servers = {
   },
   cssls = {
     on_attach = on_attach,
-    capabilities = capabilities,
     autostart = false,
   },
   eslint = {
     on_attach = on_attach,
-    capabilities = capabilities,
     autostart = false,
   },
   html = {
     on_attach = on_attach,
-    capabilities = capabilities,
     autostart = true,
     filetypes = { "html", "templ", "htmldjango" },
   },
   marksman = {
     on_attach = on_attach,
-    capabilities = capabilities,
     autostart = true,
   },
   ruff = {
@@ -654,7 +624,6 @@ local servers = {
   },
   gopls = {
     on_attach = on_attach,
-    capabilities = capabilities,
     autostart = true,
     settings = {
       gopls = {
@@ -673,12 +642,10 @@ local servers = {
   },
   templ = {
     on_attach = on_attach,
-    capabilities = capabilities,
     autostart = true,
   },
   tailwindcss = {
     on_attach = on_attach,
-    capabilities = capabilities,
     autostart = true,
     filetypes = { "templ", "astro", "javascript", "typescript", "react" },
     settings = {
@@ -714,122 +681,6 @@ local has_words_before = function()
   local line, col = unpack(vim.api.nvim_win_get_cursor(0))
   return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
 end
-
--- nvim-cmp setup
-local kind_icons = {
-  Text = "",
-  Method = "",
-  Function = "",
-  Constructor = "",
-  Field = "",
-  Variable = "",
-  Class = "ﴯ",
-  Interface = "",
-  Module = "",
-  Property = "ﰠ",
-  Unit = "",
-  Value = "",
-  Enum = "",
-  Keyword = "",
-  Snippet = "",
-  Color = "",
-  File = "",
-  Reference = "",
-  Folder = "",
-  EnumMember = "",
-  Constant = "",
-  Struct = "",
-  Event = "",
-  Operator = "",
-  TypeParameter = ""
-}
-
-local cmp = require 'cmp'
-cmp.setup {
-  snippet = {
-    expand = function(args)
-      luasnip.lsp_expand(args.body)
-    end,
-  },
-  completion = {
-    autocomplete = false,
-  },
-  mapping = cmp.mapping.preset.insert({
-    ['<C-d>'] = cmp.mapping.scroll_docs(-4),
-    ['<C-f>'] = cmp.mapping.scroll_docs(4),
-    ['<C-Space>'] = cmp.mapping.complete({}),
-    ['<C-x><C-r>'] = cmp.mapping(
-      cmp.mapping.complete({
-        config = {
-          sources = cmp.config.sources({
-            { name = 'rg' },
-          }),
-        },
-      }),
-      { 'i' }
-    ),
-    ['<CR>'] = cmp.mapping.confirm {
-      behavior = cmp.ConfirmBehavior.Replace,
-      select = true,
-    },
-    ['<C-l>'] = cmp.mapping(function(fallback)
-      if luasnip.expand_or_jumpable() then
-        luasnip.expand_or_jump()
-      else
-        fallback()
-      end
-    end, { 'i', 's' }),
-    ['<C-h>'] = cmp.mapping(function(fallback)
-      if luasnip.locally_jumpable(-1) then
-        luasnip.jump(-1)
-      else
-        fallback()
-      end
-    end, { 'i', 's' }),
-    ['<Tab>'] = cmp.mapping(function(fallback)
-      if vim.fn.pumvisible() == 1 then
-        vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-p>", true, true, true), "n", true)
-      elseif cmp.visible() then
-        cmp.select_next_item()
-      elseif has_words_before() then
-        vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-p>", true, true, true), "n", true)
-      else
-        fallback()
-      end
-    end, { 'i', 's' }),
-    ['<S-Tab>'] = cmp.mapping(function(fallback)
-      if vim.fn.pumvisible() == 1 then
-        vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-n>", true, true, true), "n", true)
-      elseif cmp.visible() then
-        cmp.select_prev_item()
-      else
-        fallback()
-      end
-    end, { 'i', 's' }),
-  }),
-  sources = cmp.config.sources({
-    { name = 'luasnip' },
-    { name = 'tags' },
-    { name = 'nvim_lsp' },
-    { name = 'nvim_lsp_signature_help' },
-    {{ name = 'rg' }},
-  }),
-  formatting = {
-    format = function(entry, vim_item)
-      -- Kind icons
-      vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
-      -- Source
-      vim_item.menu = ({
-        buffer = "[Buffer]",
-        nvim_lsp = "[LSP]",
-        luasnip = "[LuaSnip]",
-        nvim_lua = "[Lua]",
-        rg = "[RG]"
-      })[entry.source.name]
-      return vim_item
-    end
-  },
-}
 
 -- harpoon
 require("harpoon").setup({
