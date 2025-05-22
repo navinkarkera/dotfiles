@@ -145,6 +145,8 @@
 
 	// Applications
 	(command: Execute, value: "zen-browser", modifier: ["modkey", "Shift"], key: "w"),
+	(command: Execute, value: "record", modifier: ["modkey", "Control"], key: "r"),
+	(command: Execute, value: "preview_webcam", modifier: ["modkey", "Control", "Shift"], key: "w"),
 
     ],
     state_path: None,

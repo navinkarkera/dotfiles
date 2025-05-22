@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+start() {
+	ffplay -f v4l2 -video_size 640x480 -i /dev/video0 &
+	echo $! > /tmp/campid
+}
+
+end() {
+	kill -15 "$(cat /tmp/campid)" && rm -f /tmp/campid
+}
+
+# If the camp pid exists, end. If not, start recording
+([[ -f /tmp/campid ]] && end && exit 0) || start
