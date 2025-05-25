@@ -70,8 +70,7 @@ require('lazy').setup({
   {
     'neovim/nvim-lspconfig',
     dependencies = {
-      { 'williamboman/mason.nvim', config = true },
-      'williamboman/mason-lspconfig.nvim',
+      { 'williamboman/mason.nvim', opts = {} },
     },
   },
   "windwp/nvim-ts-autotag",
@@ -658,19 +657,13 @@ local servers = {
   }
 }
 
+for server_name, server_config in pairs(servers) do
+  if server_config.autostart then
+    vim.lsp.enable(server_name)
+  end
+  vim.lsp.config(server_name, server_config)
+end
 
--- Ensure the servers above are installed
-local mason_lspconfig = require 'mason-lspconfig'
-
-mason_lspconfig.setup {
-  ensure_installed = vim.tbl_keys(servers),
-}
-
-mason_lspconfig.setup_handlers {
-  function(server_name)
-    require('lspconfig')[server_name].setup(servers[server_name])
-  end,
-}
 -- luasnip setup
 local luasnip = require 'luasnip'
 require("luasnip.loaders.from_vscode").lazy_load()
