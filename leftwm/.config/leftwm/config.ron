@@ -78,7 +78,6 @@
         (command: Execute, value: "passmenu --type", modifier: ["modkey", "Shift"], key: "p"),
         (command: CloseWindow, value: "", modifier: ["modkey"], key: "q"),
         (command: SoftReload, value: "", modifier: ["modkey", "Shift"], key: "r"),
-        (command: Execute, value: "loginctl kill-session $XDG_SESSION_ID", modifier: ["modkey", "Shift"], key: "x"),
         (command: Execute, value: "i3lock", modifier: ["modkey", "Control"], key: "l"),
         (command: MoveToLastWorkspace, value: "", modifier: ["modkey", "Shift"], key: "Tab"),
         (command: ReturnToLastTag, value: "", modifier: ["modkey"], key: "Tab"),
@@ -147,6 +146,7 @@
 	(command: Execute, value: "zen-browser", modifier: ["modkey", "Shift"], key: "w"),
 	(command: Execute, value: "record", modifier: ["modkey", "Control"], key: "r"),
 	(command: Execute, value: "preview_webcam", modifier: ["modkey", "Control", "Shift"], key: "w"),
+        (command: Execute, value: "dmenu_sys", modifier: ["modkey", "Shift"], key: "x"),
 
     ],
     state_path: None,

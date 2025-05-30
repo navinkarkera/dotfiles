@@ -48223,3 +48223,511 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20250524T055335Z","end":"20250524T072511Z","tags":["FAL-4170 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250526T092738Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250526T092738Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250526T092738Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250526T092738Z","tags":["FAL-4164 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250526T092738Z","end":"20250526T105319Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250526T115107Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250526T115107Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250526T115107Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250526T115107Z","tags":["FAL-4164 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250526T115107Z","end":"20250526T123501Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250526T135602Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250526T135602Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250526T135602Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250526T135602Z","tags":["FAL-4164 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250526T135602Z","end":"20250526T152929Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250527T051926Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250527T051926Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250527T051926Z","tags":["FAL-175 post end of sprint update and catchup of others updates"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250527T051926Z","tags":["FAL-175 post end of sprint update and catchup of others updates"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250527T051926Z","end":"20250527T060540Z","tags":["FAL-175 post end of sprint update and catchup of others updates"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250527T060544Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250527T060544Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250527T060544Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250527T060544Z","tags":["FAL-4164 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250527T060544Z","end":"20250527T060606Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250527T062359Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250527T062359Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250527T062359Z","tags":["FAL-4180 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250527T062359Z","tags":["FAL-4180 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250527T062359Z","end":"20250527T063241Z","tags":["FAL-4180 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250527T063242Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250527T063242Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250527T063242Z","tags":["FAL-3576 social chat"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250527T063242Z","tags":["FAL-3576 social chat"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250527T063242Z","end":"20250527T070249Z","tags":["FAL-3576 social chat"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250527T070250Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250527T070250Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250527T070250Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250527T070250Z","tags":["FAL-4164 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250527T070250Z","end":"20250527T071031Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250527T093455Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250527T093455Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250527T093455Z","tags":["FAL-4180 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250527T093455Z","tags":["FAL-4180 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250527T093455Z","end":"20250527T103200Z","tags":["FAL-4180 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250527T103200Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250527T103200Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250527T103200Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250527T103200Z","tags":["FAL-4164 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250527T103200Z","end":"20250527T122405Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250527T140728Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250527T140728Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250527T140728Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250527T140728Z","tags":["FAL-4164 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250527T140728Z","end":"20250527T151526Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250527T162804Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250527T162804Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250527T162804Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250527T162804Z","tags":["FAL-4164 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250527T162804Z","end":"20250527T163725Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250528T100256Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250528T100256Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250528T100256Z","tags":["FAL-4170 check and remind"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250528T100256Z","tags":["FAL-4170 check and remind"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250528T100256Z","end":"20250528T101723Z","tags":["FAL-4170 check and remind"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250528T101724Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250528T101724Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250528T101724Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250528T101724Z","tags":["FAL-4164 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250528T101724Z","end":"20250528T122643Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250528T124235Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250528T124235Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250528T124235Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250528T124235Z","tags":["FAL-4164 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250528T124235Z","end":"20250528T131344Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250528T132203Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250528T132203Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250528T132203Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250528T132203Z","tags":["FAL-4164 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250528T132203Z","end":"20250528T133945Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250528T143446Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250528T143446Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250528T143446Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250528T143446Z","tags":["FAL-4164 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250528T143446Z","end":"20250528T153805Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250529T093404Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250529T093404Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250529T093404Z","tags":["FAL-4170 check"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250529T093404Z","tags":["FAL-4170 check"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250529T093404Z","end":"20250529T094132Z","tags":["FAL-4170 check"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250529T094133Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250529T094133Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250529T094133Z","tags":["FAL-4180 review"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250529T094133Z","tags":["FAL-4180 review"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250529T094133Z","end":"20250529T100603Z","tags":["FAL-4180 review"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250529T100603Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250529T100603Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250529T100603Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250529T100603Z","tags":["FAL-4164 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250529T100603Z","end":"20250529T114545Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250529T124507Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250529T124507Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250529T124507Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250529T124507Z","tags":["FAL-4164 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250529T124507Z","end":"20250529T132250Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250529T150017Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250529T150017Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250529T150017Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250529T150017Z","tags":["FAL-4164 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250529T150017Z","end":"20250529T150206Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250529T161227Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250529T161227Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250529T161227Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250529T161227Z","tags":["FAL-4164 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250529T161227Z","end":"20250529T165458Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250529T165533Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250529T165533Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250529T165533Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250529T165533Z","tags":["FAL-4164 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250529T165533Z","end":"20250529T171216Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250530T052126Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250530T052126Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250530T052126Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250530T052126Z","tags":["FAL-4164 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250530T052126Z","end":"20250530T064425Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250530T064425Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250530T064425Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250530T064425Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250530T064425Z","tags":["FAL-4164 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250530T064425Z","end":"20250530T073530Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250530T085311Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250530T085311Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250530T085311Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250530T085311Z","tags":["FAL-4164 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250530T085311Z","end":"20250530T103929Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250530T150007Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250530T150007Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250530T150007Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250530T150007Z","tags":["FAL-4164 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250530T150007Z","end":"20250530T154913Z","tags":["FAL-4164 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250530T161111Z"}
