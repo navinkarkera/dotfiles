@@ -4,7 +4,7 @@ return {
     model = "gemma3:4b", -- The default model to use.
     host = "localhost", -- The host running the Ollama service.
     port = "11434", -- The port on which the Ollama service is listening.
-    display_mode = "split", -- The display mode. Can be "float" or "split".
+    display_mode = "horizontal-split", -- The display mode. Can be "float" or "split".
     show_prompt = false, -- Shows the Prompt submitted to Ollama.
     show_model = true, -- Displays which model you are using at the beginning of your chat session.
     no_auto_close = true, -- Never closes the window automatically.

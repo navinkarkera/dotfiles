@@ -584,6 +584,10 @@ local servers = {
       },
     }
   },
+  ty = {
+    on_attach = on_attach,
+    autostart = true,
+  },
   ts_ls = {
     on_attach = on_attach,
     autostart = false,

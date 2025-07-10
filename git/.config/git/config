@@ -26,6 +26,9 @@
 	rum = reset --hard upstream/master
 	save = "!f() { git add . && git commit -m \"chore: update\"; git push; }; f"
 	jump = "!f() { /usr/share/git/git-jump/git-jump $@; }; f"
+	; list-untracked = "!f() { git fetch --prune && git branch -r | awk \"{print \$1}\" | grep -E -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk \"{print \$1}\" }; f"
+	; remove-untracked = "!f() { git fetch --prune && git branch -r | awk \"{print \$1}\" | grep -E -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk \"{print \$1}\" | xargs git branch -d }; f"
+
 
 [core]
 	pager = delta --paging=always
