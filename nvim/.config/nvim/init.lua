@@ -415,6 +415,7 @@ require('nvim-treesitter.configs').setup {
     "markdown_inline",
     "yaml",
     "templ",
+    "svelte",
   },
   highlight = {
     enable = true, -- false will disable the whole extension
@@ -658,7 +659,11 @@ local servers = {
         },
       },
     },
-  }
+  },
+  svelte = {
+    on_attach = linter_on_attach,
+    autostart = true
+  },
 }
 
 for server_name, server_config in pairs(servers) do

@@ -244,7 +244,18 @@ local function term_run_cmd(cmd)
     if elapsed_time > 10 then
     -- if true then
       local hostname = vim.fn.hostname()
-      local nfty_cmd = {'curl', '-H', [[Title: ]] .. cmd .. [[ | ]] .. status .. [[ | Took: ]] .. elapsed_time, '-H', [[Priority: ]] .. priority, '-d', [["]] .. vim.fn.getcwd() .. [["]], 'ntfy.sh/nrk_mangalpete_' .. hostname .. '_reminders'}
+      local nfty_cmd = {
+        'curl',
+        '-H',
+        [[Title: ]] .. cmd .. [[ | ]] .. status .. [[ | Took: ]] .. elapsed_time,
+        '-H',
+        [[Priority: ]] .. priority,
+        '-d',
+        [["]] .. vim.fn.getcwd() .. [["]],
+        'ntfy.sh/nrk_mangalpete_' .. hostname .. '_reminders',
+        '-H',
+        [[Actions: Log time, Open portal, http://192.168.0.108:18080, clear=true;]],
+      }
       vim.system(nfty_cmd)
     end
   end})
@@ -312,7 +323,18 @@ function M.run_snack_command(cmd, background, restart, runner)
         if elapsed_time > 10 then
           -- if true then
           local hostname = vim.fn.hostname()
-          local nfty_cmd = {'curl', '-H', [[Title: ]] .. cmd .. [[ | ]] .. status .. [[ | Took: ]] .. elapsed_time, '-H', [[Priority: ]] .. priority, '-d', [["]] .. vim.fn.getcwd() .. [["]], 'ntfy.sh/nrk_mangalpete_' .. hostname .. '_reminders'}
+          local nfty_cmd = {
+            'curl',
+            '-H',
+            [[Title: ]] .. cmd .. [[ | ]] .. status .. [[ | Took: ]] .. elapsed_time,
+            '-H',
+            [[Priority: ]] .. priority,
+            '-H',
+            [[Actions: view, Log time, http://192.168.0.108:18080, clear=true]],
+            '-d',
+            [["]] .. vim.fn.getcwd() .. [["]],
+            'ntfy.sh/nrk_mangalpete_' .. hostname .. '_reminders',
+          }
           vim.system(nfty_cmd)
         end
       end,

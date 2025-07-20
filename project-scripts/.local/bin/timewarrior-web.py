@@ -87,4 +87,4 @@ tag_select = ui.select(
 ui.button('Toggle Timer', on_click=lambda: toggle_timewarrior(tag_select.value))
 
 # Run the NiceGUI application
-ui.run()
+ui.run(dark=True, show=False, title="Timewarrior web", port=18080)
