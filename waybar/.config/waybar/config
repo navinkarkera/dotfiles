@@ -8,8 +8,8 @@
 
     "modules-left": [
         "custom/launcher",
-        "sway/workspaces",
-        "sway/mode",
+        "hyprland/workspaces",
+        "hyprland/submap",
     ],
 
     "modules-center": [
@@ -115,7 +115,7 @@
         "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
     },
 
-    "sway/mode": {
+    "hyprland/submap": {
         "format": "{}",
         "tooltip": false
     },
@@ -125,7 +125,7 @@
         "max-length": 120
     },
 
-    "sway/workspaces": {
+    "hyprland/workspaces": {
         "disable-scroll": true,
         "disable-markup" : false,
         "all-outputs": true,
