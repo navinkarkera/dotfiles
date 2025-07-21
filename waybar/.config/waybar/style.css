@@ -52,12 +52,17 @@ Arc-Dark Color Scheme
 }
 
 /* The whole bar */
-#waybar {
-    background: transparent;
+window#waybar {
+    background-color: rgba(43, 48, 59, 0.5);
     color: #bebebe;
-    background-color: @base1;
-    font-family: UbuntuMono;
+    transition-property: background-color;
+    transition-duration: .5s;
+    font-family: mono;
     font-size: 14px;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
 }
 
 /* Every modules */
@@ -75,8 +80,8 @@ Arc-Dark Color Scheme
 #tray,
 #idle_inhibitor,
 #custom-PBPbattery {
-    padding:0.5rem 0.6rem;
-    margin: 1px 0px;
+    padding:1px 1px;
+    margin: 0px 0px;
 }
 
 /* -----------------------------------------------------------------------------
@@ -135,10 +140,10 @@ Arc-Dark Color Scheme
 
 #mode {
     background: @highlight;
-    border-bottom: 3px transparent;
+    border-bottom: 1px transparent;
     color:white;
     margin-left: 5px;
-    padding: 7px;
+    padding: 2px;
 }
 
 #network.disconnected {
@@ -146,7 +151,7 @@ Arc-Dark Color Scheme
 }
 
 #pulseaudio {
-    padding-top:6px;
+    padding-top:2px;
 }
 
 #pulseaudio.muted {
@@ -166,13 +171,13 @@ Arc-Dark Color Scheme
 }
 
 #workspaces button {
-    border-bottom: 3px solid transparent;
+    border-bottom: 1px solid transparent;
     margin-bottom: 0px;
     padding:0px;
 }
 
 #workspaces button.active {
-    border-bottom: 3px solid  @highlight;
+    border-bottom: 1px solid  @highlight;
     margin-bottom: 1px;
     padding-left:0;
 }
@@ -189,7 +194,7 @@ Arc-Dark Color Scheme
 }
 
 #custom-launcher {
-    font-size:15px;
+    font-size:13px;
     margin-left:15px;
     margin-right:10px;
 }
@@ -197,4 +202,61 @@ Arc-Dark Color Scheme
 #backlight.icon {
     padding-right:1px;
     font-size: 13px;
+}
+
+#power-profiles-daemon {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#power-profiles-daemon.performance {
+    color: #f53c3c;
+}
+
+#power-profiles-daemon.balanced {
+    color: #2980b9;
+}
+
+#power-profiles-daemon.power-saver {
+    color: #2ecc71;
+}
+
+#cpu {
+  color: #2ecc71;
+}
+
+#memory {
+    color: #9b59b6;
+}
+
+#disk {
+    color: #964B00;
+}
+
+#backlight {
+    color: #90b1b1;
+}
+
+#network {
+    color: #2980b9;
+}
+
+#network.disconnected {
+    color: #f53c3c;
+}
+
+#pulseaudio {
+    color: #f1c40f;
+}
+
+#pulseaudio.muted {
+    color: #90b1b1;
+}
+
+#wireplumber {
+    color: #fff0f5;
+}
+
+#wireplumber.muted {
+    color: #f53c3c;
 }

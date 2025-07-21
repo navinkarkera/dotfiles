@@ -1,7 +1,7 @@
 [user]
 	email = navin@opencraft.com
 	name = Navin Karkera
-	signingkey = 5B13E9C4DE324F30
+	signingkey = /home/navin/.ssh/id_ed25519.pub
 [alias]
 	last = !git --no-pager log -1 HEAD --stat
 	cm = commit -m
@@ -73,3 +73,5 @@
 	maxRequestBuffer = 100M
 [rerere]
 	enabled = true
+[gpg]
+	format = ssh
