@@ -591,7 +591,7 @@ local servers = {
   },
   ts_ls = {
     on_attach = on_attach,
-    autostart = false,
+    autostart = true,
     init_options = {
       hostInfo = "neovim",
       preferences = {
@@ -603,7 +603,7 @@ local servers = {
   },
   cssls = {
     on_attach = on_attach,
-    autostart = false,
+    autostart = true,
   },
   eslint = {
     on_attach = on_attach,

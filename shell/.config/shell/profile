@@ -14,8 +14,8 @@ unsetopt PROMPT_SP
 if [[ "$(command -v nvim)" ]]; then
     export EDITOR='nvim'
 fi
-export TERMINAL="wezterm"
-export BROWSER="firefox"
+export TERMINAL="kitty"
+export BROWSER="zen-browser"
 export GPG_TTY=$(tty)
 export MANPAGER='bat'
 export MANWIDTH=999
