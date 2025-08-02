@@ -176,7 +176,3 @@ class ListaflowService(IssueService):
     def issues(self):
         for issue in self.client.get_issues():
             yield self.get_issue_for_record(issue)
-
-# if __name__ == '__main__':
-    # client = ListaflowClient(username='navin', token="W7BZJvBMmYKFGuCc1sJi8hV9s7Ph7E")
-    # print(client.get_issues())
