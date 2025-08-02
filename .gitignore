@@ -16,3 +16,4 @@ project-scripts/.local/bin/bugwarrior-pull
 project-scripts/.local/bin/bugwarrior-uda
 project-scripts/.local/bin/bugwarrior-vault
 jira/.jira.d/cookies.js
+project-scripts/.local/bin/timewarrior-bun-web
