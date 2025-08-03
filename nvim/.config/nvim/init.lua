@@ -366,7 +366,7 @@ map('n', '<C-]>',
     fzf_lua.command_history({ fzf_opts = { ["--tiebreak"] = "index", ["--query"] = "Run " }, winopts = { height = 20, width = 0.6, row = 0 }})
   end)
 map('n', '<leader>?', fzf_lua.oldfiles)
-map('n', '<C-f>', fzf_lua.live_grep_glob)
+map('n', '<C-f>', fzf_lua.live_grep)
 map("v", "<C-f>", fzf_lua.grep_visual)
 map("n", "<leader>pw", fzf_lua.grep_cword)
 map("n", "<leader>tt", my_functions.fzf_get_terminals)

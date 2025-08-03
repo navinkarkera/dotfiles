@@ -51942,3 +51942,21 @@ txn:
   type: interval
   before: 
   after: {"id":1,"start":"20250801T142528Z","end":"20250801T142530Z","tags":["FAL-4229 work"]}
+txn:
+  type: interval
+  before: 
+  after: {"id":0,"start":"20250802T153858Z"}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250802T153858Z"}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250802T153858Z","tags":["FAL-4226 work"]}
+txn:
+  type: interval
+  before: {"id":1,"start":"20250802T153858Z","tags":["FAL-4226 work"]}
+  after: 
+  type: interval
+  before: 
+  after: {"id":1,"start":"20250802T153858Z","end":"20250802T153902Z","tags":["FAL-4226 work"]}
